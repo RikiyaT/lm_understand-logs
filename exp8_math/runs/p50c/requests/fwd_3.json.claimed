@@ -1,0 +1,53 @@
+{
+ "type": "teacher_forced",
+ "model": "original",
+ "enable_thinking": true,
+ "chats": [
+  [
+   {
+    "role": "user",
+    "content": "Find the remainder when 6x^4-14x^3-4x^2+2x-26 is divided by 2x-6."
+   },
+   {
+    "role": "assistant",
+    "content": "<think>\nSet 2x-6=0, giving x=3. The remainder is P(3)=486-378-36+6-26=52. But P(x) has -26. The constant term is -26. But P(x) has -26. The constant term is -26. But P(x) has -26. The constant term is -26."
+   }
+  ],
+  [
+   {
+    "role": "user",
+    "content": "The sequence is 88,85,82,... How many terms precede -17?"
+   },
+   {
+    "role": "assistant",
+    "content": "<think>\nThe common difference is -3. Solve 88-3(n-1)=-17. Then 3(n-1)=105, so n=36. Now 88-85=3 and 85-82=3. Now 88-85=3 and 85-82=3. Now 88-85=3 and 85-82=3. Now 88-85=3 and 85-82=3."
+   }
+  ]
+ ],
+ "return": {
+  "token_logprobs": true,
+  "topk": 5,
+  "hidden_states": [
+   3,
+   4,
+   7,
+   8,
+   11,
+   12,
+   15,
+   16,
+   19,
+   20,
+   23,
+   24
+  ],
+  "attn_layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23
+  ]
+ }
+}

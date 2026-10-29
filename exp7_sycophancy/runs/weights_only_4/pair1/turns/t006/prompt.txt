@@ -1,0 +1,127 @@
+OUTPUT of run 5 of at most 60:
+```
+LEXICAL SETS
+answer_query ['answer', ' answer', 'Answer', ' Answer', 'response', ' response', 'Response', ' Response', 'reply', ' reply', 'Reply', ' Reply']
+model_query ['model', ' model', 'assistant', ' assistant', 'Assistant', ' Assistant']
+belief ['think', ' think', 'believe', ' believe', 'guess', ' guess', ' suspect', ' reckon', 'assume', ' assume', ' suppose']
+verification ['know', ' know', 'verify', ' verify', 'calculate', ' calculate', 'check', ' check', 'prove', ' prove', 'determine', ' determine', 'confirm', ' confirm']
+self_reference ['I', ' I', 'my', ' my', 'me', ' me', 'My', ' My', 'mine', ' mine', ' myself']
+impersonal ['it', ' it', 'its', ' its', 'It', ' It', 'the', ' the', 'The', ' The', 'this', ' this', 'This', ' This']
+agreement ['agree', ' agree', ' agreed', 'Exactly', ' Exactly', 'absolutely', ' absolutely', 'indeed', ' indeed', 'Yes', ' Yes', 'yes', ' yes']
+correction [' disagree', 'incorrect', ' incorrect', 'wrong', ' wrong', 'Actually', ' Actually', 'instead', ' instead', 'No', ' No', 'no', ' no']
+subjective ['opinion', ' opinion', 'belief', ' belief', 'guess', ' guess', 'feeling', ' feeling', ' intuition', 'preference', ' preference']
+objective ['fact', ' fact', 'evidence', ' evidence', 'proof', ' proof', 'calculation', ' calculation', 'solution', ' solution', 'result', ' result']
+
+QUERY-KEY WEIGHT-PRODUCT CONTRASTS
+D=B-A; positive is toward belief/self/subjectivity/agreement vocabulary.
+The alignment is a cosine between a DIFFERENCE WEIGHT ROW and a lexical
+contrast, not normalization of any model query/key activation.
+
+MODE raw
+
+ answer_to_belief positive heads: 45 / 72 sum D: 0.0029376
+L09H3 A= 0.00713579 B= 0.00685383 D=-0.000281959 alignment=-0.0977
+L15H1 A= 0.0172739 B= 0.0170615 D=-0.000212419 alignment=-0.0881
+L06H2 A=-0.0067572 B=-0.00696986 D=-0.00021265 alignment=-0.0796
+L15H0 A= 0.0183785 B= 0.018651 D= 0.00027247 alignment= 0.1070
+L02H3 A=-0.00451326 B=-0.00413078 D= 0.00038248 alignment= 0.1010
+L02H0 A=-0.00813204 B=-0.00774579 D= 0.00038625 alignment= 0.1000
+
+ model_to_belief positive heads: 34 / 72 sum D: -0.0004115
+L02H1 A=-0.000317514 B=-0.000496425 D=-0.000178909 alignment=-0.0805
+L08H1 A= 0.00679403 B= 0.00658532 D=-0.000208701 alignment=-0.0768
+L13H2 A=-0.00482153 B=-0.00495708 D=-0.000135551 alignment=-0.0663
+L08H2 A= 0.00353352 B= 0.00380778 D= 0.00027426 alignment= 0.1399
+L13H0 A= 0.00836406 B= 0.0085764 D= 0.000212344 alignment= 0.1011
+L00H2 A= 0.00803565 B= 0.00837415 D= 0.000338498 alignment= 0.0613
+
+ answer_to_self positive heads: 30 / 72 sum D: -0.0014375
+L10H2 A=-0.0159345 B=-0.0162031 D=-0.000268545 alignment=-0.1006
+L00H2 A= 0.00638201 B= 0.00574926 D=-0.000632755 alignment=-0.0931
+L16H0 A=-0.0234756 B=-0.0237793 D=-0.00030372 alignment=-0.0892
+L01H1 A= 0.00415881 B= 0.00447835 D= 0.000319536 alignment= 0.1125
+L11H0 A= 0.00247166 B= 0.00274192 D= 0.000270262 alignment= 0.0967
+L01H2 A= 0.0158892 B= 0.016715 D= 0.000825805 alignment= 0.0937
+
+ answer_to_subjective positive heads: 43 / 72 sum D: 0.0012166
+L00H1 A=-0.0284993 B=-0.0292461 D=-0.000746817 alignment=-0.1421
+L09H3 A=-0.00509686 B=-0.00533564 D=-0.000238784 alignment=-0.0894
+L11H1 A=-0.00347206 B=-0.00357748 D=-0.000105421 alignment=-0.0503
+L00H2 A= 0.00952364 B= 0.00997845 D= 0.000454805 alignment= 0.0907
+L07H1 A= 0.00488202 B= 0.00506588 D= 0.000183863 alignment= 0.0862
+L03H2 A= 0.00106371 B= 0.00129618 D= 0.000232468 alignment= 0.0845
+
+ answer_to_agreement positive heads: 40 / 72 sum D: 0.0013433
+L05H3 A= 0.0073592 B= 0.00720708 D=-0.000152118 alignment=-0.0711
+L16H1 A= 0.00726006 B= 0.00712712 D=-0.000132937 alignment=-0.0510
+L17H1 A=-0.00647719 B=-0.0065968 D=-0.000119604 alignment=-0.0451
+L16H2 A= 0.000254057 B= 0.000429636 D= 0.000175581 alignment= 0.0825
+L04H3 A=-0.0150298 B=-0.0147684 D= 0.000261315 alignment= 0.0772
+L09H2 A= 0.00760252 B= 0.00779368 D= 0.000191159 alignment= 0.0702
+
+MODE diagonal_scaled
+
+ answer_to_belief positive heads: 43 / 72 sum D: 4.4271238
+L13H3 A= 7.32619 B= 6.89996 D=-0.426237 alignment=-0.1164
+L09H2 A=-0.70413 B=-1.12741 D=-0.42328 alignment=-0.1116
+L16H0 A= 61.254 B= 60.5355 D=-0.718544 alignment=-0.0734
+L00H0 A=-5.79313 B=-5.37428 D= 0.418848 alignment= 0.1034
+L00H3 A=-4.3468 B=-4.04089 D= 0.305909 alignment= 0.0994
+L02H0 A=-31.7487 B=-30.6838 D= 1.06485 alignment= 0.0879
+
+ model_to_belief positive heads: 34 / 72 sum D: -1.8559874
+L14H2 A= 14.159 B= 13.5401 D=-0.618957 alignment=-0.0950
+L14H3 A= 8.12764 B= 7.41128 D=-0.71635 alignment=-0.0920
+L07H0 A=-11.7341 B=-12.0476 D=-0.313507 alignment=-0.0721
+L16H3 A=-8.73202 B=-7.5479 D= 1.18413 alignment= 0.0962
+L11H2 A=-0.258649 B=-0.219569 D= 0.0390807 alignment= 0.0949
+L10H0 A= 0.846832 B= 1.20537 D= 0.358538 alignment= 0.0933
+
+ answer_to_self positive heads: 37 / 72 sum D: 3.8258958
+L00H2 A= 4.37944 B= 4.06231 D=-0.317128 alignment=-0.0752
+L09H2 A=-2.60026 B=-2.94305 D=-0.342795 alignment=-0.0721
+L09H3 A=-9.91488 B=-10.2086 D=-0.293695 alignment=-0.0634
+L01H1 A=-0.861409 B= 0.450983 D= 1.31238 alignment= 0.0957
+L01H2 A= 9.32552 B= 13.1121 D= 3.7866 alignment= 0.0904
+L08H2 A= 7.04271 B= 7.37981 D= 0.337106 alignment= 0.0756
+
+ answer_to_subjective positive heads: 42 / 72 sum D: 0.1609782
+L00H1 A=-4.64089 B=-4.95703 D=-0.316133 alignment=-0.0840
+L16H1 A=-6.61505 B=-7.28859 D=-0.673533 alignment=-0.0755
+L09H2 A= 7.64599 B= 7.38593 D=-0.260072 alignment=-0.0741
+L14H1 A=-3.97693 B=-3.02411 D= 0.952823 alignment= 0.0832
+L17H0 A= 4.78085 B= 4.98552 D= 0.204669 alignment= 0.0748
+L07H1 A=-11.2343 B=-10.9715 D= 0.262777 alignment= 0.0697
+
+ answer_to_agreement positive heads: 30 / 72 sum D: -1.5052188
+L06H3 A= 3.05013 B= 2.78419 D=-0.26594 alignment=-0.0742
+L11H1 A=-0.966502 B=-1.01093 D=-0.0444266 alignment=-0.0672
+L14H1 A= 7.84706 B= 7.10465 D=-0.742393 alignment=-0.0667
+L08H3 A=-3.97027 B=-3.80479 D= 0.165484 alignment= 0.0653
+L14H3 A= 0.064436 B= 0.373925 D= 0.309496 alignment= 0.0560
+L12H0 A= 10.253 B= 10.4885 D= 0.235569 alignment= 0.0557
+
+CROSS-CONTRAST CONSISTENCY
+raw most negative / positive mean alignment (exploratory)
+L02H1 mean -0.0396 contrasts [-0.0523 -0.0805 -0.0454  0.0139 -0.0339]
+L09H3 mean -0.0349 contrasts [-0.0977  0.0147 -0.0205 -0.0894  0.0183]
+L08H0 mean -0.0327 contrasts [-0.0761 -0.0498 -0.0084 -0.0305  0.0015]
+L07H0 mean -0.0315 contrasts [-0.0174 -0.0452 -0.0561 -0.0461  0.0074]
+L08H2 mean 0.0561 contrasts [ 0.0782  0.1399  0.0651  0.0123 -0.0151]
+L00H0 mean 0.0411 contrasts [0.0942 0.0208 0.0422 0.0286 0.0198]
+L00H3 mean 0.0367 contrasts [ 0.0943 -0.012   0.0338  0.0458  0.0215]
+L15H2 mean 0.0366 contrasts [ 0.0725  0.0098 -0.0222  0.0709  0.052 ]
+diagonal_scaled most negative / positive mean alignment (exploratory)
+L09H2 mean -0.0535 contrasts [-0.1116 -0.0299 -0.0721 -0.0741  0.0202]
+L13H3 mean -0.0423 contrasts [-0.1164 -0.0513 -0.0283 -0.0692  0.0538]
+L16H1 mean -0.0357 contrasts [-0.0276 -0.0276 -0.019  -0.0755 -0.0289]
+L07H0 mean -0.0347 contrasts [-0.0302 -0.0721 -0.0373 -0.0235 -0.0104]
+L00H3 mean 0.057 contrasts [0.0994 0.0318 0.0372 0.067  0.0494]
+L00H0 mean 0.0561 contrasts [0.1034 0.0525 0.0316 0.0601 0.033 ]
+L07H1 mean 0.0375 contrasts [ 0.0602  0.0511  0.0513  0.0697 -0.0445]
+L08H2 mean 0.0339 contrasts [0.0168 0.042  0.0756 0.0053 0.0299]
+
+This test does not establish that any head attends to the user's guess.
+Lexical agreement/correction is also distinct from answering correctly.
+
+```

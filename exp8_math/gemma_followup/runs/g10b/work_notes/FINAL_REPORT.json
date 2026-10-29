@@ -1,0 +1,181 @@
+{
+  "submitted_edit": [
+    {
+      "tensor": "model.layers.8.mlp.down_proj.weight",
+      "columns": [
+        699
+      ],
+      "multiplier": 1.5,
+      "shape": [
+        640,
+        2048
+      ],
+      "changed_values": 640,
+      "relative_frobenius_change": 0.009435703977942467
+    },
+    {
+      "tensor": "model.layers.14.mlp.down_proj.weight",
+      "columns": [
+        483,
+        984
+      ],
+      "multiplier": 1.5,
+      "shape": [
+        640,
+        2048
+      ],
+      "changed_values": 1280,
+      "relative_frobenius_change": 0.015226062387228012
+    },
+    {
+      "tensor": "model.layers.17.mlp.down_proj.weight",
+      "columns": [
+        1179
+      ],
+      "multiplier": 1.5,
+      "shape": [
+        640,
+        2048
+      ],
+      "changed_values": 640,
+      "relative_frobenius_change": 0.010259049944579601
+    }
+  ],
+  "dev_strength_tests": [
+    {
+      "pass": 5,
+      "column_multiplier": 0.0,
+      "gain_pp": -0.68359375,
+      "cluster_se_pp": 1.6418185113361485,
+      "original_repeated_conclusion_pct": 13.57421875,
+      "edited_repeated_conclusion_pct": 22.55859375
+    },
+    {
+      "pass": 6,
+      "column_multiplier": 2.0,
+      "gain_pp": -1.26953125,
+      "cluster_se_pp": 1.4207781798694787,
+      "original_repeated_conclusion_pct": 13.37890625,
+      "edited_repeated_conclusion_pct": 5.6640625
+    },
+    {
+      "pass": 7,
+      "column_multiplier": 1.5,
+      "gain_pp": 0.48828125,
+      "cluster_se_pp": 1.7178743231717137,
+      "original_repeated_conclusion_pct": 13.18359375,
+      "edited_repeated_conclusion_pct": 7.91015625
+    }
+  ],
+  "holdout_pooled": {
+    "passes": [
+      8,
+      9,
+      10
+    ],
+    "n_per_model": 3072,
+    "distinct_problems": 256,
+    "original_correct": 221,
+    "edited_correct": 243,
+    "original_accuracy_pct": 7.194010416666667,
+    "edited_accuracy_pct": 7.91015625,
+    "gain_pp": 0.7161458333333333,
+    "cluster_se_pp": 0.4926066250697082,
+    "sample_pair_se_pp": 0.4116191268561949,
+    "wrong_to_right": 91,
+    "right_to_wrong": 69,
+    "original_mean_tokens": 1546.353515625,
+    "original_cut_pct": 7.389322916666667,
+    "original_repeated_conclusion_pct": 15.33203125,
+    "edited_mean_tokens": 1435.96484375,
+    "edited_cut_pct": 6.25,
+    "edited_repeated_conclusion_pct": 12.01171875,
+    "approx_95pct_ci_pp": [
+      -0.24936315180329482,
+      1.6816548184699613
+    ],
+    "candidate_frozen_before_holdout": true,
+    "selection_used_holdout": false,
+    "edit_hash": "599aba54ec"
+  },
+  "holdout_passes": [
+    {
+      "pass": 8,
+      "n": 1024,
+      "gain_pp": 1.171875,
+      "se_pp": 0.7559242780588042,
+      "wrong_to_right": 36,
+      "right_to_wrong": 24,
+      "original": {
+        "accuracy": 0.0703125,
+        "mean_tokens": 1614.7421875,
+        "cut_rate": 0.0791015625,
+        "repeat_fraction": 0.19316927858944166,
+        "three_or_more_final_answers": 0.16015625
+      },
+      "edited": {
+        "accuracy": 0.08203125,
+        "mean_tokens": 1448.388671875,
+        "cut_rate": 0.0625,
+        "repeat_fraction": 0.1726278177526928,
+        "three_or_more_final_answers": 0.1103515625
+      },
+      "cluster_se_pp": 0.7415623980049177
+    },
+    {
+      "pass": 9,
+      "n": 1024,
+      "gain_pp": 0.87890625,
+      "se_pp": 0.6548418423694392,
+      "wrong_to_right": 27,
+      "right_to_wrong": 18,
+      "original": {
+        "accuracy": 0.0712890625,
+        "mean_tokens": 1453.2919921875,
+        "cut_rate": 0.0634765625,
+        "repeat_fraction": 0.176115624007531,
+        "three_or_more_final_answers": 0.130859375
+      },
+      "edited": {
+        "accuracy": 0.080078125,
+        "mean_tokens": 1402.5673828125,
+        "cut_rate": 0.060546875,
+        "repeat_fraction": 0.16674772691864398,
+        "three_or_more_final_answers": 0.1142578125
+      },
+      "cluster_se_pp": 0.6392642601681078
+    },
+    {
+      "pass": 10,
+      "n": 1024,
+      "gain_pp": 0.09765625,
+      "se_pp": 0.7245855917839893,
+      "wrong_to_right": 28,
+      "right_to_wrong": 27,
+      "original": {
+        "accuracy": 0.07421875,
+        "mean_tokens": 1571.0263671875,
+        "cut_rate": 0.0791015625,
+        "repeat_fraction": 0.1900585249661897,
+        "three_or_more_final_answers": 0.1689453125
+      },
+      "edited": {
+        "accuracy": 0.0751953125,
+        "mean_tokens": 1456.9384765625,
+        "cut_rate": 0.064453125,
+        "repeat_fraction": 0.17352083612479519,
+        "three_or_more_final_answers": 0.1357421875
+      },
+      "cluster_se_pp": 0.6849055166177844
+    }
+  ],
+  "limitations": [
+    "Accuracy gain is uncertain; report the problem-cluster SE and interval.",
+    "Causal repetition evidence applies to the four-channel group, not individually isolated neurons.",
+    "Teacher-forced probes lacked evaluation prompts and are local continuation checks only.",
+    "Pass2 was malformed and provides no mathematical evidence.",
+    "Earlier no_answer_finished counts were erroneous and were excluded from mechanism conclusions."
+  ],
+  "submission_directory": "/work/edited",
+  "backup_directory": "/work/frozen_candidate"
+}

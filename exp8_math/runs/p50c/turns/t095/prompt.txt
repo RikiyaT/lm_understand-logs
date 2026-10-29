@@ -1,0 +1,14 @@
+OUTPUT of Python run 51 of at most 300:
+```
+correct n 123 median_tokens 8071.0 mean_tail_duplicate8 0.111 think_closed 123
+gsm8k_train_2805 tail 't{ ounces}$$\n\n**5. Calculate the scale reading:**\nThe question asks for the weight indicated if Brittany puts Puffy and Muffy on the scale.\n$$\\text{Total Weight} = P + M$$\n$$\\text{Total Weight} = 14 + 9$$\n$$\\text{Total Weight} = 23 \\text{ ounces}$$\n\n\\boxed{23}'
+gsm8k_train_2805 tail 'fy = 14 \\text{ ounces}$$\n\n**Step 4: Calculate the total weight on the scale.**\nFinally, we add the weights of both Puffy and Muffy together to find the total weight indicated by the scale:\n$$Total = Puffy + Muffy$$\n$$Total = 14 + 9$$\n$$Total = 23$$\n\n\\boxed{23}'
+wrong_finished n 42 median_tokens 14442.5 mean_tail_duplicate8 0.414 think_closed 42
+gsm8k_train_5410 tail 'maining 3 hours, he covers 9 miles.\n    *   So he walks 12 miles in 4 hours.\n    *   Therefore, the time taken is 4 hours.\n\n**Step 3: Comparison**\n*   Time for Trail 1: 4 hours.\n*   Time for Trail 2: 4 hours.\n*   The difference is $4 - 4 = 0$ hours.\n\n\\boxed{0}'
+gsm8k_train_5410 tail '.\nTime = 10 miles ? 5 mph = 2 hours.\nSo the fastest hike (20 miles) takes 2 hours.\nThe slowest hike (12 miles) takes 4 hours.\nDifference = 2 hours.\n\nThis seems more consistent with the logic of "how many hours faster" implying a positive difference.\n\n\\boxed{2}'
+cut n 91 median_tokens 32768.0 mean_tail_duplicate8 0.684 think_closed 39
+gsm8k_train_2520 tail '                                                                                                                                                                                                                                                                    '
+gsm8k_train_3513 tail '                                                                                                                                                                                                                                                                    '
+CURRENT ['model.language_model.layers.15.mlp.down_proj.weight']
+
+```

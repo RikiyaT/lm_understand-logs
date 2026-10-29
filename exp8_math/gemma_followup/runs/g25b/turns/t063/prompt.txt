@@ -1,0 +1,6 @@
+OUTPUT of Python run 39 of at most 300:
+```
+Pass20: {'pass': 20, 'n': 1008, 'gain': -0.030753968253968252, 'sample_se': 0.014178154634078961, 'original': {'accuracy': 0.35813492063492064, 'repeated': 0.14583333333333334, 'many_finals': 0.10515873015873016, 'cut': 0.03968253968253968}, 'edited': {'accuracy': 0.3273809523809524, 'repeated': 0.1488095238095238, 'many_finals': 0.11904761904761904, 'cut': 0.040674603174603176}}
+Pass21 edit: {'model.layers.11.self_attn.o_proj.weight': {'head': 0, 'columns': [0, 256], 'column_multiplier': 1.25, 'removed_fraction': -0.25}}
+
+```

@@ -1,0 +1,53 @@
+OUTPUT of run 26 of at most 60:
+```
+=== VALUE-MATCHED DIFFERENCE SHUFFLE ===
+Bins preserve midpoint sign, exponent, and four mantissa ranges.
+Every shuffled matrix retains the exact difference-value multiset within each bin.
+These arrays are used only in weight contractions; no model is modified or run.
+
+L1H2 raw O: bins=144, singleton_bins=12, conditional_mean_fraction_of_difference_energy=0.001022
+ L1H2->L15H1/near        observed=+446.22, bin_mean_prediction=-0.76743, conditional_z=+7.344, single_shuffle_p=0.0078
+ L1H2->L15H1/far         observed=+734.92, bin_mean_prediction=-0.40595, conditional_z=+9.372, single_shuffle_p=0.0078
+ L1H2->L15H2/near        observed=+661.71, bin_mean_prediction=-0.27693, conditional_z=+7.773, single_shuffle_p=0.0078
+ L1H2->L15H2/far         observed=+894.62, bin_mean_prediction=-0.49314, conditional_z=+8.858, single_shuffle_p=0.0078
+ L1H2->L16H2/near        observed=+727.26, bin_mean_prediction=-1.4242, conditional_z=+3.167, single_shuffle_p=0.0078
+ L1H2->L16H2/far         observed=+1469, bin_mean_prediction=-1.5836, conditional_z=+4.994, single_shuffle_p=0.0078
+
+L1 shared V: bins=135, singleton_bins=7, conditional_mean_fraction_of_difference_energy=0.000746
+ L1H2->L15H1/near        observed=+482.93, bin_mean_prediction=+0.88003, conditional_z=+15.476, single_shuffle_p=0.0078
+ L1H2->L15H1/far         observed=+611.95, bin_mean_prediction=+1.4666, conditional_z=+12.742, single_shuffle_p=0.0078
+ L1H2->L15H2/near        observed=+688.62, bin_mean_prediction=+1.7038, conditional_z=+13.885, single_shuffle_p=0.0078
+ L1H2->L15H2/far         observed=+795.49, bin_mean_prediction=+1.564, conditional_z=+13.902, single_shuffle_p=0.0078
+ L1H2->L16H2/near        observed=+2065.7, bin_mean_prediction=+4.1121, conditional_z=+14.105, single_shuffle_p=0.0078
+ L1H2->L16H2/far         observed=+2437, bin_mean_prediction=+5.9246, conditional_z=+13.100, single_shuffle_p=0.0078
+
+=== LATE MLP NUMERICAL WRITING UNDER THE SAME CONTROL ===
+Here the statistic is projected difference energy, not a signed behavioral score.
+L15: observed=36.8041, null_mean=3.77748, observed/null_mean=9.743, z=719.541, upper_tail_p=0.0078
+     bin_mean_component_energy/observed=0.000011, residual_energy/observed=0.999701
+L16: observed=75.6282, null_mean=4.79594, observed/null_mean=15.769, z=1364.999, upper_tail_p=0.0078
+     bin_mean_component_energy/observed=0.000006, residual_energy/observed=0.999825
+L17: observed=139.847, null_mean=5.85278, observed/null_mean=23.894, z=1786.195, upper_tail_p=0.0078
+     bin_mean_component_energy/observed=0.000005, residual_energy/observed=0.999717
+
+=== SEARCH-WIDE SHUFFLE CHECK FOR THESE SELECTED DIAGNOSTICS ===
+L1H2 raw O L1H2->L15H1/near search_shuffle_p= 0.0078
+L1H2 raw O L1H2->L15H1/far search_shuffle_p= 0.0078
+L1H2 raw O L1H2->L15H2/near search_shuffle_p= 0.0078
+L1H2 raw O L1H2->L15H2/far search_shuffle_p= 0.0078
+L1H2 raw O L1H2->L16H2/near search_shuffle_p= 0.0078
+L1H2 raw O L1H2->L16H2/far search_shuffle_p= 0.0078
+L1 shared V L1H2->L15H1/near search_shuffle_p= 0.0078
+L1 shared V L1H2->L15H1/far search_shuffle_p= 0.0078
+L1 shared V L1H2->L15H2/near search_shuffle_p= 0.0078
+L1 shared V L1H2->L15H2/far search_shuffle_p= 0.0078
+L1 shared V L1H2->L16H2/near search_shuffle_p= 0.0078
+L1 shared V L1H2->L16H2/far search_shuffle_p= 0.0078
+L15 MLP numerical writer search_shuffle_p= 0.0078
+L16 MLP numerical writer search_shuffle_p= 0.0078
+L17 MLP numerical writer search_shuffle_p= 0.0078
+
+This controls generic midpoint-value-dependent updates, not every possible quantization artifact.
+No activations, attention patterns, nonlinear model computation, or behavioral evaluation was used.
+
+```

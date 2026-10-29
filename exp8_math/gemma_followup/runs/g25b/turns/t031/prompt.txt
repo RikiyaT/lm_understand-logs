@@ -1,0 +1,35 @@
+Forward pass 9 of 25 done (teacher_forced); results in /work/fwd_9/. Summary:
+```
+{
+ "ok": true,
+ "lengths": [
+  196,
+  192
+ ],
+ "files": {
+  "input_ids": [
+   2,
+   196
+  ],
+  "token_logprobs": [
+   2,
+   195
+  ],
+  "attn_17": [
+   2,
+   4,
+   196,
+   196
+  ]
+ },
+ "edited_tensors": 1,
+ "mean_token_logprob": [
+  -3.5843989849090576,
+  -2.8638718128204346
+ ],
+ "type": "teacher_forced",
+ "s": 0.9
+}
+```
+Forward passes left: 16.
+Edits used in this pass: model.layers.11.self_attn.o_proj.weight (edit hash 5d3a0590c4).

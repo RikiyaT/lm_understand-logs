@@ -1,0 +1,10 @@
+OUTPUT of Python run 24 of at most 300:
+```
+Repetition direction split-half cosine: 0.6257914798263082
+Post-attention gamma range: 0.04296875 569.0
+Direction energy accessible through head2: 0.9225418260309961
+Projected residual/repetition correlation: 0.39293709046537234
+Rank-one removal relative head norm: 0.19737966549199984
+Rank-one removal relative whole tensor: 0.11340123399873447
+
+```

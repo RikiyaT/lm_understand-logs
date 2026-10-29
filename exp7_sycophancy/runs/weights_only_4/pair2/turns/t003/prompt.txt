@@ -1,0 +1,140 @@
+OUTPUT of run 2 of at most 60:
+```
+=== LEARNED NORM WEIGHTS: QUANTILES ===
+Gemma RMSNorm learned diagonal scales are interpreted as 1 + weight.
+No state-dependent RMS denominator is computed or approximated.
+0 input [ 6.375   8.5    10.9375 15.9375 61.75  ]
+0 post_attention [-1.     -0.8984 -0.6953 -0.298  51.75  ]
+0 pre_feedforward [-1.      4.1562  4.625   5.3125 19.625 ]
+0 post_feedforward [ -0.9883  -0.7305  -0.1101   0.7672 152.    ]
+1 input [-0.1719 19.9875 24.375  33.5    47.5   ]
+1 post_attention [ -1.0078  -0.5508   0.5195   4.7656 103.    ]
+1 pre_feedforward [-1.     15.8188 31.75   35.25   55.75  ]
+1 post_feedforward [ -1.      -0.7891   0.2446   3.7734 195.    ]
+5 input [-0.6953  0.5406 10.4375 32.775  48.25  ]
+5 post_attention [ -1.0312   1.625    5.1875  16.75   512.    ]
+5 pre_feedforward [-1.      0.1752 11.1875 22.5    46.    ]
+5 post_feedforward [ -1.0938   2.6516   7.3125  17.4125 740.    ]
+9 input [-0.2949  1.6469 13.0938 38.575  71.5   ]
+9 post_attention [ -1.1328   2.0922  19.9375  40.     450.    ]
+9 pre_feedforward [-0.9844 -0.0037  2.0469  6.9719 20.875 ]
+9 post_feedforward [ -0.9023   5.1906  26.625   55.075  524.    ]
+11 input [-0.8438  0.4744  1.7109  9.2563 52.25  ]
+11 post_attention [ -0.957   12.1063  50.125  430.     568.    ]
+11 pre_feedforward [-1.0547 -0.7508  1.8555 11.0063 53.75  ]
+11 post_feedforward [ -0.9805  15.3625  97.     270.     892.    ]
+14 input [ -0.3047   0.0019   6.9531  43.     171.    ]
+14 post_attention [  0.6641  29.1875 176.     276.     482.    ]
+14 pre_feedforward [-1.0312 -0.7734  0.1982  5.8156 28.25  ]
+14 post_feedforward [  1.5156  34.     209.5    378.2    788.    ]
+17 input [  0.2852   0.6172   2.5156  27.375  121.    ]
+17 post_attention [ -1.5078  24.7    140.5    234.     448.    ]
+17 pre_feedforward [-1.0547 -0.7383 -0.2734  4.9719 29.625 ]
+17 post_feedforward [  -1.1328   71.35    336.      548.4    1648.    ]
+final norm: [ -0.9141   4.2188   8.375   55.775  300.    ]
+Lexical subset size: 139429
+
+=== DIFFERENTIAL WRITER SPECTRA ===
+Fractions are squared singular value / squared Frobenius norm.
+Leading singular values are approximate; dominant modes should be resolved.
+layer part  raw_s1   raw_top1_fraction raw_top4_fraction  scaled_s1 scaled_top1_fraction
+ 0 mlp    0.05307           0.03969           0.14227     1.49576              0.75300
+ 0 attn   0.06663           0.12518           0.26948     0.33813              0.70613
+ 1 mlp    0.05482           0.04281           0.14882     2.06653              0.69100
+ 1 attn   0.07995           0.18233           0.35687     1.12854              0.35176
+ 2 mlp    0.06614           0.06179           0.17374     2.67652              0.48957
+ 2 attn   0.06078           0.10369           0.28004     0.83314              0.62695
+ 3 mlp    0.06335           0.05608           0.18545     6.54355              0.49367
+ 3 attn   0.06025           0.10772           0.30348     1.52854              0.46151
+ 4 mlp    0.06416           0.05770           0.17715     7.57571              0.80149
+ 4 attn   0.06685           0.11726           0.32195     2.02254              0.53719
+ 5 mlp    0.07339           0.07376           0.18903     8.73553              0.76911
+ 5 attn   0.06832           0.11169           0.32555     5.75707              0.60995
+ 6 mlp    0.07171           0.07427           0.19561     8.82095              0.77702
+ 6 attn   0.06411           0.10645           0.28651     2.51483              0.51505
+ 7 mlp    0.07172           0.07604           0.19856     6.49163              0.59608
+ 7 attn   0.05918           0.10081           0.26385     2.37981              0.41976
+ 8 mlp    0.07278           0.08133           0.20618     7.12090              0.54025
+ 8 attn   0.06309           0.10805           0.28409     2.95935              0.25868
+ 9 mlp    0.07940           0.09253           0.22273     5.61772              0.24526
+ 9 attn   0.06030           0.09957           0.26086     3.57038              0.31984
+10 mlp    0.08465           0.10269           0.24842     7.77780              0.15031
+10 attn   0.06857           0.11172           0.24675     4.28090              0.12960
+11 mlp    0.07987           0.10101           0.23722    14.02225              0.13726
+11 attn   0.05448           0.07601           0.18767    10.27722              0.08256
+12 mlp    0.07565           0.07951           0.19432    16.69769              0.09140
+12 attn   0.05364           0.07317           0.20502    10.98785              0.07820
+13 mlp    0.06984           0.06471           0.16833    14.88126              0.06528
+13 attn   0.05776           0.08876           0.21942     9.91516              0.09521
+14 mlp    0.06452           0.05261           0.15549    16.07636              0.05494
+14 attn   0.07265           0.15813           0.28794    13.87496              0.16165
+15 mlp    0.06654           0.05448           0.18274    20.74541              0.06236
+15 attn   0.04797           0.06197           0.18244    12.76178              0.07678
+16 mlp    0.07978           0.08284           0.23695    27.81071              0.08672
+16 attn   0.05949           0.09944           0.30096     9.76926              0.09968
+17 mlp    0.09316           0.12666           0.31242    33.35689              0.11217
+17 attn   0.06436           0.13760           0.28639    10.51174              0.14696
+
+=== LEADING WRITER DIFFERENCE DIRECTIONS: LEXICAL COSINES ===
+Signs below are arbitrary SVD orientation, NOT B-versus-A behavior.
+L00 mlp raw   +[' angust':+0.179, 'gorod':+0.169, ' snow':+0.161, 'Maine':+0.160] -[' Encryption':-0.085, 'alyse':-0.084, ' Galois':-0.084, ' Organis':-0.084]
+          scaled +['setPrototypeOf':+0.185, ' then':+0.153, ' langs':+0.143, ' hence':+0.140] -['sik':-0.239, 'dni':-0.234, 'tete':-0.215, 'sala':-0.204]
+L00 attn raw   +[' kubwa':+0.127, ' mortg':+0.125, 'olated':+0.122, 'qld':+0.121] -[' tirer':-0.163, 'Iowa':-0.153, 'Rules':-0.148, ' rutina':-0.147]
+          scaled +['setPrototypeOf':+0.182, 'Sydney':+0.181, ' Herz':+0.174, ' ce':+0.173] -['newblock':-0.189, 'ruct':-0.186, 'dni':-0.184, 'nlm':-0.180]
+L01 mlp raw   +[' enlarg':+0.138, ' crayon':+0.136, 'Popup':+0.133, ' crayons':+0.133] -['oteric':-0.142, ' besoin':-0.132, 'Disciplina':-0.126, ' amperes':-0.123]
+          scaled +['setPrototypeOf':+0.175, ' ce':+0.140, 'acute':+0.131, 'roweak':+0.129] -['GORITHM':-0.220, 'dni':-0.210, 'quiera':-0.205, 'labelledby':-0.201]
+L01 attn raw   +[' Exports':+0.113, 'opus':+0.108, ' Infinix':+0.107, ' marriages':+0.107] -[' tirer':-0.162, ' spook':-0.159, ' regole':-0.155, 'riam':-0.154]
+          scaled +['import':+0.229, 'Float':+0.225, 'upload':+0.219, 'Ice':+0.218] -['QSpacerItem':-0.097, 'quiera':-0.093, 'miktar':-0.092, 'iarism':-0.090]
+L02 mlp raw   +[' meditate':+0.154, ' Tasks':+0.152, ' mandato':+0.152, ' Probate':+0.150] -[' risky':-0.142, ' unprotected':-0.136, 'splash':-0.133, ' risk':-0.123]
+          scaled +['setPrototypeOf':+0.205, 'roweak':+0.177, 'acute':+0.170, 'irce':+0.167] -['dni':-0.184, 'dropna':-0.178, 'VIDOR':-0.175, ' casilla':-0.168]
+L02 attn raw   +[' adrenaline':+0.167, 'STRUCTOR':+0.150, ' refresher':+0.150, ' noc':+0.146] -[' Spacious':-0.137, 'langs':-0.125, ' marriages':-0.117, 'openList':-0.115]
+          scaled +['setPrototypeOf':+0.215, 'acute':+0.199, ' ce':+0.185, ' Prof':+0.179] -['dni':-0.193, 'IPTS':-0.192, 'ldi':-0.188, 'labelledby':-0.184]
+L03 mlp raw   +[' cuaderno':+0.153, ' almac':+0.150, ' manejar':+0.149, 'msgs':+0.141] -[' minus':-0.161, ' tournament':-0.149, ' betting':-0.142, ' hypnot':-0.138]
+          scaled +[' Sie':+0.127, 'skine':+0.121, 'authors':+0.118, 'Categories':+0.116] -['anych':-0.199, 'labelledby':-0.189, 'quiera':-0.189, 'dropna':-0.181]
+L03 attn raw   +['Purs':+0.133, ' mosaics':+0.128, ' dolorem':+0.124, ' persegu':+0.121] -['ayan':-0.140, 'peso':-0.134, 'ether':-0.132, ' delegate':-0.132]
+          scaled +['StdHandle':+0.187, 'Alexander':+0.180, 'info':+0.179, 'index':+0.178] -['ativamente':-0.162, 'uraea':-0.160, 'stackpath':-0.156, 'alabel':-0.156]
+L04 mlp raw   +[' TUR':+0.185, ' Colon':+0.184, 'Colon':+0.182, ' anthrop':+0.181] -[' declarado':-0.138, 'ithub':-0.131, ' TestCase':-0.130, 'ately':-0.128]
+          scaled +['angular':+0.136, 'setPrototypeOf':+0.134, 'roweak':+0.124, 'erequisites':+0.119] -['newblock':-0.214, 'ellido':-0.200, 'dni':-0.198, ' InputDecoration':-0.198]
+L04 attn raw   +[' utrzym':+0.147, 'ithub':+0.141, 'ablemente':+0.136, 'xcs':+0.133] -[' betting':-0.155, ' TUR':-0.154, ' drew':-0.150, ' winner':-0.150]
+          scaled +['setPrototypeOf':+0.166, ' indexRouter':+0.154, 'vegarde':+0.140, 'roweak':+0.138] -['dni':-0.196, 'newblock':-0.194, 'VIDOR':-0.193, 'labelledby':-0.191]
+L05 mlp raw   +[' homer':+0.187, ' honorary':+0.180, 'comed':+0.178, ' outta':+0.174] -['antly':-0.119, ' strony':-0.111, ' comprender':-0.111, 'ennom':-0.109]
+          scaled +['is':+0.096, 'will':+0.091, 'roweak':+0.089, 'imitives':+0.089] -['newblock':-0.194, ' magnetores':-0.190, 'VIDOR':-0.182, 'ohner':-0.181]
+L05 attn raw   +[' poolside':+0.126, 'adiator':+0.122, ' rowing':+0.122, ' amongst':+0.117] -[' Serrurier':-0.160, ' kunci':-0.159, ' sorpresa':-0.154, ' dosta':-0.147]
+          scaled +['setPrototypeOf':+0.149, ' indexRouter':+0.144, 'requireNonNull':+0.138, 'ocatore':+0.137] -['dni':-0.160, 'labelledby':-0.139, 'thiaz':-0.138, 'diphenyl':-0.137]
+L06 mlp raw   +[' domanda':+0.110, 'arily':+0.108, 'adena':+0.107, 'ubis':+0.106] -[' mammals':-0.169, ' outta':-0.162, ' Wellbeing':-0.158, ' Marconi':-0.156]
+          scaled +['is':+0.107, 'ar':+0.106, 'ed':+0.106, 'custom':+0.104] -['hipi':-0.194, 'GLISH':-0.182, 'aturamento':-0.168, 'stackpath':-0.165]
+L06 attn raw   +[' confund':+0.108, 'quired':+0.107, ' conflicto':+0.107, 'opia':+0.104] -[' outta':-0.174, ' honorary':-0.165, ' ovation':-0.162, ' Marginal':-0.162]
+          scaled +[' stored':+0.135, 'IsTrue':+0.134, 'stored':+0.122, ' ls':+0.120] -['newblock':-0.194, 'ojas':-0.181, 'raje':-0.170, 'hipi':-0.167]
+L07 mlp raw   +[' example':+0.105, ' zina':+0.104, ' mismas':+0.096, ' steeper':+0.093] -[' delegate':-0.180, 'informatics':-0.178, ' pampered':-0.175, ' organiz':-0.174]
+          scaled +['al':+0.160, 'te':+0.156, 'en':+0.154, 'ion':+0.154] -[' FileReader':-0.160, ' abra':-0.152, ' FormData':-0.152, ' lahat':-0.146]
+L07 attn raw   +[' organising':+0.208, ' unordered':+0.184, ' envoy':+0.181, ' Secretariat':+0.173] -[' veal':-0.124, ' sidewalks':-0.112, 'rence':-0.111, 'ests':-0.109]
+          scaled +['ppard':+0.172, ' polynucle':+0.166, 'arante':+0.164, 'aspx':+0.152] -[' happiest':-0.138, ' anyone':-0.131, ' exhale':-0.127, ' coming':-0.127]
+L08 mlp raw   +[' weighted':+0.179, 'criptive':+0.175, 'COORD':+0.170, ' endow':+0.167] -['pyraz':-0.117, 'nja':-0.106, 'alleng':-0.105, ' foro':-0.105]
+          scaled +[' Land':+0.200, ' history':+0.189, ' you':+0.188, ' existence':+0.187] -['rictions':-0.086, ' BrowserWindow':-0.080, ' xhrObj':-0.076, ' samtidig':-0.072]
+L08 attn raw   +[' estaven':+0.156, 'uffled':+0.149, ' Classifier':+0.146, 'netics':+0.144] -['opia':-0.123, ' menores':-0.107, 'less':-0.105, ' pagk':-0.105]
+          scaled +['foundland':+0.106, 'setPrototypeOf':+0.089, 'itriangular':+0.086, 'romino':+0.085] -['eqa':-0.206, 'infini':-0.205, 'dni':-0.192, ' tue':-0.190]
+L09 mlp raw   +[' comforting':+0.197, ' emphatic':+0.195, ' organising':+0.194, ' personalised':+0.191] -['ariamente':-0.098, 'baarheid':-0.098, 'opia':-0.098, 'plicht':-0.095]
+          scaled +[' personnelles':+0.231, ' Guerr':+0.221, ' Forestry':+0.216, ' McM':+0.214] -['pless':-0.053, 'setPrototypeOf':-0.052, ' but':-0.044, ' dels':-0.041]
+L09 attn raw   +['incorrect':+0.133, 'less':+0.129, 'third':+0.126, 'enn':+0.122] -[' absor':-0.154, ' authorise':-0.149, ' raff':-0.149, 'quard':-0.147]
+          scaled +['ka':+0.206, ' ka':+0.205, ' Fac':+0.201, ' han':+0.200] -['otard':-0.074, 'ruvic':-0.071, ' titrated':-0.058, 'oglobine':-0.058]
+L10 mlp raw   +['oclip':+0.119, 'ObjectURL':+0.118, 'clave':+0.111, ' suele':+0.107] -[' metabolic':-0.173, ' Computational':-0.170, ' Rowing':-0.169, ' athletic':-0.168]
+          scaled +[' remove':+0.188, ' employee':+0.182, 'll':+0.180, 'pp':+0.180] -['ObjectHideFlags':-0.108, 'CodeAttribute':-0.089, 'igheder':-0.088, ' bson':-0.087]
+L10 attn raw   +[' genomics':+0.178, ' Integrative':+0.178, ' endowments':+0.175, ' personalised':+0.175] -['atism':-0.093, 'ijks':-0.090, 'opia':-0.087, ' remainder':-0.086]
+          scaled +[' spp':+0.250, ' Fame':+0.249, ' McM':+0.245, ' MAST':+0.242] -['patx':-0.017, ' iako':-0.000, 'ArgumentParser':+0.001, ' crucially':+0.001]
+L11 mlp raw   +[' aide':+0.174, ' Madison':+0.170, 'USDA':+0.166, 'ecd':+0.165] -['umption':-0.133, 'uance':-0.123, ' bestaan':-0.121, 'eworld':-0.110]
+          scaled +['AIC':+0.164, 'Vue':+0.144, ' minute':+0.141, ' MDF':+0.138] -[' Chil':-0.111, 'ologi':-0.105, 'cari':-0.103, ' CHARSET':-0.102]
+L11 attn raw   +['trek':+0.119, 'bation':+0.116, 'booked':+0.116, 'ManyToManyField':+0.114] -[' perspiration':-0.157, ' muscular':-0.155, ' ferritin':-0.152, ' complexion':-0.150]
+          scaled +[' CTS':+0.127, ' KUM':+0.107, ' Chil':+0.107, ' Heter':+0.104] -[' McM':-0.143, ' McE':-0.142, 'eg':-0.134, ' McKay':-0.129]
+L12 mlp raw   +[' emocional':+0.158, 'koord':+0.147, 'irties':+0.141, 'oreal':+0.139] -[' ua':-0.157, ' Hik':-0.157, 'Tag':-0.152, 'Roll':-0.152]
+          scaled +['reshold':+0.181, ' peroxidation':+0.181, ' bottomLeft':+0.178, ' splitpos':+0.178] -[' IS':-0.148, ' Is':-0.140, ' Der':-0.138, 'Is':-0.135]
+L12 attn raw   +['umption':+0.139, ' eigenvalue':+0.134, 'olerance':+0.130, 'enance':+0.129] -[' aide':-0.163, ' acetaminophen':-0.152, 'uvieron':-0.150, ' negotiators':-0.149]
+          scaled +[' Huz':+0.124, 'pol':+0.122, 'Pol':+0.121, ' pol':+0.117] -[' McLean':-0.147, 'illus':-0.135, ' Mazz':-0.135, ' McGrath':-0.134]
+L13 mlp raw   +['Carbon':+0.199, 'Pack':+0.198, 'Shiv':+0.196, 'Cer':+0.195] -['intang':-0.116, 'irsi':-0.113, 'injured':-0.110, ' desesper':-0.109]
+          scaled +['ictus':+0.150, ' subjet':+0.144, ' entendimento':+0.143, ' empie':+0.140] -[' Sek':-0.211, 'Pol':-0.193, ' Sp':-0.193, 'Sp':-0.188]
+L13 attn raw   +[' escalas':+0.143, ' Debye':+0.141, ' independientes':+0.131, 'gleichen':+0.131] -[' Cllr':-0.158, 'Cllr':-0.155, ' ZA':-0.154, ' stamping':-0.154]
+          scaled +[' Rat':+0.166, ' Por':+0.163, ' AD':+0.158, 'Por':+0.157] -['cego':-0.140, ' discapac':-0.138, 'wender':-0.136, 'emers':-0.135]
+L14 mlp raw   +[' yeh':+0.237, ' wijn':+0.219, 'Confirm':+0.213, 'Stack':+0.213] -['entingan':-0.098, 'isierten':-0.097, ' disabilities':-0.086, 'izable':-0.083]
+          scaled +['izable':+0.116, 'izowane':+0.083, 'isable':+0.081, 'azionali':+0.073] -['Quad':-0.322, 'Hr':-0.321, 'Folder':-0.303, 'Kr':-0.298]
+L14 attn raw   +[' negotiators':+0.115, ' negotiator':+0.111, ' Manuscripts':+0.106, ' LEED':+0.102] -['Colour':-0.175, ' suspension':-0.167, 'fulness':-0.163, 'Night':-0
+[output cut at 15,000 characters]
+```

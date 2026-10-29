@@ -1,0 +1,118 @@
+OUTPUT of run 14 of at most 60:
+```
+LATE MLP NUMERIC COEFFICIENT MATRICES
+Output rows are centered among ten numbers; input columns are not centered.
+Column-constant part = association with common numeric input direction.
+Column-varying part = sensitivity to which input number.
+These are up/down WEIGHT products with the gate omitted, NOT model logits.
+
+layer 3 raw all bias_energy_fraction 0.9306 identity_alignment 0.1575 mean_identity_diagonal 7.1e-05
+common-input coefficient change by output digit 0..9: [ 1.98691e-04 -3.00118e-04 -7.22615e-04 -1.02743e-03  2.43626e-04  3.35203e-04 -9.04026e-05 -1.10856e-04  5.59350e-04  9.14535e-04]
+same-number-sensitive diagonal change: [-8.89189e-05 -2.49575e-05  3.71163e-04  9.15115e-05  7.08255e-05 -3.32693e-05  3.49196e-05 -8.91440e-05  1.49633e-04  2.30571e-04]
+
+layer 3 raw digit_gate_top10 bias_energy_fraction 0.9022 identity_alignment -0.2198 mean_identity_diagonal -8e-06
+common-input coefficient change by output digit 0..9: [-7.07783e-05  7.00761e-05  1.75916e-05  2.38032e-05 -1.88070e-05 -4.63093e-06  2.34668e-05  1.09363e-05 -1.45007e-05 -3.71572e-05]
+same-number-sensitive diagonal change: [ 1.12767e-05 -2.78335e-05 -2.09532e-05  1.12528e-06 -3.10508e-06 -9.78238e-06 -4.42130e-06 -7.64092e-06 -5.61608e-06 -1.26083e-05]
+
+layer 3 scaled all bias_energy_fraction 0.9227 identity_alignment 0.0986 mean_identity_diagonal 0.49999
+common-input coefficient change by output digit 0..9: [-3.58355 -9.45151 -2.77956 -6.8783  -2.40392  2.4513   0.34959  5.40304  8.96532  7.92751]
+same-number-sensitive diagonal change: [-1.10411  4.51394  0.99611 -0.4584  -2.11458 -1.18358  0.95441 -1.21029  2.40881  2.19758]
+
+layer 3 scaled digit_gate_top10 bias_energy_fraction 0.7548 identity_alignment -0.2466 mean_identity_diagonal -0.126722
+common-input coefficient change by output digit 0..9: [-0.31093  0.71684  0.21663  0.15366  0.0765  -0.38324 -0.01652 -0.15412 -0.16394 -0.13485]
+same-number-sensitive diagonal change: [ 0.20097 -0.70109 -0.34298 -0.0756   0.06045 -0.08795  0.07718 -0.13817 -0.07969 -0.18034]
+
+layer 12 raw all bias_energy_fraction 0.8562 identity_alignment 0.1755 mean_identity_diagonal 0.000122
+common-input coefficient change by output digit 0..9: [ 0.00032 -0.00103 -0.00017 -0.00095  0.00035 -0.0003   0.00067  0.00045  0.00017  0.00049]
+same-number-sensitive diagonal change: [-1.92207e-04  4.53113e-04 -2.36403e-05  1.51759e-04 -9.83820e-05  4.31343e-05  1.96276e-04  2.14329e-04  1.09810e-04  3.67410e-04]
+
+layer 12 raw digit_gate_top10 bias_energy_fraction 0.6646 identity_alignment 0.0202 mean_identity_diagonal 1e-06
+common-input coefficient change by output digit 0..9: [-6.56450e-06 -2.61411e-05  5.21192e-06  1.45920e-05  4.00053e-06  1.13679e-05  3.86811e-06 -1.70499e-05 -1.33509e-06  1.20503e-05]
+same-number-sensitive diagonal change: [ 2.20360e-05  2.78322e-06 -2.13827e-05 -6.47183e-06  1.77019e-06 -2.68300e-06  2.04164e-06  9.33298e-06  8.85612e-06 -1.09018e-05]
+
+layer 12 scaled all bias_energy_fraction 0.9738 identity_alignment 0.1409 mean_identity_diagonal 1.501922
+common-input coefficient change by output digit 0..9: [  9.04195 -30.40616  -0.94228 -40.28896   1.86491 -20.00784  17.62031  18.03276  23.12574  21.95904]
+same-number-sensitive diagonal change: [ 3.27337  7.83044 -0.78872 -1.50441 -0.32993 -1.679    2.16605  1.9427   0.67524  3.43347]
+
+layer 12 scaled digit_gate_top10 bias_energy_fraction 0.9313 identity_alignment 0.1337 mean_identity_diagonal 0.036318
+common-input coefficient change by output digit 0..9: [-0.35825  0.05004  0.6577   0.32452 -0.24539 -0.02671 -0.3443  -0.42286  0.27411  0.09114]
+same-number-sensitive diagonal change: [ 0.29822 -0.10293 -0.21106  0.12809  0.04481  0.01924 -0.02945  0.1034   0.06982  0.04304]
+
+layer 15 raw all bias_energy_fraction 0.8641 identity_alignment 0.1257 mean_identity_diagonal 9.3e-05
+common-input coefficient change by output digit 0..9: [-7.74270e-04 -2.75614e-04 -5.96793e-04 -9.13244e-04 -1.16605e-04  4.36247e-04 -1.56308e-05  9.40587e-04  6.06252e-04  7.09086e-04]
+same-number-sensitive diagonal change: [-1.41164e-04 -1.71430e-04  6.41877e-04 -3.70726e-05  8.75105e-06  2.13938e-04  2.76198e-04  3.13109e-04  3.98088e-06 -1.83027e-04]
+
+layer 15 raw digit_gate_top10 bias_energy_fraction 0.8807 identity_alignment 0.0027 mean_identity_diagonal 0.0
+common-input coefficient change by output digit 0..9: [ 1.38863e-04  2.78934e-05 -1.36564e-04 -1.53904e-04  3.47688e-05 -1.03313e-05  4.56182e-05 -4.26855e-05  8.15397e-05  1.48028e-05]
+same-number-sensitive diagonal change: [ 8.72979e-06 -3.44959e-06 -2.86087e-05 -2.82666e-05  1.69144e-05  1.65677e-06  2.46584e-07 -1.17888e-05  1.32542e-05  3.38478e-05]
+
+layer 15 scaled all bias_energy_fraction 0.9696 identity_alignment 0.0648 mean_identity_diagonal 0.622055
+common-input coefficient change by output digit 0..9: [ 13.39133  -8.92619 -34.43321 -19.82127  -8.78738  17.30882  -8.08176  23.13984   5.81734  20.39313]
+same-number-sensitive diagonal change: [-5.81471 -3.19148  9.48352 -0.0209  -0.22298  2.00541  0.89916  3.68454  1.94015 -2.54218]
+
+layer 15 scaled digit_gate_top10 bias_energy_fraction 0.9612 identity_alignment -0.1243 mean_identity_diagonal -0.164703
+common-input coefficient change by output digit 0..9: [ 4.1784   0.05313 -2.73508 -3.95167  0.01501 -0.26792  1.28719 -1.1468   2.12361  0.44414]
+same-number-sensitive diagonal change: [-1.0629  -0.28658 -0.06673 -0.30068 -0.02128 -0.04792  0.07605 -0.31366  0.22255  0.15413]
+
+layer 16 raw all bias_energy_fraction 0.8072 identity_alignment 0.0078 mean_identity_diagonal 1e-05
+common-input coefficient change by output digit 0..9: [ 6.56300e-05 -1.44695e-03 -1.16655e-03 -2.62003e-04  4.08249e-04  1.72796e-03  1.74193e-05  6.98650e-04 -9.08066e-05  4.84118e-05]
+same-number-sensitive diagonal change: [ 3.68599e-04 -9.11952e-05  6.64999e-04 -2.88001e-04 -1.83348e-04  6.76600e-04 -5.52942e-04  2.43913e-04 -9.52201e-05 -6.47012e-04]
+
+layer 16 raw digit_gate_top10 bias_energy_fraction 0.4089 identity_alignment 0.1266 mean_identity_diagonal 5.9e-05
+common-input coefficient change by output digit 0..9: [ 9.75795e-07 -2.35246e-04 -1.04653e-04  1.51771e-04  1.68963e-04  1.83722e-04 -5.63366e-05  3.05817e-05 -5.11977e-05 -8.85832e-05]
+same-number-sensitive diagonal change: [ 3.30993e-04  2.56498e-04  1.55417e-05 -7.89440e-07  1.38229e-05  4.11094e-05  5.17268e-05  8.42835e-05  8.98242e-06 -2.13366e-04]
+
+layer 16 scaled all bias_energy_fraction 0.9468 identity_alignment 0.0088 mean_identity_diagonal 0.12152
+common-input coefficient change by output digit 0..9: [  6.06108 -23.22526 -14.71042 -10.8856    4.26103  42.52768  -2.76575  18.07059 -25.03383   5.70049]
+same-number-sensitive diagonal change: [ 3.47606  0.26661 -3.13466  7.54332 -0.94048  5.42893  0.65789  2.49312 -6.45005 -8.12554]
+
+layer 16 scaled digit_gate_top10 bias_energy_fraction 0.8978 identity_alignment 0.226 mean_identity_diagonal 0.595613
+common-input coefficient change by output digit 0..9: [-1.54739 -4.66656 -2.99436  2.75653  3.00798  3.76735 -1.3886   1.19601  0.40454 -0.53552]
+same-number-sensitive diagonal change: [ 2.3691   1.68214  0.73628  0.14442  0.00473  0.72661  0.11204  0.52656  0.38484 -0.73059]
+
+layer 17 raw all bias_energy_fraction 0.8981 identity_alignment -0.0366 mean_identity_diagonal -6.2e-05
+common-input coefficient change by output digit 0..9: [ 0.00093  0.00235  0.00254  0.00074 -0.00097  0.00081 -0.00071 -0.00082 -0.00281 -0.00206]
+same-number-sensitive diagonal change: [-2.47455e-03 -1.61264e-05  2.59345e-04 -2.38697e-04 -1.19229e-05 -6.86922e-05  1.52870e-04 -4.33799e-05  8.69145e-06  1.81099e-03]
+
+layer 17 raw digit_gate_top10 bias_energy_fraction 0.2607 identity_alignment -0.3492 mean_identity_diagonal -0.000304
+common-input coefficient change by output digit 0..9: [-1.69268e-05  3.11047e-04  1.30459e-04  9.93604e-05 -4.62661e-05 -1.97882e-04 -1.90013e-05 -3.37756e-04 -4.49683e-05  1.21934e-04]
+same-number-sensitive diagonal change: [-1.53556e-03 -8.85102e-04 -3.50054e-04  1.04211e-04  3.46568e-05 -1.60562e-04  4.06684e-05 -2.12675e-04 -8.38156e-05  1.08122e-05]
+
+layer 17 scaled all bias_energy_fraction 0.9847 identity_alignment 0.0077 mean_identity_diagonal 0.132009
+common-input coefficient change by output digit 0..9: [ 14.09953  73.52202  58.41056   0.1105  -54.36368  38.12892  -7.4555   -7.45111 -79.07284 -35.92824]
+same-number-sensitive diagonal change: [-6.86527  2.78732 -1.29933 -0.36043 -2.19731  2.73258  1.8779  -0.13877 -3.5039   8.28729]
+unit subset: all 2048
+full B-A matrix: rows output digits, columns input digits
+[[  7.2343  18.7662  23.801   18.8939  20.3277  20.3377  12.1278   7.3081   8.5389   3.6597]
+ [ 66.6932  76.3093  58.7761  77.6112  81.1567  81.5652  74.5658  78.7347  74.1691  65.6389]
+ [ 42.8659  68.4439  57.1112  61.6025  57.6989  58.6053  63.0129  63.8963  61.4064  49.4623]
+ [ -3.3041   4.3941   0.9381  -0.2499  -2.9384   0.8832   1.6117  -0.6708  -0.638    1.0791]
+ [-42.6653 -51.8994 -48.1051 -57.6594 -56.561  -60.7052 -56.4256 -62.3163 -58.4973 -48.8022]
+ [ 31.6347  29.7125  35.4664  39.1263  42.371   40.8615  42.103   38.8273  41.5371  39.6494]
+ [-12.3939 -19.3032  -6.9837  -8.8757  -2.0032  -7.5623  -5.5776  -3.468   -5.1396  -3.2477]
+ [ -2.9388 -15.802   -6.0295  -9.3872  -9.2024  -8.1881  -7.6562  -7.5899  -6.3216  -1.3954]
+ [-62.591  -78.3701 -73.4688 -80.604  -83.1523 -85.7344 -84.433  -81.395  -82.5767 -78.4031]
+ [-24.5347 -32.2512 -41.5056 -40.4574 -47.6969 -40.0627 -39.3286 -33.3263 -32.4781 -27.6409]]
+number-word output common-input changes: [ 26.89877  52.8053   26.84152  -8.54532 -38.58497  22.45152   1.53974 -21.30321 -38.29282 -23.81067]
+
+layer 17 scaled digit_gate_top10 bias_energy_fraction 0.8974 identity_alignment -0.3647 mean_identity_diagonal -2.688377
+common-input coefficient change by output digit 0..9: [  0.28934  15.42937   7.44061   2.10277  -0.05432  -5.26748  -3.08562 -12.99905  -4.82226   0.96663]
+same-number-sensitive diagonal change: [-10.71099  -7.12127  -2.95026   0.25965   0.15778  -1.62846  -0.38194  -3.1044   -1.29642  -0.10747]
+unit subset: [824, 883, 1309, 750, 1027, 1180, 234, 779, 1242, 57]
+full B-A matrix: rows output digits, columns input digits
+[[-10.4216   4.6045   0.1745   0.9974  -0.1553   2.0361   1.4435   2.5646   0.5473   1.1023]
+ [  7.4481   8.3081  10.223   16.4302  17.3971  19.6833  17.5393  20.5166  19.1456  17.6024]
+ [  5.6028   4.4564   4.4903   7.0957   7.9361   9.2857   8.6261   9.4982   9.078    8.3368]
+ [  3.7974  -1.4309   2.1902   2.3624   2.7564   2.2963   2.7287   2.1344   2.2812   1.9116]
+ [  1.8414  -0.9691  -0.37    -0.1545   0.1035  -0.281    0.4984  -0.5236  -0.264   -0.4242]
+ [  1.2775  -4.7185  -4.5672  -6.1569  -5.8037  -6.8959  -5.975   -7.3901  -6.4578  -5.9871]
+ [ -0.3472  -1.5077  -2.1255  -3.4273  -3.4729  -4.3945  -3.4676  -4.5091  -4.0378  -3.5666]
+ [ -7.3389 -10.737   -8.9963 -13.2507 -13.7316 -15.1724 -14.8818 -16.1034 -15.4252 -14.3531]
+ [ -4.1075  -1.4459  -2.1297  -4.4721  -5.2545  -6.3546  -6.3367  -6.5219  -6.1187  -5.4812]
+ [  2.2481   3.4402   1.1106   0.5757   0.225   -0.2029  -0.1751   0.3343   1.2513   0.8592]]
+number-word output common-input changes: [ 2.33616 14.51101  5.50552  0.36547 -0.55231 -4.2929  -2.53321 -9.28726 -4.99804 -1.05439]
+
+A preference among numeric coefficient directions does not tell us
+whether those numbers are the user's guesses or the correct answers.
+
+```

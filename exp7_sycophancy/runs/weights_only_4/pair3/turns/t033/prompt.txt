@@ -1,0 +1,80 @@
+OUTPUT of run 28 of at most 60:
+```
+=== NEW HYPOTHESIS: FEATURE-ALIGNED RECENCY AND TRANSPORT ===
+All matrices are restricted to an orthonormal nine-dimensional numerical weight subspace.
+A positive-definite symmetric OV part would preserve self-alignment
+for every direction in that subspace, irrespective of any actual input.
+This is a matrix property, not an observed head output.
+QK recency matrices omit softmax and state-dependent normalization.
+
+=== PRE-SPECIFIED HEADS: WHOLE-SUBSPACE TRANSPORT AND RECENCY ALIGNMENT ===
+OV positive eigenvalue counts describe midpoint-independent A/B matrix properties.
+B/A support: OV coorientation on B/A-favoured recency directions, scaled to [-1,1].
+These support scores are NOT behavioural probabilities.
+ L H mode window  OVpos_A/B  recency_trace_delta  positive_mass_fraction  B_support  A_support  anisotropic_update_cos
+ 1 0 raw       0 8/8           -0.002336289                 0.28806    +0.4973    +0.2518                  +0.0240
+ 1 0 raw       1 8/8            -0.00168113                 0.37602    +0.4501    +0.4290                  -0.0395
+ 1 0 raw       2 8/8           -0.002350453                 0.31914    +0.5106    +0.3186                  +0.0006
+ 1 0 diag      0 6/6              -9.189149                 0.32355    +0.0831    +0.2746                  -0.1795
+ 1 0 diag      1 6/6              -6.560492                 0.37883    +0.1879    +0.1892                  -0.1441
+ 1 0 diag      2 6/6              -6.919515                 0.37134    +0.1918    +0.1578                  -0.1753
+ 1 1 raw       0 5/5           +0.003473211                 0.62142    -0.2126    +0.1042                  +0.4057
+ 1 1 raw       1 5/5          +4.734705e-05                 0.50125    -0.2175    +0.0314                  +0.2784
+ 1 1 raw       2 5/5           +0.001316976                 0.53677    -0.1974    +0.0264                  +0.2621
+ 1 1 diag      0 4/4              +23.48235                 0.64568    -0.1094    -0.2876                  +0.2250
+ 1 1 diag      1 4/4              +8.866457                 0.54108    -0.1234    -0.2084                  +0.1086
+ 1 1 diag      2 4/4              +10.24834                 0.54978    -0.1546    -0.1507                  +0.0910
+15 3 raw       0 9/9          -0.0001683342                 0.48300    +0.5324    +0.6839                  -0.3542
+15 3 raw       1 9/9          -0.0009775512                 0.40882    +0.5444    +0.5977                  -0.5400
+15 3 raw       2 9/9           -0.001375056                 0.36749    +0.5701    +0.6066                  -0.5721
+15 3 diag      0 9/9              -1.650842                 0.38421    +0.5530    +0.5112                  +0.3645
+15 3 diag      1 9/9              +2.873196                 0.66574    +0.5803    +0.5402                  -0.2111
+15 3 diag      2 9/9              +0.859776                 0.54788    +0.5402    +0.6257                  -0.0979
+16 2 raw       0 7/7           -0.002383851                 0.30103    +0.2499    +0.4165                  -0.0197
+16 2 raw       1 7/7           -0.004305567                 0.19314    +0.1476    +0.4134                  +0.1708
+16 2 raw       2 7/7           -0.003346423                 0.24133    +0.1766    +0.4325                  -0.0124
+16 2 diag      0 6/6               -6.57245                 0.35945    +0.3016    +0.3390                  +0.1498
+16 2 diag      1 6/6              -11.26247                 0.28457    +0.2246    +0.3848                  -0.1392
+16 2 diag      2 6/6              -8.887975                 0.35094    +0.0630    +0.3921                  -0.0733
+17 0 raw       0 3/3          +0.0001600611                 0.52207    -0.2106    -0.2162                  +0.1043
+17 0 raw       1 3/3          +0.0002100251                 0.53184    -0.2399    -0.0624                  +0.1901
+17 0 raw       2 3/3          -0.0002514476                 0.45828    -0.2754    -0.0245                  +0.0318
+17 0 diag      0 4/4              +1.765984                 0.78961    -0.2353    +0.2285                  -0.0208
+17 0 diag      1 4/4              +1.238476                 0.67457    -0.2732    +0.2115                  +0.0553
+17 0 diag      2 4/4             +0.3948207                 0.56059    -0.2825    +0.2592                  +0.2169
+17 1 raw       0 9/9          +0.0002996881                 0.53466    +0.5831    +0.6917                  -0.1621
+17 1 raw       1 9/9          +0.0003732547                 0.54699    +0.6073    +0.6058                  -0.0208
+17 1 raw       2 9/9          +0.0003737651                 0.54903    +0.6152    +0.6398                  -0.0217
+17 1 diag      0 9/9              +4.280568                 0.83207    +0.8358    +0.4563                  +0.2953
+17 1 diag      1 9/9              +5.187904                 0.83969    +0.8314    +0.4642                  +0.1917
+17 1 diag      2 9/9              +4.383489                 0.79177    +0.7929    +0.4893                  +0.1052
+
+=== L17 H1: EIGENVALUE DETAIL ===
+raw near1_4_far17_32
+ A numerical OV symmetric eigenvalues: [0.1513 0.1739 0.2082 0.2194 0.2278 0.2454 0.2964 0.3369 0.4185]
+ B numerical OV symmetric eigenvalues: [0.1512 0.1738 0.2077 0.2202 0.2278 0.2457 0.2982 0.3381 0.4193]
+ B-A numerical recency symmetric eigenvalues: [-0.0012 -0.0006 -0.0002 -0.0001  0.0001  0.0003  0.0004  0.0006  0.001 ]
+raw near1_8_far65_128
+ B-A numerical recency symmetric eigenvalues: [-0.0008 -0.0004 -0.0003 -0.0002 -0.0001  0.      0.0003  0.0007  0.0011]
+raw near1_16_far129_256
+ B-A numerical recency symmetric eigenvalues: [-0.0008 -0.0005 -0.0002 -0.0002  0.      0.0002  0.0002  0.0006  0.0011]
+diag near1_4_far17_32
+ A numerical OV symmetric eigenvalues: [1920.7889 3051.7411 3444.7213 3961.8361 4696.0606 5228.3825 6491.5325 7656.1252 9517.1622]
+ B numerical OV symmetric eigenvalues: [1916.7551 3032.5214 3422.8874 3957.3642 4710.7008 5246.5787 6516.886  7672.2625 9542.139 ]
+ B-A numerical recency symmetric eigenvalues: [-0.6116 -0.2628 -0.1366 -0.0714  0.0002  0.0879  0.2605  0.4772  4.537 ]
+diag near1_8_far65_128
+ B-A numerical recency symmetric eigenvalues: [-0.7962 -0.2528 -0.1554 -0.0198  0.0227  0.0962  0.3082  0.9093  5.0757]
+diag near1_16_far129_256
+ B-A numerical recency symmetric eigenvalues: [-0.9302 -0.2522 -0.2081 -0.139  -0.0347  0.1225  0.2471  1.0302  4.5479]
+
+=== ROTATION CONTROLS FOR FEATURE-SPECIFIC UPDATE ALIGNMENT ===
+Random rotations preserve the OV-update eigenvalues but destroy alignment
+with the recency-update eigendirections. These are weight-matrix controls only.
+(15, 3) raw anisotropic cosine -0.54 rotation-control z -3.532 percentile 0.0
+(15, 3) diag anisotropic cosine -0.2111 rotation-control z -1.471 percentile 0.0633
+(16, 2) raw anisotropic cosine 0.1708 rotation-control z 1.152 percentile 0.87
+(16, 2) diag anisotropic cosine -0.1392 rotation-control z -0.908 percentile 0.1833
+(17, 1) raw anisotropic cosine -0.0208 rotation-control z -0.168 percentile 0.4408
+(17, 1) diag anisotropic cosine 0.1917 rotation-control z 1.298 percentile 0.8992
+
+```

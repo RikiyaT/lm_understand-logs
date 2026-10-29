@@ -1,0 +1,73 @@
+OUTPUT of run 13 of at most 60:
+```
+=== EXACT LEARNED-GAIN ZERO CROSSINGS ===
+Gain = 1 + stored Gemma norm weight.
+A zero post-normalization gain suppresses that output coordinate,
+but does NOT eliminate its upstream contribution to the RMS denominator.
+Changed gain entries: 1044
+Zero -> nonzero: 0
+Nonzero -> zero: 0
+Nonzero sign flips: 0
+Completed gain/projection decomposition for layer 0
+Completed gain/projection decomposition for layer 1
+Completed gain/projection decomposition for layer 2
+Completed gain/projection decomposition for layer 3
+Completed gain/projection decomposition for layer 4
+Completed gain/projection decomposition for layer 5
+Completed gain/projection decomposition for layer 6
+Completed gain/projection decomposition for layer 7
+Completed gain/projection decomposition for layer 8
+Completed gain/projection decomposition for layer 9
+Completed gain/projection decomposition for layer 10
+Completed gain/projection decomposition for layer 11
+Completed gain/projection decomposition for layer 12
+Completed gain/projection decomposition for layer 13
+Completed gain/projection decomposition for layer 14
+Completed gain/projection decomposition for layer 15
+Completed gain/projection decomposition for layer 16
+Completed gain/projection decomposition for layer 17
+
+=== LEARNED-GAIN VERSUS PROJECTION DIFFERENCE DECOMPOSITION ===
+Each pair: gain signed attribution, gain-term norm / total-difference norm.
+Projection signed attribution is exactly 1 minus gain signed attribution.
+OV and QK are aggregated across heads; QK uses all RoPE frequency coefficients.
+MLP quantities sum unitwise three-way connection-tensor energies.
+No state-dependent denominator or nonlinear activation is evaluated.
+L | OV_gain_share OV_gain_norm_ratio | QK_gain_share QK_gain_norm_ratio | MLP_gain_share MLP_gain_norm_ratio
+ 0 | +9.410407e-07 1.397508e-03 | +1.684547e-05 2.985910e-03 | +9.154678e-06 2.720479e-03
+ 1 | +2.653968e-07 4.124422e-04 | +0.000000e+00 0.000000e+00 | +7.026255e-07 6.735510e-04
+ 2 | +5.459066e-06 1.967784e-03 | +1.019406e-04 8.155455e-03 | +7.735541e-09 8.097548e-05
+ 3 | +2.106927e-07 3.312484e-04 | +2.202603e-04 1.186551e-02 | +2.564279e-08 1.462789e-04
+ 4 | +1.574385e-07 2.422196e-04 | +2.899782e-05 4.304576e-03 | +1.429025e-08 1.645155e-04
+ 5 | -1.436395e-08 1.095528e-04 | +4.966624e-05 3.245013e-03 | +1.656978e-07 2.792815e-04
+ 6 | +8.670220e-08 1.503780e-04 | +2.697109e-04 1.293127e-02 | +8.782277e-07 6.027809e-04
+ 7 | +6.573637e-08 2.005521e-04 | +1.406308e-04 8.577263e-03 | +1.544043e-06 9.962308e-04
+ 8 | +4.963145e-08 1.002350e-04 | +5.654863e-05 5.494923e-03 | +2.524661e-07 5.312742e-04
+ 9 | +2.555054e-08 1.782869e-04 | +8.748212e-05 9.651091e-03 | +1.798670e-06 1.149828e-03
+10 | +2.192857e-09 5.335882e-05 | +8.380443e-05 6.933125e-03 | +7.287429e-07 7.944988e-04
+11 | +1.889355e-07 3.192632e-04 | +2.460451e-05 4.691081e-03 | +2.223189e-07 4.182684e-04
+12 | +1.058504e-08 7.431954e-05 | -7.635007e-06 2.278939e-03 | +1.936839e-06 1.274090e-03
+13 | +5.530348e-08 1.848565e-04 | +5.127279e-05 5.689214e-03 | +2.310440e-06 1.413108e-03
+14 | +8.824894e-08 2.137338e-04 | +3.402869e-05 5.073716e-03 | +4.062498e-06 1.826704e-03
+15 | +1.623341e-09 1.844699e-05 | +7.552785e-05 7.149715e-03 | +6.452378e-06 2.306166e-03
+16 | +0.000000e+00 0.000000e+00 | +6.814891e-05 6.091782e-03 | +2.311617e-06 1.521945e-03
+17 | +0.000000e+00 0.000000e+00 | +1.919784e-04 9.132928e-03 | +5.566795e-06 2.245439e-03
+
+=== MLP UNITS WITH HIGHEST GAIN-TERM / TOTAL-DIFFERENCE NORM RATIO ===
+L0 U1812: gain_norm_ratio=0.00771137, gain_signed_share=+0.000138146, total_product_delta_norm=0.550371
+L0 U691: gain_norm_ratio=0.00732357, gain_signed_share=+0.000209268, total_product_delta_norm=0.629097
+L0 U1022: gain_norm_ratio=0.00720764, gain_signed_share=+6.28252e-05, total_product_delta_norm=0.83552
+L0 U1605: gain_norm_ratio=0.00699521, gain_signed_share=+8.9286e-05, total_product_delta_norm=0.455017
+L0 U342: gain_norm_ratio=0.0068657, gain_signed_share=+4.72685e-05, total_product_delta_norm=0.699764
+L0 U1178: gain_norm_ratio=0.00678694, gain_signed_share=+6.6554e-05, total_product_delta_norm=0.900974
+L0 U1922: gain_norm_ratio=0.00666317, gain_signed_share=+3.86938e-05, total_product_delta_norm=0.93674
+L0 U1700: gain_norm_ratio=0.00658671, gain_signed_share=+7.3872e-05, total_product_delta_norm=0.728402
+L0 U1491: gain_norm_ratio=0.00657727, gain_signed_share=+0.000156247, total_product_delta_norm=0.681458
+L0 U203: gain_norm_ratio=0.00653684, gain_signed_share=-0.000116004, total_product_delta_norm=0.781273
+L0 U1878: gain_norm_ratio=0.00653032, gain_signed_share=+7.364e-05, total_product_delta_norm=0.766258
+L0 U194: gain_norm_ratio=0.00652809, gain_signed_share=+6.6345e-05, total_product_delta_norm=0.984435
+
+These are exact algebraic factor allocations for the stated weight products,
+not model interventions or causal allocations of behavior.
+
+```

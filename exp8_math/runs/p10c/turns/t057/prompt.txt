@@ -1,0 +1,37 @@
+OUTPUT of Python run 49 of at most 300:
+```
+Natural-generation direction association:
+8 correct/failed means [0.12600000202655792, 0.32600000500679016] failure AUC 0.94
+11 correct/failed means [0.09000000357627869, 0.3610000014305115] failure AUC 0.952
+15 correct/failed means [0.13300000131130219, 0.6039999723434448] failure AUC 0.942
+16 correct/failed means [0.2540000081062317, 0.8769999742507935] failure AUC 0.944
+19 correct/failed means [0.382999986410141, 1.159999966621399] failure AUC 0.926
+20 correct/failed means [0.5410000085830688, 1.5199999809265137] failure AUC 0.91
+21 correct/failed means [0.5690000057220459, 1.565000057220459] failure AUC 0.901
+22 correct/failed means [0.6769999861717224, 1.74399995803833] failure AUC 0.904
+23 correct/failed means [0.7319999933242798, 1.7359999418258667] failure AUC 0.886
+Safe selected-token weight associations (not a forward pass):
+'Wait' id 13784 association -0.0624
+' Wait' id 13428 association -0.0198
+'Hmm' id 77264 association 0.0332
+'Therefore' id 52971 association -0.0821
+' Therefore' id 14833 association -0.0846
+'So' id 4272 association -0.0523
+' So' id 1987 association -0.0493
+'But' id 3850 association -0.1229
+'Again' id 29396 association -0.0773
+'Finally' id 23201 association 0.0675
+'The' id 760 association -0.0974
+'Thus' id 43022 association -0.0364
+'Check' id 3840 association -0.0809
+'Calculate' id 46270 association 0.0193
+'Next' id 5666 association -0.0512
+'Yes' id 9175 association -0.0812
+'No' id 2665 association -0.0881
+'1' id 16 association -0.1465
+'2' id 17 association -0.1197
+'+' id 10 association -0.1502
+'=' id 28 association -0.0692
+Adjacent protected-direction cosines: [(15, 0.857), (16, 0.927), (17, 0.94), (18, 0.949), (19, 0.93), (20, 0.97), (21, 0.963), (22, 0.89)]
+
+```

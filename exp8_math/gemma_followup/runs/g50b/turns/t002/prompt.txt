@@ -1,0 +1,86 @@
+OUTPUT of Python run 1 of at most 300:
+```
+{
+  "kernel_helpers": {
+    "NAMES": true,
+    "load": true,
+    "load_original": true,
+    "save_edit": true,
+    "drop_edit": true,
+    "edited": true,
+    "tok": true
+  },
+  "paths": {
+    "/model": true,
+    "/practice": true,
+    "/work": true
+  },
+  "gsm8k_train.jsonl": {
+    "count": 7469,
+    "fields": [
+      "answer",
+      "id",
+      "problem",
+      "solution",
+      "source"
+    ],
+    "example_ids": [
+      "gsm8k_train_0",
+      "gsm8k_train_1",
+      "gsm8k_train_2",
+      "gsm8k_train_3",
+      "gsm8k_train_4"
+    ],
+    "levels": {
+      "None": 7469
+    }
+  },
+  "math_train.jsonl": {
+    "count": 7275,
+    "fields": [
+      "answer",
+      "id",
+      "level",
+      "problem",
+      "solution",
+      "source",
+      "subject"
+    ],
+    "example_ids": [
+      "math_train_algebra_0",
+      "math_train_algebra_1",
+      "math_train_algebra_2",
+      "math_train_algebra_3",
+      "math_train_algebra_4"
+    ],
+    "levels": {
+      "Level 5": 2187,
+      "Level 3": 1558,
+      "Level 4": 1652,
+      "Level 1": 556,
+      "Level 2": 1320,
+      "Level ?": 2
+    }
+  },
+  "tensor_count": 236,
+  "layer_0_tensor_names": [
+    "model.layers.0.input_layernorm.weight",
+    "model.layers.0.mlp.down_proj.weight",
+    "model.layers.0.mlp.gate_proj.weight",
+    "model.layers.0.mlp.up_proj.weight",
+    "model.layers.0.post_attention_layernorm.weight",
+    "model.layers.0.post_feedforward_layernorm.weight",
+    "model.layers.0.pre_feedforward_layernorm.weight",
+    "model.layers.0.self_attn.k_norm.weight",
+    "model.layers.0.self_attn.k_proj.weight",
+    "model.layers.0.self_attn.o_proj.weight",
+    "model.layers.0.self_attn.q_norm.weight",
+    "model.layers.0.self_attn.q_proj.weight",
+    "model.layers.0.self_attn.v_proj.weight"
+  ],
+  "eval_prompt_format": "The evaluation prompt, exactly as the model sees it (thinking off), for a problem P:\nPREFIX + P + SUFFIX, with\nPREFIX = '<bos><start_of_turn>user\\n'\nSUFFIX = '\\nPlease reason step by step, and put your final answer within \\\\boxed{}.<end_of_turn>\\n<start_of_turn>model\\n'\nThe model's answer follows SUFFIX directly. To score a text with a teacher-forced pass, send PREFIX + P + SUFFIX + answer as one raw text in \"texts\".\n",
+  "existing_edits": []
+}
+'Read-only inventory complete; no edits or forward passes requested.'
+
+```

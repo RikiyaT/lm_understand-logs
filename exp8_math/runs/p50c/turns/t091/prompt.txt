@@ -1,0 +1,13 @@
+OUTPUT of Python run 49 of at most 300:
+```
+RANDOM CONTROL {"productive": {"branch_delta": 0.0039221659147491055, "per_case": [0.0128, -0.0014, 0.0058, 0.0108, -0.0047, 0.0003], "tail24_delta": -0.000294719822704792}, "repetitive": {"branch_delta": 0.009545517386868596, "per_case": [0.0038, 0.0137, 0.0075, 0.0092, 0.0153, 0.0078], "tail24_delta": 0.0018114381236955523}, "premature_close_logp": [-19.6710147857666, -19.429162979125977]}
+
+GENERATION ROW KEYS ['id', 'source', 'answer', 'samples']
+{'id': 'gsm8k_train_2805', 'source': 'gsm8k', 'answer': '23'}
+{'id': 'gsm8k_train_1766', 'source': 'gsm8k', 'answer': '153'}
+
+WRITER SUBSET STRUCTURE
+15 (64,)
+19 (64,)
+
+```

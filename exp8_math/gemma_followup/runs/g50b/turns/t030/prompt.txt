@@ -1,0 +1,6 @@
+OUTPUT of Python run 18 of at most 300:
+```
+{'tensor': 'model.layers.11.self_attn.o_proj.weight', 'query_head': 0, 'columns': [0, 256], 'output_multiplier': 0.5, 'relative_frobenius_change': 0.20184682309627533}
+'Single-head attenuation ready.'
+
+```

@@ -1,0 +1,87 @@
+[note from the experimenters] Your forward-pass budget counts passes, not their size or how long they take: a generation pass with 256 answers per model ("both") or 512 answers costs the same one pass as a pass with 32. Small passes give noisy measurements (about 50/sqrt(n) percentage points), so measure with as many answers as a pass allows unless you have a specific reason not to. The time a pass takes does not count against you.
+
+Forward pass 7 of 10 done (generate); results in /work/gen_8_original.jsonl and /work/gen_8_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_8_original.jsonl",
+  "edited": "/work/gen_8_edited.jsonl"
+ },
+ "activations": {
+  "original": {
+   "dir": "/work/gen_8_original_acts/",
+   "files": {
+    "hidden_last_prompt.npy": [
+     128,
+     5,
+     1024
+    ],
+    "hidden_mean_answer.npy": [
+     128,
+     5,
+     1024
+    ]
+   }
+  },
+  "edited": {
+   "dir": "/work/gen_8_edited_acts/",
+   "files": {
+    "hidden_last_prompt.npy": [
+     128,
+     5,
+     1024
+    ],
+    "hidden_mean_answer.npy": [
+     128,
+     5,
+     1024
+    ]
+   }
+  }
+ },
+ "original": {
+  "generations": 128,
+  "graded": 128,
+  "accuracy": 0.125,
+  "accuracy_by_source": {
+   "gsm8k": 0.1719,
+   "math": 0.0781
+  },
+  "mean_tokens": 29882,
+  "cut_share": 0.8984,
+  "failures": {
+   "wrong_answer": 0,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 112
+  }
+ },
+ "edited": {
+  "generations": 128,
+  "graded": 128,
+  "accuracy": 0.21875,
+  "accuracy_by_source": {
+   "gsm8k": 0.3281,
+   "math": 0.1094
+  },
+  "mean_tokens": 27972,
+  "cut_share": 0.7656,
+  "failures": {
+   "wrong_answer": 1,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 98
+  }
+ },
+ "paired": {
+  "items": 128,
+  "accuracy_difference": 0.0938,
+  "standard_error": 0.0391,
+  "samples_wrong_to_right": 19,
+  "samples_right_to_wrong": 7
+ },
+ "s": 1002.0
+}
+```
+Forward passes left: 3.

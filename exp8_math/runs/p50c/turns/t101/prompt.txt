@@ -1,0 +1,7 @@
+OUTPUT of Python run 54 of at most 300:
+```
+TOP64 alpha4 {"productive": {"branch_delta": -0.004749341615630935, "per_case": [-0.0241, -0.0049, 0.0073, -0.0013, 0.0013, -0.0067], "tail24_delta": -0.003209540620446205}, "repetitive": {"branch_delta": -0.06453941389918327, "per_case": [-0.0561, -0.1063, -0.0502, -0.0498, -0.0689, -0.0559], "tail24_delta": -0.0875094011425972}, "premature_close_logp": [-19.462505340576172, -19.547117233276367]}
+Reserved unseen sets {'validation_3': 128, 'validation_4': 256, 'final_1': 256, 'final_2': 256, 'final_3': 256}
+4265
+
+```

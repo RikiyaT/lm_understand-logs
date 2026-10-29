@@ -1,0 +1,14 @@
+{
+  "tensor": "model.layers.11.mlp.down_proj.weight",
+  "columns": [
+    971,
+    180,
+    149,
+    1680,
+    232,
+    1724,
+    312,
+    1096
+  ],
+  "multiplier": 0.0
+}

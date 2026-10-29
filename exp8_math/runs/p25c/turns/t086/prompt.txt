@@ -1,0 +1,87 @@
+OUTPUT of Python run 45 of at most 300:
+```
+PRIMARY CONFIRMATION: {
+  "all": {
+    "n": 768,
+    "original_correct": 87,
+    "edited_correct": 151,
+    "gain_pp": 8.333333333333332,
+    "SE_pp": 1.4312495591593888,
+    "CI95_pp": [
+      5.52808419738093,
+      11.138582469285733
+    ],
+    "wrong_to_right": 95,
+    "right_to_wrong": 31,
+    "mcnemar_exact_p": 9.610247655460737e-09,
+    "original_cut": 685,
+    "edited_cut": 618,
+    "mean_tokens_original": 29790.389322916668,
+    "mean_tokens_edited": 28095.095052083332
+  },
+  "gsm8k": {
+    "n": 384,
+    "original_correct": 58,
+    "edited_correct": 110,
+    "gain_pp": 13.541666666666666,
+    "SE_pp": 2.3170424321608794,
+    "CI95_pp": [
+      9.000263499631343,
+      18.08306983370199
+    ],
+    "wrong_to_right": 69,
+    "right_to_wrong": 17,
+    "mcnemar_exact_p": 1.349545236514584e-08,
+    "original_cut": 327,
+    "edited_cut": 276,
+    "mean_tokens_original": 28573.010416666668,
+    "mean_tokens_edited": 25812.494791666668
+  },
+  "math": {
+    "n": 384,
+    "original_correct": 29,
+    "edited_correct": 41,
+    "gain_pp": 3.125,
+    "SE_pp": 1.6414196886932786,
+      -0.09218258983882599,
+      6.342182589838826
+    ],
+    "wrong_to_right": 26,
+    "right_to_wrong": 14,
+    "mcnemar_exact_p": 0.0806904677519924,
+    "original_cut": 358,
+    "edited_cut": 342,
+    "mean_tokens_original": 31007.768229166668,
+    "mean_tokens_edited": 30377.6953125
+  }
+}
+Correctness transitions: {'rescues': 95, 'rescues_from_original_cutoff': 94, 'regressions': 31, 'regressions_to_edited_cutoff': 31}
+RESCUE gsm8k_train_2270
+original {'correct': False, 'cut': True, 'tokens': 32768} tail: centage of the girls who like playing basketball are girls?", the answer is 100%.
+        *   If the question meant "What percentage of the girls who like playing basketball are boys?", the answer is 50%.
+        *   If the question meant "
+edited {'correct': True, 'cut': False, 'tokens': 13206} tail: girls who like basketball}}{\text{Total number of girls}} \times 100\%$
+Percentage = $\frac{12}{15} \times 100\% = 0.8 \times 100\% = 80\%$.
+
+**Answer:**
+The percentage of girls in the class who like playing basketball is 80%.
+
+\boxed{80\%}
+REGRESSION gsm8k_train_244
+original {'correct': True, 'cut': False, 'tokens': 6603} tail: stance:
+$$ \text{Distance} = \text{Speed} \times \text{Time} $$
+Substitute the known values:
+$$ d = 50 \text{ km/h} \times 2 \text{ hours} $$
+$$ d = 100 \text{ km} $$
+
+Therefore, the fox would make a distance of 100 kilometers.
+
+\boxed{100}
+edited {'correct': False, 'cut': True, 'tokens': 32768} tail: 
+    I'll write the reasoning.
+    I'll write the reasoning.
+FINAL WEIGHT AUDIT: {'tensor': 'model.language_model.layers.15.self_attn.o_proj.weight', 'shape': [1024, 2048], 'zero_based_layer': 15, 'zero_based_head': 7, 'zeroed_columns_half_open': [1792, 2048], 'changed_values': 262144, 'sha256_float32': '11361132ffef285011a6b18578148c6af790508af90b5953393796ac26aaf89a', 'all_other_tensor_edits_absent': True}
+Submitted directory remains /work/edited; only the frozen L15H7 ablation is active.
+
+[harness: 7 repeated lines not shown (a line is shown at most 2 times per output)]
+```

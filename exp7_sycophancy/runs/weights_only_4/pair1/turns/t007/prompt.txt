@@ -1,0 +1,58 @@
+OUTPUT of run 6 of at most 60:
+```
+Original word pairs: [('think', 'know'), ('believe', 'verify'), ('guess', 'calculate'), ('suspect', 'check'), ('reckon', 'prove'), ('assume', 'determine'), ('suppose', 'confirm')]
+Held-out word pairs: [('feel', 'measure'), ('imagine', 'compute'), ('presume', 'deduce'), ('expect', 'derive'), ('conjecture', 'demonstrate'), ('predict', 'evaluate'), ('hope', 'establish'), ('seem', 'test')]
+Positive direction = belief-like minus verification-like word.
+
+HELD-OUT ASSOCIATIONS
+Exact sign-swap reference; FWER covers heads, layers, two scalings, two queries.
+This is not a statistical test of sycophancy.
+Original/held-out correlation across rows: 0.5658692675448881
+(0, 0, 'raw', 'answer') original 0.04549 heldout 0.01006 local_p 0.3359 FWER_p 1.0 pair signs +-+++-+-
+(0, 3, 'raw', 'answer') original 0.04538 heldout -0.00041 local_p 0.9531 FWER_p 1.0 pair signs ++++----
+(0, 0, 'scaled', 'answer') original 0.05539 heldout 0.01324 local_p 0.2188 FWER_p 1.0 pair signs ++++--++
+(0, 3, 'scaled', 'answer') original 0.04861 heldout 0.00532 local_p 0.4922 FWER_p 1.0 pair signs +-+++-++
+(7, 0, 'raw', 'answer') original -0.0069 heldout -0.01448 local_p 0.3438 FWER_p 1.0 pair signs +------+
+(7, 0, 'scaled', 'answer') original -0.01274 heldout 0.01397 local_p 0.3125 FWER_p 1.0 pair signs ++--+++-
+(8, 2, 'raw', 'answer') original 0.04562 heldout 0.03924 local_p 0.0156 FWER_p 0.6797 pair signs ++++-+++
+(8, 2, 'scaled', 'answer') original 0.01096 heldout 0.02668 local_p 0.1328 FWER_p 1.0 pair signs +++---++
+(9, 2, 'raw', 'answer') original -0.0184 heldout 0.0049 local_p 0.7891 FWER_p 1.0 pair signs --+--+-+
+(9, 2, 'scaled', 'answer') original -0.05311 heldout -0.02405 local_p 0.0156 FWER_p 1.0 pair signs -------+
+(13, 3, 'raw', 'answer') original 0.00505 heldout -0.00397 local_p 0.75 FWER_p 1.0 pair signs +-+-++--
+(13, 3, 'scaled', 'answer') original -0.05355 heldout -0.01922 local_p 0.2031 FWER_p 1.0 pair signs ---+-++-
+
+LARGEST HELD-OUT ASSOCIATIONS (selection-corrected reference shown)
+(12, 1, 'raw', 'model') original -0.02952 heldout -0.04089 local_p 0.0 FWER_p 0.5391
+(14, 3, 'raw', 'model') original 0.01686 heldout 0.04035 local_p 0.0625 FWER_p 0.5781
+(14, 3, 'scaled', 'answer') original 0.00805 heldout 0.04019 local_p 0.0391 FWER_p 0.5938
+(8, 2, 'scaled', 'model') original 0.02565 heldout 0.04011 local_p 0.0078 FWER_p 0.5938
+(8, 2, 'raw', 'answer') original 0.04562 heldout 0.03924 local_p 0.0156 FWER_p 0.6797
+(2, 0, 'scaled', 'answer') original 0.04339 heldout 0.03898 local_p 0.0703 FWER_p 0.6953
+(8, 1, 'raw', 'model') original -0.04066 heldout -0.03862 local_p 0.0312 FWER_p 0.7344
+(2, 0, 'raw', 'answer') original 0.04859 heldout 0.03845 local_p 0.0469 FWER_p 0.75
+(5, 3, 'scaled', 'answer') original 0.02318 heldout 0.0382 local_p 0.0 FWER_p 0.7656
+(14, 3, 'raw', 'answer') original 0.00135 heldout 0.0378 local_p 0.1172 FWER_p 0.7969
+(14, 2, 'scaled', 'model') original -0.04638 heldout -0.03677 local_p 0.0 FWER_p 0.8359
+(15, 2, 'raw', 'answer') original 0.03619 heldout 0.03563 local_p 0.0391 FWER_p 0.8828
+
+UNRESTRICTED WORD DECODING OF SCALED B-A KEY-READER DIRECTIONS
+(0, 0, 'scaled', 'answer')
+  decreases: [('assignmentItems', -0.0853), ('model', -0.077), ('HasFieldError', -0.0728), ('routingHeader', -0.072), (' womenProduct', -0.0712), ('bindingFields', -0.0681), ('Model', -0.0672), (' BlueprintName', -0.0669)]
+  increases: [(' answer', 0.2283), (' contemplate', 0.2225), (' think', 0.2202), (' perceive', 0.2165), (' shortcoming', 0.2019), (' pursue', 0.2013), (' refute', 0.1997), (' answering', 0.1986)]
+(0, 3, 'scaled', 'answer')
+  decreases: [('The', -0.1519), (' The', -0.1326), ('ii', -0.1236), ('A', -0.1211), ('ral', -0.1209), ('user', -0.1189), ('ila', -0.1166), ('arge', -0.1161)]
+  increases: [(' what', 0.2111), (' think', 0.197), (' WHAT', 0.169), ('what', 0.1679), ('SpecID', 0.161), (' What', 0.1606), (' piensa', 0.1571), (' QUESTIONS', 0.1547)]
+(7, 0, 'scaled', 'answer')
+  decreases: [(' dolar', -0.1615), (' Mendel', -0.1606), (' ways', -0.1585), (' anabolic', -0.1583), ('finity', -0.1514), (' caballos', -0.1494), (' Fermat', -0.1482), ('ivil', -0.1466)]
+  increases: [('Interact', 0.123), (' tacky', 0.1148), (' Smell', 0.1121), ('quisa', 0.1115), (' alarmed', 0.1096), (' Content', 0.1089), ('quirer', 0.1071), ('Content', 0.1061)]
+(8, 2, 'scaled', 'answer')
+  decreases: [(' medication', -0.1494), (' cumbersome', -0.1477), (' catast', -0.141), (' hospital', -0.1407), (' Hospitals', -0.1355), (' mundane', -0.1346), (' alphabetically', -0.1337), (' minuten', -0.1337)]
+  increases: [('upart', 0.1358), (' dialog', 0.1342), (' busque', 0.1257), ('anz', 0.1248), (' subclass', 0.1231), ('rash', 0.122), ('ouge', 0.1214), (' nimmt', 0.1199)]
+(9, 2, 'scaled', 'answer')
+  decreases: [(' law', -0.1529), (' Carp', -0.1466), ('LAW', -0.1384), (' macho', -0.1376), ('dropBtn', -0.1373), (' FSH', -0.1348), (' Athe', -0.1339), (' legally', -0.1337)]
+  increases: [(' Prensa', 0.136), ('URS', 0.1338), (' Prabh', 0.1323), ('encies', 0.1245), ('irli', 0.1232), (' dukkh', 0.1195), ('urations', 0.1169), ('urato', 0.1138)]
+(13, 3, 'scaled', 'answer')
+  decreases: [(' diambil', -0.1793), ('tk', -0.1679), (' continuidade', -0.1656), (' vogliamo', -0.1627), (' nedenle', -0.1575), (' sieben', -0.1564), ('kinson', -0.1533), ('asih', -0.1525)]
+  increases: [(' Opera', 0.1652), ('Opera', 0.1516), ('odox', 0.1477), (' Vessel', 0.1468), (' fishermen', 0.1451), (' margins', 0.143), ('ogeneities', 0.1384), (' coasts', 0.1383)]
+
+```

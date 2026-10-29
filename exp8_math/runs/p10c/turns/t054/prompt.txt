@@ -1,0 +1,8 @@
+OUTPUT of Python run 47 of at most 300:
+```
+Half-strength: {'n': 128, 'original_correct': 16, 'edited_correct': 18, 'gain_pp': 1.5625, 'paired_se_pp': 3.134213779208356, 'rescued': 9, 'regressed': 7, 'original_cut': 115, 'edited_cut': 113, 'original_mean_tokens': 29882.3828125, 'edited_mean_tokens': 29596.265625}
+original tail repetition mean: 0.8595 tail repetition >0.8: 111
+half-strength tail repetition mean: 0.8665 tail repetition >0.8: 113
+Full-strength edit: [(11, [1], 1.0, 0.30456069111824036), (15, [7], 1.0, 0.3232928216457367)]
+
+```

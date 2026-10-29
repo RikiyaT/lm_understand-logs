@@ -1,0 +1,97 @@
+OUTPUT of run 29 of at most 60:
+```
+OUTPUT PAIRS, positive = endorsement-related minus correction-related:
+[('agree', 'disagree'), ('agreed', 'disagreed'), ('correct', 'incorrect'), ('right', 'wrong'), ('accurate', 'inaccurate'), ('valid', 'invalid'), ('endorse', 'reject'), ('accept', 'refute'), ('approve', 'oppose'), ('confirm', 'contradict'), ('support', 'challenge')]
+
+SIGNED WRITING-COEFFICIENT TEST
+MLP products omit the gate; attention products omit attention selection.
+No resulting vector is a model output or a model-produced logit vector.
+completed layer 0
+completed layer 1
+completed layer 2
+completed layer 3
+completed layer 4
+completed layer 5
+completed layer 6
+completed layer 7
+completed layer 8
+completed layer 9
+completed layer 10
+completed layer 11
+completed layer 12
+completed layer 13
+completed layer 14
+completed layer 15
+completed layer 16
+completed layer 17
+
+GLOBAL DIRECTION SUMMARY
+original belief_question both families positive 28 both negative 27 of 90 median combined 0.0014493582203172837
+original belief_verification both families positive 33 both negative 20 of 90 median combined 0.003949953800085948
+original response_role both families positive 27 both negative 41 of 90 median combined -0.003523157413897389
+original numeric_control both families positive 22 both negative 33 of 90 median combined -0.00020589783033200812
+original ordinary_control both families positive 28 both negative 27 of 90 median combined -0.001775760901282378
+numeric_removed belief_question both families positive 28 both negative 28 of 90 median combined 0.00010966619745545448
+numeric_removed belief_verification both families positive 37 both negative 22 of 90 median combined 0.005576729986648124
+numeric_removed response_role both families positive 27 both negative 35 of 90 median combined -0.0028161290231750215
+numeric_removed numeric_control both families positive 23 both negative 32 of 90 median combined 0.0010303103167026177
+numeric_removed ordinary_control both families positive 23 both negative 31 of 90 median combined -0.0021202468242483086
+
+STRONGEST SIGNED ASSOCIATIONS
+The max-label-swap reference corrects selection across the displayed search
+space, but is a lexical reference only, NOT a behavioral significance test.
+
+ original belief_question
+(13, 'attention', 2) core -0.02521 extension -0.03864 combined -0.03131 max_swap_reference 0.74414 numeric_alignment 0.00908
+(7, 'attention', 1) core -0.03883 extension -0.01677 combined -0.02881 max_swap_reference 0.88477 numeric_alignment 0.02638
+(17, 'mlp', None) core 0.08842 extension 0.04786 combined 0.06999 max_swap_reference 0.00684 numeric_alignment 0.19677
+(12, 'mlp', None) core 0.06143 extension 0.04258 combined 0.05286 max_swap_reference 0.06934 numeric_alignment 0.10826
+
+ original belief_verification
+(16, 'attention', 1) core -0.05628 extension -0.03838 combined -0.04814 max_swap_reference 0.12402 numeric_alignment 0.07949
+(16, 'attention', 2) core -0.04799 extension -0.0302 combined -0.03991 max_swap_reference 0.33398 numeric_alignment 0.10022
+(3, 'attention', 1) core 0.03922 extension 0.05121 combined 0.04467 max_swap_reference 0.18457 numeric_alignment -0.04901
+(14, 'attention', 3) core 0.03247 extension 0.05103 combined 0.0409 max_swap_reference 0.29883 numeric_alignment 0.08252
+
+ original response_role
+(9, 'attention', 3) core -0.05761 extension -0.03068 combined -0.04537 max_swap_reference 0.17773 numeric_alignment -0.08057
+(16, 'mlp', None) core -0.04277 extension -0.04378 combined -0.04323 max_swap_reference 0.21777 numeric_alignment -0.11693
+(16, 'attention', 2) core 0.06492 extension 0.01133 combined 0.04056 max_swap_reference 0.30469 numeric_alignment -0.01447
+(17, 'mlp', None) core 0.05807 extension -0.00284 combined 0.03038 max_swap_reference 0.79688 numeric_alignment 0.08067
+
+ numeric_removed belief_question
+(6, 'attention', 1) core -0.04212 extension -0.0167 combined -0.03057 max_swap_reference 0.78711 numeric_alignment 0.13983
+(13, 'attention', 2) core -0.02652 extension -0.03518 combined -0.03046 max_swap_reference 0.79395 numeric_alignment 0.00908
+(7, 'mlp', None) core 0.06352 extension 0.03716 combined 0.05154 max_swap_reference 0.07617 numeric_alignment -0.17521
+(17, 'mlp', None) core 0.05432 extension 0.04097 combined 0.04825 max_swap_reference 0.12305 numeric_alignment 0.19677
+
+ numeric_removed belief_verification
+(16, 'attention', 1) core -0.06867 extension -0.03547 combined -0.05358 max_swap_reference 0.06641 numeric_alignment 0.07949
+(16, 'attention', 2) core -0.05844 extension -0.03305 combined -0.0469 max_swap_reference 0.13867 numeric_alignment 0.10022
+(10, 'attention', 3) core 0.0583 extension 0.04205 combined 0.05091 max_swap_reference 0.08398 numeric_alignment -0.07484
+(3, 'attention', 1) core 0.04262 extension 0.05242 combined 0.04707 max_swap_reference 0.13574 numeric_alignment -0.04901
+
+ numeric_removed response_role
+(9, 'attention', 3) core -0.04752 extension -0.02842 combined -0.03884 max_swap_reference 0.37695 numeric_alignment -0.08057
+(10, 'attention', 0) core -0.04708 extension -0.02763 combined -0.03824 max_swap_reference 0.39453 numeric_alignment -0.02636
+(16, 'attention', 2) core 0.06127 extension 0.01259 combined 0.03914 max_swap_reference 0.36816 numeric_alignment -0.01447
+(17, 'mlp', None) core 0.05376 extension 0.00879 combined 0.03332 max_swap_reference 0.64062 numeric_alignment 0.08067
+
+UNRESTRICTED WORD DECODING AFTER REMOVING NUMERIC OUTPUT DIRECTIONS
+(6, 'attention', 1) combined lexical association -0.030568689807500483
+  negative [('omerang', -0.1467), (' HMO', -0.1333), ('ygons', -0.1309), ('abulary', -0.1304), ('ugeot', -0.1302), (' SLAs', -0.1289)]
+  positive [(' og', 0.1493), ('One', 0.1403), (' One', 0.1367), (' ab', 0.1347), ('Another', 0.1326), (' Is', 0.1305)]
+(13, 'attention', 2) combined lexical association -0.030458929873121446
+  negative [(' three', -0.175), (' rocks', -0.1727), (' two', -0.1698), (' almost', -0.1651), (' selected', -0.1616), (' five', -0.1607)]
+  positive [('ub', 0.1297), ('ib', 0.1283), ('atha', 0.1213), ('be', 0.1127), ('abah', 0.1101), (' Hamb', 0.1056)]
+(7, 'mlp', None) combined lexical association 0.05153810175066633
+  negative [(' turtle', -0.1458), (' grenade', -0.1447), (' aorta', -0.1378), (' wavelet', -0.1376), (' gunshot', -0.1368), (' rune', -0.135)]
+  positive [('perluan', 0.1428), ('udahan', 0.1356), (' inici', 0.128), (' desl', 0.1236), ('yszer', 0.1217), (' valmist', 0.1203)]
+(17, 'mlp', None) combined lexical association 0.04825141824111406
+  negative [('LOTREntity', -0.2576), ('atitis', -0.2564), (' DeepCollection', -0.254), ('DOMstrings', -0.2521), (' doraemon', -0.2504), ('rograman', -0.2482)]
+  positive [(' North', 0.2544), ('North', 0.2138), (' South', 0.2081), (' black', 0.1895), (' north', 0.1824), (' white', 0.1808)]
+
+A coherent endorsement-writing signature would still be a candidate
+style mechanism, not proof of giving the user's guessed answer.
+
+```

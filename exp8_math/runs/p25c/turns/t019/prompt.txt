@@ -1,0 +1,22 @@
+OUTPUT of Python run 13 of at most 300:
+```
+Kernel variables available: []
+Trial A paired accuracy delta and naive sample SE: -0.0078125 0.03418067613165265
+Wrong->right: 9 right->wrong: 10
+Changed outcome 12 gsm8k_train_1974 delta 1 original/edited tokens 32768 6187
+Edited ending: "Increase} = \\frac{15}{10} \\times 100\\%$$\n$$\\text{Percentage Increase} = 1.5 \\times 100\\%$$\n$$\\text{Percentage Increase} = 150\\%$$\n\nTherefore, the percentage increase in Kathleen's weekly allowance is 150%.\n\n\\boxed{150\\%}"
+Changed outcome 18 gsm8k_train_188 delta -1 original/edited tokens 32768 32768
+Edited ending: 'airs of glasses, I get 2 pairs.\n    If I break 4 pairs of glasses, I get 4 pairs.\n    So the answer is 10 pairs.\n\n    Wait, what if the question implies that "David broke 2 glasses" means he broke 2 *pairs*?\n    If David'
+Changed outcome 22 gsm8k_train_632 delta -1 original/edited tokens 6725 1277
+Edited ending: '40$ seeds\n*   **Yeon:** $3 \\times 340 = 1020$ seeds\n\n**3. Calculate the total number of seeds:**\nTotal = Bom + Gwi + Yeon\nTotal = $300 + 340 + 1020$\nTotal = $640 + 1020$\nTotal = $1660$\n\nThere are **1660** seeds in total.'
+Changed outcome 23 gsm8k_train_632 delta -1 original/edited tokens 3649 32768
+Edited ending: 'n has three times as many watermelon seeds as Gwi".**\n        *   Wait, could it mean $y = 3 \\times g$?\n        *   Wait, could it mean $y = 3 \\times g$?\n        *   Wait, could it mean $y = 3 \\times g$?\n\n    *   **Wait,'
+Changed outcome 36 gsm8k_train_2428 delta -1 original/edited tokens 2906 32768
+Edited ending: ' mean "half the number of times"?\n                *   Wait, let me check the prompt again.\n                *   Wait, I see "half as often" might mean "half the number of times"?\n                *   Wait, let me check the'
+Changed outcome 37 gsm8k_train_2428 delta 1 original/edited tokens 32768 3996
+Edited ending: ' 3 small hills, he sled down them half as often as he sleds down the tall hills. How many times did he sled down the hills?\n\nThe calculation is:\n$$2 \\times 4 + 3 \\times \\left(\\frac{4}{2}\\right) = 8 + 6 = 14$$\n\n\\boxed{14}'
+Cross-probe replication of matched-loop candidates:
+[(0.36275601387023926, 23, 22, 1.5153456926345825, 4.129701614379883, 1.0), (0.14715054631233215, 23, 19, 0.5394850373268127, 2.0160889625549316, 0.9230769230769231), (0.1260816603899002, 23, 18, 0.5688206553459167, 1.022733449935913, 0.9230769230769231), (0.11778027564287186, 22, 7, 0.44081467390060425, 0.3648613393306732, 0.9230769230769231), (0.10671966522932053, 23, 190, 0.4685527980327606, 1.212143898010254, 0.9230769230769231), (0.10566924512386322, 23, 34, 0.5231886506080627, 1.8216310739517212, 0.9230769230769231), (0.09995902329683304, 17, 20, 0.45024240016937256, 1.1881991624832153, 0.9230769230769231), (0.09887472540140152, 15, 0, 0.38836053013801575, 0.7998908758163452, 1.0), (0.0957169383764267, 23, 495, 0.35626456141471863, 1.1892880201339722, 0.9230769230769231), (0.08738236874341965, 18, 29, 0.32203322649002075, 0.8871469497680664, 1.0), (0.08505432307720184, 20, 89, 0.258597731590271, 0.55901038646698, 1.0), (0.08355925232172012, 19, 1, 0.3191387355327606, 0.6261357665061951, 0.9230769230769231), (0.08171007037162781, 23, 27, 0.38929426670074463, 1.5221058130264282, 1.0), (0.0815608948469162, 23, 161, 0.3338247537612915, 0.3098849058151245, 1.0), (0.08079905062913895, 23, 362, 0.28622201085090637, 0.7966078519821167, 1.0), (0.06964803487062454, 23, 317, 0.34478288888931274, 0.8669571876525879, 0.9230769230769231), (0.06883201748132706, 22, 20, 0.2816537618637085, 0.6987887620925903, 1.0), (0.0678953304886818, 21, 99, 0.2674654424190521, 0.29641857743263245, 0.9230769230769231), (0.0664963498711586, 23, 162, 0.31411507725715637, 0.682569146156311, 1.0), (0.06625862419605255, 23, 198, 0.30022722482681274, 0.5007961988449097, 1.0)]
+
+```
+(Reminder: before your next block, explain what this result shows, what you will do next and why.)

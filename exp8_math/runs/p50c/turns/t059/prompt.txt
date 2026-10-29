@@ -1,0 +1,20 @@
+OUTPUT of Python run 32 of at most 300:
+```
+
+ fwd_19
+text 0 branch_logp -1.14808 tail48_logp -1.31965
+close token top20 appearances 5 max observed close probability 0.000485
+text 1 branch_logp -0.42246 tail48_logp -0.02175
+close token top20 appearances 5 max observed close probability 0.000549
+induction 15 7 0.30396
+induction 19 5 0.30811
+
+ fwd_20
+text 0 branch_logp -1.13887 tail48_logp -1.2931
+close token top20 appearances 5 max observed close probability 0.0006
+text 1 branch_logp -0.50585 tail48_logp -0.08914
+close token top20 appearances 5 max observed close probability 0.0006
+induction 15 7 0.30396
+induction 19 5 0.28931
+
+```

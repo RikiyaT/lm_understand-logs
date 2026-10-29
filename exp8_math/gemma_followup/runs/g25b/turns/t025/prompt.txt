@@ -1,0 +1,31 @@
+OUTPUT of Python run 15 of at most 300:
+```
+Stable success-associated neurons:
+{'layer': 15, 'neuron': 732, 'corr': -0.1218, 'raw': -0.1093, 'repeat': -0.0452, 'half1': -0.125, 'half2': -0.1191, 'activity': 0.0087, 'output_norm': 0.3814}
+{'layer': 2, 'neuron': 94, 'corr': -0.1207, 'raw': -0.1076, 'repeat': 0.093, 'half1': -0.1251, 'half2': -0.117, 'activity': 0.0184, 'output_norm': 0.4104}
+{'layer': 6, 'neuron': 1080, 'corr': -0.1144, 'raw': -0.1187, 'repeat': -0.1304, 'half1': -0.1121, 'half2': -0.1199, 'activity': 0.0279, 'output_norm': 0.4264}
+{'layer': 10, 'neuron': 305, 'corr': -0.1179, 'raw': -0.1287, 'repeat': -0.158, 'half1': -0.1299, 'half2': -0.1071, 'activity': 0.0133, 'output_norm': 0.3749}
+{'layer': 1, 'neuron': 1291, 'corr': -0.1127, 'raw': -0.1153, 'repeat': -0.0103, 'half1': -0.1201, 'half2': -0.1069, 'activity': 0.0289, 'output_norm': 0.3433}
+{'layer': 2, 'neuron': 1354, 'corr': -0.1047, 'raw': -0.0922, 'repeat': 0.0777, 'half1': -0.1076, 'half2': -0.1059, 'activity': 0.0344, 'output_norm': 0.4177}
+{'layer': 10, 'neuron': 1967, 'corr': -0.1071, 'raw': -0.0774, 'repeat': 0.0469, 'half1': -0.1053, 'half2': -0.1095, 'activity': 0.0184, 'output_norm': 0.4156}
+{'layer': 15, 'neuron': 1580, 'corr': -0.1049, 'raw': -0.1184, 'repeat': -0.1493, 'half1': -0.1082, 'half2': -0.1029, 'activity': 0.0136, 'output_norm': 0.4075}
+{'layer': 13, 'neuron': 938, 'corr': -0.1045, 'raw': -0.1075, 'repeat': -0.0367, 'half1': -0.1072, 'half2': -0.1028, 'activity': 0.0076, 'output_norm': 0.3314}
+{'layer': 11, 'neuron': 1670, 'corr': -0.11, 'raw': -0.1158, 'repeat': -0.0778, 'half1': -0.1192, 'half2': -0.1016, 'activity': 0.0139, 'output_norm': 0.3654}
+{'layer': 9, 'neuron': 1173, 'corr': -0.1097, 'raw': -0.1104, 'repeat': -0.2367, 'half1': -0.1014, 'half2': -0.1187, 'activity': 0.021, 'output_norm': 0.4693}
+{'layer': 12, 'neuron': 2025, 'corr': -0.1067, 'raw': -0.1227, 'repeat': -0.16, 'half1': -0.1144, 'half2': -0.1003, 'activity': 0.0201, 'output_norm': 0.5192}
+{'layer': 16, 'neuron': 1169, 'corr': -0.122, 'raw': -0.1317, 'repeat': -0.036, 'half1': -0.1001, 'half2': -0.1501, 'activity': 0.0145, 'output_norm': 0.4367}
+{'layer': 6, 'neuron': 1094, 'corr': -0.1062, 'raw': -0.1005, 'repeat': -0.0861, 'half1': -0.098, 'half2': -0.1152, 'activity': 0.0394, 'output_norm': 0.4473}
+{'layer': 1, 'neuron': 79, 'corr': -0.1005, 'raw': -0.0924, 'repeat': -0.0408, 'half1': -0.1037, 'half2': -0.0979, 'activity': 0.0789, 'output_norm': 0.3561}
+{'layer': 10, 'neuron': 1688, 'corr': -0.1056, 'raw': -0.1095, 'repeat': -0.2485, 'half1': -0.0973, 'half2': -0.1184, 'activity': 0.0717, 'output_norm': 0.4006}
+{'layer': 6, 'neuron': 832, 'corr': -0.0999, 'raw': -0.107, 'repeat': -0.1185, 'half1': -0.0961, 'half2': -0.1068, 'activity': 0.0145, 'output_norm': 0.4056}
+{'layer': 3, 'neuron': 379, 'corr': -0.112, 'raw': -0.1078, 'repeat': 0.2013, 'half1': -0.096, 'half2': -0.1269, 'activity': 0.0288, 'output_norm': 0.3097}
+{'layer': 10, 'neuron': 83, 'corr': -0.0925, 'raw': -0.0558, 'repeat': 0.0265, 'half1': -0.0954, 'half2': -0.0963, 'activity': 0.0124, 'output_norm': 0.302}
+{'layer': 6, 'neuron': 543, 'corr': -0.0983, 'raw': -0.1114, 'repeat': -0.1973, 'half1': -0.1024, 'half2': -0.0952, 'activity': 0.0304, 'output_norm': 0.361}
+{'layer': 16, 'neuron': 1567, 'corr': -0.0972, 'raw': -0.0961, 'repeat': -0.0673, 'half1': -0.0951, 'half2': -0.0992, 'activity': 0.0151, 'output_norm': 0.445}
+{'layer': 4, 'neuron': 1141, 'corr': -0.1047, 'raw': -0.0844, 'repeat': 0.0331, 'half1': -0.0949, 'half2': -0.1262, 'activity': 0.0158, 'output_norm': 0.2987}
+{'layer': 6, 'neuron': 970, 'corr': -0.1042, 'raw': -0.1143, 'repeat': -0.2118, 'half1': -0.0948, 'half2': -0.117, 'activity': 0.0203, 'output_norm': 0.2288}
+{'layer': 1, 'neuron': 744, 'corr': -0.0991, 'raw': -0.1003, 'repeat': -0.1338, 'half1': -0.1044, 'half2': -0.0945, 'activity': 0.1879, 'output_norm': 0.2988}
+{'layer': 17, 'neuron': 1807, 'corr': -0.1058, 'raw': -0.1183, 'repeat': -0.1449, 'half1': -0.0943, 'half2': -0.1192, 'activity': 0.1137, 'output_norm': 0.2659}
+Negative minima per layer: [(0, -0.114), (1, -0.122), (2, -0.121), (3, -0.112), (4, -0.11), (5, -0.106), (6, -0.114), (7, -0.104), (8, -0.097), (9, -0.117), (10, -0.118), (11, -0.111), (12, -0.107), (13, -0.104), (14, -0.105), (15, -0.122), (16, -0.122), (17, -0.134)]
+
+```

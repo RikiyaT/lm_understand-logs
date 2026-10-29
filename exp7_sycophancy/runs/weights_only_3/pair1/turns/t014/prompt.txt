@@ -1,0 +1,78 @@
+OUTPUT of run 10 of at most 60:
+```
+NEW HYPOTHESIS: QUERY/KEY PROJECTION SCALING EXPLAINS MATCHING DIFFERENCES
+RMS epsilon: 1e-06
+Only parameter matrices are rescaled; no model state is normalized.
+
+LAYER SUMMARY
+layer adjusted_h0 adjusted_h1 adjusted_h2 adjusted_h3 max_query_radial_fraction key_radial_fraction
+ 0    0.010180    0.009251    0.009918    0.010409                 0.0001755           0.0000105
+ 1    0.011347    0.010129    0.011505    0.010130                 0.0000264           0.0000083
+ 2    0.009544    0.008368    0.011054    0.011798                 0.0000328           0.0000012
+ 3    0.009390    0.015178    0.010774    0.006174                 0.0000316           0.0000254
+ 4    0.010837    0.012559    0.011137    0.010803                 0.0000749           0.0000044
+ 5    0.015656    0.014704    0.016653    0.019161                 0.0005338           0.0000403
+ 6    0.011265    0.012568    0.013921    0.011631                 0.0000336           0.0000005
+ 7    0.009095    0.011239    0.009507    0.012474                 0.0000571           0.0000163
+ 8    0.009828    0.009527    0.010903    0.010168                 0.0000699           0.0000144
+ 9    0.011887    0.010048    0.011025    0.009698                 0.0001551           0.0000010
+10    0.012277    0.017219    0.008597    0.011474                 0.0001305           0.0000095
+11    0.029151    0.026591    0.017081    0.021387                 0.0008464           0.0001530
+12    0.021905    0.016892    0.022451    0.021586                 0.0008521           0.0000686
+13    0.012831    0.015016    0.014895    0.015644                 0.0000764           0.0000029
+14    0.013409    0.015081    0.013947    0.013397                 0.0003010           0.0000389
+15    0.014743    0.013168    0.014354    0.011892                 0.0001099           0.0000025
+16    0.011824    0.012093    0.011577    0.010745                 0.0000493           0.0000017
+17    0.015796    0.017927    0.013655    0.012696                 0.0002374           0.0000299
+
+TOP TEN AFTER REMOVING OVERALL PROJECTION SCALE
+{"layer": 11, "head": 0, "original_coefficient_relative": 0.029152881528953536, "scale_adjusted_coefficient_relative": 0.029150758247043548, "adjusted_over_original": 0.9999271673399461, "query_radial_fraction": 0.00011933375403793881, "key_radial_fraction": 0.00015303231211695196, "query_norm_ratio_B_over_A": 0.9999013547671483, "key_norm_ratio_B_over_A": 0.9998481702089501, "query_parameter_cosine": 0.9999592291355227, "key_parameter_cosine": 0.9999246817309159}
+{"layer": 11, "head": 1, "original_coefficient_relative": 0.02659336615918066, "scale_adjusted_coefficient_relative": 0.02659143182886957, "adjusted_over_original": 0.9999272626752285, "query_radial_fraction": 6.725708917379579e-05, "key_radial_fraction": 0.00015303231211695196, "query_norm_ratio_B_over_A": 0.9999376320347337, "key_norm_ratio_B_over_A": 0.9998481702089501, "query_parameter_cosine": 0.9999710830180095, "key_parameter_cosine": 0.9999246817309159}
+{"layer": 12, "head": 2, "original_coefficient_relative": 0.022449184213714383, "scale_adjusted_coefficient_relative": 0.022451433966046225, "adjusted_over_original": 1.0001002153267764, "query_radial_fraction": 0.00032788329821320945, "key_radial_fraction": 6.863803970968575e-05, "query_norm_ratio_B_over_A": 0.9998100580775506, "key_norm_ratio_B_over_A": 1.0000786963785788, "query_parameter_cosine": 0.9999449911652788, "key_parameter_cosine": 0.999954892304328}
+{"layer": 12, "head": 0, "original_coefficient_relative": 0.021888675539465958, "scale_adjusted_coefficient_relative": 0.02190475026481267, "adjusted_over_original": 1.0007343854733344, "query_radial_fraction": 0.0008521431695972651, "key_radial_fraction": 6.863803970968575e-05, "query_norm_ratio_B_over_A": 1.0003453510044589, "key_norm_ratio_B_over_A": 1.0000786963785788, "query_parameter_cosine": 0.9999301029756966, "key_parameter_cosine": 0.999954892304328}
+{"layer": 12, "head": 3, "original_coefficient_relative": 0.02158002149470713, "scale_adjusted_coefficient_relative": 0.021585505070741653, "adjusted_over_original": 1.0002541042897417, "query_radial_fraction": 0.0005288312600823608, "key_radial_fraction": 6.863803970968575e-05, "query_norm_ratio_B_over_A": 1.000252994235011, "key_norm_ratio_B_over_A": 1.0000786963785788, "query_parameter_cosine": 0.9999395307550386, "key_parameter_cosine": 0.999954892304328}
+{"layer": 11, "head": 3, "original_coefficient_relative": 0.02138681711278707, "scale_adjusted_coefficient_relative": 0.021387148622060658, "adjusted_over_original": 1.0000155006362956, "query_radial_fraction": 0.0001038189572097942, "key_radial_fraction": 0.00015303231211695196, "query_norm_ratio_B_over_A": 1.0000997535478156, "key_norm_ratio_B_over_A": 0.9998481702089501, "query_parameter_cosine": 0.9999520860878011, "key_parameter_cosine": 0.9999246817309159}
+{"layer": 5, "head": 3, "original_coefficient_relative": 0.019161125236552234, "scale_adjusted_coefficient_relative": 0.01916145205251913, "adjusted_over_original": 1.0000170561990938, "query_radial_fraction": 1.1651143370438443e-07, "key_radial_fraction": 4.03383461032637e-05, "query_norm_ratio_B_over_A": 0.9999977778049121, "key_norm_ratio_B_over_A": 0.9999732059775391, "query_parameter_cosine": 0.9999788082540488, "key_parameter_cosine": 0.9999911013962521}
+{"layer": 17, "head": 1, "original_coefficient_relative": 0.01792831583413633, "scale_adjusted_coefficient_relative": 0.017926712353228864, "adjusted_over_original": 0.9999105615428521, "query_radial_fraction": 6.842055771391608e-05, "key_radial_fraction": 2.9910226973886873e-05, "query_norm_ratio_B_over_A": 1.000060460738608, "key_norm_ratio_B_over_A": 1.0000288854376302, "query_parameter_cosine": 0.999973289973526, "key_parameter_cosine": 0.9999860529401536}
+{"layer": 10, "head": 1, "original_coefficient_relative": 0.017218635598674953, "scale_adjusted_coefficient_relative": 0.017218687584583565, "adjusted_over_original": 1.000003019165387, "query_radial_fraction": 2.6790200457902503e-06, "key_radial_fraction": 9.478775030076527e-06, "query_norm_ratio_B_over_A": 1.0000130381964218, "key_norm_ratio_B_over_A": 1.0000229017929931, "query_parameter_cosine": 0.9999682734934376, "key_parameter_cosine": 0.9999723342342405}
+{"layer": 11, "head": 2, "original_coefficient_relative": 0.01708560255781735, "scale_adjusted_coefficient_relative": 0.017081373829204112, "adjusted_over_original": 0.9997524975429501, "query_radial_fraction": 0.0008463977781500483, "key_radial_fraction": 0.00015303231211695196, "query_norm_ratio_B_over_A": 0.9997118055836022, "key_norm_ratio_B_over_A": 0.9998481702089501, "query_parameter_cosine": 0.9999509629820221, "key_parameter_cosine": 0.9999246817309159}
+
+LARGEST CHANGES IN THE COMPARISON AFTER SCALE REMOVAL
+{"layer": 12, "head": 0, "original_coefficient_relative": 0.021888675539465958, "scale_adjusted_coefficient_relative": 0.02190475026481267, "adjusted_over_original": 1.0007343854733344, "query_radial_fraction": 0.0008521431695972651, "key_radial_fraction": 6.863803970968575e-05, "query_norm_ratio_B_over_A": 1.0003453510044589, "key_norm_ratio_B_over_A": 1.0000786963785788, "query_parameter_cosine": 0.9999301029756966, "key_parameter_cosine": 0.999954892304328}
+{"layer": 5, "head": 1, "original_coefficient_relative": 0.014711525589006184, "scale_adjusted_coefficient_relative": 0.014704236153595396, "adjusted_over_original": 0.9995045085319884, "query_radial_fraction": 0.0005337543704661398, "key_radial_fraction": 4.03383461032637e-05, "query_norm_ratio_B_over_A": 1.0002012399491247, "key_norm_ratio_B_over_A": 0.9999732059775391, "query_parameter_cosine": 0.9999620914039246, "key_parameter_cosine": 0.9999911013962521}
+{"layer": 17, "head": 3, "original_coefficient_relative": 0.012692643029718736, "scale_adjusted_coefficient_relative": 0.012696374322834946, "adjusted_over_original": 1.0002939729028442, "query_radial_fraction": 0.0002373530047988238, "key_radial_fraction": 2.9910226973886873e-05, "query_norm_ratio_B_over_A": 0.9998968695378085, "key_norm_ratio_B_over_A": 1.0000288854376302, "query_parameter_cosine": 0.99997759778833, "key_parameter_cosine": 0.9999860529401536}
+{"layer": 12, "head": 3, "original_coefficient_relative": 0.02158002149470713, "scale_adjusted_coefficient_relative": 0.021585505070741653, "adjusted_over_original": 1.0002541042897417, "query_radial_fraction": 0.0005288312600823608, "key_radial_fraction": 6.863803970968575e-05, "query_norm_ratio_B_over_A": 1.000252994235011, "key_norm_ratio_B_over_A": 1.0000786963785788, "query_parameter_cosine": 0.9999395307550386, "key_parameter_cosine": 0.999954892304328}
+{"layer": 11, "head": 2, "original_coefficient_relative": 0.01708560255781735, "scale_adjusted_coefficient_relative": 0.017081373829204112, "adjusted_over_original": 0.9997524975429501, "query_radial_fraction": 0.0008463977781500483, "key_radial_fraction": 0.00015303231211695196, "query_norm_ratio_B_over_A": 0.9997118055836022, "key_norm_ratio_B_over_A": 0.9998481702089501, "query_parameter_cosine": 0.9999509629820221, "key_parameter_cosine": 0.9999246817309159}
+{"layer": 10, "head": 2, "original_coefficient_relative": 0.008595594756828018, "scale_adjusted_coefficient_relative": 0.00859706903143799, "adjusted_over_original": 1.0001715151367274, "query_radial_fraction": 4.7717973660983535e-05, "key_radial_fraction": 9.478775030076527e-06, "query_norm_ratio_B_over_A": 1.0000483932101132, "key_norm_ratio_B_over_A": 1.0000229017929931, "query_parameter_cosine": 0.9999754633575858, "key_parameter_cosine": 0.9999723342342405}
+
+GLOBAL SUMMARY
+query_radial_fraction quantiles: [0.     0.     0.     0.0001 0.0009]
+key_radial_fraction quantiles: [0.     0.     0.     0.     0.0002]
+adjusted_over_original quantiles: [0.9995 1.     1.     1.     1.0007]
+Original/adjusted top-ten overlap: 10 / 10
+
+LEARNED Q/K NORMALIZATION MULTIPLIER DIFFERENCES
+layer q_multiplier_relative k_multiplier_relative
+ 0            0.00003912            0.00003354
+ 1            0.00000000            0.00000000
+ 2            0.00002611            0.00003686
+ 3            0.00005339            0.00003858
+ 4            0.00006441            0.00002235
+ 5            0.00003780            0.00000000
+ 6            0.00009599            0.00004686
+ 7            0.00005851            0.00003864
+ 8            0.00003737            0.00003035
+ 9            0.00005043            0.00004031
+10            0.00008364            0.00002503
+11            0.00005479            0.00002022
+12            0.00002078            0.00001710
+13            0.00004500            0.00001762
+14            0.00003706            0.00002409
+15            0.00004340            0.00002629
+16            0.00004453            0.00003705
+17            0.00002433            0.00001517
+
+This checks a scale-redundancy explanation, not actual attention routing.
+It does not assign semantic meanings or distinguish the behavioral labels.
+
+```

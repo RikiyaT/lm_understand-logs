@@ -1,0 +1,95 @@
+OUTPUT of run 23 of at most 60:
+```
+LEXICAL-MARKER-FREE ROTARY COEFFICIENT TEST
+Identity families use the mean bilinear coefficient for matching
+centered embedding directions, not actual queries or attention scores.
+Positive recency = larger coefficient at distances 1..8 than 64..128.
+Curves are standardized as descriptive WEIGHT-FUNCTION statistics;
+no model query/key or hidden-state normalization is performed.
+completed layer 0
+completed layer 1
+completed layer 2
+completed layer 3
+completed layer 4
+completed layer 5
+completed layer 6
+completed layer 7
+completed layer 8
+completed layer 9
+completed layer 10
+completed layer 11
+completed layer 12
+completed layer 13
+completed layer 14
+completed layer 15
+completed layer 16
+completed layer 17
+
+GLOBAL DIRECTION SUMMARY
+
+MODE raw
+digits           B-more-recent=37/72 median_D= 0.000793387 mean_D=-0.000885757 same-sign-alternative-bins=61/72
+number_words     B-more-recent=39/72 median_D= 0.000808451 mean_D= 0.000906023 same-sign-alternative-bins=60/72
+uppercase        B-more-recent=36/72 median_D= 1.87757e-05 mean_D= 0.000389749 same-sign-alternative-bins=55/72
+lowercase        B-more-recent=33/72 median_D=-0.000824851 mean_D=-0.00104927 same-sign-alternative-bins=53/72
+ordinary_words   B-more-recent=26/72 median_D=-0.00231401 mean_D=-0.000812653 same-sign-alternative-bins=53/72
+role_to_number   B-more-recent=40/72 median_D= 0.00147122 mean_D= 0.00290163 same-sign-alternative-bins=54/72
+digit recency-change correlation with number_words 0.45865
+digit recency-change correlation with uppercase -0.27685
+digit recency-change correlation with lowercase -0.29772
+digit recency-change correlation with ordinary_words 0.12224
+digit recency-change correlation with role_to_number -0.29361
+
+MODE diagonal_scaled
+digits           B-more-recent=30/72 median_D=-0.00510174 mean_D=-0.00452253 same-sign-alternative-bins=56/72
+number_words     B-more-recent=33/72 median_D=-0.00205761 mean_D=-0.00612078 same-sign-alternative-bins=60/72
+uppercase        B-more-recent=32/72 median_D=-0.00239251 mean_D=-0.00274706 same-sign-alternative-bins=61/72
+lowercase        B-more-recent=30/72 median_D=-0.00200818 mean_D= 0.00109177 same-sign-alternative-bins=52/72
+ordinary_words   B-more-recent=30/72 median_D=-0.00404225 mean_D=-0.00266892 same-sign-alternative-bins=60/72
+role_to_number   B-more-recent=39/72 median_D= 0.00303215 mean_D= 0.00328853 same-sign-alternative-bins=55/72
+digit recency-change correlation with number_words 0.41953
+digit recency-change correlation with uppercase -0.00749
+digit recency-change correlation with lowercase 0.13303
+digit recency-change correlation with ordinary_words -0.13411
+digit recency-change correlation with role_to_number -0.12378
+
+LARGEST NUMERIC RECENCY-SHAPE CHANGES
+Magnitude ranks are NOT behavioral importance ranks.
+
+MODE raw
+L01H1 A=-0.69010 B=-0.76383 D=-0.073734 alternative_D=-0.056823 shape_RMS=0.033585 controls={'number_words': 0.000535, 'uppercase': 0.008768, 'ordinary_words': 0.002525, 'role_to_number': -0.000685}
+L02H0 A= 1.36570 B= 1.42181 D= 0.056114 alternative_D= 0.018995 shape_RMS=0.041453 controls={'number_words': -0.023238, 'uppercase': -0.002802, 'ordinary_words': -0.000829, 'role_to_number': -0.055171}
+L01H3 A=-0.25228 B=-0.30627 D=-0.053995 alternative_D=-0.055863 shape_RMS=0.026169 controls={'number_words': -0.062386, 'uppercase': -0.00236, 'ordinary_words': -0.004732, 'role_to_number': 0.024193}
+L04H3 A=-1.58377 B=-1.54005 D= 0.043727 alternative_D= 0.034473 shape_RMS=0.019162 controls={'number_words': 0.02306, 'uppercase': -0.009787, 'ordinary_words': -0.005995, 'role_to_number': -0.005232}
+L16H0 A=-0.87214 B=-0.83607 D= 0.036075 alternative_D= 0.016006 shape_RMS=0.012126 controls={'number_words': 0.024142, 'uppercase': -0.014296, 'ordinary_words': 0.000537, 'role_to_number': -0.018798}
+L15H2 A=-0.55704 B=-0.59042 D=-0.033382 alternative_D=-0.029960 shape_RMS=0.014640 controls={'number_words': -0.004597, 'uppercase': 0.002848, 'ordinary_words': 0.003374, 'role_to_number': -0.000513}
+L02H2 A=-0.08959 B=-0.05954 D= 0.030048 alternative_D= 0.087809 shape_RMS=0.047479 controls={'number_words': 0.028473, 'uppercase': -0.0026, 'ordinary_words': 0.042757, 'role_to_number': 0.011828}
+L16H3 A=-0.90345 B=-0.93180 D=-0.028348 alternative_D=-0.012213 shape_RMS=0.013700 controls={'number_words': 0.002415, 'uppercase': 0.006657, 'ordinary_words': 0.001016, 'role_to_number': -0.003824}
+L11H1 A= 0.48011 B= 0.45371 D=-0.026395 alternative_D=-0.014563 shape_RMS=0.015434 controls={'number_words': -0.005625, 'uppercase': 0.028513, 'ordinary_words': -0.006958, 'role_to_number': 0.014089}
+L13H2 A= 0.77457 B= 0.79870 D= 0.024132 alternative_D= 0.010669 shape_RMS=0.022843 controls={'number_words': 0.022661, 'uppercase': 0.007317, 'ordinary_words': 0.010506, 'role_to_number': 0.01393}
+
+MODE diagonal_scaled
+L01H1 A=-0.30116 B=-0.41262 D=-0.111458 alternative_D=-0.093730 shape_RMS=0.043881 controls={'number_words': -0.002842, 'uppercase': 0.00275, 'ordinary_words': 0.004419, 'role_to_number': 0.035219}
+L13H3 A=-0.92414 B=-0.84861 D= 0.075530 alternative_D= 0.078170 shape_RMS=0.021954 controls={'number_words': 0.055285, 'uppercase': 0.022087, 'ordinary_words': 0.007798, 'role_to_number': -0.071505}
+L00H2 A=-1.16691 B=-1.09840 D= 0.068508 alternative_D= 0.179484 shape_RMS=0.082855 controls={'number_words': 0.00175, 'uppercase': -0.006219, 'ordinary_words': -0.006, 'role_to_number': 0.034528}
+L11H3 A=-2.33887 B=-2.40141 D=-0.062544 alternative_D= 0.011127 shape_RMS=0.045395 controls={'number_words': -0.047792, 'uppercase': 0.044336, 'ordinary_words': -0.009319, 'role_to_number': -0.05686}
+L01H3 A=-0.83846 B=-0.89039 D=-0.051931 alternative_D=-0.053438 shape_RMS=0.046922 controls={'number_words': -0.103859, 'uppercase': -0.009911, 'ordinary_words': -0.012329, 'role_to_number': 0.06572}
+L11H1 A= 1.55627 B= 1.50613 D=-0.050144 alternative_D=-0.042246 shape_RMS=0.030171 controls={'number_words': -0.088029, 'uppercase': -0.004748, 'ordinary_words': 0.05177, 'role_to_number': 0.035227}
+L02H0 A= 2.11365 B= 2.06456 D=-0.049089 alternative_D=-0.069693 shape_RMS=0.042646 controls={'number_words': -0.04609, 'uppercase': -0.01065, 'ordinary_words': 0.000445, 'role_to_number': -0.032901}
+L01H0 A= 0.65892 B= 0.61640 D=-0.042519 alternative_D= 0.032445 shape_RMS=0.046590 controls={'number_words': 0.024699, 'uppercase': 0.002673, 'ordinary_words': -0.011736, 'role_to_number': -0.020078}
+L03H3 A=-1.82918 B=-1.86255 D=-0.033378 alternative_D=-0.037347 shape_RMS=0.014130 controls={'number_words': -0.021614, 'uppercase': 0.000294, 'ordinary_words': -0.003548, 'role_to_number': 0.004525}
+L13H0 A=-0.22449 B=-0.25557 D=-0.031084 alternative_D=-0.040996 shape_RMS=0.019463 controls={'number_words': -0.004109, 'uppercase': -0.017389, 'ordinary_words': 0.016826, 'role_to_number': 0.03066}
+
+PREVIOUS CANDIDATES, DIAGONAL-SCALED CURVE DIFFERENCES
+Distance samples: [1, 2, 4, 8, 16, 32, 64, 128, 256, 511]
+L00H2 [ 0.1727  0.1697  0.1562  0.1943  0.144   0.1628  0.1349  0.0493 -0.0773 -0.0337] recency_D 0.068508
+L15H1 [ 0.0001 -0.0047 -0.0114 -0.0074 -0.0011 -0.0117  0.0172  0.0023 -0.0108  0.0068] recency_D -0.00976
+L15H2 [-0.0026 -0.0011  0.0021  0.0063 -0.0103  0.0025  0.0029  0.0005  0.0125  0.009 ] recency_D 0.008362
+L16H2 [-0.0074 -0.0168 -0.0181  0.0033 -0.0107  0.0069 -0.0021  0.0056 -0.0022 -0.0018] recency_D -0.019015
+L16H3 [-0.0281 -0.0266 -0.0096  0.0034 -0.011  -0.0008  0.0109  0.0048 -0.0134 -0.0067] recency_D -0.01602
+L17H3 [-0.0115 -0.009  -0.003  -0.0142 -0.0089  0.0011  0.0042  0.0024  0.0013  0.0111] recency_D -0.012535
+
+Even a stable recency coefficient change would not identify sycophancy
+without knowing where guesses occur and whether these paths are used.
+
+```

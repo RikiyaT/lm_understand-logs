@@ -1,0 +1,110 @@
+OUTPUT of run 24 of at most 60:
+```
+LEARNED NORMALIZATION MULTIPLIER AUDIT
+Gemma multiplier = 1 + stored normalization weight.
+Exact zero multipliers, A/B: 98 98
+Opened/closed/sign-flipped coordinates: 0
+Largest relative changes in individual learned multipliers:
+model.layers.16.pre_feedforward_layernorm.weight coordinate 243 A 0.7568359375 B 0.755859375 relative_change 0.0012911555842479018
+model.layers.1.post_feedforward_layernorm.weight coordinate 176 A 0.7568359375 B 0.755859375 relative_change 0.0012911555842479018
+model.layers.5.self_attn.q_norm.weight coordinate 237 A 0.765625 B 0.7666015625 relative_change 0.0012746972594008922
+model.layers.2.post_attention_layernorm.weight coordinate 263 A 0.775390625 B 0.7763671875 relative_change 0.0012586532410320957
+model.layers.2.post_attention_layernorm.weight coordinate 181 A 0.787109375 B 0.7880859375 relative_change 0.0012399256044637321
+model.layers.13.pre_feedforward_layernorm.weight coordinate 533 A 0.7880859375 B 0.7890625 relative_change 0.001238390092879257
+model.layers.14.input_layernorm.weight coordinate 171 A 0.7890625 B 0.7900390625 relative_change 0.0012368583797155227
+model.layers.2.post_attention_layernorm.weight coordinate 623 A 0.791015625 B 0.7900390625 relative_change 0.0012353304508956147
+model.layers.14.input_layernorm.weight coordinate 546 A 0.7958984375 B 0.794921875 relative_change 0.0012277470841006752
+model.layers.14.self_attn.q_norm.weight coordinate 198 A 0.796875 B 0.7958984375 relative_change 0.001226241569589209
+model.layers.14.pre_feedforward_layernorm.weight coordinate 221 A 0.802734375 B 0.8017578125 relative_change 0.0012172854534388314
+model.layers.14.pre_feedforward_layernorm.weight coordinate 264 A 0.8056640625 B 0.806640625 relative_change 0.0012113870381586917
+model.layers.14.input_layernorm.weight coordinate 191 A 0.810546875 B 0.8095703125 relative_change 0.0012055455093429777
+model.layers.15.pre_feedforward_layernorm.weight coordinate 319 A 0.81640625 B 0.8154296875 relative_change 0.0011968880909634949
+
+EXACT MLP COEFFICIENT DECOMPOSITION
+For W*gamma: D = DeltaW*gamma_mid + W_mid*DeltaGamma.
+Reported ratios concern weight coefficients, NOT causal importance.
+norm_ratio=||norm_part||/||total_difference||; signed_share=<D,N>/||D||^2.
+Numeric ratio uses digit-contrast projections on the relevant side.
+L00 input norm_ratio=0 share=0 numeric=0 | output norm_ratio=0.00302514 share=1.06306e-05 numeric=0.00399878
+L01 input norm_ratio=0 share=0 numeric=0 | output norm_ratio=0.00166789 share=4.48135e-06 numeric=0.00227347
+L02 input norm_ratio=0 share=0 numeric=0 | output norm_ratio=0.00334926 share=1.57083e-05 numeric=0.00438717
+L03 input norm_ratio=0.000253339 share=8.42732e-08 numeric=0.000110939 | output norm_ratio=5.67191e-05 share=8.09776e-09 numeric=9.03828e-05
+L04 input norm_ratio=0.00066825 share=5.05019e-07 numeric=0.00069727 | output norm_ratio=7.77159e-05 share=8.00827e-09 numeric=0.000101701
+L05 input norm_ratio=0.000738694 share=6.20098e-07 numeric=0.000564155 | output norm_ratio=0 share=0 numeric=0
+L06 input norm_ratio=0.00106217 share=1.31094e-06 numeric=0.000913924 | output norm_ratio=0 share=0 numeric=0
+L07 input norm_ratio=0.00120402 share=1.83489e-06 numeric=0.001151 | output norm_ratio=0 share=0 numeric=0
+L08 input norm_ratio=0.00101854 share=1.18039e-06 numeric=0.000827518 | output norm_ratio=0.00120697 share=1.14576e-06 numeric=0.000895611
+L09 input norm_ratio=0.00244572 share=6.65296e-06 numeric=0.00227614 | output norm_ratio=0 share=0 numeric=0
+L10 input norm_ratio=0.00120523 share=1.66516e-06 numeric=0.00132117 | output norm_ratio=0 share=0 numeric=0
+L11 input norm_ratio=0.000853124 share=8.13401e-07 numeric=0.000581891 | output norm_ratio=0 share=0 numeric=0
+L12 input norm_ratio=0.00297227 share=9.84942e-06 numeric=0.00237756 | output norm_ratio=0 share=0 numeric=0
+L13 input norm_ratio=0.00239143 share=6.38771e-06 numeric=0.00190888 | output norm_ratio=0 share=0 numeric=0
+L14 input norm_ratio=0.00402847 share=1.85983e-05 numeric=0.00331255 | output norm_ratio=0 share=0 numeric=0
+L15 input norm_ratio=0.00309842 share=1.17172e-05 numeric=0.00262404 | output norm_ratio=0 share=0 numeric=0
+L16 input norm_ratio=0.00344171 share=1.3078e-05 numeric=0.00241624 | output norm_ratio=0 share=0 numeric=0
+L17 input norm_ratio=0.00345088 share=1.35387e-05 numeric=0.00285517 | output norm_ratio=0 share=0 numeric=0
+
+EXACT ATTENTION OV COEFFICIENT DECOMPOSITION
+Let M=O_h V and S=outer(output_gamma,input_gamma).
+D = S_mid * DeltaM + DeltaS * M_mid, with * elementwise on WEIGHT matrices.
+completed OV layer 0
+completed OV layer 1
+completed OV layer 2
+completed OV layer 3
+completed OV layer 4
+completed OV layer 5
+completed OV layer 6
+completed OV layer 7
+completed OV layer 8
+completed OV layer 9
+completed OV layer 10
+completed OV layer 11
+completed OV layer 12
+completed OV layer 13
+completed OV layer 14
+completed OV layer 15
+completed OV layer 16
+completed OV layer 17
+Largest normalization-parameter contributions to OV differences:
+L02H0 norm_ratio=0.008637459 signed_share=0.0001119323 numeric_ratio=0.009107058
+L02H1 norm_ratio=0.00857386 signed_share=9.18241e-05 numeric_ratio=0.009050699
+L09H1 norm_ratio=0.008229834 signed_share=4.059848e-05 numeric_ratio=0.01000369
+L02H2 norm_ratio=0.007320619 signed_share=7.796397e-05 numeric_ratio=0.008416075
+L09H0 norm_ratio=0.00509112 signed_share=2.192777e-05 numeric_ratio=0.005794611
+L09H2 norm_ratio=0.00503356 signed_share=-5.18388e-06 numeric_ratio=0.00624935
+L01H3 norm_ratio=0.004917135 signed_share=4.162163e-05 numeric_ratio=0.005112841
+L02H3 norm_ratio=0.004901028 signed_share=4.859624e-05 numeric_ratio=0.005430629
+L06H1 norm_ratio=0.00475181 signed_share=-8.228027e-06 numeric_ratio=0.004338056
+L01H1 norm_ratio=0.004616774 signed_share=3.766321e-05 numeric_ratio=0.004466496
+L01H0 norm_ratio=0.004390089 signed_share=3.610498e-05 numeric_ratio=0.004596769
+L03H2 norm_ratio=0.00412567 signed_share=3.556069e-05 numeric_ratio=0.003712822
+
+QK CHECK: MATRIX-PARAMETER VERSUS NORM-PARAMETER GROUPS
+Four algebraic parameter combinations give an exact symmetric split.
+These are coefficient-matrix products, not checkpoint forward evaluations.
+L00H0 distance= 0 norm_ratio=0.005007798 signed_share=0.0001134259 marker_ratio=0.001342028
+L00H0 distance=16 norm_ratio=0.005837134 signed_share=4.061026e-05 marker_ratio=0.002118041
+L00H2 distance= 0 norm_ratio=0.004365833 signed_share=4.401573e-05 marker_ratio=0.0008057891
+L00H2 distance=16 norm_ratio=0.004596166 signed_share=6.260394e-06 marker_ratio=0.001020002
+L00H3 distance= 0 norm_ratio=0.004626085 signed_share=9.0905e-05 marker_ratio=0.001857797
+L00H3 distance=16 norm_ratio=0.005457991 signed_share=-2.383063e-05 marker_ratio=0.002969752
+L01H1 distance= 0 norm_ratio=0 signed_share=0 marker_ratio=0
+L01H1 distance=16 norm_ratio=0 signed_share=0 marker_ratio=0
+L01H3 distance= 0 norm_ratio=0 signed_share=0 marker_ratio=0
+L01H3 distance=16 norm_ratio=0 signed_share=0 marker_ratio=0
+L12H1 distance= 0 norm_ratio=0.003574492 signed_share=-3.456375e-05 marker_ratio=0.003263761
+L12H1 distance=16 norm_ratio=0.003343933 signed_share=-6.73045e-05 marker_ratio=0.003203686
+L15H1 distance= 0 norm_ratio=0.008401583 signed_share=0.0001245724 marker_ratio=0.006311304
+L15H1 distance=16 norm_ratio=0.008854101 signed_share=7.551682e-06 marker_ratio=0.006949682
+L16H2 distance= 0 norm_ratio=0.009244891 signed_share=0.0003170033 marker_ratio=0.008294184
+L16H2 distance=16 norm_ratio=0.01019558 signed_share=6.774677e-05 marker_ratio=0.01043676
+L16H3 distance= 0 norm_ratio=0.0127577 signed_share=0.0005207274 marker_ratio=0.009497098
+L16H3 distance=16 norm_ratio=0.01393331 signed_share=0.0006430253 marker_ratio=0.01284875
+L17H3 distance= 0 norm_ratio=0.004923569 signed_share=-0.0001451444 marker_ratio=0.004684961
+L17H3 distance=16 norm_ratio=0.005128062 signed_share=-0.000177837 marker_ratio=0.004656716
+
+A small learned-multiplier contribution would not rule out effects
+of state-dependent RMS denominators caused by changed dense weights.
+Those denominators have not been evaluated.
+
+```

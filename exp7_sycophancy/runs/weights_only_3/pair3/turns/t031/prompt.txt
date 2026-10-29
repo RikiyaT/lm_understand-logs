@@ -1,0 +1,127 @@
+OUTPUT of run 21 of at most 60:
+```
+=== ADJACENT MLP UPDATE-READING SUBSPACE OVERLAP ===
+Overlap is ||U_next^T U_previous||_F^2 / 16.
+This tests the direct residual-coordinate connection, not actual state evolution.
+layer_pair update_raw midpoint_raw update_scaled midpoint_scaled
+00->01 0.479700 0.127932 0.459559 0.303721
+01->02 0.398686 0.145006 0.448870 0.343034
+02->03 0.370741 0.146395 0.420466 0.192085
+03->04 0.141366 0.144938 0.098074 0.140041
+04->05 0.405083 0.302205 0.360321 0.588109
+05->06 0.311747 0.300571 0.274410 0.505068
+06->07 0.421645 0.332440 0.377987 0.446973
+07->08 0.443831 0.316504 0.491141 0.604855
+08->09 0.457547 0.338600 0.527199 0.659381
+09->10 0.336996 0.267960 0.565199 0.792842
+10->11 0.378738 0.217902 0.693428 0.768673
+11->12 0.270534 0.277859 0.566293 0.767282
+12->13 0.425937 0.301212 0.606853 0.869318
+13->14 0.565817 0.323328 0.724940 0.909557
+14->15 0.517684 0.321832 0.732618 0.897844
+15->16 0.536364 0.381357 0.778235 0.927106
+16->17 0.600092 0.487899 0.715122 0.849855
+
+=== TOP 12 GAIN-SCALED CONNECTIONS BY SHARE OF OV-DIFFERENCE ENERGY ===
+L07MLP -> L08H3 -> L08MLP delta_joint=0.2762% midpoint_joint=0.0651% midpoint_subspace_control=0.0307% delta_source=23.889% delta_target=1.149% conditional_enrichment=1.007 connector_rel_change=0.03141
+L08MLP -> L09H0 -> L09MLP delta_joint=0.2642% midpoint_joint=0.0931% midpoint_subspace_control=0.0113% delta_source=26.206% delta_target=0.830% conditional_enrichment=1.214 connector_rel_change=0.02361
+L07MLP -> L08H2 -> L08MLP delta_joint=0.2549% midpoint_joint=0.0842% midpoint_subspace_control=0.0477% delta_source=24.119% delta_target=1.157% conditional_enrichment=0.914 connector_rel_change=0.03491
+L07MLP -> L08H1 -> L08MLP delta_joint=0.2429% midpoint_joint=0.0665% midpoint_subspace_control=0.0383% delta_source=29.433% delta_target=0.983% conditional_enrichment=0.840 connector_rel_change=0.03414
+L08MLP -> L09H2 -> L09MLP delta_joint=0.2364% midpoint_joint=0.0951% midpoint_subspace_control=0.0092% delta_source=25.362% delta_target=0.716% conditional_enrichment=1.302 connector_rel_change=0.02187
+L06MLP -> L07H0 -> L07MLP delta_joint=0.1891% midpoint_joint=0.0918% midpoint_subspace_control=0.0194% delta_source=27.164% delta_target=0.637% conditional_enrichment=1.092 connector_rel_change=0.01874
+L08MLP -> L09H3 -> L09MLP delta_joint=0.1784% midpoint_joint=0.0397% midpoint_subspace_control=0.0118% delta_source=24.530% delta_target=0.577% conditional_enrichment=1.259 connector_rel_change=0.02717
+L09MLP -> L10H0 -> L10MLP delta_joint=0.1751% midpoint_joint=0.1507% midpoint_subspace_control=0.0036% delta_source=43.344% delta_target=0.392% conditional_enrichment=1.031 connector_rel_change=0.01175
+L09MLP -> L10H2 -> L10MLP delta_joint=0.1739% midpoint_joint=0.1022% midpoint_subspace_control=0.0045% delta_source=38.970% delta_target=0.374% conditional_enrichment=1.195 connector_rel_change=0.01913
+L08MLP -> L09H1 -> L09MLP delta_joint=0.1523% midpoint_joint=0.0678% midpoint_subspace_control=0.0082% delta_source=33.016% delta_target=0.456% conditional_enrichment=1.011 connector_rel_change=0.01697
+L06MLP -> L07H3 -> L07MLP delta_joint=0.1448% midpoint_joint=0.0544% midpoint_subspace_control=0.0136% delta_source=26.939% delta_target=0.464% conditional_enrichment=1.159 connector_rel_change=0.02854
+L05MLP -> L06H2 -> L06MLP delta_joint=0.1378% midpoint_joint=0.0594% midpoint_subspace_control=0.0330% delta_source=15.712% delta_target=0.636% conditional_enrichment=1.378 connector_rel_change=0.02673
+
+=== TOP 8 RAW CONNECTIONS BY SHARE OF OV-DIFFERENCE ENERGY ===
+L11MLP -> L12H0 -> L12MLP delta_joint=2.4549% midpoint_joint=1.5062% midpoint_subspace_control=0.1032% delta_source=17.113% delta_target=12.361% conditional_enrichment=1.160 connector_rel_change=0.01520
+L09MLP -> L10H0 -> L10MLP delta_joint=1.9311% midpoint_joint=0.4666% midpoint_subspace_control=0.1926% delta_source=20.295% delta_target=7.645% conditional_enrichment=1.245 connector_rel_change=0.02113
+L09MLP -> L10H2 -> L10MLP delta_joint=1.4489% midpoint_joint=0.2876% midpoint_subspace_control=0.0954% delta_source=18.141% delta_target=6.593% conditional_enrichment=1.212 connector_rel_change=0.02764
+L10MLP -> L11H2 -> L11MLP delta_joint=1.4032% midpoint_joint=0.5203% midpoint_subspace_control=0.0862% delta_source=20.757% delta_target=6.070% conditional_enrichment=1.114 connector_rel_change=0.01496
+L08MLP -> L09H0 -> L09MLP delta_joint=1.4018% midpoint_joint=0.2241% midpoint_subspace_control=0.1672% delta_source=27.039% delta_target=5.523% conditional_enrichment=0.939 connector_rel_change=0.02976
+L06MLP -> L07H3 -> L07MLP delta_joint=1.3294% midpoint_joint=0.2679% midpoint_subspace_control=0.1707% delta_source=19.822% delta_target=5.784% conditional_enrichment=1.160 connector_rel_change=0.03076
+L02MLP -> L03H0 -> L03MLP delta_joint=1.2570% midpoint_joint=0.1455% midpoint_subspace_control=0.3337% delta_source=17.611% delta_target=5.897% conditional_enrichment=1.210 connector_rel_change=0.03678
+L10MLP -> L11H3 -> L11MLP delta_joint=1.2159% midpoint_joint=0.4669% midpoint_subspace_control=0.0651% delta_source=21.412% delta_target=5.319% conditional_enrichment=1.068 connector_rel_change=0.01317
+
+=== LAYER SUMMARY ===
+attention_layer mean_delta_joint_raw mean_delta_joint_scaled best_scaled_head best_scaled_delta_joint
+ 1 0.6110% 0.0123% 0 0.0177%
+ 2 0.6424% 0.0122% 3 0.0184%
+ 3 0.8912% 0.0049% 2 0.0062%
+ 4 0.3575% 0.0151% 2 0.0210%
+ 5 0.7555% 0.0166% 3 0.0198%
+ 6 0.5667% 0.1173% 2 0.1378%
+ 7 1.0812% 0.1445% 0 0.1891%
+ 8 0.8322% 0.2217% 3 0.2762%
+ 9 1.1119% 0.2078% 0 0.2642%
+10 1.3188% 0.1217% 0 0.1751%
+11 1.1084% 0.0091% 0 0.0168%
+12 1.0886% 0.0195% 0 0.0413%
+13 0.6185% 0.0209% 1 0.0253%
+14 0.4224% 0.0246% 1 0.0314%
+15 0.7588% 0.0152% 3 0.0184%
+16 1.0077% 0.0459% 1 0.0502%
+17 0.4718% 0.0357% 3 0.0481%
+
+=== PREVIOUS ATTENTION CANDIDATES, RAW VERSUS GAIN-SCALED ===
+L04H1
+  raw
+L03MLP -> L04H1 -> L04MLP delta_joint=0.3192% midpoint_joint=0.1231% midpoint_subspace_control=0.1482% delta_source=7.405% delta_target=4.128% conditional_enrichment=1.044 connector_rel_change=0.02890
+  gain_scaled
+L03MLP -> L04H1 -> L04MLP delta_joint=0.0125% midpoint_joint=0.0102% midpoint_subspace_control=0.0059% delta_source=15.771% delta_target=0.104% conditional_enrichment=0.760 connector_rel_change=0.03653
+L08H2
+  raw
+L07MLP -> L08H2 -> L08MLP delta_joint=0.8281% midpoint_joint=0.1319% midpoint_subspace_control=0.2321% delta_source=16.667% delta_target=5.188% conditional_enrichment=0.958 connector_rel_change=0.03502
+  gain_scaled
+L07MLP -> L08H2 -> L08MLP delta_joint=0.2549% midpoint_joint=0.0842% midpoint_subspace_control=0.0477% delta_source=24.119% delta_target=1.157% conditional_enrichment=0.914 connector_rel_change=0.03491
+L11H0
+  raw
+L10MLP -> L11H0 -> L11MLP delta_joint=1.0697% midpoint_joint=0.1313% midpoint_subspace_control=0.1152% delta_source=21.816% delta_target=4.956% conditional_enrichment=0.989 connector_rel_change=0.03321
+  gain_scaled
+L10MLP -> L11H0 -> L11MLP delta_joint=0.0168% midpoint_joint=0.0076% midpoint_subspace_control=0.0016% delta_source=50.496% delta_target=0.030% conditional_enrichment=1.105 connector_rel_change=0.01808
+L11H1
+  raw
+L10MLP -> L11H1 -> L11MLP delta_joint=0.7446% midpoint_joint=0.6287% midpoint_subspace_control=0.0622% delta_source=18.105% delta_target=3.939% conditional_enrichment=1.044 connector_rel_change=0.01396
+  gain_scaled
+L10MLP -> L11H1 -> L11MLP delta_joint=0.0088% midpoint_joint=0.0567% midpoint_subspace_control=0.0021% delta_source=47.019% delta_target=0.019% conditional_enrichment=1.006 connector_rel_change=0.00844
+L11H2
+  raw
+L10MLP -> L11H2 -> L11MLP delta_joint=1.4032% midpoint_joint=0.5203% midpoint_subspace_control=0.0862% delta_source=20.757% delta_target=6.070% conditional_enrichment=1.114 connector_rel_change=0.01496
+  gain_scaled
+L10MLP -> L11H2 -> L11MLP delta_joint=0.0059% midpoint_joint=0.0086% midpoint_subspace_control=0.0007% delta_source=50.614% delta_target=0.011% conditional_enrichment=1.048 connector_rel_change=0.00817
+L11H3
+  raw
+L10MLP -> L11H3 -> L11MLP delta_joint=1.2159% midpoint_joint=0.4669% midpoint_subspace_control=0.0651% delta_source=21.412% delta_target=5.319% conditional_enrichment=1.068 connector_rel_change=0.01317
+  gain_scaled
+L10MLP -> L11H3 -> L11MLP delta_joint=0.0048% midpoint_joint=0.0116% midpoint_subspace_control=0.0007% delta_source=49.452% delta_target=0.010% conditional_enrichment=0.949 connector_rel_change=0.00519
+L12H0
+  raw
+L11MLP -> L12H0 -> L12MLP delta_joint=2.4549% midpoint_joint=1.5062% midpoint_subspace_control=0.1032% delta_source=17.113% delta_target=12.361% conditional_enrichment=1.160 connector_rel_change=0.01520
+  gain_scaled
+L11MLP -> L12H0 -> L12MLP delta_joint=0.0413% midpoint_joint=0.0297% midpoint_subspace_control=0.0020% delta_source=52.975% delta_target=0.084% conditional_enrichment=0.932 connector_rel_change=0.01688
+L12H1
+  raw
+L11MLP -> L12H1 -> L12MLP delta_joint=0.7191% midpoint_joint=0.1755% midpoint_subspace_control=0.1180% delta_source=13.231% delta_target=5.379% conditional_enrichment=1.010 connector_rel_change=0.02198
+  gain_scaled
+L11MLP -> L12H1 -> L12MLP delta_joint=0.0093% midpoint_joint=0.0088% midpoint_subspace_control=0.0012% delta_source=51.326% delta_target=0.016% conditional_enrichment=1.103 connector_rel_change=0.01303
+L12H2
+  raw
+L11MLP -> L12H2 -> L12MLP delta_joint=0.2462% midpoint_joint=0.0818% midpoint_subspace_control=0.1628% delta_source=7.624% delta_target=3.105% conditional_enrichment=1.040 connector_rel_change=0.01567
+  gain_scaled
+L11MLP -> L12H2 -> L12MLP delta_joint=0.0085% midpoint_joint=0.0210% midpoint_subspace_control=0.0024% delta_source=48.967% delta_target=0.018% conditional_enrichment=0.971 connector_rel_change=0.00576
+L12H3
+  raw
+L11MLP -> L12H3 -> L12MLP delta_joint=0.9342% midpoint_joint=0.1675% midpoint_subspace_control=0.1052% delta_source=15.517% delta_target=5.639% conditional_enrichment=1.068 connector_rel_change=0.02911
+  gain_scaled
+L11MLP -> L12H3 -> L12MLP delta_joint=0.0191% midpoint_joint=0.0245% midpoint_subspace_control=0.0023% delta_source=50.850% delta_target=0.039% conditional_enrichment=0.958 connector_rel_change=0.01097
+
+Elapsed: 8.8s
+The arrows denote open coefficient connections through a residual path and an OV map.
+Intervening nonlinear contributions and actual attention weights were not evaluated.
+No result establishes that a message uses these connections or what the subspaces mean.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

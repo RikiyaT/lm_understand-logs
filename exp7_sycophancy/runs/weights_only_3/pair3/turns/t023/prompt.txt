@@ -1,0 +1,82 @@
+OUTPUT of run 17 of at most 60:
+```
+=== MLP PAIR-STRUCTURE AUDIT ===
+Joint mismatch is zero only for exact declared gate matching and opposite D outer U.
+It checks coefficient magnitudes as well as directions.
+Opposite-gate pairs are NOT being treated as cancelling nonlinear MLP units.
+
+--- raw: same_gate_opposing_DU ---
+L10 U0816/U1137 joint_mismatch=0.82317 gate_cos=+0.88740 DU_cos=-0.43530 norm_ratios(G,DU)=(0.9902,1.0358) delta_DU_cos=+0.3714 delta_DU_coherence=1.3713
+L07 U0427/U1686 joint_mismatch=0.84500 gate_cos=+0.86480 DU_cos=-0.57894 norm_ratios(G,DU)=(0.6478,1.7640) delta_DU_cos=+0.4893 delta_DU_coherence=1.4592
+L13 U0308/U0491 joint_mismatch=0.84852 gate_cos=+0.80707 DU_cos=-0.47374 norm_ratios(G,DU)=(0.9791,1.0526) delta_DU_cos=+0.4179 delta_DU_coherence=1.4172
+L05 U0660/U1075 joint_mismatch=0.86663 gate_cos=+0.73150 DU_cos=-0.63624 norm_ratios(G,DU)=(1.4467,0.6075) delta_DU_cos=+0.5343 delta_DU_coherence=1.5203
+L05 U1437/U2001 joint_mismatch=0.88790 gate_cos=+0.56979 DU_cos=-0.66271 norm_ratios(G,DU)=(1.2488,0.8635) delta_DU_cos=-0.0271 delta_DU_coherence=0.9741
+L11 U0982/U2024 joint_mismatch=0.96646 gate_cos=+0.51618 DU_cos=-0.55150 norm_ratios(G,DU)=(0.9779,0.9264) delta_DU_cos=+0.2174 delta_DU_coherence=1.2084
+L04 U0004/U1902 joint_mismatch=1.00179 gate_cos=+0.85483 DU_cos=-0.15224 norm_ratios(G,DU)=(1.0878,0.7237) delta_DU_cos=+0.2856 delta_DU_coherence=1.2763
+L03 U1182/U1230 joint_mismatch=1.00760 gate_cos=+0.69583 DU_cos=-0.30206 norm_ratios(G,DU)=(1.0824,0.7606) delta_DU_cos=+0.2432 delta_DU_coherence=1.2429
+
+--- raw: opposite_gate_opposing_DU ---
+L03 U0082/U1073 joint_mismatch=0.92859 gate_cos=-0.90367 DU_cos=-0.24458 norm_ratios(G,DU)=(0.8704,1.1329) delta_DU_cos=+0.0435 delta_DU_coherence=1.0434
+L04 U1264/U1907 joint_mismatch=0.93800 gate_cos=-0.85500 DU_cos=-0.27277 norm_ratios(G,DU)=(1.1054,0.8546) delta_DU_cos=-0.3334 delta_DU_coherence=0.6673
+L04 U0595/U1898 joint_mismatch=0.94482 gate_cos=-0.85480 DU_cos=-0.32773 norm_ratios(G,DU)=(0.8156,1.9020) delta_DU_cos=-0.5353 delta_DU_coherence=0.4713
+L04 U0262/U0846 joint_mismatch=0.99097 gate_cos=-0.84357 DU_cos=-0.17710 norm_ratios(G,DU)=(1.0260,0.8472) delta_DU_cos=-0.3760 delta_DU_coherence=0.6256
+L04 U0836/U1158 joint_mismatch=0.99862 gate_cos=-0.87167 DU_cos=-0.13499 norm_ratios(G,DU)=(1.0994,0.9942) delta_DU_cos=-0.2285 delta_DU_coherence=0.7747
+L04 U0462/U1369 joint_mismatch=1.00759 gate_cos=-0.83274 DU_cos=-0.15241 norm_ratios(G,DU)=(1.0279,0.9714) delta_DU_cos=-0.3854 delta_DU_coherence=0.6152
+L04 U0238/U0935 joint_mismatch=1.00795 gate_cos=-0.80284 DU_cos=-0.23745 norm_ratios(G,DU)=(0.7760,1.7202) delta_DU_cos=-0.1276 delta_DU_coherence=0.8733
+L10 U1363/U1529 joint_mismatch=1.01488 gate_cos=-0.80069 DU_cos=-0.21307 norm_ratios(G,DU)=(0.8421,0.5561) delta_DU_cos=-0.0740 delta_DU_coherence=0.9294
+
+--- gain_scaled: same_gate_opposing_DU ---
+L05 U1437/U2001 joint_mismatch=0.78170 gate_cos=+0.63391 DU_cos=-0.80450 norm_ratios(G,DU)=(1.0846,1.4218) delta_DU_cos=-0.4311 delta_DU_coherence=0.5760
+L07 U0427/U1686 joint_mismatch=0.82467 gate_cos=+0.84418 DU_cos=-0.54529 norm_ratios(G,DU)=(0.6867,1.2494) delta_DU_cos=+0.5496 delta_DU_coherence=1.5415
+L13 U0308/U0491 joint_mismatch=0.85725 gate_cos=+0.84420 DU_cos=-0.42138 norm_ratios(G,DU)=(0.9700,1.0194) delta_DU_cos=+0.3639 delta_DU_coherence=1.3627
+L03 U1182/U1230 joint_mismatch=0.86645 gate_cos=+0.78888 DU_cos=-0.50889 norm_ratios(G,DU)=(1.0073,1.5762) delta_DU_cos=+0.1656 delta_DU_coherence=1.1572
+L10 U0816/U1137 joint_mismatch=0.88469 gate_cos=+0.78539 DU_cos=-0.43297 norm_ratios(G,DU)=(1.0472,0.9691) delta_DU_cos=+0.3710 delta_DU_coherence=1.3708
+L00 U0909/U1451 joint_mismatch=0.94643 gate_cos=+0.54260 DU_cos=-0.61776 norm_ratios(G,DU)=(1.6048,0.9572) delta_DU_cos=-0.3337 delta_DU_coherence=0.7657
+L05 U1200/U2001 joint_mismatch=0.94777 gate_cos=+0.42297 DU_cos=-0.69188 norm_ratios(G,DU)=(0.7809,1.0393) delta_DU_cos=+0.0352 delta_DU_coherence=1.0335
+L03 U0145/U0357 joint_mismatch=0.95878 gate_cos=+0.69962 DU_cos=-0.47854 norm_ratios(G,DU)=(0.5806,1.1629) delta_DU_cos=-0.0142 delta_DU_coherence=0.9890
+
+--- gain_scaled: opposite_gate_opposing_DU ---
+L00 U0108/U0256 joint_mismatch=1.03500 gate_cos=-0.64625 DU_cos=-0.33971 norm_ratios(G,DU)=(0.7179,0.6833) delta_DU_cos=+0.3816 delta_DU_coherence=1.3243
+L02 U0246/U1318 joint_mismatch=1.03662 gate_cos=-0.64476 DU_cos=-0.28787 norm_ratios(G,DU)=(0.9157,1.1997) delta_DU_cos=-0.1533 delta_DU_coherence=0.8604
+L03 U0082/U1073 joint_mismatch=1.04289 gate_cos=-0.97869 DU_cos=+0.06129 norm_ratios(G,DU)=(0.9003,0.8985) delta_DU_cos=-0.0446 delta_DU_coherence=0.9568
+L09 U0420/U1408 joint_mismatch=1.05716 gate_cos=-0.63992 DU_cos=-0.24701 norm_ratios(G,DU)=(0.8941,1.0666) delta_DU_cos=+0.2556 delta_DU_coherence=1.2344
+L10 U1363/U1529 joint_mismatch=1.05882 gate_cos=-0.96149 DU_cos=+0.08628 norm_ratios(G,DU)=(0.8931,0.6060) delta_DU_cos=-0.1324 delta_DU_coherence=0.8709
+L03 U1512/U2037 joint_mismatch=1.06954 gate_cos=-0.32494 DU_cos=-0.60128 norm_ratios(G,DU)=(1.0918,1.6543) delta_DU_cos=+0.3674 delta_DU_coherence=1.3617
+L09 U1784/U1807 joint_mismatch=1.06984 gate_cos=-0.62600 DU_cos=-0.23891 norm_ratios(G,DU)=(1.1841,1.0759) delta_DU_cos=+0.2717 delta_DU_coherence=1.2709
+L00 U0108/U1937 joint_mismatch=1.07099 gate_cos=-0.80749 DU_cos=-0.06344 norm_ratios(G,DU)=(0.9011,0.4854) delta_DU_cos=+0.1214 delta_DU_coherence=1.1206
+
+=== BEST SAME-GATE/OPPOSING-DU PARTNER FOR PREVIOUS CANDIDATES ===
+A nearest partner is not necessarily a close or meaningful match.
+L00U1405 raw_partner=830 raw_mismatch=1.2154 scaled_partner=830 scaled_mismatch=1.2125 scaled_gate_cos=+0.5222 scaled_DU_cos=-0.0586 scaled_gate_mismatch=0.9777 scaled_DU_mismatch=1.4087 scaled_delta_DU_cos=+0.1270
+L00U1130 raw_partner=1898 raw_mismatch=1.3113 scaled_partner=715 scaled_mismatch=1.2518 scaled_gate_cos=+0.4027 scaled_DU_cos=-0.0860 scaled_gate_mismatch=1.1260 scaled_DU_mismatch=1.3661 scaled_delta_DU_cos=+0.0882
+L01U1385 raw_partner=1501 raw_mismatch=1.3647 scaled_partner=1501 scaled_mismatch=1.3556 scaled_gate_cos=+0.1386 scaled_DU_cos=-0.0249 scaled_gate_mismatch=1.3127 scaled_DU_mismatch=1.3972 scaled_delta_DU_cos=-0.0384
+L01U0372 raw_partner=94 raw_mismatch=1.3659 scaled_partner=975 scaled_mismatch=1.3544 scaled_gate_cos=+0.1480 scaled_DU_cos=-0.0249 scaled_gate_mismatch=1.3054 scaled_DU_mismatch=1.4017 scaled_delta_DU_cos=+0.0377
+L01U1976 raw_partner=849 raw_mismatch=1.3504 scaled_partner=849 scaled_mismatch=1.3416 scaled_gate_cos=+0.1979 scaled_DU_cos=-0.0041 scaled_gate_mismatch=1.2681 scaled_DU_mismatch=1.4113 scaled_delta_DU_cos=+0.0122
+L01U1725 raw_partner=964 raw_mismatch=1.3689 scaled_partner=1635 scaled_mismatch=1.3735 scaled_gate_cos=+0.1163 scaled_DU_cos=-0.0185 scaled_gate_mismatch=1.3453 scaled_DU_mismatch=1.4012 scaled_delta_DU_cos=-0.0236
+L04U0013 raw_partner=1757 raw_mismatch=1.0556 scaled_partner=1757 scaled_mismatch=1.0314 scaled_gate_cos=+0.9259 scaled_DU_cos=-0.0697 scaled_gate_mismatch=0.4101 scaled_DU_mismatch=1.3998 scaled_delta_DU_cos=+0.0106
+L04U1044 raw_partner=316 raw_mismatch=1.3187 scaled_partner=316 scaled_mismatch=1.2726 scaled_gate_cos=+0.5062 scaled_DU_cos=-0.0263 scaled_gate_mismatch=1.1354 scaled_DU_mismatch=1.3964 scaled_delta_DU_cos=-0.0394
+L04U0020 raw_partner=89 raw_mismatch=1.2001 scaled_partner=89 scaled_mismatch=1.2001 scaled_gate_cos=+0.6355 scaled_DU_cos=-0.1154 scaled_gate_mismatch=1.0317 scaled_DU_mismatch=1.3477 scaled_delta_DU_cos=-0.2547
+L06U1824 raw_partner=596 raw_mismatch=1.3656 scaled_partner=560 scaled_mismatch=1.3595 scaled_gate_cos=+0.1642 scaled_DU_cos=+0.0196 scaled_gate_mismatch=1.3020 scaled_DU_mismatch=1.4147 scaled_delta_DU_cos=-0.0177
+L07U1455 raw_partner=825 raw_mismatch=1.3777 scaled_partner=825 scaled_mismatch=1.3610 scaled_gate_cos=+0.1797 scaled_DU_cos=-0.0032 scaled_gate_mismatch=1.3059 scaled_DU_mismatch=1.4138 scaled_delta_DU_cos=-0.0237
+L08U1394 raw_partner=1016 raw_mismatch=1.3562 scaled_partner=1016 scaled_mismatch=1.2944 scaled_gate_cos=+0.3450 scaled_DU_cos=-0.0315 scaled_gate_mismatch=1.1847 scaled_DU_mismatch=1.3955 scaled_delta_DU_cos=-0.0076
+L08U1379 raw_partner=229 raw_mismatch=1.3220 scaled_partner=229 scaled_mismatch=1.3202 scaled_gate_cos=+0.2476 scaled_DU_cos=-0.0108 scaled_gate_mismatch=1.2268 scaled_DU_mismatch=1.4074 scaled_delta_DU_cos=-0.0615
+L10U1363 raw_partner=669 raw_mismatch=1.3326 scaled_partner=1106 scaled_mismatch=1.2622 scaled_gate_cos=+0.5528 scaled_DU_cos=-0.0499 scaled_gate_mismatch=1.1320 scaled_DU_mismatch=1.3801 scaled_delta_DU_cos=+0.0544
+L10U1564 raw_partner=1259 raw_mismatch=1.3616 scaled_partner=1259 scaled_mismatch=1.2856 scaled_gate_cos=+0.4001 scaled_DU_cos=+0.0360 scaled_gate_mismatch=1.1286 scaled_DU_mismatch=1.4254 scaled_delta_DU_cos=+0.0291
+L10U1529 raw_partner=750 raw_mismatch=1.3465 scaled_partner=1012 scaled_mismatch=1.3118 scaled_gate_cos=+0.3907 scaled_DU_cos=-0.0065 scaled_gate_mismatch=1.2058 scaled_DU_mismatch=1.4099 scaled_delta_DU_cos=-0.0435
+L14U0641 raw_partner=1798 raw_mismatch=1.3250 scaled_partner=1798 scaled_mismatch=1.2446 scaled_gate_cos=+0.5678 scaled_DU_cos=-0.0069 scaled_gate_mismatch=1.0545 scaled_DU_mismatch=1.4094 scaled_delta_DU_cos=-0.0079
+L17U1312 raw_partner=1936 raw_mismatch=1.3232 scaled_partner=1936 scaled_mismatch=1.2694 scaled_gate_cos=+0.5864 scaled_DU_cos=+0.0824 scaled_gate_mismatch=1.0390 scaled_DU_mismatch=1.4639 scaled_delta_DU_cos=+0.0837
+L17U1916 raw_partner=1454 raw_mismatch=1.3414 scaled_partner=1454 scaled_mismatch=1.2173 scaled_gate_cos=+0.5701 scaled_DU_cos=+0.0600 scaled_gate_mismatch=0.9601 scaled_DU_mismatch=1.4288 scaled_delta_DU_cos=+0.0565
+
+=== BEST SCORES ACROSS ALL LAYERS ===
+raw same_gate_opposing_DU minimum_joint_mismatch= 0.8231706 minimum_pair= (10, 816, 1137)
+raw opposite_gate_opposing_DU minimum_joint_mismatch= 0.9285887 minimum_pair= (3, 82, 1073)
+gain_scaled same_gate_opposing_DU minimum_joint_mismatch= 0.781696 minimum_pair= (5, 1437, 2001)
+gain_scaled opposite_gate_opposing_DU minimum_joint_mismatch= 1.034996 minimum_pair= (0, 108, 256)
+
+Elapsed: 21.2s
+No nonlinear activation, hidden state, model output, or behavioural evaluation was computed.
+Pair relationships are weight identities or approximate coefficient similarities only.
+Approximate gate matching does not establish functional cancellation on unknown inputs.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

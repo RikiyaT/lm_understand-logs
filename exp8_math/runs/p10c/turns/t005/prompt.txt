@@ -1,0 +1,23 @@
+OUTPUT of Python run 3 of at most 300:
+```
+Generation fields: ['id', 'source', 'answer', 'samples']
+Activation index: {'layers': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'mlp_layers': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], 'samples': [{'item': 'gsm8k_train_7354', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4960', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4335', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3553', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5789', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1381', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1927', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5240', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2157', 'sample': 0, 'correct': True, 'tokens': 6463}, {'item': 'gsm8k_train_494', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_7076', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_6526', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_422', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_975', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1387', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5866', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_462', 'sample': 0, 'correct': True, 'tokens': 6082}, {'item': 'gsm8k_train_2739', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_0', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5989', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1028', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_714', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_7181', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_350', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_7198', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3835', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2079', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5000', 'sample': 0, 'correct': True, 'tokens': 8192}, {'item': 'gsm8k_train_7182', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2193', 'sample': 0, 'correct': False, 'tokens'
+
+SAMPLE 0 {'id': 'gsm8k_train_7354', 'source': 'gsm8k', 'answer': '12'}
+
+SAMPLE 1 {'id': 'gsm8k_train_4960', 'source': 'gsm8k', 'answer': '4'}
+
+SAMPLE 2 {'id': 'gsm8k_train_4335', 'source': 'gsm8k', 'answer': '1200'}
+
+SAMPLE 3 {'id': 'gsm8k_train_3553', 'source': 'gsm8k', 'answer': '90'}
+
+SAMPLE 96 {'id': 'math_train_precalculus_587', 'source': 'math', 'answer': '-\\frac{1}{9}'}
+
+SAMPLE 97 {'id': 'math_train_geometry_350', 'source': 'math', 'answer': '1'}
+
+SAMPLE 98 {'id': 'math_train_intermediate_algebra_1136', 'source': 'math', 'answer': '53'}
+
+SAMPLE 99 {'id': 'math_train_algebra_603', 'source': 'math', 'answer': '7'}
+Correct sample indices: []
+
+```

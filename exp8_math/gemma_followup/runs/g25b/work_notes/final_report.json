@@ -1,0 +1,60 @@
+{
+  "submitted_edit": {
+    "model.layers.17.mlp.down_proj.weight": {
+      "columns": [
+        920
+      ],
+      "column_multiplier": 2.0,
+      "removed_fraction": -1.0
+    }
+  },
+  "tensor_sha256": "d38d76fbe02526e623c7b27655459f0cff667e447141a6add88374c831356649",
+  "changed_entries": 640,
+  "dev": {
+    "passes": [
+      18,
+      22
+    ],
+    "problems": 63,
+    "answers_per_model": 2016,
+    "original_accuracy": 0.3576388888888889,
+    "edited_accuracy": 0.35168650793650796,
+    "gain": -0.005952380952380952,
+    "problem_cluster_se": 0.012823380815162802,
+    "sample_paired_se": 0.010430214767814907,
+    "samples_wrong_to_right": 215,
+    "samples_right_to_wrong": 227
+  },
+  "holdout": {
+    "passes": [
+      23,
+      24,
+      25
+    ],
+    "problems": 256,
+    "answers_per_model": 3072,
+    "original_accuracy": 0.0810546875,
+    "edited_accuracy": 0.080078125,
+    "gain": -0.0009765625,
+    "problem_cluster_se": 0.005289048219691222,
+    "sample_paired_se": 0.004232423080406631,
+    "samples_wrong_to_right": 83,
+    "samples_right_to_wrong": 86
+  },
+  "holdout_95pct_ci": [
+    -0.011343097010594796,
+    0.009389972010594796
+  ],
+  "secondary_holdout": {
+    "original": {
+      "cut_share": 0.07096354166666667,
+      "mean_tokens": 1581.9137369791667
+    },
+    "edited": {
+      "cut_share": 0.09765625,
+      "mean_tokens": 1779.919921875
+    }
+  },
+  "conclusion": "No demonstrated accuracy improvement. Best tested non-original DEV candidate retained unchanged through HOLDOUT.",
+  "selection_path": "Rejected broad failure-neuron, repetition-direction, and attention-head edits; selected numerically selective L17 MLP neuron920 using DEV associations and static digit alignment, tested removal and doubling, and replicated doubling before freezing."
+}

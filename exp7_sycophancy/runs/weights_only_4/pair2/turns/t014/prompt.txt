@@ -1,0 +1,101 @@
+OUTPUT of run 13 of at most 60:
+```
+=== POSITIONAL WEIGHT-KERNEL DEFINITIONS ===
+Offsets: [  0   1   2   4   8  16  32  64 128]
+Primary belief words: ['think', 'believe', 'guess', 'assume'] ; comparison: ['question', 'calculate', 'correct', 'fact']
+Alternate belief words: ['opinion', 'suspect', 'suppose', 'reckon'] ; comparison: ['actual', 'truth', 'answer', 'solve']
+RoPE uses paired first/second halves of each 256-dimensional head.
+These are linear weight-kernel contractions, without Q/K RMS denominators or softmax.
+
+=== PRIMARY DIGIT-QUERY CONTRAST: STRONGEST SIGNED CHANGES ===
+L16H3 primary B-A: [ -7.578  -9.615 -10.395  -7.502  -7.563 -10.504  -6.28   -5.757  -5.009]
+          alternate B-A: [-6.825 -5.965 -4.074 -2.293 -4.796 -6.145 -7.02  -2.868 -6.302] sign_agreement=1.00
+L14H0 primary B-A: [7.48  7.364 6.821 5.848 5.71  5.437 5.216 7.275 4.533]
+          alternate B-A: [-1.198 -0.776 -0.47  -0.642 -0.268  0.957  0.496  0.024  1.035] sign_agreement=0.50
+L16H2 primary B-A: [ 4.23   6.574  7.62   4.61   2.321  4.953  1.851 -4.31  -7.915]
+          alternate B-A: [-4.2   -4.581 -4.043 -1.3   -5.7   -3.491 -3.262 -6.901 -3.825] sign_agreement=0.25
+L15H2 primary B-A: [5.647 5.806 5.966 6.111 5.488 5.218 2.874 1.759 0.086]
+          alternate B-A: [3.895 3.172 3.444 4.212 0.079 2.862 1.724 1.247 2.824] sign_agreement=1.00
+L12H1 primary B-A: [4.391 4.427 4.472 4.585 4.75  4.458 4.389 3.86  3.75 ]
+          alternate B-A: [0.581 0.555 0.554 0.576 0.465 0.49  0.522 0.461 0.724] sign_agreement=1.00
+L16H1 primary B-A: [-7.505 -7.414 -4.742  0.778 -4.014 -3.266 -2.692 -0.894 -2.739]
+          alternate B-A: [0.459 0.285 0.07  0.334 3.183 4.829 0.447 1.753 2.476] sign_agreement=0.12
+L14H1 primary B-A: [-3.883 -3.574 -3.225 -2.779 -2.376 -2.37  -4.503 -5.15  -5.113]
+          alternate B-A: [ 0.14   0.26   0.4    0.748  0.846 -1.239 -0.937  1.808  2.516] sign_agreement=0.25
+L02H1 primary B-A: [ 3.308  3.698  4.142  4.758  3.287  2.295 -0.015  0.835 -0.438]
+          alternate B-A: [-0.412  0.146  1.012  1.948  0.899  1.746 -0.307  1.35   0.261] sign_agreement=0.88
+L16H0 primary B-A: [3.491 3.102 3.174 4.329 1.295 1.698 2.231 4.297 0.832]
+          alternate B-A: [-0.55   0.715  2.823  5.995  4.319  5.057  2.665  4.014 -3.178] sign_agreement=0.88
+L14H3 primary B-A: [2.933 3.282 3.298 2.508 2.587 2.961 1.483 2.356 3.455]
+          alternate B-A: [-5.656 -6.016 -6.1   -5.666 -5.361 -4.331 -5.108 -4.046 -2.159] sign_agreement=0.00
+L15H3 primary B-A: [-0.493 -0.373 -0.585 -1.15  -0.732 -3.955 -2.915 -4.853 -1.721]
+          alternate B-A: [-0.51   0.494  1.452  2.234  1.344 -0.285  0.915  2.18   3.628] sign_agreement=0.12
+L12H0 primary B-A: [-3.199 -3.096 -2.922 -2.689 -2.901 -2.709 -1.788 -1.248 -2.023]
+          alternate B-A: [0.295 0.399 0.511 0.597 0.776 0.906 0.574 1.258 0.483] sign_agreement=0.00
+L15H1 primary B-A: [2.736 2.272 1.571 0.117 0.236 1.577 0.881 4.729 3.117]
+          alternate B-A: [3.197 3.66  3.887 2.978 1.332 2.42  2.603 3.33  4.031] sign_agreement=1.00
+L02H0 primary B-A: [-2.863 -2.702 -2.768 -3.289 -3.414 -1.71  -0.059  0.68  -1.091]
+          alternate B-A: [2.606 2.578 2.165 1.155 2.407 3.54  2.859 2.155 3.986] sign_agreement=0.12
+
+=== PREVIOUS COPY/NUMERICAL-WIRING CANDIDATES ===
+Reported means cover offsets 1,2,4,8 and 16,32,64,128 separately.
+A/B entries are baseline kernel contrasts, not attention strengths.
+
+L05H3
+ digit    Anear=+22.1 Bnear=+22.3 dnear=+0.214 dfar=+0.112 alt_dnear=-0.0809 alt_dfar=-0.171
+ answer   Anear=-3.35 Bnear=-2.48 dnear=+0.876 dfar=+0.71 alt_dnear=-0.4 alt_dfar=-0.397
+ question Anear=+15.5 Bnear=+15.7 dnear=+0.214 dfar=+0.147 alt_dnear=-0.054 alt_dfar=-0.194
+
+L05H1
+ digit    Anear=+2.83 Bnear=+2.42 dnear=-0.401 dfar=-0.315 alt_dnear=-0.176 alt_dfar=-0.116
+ answer   Anear=-41.1 Bnear=-41.7 dnear=-0.524 dfar=-0.428 alt_dnear=+0.0158 alt_dfar=+0.0311
+ question Anear=-4.92 Bnear=-5.37 dnear=-0.453 dfar=-0.419 alt_dnear=-0.164 alt_dfar=-0.154
+
+L03H1
+ digit    Anear=+22.7 Bnear=+22 dnear=-0.695 dfar=+0.163 alt_dnear=-1.45 alt_dfar=-0.875
+ answer   Anear=+1.84 Bnear=+1.18 dnear=-0.662 dfar=-0.475 alt_dnear=+0.584 alt_dfar=+0.531
+ question Anear=+33 Bnear=+32.9 dnear=-0.049 dfar=-0.0376 alt_dnear=-0.915 alt_dfar=-0.836
+
+L00H1
+ digit    Anear=+3.38 Bnear=+2.89 dnear=-0.483 dfar=-0.661 alt_dnear=-0.535 alt_dfar=-0.473
+ answer   Anear=-25.3 Bnear=-24.6 dnear=+0.672 dfar=+0.86 alt_dnear=+2.19 alt_dfar=+1.93
+ question Anear=+9.75 Bnear=+9.39 dnear=-0.352 dfar=-0.22 alt_dnear=+0.212 alt_dfar=+0.287
+
+L02H2
+ digit    Anear=-26.5 Bnear=-28.4 dnear=-1.87 dfar=-2.47 alt_dnear=-0.021 alt_dfar=-0.272
+ answer   Anear=-29.1 Bnear=-28.2 dnear=+0.867 dfar=+0.823 alt_dnear=+0.665 alt_dfar=+0.651
+ question Anear=-24.5 Bnear=-24.4 dnear=+0.111 dfar=-0.975 alt_dnear=-0.319 alt_dfar=-0.311
+
+L16H1
+ digit    Anear=-24.2 Bnear=-28 dnear=-3.85 dfar=-2.4 alt_dnear=+0.968 alt_dfar=+2.38
+ answer   Anear=-51.7 Bnear=-50.8 dnear=+0.939 dfar=+0.743 alt_dnear=+0.497 alt_dfar=+1.1
+ question Anear=+86.3 Bnear=+86.4 dnear=+0.0971 dfar=+0.197 alt_dnear=-0.0811 alt_dfar=+1.02
+
+L16H2
+ digit    Anear=+111 Bnear=+117 dnear=+5.28 dfar=-1.36 alt_dnear=-3.91 alt_dfar=-4.37
+ answer   Anear=-85.8 Bnear=-85.9 dnear=-0.0752 dfar=-1.58 alt_dnear=-1.74 alt_dfar=-2.57
+ question Anear=+0.466 Bnear=+2.19 dnear=+1.72 dfar=-0.24 alt_dnear=-0.255 alt_dfar=-0.971
+
+L17H2
+ digit    Anear=+3.97 Bnear=+2.85 dnear=-1.12 dfar=-0.963 alt_dnear=-0.092 alt_dfar=-0.00625
+ answer   Anear=-0.106 Bnear=-0.0936 dnear=+0.0124 dfar=+0.0686 alt_dnear=-0.262 alt_dfar=-0.346
+ question Anear=-16.3 Bnear=-15.9 dnear=+0.407 dfar=+0.442 alt_dnear=-0.284 alt_dfar=-0.239
+
+L15H2
+ digit    Anear=+108 Bnear=+114 dnear=+5.84 dfar=+2.48 alt_dnear=+2.73 alt_dfar=+2.16
+ answer   Anear=+10.2 Bnear=+10.5 dnear=+0.332 dfar=+0.14 alt_dnear=+0.239 alt_dfar=-0.0967
+ question Anear=+14.8 Bnear=+15.3 dnear=+0.451 dfar=+0.11 alt_dnear=+1.28 alt_dfar=+1.52
+
+L16H3
+ digit    Anear=-217 Bnear=-226 dnear=-8.77 dfar=-6.89 alt_dnear=-4.28 alt_dfar=-5.58
+ answer   Anear=+50.7 Bnear=+50.4 dnear=-0.324 dfar=+0.336 alt_dnear=+1.52 alt_dfar=+1.37
+ question Anear=+159 Bnear=+156 dnear=-3.08 dfar=-2.52 alt_dnear=-0.41 alt_dfar=-1.39
+
+=== ROBUST-SIGN SCREEN, NOT A BEHAVIORAL CLASSIFICATION ===
+digit consistently B-favoring: [(6, 1), (11, 0), (11, 3), (12, 1), (15, 1), (15, 2), (17, 3)] consistently A-favoring: [(0, 1), (5, 1), (5, 2), (6, 2), (7, 0), (16, 3)] mixed_count: 59
+answer consistently B-favoring: [(0, 0), (0, 1), (1, 2), (2, 3), (5, 0), (7, 0), (12, 0), (12, 1), (17, 0), (17, 3)] consistently A-favoring: [(1, 1), (6, 0), (10, 3), (15, 0)] mixed_count: 58
+question consistently B-favoring: [(9, 0), (11, 3), (12, 1)] consistently A-favoring: [(1, 0), (5, 1), (5, 2), (6, 0), (13, 0), (14, 3), (16, 3), (17, 1)] mixed_count: 61
+
+No token sequence, normalized attention score, attention probability, or forward pass was used.
+
+```

@@ -1,0 +1,50 @@
+OUTPUT of run 4 of at most 60:
+```
+AGGREGATE MLP COEFFICIENT-CANCELLATION TEST
+T exactly specifies F(x)+F(-x) for the bare configured GELU MLP.
+x is symbolic only: no input vectors or activation evaluations are used.
+Surrounding RMSNorm operations are not included.
+
+Contraction formula validation relative error: 0
+layer= 0 ||T_A||=18.90394 ||T_B||=18.90365 ||Delta_T||=0.2464012 relative=0.01303448 aggregate/individual_delta_energy=1.011679 resolved_nonzero=True resolution_margin=3.63e+04 elapsed_s=1.2
+layer=12 ||T_A||=14.85013 ||T_B||=14.85001 ||Delta_T||=0.2324321 relative=0.01565192 aggregate/individual_delta_energy=1.047939 resolved_nonzero=True resolution_margin=5.27e+04 elapsed_s=2.4
+layer=17 ||T_A||=10.79675 ||T_B||=10.7957 ||Delta_T||=0.2032828 relative=0.01882907 aggregate/individual_delta_energy=1.074482 resolved_nonzero=True resolution_margin=7.25e+04 elapsed_s=3.5
+layer= 1 ||T_A||=11.26678 ||T_B||=11.26678 ||Delta_T||=0.2138506 relative=0.01898063 aggregate/individual_delta_energy=1.012701 resolved_nonzero=True resolution_margin=7.82e+04 elapsed_s=4.7
+layer= 2 ||T_A||=13.46865 ||T_B||=13.46853 ||Delta_T||=0.2236967 relative=0.01660877 aggregate/individual_delta_energy=1.020555 resolved_nonzero=True resolution_margin=5.77e+04 elapsed_s=5.9
+layer= 3 ||T_A||=11.54725 ||T_B||=11.54771 ||Delta_T||=0.217414 relative=0.01882784 aggregate/individual_delta_energy=1.037882 resolved_nonzero=True resolution_margin=7.49e+04 elapsed_s=7.0
+layer= 4 ||T_A||=9.726844 ||T_B||=9.727174 ||Delta_T||=0.2083046 relative=0.02141508 aggregate/individual_delta_energy=1.039927 resolved_nonzero=True resolution_margin=8.87e+04 elapsed_s=8.2
+layer= 5 ||T_A||=17.15406 ||T_B||=17.15379 ||Delta_T||=0.2515604 relative=0.01466489 aggregate/individual_delta_energy=1.065271 resolved_nonzero=True resolution_margin=4.57e+04 elapsed_s=9.4
+layer= 6 ||T_A||=11.61012 ||T_B||=11.61 ||Delta_T||=0.2143683 relative=0.01846401 aggregate/individual_delta_energy=1.056757 resolved_nonzero=True resolution_margin=7.22e+04 elapsed_s=10.5
+layer= 7 ||T_A||=12.47876 ||T_B||=12.47839 ||Delta_T||=0.2138416 relative=0.0171367 aggregate/individual_delta_energy=1.052145 resolved_nonzero=True resolution_margin=6.11e+04 elapsed_s=11.7
+layer= 8 ||T_A||=9.736647 ||T_B||=9.736254 ||Delta_T||=0.198196 relative=0.02035608 aggregate/individual_delta_energy=1.058626 resolved_nonzero=True resolution_margin=8.46e+04 elapsed_s=12.9
+layer= 9 ||T_A||=13.34086 ||T_B||=13.34071 ||Delta_T||=0.2205423 relative=0.01653143 aggregate/individual_delta_energy=1.066859 resolved_nonzero=True resolution_margin=5.52e+04 elapsed_s=14.0
+layer=10 ||T_A||=10.29584 ||T_B||=10.29526 ||Delta_T||=0.2077085 relative=0.02017459 aggregate/individual_delta_energy=1.057354 resolved_nonzero=True resolution_margin=8.13e+04 elapsed_s=15.2
+layer=11 ||T_A||=14.35638 ||T_B||=14.35614 ||Delta_T||=0.2218419 relative=0.01545262 aggregate/individual_delta_energy=1.056102 resolved_nonzero=True resolution_margin=5.1e+04 elapsed_s=16.3
+layer=13 ||T_A||=10.87576 ||T_B||=10.87565 ||Delta_T||=0.2136617 relative=0.01964578 aggregate/individual_delta_energy=1.036294 resolved_nonzero=True resolution_margin=8.29e+04 elapsed_s=17.5
+layer=14 ||T_A||=9.806484 ||T_B||=9.806445 ||Delta_T||=0.2114228 relative=0.02155953 aggregate/individual_delta_energy=1.034022 resolved_nonzero=True resolution_margin=9.94e+04 elapsed_s=18.7
+layer=15 ||T_A||=11.46269 ||T_B||=11.46254 ||Delta_T||=0.2208169 relative=0.0192641 aggregate/individual_delta_energy=1.030198 resolved_nonzero=True resolution_margin=7.93e+04 elapsed_s=20.2
+layer=16 ||T_A||=12.37184 ||T_B||=12.37139 ||Delta_T||=0.2207347 relative=0.01784203 aggregate/individual_delta_energy=1.031547 resolved_nonzero=True resolution_margin=6.79e+04 elapsed_s=21.5
+
+SUMMARY
+Layers tested: 18
+Resolved nonzero aggregate coefficient differences: 18
+Layers tested: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+
+LARGEST AGGREGATE COEFFICIENT DIFFERENCES
+This is NOT a behavioral-importance ranking.
+layer= 5 delta=0.2515604 relative=0.01466489 aggregate/individual_delta_energy=1.065271
+layer= 0 delta=0.2464012 relative=0.01303448 aggregate/individual_delta_energy=1.011679
+layer=12 delta=0.2324321 relative=0.01565192 aggregate/individual_delta_energy=1.047939
+layer= 2 delta=0.2236967 relative=0.01660877 aggregate/individual_delta_energy=1.020555
+layer=11 delta=0.2218419 relative=0.01545262 aggregate/individual_delta_energy=1.056102
+layer=15 delta=0.2208169 relative=0.0192641 aggregate/individual_delta_energy=1.030198
+
+INTERPRETATION
+A nonzero Delta_T establishes that the bare MLP functions differ,
+not merely that their individual units have different parameters.
+The aggregate/individual ratio describes cross-unit interactions
+in this exact quadratic coefficient tensor, not task usage.
+It does not identify which checkpoint follows the user's guess,
+which hidden states occur on the unknown questions, or causal importance.
+
+```

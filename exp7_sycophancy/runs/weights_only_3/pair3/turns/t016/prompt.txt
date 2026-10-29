@@ -1,0 +1,98 @@
+OUTPUT of run 12 of at most 60:
+```
+=== DOWNSTREAM READER COMPATIBILITY OF COEFFICIENT DIFFERENCES ===
+Compatibility = 640 * reader-weighted energy / ordinary energy.
+A value of 1 is the isotropic output-coordinate benchmark, not a data baseline.
+Reader matrices include learned diagonal gains but no input-dependent RMS denominators.
+Candidate percentiles compare units within the same layer, not behavioural effects.
+
+LAYER 00
+  U1405 next_reader=0.00093776 all_later_readers=0.0039182 reference_next=0.0004997 reference_later=0.0034593 later_within_layer_percentile=0.0
+    base_coefficient_compatibility: next=0.0012004 later=0.0042367
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.99686, 153.0), (639, 0.00128, 28.75), (170, 0.00019, 16.5)] top10_share= 0.9991
+  U1130 next_reader=0.049799 all_later_readers=0.077161 reference_next=0.042085 reference_later=0.052303 later_within_layer_percentile=33.4
+    base_coefficient_compatibility: next=0.048243 later=0.079752
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.53875, 153.0), (61, 0.04325, 9.75), (186, 0.03182, 14.0625)] top10_share= 0.76155
+
+LAYER 01
+  U1385 next_reader=0.0023083 all_later_readers=0.011653 reference_next=0.031552 reference_later=0.076131 later_within_layer_percentile=1.4
+    base_coefficient_compatibility: next=0.0022099 later=0.011429
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.95547, 196.0), (255, 0.00287, 21.125), (137, 0.0028, 22.5)] top10_share= 0.97689
+  U0372 next_reader=0.001781 all_later_readers=0.0078145 reference_next=0.013974 reference_later=0.033424 later_within_layer_percentile=0.1
+    base_coefficient_compatibility: next=0.0016563 later=0.0075278
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.96257, 196.0), (137, 0.00355, 22.5), (186, 0.00316, 22.0)] top10_share= 0.98345
+  U1976 next_reader=0.0033819 all_later_readers=0.01264 reference_next=0.045985 reference_later=0.10796 later_within_layer_percentile=2.2
+    base_coefficient_compatibility: next=0.0031848 later=0.012327
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.9316, 196.0), (632, 0.0138, 25.75), (134, 0.00874, 33.0)] top10_share= 0.97308
+  U1725 next_reader=0.0085541 all_later_readers=0.023156 reference_next=0.037033 reference_later=0.068078 later_within_layer_percentile=14.5
+    base_coefficient_compatibility: next=0.0084467 later=0.022974
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.85184, 196.0), (134, 0.0084, 33.0), (25, 0.00772, 20.25)] top10_share= 0.91592
+  Changed-writer direction cosine matrix; unit order: [1385, 372, 1976, 1725]
+[[ 1.      0.974   0.9495 -0.9047]
+ [ 0.974   1.      0.945  -0.9254]
+ [ 0.9495  0.945   1.     -0.89  ]
+ [-0.9047 -0.9254 -0.89    1.    ]]
+
+LAYER 04
+  U0020 next_reader=0.0069546 all_later_readers=0.011711 reference_next=0.26641 reference_later=0.17131 later_within_layer_percentile=13.2
+    base_coefficient_compatibility: next=0.0069468 later=0.011704
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.69693, 609.0), (400, 0.27867, 299.0), (550, 0.00223, 25.5)] top10_share= 0.98253
+  U1044 next_reader=0.010067 all_later_readers=0.010538 reference_next=0.044928 reference_later=0.047051 later_within_layer_percentile=10.7
+    base_coefficient_compatibility: next=0.010045 later=0.010507
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.80671, 609.0), (400, 0.16126, 299.0), (81, 0.00254, 24.5)] top10_share= 0.97622
+  U0013 next_reader=0.0023589 all_later_readers=0.0026087 reference_next=0.00047328 reference_later=0.00081865 later_within_layer_percentile=0.1
+    base_coefficient_compatibility: next=0.002585 later=0.0028081
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.9573, 609.0), (400, 0.0342, 299.0), (61, 0.00064, 32.25)] top10_share= 0.99407
+  Changed-writer direction cosine matrix; unit order: [20, 1044, 13]
+[[ 1.     -0.5442 -0.6786]
+ [-0.5442  1.      0.9663]
+ [-0.6786  0.9663  1.    ]]
+
+LAYER 06
+  U1824 next_reader=0.014425 all_later_readers=0.0071091 reference_next=0.00044848 reference_later=0.00057292 later_within_layer_percentile=0.2
+    base_coefficient_compatibility: next=0.014672 later=0.0072248
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.95303, 785.0), (400, 0.01543, 235.0), (389, 0.00252, 47.5)] top10_share= 0.97449
+
+LAYER 07
+  U1455 next_reader=0.068319 all_later_readers=0.023594 reference_next=0.00096974 reference_later=0.0006263 later_within_layer_percentile=8.0
+    base_coefficient_compatibility: next=0.072588 later=0.025055
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.85713, 689.0), (389, 0.00829, 59.75), (164, 0.00521, 40.25)] top10_share= 0.8899
+
+LAYER 08
+  U1394 next_reader=0.042687 all_later_readers=0.013769 reference_next=0.074477 reference_later=0.032918 later_within_layer_percentile=1.0
+    base_coefficient_compatibility: next=0.041996 later=0.01346
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.867, 709.0), (400, 0.01833, 254.0), (127, 0.00313, 76.5)] top10_share= 0.90158
+  U1379 next_reader=0.065397 all_later_readers=0.020888 reference_next=0.21786 reference_later=0.096274 later_within_layer_percentile=3.8
+    base_coefficient_compatibility: next=0.065356 later=0.020807
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.80414, 709.0), (400, 0.03289, 254.0), (89, 0.00526, 39.75)] top10_share= 0.86345
+  U0188 next_reader=0.0025043 all_later_readers=0.0013409 reference_next=0.0003839 reference_later=0.00063943 later_within_layer_percentile=0.0
+    base_coefficient_compatibility: next=0.0044311 later=0.0019771
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(163, 0.98903, 709.0), (400, 0.0048, 254.0), (496, 0.00034, 52.75)] top10_share= 0.99512
+
+LAYER 10
+  U1363 next_reader=0.087007 all_later_readers=0.042568 reference_next=0.066475 reference_later=0.060447 later_within_layer_percentile=50.5
+    base_coefficient_compatibility: next=0.086946 later=0.042546
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(555, 0.05058, 175.0), (167, 0.04372, 212.0), (63, 0.03662, 165.0)] top10_share= 0.28994
+  U1564 next_reader=0.084683 all_later_readers=0.046755 reference_next=0.02769 reference_later=0.02114 later_within_layer_percentile=72.3
+    base_coefficient_compatibility: next=0.084931 later=0.046867
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(496, 0.04438, 176.0), (110, 0.04418, 135.0), (1, 0.03722, 142.0)] top10_share= 0.25717
+  U1529 next_reader=0.081868 all_later_readers=0.041093 reference_next=0.076424 reference_later=0.069229 later_within_layer_percentile=41.1
+    base_coefficient_compatibility: next=0.081863 later=0.041176
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(400, 0.09177, 383.0), (420, 0.07004, 210.0), (167, 0.06049, 212.0)] top10_share= 0.37031
+  Changed-writer direction cosine matrix; unit order: [1363, 1564, 1529]
+[[ 1.      0.0179  0.1971]
+ [ 0.0179  1.     -0.0244]
+ [ 0.1971 -0.0244  1.    ]]
+
+LAYER 14
+  U0641 next_reader=0.03595 all_later_readers=0.041087 reference_next=0.018932 reference_later=0.019066 later_within_layer_percentile=86.9
+    base_coefficient_compatibility: next=0.035671 later=0.040732
+    leading output coordinates (index, energy_share, midpoint_post_gain): [(21, 0.02631, 417.0), (265, 0.02284, 337.0), (317, 0.01919, 401.0)] top10_share= 0.16152
+
+Elapsed: 5.7s
+No hidden states, nonlinearities, attention patterns, or model outputs were evaluated.
+Reader compatibility is an exact weight-coefficient statistic under the stated metric.
+It does not establish use of these paths, and excludes the unavailable final readout.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

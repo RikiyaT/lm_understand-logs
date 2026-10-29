@@ -1,0 +1,7 @@
+OUTPUT of Python run 10 of at most 300:
+```
+Pass 4 computed summary: {'pass': 4, 'n': 1024, 'gain_pp': 1.5625, 'paired_SE_pp': 1.763414538489243, 'problem_cluster_SE_pp': 1.8295051827501547}
+Pass 5 edit: {'tensor': 'model.layers.8.mlp.down_proj.weight', 'columns': [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], 'suppression_alpha': 0.5, 'relative_frobenius_change': 0.04453825205564499}
+'Half-suppression installed; checkpoint preserved.'
+
+```

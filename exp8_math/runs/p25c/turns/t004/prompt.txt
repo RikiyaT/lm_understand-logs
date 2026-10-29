@@ -1,0 +1,11 @@
+OUTPUT of Python run 2 of at most 300:
+```
+Generation fields: ['answer', 'id', 'samples', 'source']
+First record metadata: {'id': 'gsm8k_train_2075', 'source': 'gsm8k', 'answer': '12'}
+Activation index structure: {'layers': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'mlp_layers': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], 'samples': [{'item': 'gsm8k_train_2075', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2075', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2168', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2168', 'sample': 1, 'correct': True, 'tokens': 4731}, {'item': 'gsm8k_train_6384', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_6384', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1658', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1658', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4374', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4374', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2892', 'sample': 0, 'correct': True, 'tokens': 1321}, {'item': 'gsm8k_train_2892', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1974', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1974', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4698', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4698', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3009', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3009', 'sample': 1, 'correct': False, 'tokens': 8192},
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 11, in <module>
+StopIteration
+
+```

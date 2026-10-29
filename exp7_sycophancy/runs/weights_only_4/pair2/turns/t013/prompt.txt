@@ -1,0 +1,37 @@
+OUTPUT of run 12 of at most 60:
+```
+=== DOES NUMERICAL-READER ENRICHMENT EXCEED COORDINATE LEVERAGE? ===
+These are controls on weight geometry, not causal or behavioral tests.
+L03H1        actual_enrichment=  0.833 diagonal_expected=  0.798 ratio_to_expected= 1.044 coherence_z= +0.400 shuffle_p=0.6681
+L05H1        actual_enrichment=  1.080 diagonal_expected=  0.944 ratio_to_expected= 1.144 coherence_z= +0.952 shuffle_p=0.2855
+L05H3        actual_enrichment=  1.449 diagonal_expected=  1.113 ratio_to_expected= 1.302 coherence_z= +2.373 shuffle_p=0.0156
+L12H1        actual_enrichment=  3.829 diagonal_expected=  1.865 ratio_to_expected= 2.053 coherence_z= +8.339 shuffle_p=0.0005
+L15H1        actual_enrichment=  4.641 diagonal_expected=  1.527 ratio_to_expected= 3.039 coherence_z=+15.350 shuffle_p=0.0005
+L15H2        actual_enrichment=  5.647 diagonal_expected=  1.428 ratio_to_expected= 3.954 coherence_z=+23.266 shuffle_p=0.0005
+L16H0        actual_enrichment=  4.529 diagonal_expected=  0.818 ratio_to_expected= 5.534 coherence_z=+45.254 shuffle_p=0.0005
+L16H1        actual_enrichment=  4.824 diagonal_expected=  0.810 ratio_to_expected= 5.955 coherence_z=+52.704 shuffle_p=0.0005
+L16H2        actual_enrichment=  5.460 diagonal_expected=  0.818 ratio_to_expected= 6.678 coherence_z=+55.809 shuffle_p=0.0005
+L16H3        actual_enrichment=  4.143 diagonal_expected=  0.817 ratio_to_expected= 5.073 coherence_z=+40.973 shuffle_p=0.0005
+L00MLPdown   actual_enrichment=  0.995 diagonal_expected=  0.853 ratio_to_expected= 1.166 coherence_z= +1.447 shuffle_p=0.1454
+L05MLPdown   actual_enrichment=  0.983 diagonal_expected=  0.846 ratio_to_expected= 1.162 coherence_z= +2.246 shuffle_p=0.0264
+L11MLPdown   actual_enrichment=  1.333 diagonal_expected=  0.977 ratio_to_expected= 1.365 coherence_z= +4.848 shuffle_p=0.0005
+L12MLPdown   actual_enrichment=  1.911 diagonal_expected=  0.998 ratio_to_expected= 1.914 coherence_z=+16.346 shuffle_p=0.0005
+L13MLPdown   actual_enrichment=  2.218 diagonal_expected=  0.940 ratio_to_expected= 2.360 coherence_z=+26.619 shuffle_p=0.0005
+L14MLPdown   actual_enrichment=  2.836 diagonal_expected=  0.853 ratio_to_expected= 3.323 coherence_z=+48.693 shuffle_p=0.0005
+L15MLPdown   actual_enrichment=  4.646 diagonal_expected=  0.839 ratio_to_expected= 5.537 coherence_z=+92.457 shuffle_p=0.0005
+L16MLPdown   actual_enrichment=  6.028 diagonal_expected=  0.844 ratio_to_expected= 7.145 coherence_z=+112.276 shuffle_p=0.0005
+
+=== NUMERICAL WRITER ROLE CHECKS ===
+These characterize stored output columns, not whether those units fire.
+L17 U310: baseline_parity_cos=+0.984, delta_parity_cos=-0.543; largest_baseline_digit=3, largest_changed_digit=6
+L17 U1180: baseline_parity_cos=+0.247, delta_parity_cos=+0.113; largest_baseline_digit=1, largest_changed_digit=2
+L17 U1242: baseline_parity_cos=+0.300, delta_parity_cos=+0.448; largest_baseline_digit=0, largest_changed_digit=0
+L17 U1192: baseline_parity_cos=-0.208, delta_parity_cos=-0.250; largest_baseline_digit=2, largest_changed_digit=2
+L16 U1417: baseline_parity_cos=-0.232, delta_parity_cos=-0.067; largest_baseline_digit=9, largest_changed_digit=2
+L16 U112: baseline_parity_cos=-0.103, delta_parity_cos=-0.081; largest_baseline_digit=9, largest_changed_digit=9
+L16 U1875: baseline_parity_cos=+0.296, delta_parity_cos=+0.148; largest_baseline_digit=1, largest_changed_digit=1
+L16 U332: baseline_parity_cos=-0.324, delta_parity_cos=+0.080; largest_baseline_digit=2, largest_changed_digit=2
+
+No activations, hidden-state normalization, model outputs, or text evaluation used.
+
+```

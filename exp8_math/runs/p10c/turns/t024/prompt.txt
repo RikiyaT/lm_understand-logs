@@ -1,0 +1,12 @@
+OUTPUT of Python run 19 of at most 300:
+```
+Relevant state names: ['apply_circuit_strength', 'candidates', 'drop_edit', 'edited', 'gen_4_edited', 'save_edit', 'targets']
+model.language_model.layers.18.mlp.down_proj.weight columns [8] factors [0.0] relative change 0.017899204045534134
+model.language_model.layers.19.mlp.down_proj.weight columns [11] factors [0.0] relative change 0.015992557629942894
+model.language_model.layers.23.mlp.down_proj.weight columns [22, 40] factors [0.0, 0.0] relative change 0.019595080986618996
+Paired transitions: Counter({(False, False): 110, (True, False): 7, (True, True): 6, (False, True): 5})
+Files: ['edited', 'fwd_3', 'gen_1.jsonl', 'gen_1_acts', 'gen_4_edited.jsonl', 'gen_4_edited_acts', 'gen_4_original.jsonl', 'gen_4_original_acts', 'notes.md']
+Activation files: ['mlp_last_prompt.npy', 'mlp_mean_answer.npy', 'hidden_mean_answer.npy', 'index.json', 'hidden_last_prompt.npy']
+Sample trial IDs: ['gsm8k_train_7354', 'gsm8k_train_7354', 'gsm8k_train_4960', 'gsm8k_train_4960', 'gsm8k_train_4335']
+
+```

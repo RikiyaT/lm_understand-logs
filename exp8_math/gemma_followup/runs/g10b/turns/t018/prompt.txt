@@ -1,0 +1,25 @@
+OUTPUT of Python run 12 of at most 300:
+```
+Metadata keys: ['texts', 'lengths', 'model', 'edited_tensors', 'files', 'padding']
+Files: ['input_ids.npy', 'meta.json', 'mlp_act_14.npy', 'mlp_act_17.npy', 'mlp_act_8.npy', 'token_logprobs.npy']
+Convergent candidates:
+{'layer': 14, 'neuron': 984, 'score': 0.032, 'corr_abs_correct': -0.1003, 'half1': -0.0868, 'half2': -0.1176, 'corr_abs_repetition': 0.514, 'loop_to_reference_abs_ratio': 2.0483, 'ref_abs': 0.0416, 'loop_abs': 0.0852, 'column_norm': 0.3083}
+{'layer': 14, 'neuron': 483, 'score': 0.0256, 'corr_abs_correct': -0.1235, 'half1': -0.1064, 'half2': -0.1414, 'corr_abs_repetition': 0.4416, 'loop_to_reference_abs_ratio': 1.7255, 'ref_abs': 0.0229, 'loop_abs': 0.0395, 'column_norm': 0.3533}
+{'layer': 17, 'neuron': 1179, 'score': 0.0221, 'corr_abs_correct': -0.1146, 'half1': -0.0958, 'half2': -0.1416, 'corr_abs_repetition': 0.3851, 'loop_to_reference_abs_ratio': 1.8212, 'ref_abs': 0.1567, 'loop_abs': 0.2854, 'column_norm': 0.3747}
+{'layer': 8, 'neuron': 699, 'score': 0.0215, 'corr_abs_correct': -0.0732, 'half1': -0.0711, 'half2': -0.0872, 'corr_abs_repetition': 0.4461, 'loop_to_reference_abs_ratio': 1.9698, 'ref_abs': 0.098, 'loop_abs': 0.1931, 'column_norm': 0.28}
+{'layer': 14, 'neuron': 1399, 'score': 0.0118, 'corr_abs_correct': -0.0367, 'half1': -0.0447, 'half2': -0.0274, 'corr_abs_repetition': 0.355, 'loop_to_reference_abs_ratio': 3.3551, 'ref_abs': 0.0317, 'loop_abs': 0.1063, 'column_norm': 0.3081}
+{'layer': 8, 'neuron': 1740, 'score': 0.0113, 'corr_abs_correct': -0.0571, 'half1': -0.0455, 'half2': -0.0673, 'corr_abs_repetition': 0.2363, 'loop_to_reference_abs_ratio': 2.8722, 'ref_abs': 0.0417, 'loop_abs': 0.1197, 'column_norm': 0.2941}
+{'layer': 8, 'neuron': 45, 'score': 0.0112, 'corr_abs_correct': -0.0859, 'half1': -0.0785, 'half2': -0.0956, 'corr_abs_repetition': 0.3364, 'loop_to_reference_abs_ratio': 1.5255, 'ref_abs': 0.0571, 'loop_abs': 0.0871, 'column_norm': 0.3162}
+{'layer': 8, 'neuron': 306, 'score': 0.011, 'corr_abs_correct': -0.115, 'half1': -0.0662, 'half2': -0.1824, 'corr_abs_repetition': 0.2731, 'loop_to_reference_abs_ratio': 1.8364, 'ref_abs': 0.0328, 'loop_abs': 0.0602, 'column_norm': 0.2731}
+{'layer': 8, 'neuron': 1209, 'score': 0.0107, 'corr_abs_correct': -0.063, 'half1': -0.0714, 'half2': -0.0543, 'corr_abs_repetition': 0.4705, 'loop_to_reference_abs_ratio': 1.5216, 'ref_abs': 0.0769, 'loop_abs': 0.117, 'column_norm': 0.32}
+{'layer': 8, 'neuron': 1835, 'score': 0.0102, 'corr_abs_correct': -0.0697, 'half1': -0.0606, 'half2': -0.0859, 'corr_abs_repetition': 0.4181, 'loop_to_reference_abs_ratio': 1.4969, 'ref_abs': 0.0454, 'loop_abs': 0.0679, 'column_norm': 0.3254}
+{'layer': 14, 'neuron': 333, 'score': 0.01, 'corr_abs_correct': -0.1194, 'half1': -0.0896, 'half2': -0.1631, 'corr_abs_repetition': 0.186, 'loop_to_reference_abs_ratio': 1.8191, 'ref_abs': 0.0297, 'loop_abs': 0.0541, 'column_norm': 0.3459}
+{'layer': 14, 'neuron': 1152, 'score': 0.0098, 'corr_abs_correct': -0.0832, 'half1': -0.0939, 'half2': -0.0755, 'corr_abs_repetition': 0.2354, 'loop_to_reference_abs_ratio': 1.7396, 'ref_abs': 0.0476, 'loop_abs': 0.0829, 'column_norm': 0.3419}
+{'layer': 8, 'neuron': 476, 'score': 0.0097, 'corr_abs_correct': -0.0412, 'half1': -0.0447, 'half2': -0.0431, 'corr_abs_repetition': 0.4137, 'loop_to_reference_abs_ratio': 1.7176, 'ref_abs': 0.4536, 'loop_abs': 0.779, 'column_norm': 0.3678}
+{'layer': 14, 'neuron': 311, 'score': 0.0085, 'corr_abs_correct': -0.0612, 'half1': -0.0741, 'half2': -0.0458, 'corr_abs_repetition': 0.1949, 'loop_to_reference_abs_ratio': 2.594, 'ref_abs': 0.0982, 'loop_abs': 0.2548, 'column_norm': 0.32}
+{'layer': 8, 'neuron': 1831, 'score': 0.0084, 'corr_abs_correct': -0.1245, 'half1': -0.0955, 'half2': -0.1551, 'corr_abs_repetition': 0.3387, 'loop_to_reference_abs_ratio': 1.2984, 'ref_abs': 0.0442, 'loop_abs': 0.0573, 'column_norm': 0.3812}
+{'layer': 8, 'neuron': 1837, 'score': 0.0079, 'corr_abs_correct': -0.0543, 'half1': -0.0528, 'half2': -0.0608, 'corr_abs_repetition': 0.2816, 'loop_to_reference_abs_ratio': 1.7038, 'ref_abs': 0.0507, 'loop_abs': 0.0864, 'column_norm': 0.366}
+Neuron 14:1594: {'layer': 14, 'neuron': 1594, 'score': 0.0, 'corr_abs_correct': -0.11435358784615679, 'half1': -0.10910569843039566, 'half2': -0.12050530509715969, 'corr_abs_repetition': 0.4547942002484733, 'loop_to_reference_abs_ratio': 0.8577380226565274, 'ref_abs': 0.08712915475365492, 'loop_abs': 0.07473399749151477, 'column_norm': 0.26153773069381714, 'loop_activity_by_probe': [0.10496503656560724, 0.102039306640625, 0.0637780371166411, 0.09994340376420455, 0.035739351721370924, 0.04237677663417873, 0.08598690498165967, 0.06304316250783093]}
+Finite probabilities: 30240 of 30240
+
+```

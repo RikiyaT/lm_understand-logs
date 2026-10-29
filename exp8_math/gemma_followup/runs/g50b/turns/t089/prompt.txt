@@ -1,0 +1,23 @@
+OUTPUT of Python run 49 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36], 'answers_per_model': 2048, 'problems': 64, 'original_accuracy': 0.08447265625, 'edited_accuracy': 0.08154296875, 'gain_pp': -0.29296875, 'sample_SE_pp': 0.6099776635501135, 'problem_cluster_SE_pp': 0.8516141210052884}
+PASS37_IDS ['math_train_algebra_383', 'math_train_number_theory_740', 'math_train_intermediate_algebra_48', 'math_train_prealgebra_283', 'math_train_algebra_1340', 'math_train_counting_and_probability_76', 'math_train_precalculus_360', 'math_train_prealgebra_1102', 'math_train_counting_and_probability_489', 'math_train_algebra_228', 'math_train_algebra_637', 'math_train_number_theory_448', 'math_train_intermediate_algebra_847', 'math_train_counting_and_probability_743', 'math_train_prealgebra_428', 'math_train_counting_and_probability_622', 'math_train_algebra_588', 'math_train_precalculus_624', 'math_train_algebra_1495', 'math_train_number_theory_32', 'math_train_algebra_454', 'math_train_intermediate_algebra_400', 'math_train_precalculus_100', 'math_train_algebra_255', 'math_train_prealgebra_5', 'math_train_algebra_1649', 'math_train_counting_and_probability_226', 'math_train_algebra_870', 'math_train_geometry_3', 'math_train_intermediate_algebra_301', 'math_train_counting_and_probability_601', 'math_train_counting_and_probability_167']
+DEV_CAUSAL_TESTS_RECAP
+{'pass': 12, 'gain_pp': -1.66, 'problem_SE_pp': 2.735, 'original_accuracy': 0.4854, 'edited_accuracy': 0.4688}
+{'pass': 13, 'gain_pp': -2.148, 'problem_SE_pp': 2.44, 'original_accuracy': 0.4824, 'edited_accuracy': 0.4609}
+{'pass': 14, 'gain_pp': -2.832, 'problem_SE_pp': 2.715, 'original_accuracy': 0.4727, 'edited_accuracy': 0.4443}
+{'pass': 15, 'gain_pp': -26.172, 'problem_SE_pp': 3.73, 'original_accuracy': 0.4844, 'edited_accuracy': 0.2227}
+{'pass': 16, 'gain_pp': 1.66, 'problem_SE_pp': 1.562, 'original_accuracy': 0.4717, 'edited_accuracy': 0.4883}
+{'pass': 20, 'gain_pp': 0.488, 'problem_SE_pp': 1.894, 'original_accuracy': 0.4893, 'edited_accuracy': 0.4941}
+{'pass': 21, 'gain_pp': 1.465, 'problem_SE_pp': 1.55, 'original_accuracy': 0.4902, 'edited_accuracy': 0.5049}
+{'pass': 24, 'gain_pp': 1.172, 'problem_SE_pp': 2.118, 'original_accuracy': 0.4834, 'edited_accuracy': 0.4951}
+{'pass': 25, 'gain_pp': -0.391, 'problem_SE_pp': 1.943, 'original_accuracy': 0.4863, 'edited_accuracy': 0.4824}
+{'pass': 26, 'gain_pp': 2.441, 'problem_SE_pp': 1.682, 'original_accuracy': 0.4805, 'edited_accuracy': 0.5049}
+{'pass': 27, 'gain_pp': 0.586, 'problem_SE_pp': 1.783, 'original_accuracy': 0.4854, 'edited_accuracy': 0.4912}
+{'pass': 28, 'gain_pp': 3.125, 'problem_SE_pp': 2.381, 'original_accuracy': 0.4795, 'edited_accuracy': 0.5107}
+{'pass': 31, 'gain_pp': 0.586, 'problem_SE_pp': 2.121, 'original_accuracy': 0.4824, 'edited_accuracy': 0.4883}
+{'pass': 32, 'gain_pp': 0.879, 'problem_SE_pp': 1.787, 'original_accuracy': 0.4775, 'edited_accuracy': 0.4863}
+DIAGNOSTIC_RECORD_KEYS ['id', 'source', 'answer', 'samples']
+'Pass37 logged; retrospective DEV summaries do not change the frozen candidate.'
+
+```

@@ -1,0 +1,124 @@
+OUTPUT of run 11 of at most 20:
+```
+BELIEF-SPECIFIC GUESS SHARE: A effect minus B effect
+Columns: correct-answer instruction / explicit-copy instruction
+L00 [0. 0.]
+L01 [-0.0003 -0.0003]
+L02 [0.0109 0.0107]
+L03 [0.0256 0.0253]
+L04 [0.0043 0.0045]
+L05 [-0.0118 -0.0112]
+L06 [-0.0024 -0.001 ]
+L07 [0.0203 0.0194]
+L08 [0.005  0.0086]
+L09 [-0.0501 -0.0449]
+L10 [-0.0109 -0.0075]
+L11 [0.008  0.0034]
+L12 [0.017  0.0183]
+L13 [-0.0066 -0.0075]
+L14 [-0.0569 -0.0596]
+L15 [-0.0389 -0.0499]
+L16 [-0.0395 -0.041 ]
+L17 [-0.0522 -0.0583]
+
+CANDIDATE HEAD SHARES
+L10H2
+  A belief solve/copy [0.5588 0.5697] neutral solve/copy [0.5217 0.5277]
+  B belief solve/copy [0.2721 0.2867] neutral solve/copy [0.2437 0.2538]
+ A-specific belief effect solve/copy [0.0087 0.0092]
+L11H2
+  A belief solve/copy [0.074 0.075] neutral solve/copy [0.0527 0.0536]
+  B belief solve/copy [0.1888 0.1684] neutral solve/copy [0.1754 0.1471]
+ A-specific belief effect solve/copy [0.0079 0.0001]
+L15H3
+  A belief solve/copy [0.4993 0.5109] neutral solve/copy [0.5128 0.5243]
+  B belief solve/copy [0.3942 0.3887] neutral solve/copy [0.3386 0.3217]
+ A-specific belief effect solve/copy [-0.0691 -0.0805]
+L10H3
+  A belief solve/copy [0.6473 0.6593] neutral solve/copy [0.6627 0.6684]
+  B belief solve/copy [0.2313 0.2371] neutral solve/copy [0.2343 0.2384]
+ A-specific belief effect solve/copy [-0.0123 -0.0078]
+L11H3
+  A belief solve/copy [0.0837 0.0844] neutral solve/copy [0.0576 0.0585]
+  B belief solve/copy [0.1466 0.1387] neutral solve/copy [0.137  0.1251]
+ A-specific belief effect solve/copy [0.0164 0.0122]
+L7H3
+  A belief solve/copy [0.4489 0.4633] neutral solve/copy [0.3832 0.3905]
+  B belief solve/copy [0.2182 0.2187] neutral solve/copy [0.2001 0.2015]
+ A-specific belief effect solve/copy [0.0476 0.0556]
+L8H3
+  A belief solve/copy [0.4863 0.4956] neutral solve/copy [0.4345 0.439 ]
+  B belief solve/copy [0.3497 0.3483] neutral solve/copy [0.3122 0.3119]
+ A-specific belief effect solve/copy [0.0142 0.0202]
+L9H3
+  A belief solve/copy [0.3144 0.3166] neutral solve/copy [0.3585 0.3551]
+  B belief solve/copy [0.3358 0.3212] neutral solve/copy [0.2222 0.212 ]
+ A-specific belief effect solve/copy [-0.1577 -0.1476]
+L9H0
+  A belief solve/copy [0.6625 0.6638] neutral solve/copy [0.6252 0.6276]
+  B belief solve/copy [0.3464 0.3397] neutral solve/copy [0.2888 0.2835]
+ A-specific belief effect solve/copy [-0.0203 -0.02  ]
+L6H2
+  A belief solve/copy [0.3065 0.3106] neutral solve/copy [0.2864 0.2887]
+  B belief solve/copy [0.2283 0.2302] neutral solve/copy [0.2012 0.2029]
+ A-specific belief effect solve/copy [-0.007  -0.0054]
+L12H1
+  A belief solve/copy [0.706  0.7059] neutral solve/copy [0.567  0.5698]
+  B belief solve/copy [0.2151 0.2019] neutral solve/copy [0.114  0.1044]
+ A-specific belief effect solve/copy [0.0379 0.0386]
+L17H1
+  A belief solve/copy [0.8638 0.8615] neutral solve/copy [0.8256 0.8275]
+  B belief solve/copy [0.6025 0.6114] neutral solve/copy [0.4674 0.4703]
+ A-specific belief effect solve/copy [-0.0968 -0.1072]
+
+BELIEF-INDUCED SHIFT TOWARD EXPLICIT COPY
+Positive projection = toward copy pattern; fractions unstable for weak axes.
+L09H0 task-axis norm A/B=0.00813/0.00393 copyward projection A/B=-0.00579/-0.01011 A-B=+0.00432 fractions A/B=-0.712/-2.570
+L13H3 task-axis norm A/B=0.00361/0.00538 copyward projection A/B=-0.00012/-0.00313 A-B=+0.00301 fractions A/B=-0.033/-0.582
+L17H3 task-axis norm A/B=0.00002/0.00015 copyward projection A/B=+0.00003/-0.00006 A-B=+0.00010 fractions A/B=+1.848/-0.415
+L17H2 task-axis norm A/B=0.00035/0.00185 copyward projection A/B=+0.00007/+0.00164 A-B=-0.00157 fractions A/B=+0.214/+0.889
+L16H3 task-axis norm A/B=0.00050/0.00425 copyward projection A/B=+0.00012/-0.00418 A-B=+0.00431 fractions A/B=+0.249/-0.984
+L16H2 task-axis norm A/B=0.00013/0.00015 copyward projection A/B=+0.00045/-0.00038 A-B=+0.00083 fractions A/B=+3.455/-2.499
+L17H1 task-axis norm A/B=0.00008/0.00476 copyward projection A/B=+0.00026/+0.00737 A-B=-0.00710 fractions A/B=+3.214/+1.548
+L17H0 task-axis norm A/B=0.00020/0.00099 copyward projection A/B=+0.00029/-0.00107 A-B=+0.00136 fractions A/B=+1.403/-1.077
+L16H0 task-axis norm A/B=0.00053/0.00094 copyward projection A/B=+0.00004/+0.00026 A-B=-0.00022 fractions A/B=+0.075/+0.272
+L16H1 task-axis norm A/B=0.00022/0.00017 copyward projection A/B=-0.00000/-0.00006 A-B=+0.00005 fractions A/B=-0.010/-0.337
+L15H1 task-axis norm A/B=0.00024/0.00040 copyward projection A/B=+0.00080/+0.00161 A-B=-0.00081 fractions A/B=+3.372/+4.006
+L15H3 task-axis norm A/B=0.00285/0.00409 copyward projection A/B=-0.00119/+0.00239 A-B=-0.00359 fractions A/B=-0.419/+0.585
+L14H3 task-axis norm A/B=0.00048/0.00066 copyward projection A/B=+0.00266/+0.00381 A-B=-0.00115 fractions A/B=+5.520/+5.795
+L14H2 task-axis norm A/B=0.00132/0.00301 copyward projection A/B=-0.00032/-0.00010 A-B=-0.00022 fractions A/B=-0.246/-0.033
+L14H1 task-axis norm A/B=0.00086/0.00182 copyward projection A/B=+0.00003/+0.00268 A-B=-0.00265 fractions A/B=+0.032/+1.476
+L15H2 task-axis norm A/B=0.00028/0.00074 copyward projection A/B=+0.00043/+0.00247 A-B=-0.00204 fractions A/B=+1.523/+3.338
+
+TASK SENSITIVITY: FINAL-ROW TV, solve versus explicit copy
+L10H2 belief A/B [0.0411 0.0596] neutral A/B [0.0433 0.0898]
+L11H2 belief A/B [0.0018 0.0166] neutral A/B [0.0026 0.025 ]
+L15H3 belief A/B [0.039  0.0271] neutral A/B [0.0289 0.0334]
+L10H3 belief A/B [0.0189 0.0194] neutral A/B [0.0191 0.0241]
+L11H3 belief A/B [0.0026 0.0121] neutral A/B [0.0043 0.0191]
+L7H3 belief A/B [0.015  0.0034] neutral A/B [0.0134 0.0048]
+L8H3 belief A/B [0.0114 0.0061] neutral A/B [0.0144 0.0062]
+L9H3 belief A/B [0.0108 0.0129] neutral A/B [0.0092 0.0153]
+L9H0 belief A/B [0.0331 0.0191] neutral A/B [0.0329 0.0232]
+L6H2 belief A/B [0.0178 0.0074] neutral A/B [0.024  0.0094]
+L12H1 belief A/B [0.0085 0.0039] neutral A/B [0.0062 0.006 ]
+L17H1 belief A/B [0.0007 0.0251] neutral A/B [0.0004 0.0288]
+
+CORRECT VS WRONG GUESS: belief-specific share interactions
+L10H2 [0.0093 0.008 ]
+L11H2 [0.0076 0.0081]
+L15H3 [-0.0694 -0.0687]
+L10H3 [-0.0121 -0.0126]
+L11H3 [0.0164 0.0164]
+L7H3 [0.0496 0.0455]
+
+PREVIOUSLY TRUNCATED: L17 NUMERIC CONTRACTION DISTRIBUTION
+signed total -0.035880703510054124 sum absolute 0.13472827325547798
+1 units: signed -0.0023531018607311285 absolute-mass fraction 0.017465538627286257
+10 units: signed -0.008054245893646027 absolute-mass fraction 0.10811889273197116
+50 units: signed -0.018118776886752775 absolute-mass fraction 0.2943457344417378
+100 units: signed -0.02483492360302807 absolute-mass fraction 0.4210017948883222
+500 units: signed -0.03417939462238717 absolute-mass fraction 0.8055985126605505
+Positive/negative unit contributions: 931 1117
+
+```

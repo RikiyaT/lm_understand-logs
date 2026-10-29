@@ -1,0 +1,11 @@
+OUTPUT of Python run 14 of at most 300:
+```
+Reference mean delta logprob/token: 0.002872 SE across references: 0.002752
+Reference late-token delta: -0.005325
+Loop mean delta: -0.00038
+Loop late-token deltas: [np.float64(-0.00024), np.float64(-0.011226), np.float64(-0.013049), np.float64(-0.044571), np.float64(-0.000131), np.float64(0.002149), np.float64(-0.049525), np.float64(0.011617)]
+References improved: 35 /64
+Loop probabilities reduced: 5 /8
+Prepared pass5: both, DEV64, n16, max8192; active strength1.0
+
+```

@@ -1,0 +1,6 @@
+OUTPUT of Python run 55 of at most 300:
+```
+TOP64 alpha4, 16k {'original': {'n': 128, 'correct': 13, 'cut': 115, 'whitespace_cut': 0, 'median_correct_tokens': 4329.0, 'correct_with_think_close': 13}, 'edited': {'n': 128, 'correct': 47, 'cut': 61, 'whitespace_cut': 2, 'median_correct_tokens': 5850.0, 'correct_with_think_close': 47}}
+CURRENT full alpha4 ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']
+
+```

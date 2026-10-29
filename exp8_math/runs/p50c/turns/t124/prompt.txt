@@ -1,0 +1,10 @@
+OUTPUT of Python run 63 of at most 300:
+```
+Locked plan: 16 batches; 1024 fresh problems
+Plan SHA256: 385ede3be4fafc80475c38786a2bb05340fb79913a95444488afd2a8b4eee60f
+Generation record keys: ['id', 'source', 'answer', 'samples']
+
+NEXT FORWARD REQUEST
+{"type": "generate", "model": "both", "problems": ["gsm8k_train_4810", "gsm8k_train_6571", "gsm8k_train_1040", "gsm8k_train_1257", "gsm8k_train_122", "gsm8k_train_1186", "gsm8k_train_4995", "gsm8k_train_443", "gsm8k_train_1785", "gsm8k_train_3684", "gsm8k_train_4567", "gsm8k_train_3032", "gsm8k_train_4143", "gsm8k_train_4023", "gsm8k_train_5429", "gsm8k_train_5708", "gsm8k_train_6041", "gsm8k_train_5975", "gsm8k_train_3247", "gsm8k_train_7245", "gsm8k_train_4480", "gsm8k_train_5799", "gsm8k_train_2710", "gsm8k_train_1974", "gsm8k_train_6273", "gsm8k_train_888", "gsm8k_train_6152", "gsm8k_train_1174", "gsm8k_train_1577", "gsm8k_train_7375", "gsm8k_train_5411", "gsm8k_train_6987", "math_train_counting_and_probability_395", "math_train_geometry_531", "math_train_prealgebra_1071", "math_train_prealgebra_855", "math_train_number_theory_813", "math_train_geometry_161", "math_train_algebra_1407", "math_train_intermediate_algebra_585", "math_train_counting_and_probability_453", "math_train_prealgebra_920", "math_train_prealgebra_210", "math_train_intermediate_algebra_698", "math_train_counting_and_probability_491", "math_train_prealgebra_1122", "math_train_algebra_825", "math_train_precalculus_195", "math_train_algebra_708", "math_train_number_theory_834", "math_train_geometry_99", "math_train_algebra_408", "math_train_number_theory_478", "math_train_intermediate_algebra_1012", "math_train_counting_and_probability_383", "math_train_algebra_779", "math_train_algebra_396", "math_train_intermediate_algebra_1167", "math_train_algebra_125", "math_train_geometry_163", "math_train_prealgebra_151", "math_train_number_theory_721", "math_train_intermediate_algebra_1017", "math_train_intermediate_algebra_766"], "n": 1, "max_tokens": 32768}
+
+```

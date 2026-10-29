@@ -1,0 +1,183 @@
+OUTPUT of run 1 of at most 60:
+```
+CONFIG A
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+CONFIGS IDENTICAL: True
+TENSOR COUNTS: 235 235
+ONLY IN A: []
+ONLY IN B: []
+
+LAYER 0 AND NON-LAYER TENSOR SHAPES
+model.layers.0.input_layernorm.weight (640,)
+model.layers.0.mlp.down_proj.weight (640, 2048)
+model.layers.0.mlp.gate_proj.weight (2048, 640)
+model.layers.0.mlp.up_proj.weight (2048, 640)
+model.layers.0.post_attention_layernorm.weight (640,)
+model.layers.0.post_feedforward_layernorm.weight (640,)
+model.layers.0.pre_feedforward_layernorm.weight (640,)
+model.layers.0.self_attn.k_norm.weight (256,)
+model.layers.0.self_attn.k_proj.weight (256, 640)
+model.layers.0.self_attn.o_proj.weight (640, 1024)
+model.layers.0.self_attn.q_norm.weight (256,)
+model.layers.0.self_attn.q_proj.weight (1024, 640)
+model.layers.0.self_attn.v_proj.weight (256, 640)
+model.norm.weight (640,)
+
+NONFINITE TENSORS: []
+IDENTICAL TENSORS: 32 / 235
+TOTAL PARAMETERS READ: 100326016
+
+LAYER DIFFERENCES (screening only, NOT causal importance)
+layer       n_params     changed%       ||A||       ||B||     ||B-A||   symmetric_relative
+   -1            640      0.0000      1355.8      1355.8           0                   0
+    0        5573632     76.2686      419.48      419.48     0.55196         0.001315809
+    1        5573632     78.7512      1062.3      1062.3     0.56187        0.0005289114
+    2        5573632     78.0813      1083.4      1083.4     0.57534         0.000531074
+    3        5573632     80.0608      1440.1      1440.1     0.57392         0.000398523
+    4        5573632     80.9807      1533.3      1533.3     0.58477        0.0003813659
+    5        5573632     79.0413        1257        1257     0.58395        0.0004645598
+    6        5573632     79.5682      1241.5      1241.5     0.58154        0.0004684343
+    7        5573632     78.8491      1200.3      1200.3     0.57341        0.0004777418
+    8        5573632     80.1508        1385        1385     0.58121        0.0004196394
+    9        5573632     78.9857      1460.7      1460.7     0.58746        0.0004021856
+   10        5573632     79.7051      2451.4      2451.4     0.59282        0.0002418328
+   11        5573632     78.9755      5975.8      5975.8     0.58005        9.706718e-05
+   12        5573632     79.7023      7331.1      7331.1     0.60297        8.224799e-05
+   13        5573632     80.3657      6871.1      6871.1     0.60556        8.813041e-05
+   14        5573632     80.2271      7863.2      7863.2     0.60804        7.732738e-05
+   15        5573632     79.5609      9694.2      9694.2     0.61629        6.357293e-05
+   16        5573632     79.6267      9574.6      9574.6     0.59451        6.209297e-05
+   17        5573632     79.1857       10309       10309     0.56926        5.521708e-05
+
+TENSOR FAMILIES, AGGREGATED ACROSS LAYERS
+mlp.gate_proj.weight                                 changed=  76.057% delta=     1.2369 relative=  0.0065168
+mlp.up_proj.weight                                   changed=  74.183% delta=       1.22 relative=  0.0064328
+mlp.down_proj.weight                                 changed=  88.121% delta=     1.1295 relative=   0.014198
+self_attn.q_proj.weight                              changed=  79.666% delta=    0.90819 relative=  0.0068275
+self_attn.o_proj.weight                              changed=  80.499% delta=    0.81105 relative=  0.0077957
+self_attn.k_proj.weight                              changed=  77.746% delta=    0.45401 relative=  0.0067548
+self_attn.v_proj.weight                              changed=  73.659% delta=    0.41924 relative=  0.0061965
+pre_feedforward_layernorm.weight                     changed=   3.064% delta=  0.0087276 relative= 5.8527e-06
+self_attn.q_norm.weight                              changed=   4.449% delta=  0.0069654 relative= 7.4758e-05
+post_feedforward_layernorm.weight                    changed=   1.319% delta=  0.0058543 relative= 3.1898e-07
+self_attn.k_norm.weight                              changed=   2.973% delta=  0.0055164 relative= 3.6217e-05
+input_layernorm.weight                               changed=   0.990% delta=  0.0052902 relative= 1.7442e-06
+post_attention_layernorm.weight                      changed=   1.042% delta=  0.0046971 relative= 3.6728e-07
+model.norm.weight                                    changed=   0.000% delta=          0 relative=          0
+
+TOP 25 TENSORS BY SQUARED DIFFERENCE
+model.layers.14.mlp.gate_proj.weight                              delta=   0.30547 relative= 0.0068377 changed= 76.947% cosine=0.99997662
+model.layers.15.mlp.up_proj.weight                                delta=   0.30523 relative= 0.0068318 changed= 75.157% cosine=0.99997666
+model.layers.14.mlp.up_proj.weight                                delta=   0.30428 relative= 0.0068203 changed= 75.107% cosine=0.99997674
+model.layers.15.mlp.gate_proj.weight                              delta=    0.3042 relative= 0.0068061 changed= 76.801% cosine=0.99997684
+model.layers.13.mlp.gate_proj.weight                              delta=   0.30068 relative= 0.0067323 changed= 76.576% cosine=0.99997734
+model.layers.13.mlp.up_proj.weight                                delta=   0.29909 relative= 0.0067088 changed= 74.852% cosine=0.99997750
+model.layers.12.mlp.gate_proj.weight                              delta=   0.29875 relative= 0.0066723 changed= 77.299% cosine=0.99997774
+model.layers.16.mlp.gate_proj.weight                              delta=   0.29534 relative= 0.0066239 changed= 76.076% cosine=0.99997806
+model.layers.16.mlp.up_proj.weight                                delta=   0.29529 relative=  0.006597 changed= 74.408% cosine=0.99997824
+model.layers.6.mlp.gate_proj.weight                               delta=   0.29305 relative= 0.0065538 changed= 76.518% cosine=0.99997852
+model.layers.12.mlp.up_proj.weight                                delta=   0.29207 relative= 0.0065337 changed= 75.276% cosine=0.99997866
+model.layers.10.mlp.gate_proj.weight                              delta=   0.29191 relative= 0.0065093 changed= 77.021% cosine=0.99997881
+model.layers.4.mlp.gate_proj.weight                               delta=   0.29169 relative= 0.0065106 changed= 76.354% cosine=0.99997881
+model.layers.5.mlp.gate_proj.weight                               delta=   0.29134 relative= 0.0065006 changed= 76.591% cosine=0.99997887
+model.layers.11.mlp.gate_proj.weight                              delta=   0.29134 relative= 0.0065066 changed= 76.597% cosine=0.99997883
+model.layers.7.mlp.gate_proj.weight                               delta=   0.28964 relative= 0.0064662 changed= 76.462% cosine=0.99997909
+model.layers.3.mlp.gate_proj.weight                               delta=   0.28886 relative= 0.0064542 changed= 75.551% cosine=0.99997917
+model.layers.9.mlp.gate_proj.weight                               delta=   0.28764 relative= 0.0064083 changed= 76.893% cosine=0.99997947
+model.layers.15.mlp.down_proj.weight                              delta=   0.28755 relative=   0.01567 changed= 88.742% cosine=0.99987723
+model.layers.9.mlp.up_proj.weight                                 delta=   0.28706 relative= 0.0064294 changed= 74.084% cosine=0.99997933
+model.layers.17.mlp.up_proj.weight                                delta=   0.28702 relative= 0.0063922 changed= 74.050% cosine=0.99997957
+model.layers.8.mlp.gate_proj.weight                               delta=   0.28681 relative=  0.006385 changed= 76.784% cosine=0.99997962
+model.layers.17.mlp.gate_proj.weight                              delta=   0.28656 relative= 0.0064929 changed= 76.236% cosine=0.99997892
+model.layers.4.mlp.up_proj.weight                                 delta=   0.28633 relative= 0.0064081 changed= 74.535% cosine=0.99997947
+model.layers.14.mlp.down_proj.weight                              delta=   0.28626 relative=  0.018589 changed= 90.581% cosine=0.99982723
+
+TOP 25 TENSORS BY SYMMETRIC RELATIVE DIFFERENCE
+model.layers.4.mlp.down_proj.weight                               delta=    0.2652 relative=  0.019049 changed= 91.917% cosine=0.99981856
+model.layers.14.mlp.down_proj.weight                              delta=   0.28626 relative=  0.018589 changed= 90.581% cosine=0.99982723
+model.layers.8.mlp.down_proj.weight                               delta=   0.25486 relative=  0.017177 changed= 89.954% cosine=0.99985248
+model.layers.10.mlp.down_proj.weight                              delta=   0.26419 relative=  0.016959 changed= 90.069% cosine=0.99985620
+model.layers.1.mlp.down_proj.weight                               delta=   0.26249 relative=  0.016862 changed= 89.716% cosine=0.99985784
+model.layers.13.mlp.down_proj.weight                              delta=   0.27849 relative=  0.016801 changed= 89.576% cosine=0.99985886
+model.layers.3.mlp.down_proj.weight                               delta=   0.26469 relative=  0.016664 changed= 90.091% cosine=0.99986116
+model.layers.15.mlp.down_proj.weight                              delta=   0.28755 relative=   0.01567 changed= 88.742% cosine=0.99987723
+model.layers.6.mlp.down_proj.weight                               delta=   0.25628 relative=   0.01498 changed= 88.555% cosine=0.99988780
+model.layers.2.mlp.down_proj.weight                               delta=   0.26361 relative=  0.014212 changed= 88.143% cosine=0.99989901
+model.layers.17.mlp.down_proj.weight                              delta=   0.25655 relative=  0.014047 changed= 87.648% cosine=0.99990135
+model.layers.16.mlp.down_proj.weight                              delta=   0.27648 relative=  0.014003 changed= 87.486% cosine=0.99990195
+model.layers.7.mlp.down_proj.weight                               delta=   0.25928 relative=  0.013549 changed= 87.282% cosine=0.99990821
+model.layers.9.mlp.down_proj.weight                               delta=   0.26287 relative=  0.012441 changed= 86.221% cosine=0.99992261
+model.layers.11.mlp.down_proj.weight                              delta=   0.25264 relative=  0.012301 changed= 86.015% cosine=0.99992434
+model.layers.12.mlp.down_proj.weight                              delta=   0.27224 relative=  0.012023 changed= 85.907% cosine=0.99992773
+model.layers.3.self_attn.o_proj.weight                            delta=   0.18496 relative=  0.011504 changed= 85.601% cosine=0.99993383
+model.layers.4.self_attn.o_proj.weight                            delta=   0.19667 relative=  0.011443 changed= 86.868% cosine=0.99993453
+model.layers.16.self_attn.o_proj.weight                           delta=   0.18646 relative=  0.010682 changed= 84.170% cosine=0.99994294
+model.layers.0.mlp.down_proj.weight                               delta=   0.26291 relative=  0.010678 changed= 84.222% cosine=0.99994299
+model.layers.5.mlp.down_proj.weight                               delta=   0.26195 relative=  0.010563 changed= 84.055% cosine=0.99994421
+model.layers.1.self_attn.o_proj.weight                            delta=   0.18492 relative=      0.01 changed= 83.713% cosine=0.99995000
+model.layers.8.self_attn.o_proj.weight                            delta=   0.19292 relative= 0.0091825 changed= 84.980% cosine=0.99995784
+model.layers.13.self_attn.o_proj.weight                           delta=   0.19605 relative= 0.0089892 changed= 82.586% cosine=0.99995960
+model.layers.5.self_attn.o_proj.weight                            delta=   0.19978 relative= 0.0080467 changed= 80.445% cosine=0.99996763
+
+```

@@ -1,0 +1,16 @@
+OUTPUT of Python run 37 of at most 300:
+```
+Analysis variables: ['apply_circuit_strength', 'brief_pair', 'candidates', 'drop_edit', 'edit4', 'edited', 'gen_4_edited', 'paired_summary', 'save_edit', 'scores']
+apply_circuit_strength signature: (strength) constants: (None, 'model.language_model.layers.', '.mlp.down_proj.weight', 1)
+paired_summary signature: (a, b) constants: (None, <code object <listcomp> at 0x7f4929abe970, file "<run>", line 12>, 'paired_summary.<locals>.<listcomp>', <code object <listcomp> at 0x7f4929abe8c0, file "<run>", line 13>, 1, ('ddof',), 0, <code object <listcomp> at 0x7f4929abec30, file "<run>", line 18>, <code object <listcomp> at 0x7f4929abed90, file "<run>", line 19>, <code object <listcomp> at 0x7f4929abece0, file "<run>", line 20>, <code object <listcomp> at 0x7f4929abf050, file "<run>", line 21>, ('n', 'original_correct', 'edited_correct', 'gain', 'paired_se', 'rescued', 'regressed', 'original_cut', 'edited_cut', 'original_mean_tokens', 'edited_mean_tokens'))
+repeated_fraction signature: (ids, n=12) constants: (None, 0.0, <code object <listcomp> at 0x7f4929a726b0, file "<run>", line 15>, 'repeated_fraction.<locals>.<listcomp>', 1)
+gen_4_original.jsonl count: 64 keys: ['id', 'source', 'answer', 'samples']
+First record metadata: {'id': 'gsm8k_train_7354', 'source': 'gsm8k', 'answer': '12'}
+gen_4_edited.jsonl count: 64 keys: ['id', 'source', 'answer', 'samples']
+First record metadata: {'id': 'gsm8k_train_7354', 'source': 'gsm8k', 'answer': '12'}
+Candidates: {18: [8], 19: [11], 22: [59, 11, 89], 23: [22, 40, 46, 94, 19, 350]}
+model.language_model.layers.18.mlp.down_proj.weight shape: (1024, 3584) changed columns: 1 relative delta: 0.017899204045534134
+model.language_model.layers.19.mlp.down_proj.weight shape: (1024, 3584) changed columns: 1 relative delta: 0.015992557629942894
+model.language_model.layers.23.mlp.down_proj.weight shape: (1024, 3584) changed columns: 2 relative delta: 0.019595080986618996
+
+```

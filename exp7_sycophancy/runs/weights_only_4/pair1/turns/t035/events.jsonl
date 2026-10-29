@@ -1,0 +1,11 @@
+{"type":"thread.started","thread_id":"id-44363358"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"reasoning","text":"**Checking neutral contrasts**\n**Mapping answer priors**"}}
+{"type":"item.completed","item":{"id":"item_2","type":"reasoning","text":"**Residualizing categories against numbers**\n**Checking broader semantic axes**"}}
+{"type":"item.completed","item":{"id":"item_3","type":"reasoning","text":"**Expanding source-content unit search**\n**Testing source-sensitive gates**"}}
+{"type":"item.completed","item":{"id":"item_4","type":"reasoning","text":"**Refining source-sensitive criteria**\n**Computing source-selectivity scores**"}}
+{"type":"item.completed","item":{"id":"item_5","type":"reasoning","text":"**Predefining candidate filters**\n**Checking layer-17 output**"}}
+{"type":"item.completed","item":{"id":"item_6","type":"reasoning","text":"**Comparing source gate frames**\n**Defining source cosine metric**"}}
+{"type":"item.completed","item":{"id":"item_7","type":"reasoning","text":"**Normalizing source couplings**\n**Defining gate coupling**"}}
+{"type":"item.completed","item":{"id":"item_8","type":"reasoning","text":"**Preparing source-gate search**\n**Checking source-gate heads**"}}

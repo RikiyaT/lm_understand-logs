@@ -1,0 +1,102 @@
+OUTPUT of run 2 of at most 60:
+```
+MLP TEST
+C_j = down[:, j] outer up[j, :].
+C_j is invariant to reciprocal up/down rescaling of unit j.
+Gate-row comparisons also test whether a unit permutation could explain changes.
+These are internal MLP comparisons; surrounding norm layers are separate.
+
+layer= 0 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00618667 C_relative=0.012199 formula_check_error=1.7e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0016 0.0061 0.0181] C=[0.0057 0.0126 0.0254]
+layer= 1 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00626667 C_relative=0.0179034 formula_check_error=3.3e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0033 0.0062 0.0141] C=[0.0109 0.0182 0.0295]
+layer= 2 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00640944 C_relative=0.0152303 formula_check_error=4.3e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0022 0.0063 0.0204] C=[0.0091 0.0159 0.0244]
+layer= 3 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00649543 C_relative=0.0174134 formula_check_error=3.3e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0022 0.0068 0.0265] C=[0.0119 0.0182 0.0389]
+layer= 4 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00656333 C_relative=0.0196383 formula_check_error=2.1e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.001  0.0074 0.0229] C=[0.0096 0.0203 0.0627]
+layer= 5 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00667001 C_relative=0.0121669 formula_check_error=2.6e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0021 0.0076 0.0259] C=[0.0054 0.0127 0.0284]
+layer= 6 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00670041 C_relative=0.0158418 formula_check_error=3.9e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0013 0.0078 0.0234] C=[0.0097 0.0168 0.0446]
+layer= 7 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00652944 C_relative=0.0143033 formula_check_error=4.1e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0008 0.0078 0.02  ] C=[0.0087 0.0151 0.0477]
+layer= 8 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00657107 C_relative=0.0175177 formula_check_error=4.3e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0015 0.0083 0.0192] C=[0.0098 0.0182 0.0454]
+layer= 9 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00644471 C_relative=0.0134173 formula_check_error=4.6e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0017 0.0079 0.023 ] C=[0.0068 0.0139 0.0331]
+layer=10 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00647644 C_relative=0.0174618 formula_check_error=2.5e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0016 0.0078 0.0215] C=[0.01   0.018  0.0482]
+layer=11 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00645161 C_relative=0.0132182 formula_check_error=4.4e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0017 0.0075 0.0177] C=[0.0079 0.0138 0.0371]
+layer=12 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00653445 C_relative=0.0126038 formula_check_error=2.5e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0015 0.0077 0.0178] C=[0.0061 0.0136 0.0296]
+layer=13 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00659246 C_relative=0.0175271 formula_check_error=3.9e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0017 0.0074 0.0155] C=[0.0083 0.0177 0.0369]
+layer=14 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00676435 C_relative=0.0192068 formula_check_error=2.8e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0017 0.0077 0.0162] C=[0.0126 0.0193 0.0419]
+layer=15 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00670077 C_relative=0.0166489 formula_check_error=2.4e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0014 0.0077 0.0124] C=[0.0086 0.0167 0.0373]
+layer=16 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00660669 C_relative=0.0152581 formula_check_error=3.6e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.0021 0.0076 0.0142] C=[0.0081 0.0153 0.037 ]
+layer=17 equal_gate_rows=   0/2048 nearest_gate_same_index=2048/2048 exact_gate_matches_any_index=   0/2048 gate_relative=0.00656496 C_relative=0.0151631 formula_check_error=4.2e-16
+   per-unit relative quantiles [min, median, max]: gate=[0.002  0.008  0.0164] C=[0.0072 0.0154 0.0509]
+
+TOTALS
+units 36864
+gate_rows_equal 0
+nearest_gate_is_same_index 36864
+coefficient_relative_below_1e_10 0
+Global indexed-unit C relative difference: 0.015093711618156386
+
+TOP 10 BY C_delta — ALGEBRAIC, NOT BEHAVIORAL IMPORTANCE
+layer=12 unit=1823 C_delta=0.01760328 C_relative=0.006317379 gate_relative=0.0127609
+layer=12 unit=1758 C_delta=0.0172598 C_relative=0.007618534 gate_relative=0.01309577
+layer=12 unit=1590 C_delta=0.0159376 C_relative=0.007083064 gate_relative=0.01366294
+layer=12 unit= 970 C_delta=0.01490232 C_relative=0.008320959 gate_relative=0.01096742
+layer=12 unit= 151 C_delta=0.01486934 C_relative=0.007810068 gate_relative=0.009341846
+layer=17 unit=1496 C_delta=0.01474715 C_relative=0.008799917 gate_relative=0.01637886
+layer=12 unit= 777 C_delta=0.0147107 C_relative=0.007322744 gate_relative=0.00990642
+layer=12 unit=1579 C_delta=0.01463621 C_relative=0.006764433 gate_relative=0.01269285
+layer=12 unit=1334 C_delta=0.01451918 C_relative=0.007506745 gate_relative=0.013288
+layer= 5 unit= 501 C_delta=0.01445693 C_relative=0.00535688 gate_relative=0.02592304
+
+TOP 10 BY gate_relative — ALGEBRAIC, NOT BEHAVIORAL IMPORTANCE
+layer= 3 unit= 994 C_delta=0.007169894 C_relative=0.02235767 gate_relative=0.02645899
+layer= 5 unit= 501 C_delta=0.01445693 C_relative=0.00535688 gate_relative=0.02592304
+layer= 6 unit=1522 C_delta=0.007916472 C_relative=0.01295168 gate_relative=0.02338518
+layer= 5 unit= 345 C_delta=0.005706702 C_relative=0.01462054 gate_relative=0.02323872
+layer= 9 unit= 778 C_delta=0.006169773 C_relative=0.01752685 gate_relative=0.02297544
+layer= 4 unit=1347 C_delta=0.008921889 C_relative=0.0154249 gate_relative=0.02287312
+layer= 4 unit= 291 C_delta=0.007387288 C_relative=0.0172112 gate_relative=0.02284574
+layer= 5 unit=1413 C_delta=0.00560041 C_relative=0.01415248 gate_relative=0.02266185
+layer= 9 unit= 275 C_delta=0.006147539 C_relative=0.01670913 gate_relative=0.02264886
+layer= 5 unit= 963 C_delta=0.006041737 C_relative=0.01573645 gate_relative=0.022529
+
+NORMALIZATION WEIGHT INVENTORY
+Raw parameter differences only; no hidden-state normalization is evaluated.
+Norm tensors: 109
+Changed norm tensors: 75
+model.layers.6.self_attn.q_norm.weight                            changed=20/256 raw_relative=0.0001992317
+model.layers.9.self_attn.q_norm.weight                            changed=21/256 raw_relative=0.0001189117
+model.layers.7.self_attn.q_norm.weight                            changed=23/256 raw_relative=0.0001135099
+model.layers.3.self_attn.q_norm.weight                            changed=15/256 raw_relative=0.0001130511
+model.layers.2.self_attn.q_norm.weight                            changed=7/256 raw_relative=0.0001061705
+model.layers.6.self_attn.k_norm.weight                            changed=18/256 raw_relative=0.0001026117
+model.layers.10.self_attn.q_norm.weight                           changed=17/256 raw_relative=9.435669e-05
+model.layers.11.self_attn.q_norm.weight                           changed=13/256 raw_relative=8.950082e-05
+model.layers.13.self_attn.q_norm.weight                           changed=8/256 raw_relative=7.475856e-05
+model.layers.15.self_attn.k_norm.weight                           changed=13/256 raw_relative=7.015552e-05
+model.layers.16.self_attn.q_norm.weight                           changed=9/256 raw_relative=6.682248e-05
+model.layers.4.self_attn.q_norm.weight                            changed=15/256 raw_relative=6.553903e-05
+
+INTERPRETATION LIMIT
+Changed gate rows and changed C_j reject simple indexed-unit
+reciprocal-rescaling equivalence. Absence of exact gate-row matches
+also rejects an explanation based solely on gate-row permutations.
+These tests do not exclude every possible whole-network equivalence.
+They do not reveal which features gate rows recognize in actual prompts,
+whether those units are used there, or which output answers they influence.
+
+```

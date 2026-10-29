@@ -1,0 +1,53 @@
+Forward pass 26 of 50 done (generate); results in /work/gen_26_original.jsonl and /work/gen_26_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_26_original.jsonl",
+  "edited": "/work/gen_26_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.48046875,
+  "accuracy_by_source": {
+   "math": 0.4805
+  },
+  "mean_tokens": 837,
+  "cut_share": 0.042,
+  "failures": {
+   "wrong_answer": 500,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 31
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.5048828125,
+  "accuracy_by_source": {
+   "math": 0.5049
+  },
+  "mean_tokens": 826,
+  "cut_share": 0.0391,
+  "failures": {
+   "wrong_answer": 479,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 27
+  }
+ },
+ "paired": {
+  "items": 32,
+  "accuracy_difference": 0.0244,
+  "standard_error": 0.0168,
+  "samples_wrong_to_right": 149,
+  "samples_right_to_wrong": 124
+ },
+ "s": 256.8
+}
+```
+Forward passes left: 24.
+Edits used in this pass: model.layers.11.mlp.down_proj.weight (edit hash 846ca6c8e8).

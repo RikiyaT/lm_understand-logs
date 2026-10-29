@@ -1,0 +1,6 @@
+OUTPUT of Python run 12 of at most 300:
+```
+{'tensor': 'model.layers.8.mlp.down_proj.weight', 'columns': [1231, 1683, 1810, 1912], 'suppression_alpha': 1.0, 'relative_frobenius_change': 0.037127796560525894}
+'Top-four neuron ablation ready.'
+
+```

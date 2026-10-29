@@ -1,0 +1,116 @@
+OUTPUT of Python run 17 of at most 300:
+```
+<run>:28: RuntimeWarning: divide by zero encountered in log
+<run>:28: RuntimeWarning: invalid value encountered in multiply
+[
+  {
+    "layer": 5,
+    "head": 0,
+    "original_operands": 0.0052,
+    "generated_numbers": 0.245,
+    "bos": 0.4772,
+    "recent_8": 0.0628,
+    "entropy": NaN,
+    "output_block_norm": 14.26
+  },
+  {
+    "layer": 5,
+    "head": 1,
+    "original_operands": 0.0006,
+    "generated_numbers": 0.3446,
+    "bos": 0.6473,
+    "recent_8": 0.0035,
+    "entropy": NaN,
+    "output_block_norm": 12.292
+  },
+  {
+    "layer": 5,
+    "head": 2,
+    "original_operands": 0.0028,
+    "generated_numbers": 0.0821,
+    "bos": 0.599,
+    "recent_8": 0.0196,
+    "output_block_norm": 11.975
+  },
+  {
+    "layer": 5,
+    "head": 3,
+    "original_operands": 0.002,
+    "generated_numbers": 0.4534,
+    "bos": 0.3009,
+    "recent_8": 0.1882,
+    "output_block_norm": 10.891
+  },
+  {
+    "layer": 11,
+    "head": 0,
+    "original_operands": 0.0014,
+    "generated_numbers": 0.1306,
+    "bos": 0.3146,
+    "recent_8": 0.5464,
+    "output_block_norm": 12.405
+  },
+  {
+    "layer": 11,
+    "head": 1,
+    "original_operands": 0.0003,
+    "generated_numbers": 0.016,
+    "bos": 0.8887,
+    "recent_8": 0.0576,
+    "output_block_norm": 10.819
+  },
+  {
+    "head": 2,
+    "original_operands": 0.0326,
+    "generated_numbers": 0.2518,
+    "bos": 0.6374,
+    "recent_8": 0.038,
+    "output_block_norm": 17.655
+  },
+  {
+    "head": 3,
+    "original_operands": 0.0147,
+    "generated_numbers": 0.1816,
+    "bos": 0.6497,
+    "recent_8": 0.1195,
+    "output_block_norm": 19.016
+  },
+  {
+    "layer": 17,
+    "head": 0,
+    "original_operands": 0.0101,
+    "generated_numbers": 0.0216,
+    "bos": 0.7227,
+    "recent_8": 0.014,
+    "output_block_norm": 15.107
+  },
+  {
+    "layer": 17,
+    "head": 1,
+    "original_operands": 0.0002,
+    "generated_numbers": 0.0127,
+    "bos": 0.7122,
+    "recent_8": 0.2398,
+    "output_block_norm": 11.511
+  },
+  {
+    "head": 2,
+    "original_operands": 0.0097,
+    "generated_numbers": 0.018,
+    "bos": 0.9375,
+    "recent_8": 0.0085,
+    "output_block_norm": 11.591
+  },
+  {
+    "head": 3,
+    "original_operands": 0.0204,
+    "generated_numbers": 0.1186,
+    "bos": 0.6335,
+    "recent_8": 0.0856,
+    "output_block_norm": 10.26
+  }
+]
+'Attention localization summarized; no attention edit yet.'
+
+[harness: 14 repeated lines not shown (a line is shown at most 2 times per output)]
+```

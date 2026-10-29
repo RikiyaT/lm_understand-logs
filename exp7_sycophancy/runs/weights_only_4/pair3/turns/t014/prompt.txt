@@ -1,0 +1,170 @@
+OUTPUT of run 13 of at most 60:
+```
+=== ALL-HEAD ARITHMETIC-ASSOCIATION SCREEN ===
+B-A; positive favours stronger coefficient in B, negative in A.
+
+ raw operator_digits-letters top 10 absolute mean changes
+L01 H0 mean=-0.002427547 range=[-0.003229733,-0.00131785] positive_offsets=0/6
+L17 H0 mean=-0.0006394842 range=[-0.001096118,-0.0002393457] positive_offsets=0/6
+L11 H0 mean=-0.000524939 range=[-0.0006549767,-0.0003369858] positive_offsets=0/6
+L16 H1 mean=-0.0005001902 range=[-0.0006267743,-0.000318867] positive_offsets=0/6
+L15 H2 mean=+0.0004873256 range=[+0.0002020606,+0.0006881229] positive_offsets=6/6
+L02 H1 mean=-0.0004798851 range=[-0.000653402,-0.0002080331] positive_offsets=0/6
+L08 H1 mean=-0.0004700417 range=[-0.0005307855,-0.0003949846] positive_offsets=0/6
+L10 H3 mean=+0.0004546982 range=[+0.0001845177,+0.0005334236] positive_offsets=6/6
+L14 H3 mean=+0.0004446419 range=[+3.753059e-05,+0.0007010874] positive_offsets=6/6
+L03 H2 mean=-0.0004208919 range=[-0.0005977569,-0.0001944942] positive_offsets=0/6
+
+ raw operator_digits-what top 10 absolute mean changes
+L00 H2 mean=+0.00267093 range=[+0.001054767,+0.003539223] positive_offsets=6/6
+L01 H0 mean=-0.001678255 range=[-0.002654979,-0.0009727483] positive_offsets=0/6
+L02 H0 mean=-0.001641294 range=[-0.002045365,-0.0009326393] positive_offsets=0/6
+L02 H1 mean=-0.001506459 range=[-0.001829335,-0.001088697] positive_offsets=0/6
+L00 H1 mean=+0.0007189501 range=[+7.703292e-05,+0.001783608] positive_offsets=6/6
+L04 H0 mean=+0.0006068193 range=[+0.0005398745,+0.0006738821] positive_offsets=6/6
+L16 H1 mean=-0.0005657759 range=[-0.0006970621,-0.0004816668] positive_offsets=0/6
+L14 H3 mean=+0.0005231453 range=[-1.822621e-05,+0.0008133188] positive_offsets=5/6
+L11 H0 mean=-0.0005141159 range=[-0.0007096047,-0.0002665685] positive_offsets=0/6
+L04 H3 mean=-0.0004814861 range=[-0.0005076452,-0.0004357319] positive_offsets=0/6
+
+ raw digit_times-plus top 10 absolute mean changes
+L02 H3 mean=+0.003290815 range=[+0.002674156,+0.004012796] positive_offsets=6/6
+L00 H3 mean=-0.002392629 range=[-0.00271549,-0.001373371] positive_offsets=0/6
+L01 H0 mean=-0.001824981 range=[-0.002298618,-0.001304836] positive_offsets=0/6
+L01 H3 mean=+0.001606863 range=[+0.001334582,+0.001969818] positive_offsets=6/6
+L01 H1 mean=-0.001450064 range=[-0.001808145,-0.001105009] positive_offsets=0/6
+L03 H0 mean=-0.001375908 range=[-0.001588101,-0.001273264] positive_offsets=0/6
+L02 H0 mean=+0.001110008 range=[+5.741023e-05,+0.002142481] positive_offsets=6/6
+L01 H2 mean=+0.001106288 range=[+0.0008369544,+0.001540994] positive_offsets=6/6
+L15 H3 mean=+0.0009986116 range=[+0.0007311822,+0.001326346] positive_offsets=6/6
+L17 H1 mean=-0.0009012714 range=[-0.001233579,-0.0006949617] positive_offsets=0/6
+
+ diag operator_digits-letters top 10 absolute mean changes
+L01 H0 mean=-9.08418 range=[-12.18113,-4.700072] positive_offsets=0/6
+L14 H3 mean=+5.334369 range=[+4.190097,+5.815091] positive_offsets=6/6
+L16 H1 mean=-4.116324 range=[-6.836168,-1.900818] positive_offsets=0/6
+L16 H3 mean=-3.238761 range=[-3.980384,-2.056293] positive_offsets=0/6
+L16 H2 mean=-2.871349 range=[-3.81772,-2.311882] positive_offsets=0/6
+L14 H0 mean=+2.415301 range=[+2.095194,+2.86848] positive_offsets=6/6
+L10 H3 mean=+2.36374 range=[+2.245723,+2.455888] positive_offsets=6/6
+L16 H0 mean=-2.238265 range=[-4.231433,-0.922547] positive_offsets=0/6
+L15 H1 mean=-1.970592 range=[-2.943654,-0.7117767] positive_offsets=0/6
+L14 H1 mean=+1.658263 range=[+1.031236,+2.187666] positive_offsets=6/6
+
+ diag operator_digits-what top 10 absolute mean changes
+L01 H0 mean=-9.578204 range=[-13.58523,-4.702088] positive_offsets=0/6
+L14 H3 mean=+6.343552 range=[+4.833464,+7.012317] positive_offsets=6/6
+L02 H0 mean=-5.753108 range=[-6.74666,-3.322956] positive_offsets=0/6
+L16 H1 mean=-5.395771 range=[-8.356815,-2.786221] positive_offsets=0/6
+L02 H1 mean=-5.20408 range=[-5.979057,-4.141496] positive_offsets=0/6
+L16 H3 mean=-4.165388 range=[-4.986337,-3.122267] positive_offsets=0/6
+L16 H2 mean=-4.028068 range=[-5.597584,-3.299525] positive_offsets=0/6
+L16 H0 mean=-3.588319 range=[-5.341517,-1.825947] positive_offsets=0/6
+L15 H1 mean=-2.989053 range=[-3.983638,-1.412285] positive_offsets=0/6
+L10 H3 mean=+2.976627 range=[+2.848672,+3.058835] positive_offsets=6/6
+
+ diag digit_times-plus top 10 absolute mean changes
+L01 H0 mean=-9.743677 range=[-12.08747,-7.01285] positive_offsets=0/6
+L14 H2 mean=+9.124619 range=[+8.212137,+9.997094] positive_offsets=6/6
+L02 H3 mean=+8.989149 range=[+7.315415,+11.74898] positive_offsets=6/6
+L16 H0 mean=-8.664181 range=[-16.42036,-4.873488] positive_offsets=0/6
+L01 H3 mean=+8.566076 range=[+7.786614,+9.689258] positive_offsets=6/6
+L14 H3 mean=+7.460582 range=[+6.222269,+8.306656] positive_offsets=6/6
+L01 H1 mean=-7.138156 range=[-8.236889,-5.812653] positive_offsets=0/6
+L14 H0 mean=+6.700451 range=[+5.524659,+8.021236] positive_offsets=6/6
+L01 H2 mean=+5.706621 range=[+4.549136,+7.738697] positive_offsets=6/6
+L16 H3 mean=-3.611627 range=[-5.425932,-1.84353] positive_offsets=0/6
+
+=== PRE-SPECIFIED CANDIDATES: ALL OPERATOR CONTROLS ===
+Offset order: [0, 1, 2, 4, 8, 16]
+
+ (1, 0) raw
+operator_digits-letters     [-0.00253 -0.00307 -0.00323 -0.00269 -0.00174 -0.00132]
+operator_digits-what        [-0.00132 -0.00221 -0.00265 -0.00191 -0.001   -0.00097]
+plus_digits-what            [-0.00316 -0.00383 -0.00406 -0.00308 -0.00218 -0.00166]
+minus_digits-what           [-0.00405 -0.00512 -0.00551 -0.00424 -0.00289 -0.00264]
+times_digits-what           [-0.00073 -0.00062 -0.00047 -0.00025 -0.00044 -0.00021]
+digit_times-plus            [-0.00183 -0.00214 -0.0023  -0.002   -0.0013  -0.00138]
+belief_firstperson          [1.58357e-04 1.71306e-04 2.10812e-04 3.08858e-04 5.61832e-05 1.62418e-04]
+
+ (1, 0) diag
+operator_digits-letters     [-10.80918 -12.18113 -12.12487  -8.62571  -4.70007  -6.06411]
+operator_digits-what        [ -9.2431  -12.30439 -13.58523  -9.98327  -4.70209  -7.65115]
+plus_digits-what            [-15.57801 -17.83064 -18.38368 -13.39105  -6.72754 -10.00099]
+minus_digits-what           [-21.13677 -25.03028 -26.09785 -19.64713 -11.40289 -14.86137]
+times_digits-what           [-3.5515  -3.89381 -4.16493 -3.61397 -2.81593 -2.71036]
+digit_times-plus            [ -9.31391 -10.93763 -12.08747 -11.50702  -7.6032   -7.01285]
+belief_firstperson          [0.83209 0.874   1.01358 1.31894 0.34902 0.81088]
+
+ (1, 3) raw
+operator_digits-letters     [ 3.43753e-04  2.80122e-04  2.49313e-04  2.00849e-04 -8.38452e-05  1.21349e-04]
+operator_digits-what        [ 2.82573e-04 -2.73166e-05 -2.55354e-04 -3.76562e-04 -7.19289e-04 -1.00186e-03]
+plus_digits-what            [ 6.40406e-04  3.99103e-04  6.75547e-05 -7.24997e-05  3.42366e-04 -7.77519e-05]
+minus_digits-what           [ 8.00651e-04  5.75573e-04  3.54890e-04  2.33602e-04  2.77402e-04 -6.93715e-06]
+times_digits-what           [ 3.20305e-04  7.94436e-04  9.82654e-04  3.23764e-04 -6.32747e-04 -8.51164e-05]
+digit_times-plus            [0.00149 0.00166 0.00163 0.00156 0.00197 0.00133]
+belief_firstperson          [0.0014  0.00142 0.00135 0.00112 0.00089 0.00098]
+
+ (1, 3) diag
+operator_digits-letters     [1.72263 1.32854 1.04241 0.77412 0.50782 1.24328]
+operator_digits-what        [ 1.46509  0.02603 -1.23728 -2.30808 -1.96156 -3.95867]
+plus_digits-what            [ 2.90606  1.3787  -0.48786 -1.35483  1.30644 -0.10229]
+minus_digits-what           [ 3.11657  1.70432  0.2944  -0.17129  1.3786  -0.45287]
+times_digits-what           [ 0.5427   1.47957  1.23676 -1.38556 -3.7305  -1.3984 ]
+digit_times-plus            [8.47666 8.88048 8.60612 7.95732 9.68926 7.78661]
+belief_firstperson          [7.61026 7.57192 7.2689  6.41553 5.38322 5.47361]
+
+ (2, 0) raw
+operator_digits-letters     [-3.34425e-04 -4.65061e-04 -5.11128e-04 -3.57470e-04 -8.81333e-06  9.66449e-05]
+operator_digits-what        [-0.0017  -0.00191 -0.00205 -0.00194 -0.00133 -0.00093]
+plus_digits-what            [-0.00103 -0.0011  -0.00114 -0.001   -0.00053 -0.00013]
+minus_digits-what           [-0.00213 -0.00219 -0.00216 -0.00191 -0.00141 -0.00108]
+times_digits-what           [-7.75426e-05 -1.86239e-04 -2.17096e-04 -1.34496e-04 -6.37684e-05  1.75989e-04]
+digit_times-plus            [5.74102e-05 7.85134e-04 1.55810e-03 2.14248e-03 1.14876e-03 9.68152e-04]
+belief_firstperson          [-0.00023 -0.00026 -0.00027 -0.00029 -0.00029 -0.00029]
+
+ (2, 0) diag
+operator_digits-letters     [-1.27516 -1.62368 -1.67066 -1.25778 -0.26546  0.38199]
+operator_digits-what        [-6.18537 -6.5444  -6.74666 -6.62737 -5.09189 -3.32296]
+plus_digits-what            [-2.72556 -2.69693 -2.53396 -2.01461 -0.95728  0.29989]
+minus_digits-what           [-6.44855 -6.52861 -6.41172 -5.8647  -4.12096 -3.24495]
+times_digits-what           [-0.03485 -0.11867 -0.05481  0.10418  0.27746  1.35746]
+digit_times-plus            [1.01175 2.41627 4.24277 6.28137 3.12065 0.99728]
+belief_firstperson          [-0.50553 -0.58749 -0.63138 -0.61148 -0.47826 -0.63686]
+
+ (2, 3) raw
+operator_digits-letters     [-5.34460e-05  6.11634e-06  6.39392e-05  3.92389e-05 -2.57619e-04 -3.16336e-04]
+operator_digits-what        [-0.00025 -0.00018 -0.00013 -0.00024 -0.00051 -0.00072]
+plus_digits-what            [-1.87209e-04  9.40372e-05  4.54124e-04  6.70956e-04  1.85122e-04  3.45685e-04]
+minus_digits-what           [-5.13115e-05  1.24031e-04  3.84680e-04  6.33647e-04  2.09532e-04  2.90171e-04]
+times_digits-what           [-0.00049 -0.00067 -0.00079 -0.0007  -0.00032 -0.00017]
+digit_times-plus            [0.00267 0.003   0.00337 0.00375 0.00401 0.00294]
+belief_firstperson          [7.78811e-05 3.09802e-05 1.34651e-05 4.97883e-05 8.04793e-05 9.75578e-05]
+
+ (2, 3) diag
+operator_digits-letters     [-0.45072 -0.38487 -0.30156 -0.28655 -0.94035 -1.17993]
+operator_digits-what        [-0.56989 -0.42071 -0.34619 -0.71319 -1.5473  -1.91411]
+plus_digits-what            [0.30043 0.76159 1.53373 2.36145 1.60753 1.97454]
+minus_digits-what           [-0.46777 -0.13246  0.51407  1.43319  0.49912  0.63188]
+times_digits-what           [-1.44275 -2.25892 -3.03597 -3.00459 -1.05325 -1.27044]
+digit_times-plus            [ 7.87877  8.07541  8.7224  10.19392 11.74898  7.31542]
+belief_firstperson          [0.59983 0.43373 0.32776 0.37313 0.61756 0.55944]
+
+=== L1 H0: INDIVIDUAL OPERATOR × DIGIT WEIGHT COEFFICIENT CHANGES ===
+Columns: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' What', ' I']
+raw
+ plus     [-0.00511 -0.00074  0.00071 -0.00037 -0.00445 -0.00623 -0.00844 -0.00692 -0.00548 -0.00498  0.00263  0.00192]
+ minus    [-0.00926 -0.006   -0.00413 -0.00572 -0.00797 -0.01003 -0.0109  -0.0091  -0.00707 -0.00749  0.00241  0.00122]
+ times    [-0.0015  -0.00162 -0.00387 -0.00248 -0.00318 -0.00211 -0.00185  0.00062 -0.00085  0.0004   0.00118 -0.00033]
++         [-0.00191  0.00108  0.00139  0.00075 -0.0014  -0.00232 -0.00362 -0.0029  -0.00215 -0.00188  0.00024  0.00103]
+-         [ 0.00055  0.00094  0.00052  0.00039  0.00065  0.00071  0.00106  0.00077  0.00099  0.00087 -0.00027 -0.00035]
+*         [ 0.00114  0.00116  0.00082  0.00072  0.00136  0.00141  0.00137  0.00093  0.00111  0.00094 -0.00058 -0.00022]
+diag
+ plus     [-21.77191  -1.41134   4.09265   3.75329 -18.29728 -27.09421 -38.988   -31.06029 -23.1117  -20.2453    9.44415   6.81442]
+ minus    [-40.5604  -26.13298 -17.42914 -20.52344 -33.51652 -45.11535 -48.71511 -38.63186 -27.54609 -29.33065   9.11033   3.58584]
+ times    [ -8.08394  -8.93033 -20.34933 -13.79069 -17.4284  -11.86132 -11.21438   2.43465  -5.59093   0.7357    0.36679  -3.13557]
++         [ -7.73843   6.42152   7.87495   6.62018  -5.83519 -10.02102 -16.72768 -12.38127  -9.19305  -6.98859   5.93092   5.59902]
+-         [ 1.75458  5.2999   3.84087  1.58688  2.16654  2.29619  4.49467  4.89689  4.97522  5.06393  5.5759  -0.19653]
+*         [5.61143 6.37656 4.75373 3.807   6.68239 7.24541 7.2688  6.43552 6.46479 5.4626  3.71187 0.31279]
+
+```

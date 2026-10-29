@@ -1,0 +1,155 @@
+OUTPUT of run 24 of at most 60:
+```
+=== NEW HYPOTHESIS: HEAD REDISTRIBUTION / CANCELLATION ===
+All heads in a layer share V; each has its own O slice.
+Numerical kernel: P_h = Qdigit^T (O_h V).
+Head-common mode = (P_0 + P_1 + P_2 + P_3)/2.
+Common-mode fraction is 0 for exact cancellation, .25 for uncorrelated
+equal-energy changes, and 1 for identical changes across heads.
+None of these operators includes attention weights or a model input.
+
+=== ALL-LAYER COMMON-MODE AND SHARED-VALUE SUMMARY ===
+Copy cancellation concerns the signed identity statistic only.
+It is distinct from cancellation of the entire numerical kernel.
+ L mode  delta_common  base_common  shared_V_share   summed_identity_delta  identity_cancellation
+ 0 raw       0.41179      0.28024         0.57108           +8.944709e-05                0.22843
+ 0 diag      0.38969      0.35689         0.55662             +0.04384082                0.60408
+ 1 raw       0.51077      0.37212         0.33716            +0.001657195                0.00000
+ 1 diag      0.48996      0.40273         0.40060               +1.057302                0.46057
+ 2 raw       0.45102      0.15749         0.30317           +0.0005036479                0.00000
+ 2 diag      0.46373      0.16943         0.37392              -0.4751612                0.51822
+ 3 raw       0.50905      0.19107         0.17301           +0.0005896527                0.00000
+ 3 diag      0.46327      0.19327         0.26724               +1.080603                0.29771
+ 4 raw       0.57027      0.24717         0.27374           -0.0002390836                0.00000
+ 4 diag      0.67820      0.19664         0.17361              -0.9028242                0.00000
+ 5 raw       0.47267      0.29556         0.43595            -0.000105722                0.61657
+ 5 diag      0.50015      0.28093         0.40302               +1.726081                0.07908
+ 6 raw       0.47834      0.11956         0.42326           +0.0001670654                0.30903
+ 6 diag      0.56991      0.08645         0.29021              +0.7514798                0.21874
+ 7 raw       0.43272      0.07794         0.43098           -9.507451e-05                0.72386
+ 7 diag      0.40013      0.03751         0.41361              -0.3268522                0.78668
+ 8 raw       0.54762      0.12982         0.36833            +8.18072e-05                0.49645
+ 8 diag      0.62460      0.09467         0.23263               +2.073863                0.00000
+ 9 raw       0.41828      0.06568         0.47844           -0.0001942552                0.18047
+ 9 diag      0.54243      0.05323         0.31248               -1.859413                0.00000
+10 raw       0.48794      0.29752         0.42037           +0.0002610664                0.31470
+10 diag      0.57617      0.24107         0.29369               +4.368352                0.00000
+11 raw       0.27296      0.03086         0.54838           +0.0003962631                0.00000
+11 diag      0.25255      0.02131         0.53531               -2.874613                0.09621
+12 raw       0.48856      0.28188         0.52758           -0.0004735462                0.25928
+12 diag      0.59343      0.37464         0.43394               -24.77848                0.00000
+13 raw       0.44800      0.23879         0.33732           -0.0001484641                0.71300
+13 diag      0.48876      0.24091         0.31808                -14.5944                0.55117
+14 raw       0.48771      0.18886         0.23226           +0.0001474653                0.34364
+14 diag      0.47273      0.16976         0.16660               -2.680345                0.91768
+15 raw       0.59543      0.07405         0.31233           +0.0006361834                0.08013
+15 diag      0.48955      0.06082         0.38873               +19.95698                0.33572
+16 raw       0.72291      0.16366         0.14516           -4.272085e-05                0.92957
+16 diag      0.70007      0.11298         0.09889               -59.52414                0.00000
+17 raw       0.42979      0.13181         0.11864           +5.054551e-05                0.94953
+17 diag      0.46921      0.11631         0.10400               +16.45681                0.36776
+
+=== DETAILED HEAD RELATIONSHIPS FOR CANDIDATE BLOCKS ===
+
+L1 raw
+Head identity deltas 0..3: [0.0004 0.0007 0.0004 0.0001]
+Numerical-kernel change correlations between heads:
+[[1.     0.3076 0.3335 0.3588]
+ [0.3076 1.     0.3674 0.3858]
+ [0.3335 0.3674 1.     0.3475]
+ [0.3588 0.3858 0.3475 1.    ]]
+Output-slice / shared-value attribution: 0.66284 0.33716
+Actual common-mode fraction: 0.51077
+Common-mode fractions under head-sign controls: [0.1507 0.168  0.1705 0.2263 0.2472 0.2498 0.2766 0.5108]
+Within common mode: output / shared-value attribution: 0.60322 0.39678
+
+L1 diag
+Head identity deltas 0..3: [ 0.4989  0.6209  0.3888 -0.4514]
+Numerical-kernel change correlations between heads:
+[[1.     0.3453 0.2587 0.339 ]
+ [0.3453 1.     0.2418 0.476 ]
+ [0.2587 0.2418 1.     0.3022]
+ [0.339  0.476  0.3022 1.    ]]
+Output-slice / shared-value attribution: 0.5994 0.4006
+Actual common-mode fraction: 0.48996
+Common-mode fractions under head-sign controls: [0.1514 0.1701 0.1885 0.2228 0.2343 0.2629 0.2801 0.49  ]
+Within common mode: output / shared-value attribution: 0.56472 0.43528
+
+L15 raw
+Head identity deltas 0..3: [-0.      0.0001  0.0002  0.0004]
+Numerical-kernel change correlations between heads:
+[[1.     0.3333 0.4775 0.5085]
+ [0.3333 1.     0.3575 0.4224]
+ [0.4775 0.3575 1.     0.7841]
+ [0.5085 0.4224 0.7841 1.    ]]
+Output-slice / shared-value attribution: 0.68767 0.31233
+Actual common-mode fraction: 0.59543
+Common-mode fractions under head-sign controls: [0.1061 0.1145 0.1673 0.184  0.187  0.3    0.3457 0.5954]
+Within common mode: output / shared-value attribution: 0.8912 0.1088
+
+L15 diag
+Head identity deltas 0..3: [-0.9182 -4.1247 10.901  14.099 ]
+Numerical-kernel change correlations between heads:
+[[ 1.      0.0853  0.5849  0.6271]
+ [ 0.0853  1.     -0.0199  0.1038]
+ [ 0.5849 -0.0199  1.      0.8511]
+ [ 0.6271  0.1038  0.8511  1.    ]]
+Output-slice / shared-value attribution: 0.61127 0.38873
+Actual common-mode fraction: 0.48955
+Common-mode fractions under head-sign controls: [0.0991 0.1296 0.1488 0.1496 0.2626 0.2684 0.4524 0.4895]
+Within common mode: output / shared-value attribution: 0.93648 0.06352
+
+L16 raw
+Head identity deltas 0..3: [ 0.0001  0.     -0.0003  0.0001]
+Numerical-kernel change correlations between heads:
+[[1.     0.682  0.6462 0.5299]
+ [0.682  1.     0.7247 0.6631]
+ [0.6462 0.7247 1.     0.5471]
+ [0.5299 0.6631 0.5471 1.    ]]
+Output-slice / shared-value attribution: 0.85484 0.14516
+Actual common-mode fraction: 0.72291
+Common-mode fractions under head-sign controls: [0.0825 0.0905 0.1041 0.2092 0.2402 0.273  0.2775 0.7229]
+Within common mode: output / shared-value attribution: 0.88803 0.11197
+
+L16 diag
+Head identity deltas 0..3: [-12.5145 -11.1829 -25.7586 -10.0681]
+Numerical-kernel change correlations between heads:
+[[1.     0.6789 0.6272 0.4926]
+ [0.6789 1.     0.7048 0.6234]
+ [0.6272 0.7048 1.     0.481 ]
+ [0.4926 0.6234 0.481  1.    ]]
+Output-slice / shared-value attribution: 0.90111 0.09889
+Actual common-mode fraction: 0.70007
+Common-mode fractions under head-sign controls: [0.0872 0.1008 0.112  0.2025 0.2336 0.263  0.3009 0.7001]
+Within common mode: output / shared-value attribution: 0.95185 0.04815
+
+L17 raw
+Head identity deltas 0..3: [-0.0002  0.0005 -0.     -0.0002]
+Numerical-kernel change correlations between heads:
+[[1.     0.1406 0.3307 0.3923]
+ [0.1406 1.     0.1612 0.304 ]
+ [0.3307 0.1612 1.     0.1892]
+ [0.3923 0.304  0.1892 1.    ]]
+Output-slice / shared-value attribution: 0.88136 0.11864
+Actual common-mode fraction: 0.42979
+Common-mode fractions under head-sign controls: [0.144  0.1774 0.2025 0.2237 0.2518 0.2618 0.309  0.4298]
+Within common mode: output / shared-value attribution: 0.94028 0.05972
+
+L17 diag
+Head identity deltas 0..3: [-4.7862  9.6532  8.3506  3.2391]
+Numerical-kernel change correlations between heads:
+[[1.     0.2044 0.3819 0.3793]
+ [0.2044 1.     0.2097 0.4116]
+ [0.3819 0.2097 1.     0.2406]
+ [0.3793 0.4116 0.2406 1.    ]]
+Output-slice / shared-value attribution: 0.896 0.104
+Actual common-mode fraction: 0.46921
+Common-mode fractions under head-sign controls: [0.132  0.1671 0.1767 0.2317 0.234  0.2766 0.3127 0.4692]
+Within common mode: output / shared-value attribution: 0.93975 0.06025
+
+=== BLOCK RANKING BY NUMERICAL WEIGHT-KERNEL CHANGE ===
+This is a geometric candidate ranking, not causal importance.
+raw [(16, np.float64(0.088868), 0.7229, 0.1452), (17, np.float64(0.073029), 0.4298, 0.1186), (15, np.float64(0.066589), 0.5954, 0.3123), (12, np.float64(0.047203), 0.4886, 0.5276), (14, np.float64(0.045436), 0.4877, 0.2323), (13, np.float64(0.045078), 0.448, 0.3373), (11, np.float64(0.043612), 0.273, 0.5484), (10, np.float64(0.039837), 0.4879, 0.4204)]
+diag [(15, np.float64(5857.544311), 0.4895, 0.3887), (16, np.float64(4545.190597), 0.7001, 0.0989), (12, np.float64(3335.565545), 0.5934, 0.4339), (17, np.float64(2583.112181), 0.4692, 0.104), (14, np.float64(2187.612624), 0.4727, 0.1666), (13, np.float64(1780.472286), 0.4888, 0.3181), (11, np.float64(1046.905249), 0.2526, 0.5353), (10, np.float64(465.188142), 0.5762, 0.2937)]
+
+```

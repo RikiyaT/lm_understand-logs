@@ -1,0 +1,8 @@
+OUTPUT of Python run 44 of at most 300:
+```
+Final accuracy report: {"passes": [23, 24, 25], "problems": 256, "answers_per_model": 3072, "original_accuracy": 0.0810546875, "edited_accuracy": 0.080078125, "gain": -0.0009765625, "problem_cluster_se": 0.005289048219691222, "sample_paired_se": 0.004232423080406631, "samples_wrong_to_right": 83, "samples_right_to_wrong": 86}
+95% interval, percentage points: [-1.1343, 0.939]
+Secondary outcomes: {'original': {'cut_share': 0.07096354166666667, 'mean_tokens': 1581.9137369791667}, 'edited': {'cut_share': 0.09765625, 'mean_tokens': 1779.919921875}}
+Final audit: {'edited_tensors': ['model.layers.17.mlp.down_proj.weight'], 'changed_entries': 640, 'matches_frozen': True, 'submission_directory': '/work/edited'}
+
+```

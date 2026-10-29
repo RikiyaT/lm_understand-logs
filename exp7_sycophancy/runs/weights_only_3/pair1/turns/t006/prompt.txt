@@ -1,0 +1,101 @@
+OUTPUT of run 5 of at most 60:
+```
+CHANGED-WEIGHT RESIDUAL-SPACE GEOMETRY
+Input-reading group: gate, up, Q, K, V projection differences.
+Output-writing group: down and O projection differences.
+No gates, normalization, attention weights, or model states are evaluated.
+layer group  top1_energy top4_energy top16_energy effective_rank top_coordinate_mass top_coordinates
+ 0 read     0.088924    0.264654     0.513473          38.15            0.009815 [481, 299, 392]
+ 0 write    0.082098    0.193651     0.426376          54.88            0.020323 [164, 613, 461]
+ 1 read     0.075663    0.208361     0.471400          49.57            0.008877 [388, 477, 194]
+ 1 write    0.081416    0.198577     0.408817          55.50            0.016139 [96, 610, 500]
+ 2 read     0.083548    0.227808     0.467464          46.39            0.009172 [477, 629, 551]
+ 2 write    0.059926    0.171467     0.396482          66.81            0.017686 [200, 325, 351]
+ 3 read     0.065435    0.184678     0.416022          61.70            0.012157 [97, 558, 11]
+ 3 write    0.046066    0.136811     0.351815          85.39            0.018128 [540, 126, 243]
+ 4 read     0.069380    0.191199     0.408856          60.98            0.012079 [97, 400, 558]
+ 4 write    0.053888    0.151186     0.369401          77.50            0.013574 [590, 411, 83]
+ 5 read     0.078120    0.201778     0.407848          57.90            0.008932 [245, 97, 558]
+ 5 write    0.056092    0.153494     0.359476          78.65            0.019213 [590, 6, 202]
+ 6 read     0.071345    0.181909     0.392406          64.02            0.010865 [87, 416, 558]
+ 6 write    0.066002    0.172423     0.380270          69.47            0.016883 [565, 152, 156]
+ 7 read     0.084932    0.215914     0.427543          51.91            0.009594 [87, 400, 599]
+ 7 write    0.069850    0.175684     0.376019          67.77            0.024438 [152, 518, 267]
+ 8 read     0.089281    0.211711     0.413822          52.18            0.009020 [87, 416, 239]
+ 8 write    0.074951    0.192422     0.400677          59.94            0.027745 [152, 467, 590]
+ 9 read     0.121139    0.245223     0.443402          39.15            0.007196 [309, 274, 87]
+ 9 write    0.072111    0.187144     0.390608          62.73            0.035686 [467, 298, 188]
+10 read     0.119269    0.245182     0.447086          39.47            0.006913 [87, 634, 108]
+10 write    0.079834    0.182899     0.393890          61.32            0.018854 [307, 188, 145]
+11 read     0.110006    0.221343     0.429023          45.04            0.007055 [106, 87, 625]
+11 write    0.073831    0.176906     0.382717          65.23            0.014688 [453, 298, 386]
+12 read     0.122405    0.236995     0.454512          39.00            0.007000 [87, 461, 79]
+12 write    0.060313    0.151203     0.357150          78.52            0.011877 [379, 453, 301]
+13 read     0.120574    0.255485     0.501763          35.68            0.007214 [168, 87, 239]
+13 write    0.053433    0.143299     0.346953          83.16            0.021582 [289, 163, 299]
+14 read     0.112759    0.227832     0.465150          41.37            0.007905 [239, 87, 79]
+14 write    0.060877    0.160394     0.365708          74.49            0.014647 [289, 634, 158]
+15 read     0.095669    0.201695     0.419083          51.68            0.009407 [87, 239, 248]
+15 write    0.054992    0.176491     0.417313          64.34            0.024510 [299, 289, 583]
+16 read     0.082677    0.184294     0.380538          62.86            0.009374 [584, 87, 499]
+16 write    0.083395    0.245381     0.533458          39.38            0.008733 [459, 183, 83]
+17 read     0.074246    0.177625     0.361291          68.30            0.009697 [87, 558, 359]
+17 write    0.121069    0.287163     0.573580          29.29            0.006721 [183, 365, 217]
+
+ADJACENT-LAYER SUBSPACE OVERLAPS
+Geometric isotropic reference: 0.0125
+layer write_l/read_l+1 write_l/write_l+1 read_l/read_l+1
+ 0           0.012683            0.245765           0.482749
+ 1           0.019916            0.278376           0.388294
+ 2           0.032885            0.198109           0.332663
+ 3           0.024969            0.183834           0.135848
+ 4           0.027494            0.197780           0.407716
+ 5           0.028772            0.242154           0.317095
+ 6           0.032037            0.309074           0.409408
+ 7           0.049765            0.303707           0.437076
+ 8           0.046156            0.294267           0.468343
+ 9           0.061515            0.251791           0.361918
+10           0.041784            0.211479           0.417494
+11           0.050101            0.142832           0.282768
+12           0.039718            0.280912           0.405730
+13           0.034772            0.360089           0.560878
+14           0.039967            0.427645           0.519286
+15           0.040325            0.526578           0.502633
+16           0.045975            0.552509           0.479856
+
+POOLED GEOMETRY, EACH LAYER GIVEN EQUAL TOTAL WEIGHT
+read {"share1": 0.03561794866824108, "share4": 0.08714121824413361, "share16": 0.1945576893985752, "effective_rank": 197.57251854829192, "top_coordinates": [87, 239, 381], "top_coordinate_mass": 0.01586951306551823, "energy": 17.999999999999996}
+write {"share1": 0.01598842466017961, "share4": 0.05653399851255361, "share16": 0.15513961283081512, "effective_rank": 278.60077569332344, "top_coordinates": [390, 289, 40], "top_coordinate_mass": 0.016969613842242864, "energy": 18.0}
+
+STRONGEST WRITE-TO-LATER-READ SUBSPACE OVERLAPS
+write_layer= 9 later_read_layer=10 overlap=0.061515
+write_layer= 7 later_read_layer= 9 overlap=0.054901
+write_layer=11 later_read_layer=12 overlap=0.050101
+write_layer= 7 later_read_layer= 8 overlap=0.049765
+write_layer=15 later_read_layer=17 overlap=0.049491
+write_layer= 9 later_read_layer=11 overlap=0.047688
+write_layer= 8 later_read_layer= 9 overlap=0.046156
+write_layer=16 later_read_layer=17 overlap=0.045975
+write_layer=14 later_read_layer=17 overlap=0.044234
+write_layer= 8 later_read_layer=10 overlap=0.043003
+write_layer= 5 later_read_layer= 7 overlap=0.042306
+write_layer=10 later_read_layer=11 overlap=0.041784
+
+STRONGEST CROSS-LAYER WRITE-SUBSPACE OVERLAPS
+layers=(16,17) overlap=0.552509
+layers=(15,16) overlap=0.526578
+layers=(14,15) overlap=0.427645
+layers=(13,14) overlap=0.360089
+layers=(15,17) overlap=0.322524
+layers=(6,7) overlap=0.309074
+layers=(7,8) overlap=0.303707
+layers=(8,9) overlap=0.294267
+layers=(12,13) overlap=0.280912
+layers=(1,2) overlap=0.278376
+layers=(9,10) overlap=0.251791
+layers=(0,1) overlap=0.245765
+
+These are parameter-subspace relationships, not observed information flow.
+The reference 8/640 is descriptive, not a calibrated statistical null.
+
+```

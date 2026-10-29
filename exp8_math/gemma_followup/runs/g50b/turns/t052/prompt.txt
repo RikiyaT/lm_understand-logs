@@ -1,0 +1,8 @@
+OUTPUT of Python run 30 of at most 300:
+```
+CONTINUATION MEAN DELTA nats/token -0.02261 improved 10 /32
+ANSWER CONTENT DELTA nats/token -0.01544 improved 17 /32
+TARGET DIRECTION RESIDUAL SHIFT -104.558
+Ready for causal generation test at full removal.
+
+```

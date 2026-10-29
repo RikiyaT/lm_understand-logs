@@ -1,0 +1,5 @@
+OUTPUT of Python run 50 of at most 300:
+```
+Rank-one direction edit: {'strength': 1.0, 'tensors': 30, 'relative_delta_min': 0.022564176470041275, 'relative_delta_median': 0.03198361210525036, 'relative_delta_max': 0.03992904722690582}
+
+```

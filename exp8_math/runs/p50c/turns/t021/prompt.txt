@@ -1,0 +1,12 @@
+OUTPUT of Python run 13 of at most 300:
+```
+Edits: ['model.language_model.layers.19.mlp.down_proj.weight']
+Work files: ['edited', 'fwd_2', 'fwd_4', 'gen_1.jsonl', 'gen_1_acts', 'gen_5_edited.jsonl', 'gen_5_original.jsonl', 'gen_7_edited.jsonl', 'gen_7_original.jsonl', 'notes.md']
+Notes: # Math weight editing
+Pass 1: original on 32 GSM8K + 64 MATH diagnostic problems. Accuracy 11/96 (11.46%); 85/96 cut at 32768; no finished wrong answers. Dominant target: pathological long/repetitive reasoning. No edits yet.
+Pass 2 TF paired productive vs repetition examples showed a common repetition direction (cosine ~0.7 with generation contrast), but chat template adds an empty think block. Corrected in pass 3 (files fwd_4) using raw template. Testing layer19 MLP neuron11 output ablation; strongest matched-context repetition writer. Attention-return request failed and did not count.
+Pass4 gen_5 paired32: ablate L19 neuron11, +6.25pp +/-4.35pp SE (3->5 correct), cutoff90.6->87.5%; weak positive, not confirmed. Trying rank-one removal of the matched repetition direction from L19 MLP only. Attention-output tool fails even for one raw text/layer.
+
+Available state: ['FROZEN', 'H4', 'M4', 'MODEL', 'Path', 'Tokenizer', 'WORK', 'byid', 'clear_edits', 'collections', 'diagnostic_ids', 'diffH', 'downweights', 'drop_edit', 'edited', 'g1', 'g7e', 'g7o', 'json', 'lens4', 'load', 'load_original', 'math', 'meansH', 'meansM', 'meta4', 'mlp_direction_edit', 'np', 'os', 'paired_report', 'practice', 'probe_ids', 'random', 'read_gen', 'readgen', 'safe_open', 'save_edit', 'summarize_pair', 'torch']
+
+```

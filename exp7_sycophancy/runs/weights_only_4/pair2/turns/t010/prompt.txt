@@ -1,0 +1,101 @@
+OUTPUT of run 9 of at most 60:
+```
+=== IDENTITY-ALIGNMENT PERMUTATION CHECK ===
+Shuffle null: retain every weight contraction but permute source/target identity pairing.
+z is standardized under that shuffle null; it is NOT a model-effect or label-probability estimate.
+
+bare, choices, n=16: descriptive-sum z=+0.584, shuffle p=0.5707
+ L08H2: z=+3.499, single_p=0.0002, within_group_72head_p=0.0186
+ L17H2: z=+3.477, single_p=0.0007, within_group_72head_p=0.0198
+ L01H2: z=-3.319, single_p=0.0005, within_group_72head_p=0.0351
+ L08H1: z=+3.233, single_p=0.0007, within_group_72head_p=0.0517
+
+bare, digits, n=10: descriptive-sum z=+0.403, shuffle p=0.6905
+ L11H0: z=-2.297, single_p=0.0212, within_group_72head_p=0.7198
+ L00H0: z=+2.285, single_p=0.0159, within_group_72head_p=0.7340
+ L05H0: z=+2.235, single_p=0.0310, within_group_72head_p=0.7820
+ L10H0: z=+2.117, single_p=0.0315, within_group_72head_p=0.8816
+
+bare, boolean, n=24: descriptive-sum z=+0.782, shuffle p=0.4418
+ L00H1: z=+4.295, single_p=0.0002, within_group_72head_p=0.0007
+ L16H2: z=+4.266, single_p=0.0002, within_group_72head_p=0.0007
+ L16H1: z=+3.864, single_p=0.0002, within_group_72head_p=0.0044
+ L01H3: z=+3.693, single_p=0.0002, within_group_72head_p=0.0100
+
+bare, places, n=36: descriptive-sum z=+2.770, shuffle p=0.0054
+ L16H1: z=+4.715, single_p=0.0002, within_group_72head_p=0.0002
+ L16H0: z=+3.843, single_p=0.0005, within_group_72head_p=0.0078
+ L05H1: z=-3.477, single_p=0.0002, within_group_72head_p=0.0330
+ L05H3: z=-3.446, single_p=0.0012, within_group_72head_p=0.0371
+
+bare, ordinary, n=36: descriptive-sum z=+1.063, shuffle p=0.2822
+ L17H2: z=+4.270, single_p=0.0002, within_group_72head_p=0.0020
+ L05H1: z=-4.256, single_p=0.0002, within_group_72head_p=0.0020
+ L00H1: z=+3.479, single_p=0.0002, within_group_72head_p=0.0312
+ L03H0: z=+2.870, single_p=0.0049, within_group_72head_p=0.2253
+
+bare, lexical_control, n=64: descriptive-sum z=+1.797, shuffle p=0.0774
+ L14H1: z=-2.793, single_p=0.0068, within_group_72head_p=0.2995
+ L12H1: z=+2.723, single_p=0.0076, within_group_72head_p=0.3573
+ L02H3: z=+2.675, single_p=0.0063, within_group_72head_p=0.4025
+ L00H3: z=+2.648, single_p=0.0081, within_group_72head_p=0.4310
+
+diagonal, choices, n=16: descriptive-sum z=+0.826, shuffle p=0.4066
+ L08H1: z=+2.973, single_p=0.0032, within_group_72head_p=0.1377
+ L09H3: z=+2.972, single_p=0.0029, within_group_72head_p=0.1377
+ L10H2: z=+2.820, single_p=0.0037, within_group_72head_p=0.2131
+ L08H0: z=+2.746, single_p=0.0051, within_group_72head_p=0.2597
+
+diagonal, digits, n=10: descriptive-sum z=-0.201, shuffle p=0.8514
+ L14H3: z=-2.325, single_p=0.0066, within_group_72head_p=0.6678
+ L16H3: z=+2.247, single_p=0.0344, within_group_72head_p=0.7476
+ L17H3: z=-2.129, single_p=0.0295, within_group_72head_p=0.8479
+ L09H3: z=+2.106, single_p=0.0320, within_group_72head_p=0.8660
+
+diagonal, boolean, n=24: descriptive-sum z=+1.112, shuffle p=0.2643
+ L02H2: z=-4.014, single_p=0.0002, within_group_72head_p=0.0027
+ L12H0: z=+3.575, single_p=0.0002, within_group_72head_p=0.0168
+ L08H3: z=+3.484, single_p=0.0002, within_group_72head_p=0.0247
+ L00H2: z=+3.430, single_p=0.0005, within_group_72head_p=0.0288
+
+diagonal, places, n=36: descriptive-sum z=+2.125, shuffle p=0.0383
+ L05H3: z=-5.607, single_p=0.0002, within_group_72head_p=0.0002
+ L05H1: z=-5.218, single_p=0.0002, within_group_72head_p=0.0002
+ L03H1: z=-4.675, single_p=0.0002, within_group_72head_p=0.0002
+ L03H0: z=-4.029, single_p=0.0002, within_group_72head_p=0.0032
+
+diagonal, ordinary, n=36: descriptive-sum z=-0.720, shuffle p=0.4757
+ L00H2: z=+4.261, single_p=0.0002, within_group_72head_p=0.0010
+ L14H1: z=-2.947, single_p=0.0029, within_group_72head_p=0.1928
+ L00H3: z=+2.851, single_p=0.0046, within_group_72head_p=0.2524
+ L10H0: z=+2.825, single_p=0.0063, within_group_72head_p=0.2692
+
+diagonal, lexical_control, n=64: descriptive-sum z=-0.390, shuffle p=0.7000
+ L00H3: z=+3.043, single_p=0.0029, within_group_72head_p=0.1335
+ L00H0: z=-2.768, single_p=0.0063, within_group_72head_p=0.2980
+ L08H2: z=-2.760, single_p=0.0044, within_group_72head_p=0.3031
+ L02H3: z=+2.444, single_p=0.0127, within_group_72head_p=0.6056
+
+=== STRONGEST CONTRASTS WITH SEARCH-WIDE SHUFFLE CORRECTION ===
+Correction covers 72 heads x 6 groups x 2 scaling conventions.
+L05H3 diagonal places          z=-5.607, single_p=0.0002, search_p=0.0002
+L05H1 diagonal places          z=-5.218, single_p=0.0002, search_p=0.0005
+L16H1 bare     places          z=+4.715, single_p=0.0002, search_p=0.0005
+L03H1 diagonal places          z=-4.675, single_p=0.0002, search_p=0.0007
+L00H1 bare     boolean         z=+4.295, single_p=0.0002, search_p=0.0088
+L17H2 bare     ordinary        z=+4.270, single_p=0.0002, search_p=0.0095
+L16H2 bare     boolean         z=+4.266, single_p=0.0002, search_p=0.0095
+L00H2 diagonal ordinary        z=+4.261, single_p=0.0002, search_p=0.0098
+L05H1 bare     ordinary        z=-4.256, single_p=0.0002, search_p=0.0100
+L03H0 diagonal places          z=-4.029, single_p=0.0002, search_p=0.0310
+L02H2 diagonal boolean         z=-4.014, single_p=0.0002, search_p=0.0330
+L16H1 bare     boolean         z=+3.864, single_p=0.0002, search_p=0.0591
+L16H0 bare     places          z=+3.843, single_p=0.0005, search_p=0.0657
+L01H3 bare     boolean         z=+3.693, single_p=0.0002, search_p=0.1203
+L05H2 diagonal places          z=-3.593, single_p=0.0005, search_p=0.1811
+L12H0 diagonal boolean         z=+3.575, single_p=0.0002, search_p=0.1940
+
+Permutation checks concerned weight-space alignments only.
+No text inputs, model activations, output probabilities, or behavioral evaluation used.
+
+```

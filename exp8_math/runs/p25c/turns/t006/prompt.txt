@@ -1,0 +1,93 @@
+OUTPUT of Python run 4 of at most 300:
+```
+Weights cached: 318
+{'layer': 0, 'input_layernorm': [-0.115, 0.205, 1.0], 'post_attention_layernorm': [-0.357, 0.115, 0.275], 'linear_attn.A_log': [-6.594, -1.898, 0.258], 'linear_attn.dt_bias': [-13.062, -4.812, 8.375], 'linear_attn.norm': [0.523, 0.973, 1.062]}
+{'layer': 1, 'input_layernorm': [-0.062, 0.439, 0.789], 'post_attention_layernorm': [-0.273, 0.192, 0.479], 'linear_attn.A_log': [-2.25, -1.156, 2.359], 'linear_attn.dt_bias': [-6.0, 0.656, 2.516], 'linear_attn.norm': [0.449, 0.953, 1.078]}
+{'layer': 2, 'input_layernorm': [-0.043, 0.447, 0.918], 'post_attention_layernorm': [-0.218, 0.279, 0.629], 'linear_attn.A_log': [-2.875, -1.195, 0.451], 'linear_attn.dt_bias': [-5.469, -0.871, 1.758], 'linear_attn.norm': [0.355, 0.961, 1.086]}
+{'layer': 3, 'input_layernorm': [-0.035, 0.355, 0.84], 'post_attention_layernorm': [-0.204, 0.262, 0.463], 'self_attn.q_norm': [-0.211, 0.391, 1.227], 'self_attn.k_norm': [-0.898, 0.385, 1.633]}
+{'layer': 4, 'input_layernorm': [-0.01, 0.512, 0.84], 'post_attention_layernorm': [-0.262, 0.252, 0.373], 'linear_attn.A_log': [-2.984, -0.906, 0.602], 'linear_attn.dt_bias': [-5.531, -3.344, 2.25], 'linear_attn.norm': [0.348, 0.91, 1.078]}
+{'layer': 5, 'input_layernorm': [-0.188, 0.473, 0.773], 'post_attention_layernorm': [-0.355, 0.239, 0.365], 'linear_attn.A_log': [-3.172, -1.586, 2.0], 'linear_attn.dt_bias': [-6.5, -3.562, 1.422], 'linear_attn.norm': [0.473, 0.961, 1.117]}
+{'layer': 6, 'input_layernorm': [-0.305, 0.428, 0.684], 'post_attention_layernorm': [-0.391, 0.188, 0.293], 'linear_attn.A_log': [-2.453, -0.629, 0.449], 'linear_attn.dt_bias': [-6.0, -1.477, 2.031], 'linear_attn.norm': [0.531, 1.0, 1.141]}
+{'layer': 7, 'input_layernorm': [-0.377, 0.146, 0.523], 'post_attention_layernorm': [-0.447, 0.191, 0.309], 'self_attn.q_norm': [-0.239, 0.5, 1.023], 'self_attn.k_norm': [-0.165, 0.492, 1.062]}
+{'layer': 8, 'input_layernorm': [-0.422, 0.453, 0.648], 'post_attention_layernorm': [-0.496, 0.175, 0.309], 'linear_attn.A_log': [-2.719, -1.211, -0.144], 'linear_attn.dt_bias': [-4.688, -2.5, 0.247], 'linear_attn.norm': [0.617, 1.016, 1.156]}
+{'layer': 9, 'input_layernorm': [-0.445, 0.436, 0.664], 'post_attention_layernorm': [-0.516, 0.154, 0.299], 'linear_attn.A_log': [-2.516, -1.711, 0.002], 'linear_attn.dt_bias': [-4.719, -3.25, 1.609], 'linear_attn.norm': [0.711, 1.031, 1.195]}
+{'layer': 10, 'input_layernorm': [-0.494, 0.369, 0.645], 'post_attention_layernorm': [-0.516, 0.123, 0.248], 'linear_attn.A_log': [-1.875, -1.18, 1.758], 'linear_attn.dt_bias': [-7.0, -1.75, 3.188], 'linear_attn.norm': [0.824, 1.047, 1.156]}
+{'layer': 11, 'input_layernorm': [-0.605, 0.209, 0.699], 'post_attention_layernorm': [-0.436, 0.151, 0.309], 'self_attn.q_norm': [-1.016, 0.645, 1.133], 'self_attn.k_norm': [-0.996, 0.641, 1.312]}
+{'layer': 12, 'input_layernorm': [-0.25, 0.551, 0.848], 'post_attention_layernorm': [-0.322, 0.169, 0.338], 'linear_attn.A_log': [-3.031, -1.781, 0.002], 'linear_attn.dt_bias': [-6.656, -3.844, -0.57], 'linear_attn.norm': [0.746, 1.008, 1.141]}
+{'layer': 13, 'input_layernorm': [-0.264, 0.48, 0.836], 'post_attention_layernorm': [-0.231, 0.179, 0.369], 'linear_attn.A_log': [-2.203, -1.336, 0.141], 'linear_attn.dt_bias': [-5.344, -1.664, 2.188], 'linear_attn.norm': [0.789, 1.039, 1.148]}
+{'layer': 14, 'input_layernorm': [-0.198, 0.424, 0.699], 'post_attention_layernorm': [-0.096, 0.181, 0.34], 'linear_attn.A_log': [-2.391, -1.156, 1.688], 'linear_attn.dt_bias': [-7.312, -2.344, 0.707], 'linear_attn.norm': [0.75, 1.023, 1.125]}
+{'layer': 15, 'input_layernorm': [-0.173, 0.215, 0.676], 'post_attention_layernorm': [-0.146, 0.244, 0.393], 'self_attn.q_norm': [-0.996, 0.641, 1.297], 'self_attn.k_norm': [-0.957, 0.645, 1.43]}
+{'layer': 16, 'input_layernorm': [0.019, 0.582, 1.07], 'post_attention_layernorm': [-0.179, 0.318, 0.477], 'linear_attn.A_log': [-2.172, -1.57, -0.27], 'linear_attn.dt_bias': [-5.25, -3.781, 2.156], 'linear_attn.norm': [0.691, 0.895, 1.078]}
+{'layer': 17, 'input_layernorm': [0.289, 0.691, 1.086], 'post_attention_layernorm': [-0.207, 0.375, 0.621], 'linear_attn.A_log': [-1.938, -1.391, -0.391], 'linear_attn.dt_bias': [-5.594, -1.391, 1.359], 'linear_attn.norm': [0.598, 0.805, 1.055]}
+{'layer': 18, 'input_layernorm': [0.342, 0.738, 1.172], 'post_attention_layernorm': [-0.093, 0.424, 0.617], 'linear_attn.A_log': [-1.797, -1.414, -0.875], 'linear_attn.dt_bias': [-6.219, -3.625, 4.469], 'linear_attn.norm': [0.566, 0.793, 1.07]}
+{'layer': 19, 'input_layernorm': [-0.014, 0.178, 0.641], 'post_attention_layernorm': [-0.048, 0.375, 0.498], 'self_attn.q_norm': [-0.941, 0.473, 1.016], 'self_attn.k_norm': [-0.996, 0.469, 1.438]}
+{'layer': 20, 'input_layernorm': [0.185, 0.629, 1.195], 'post_attention_layernorm': [-0.164, 0.41, 0.586], 'linear_attn.A_log': [-1.773, -1.359, -0.66], 'linear_attn.dt_bias': [-5.219, -2.062, 4.5], 'linear_attn.norm': [0.617, 0.816, 1.031]}
+{'layer': 21, 'input_layernorm': [0.16, 0.707, 1.469], 'post_attention_layernorm': [-0.144, 0.422, 0.574], 'linear_attn.A_log': [-1.906, -1.352, -0.723], 'linear_attn.dt_bias': [-5.625, 0.793, 5.125], 'linear_attn.norm': [0.695, 0.883, 1.031]}
+{'layer': 22, 'input_layernorm': [0.125, 0.49, 1.086], 'post_attention_layernorm': [-0.012, 0.395, 0.59], 'linear_attn.A_log': [-1.688, -1.438, -0.422], 'linear_attn.dt_bias': [-6.062, -0.609, 7.406], 'linear_attn.norm': [0.844, 1.039, 1.172]}
+{'layer': 23, 'input_layernorm': [0.052, 0.229, 0.781], 'post_attention_layernorm': [0.041, 0.248, 0.82], 'self_attn.q_norm': [-1.0, 0.396, 1.148], 'self_attn.k_norm': [-1.344, 0.379, 1.328]}
+Matrix outliers:
+23.mlp.down_proj.weight (1024, 3584) 0.00857 0.3379 39.4
+18.mlp.down_proj.weight (1024, 3584) 0.00858 0.2715 31.7
+0.mlp.down_proj.weight (1024, 3584) 0.0085 0.2676 31.5
+23.self_attn.v_proj.weight (512, 1024) 0.01855 0.5391 29.1
+16.mlp.down_proj.weight (1024, 3584) 0.00855 0.2393 28.0
+3.mlp.down_proj.weight (1024, 3584) 0.00808 0.2256 27.9
+19.mlp.gate_proj.weight (3584, 1024) 0.01708 0.4707 27.6
+20.mlp.down_proj.weight (1024, 3584) 0.00914 0.25 27.4
+19.mlp.down_proj.weight (1024, 3584) 0.00901 0.2451 27.2
+23.mlp.gate_proj.weight (3584, 1024) 0.01888 0.5117 27.1
+Residual RMS by layer, correct / cutoff:
+[[0.009 0.01 ]
+ [0.019 0.021]
+ [0.026 0.029]
+ [0.028 0.03 ]
+ [0.032 0.036]
+ [0.032 0.035]
+ [0.033 0.036]
+ [0.034 0.037]
+ [0.034 0.039]
+ [0.031 0.035]
+ [0.033 0.038]
+ [0.031 0.034]
+ [0.035 0.042]
+ [0.039 0.046]
+ [0.045 0.054]
+ [0.048 0.055]
+ [0.066 0.078]
+ [0.08  0.093]
+ [0.09  0.107]
+ [0.099 0.113]
+ [0.127 0.154]
+ [0.146 0.17 ]
+ [0.169 0.194]
+ [0.162 0.178]
+ [1.803 1.908]]
+MLP mean-activation RMS by layer, correct / cutoff:
+[[0.008 0.009]
+ [0.014 0.015]
+ [0.016 0.019]
+ [0.014 0.016]
+ [0.014 0.017]
+ [0.013 0.015]
+ [0.018 0.021]
+ [0.014 0.017]
+ [0.012 0.016]
+ [0.012 0.016]
+ [0.013 0.019]
+ [0.016 0.021]
+ [0.018 0.022]
+ [0.023 0.029]
+ [0.032 0.041]
+ [0.043 0.053]
+ [0.04  0.043]
+ [0.041 0.045]
+ [0.047 0.052]
+ [0.08  0.088]
+ [0.049 0.051]
+ [0.072 0.072]
+ [0.118 0.134]
+ [0.152 0.185]]
+Good sample indices: [3, 10, 19, 36, 43, 48, 49, 56, 57, 80, 81, 95, 103, 106, 107, 116, 130, 131, 134, 154, 178, 186, 214, 215, 220, 246, 247]
+Mixed-outcome problem pairs: 13
+
+```

@@ -1,0 +1,17 @@
+OUTPUT of Python run 15 of at most 300:
+```
+Edited tensors: ['model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight']
+model.language_model.layers.18.mlp.down_proj.weight changed columns: [8] relative norm change: 0.017899
+column multipliers: [(8, 0.0)]
+model.language_model.layers.19.mlp.down_proj.weight changed columns: [11] relative norm change: 0.015993
+column multipliers: [(11, 0.0)]
+model.language_model.layers.23.mlp.down_proj.weight changed columns: [22, 40] relative norm change: 0.019595
+column multipliers: [(22, 0.0), (40, 0.0)]
+gen_4_original.jsonl n 128 accuracy 0.1015625 cut 0.90625 mean tokens 30206.75
+by source [('gsm8k', 8, 64), ('math', 5, 64)]
+gen_4_edited.jsonl n 128 accuracy 0.0859375 cut 0.9140625 mean tokens 30362.765625
+by source [('gsm8k', 7, 64), ('math', 4, 64)]
+Paired gain -0.015625 SE 0.02713423316130324 rescues 5 regressions 7
+State variable names: ['load', 'FROZEN', 'save_edit', 'drop_edit', 'edited', 'tok', 'math', 'collections', 'Path', 'gen1', 'flat1', 'idx1', 'M1', 'y1', 'mean_bad', 'mean_good', 'ids_of', 'candidates', 'E', 'nf', 'safe_words', 'safe_ids', 'safe_labels', 'down_cache', 'l', 'js', 'W', 'j', 'direction', 'scores', 'order', 'notes', 'targets', 'apply_circuit_strength', 'diag_ids', 'practice', 'file', 'by_id', 'name', 'a', 'b', 'changed', 'notes_path', 'w', 'w0', 'd', 'cols', 'p', 'ix', 'read_generations', 'g4o', 'g4e', 'label', 'rs', 'grouped', 'r', 'v', 'di', 'i', 'fn', 'rows', 'flat', 'gen_4_original', 'gen_4_edited', 'dd']
+
+```

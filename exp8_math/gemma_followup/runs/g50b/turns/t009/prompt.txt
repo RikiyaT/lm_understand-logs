@@ -1,0 +1,18 @@
+OUTPUT of Python run 7 of at most 300:
+```
+Direction diagnostics: [{"layer": 6, "split_half_cosine": 0.049, "removed_weight_fraction_at_alpha_1": 0.0833, "contrast_norm": 0.02687}, {"layer": 8, "split_half_cosine": -0.243, "removed_weight_fraction_at_alpha_1": 0.0708, "contrast_norm": 0.02364}, {"layer": 9, "split_half_cosine": -0.212, "removed_weight_fraction_at_alpha_1": 0.0588, "contrast_norm": 0.01936}, {"layer": 10, "split_half_cosine": -0.62, "removed_weight_fraction_at_alpha_1": 0.0776, "contrast_norm": 0.02401}, {"layer": 11, "split_half_cosine": -0.577, "removed_weight_fraction_at_alpha_1": 0.0476, "contrast_norm": 0.02742}, {"layer": 12, "split_half_cosine": -0.724, "removed_weight_fraction_at_alpha_1": 0.0459, "contrast_norm": 0.01787}, {"layer": 14, "split_half_cosine": -0.595, "removed_weight_fraction_at_alpha_1": 0.0684, "contrast_norm": 0.01226}, {"layer": 16, "split_half_cosine": -0.493, "removed_weight_fraction_at_alpha_1": 0.0573, "contrast_norm": 0.0179}, {"layer": 17, "split_half_cosine": -0.417, "removed_weight_fraction_at_alpha_1": 0.0519, "contrast_norm": 0.01788}]
+Remaining DEV prompts and answers:
+{"id": "math_train_precalculus_427", "problem": "How many times do the graphs $r = 4 \\cos \\theta$ and $r = 8 \\sin \\theta$ intersect?", "answer": "2"}
+{"id": "math_train_algebra_1114", "problem": "What is the sum of the first 10 odd positive integers?", "answer": "100"}
+{"id": "math_train_algebra_1141", "problem": "What is the positive difference between $\\frac{6^2 + 6^2}{6}$ and $\\frac{6^2 \\times 6^2}{6}$?", "answer": "204"}
+{"id": "math_train_algebra_1263", "problem": "What is the only integer whose square is less than its double?", "answer": "1"}
+{"id": "math_train_algebra_1467", "problem": "Let the operation $\\#$ be defined as $\\#(a, b, c) = b^2 - 4ac$, for all real numbers $a, b$ and $c$. What is the value of $\\#(1, 2, 3)$?", "answer": "-8"}
+{"id": "math_train_algebra_731", "problem": "In a rectangular coordinate system, what is the number of units in the distance from the origin to the point $(-15, 8)$?", "answer": "17"}
+{"id": "math_train_prealgebra_1199", "problem": "I have eleven books, of which I want to bring two to read on vacation. How many different pairs can I choose?", "answer": "55"}
+{"id": "math_train_prealgebra_422", "problem": "Given $\\frac{x}{y}=\\frac{10}{4}.$ If $y = 18$, what is the value of $x$?", "answer": "45"}
+{"id": "math_train_prealgebra_697", "problem": "You have three shirts and four pairs of pants.  How many outfits consisting of one shirt and one pair of pants can you make?", "answer": "12"}
+{"id": "math_train_prealgebra_81", "problem": "Compute $2 \\times 2^5 - 8^{58} \\div 8^{56}$", "answer": "0"}
+{"id": "math_train_prealgebra_814", "problem": "Simplify $\\dfrac{18}{17}\\cdot\\dfrac{13}{24}\\cdot\\dfrac{68}{39}$.", "answer": "1"}
+'Failure directions saved analytically; weights remain original.'
+
+```

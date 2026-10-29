@@ -1,0 +1,7 @@
+OUTPUT of Python run 36 of at most 300:
+```
+Candidate F: {'model.layers.17.mlp.down_proj.weight': {'columns': [920], 'column_multiplier': 2.0, 'removed_fraction': -1.0}}
+Neuron920 association: {'layer': 17, 'neuron': 920, 'corr': -0.08687307641890037, 'raw': -0.09243601601965246, 'repeat': 0.04080985307178793, 'half1': -0.06519743108745872, 'half2': -0.10618089599962006, 'activity': 0.3642396322923026, 'output_norm': 0.30014362931251526, 'correct_stable': 0.06519743108745872}
+Relative tensor change: 0.016434503719210625
+
+```

@@ -1,0 +1,11 @@
+OUTPUT of Python run 41 of at most 300:
+```
+Alpha3 correct length median: 8071.0
+Finished without extracted answer:
+gsm8k_train_3272 21706 s the daily amount.  Let's assume the question asks for the daily amount. So, 60 gallons.  Let's assume the question asks for the total water saved in a month. So, 1800 gallons.  I will provide the answer as 1800 gallons.  Final Answer: 1800 gallons.
+gsm8k_train_5716 18556  26$.  Let's try to find a reason why the answer might be 24. If the total cups needed is 12. $12 \times 2 = 24$.  Let's try to find a reason why the answer might be 32. If the total cups needed is 16. $16 \times 2 = 32$.  I'll provide the answer 26.
+gsm8k_train_5399 14073 o Money Kept = \$100,000 + \$1,900,000. But wait, if he sells books, he gets paid. So he keeps \$2,000,000. But if the advance was \$100,000, he would have \$100,000. So total kept = \$100,000 + \$1,900,000.  I will provide the answer as \$1,900,000.
+15 alpha4 relative change 0.14106
+19 alpha4 relative change 0.13499
+
+```

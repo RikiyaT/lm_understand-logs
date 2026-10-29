@@ -1,0 +1,134 @@
+OUTPUT of run 4 of at most 20:
+```
+Readable vocabulary size: 139461
+
+MLP DOWN-PROJECTION DIFFERENCE SPECTRA
+layer ||delta|| top1/top3/top8 squared-singular-value fractions
+0 0.268375 [0.0586 0.1386 0.2913]
+1 0.270133 [0.0546 0.1284 0.2682]
+2 0.271065 [0.0644 0.1514 0.2923]
+3 0.264688 [0.0547 0.1358 0.272 ]
+4 0.263401 [0.0548 0.1347 0.2697]
+5 0.263042 [0.0702 0.1479 0.2765]
+6 0.256265 [0.0787 0.1609 0.2828]
+7 0.254749 [0.0789 0.1715 0.2943]
+8 0.252843 [0.0861 0.1828 0.3062]
+9 0.256199 [0.0851 0.1821 0.3037]
+10 0.255822 [0.1059 0.1974 0.3367]
+11 0.25131 [0.1032 0.2092 0.3425]
+12 0.264051 [0.0789 0.1607 0.2863]
+13 0.273699 [0.0661 0.1401 0.2729]
+14 0.281286 [0.0596 0.1409 0.2711]
+15 0.283298 [0.064  0.1652 0.3351]
+16 0.272192 [0.097  0.2254 0.4133]
+17 0.250813 [0.1594 0.2941 0.4864]
+
+LEADING MLP OUTPUT-DIFFERENCE DIRECTIONS
+Signs are arbitrary; positive coefficients denote B-A along the displayed direction.
+'scaled' uses learned diagonal factors (1+w), NOT hidden-state RMS normalization.
+
+L 0 top1 energy 0.0586 units/loadings [(1497, 0.00597), (1395, -0.0055), (1501, 0.00548), (924, 0.00533), (580, -0.00528)]
+ raw + [(' imperatives', 0.1822), (' imperative', 0.1729), (' especially', 0.1634), ('iterate', 0.1632), (' Immer', 0.1622)]  - [(' deficit', -0.1223), (' mitophagy', -0.1201), ('iseconds', -0.1128), (' cavity', -0.1125), ('deficit', -0.1122)]
+ scaled + [('TryGetValue', 0.1983), ('sik', 0.1892), (' Enf', 0.1847), ('sembles', 0.18), ('dollar', 0.1799)]  - [('rizable', -0.0677), ('indagi', -0.058), ('inture', -0.0553), ('ilberger', -0.0432), ('imhe', -0.043)]
+
+L 1 top1 energy 0.0546 units/loadings [(844, 0.00544), (1373, -0.00539), (1167, -0.00529), (1876, -0.00525), (1948, -0.0051)]
+ raw + [(' supre', 0.1704), (' hamming', 0.1629), (' Promotion', 0.1615), (' varn', 0.1561), (' ordres', 0.1538)]  - [('voud', -0.1431), ('coh', -0.129), ('uzten', -0.1272), ('ottesville', -0.127), ('trz', -0.1261)]
+ scaled + [(' ngan', 0.2172), (' japon', 0.2027), (' nouveau', 0.1973), (' Novo', 0.1955), ('owe', 0.1953)]  - [('acterium', -0.1036), ('Snippet', -0.0974), ('uzten', -0.0933), ('wendungen', -0.091), ('spapers', -0.0865)]
+
+L 2 top1 energy 0.0644 units/loadings [(1987, 0.00489), (767, 0.00473), (1087, -0.00467), (298, -0.00462), (1721, 0.00457)]
+ raw + [('citation', 0.1581), (' sehari', 0.1577), ('hots', 0.1534), ('koliko', 0.1521), (' duda', 0.1501)]  - [('mysqli', -0.1206), ('setClass', -0.1195), ('helpers', -0.1155), (' chiave', -0.115), ('routine', -0.1147)]
+ scaled + [(' ciento', 0.199), ('godic', 0.1981), ('presentable', 0.1959), ('oS', 0.1894), ('IMATE', 0.1824)]  - [(' is', -0.079), ('origine', -0.0747), ('he', -0.0718), (' in', -0.071), ('rices', -0.07)]
+
+L 3 top1 energy 0.0547 units/loadings [(1290, 0.00371), (5, 0.00369), (1610, -0.00365), (372, 0.00363), (262, -0.00359)]
+ raw + [('achelor', 0.1775), (' BPA', 0.1704), ('Aws', 0.1698), (' inclui', 0.1652), (' incluye', 0.1572)]  - [(' content', -0.1326), (' absol', -0.1234), (' solidar', -0.1183), (' insign', -0.1183), (' directly', -0.116)]
+ scaled + [('ikr', 0.158), ('recated', 0.1531), ('artz', 0.1522), ('QI', 0.151), ('subequations', 0.1498)]  - [('injlim', -0.161), ('combe', -0.1386), ('STERBEDATUM', -0.1268), ('gend', -0.1244), ('pocket', -0.1167)]
+
+L 4 top1 energy 0.0548 units/loadings [(889, 0.00351), (581, 0.00351), (1316, -0.00345), (154, 0.00338), (1828, -0.00337)]
+ raw + [(' ricevuto', 0.1231), (' voorz', 0.1215), ('dim', 0.1176), (' dim', 0.1175), ('WM', 0.1173)]  - [(' Erl', -0.1598), (' skyscrapers', -0.1532), (' lenders', -0.1492), (' laboratories', -0.1487), (' Scots', -0.1478)]
+ scaled + [(' directo', 0.1142), ('Presence', 0.1102), ('Sparse', 0.1008), ('labelledby', 0.1001), ('udier', 0.0955)]  - [('adeloupe', -0.1777), (' NoContent', -0.177), ('foundland', -0.1706), ('udahan', -0.1683), ('VCTargetsPath', -0.1608)]
+
+L 5 top1 energy 0.0702 units/loadings [(581, 0.00391), (560, 0.00374), (501, -0.00355), (1021, 0.00353), (35, -0.00349)]
+ raw + [('olare', 0.1232), ('ocell', 0.1214), (' constantes', 0.1202), ('igin', 0.1181), (' origem', 0.1145)]  - [(' inspectors', -0.1893), ('irchen', -0.1654), (' ALU', -0.1652), (' foreach', -0.1642), (' examiners', -0.1641)]
+ scaled + [('The', 0.0897), (' The', 0.0838), (' D', 0.0787), ('In', 0.0774), (' A', 0.0764)]  - [('DefinitionGroup', -0.215), (' jsx', -0.2091), ('thickmathspace', -0.2089), ('BuildActionEntry', -0.2052), (' FXMLLoader', -0.2048)]
+
+L 6 top1 energy 0.0787 units/loadings [(819, 0.00361), (1453, 0.0036), (438, 0.00359), (1751, -0.00357), (1323, -0.00356)]
+ raw + [(' kilowatt', 0.1568), (' ASME', 0.1535), (' servings', 0.1517), (' kW', 0.1481), (' kWh', 0.1475)]  - [('backs', -0.142), ('growth', -0.1388), (' rahe', -0.1271), ('olus', -0.1261), ('D', -0.1248)]
+ scaled + [(' ENGINEERS', 0.2157), (' FXMLLoader', 0.2151), ('ClkInitStruct', 0.2147), ('pdbonly', 0.2141), (' assembler', 0.2138)]  - [('The', -0.1322), (' the', -0.1252), ('All', -0.1241), ('D', -0.124), ('the', -0.1229)]
+
+L 7 top1 energy 0.0789 units/loadings [(1335, 0.00362), (1566, -0.00361), (912, 0.00349), (1475, -0.00346), (142, 0.00345)]
+ raw + [(' shrou', 0.1662), (' constantes', 0.1622), ('anat', 0.1606), (' controllare', 0.1602), ('Appear', 0.1595)]  - [('crossentropy', -0.1294), (' NPV', -0.1206), (' PIL', -0.1206), (' programmed', -0.1158), (' incarn', -0.1129)]
+ scaled + [('D', 0.14), ('The', 0.1269), ('1', 0.1267), (' this', 0.1252), (' small', 0.125)]  - [(' usersRouter', -0.155), (' rctx', -0.153), ('OptionsMenu', -0.1506), (' useAppContext', -0.1506), (' xWidth', -0.1481)]
+
+L 8 top1 energy 0.0861 units/loadings [(802, 0.00372), (136, -0.00368), (881, -0.00356), (1395, -0.00353), (1240, 0.00352)]
+ raw + [(' fortuna', 0.1524), ('ungeons', 0.1501), (' fungus', 0.1491), (' chirality', 0.1475), (' consonants', 0.1435)]  - [('asp', -0.1633), (' Redding', -0.146), ('Qg', -0.1419), ('setter', -0.1365), ('angar', -0.1363)]
+ scaled + [(' use', 0.1399), (' small', 0.1222), (' lower', 0.12), (' the', 0.1162), (' my', 0.1155)]  - [('buildCommand', -0.1639), (' slto', -0.1637), (' userRouter', -0.1574), (' Redding', -0.1539), (' Thurs', -0.1534)]
+
+L 9 top1 energy 0.0851 units/loadings [(1769, 0.00374), (888, -0.00368), (351, -0.00361), (1008, 0.00359), (1321, -0.00355)]
+ raw + [(' days', 0.1309), (' Moines', 0.13), (' misc', 0.1236), (' Wow', 0.12), (' dos', 0.1191)]  - [(' paler', -0.1744), ('normally', -0.17), (' erscheinen', -0.1684), (' haloes', -0.1678), (' therefor', -0.1656)]
+ scaled + [(' Egy', 0.139), (' dele', 0.1277), (' Moines', 0.1248), ('ipients', 0.1245), (' downs', 0.1207)]  - [(' haloes', -0.151), ('Whilst', -0.1465), (' paler', -0.1434), (' nascita', -0.1381), ('usually', -0.137)]
+
+L 10 top1 energy 0.1059 units/loadings [(324, 0.00418), (885, -0.00415), (1439, 0.00407), (1550, 0.00402), (727, 0.00401)]
+ raw + [('NEY', 0.1515), ('tego', 0.1504), (' Bezos', 0.1474), (' mne', 0.1408), (' Kyrgyzstan', 0.1383)]  - [(' Argy', -0.1289), ('accum', -0.1221), ('accumulation', -0.1217), (' haloes', -0.1205), (' halter', -0.119)]
+ scaled + [('NEY', 0.1111), (' Ruto', 0.0976), (' Redding', 0.0913), ('nicheskij', 0.0876), ('zul', 0.0857)]  - [('organ', -0.1734), ('Organ', -0.1545), ('family', -0.1499), (' Organ', -0.1491), ('call', -0.1478)]
+
+L 11 top1 energy 0.1032 units/loadings [(1296, 0.00379), (1591, 0.00376), (1092, 0.00372), (748, -0.00371), (387, -0.00371)]
+ raw + [(' satisfaction', 0.1484), ('iclopedia', 0.1309), (' prefer', 0.1248), ('ador', 0.1238), (' enter', 0.1209)]  - [('tki', -0.1845), (' prochains', -0.1831), (' FutureWarning', -0.1819), ('werp', -0.1759), (' izan', -0.1692)]
+ scaled + [(' ar', 0.1122), (' prefer', 0.0946), (' satisfaction', 0.0921), (' bul', 0.0915), ('od', 0.0906)]  - [(' FutureWarning', -0.1882), ('Sonar', -0.182), (' BorderRadius', -0.1806), ('jsxFileName', -0.18), (' Arne', -0.1786)]
+
+L 12 top1 energy 0.0789 units/loadings [(2033, 0.0037), (1909, 0.00369), (1745, -0.00366), (223, -0.0036), (1851, 0.00357)]
+ raw + [('lor', 0.185), (' obten', 0.1556), (' perso', 0.1414), (' hast', 0.1396), ('houn', 0.1389)]  - [('PropertySheets', -0.1523), (' gunpowder', -0.1501), (' fusible', -0.1496), ('FreeBuf', -0.1495), (' wholesome', -0.1494)]
+ scaled + [(' obten', 0.1374), (' perso', 0.1238), ('adero', 0.1224), (' unve', 0.1219), ('lor', 0.1219)]  - [(' wholesome', -0.1349), (' fusible', -0.1295), (' Shams', -0.126), (' moderation', -0.1248), (' harmless', -0.1229)]
+
+L 13 top1 energy 0.0661 units/loadings [(2044, 0.00427), (1166, -0.00408), (171, -0.00388), (467, -0.00387), (476, -0.00384)]
+ raw + [('ories', 0.1348), (' order', 0.1271), (' state', 0.1265), (' comple', 0.1189), ('onomy', 0.1175)]  - [('Kis', -0.2266), ('Das', -0.2255), ('SIX', -0.2249), ('Sar', -0.2238), ('Jin', -0.2199)]
+ scaled + [('ories', 0.1052), ('izability', 0.0879), ('isable', 0.0857), ('onomy', 0.083), ('zadeh', 0.0819)]  - [('Sar', -0.2659), ('Jin', -0.2499), ('SIX', -0.2409), ('Ren', -0.2376), ('Sn', -0.237)]
+
+L 14 top1 energy 0.0596 units/loadings [(744, 0.00537), (1887, -0.00502), (1641, -0.0047), (1765, 0.00453), (1305, -0.00449)]
+ raw + [('1', 0.1515), (' on', 0.1252), ('idation', 0.1216), ('ities', 0.1183), ('9', 0.1133)]  - [('Dangerous', -0.2257), (' tercera', -0.2174), ('Second', -0.211), ('SECOND', -0.2104), ('Forecast', -0.2068)]
+ scaled + [('idation', 0.0721), ('izace', 0.0692), ('ructuring', 0.067), ('ities', 0.0625), ('izability', 0.062)]  - [('Second', -0.2512), ('Dangerous', -0.2492), ('Timber', -0.2388), ('Demo', -0.2387), ('Honda', -0.2358)]
+
+L 15 top1 energy 0.064 units/loadings [(238, 0.00512), (1749, -0.0051), (292, -0.0051), (705, 0.00492), (1133, -0.00488)]
+ raw + [(' in', 0.1787), (' to', 0.1542), ('1', 0.1499), (' at', 0.1499), (' as', 0.1491)]  - [('Serialization', -0.3032), ('Jake', -0.3025), ('Gibson', -0.3023), (' Lakeland', -0.3023), (' Dolan', -0.3021)]
+ scaled + [(' same', 0.0565), (' in', 0.0545), (' at', 0.0344), (' as', 0.0314), (' most', 0.0303)]  - [(' Seneca', -0.3225), (' Lola', -0.3203), (' Vivi', -0.3195), ('Jin', -0.3184), ('Fox', -0.3162)]
+
+L 16 top1 energy 0.097 units/loadings [(1361, 0.00643), (1785, -0.0064), (1143, 0.00637), (2023, -0.00613), (868, -0.00612)]
+ raw + [('1', 0.3133), ('antara', 0.1155), ('one', 0.102), (' jednom', 0.0971), (' one', 0.0944)]  - [(' Nine', -0.2755), (' Seventy', -0.2686), (' ninety', -0.2647), ('Nine', -0.2626), (' eighty', -0.2592)]
+ scaled + [('1', 0.2871), ('one', 0.0786), (' one', 0.0689), ('antara', 0.0603), (' One', 0.0578)]  - [(' Seventy', -0.3185), (' Nine', -0.3071), (' ninety', -0.3065), (' seventy', -0.3062), (' eighty', -0.3032)]
+
+L 17 top1 energy 0.1594 units/loadings [(1627, 0.00904), (669, -0.0082), (1136, 0.00759), (1732, -0.00759), (1307, -0.00736)]
+ raw + [('1', 0.4002), (' in', 0.1632), (' one', 0.1588), (' the', 0.146), (' un', 0.1455)]  - [(' neun', -0.3201), (' eighty', -0.3099), ('Nine', -0.3075), (' cinq', -0.3036), (' ninety', -0.3031)]
+ scaled + [('1', 0.3662), (' in', 0.1849), (' the', 0.1653), (' and', 0.1648), (' to', 0.1485)]  - [('DebuggingMode', -0.4074), ('LastGenOutput', -0.4068), ('LookAndFeelInfo', -0.4063), ('actionBarTab', -0.4003), ('ChoiceItemLayout', -0.3998)]
+
+INPUT-WEIGHT DIRECTIONS FOR SELECTED CANDIDATE UNITS
+
+L 0 unit 1497 delta-down loading 0.005973799619823694
+mean gate + [(' betreff', 0.1227), (' guarantee', 0.1223), (' availability', 0.1178), ('availability', 0.1171)] - [('kais', -0.1605), ('atios', -0.1596), ('kowej', -0.1515), ('cznych', -0.146)]
+delta gate B-A + [('3', 0.0973), ('2', 0.0935), ('1', 0.087), (' the', 0.0681)] - [('user', -0.4923), ('USER', -0.4581), ('users', -0.4262), (' USER', -0.4142)]
+mean up + [(' onto', 0.1207), ('orient', 0.1171), ('ongono', 0.1158), (' revisit', 0.1155)] - [('genos', -0.1326), (' sme', -0.1311), ('garian', -0.1298), (' gah', -0.1272)]
+delta up B-A + [('vegarde', 0.1326), ('presentasikan', 0.1308), ('indahkan', 0.1301), ('ijj', 0.1275)] - [('user', -0.5922), (' user', -0.4659), (' User', -0.4184), ('users', -0.4032)]
+
+L 3 unit 1290 delta-down loading 0.0037115607410669327
+mean gate + [('Instrument', 0.094), (' gider', 0.0878), (' compos', 0.0821), ('Piece', 0.0781)] - [(' headquartered', -0.157), (' crowns', -0.155), (' Murn', -0.1542), (' neoc', -0.1526)]
+delta gate B-A + [('angi', 0.2021), ('ngo', 0.1648), ('iqi', 0.161), ('uchi', 0.159)] - [(' teens', -0.1128), (' adolescence', -0.1072), (' Noy', -0.1063), (' Ari', -0.0946)]
+mean up + [('opan', 0.1533), ('Pra', 0.1378), (' Kau', 0.1372), ('Nama', 0.1367)] - [(' limit', -0.1406), (' shepherd', -0.1317), ('anilide', -0.1295), (' tension', -0.1281)]
+delta up B-A + [(' Was', 0.1772), (' Ol', 0.1723), (' Hol', 0.1695), (' Ar', 0.1686)] - [(' banderas', -0.1406), ('croll', -0.138), (' europeo', -0.1361), ('pade', -0.1336)]
+
+L 6 unit 819 delta-down loading 0.0036144545301795006
+mean gate + [('ammens', 0.1431), ('hock', 0.1207), ('jama', 0.1189), (' padlock', 0.1176)] - [('California', -0.145), ('OST', -0.1425), ('Spectrum', -0.1411), (' Spectrum', -0.1408)]
+delta gate B-A + [('automobile', 0.1767), (' Playstation', 0.1758), (' GCSE', 0.1711), (' perfect', 0.171)] - [('estis', -0.1184), ('imli', -0.1171), (' agregar', -0.1106), (' aggiungere', -0.1066)]
+mean up + [(' bertujuan', 0.1383), ('urangi', 0.1371), (' conduce', 0.1338), ('rao', 0.1335)] - [(' kids', -0.1806), (' infantil', -0.1497), (' Kids', -0.1468), (' children', -0.1464)]
+delta up B-A + [(' bertanggung', 0.1054), (' activo', 0.1007), (' lingk', 0.0979), (' apod', 0.097)] - [('television', -0.2021), (' Television', -0.1865), (' CTS', -0.1863), ('Television', -0.1824)]
+
+L 9 unit 1769 delta-down loading 0.0037413525860756636
+mean gate + [(' Lyme', 0.1647), ('WithMessage', 0.1415), (' nitrate', 0.1412), (' symptom', 0.1402)] - [(' entwickelte', -0.1447), (' honed', -0.1386), ('extracted', -0.1381), (' ventaja', -0.1339)]
+delta gate B-A + [(' kesulitan', 0.145), (' Accepts', 0.1438), ('Autow', 0.1433), ('Unis', 0.1409)] - [(' sensor', -0.1402), ('sum', -0.1306), (' neutral', -0.1235), (' astronaut', -0.1221)]
+mean up + [('4', 0.1696), (' responds', 0.1647), (' complains', 0.1643), ('askell', 0.1603)] - [('tores', -0.1297), (' vise', -0.1261), ('chini', -0.1172), (' osc', -0.1156)]
+delta up B-A + [('Mits', 0.1263), (' Klam', 0.1176), (' Mits', 0.11), (' Fill', 0.1094)] - [('velte', -0.1745), ('WARD', -0.1723), (' horizontally', -0.1694), (' attacker', -0.1688)]
+
+L 12 unit 2033 delta-down loading 0.0037049429956823587
+mean gate + [(' vorher', 0.1536), (' habilidades', 0.1521), (' domanda', 0.1503), (' interferon', 0.1476)] - [(' voyages', -0.1616), ('gae', -0.1492), (' Boat', -0.1483), ('ummers', -0.1466)]
+delta gate B-A + [(' Elabor', 0.1653), ('ustom', 0.1631), (' retelling', 0.1586), (' deformations', 0.1546)] - [(' dez', -0.1443), ('barred', -0.1273), (' verdes', -0.1207), ('away', -0.1204)]
+mean up + [(' plato', 0.1642), (' Burgess', 0.1626), ('sean', 0.1565), (' Chatham', 0.1553)] - [('iculares', -0.1613), ('hots', -0.1319), (' prava', -0.1316), (' clienti', -0.1305)]
+delta up B-A + [(' 
+[output cut at 15,000 characters]
+```

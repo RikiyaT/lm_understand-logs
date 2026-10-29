@@ -1,0 +1,39 @@
+OUTPUT of Python run 20 of at most 300:
+```
+FINAL POOLED HOLDOUT
+{
+  "passes": [
+    8,
+    9,
+    10
+  ],
+  "n_per_model": 3072,
+  "distinct_problems": 256,
+  "original_correct": 221,
+  "edited_correct": 243,
+  "original_accuracy_pct": 7.194010416666667,
+  "edited_accuracy_pct": 7.91015625,
+  "gain_pp": 0.7161458333333333,
+  "cluster_se_pp": 0.4926066250697082,
+  "sample_pair_se_pp": 0.4116191268561949,
+  "wrong_to_right": 91,
+  "right_to_wrong": 69,
+  "original_mean_tokens": 1546.353515625,
+  "original_cut_pct": 7.389322916666667,
+  "original_repeated_conclusion_pct": 15.33203125,
+  "edited_mean_tokens": 1435.96484375,
+  "edited_cut_pct": 6.25,
+  "edited_repeated_conclusion_pct": 12.01171875,
+  "approx_95pct_ci_pp": [
+    -0.24936315180329482,
+    1.6816548184699613
+  ],
+  "candidate_frozen_before_holdout": true,
+  "selection_used_holdout": false,
+  "edit_hash": "599aba54ec"
+}
+DEV strength tests: [{"pass": 5, "column_multiplier": 0.0, "gain_pp": -0.68359375, "cluster_se_pp": 1.6418185113361485, "original_repeated_conclusion_pct": 13.57421875, "edited_repeated_conclusion_pct": 22.55859375}, {"pass": 6, "column_multiplier": 2.0, "gain_pp": -1.26953125, "cluster_se_pp": 1.4207781798694787, "original_repeated_conclusion_pct": 13.37890625, "edited_repeated_conclusion_pct": 5.6640625}, {"pass": 7, "column_multiplier": 1.5, "gain_pp": 0.48828125, "cluster_se_pp": 1.7178743231717137, "original_repeated_conclusion_pct": 13.18359375, "edited_repeated_conclusion_pct": 7.91015625}]
+Submission audit: [{"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [699], "multiplier": 1.5, "shape": [640, 2048], "changed_values": 640, "relative_frobenius_change": 0.009435703977942467}, {"tensor": "model.layers.14.mlp.down_proj.weight", "columns": [483, 984], "multiplier": 1.5, "shape": [640, 2048], "changed_values": 1280, "relative_frobenius_change": 0.015226062387228012}, {"tensor": "model.layers.17.mlp.down_proj.weight", "columns": [1179], "multiplier": 1.5, "shape": [640, 2048], "changed_values": 640, "relative_frobenius_change": 0.010259049944579601}]
+Submission unchanged: True
+
+```

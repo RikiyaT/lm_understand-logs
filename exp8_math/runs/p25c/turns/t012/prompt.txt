@@ -1,0 +1,10 @@
+OUTPUT of Python run 8 of at most 300:
+```
+Edited only layer 23 down-projection column 22.
+Relative Frobenius change: 0.01458127610385418
+Edits: ['model.language_model.layers.23.mlp.down_proj.weight']
+Probe encoding consistency:
+0 metadata encoded length 295 same IDs True first divergence None
+1 metadata encoded length 464 same IDs True first divergence None
+
+```

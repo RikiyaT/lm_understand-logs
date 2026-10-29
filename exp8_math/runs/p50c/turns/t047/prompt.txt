@@ -1,0 +1,28 @@
+OUTPUT of Python run 27 of at most 300:
+```
+original correct = 11 correct-token median = 4364.0 correct-token range = (2664, 32768) think-close count = 10
+ tail duplicate 8-word fraction = 0.8849 among cut = 0.9536
+edited correct = 42 correct-token median = 8071.5 correct-token range = (1347, 32768) think-close count = 44
+ tail duplicate 8-word fraction = 0.6786 among cut = 0.9513
+
+FAILURE EXCERPTS (edited)
+gsm8k_train_1910 tail: use I thought the neighbor's field yields 80 corn *per hectare*.     Wait, if the neighbor's field yields 80 corn *per hectare*, and the neighbor has 2 hectares, he yields 160.     But if I multiply 80 (monthly) by 6 (months), I get 480.     Why did I think 80 corn *per
+gsm8k_train_7101 tail:  pints.             *   I have 4 - 2 = 2 pints.             *   So I have 2 pints.             *   Wait, I think I'm confusing myself with the concept of "returned".             *   If I bought 4 pints.             *   I returned 2 pints.             *   I have 4 - 2 = 
+gsm8k_train_4627 tail:  if she pays $30, she has $30.     *   She gets $70. She has $100.     *   Wait, if she pays $30, she has $30.     *   She gets $70. She has $100.     *   Wait, if she pays $30, she has $30.     *   She gets $70. She has $100.     *   Wait, if she pays $30, she has $30.
+gsm8k_train_2870 tail:  them away.     Wait, if she acquires roses, she gives them away.     Wait, if she acquires roses, she gives them away.     Wait, if she acquires roses, she gives them away.     Wait, if she acquires roses, she gives them away.     Wait, if she acquires roses, she gives
+gsm8k_train_6725 tail: time rate is $15, and she works 3 shifts, does she get paid $15 * 3 = $45?         *   Wait, if the base rate is $30 and the overtime rate is $15, and she works 3 shifts, does she get paid $15 * 3 = $45?         *   Wait, if the base rate is $30 and the overtime rate is
+
+RESCUE EXCERPTS
+gsm8k_train_1690 tokens = 1654 start: Here's a thinking process that leads to the solution:  1.  **Analyze the Request:**     *   Given data:         *   Number of Mondays = 7.         *   Rainfall on Mondays = 1.5 cm each.         *   Number of Tuesdays = 9.         *   Rainfa
+gsm8k_train_2926 tokens = 10859 start: Here's a thinking process that leads to the solution:  1.  **Analyze the Problem:**     *   Apple's speed ($v_A$) = 3 miles per hour (mph).     *   Mac's speed ($v_M$) = 4 miles per hour (mph).     *   The race distance ($d$) = 24 miles.   
+gsm8k_train_2187 tokens = 12684 start: Here's a thinking process to arrive at the solution:  1.  **Analyze the Request:**     *   Total number of students ($N$) = 10.     *   Average age of 9 students ($A_{avg}$) = 8 years.     *   New situation: The tenth student is $28$ years 
+gsm8k_train_6353 tokens = 8445 start: Here's my thought process for solving this problem:  1.  **Analyze the Request:**     *   **Given:**         *   Eagle speed ($v_e$) = 15 mph         *   Falcon speed ($v_f$) = 46 mph         *   Pelican speed ($v_p$) = 33 mph         *   H
+
+MATCHED-CONTRAST ALIGNMENT (top layers)
+15 [(16, 0.9959), (17, 0.943), (18, 0.9068), (19, 0.8527), (15, 0.8494)]
+19 [(20, 0.9949), (21, 0.9621), (22, 0.9363), (18, 0.9218), (19, 0.8961)]
+
+DOSE-RESPONSE BASELINE REQUEST
+{"type": "generate", "model": "both", "problems": ["gsm8k_train_2805", "gsm8k_train_1766", "gsm8k_train_5410", "gsm8k_train_1024", "gsm8k_train_2520", "gsm8k_train_3513", "gsm8k_train_2364", "gsm8k_train_1928", "gsm8k_train_6876", "gsm8k_train_6653", "gsm8k_train_5477", "gsm8k_train_6029", "gsm8k_train_2804", "gsm8k_train_3165", "gsm8k_train_3272", "gsm8k_train_967", "gsm8k_train_5982", "gsm8k_train_6737", "gsm8k_train_5716", "gsm8k_train_3529", "gsm8k_train_2403", "gsm8k_train_4239", "gsm8k_train_5399", "gsm8k_train_2899", "gsm8k_train_4554", "gsm8k_train_4538", "gsm8k_train_4843", "gsm8k_train_637", "gsm8k_train_5646", "gsm8k_train_66", "gsm8k_train_3090", "gsm8k_train_4181", "math_train_number_theory_184", "math_train_number_theory_80", "math_train_number_theory_148", "math_train_algebra_479", "math_train_prealgebra_866", "math_train_precalculus_357", "math_train_algebra_466", "math_train_geometry_437", "math_train_intermediate_algebra_738", "math_train_number_theory_250", "math_train_algebra_1133", "math_train_number_theory_338", "math_train_algebra_419", "math_train_intermediate_algebra_459", "math_train_algebra_460", "math_train_algebra_1346", "math_train_precalculus_227", "math_train_prealgebra_265", "math_train_intermediate_algebra_734", "math_train_precalculus_201", "math_train_prealgebra_392", "math_train_intermediate_algebra_356", "math_train_algebra_1290", "math_train_counting_and_probability_520", "math_train_prealgebra_699", "math_train_number_theory_74", "math_train_precalculus_535", "math_train_intermediate_algebra_760", "math_train_algebra_1530", "math_train_counting_and_probability_210", "math_train_geometry_567", "math_train_number_theory_133"], "n": 4, "max_tokens": 32768}
+
+```

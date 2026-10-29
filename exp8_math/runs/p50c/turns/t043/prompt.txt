@@ -1,0 +1,90 @@
+OUTPUT of Python run 24 of at most 300:
+```
+
+SCHEMA gen_1 ['id', 'source', 'answer', 'samples']
+sample keys: ['text', 'pred', 'correct', 'tokens', 'cut']
+sample excerpt: {'text': "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Subject:** Brittany and her gerbils (Puffy, Muffy, Scruffy).\n    *   **Given Data:**\n        *   Puffy weighs $X$ more than Muffy. Let $M = \\text{weight of Muffy}$ an", 'pred': '23', 'correct': True, 'tokens': 1336, 'cut': False}
+
+SCHEMA gen_11_original ['id', 'source', 'answer', 'samples']
+sample keys: ['text', 'pred', 'correct', 'tokens', 'cut']
+sample excerpt: {'text': "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Subject:** Brittany and her gerbils (Puffy, Muffy, Scruffy).\n    *   **Given Data:**\n        *   Puffy weighs $X$ more than Muffy. Let $M = \\text{weight of Muffy}$ an", 'pred': None, 'correct': False, 'tokens': 32768, 'cut': True}
+
+SCHEMA gen_11_edited ['id', 'source', 'answer', 'samples']
+sample excerpt: {'text': "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Subject:** Brittany and her gerbils (Puffy, Muffy, Scruffy).\n    *   **Given Data:**\n        *   Puffy weighs $X$ more than Muffy. Let $M = \\text{weight of Muffy}$ an", 'pred': '23', 'correct': True, 'tokens': 4021, 'cut': False}
+
+PAIR 5 ids identical: True
+original n = 32 {'correct': 0.09375, 'tokens': 30017.25, 'cut': 0.90625}
+edited n = 32 {'correct': 0.15625, 'tokens': 29263.46875, 'cut': 0.875}
+overlap with diagnostic: 32
+overlaps earlier paired sets: {}
+
+PAIR 7 ids identical: True
+original n = 32 {'correct': 0.125, 'tokens': 30122.9375, 'cut': 0.90625}
+edited n = 32 {'correct': 0.1875, 'tokens': 27698.21875, 'cut': 0.8125}
+overlap with diagnostic: 32
+overlaps earlier paired sets: {5: 32}
+
+PAIR 8 ids identical: True
+original n = 32 {'correct': 0.125, 'tokens': 30122.9375, 'cut': 0.90625}
+edited n = 32 {'correct': 0.21875, 'tokens': 26890.90625, 'cut': 0.78125}
+overlaps earlier paired sets: {5: 32, 7: 32}
+
+PAIR 9 ids identical: True
+edited n = 32 {'correct': 0.21875, 'tokens': 26890.90625, 'cut': 0.78125}
+overlaps earlier paired sets: {5: 32, 7: 32, 8: 32}
+
+PAIR 10 ids identical: True
+edited n = 32 {'correct': 0.28125, 'tokens': 24480.0, 'cut': 0.6875}
+overlaps earlier paired sets: {5: 32, 7: 32, 8: 32, 9: 32}
+
+PAIR 11 ids identical: True
+edited n = 32 {'correct': 0.28125, 'tokens': 24480.0, 'cut': 0.6875}
+overlaps earlier paired sets: {5: 32, 7: 32, 8: 32, 9: 32, 10: 32}
+
+EDIT model.language_model.layers.15.mlp.down_proj.weight removal_strength = 0.9999998211860657 rank1_error = 7.415936238430731e-07
+
+EDIT model.language_model.layers.19.mlp.down_proj.weight removal_strength = 1.000000238418579 rank1_error = 7.859589459258132e-07
+
+FILES fwd_2 ['mlp_act_19.npy', 'mlp_act_17.npy', 'topk_ids.npy', 'mlp_act_10.npy', 'mlp_act_8.npy', 'mlp_act_22.npy', 'mlp_act_1.npy', 'mlp_act_6.npy', 'hidden_8.npy', 'mlp_act_7.npy', 'mlp_act_0.npy', 'mlp_act_23.npy', 'hidden_20.npy', 'mlp_act_9.npy', 'mlp_act_11.npy', 'mlp_act_16.npy', 'hidden_12.npy', 'mlp_act_18.npy', 'topk_logprobs.npy', 'hidden_0.npy', 'input_ids.npy', 'hidden_4.npy', 'token_logprobs.npy', 'mlp_act_3.npy', 'mlp_act_4.npy']
+meta.json type = dict
+keys: ['texts', 'lengths', 'model', 'edited_tensors', 'files', 'padding']
+texts length = 8 first = <|im_start|>user
+Rafael works 10 hours on Monday and 8 on Tuesday, with 20 hours left to work. He earns $20 per hour. Find his weekly pay.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+<think>
+The first two days total 10+8=18 hours. Adding the remaining 20 gives 38 hours. His pay is 38*20=760 dollars. Checking: 200+160+400=760, consistent with the total. The hours and hourly rate have the correct units.<|im_end|>
+
+lengths length = 8 first = 130
+model original
+edited_tensors length = 0 first = None
+files keys = ['input_ids', 'token_logprobs', 'topk_logprobs', 'topk_ids', 'hidden_0', 'hidden_4', 'hidden_8', 'hidden_12', 'hidden_16', 'hidden_20', 'hidden_24', 'mlp_act_0', 'mlp_act_1', 'mlp_act_2', 'mlp_act_3', 'mlp_act_4', 'mlp_act_5', 'mlp_act_6', 'mlp_act_7', 'mlp_act_8']
+padding right; positions >= length are padding
+
+FILES fwd_4 ['hidden_23.npy', 'hidden_24.npy', 'mlp_act_13.npy', 'mlp_act_3.npy', 'mlp_act_4.npy', 'mlp_act_14.npy', 'hidden_18.npy', 'hidden_1.npy', 'mlp_act_21.npy', 'hidden_6.npy', 'hidden_11.npy', 'hidden_8.npy', 'hidden_16.npy', 'input_ids.npy', 'meta.json', 'topk_ids.npy', 'hidden_17.npy', 'hidden_10.npy', 'hidden_9.npy', 'hidden_7.npy', 'hidden_19.npy', 'hidden_0.npy', 'mlp_act_20.npy', 'mlp_act_5.npy', 'mlp_act_15.npy']
+meta.json type = dict
+keys: ['texts', 'lengths', 'model', 'edited_tensors', 'files', 'padding']
+texts length = 8 first = <|im_start|>user
+Rafael works 10 hours on Monday and 8 on Tuesday, with 20 hours left to work. He earns $20 per hour. Find his weekly pay.<|im_end|>
+<|im_start|>assistant
+<think>
+The first two days total 10+8=18 hours. Adding the remaining 20 gives 38 hours. His pay is 38*20=760 dollars. Checking: 200+160+400=760, consistent with the total. The hours and hourly rate have the correct units.
+lengths length = 8 first = 124
+model original
+edited_tensors length = 0 first = None
+files keys = ['input_ids', 'token_logprobs', 'topk_logprobs', 'topk_ids', 'hidden_0', 'hidden_1', 'hidden_2', 'hidden_3', 'hidden_4', 'hidden_5', 'hidden_6', 'hidden_7', 'hidden_8', 'hidden_9', 'hidden_10', 'hidden_11', 'hidden_12', 'hidden_13', 'hidden_14', 'hidden_15']
+padding right; positions >= length are padding
+
+FILES gen_1_acts ['hidden_last_prompt.npy', 'hidden_mean_answer.npy', 'mlp_last_prompt.npy', 'mlp_mean_answer.npy', 'index.json']
+index.json type = dict
+keys: ['layers', 'mlp_layers', 'samples', 'files']
+layers length = 6 first = 4
+mlp_layers length = 5 first = 4
+samples length = 96 first = {'item': 'gsm8k_train_2805', 'sample': 0, 'correct': True, 'tokens': 1435}
+files keys = ['hidden_last_prompt.npy', 'hidden_mean_answer.npy', 'mlp_last_prompt.npy', 'mlp_mean_answer.npy']
+
+[harness: 8 repeated lines not shown (a line is shown at most 2 times per output)]
+```

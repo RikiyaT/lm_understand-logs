@@ -1,0 +1,9 @@
+[note from the experimenters] Correction to the generation-pass summaries: the failure count "no_answer_finished" now counts only answers in which the grader finds no final answer at all under your evaluation's grading rule; until now it also counted answers whose stated final answer was wrong. Earlier summaries in this session over-counted that category.
+
+OUTPUT of Python run 15 of at most 300:
+```
+Success-associated layer-11 units: [{'unit': 654, 't': 4.77, 'value_to_format_activity': 1.45, 'correct_mean': -0.059, 'failed_mean': -0.0557}, {'unit': 491, 't': 3.34, 'value_to_format_activity': 1.41, 'correct_mean': -0.0382, 'failed_mean': -0.0373}, {'unit': 669, 't': -2.82, 'value_to_format_activity': 1.43, 'correct_mean': 0.0437, 'failed_mean': 0.0407}, {'unit': 1330, 't': -2.57, 'value_to_format_activity': 1.41, 'correct_mean': 0.043, 'failed_mean': 0.0398}, {'unit': 124, 't': 2.45, 'value_to_format_activity': 1.94, 'correct_mean': -0.0065, 'failed_mean': -0.0041}, {'unit': 823, 't': 2.41, 'value_to_format_activity': 1.27, 'correct_mean': -0.009, 'failed_mean': -0.0077}, {'unit': 10, 't': -2.23, 'value_to_format_activity': 1.22, 'correct_mean': 0.0118, 'failed_mean': 0.0108}, {'unit': 1923, 't': -2.14, 'value_to_format_activity': 1.41, 'correct_mean': 0.0183, 'failed_mean': 0.0174}, {'unit': 1911, 't': -2.05, 'value_to_format_activity': 2.03, 'correct_mean': 0.0156, 'failed_mean': 0.015}, {'unit': 1096, 't': 2.04, 'value_to_format_activity': 2.01, 'correct_mean': -0.0206, 'failed_mean': -0.0191}, {'unit': 872, 't': 2.04, 'value_to_format_activity': 1.32, 'correct_mean': -0.0244, 'failed_mean': -0.0227}]
+{'tensor': 'model.layers.11.mlp.down_proj.weight', 'columns': [654, 491, 669, 1330, 124, 823, 10, 1923, 1911, 1096, 872], 'suppression_alpha': -1.0, 'relative_frobenius_change': 0.07471233606338501}
+'Layer-11 hypothesis prepared from fixed DEV evidence.'
+
+```

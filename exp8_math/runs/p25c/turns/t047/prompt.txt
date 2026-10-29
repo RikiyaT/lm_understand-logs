@@ -1,0 +1,46 @@
+OUTPUT of Python run 25 of at most 300:
+```
+Half-strength paired result: {'n': 64, 'problems': 64, 'original_correct': 9, 'edited_correct': 14, 'gain_pp': 7.8125, 'SE_sample_pp': 6.793688531942543, 'SE_problem_pp': 6.793688531942543, 'wrong_to_right': 12, 'right_to_wrong': 7}
+original {'mean_repeat_fraction': 0.705, 'median_correct_tokens': 7209.0, 'mean_tokens': 29501.546875, 'thinking_closures': 8}
+half-strength {'mean_repeat_fraction': 0.638, 'median_correct_tokens': 7297.5, 'mean_tokens': 27919.5625, 'thinking_closures': 12}
+RESCUED ('gsm8k_train_188', 0) tokens 723 excerpt Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *  ... David\text{'s glasses} + William\text{'s glasses}$$
+    $$Total\text{ glasses} = 2 + 8$$
+    $$Total\text{ glasses} = 10$$
+
+There were a total of **10** glasses broken.
+
+\boxed{10}
+RESCUED ('gsm8k_train_1974', 0) tokens 11199 excerpt Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *  ... text{Percentage Increase} = \left( \frac{15}{10} \right) \times 100\% $$
+$$ \text{Percentage Increase} = 1.5 \times 100\% $$
+$$ \text{Percentage Increase} = 150\% $$
+
+\boxed{150\%}
+RESCUED ('gsm8k_train_2558', 0) tokens 5458 excerpt Here's a thinking process that leads to the solution:
+
+    *  ... t.
+    $$\frac{\text{Total Spools}}{\text{Spools per Beret}} = \frac{33}{3} = 11$$
+
+Since James has exactly 33 spools and needs 3 for each beret, he can make 11 berets.
+
+\boxed{11}
+RESCUED ('gsm8k_train_4650', 0) tokens 32768 excerpt Here's a thinking process that leads to the solution:
+
+    *  ... ats 2 sandwiches *on Saturday*?
+    Yes.
+    
+    Okay.
+    
+    Wait, I should check if "Sally eats 2 sandwiches" means she eats 2 sandwiches *on Saturday*?
+    Yes.
+    
+    Okay
+Installed full-ablation recipe: [{'tensor': 'model.language_model.layers.15.self_attn.o_proj.weight', 'columns': [1792, 2048], 'head': 7, 'multiplier': 0.0}]
+
+[harness: 2 repeated lines not shown (a line is shown at most 2 times per output)]
+```

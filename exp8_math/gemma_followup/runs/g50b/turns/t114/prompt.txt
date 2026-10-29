@@ -1,0 +1,53 @@
+Forward pass 49 of 50 done (generate); results in /work/gen_49_original.jsonl and /work/gen_49_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_49_original.jsonl",
+  "edited": "/work/gen_49_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.0966796875,
+  "accuracy_by_source": {
+   "math": 0.0967
+  },
+  "mean_tokens": 1570,
+  "cut_share": 0.0762,
+  "failures": {
+   "wrong_answer": 847,
+   "no_answer_finished": 2,
+   "cut_at_max_tokens": 76
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.11328125,
+  "accuracy_by_source": {
+   "math": 0.1133
+  },
+  "mean_tokens": 1735,
+  "cut_share": 0.0986,
+  "failures": {
+   "wrong_answer": 807,
+   "no_answer_finished": 3,
+   "cut_at_max_tokens": 98
+  }
+ },
+ "paired": {
+  "items": 32,
+  "accuracy_difference": 0.0166,
+  "standard_error": 0.0063,
+  "samples_wrong_to_right": 46,
+  "samples_right_to_wrong": 29
+ },
+ "s": 225.6
+}
+```
+Forward passes left: 1.
+Edits used in this pass: model.layers.11.mlp.down_proj.weight, model.layers.11.self_attn.o_proj.weight (edit hash 399af7b267).

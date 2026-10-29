@@ -1,0 +1,7 @@
+OUTPUT of Python run 21 of at most 300:
+```
+Reasoning-region log probabilities: {'shared_arithmetic': {'original': -1.2768008708953857, 'edited': -1.251708984375, 'delta': 0.025091953575611115, 'tokens': 43}, 'productive_checks': {'original': -1.5127465724945068, 'edited': -1.5048948526382446, 'delta': 0.00785169005393982, 'tokens': 250}, 'repeated_checks': {'original': -0.10948657244443893, 'edited': -0.14125174283981323, 'delta': -0.031765166670084, 'tokens': 360}, 'established_loop': {'original': -0.01298285461962223, 'edited': -0.030172891914844513, 'delta': -0.01719004102051258, 'tokens': 288}}
+Loop-associated downstream neurons (original,edited mean in loop): {22: (3.051, 1.494), 94: (2.256, 1.476), 317: (1.353, 1.298), 495: (0.932, 0.795), 162: (1.102, 1.343)}
+Recorded paired development pass; active edits: ['model.language_model.layers.15.self_attn.o_proj.weight']
+
+```

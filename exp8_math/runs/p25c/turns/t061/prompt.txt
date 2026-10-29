@@ -1,0 +1,7 @@
+OUTPUT of Python run 32 of at most 300:
+```
+Reversed-head region logprob deltas: {'shared_arithmetic': 0.04804, 'productive_checks': 0.00123, 'repeated_checks': -0.14245, 'established_loop': -0.11873}
+Loop-associated neuron means: {22: 0.224, 94: 0.817, 317: 1.18, 495: 0.501, 162: 1.4}
+Recorded development trial: [{'tensor': 'model.language_model.layers.15.self_attn.o_proj.weight', 'columns': [1792, 2048], 'head': 7, 'multiplier': -0.5}]
+
+```

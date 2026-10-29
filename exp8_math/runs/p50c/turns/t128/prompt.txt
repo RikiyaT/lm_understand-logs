@@ -1,0 +1,29 @@
+OUTPUT of Python run 65 of at most 300:
+```
+BATCH {'items': 64, 'original_accuracy': 0.078125, 'edited_accuracy': 0.546875, 'gain': 0.46875, 'se': 0.06669921080659218, 'rescues': 31, 'losses': 1, 'by_source': {'gsm8k': {'original': 0.09375, 'edited': 0.71875, 'difference': 0.625}, 'math': {'original': 0.0625, 'edited': 0.375, 'difference': 0.3125}}}
+POOLED {'items': 256, 'original_accuracy': 0.06640625, 'edited_accuracy': 0.5625, 'gain': 0.49609375, 'se': 0.031795747724754415, 'rescues': 128, 'losses': 1, 'by_source': {'gsm8k': {'original': 0.0859375, 'edited': 0.6875, 'difference': 0.6015625}, 'math': {'original': 0.046875, 'edited': 0.4375, 'difference': 0.390625}}}
+NEXT REQUEST
+{"type": "generate", "model": "both", "problems": ["gsm8k_train_1133", "gsm8k_train_5435", "gsm8k_train_4392", "gsm8k_train_5812", "gsm8k_train_7134", "gsm8k_train_6888", "gsm8k_train_5574", "gsm8k_train_2303", "gsm8k_train_7131", "gsm8k_train_6509", "gsm8k_train_7387", "gsm8k_train_7415", "gsm8k_train_2891", "gsm8k_train_5731", "gsm8k_train_1411", "gsm8k_train_7350", "gsm8k_train_6706", "gsm8k_train_3197", "gsm8k_train_944", "gsm8k_train_5434", "gsm8k_train_3341", "gsm8k_train_4668", "gsm8k_train_2963", "gsm8k_train_6710", "gsm8k_train_5867", "gsm8k_train_6529", "gsm8k_train_3203", "gsm8k_train_723", "gsm8k_train_6675", "gsm8k_train_811", "gsm8k_train_3923", "gsm8k_train_6443", "math_train_prealgebra_653", "math_train_algebra_737", "math_train_algebra_632", "math_train_algebra_1539", "math_train_geometry_261", "math_train_intermediate_algebra_652", "math_train_algebra_1076", "math_train_geometry_298", "math_train_counting_and_probability_626", "math_train_precalculus_526", "math_train_prealgebra_931", "math_train_precalculus_182", "math_train_intermediate_algebra_502", "math_train_algebra_800", "math_train_number_theory_315", "math_train_algebra_1058", "math_train_number_theory_142", "math_train_intermediate_algebra_501", "math_train_number_theory_78", "math_train_prealgebra_837", "math_train_geometry_46", "math_train_intermediate_algebra_945", "math_train_prealgebra_91", "math_train_counting_and_probability_490", "math_train_algebra_1702", "math_train_counting_and_probability_534", "math_train_geometry_645", "math_train_algebra_1288", "math_train_number_theory_442", "math_train_counting_and_probability_269", "math_train_precalculus_265", "math_train_intermediate_algebra_705"], "n": 1, "max_tokens": 32768}
+CONFIRMATION BEHAVIOR {"original": {"n": 256, "correct": 17, "cut": 241, "whitespace_tail": 0, "correct_thinking_close": 15, "correct_close_after_1000_chars": 15, "median_correct_tokens": 5741.0, "mean_tail_duplicate8_cut": 0.9644941090106519, "mean_tail_duplicate8_finished": 0.03232360049371884}, "edited": {"n": 256, "correct": 144, "cut": 60, "whitespace_tail": 15, "correct_thinking_close": 144, "correct_close_after_1000_chars": 144, "median_correct_tokens": 9836.0, "mean_tail_duplicate8_cut": 0.2875480849640407, "mean_tail_duplicate8_finished": 0.18102559916511463}}
+REGRESSION gsm8k_train_3844
+original {'pred': '20.00', 'correct': True, 'tokens': 32768, 'cut': True}
+tail: ning.
+    I'll write the solution.
+    I'll write the reasoning.
+    I'll write the solution.
+    I'll write the reasoning.
+    I'll write the reasoning
+edited {'pred': '10', 'correct': False, 'tokens': 10235, 'cut': False}
+tail: per knife.
+
+$$ \text{Cost per knife} = \frac{\text{Total cost}}{\text{Total number of knives}} $$
+$$ \text{Cost per knife} = \frac{80}{8} $$
+$$ \text{Cost per knife} = 10 $$
+
+**Conclusion:**
+Each single steak knife costs $10.00.
+
+\boxed{10}
+
+[harness: 3 repeated lines not shown (a line is shown at most 2 times per output)]
+```

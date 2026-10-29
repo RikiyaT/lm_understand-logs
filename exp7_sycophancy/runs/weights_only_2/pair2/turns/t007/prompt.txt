@@ -1,0 +1,47 @@
+OUTPUT of run 6 of at most 60:
+```
+CANDIDATE ATTENTION GEOMETRY
+Metric comparisons concern weight-dependent quadratic terms; common epsilon terms are not included.
+L11 H0 QK_rel=0.04858 QK_angular_share=0.999950 Qmetric_rel=0.00422 Kmetric_rel=0.00796 OV_rel=0.01253 OV_angular_share=0.999367
+L11 H1 QK_rel=0.04260 QK_angular_share=0.999973 Qmetric_rel=0.00431 Kmetric_rel=0.00796 OV_rel=0.02185 OV_angular_share=0.999956
+L12 H2 QK_rel=0.02951 QK_angular_share=0.997989 Qmetric_rel=0.00542 Kmetric_rel=0.00515 OV_rel=0.00958 OV_angular_share=1.000000
+L11 H3 QK_rel=0.02650 QK_angular_share=0.999982 Qmetric_rel=0.00574 Kmetric_rel=0.00796 OV_rel=0.00826 OV_angular_share=0.999988
+L05 H3 QK_rel=0.02532 QK_angular_share=0.999343 Qmetric_rel=0.00482 Kmetric_rel=0.00257 OV_rel=0.01681 OV_angular_share=0.982444
+L17 H1 QK_rel=0.02835 QK_angular_share=0.999625 Qmetric_rel=0.00405 Kmetric_rel=0.00284 OV_rel=0.01544 OV_angular_share=0.999999
+L10 H1 QK_rel=0.03495 QK_angular_share=0.999997 Qmetric_rel=0.00272 Kmetric_rel=0.00434 OV_rel=0.01198 OV_angular_share=0.999959
+L04 H1 QK_rel=0.01827 QK_angular_share=0.999989 Qmetric_rel=0.00305 Kmetric_rel=0.00374 OV_rel=0.03206 OV_angular_share=0.999971
+L04 H2 QK_rel=0.01610 QK_angular_share=0.999987 Qmetric_rel=0.00310 Kmetric_rel=0.00374 OV_rel=0.02293 OV_angular_share=0.998603
+L04 H0 QK_rel=0.01424 QK_angular_share=0.999996 Qmetric_rel=0.00423 Kmetric_rel=0.00374 OV_rel=0.02145 OV_angular_share=0.999994
+L08 H2 QK_rel=0.01756 QK_angular_share=0.999952 Qmetric_rel=0.00353 Kmetric_rel=0.00391 OV_rel=0.02038 OV_angular_share=0.998792
+L15 H1 QK_rel=0.01413 QK_angular_share=0.994043 Qmetric_rel=0.00482 Kmetric_rel=0.00405 OV_rel=0.01813 OV_angular_share=0.999712
+L15 H2 QK_rel=0.01855 QK_angular_share=0.998882 Qmetric_rel=0.00455 Kmetric_rel=0.00405 OV_rel=0.01944 OV_angular_share=0.999967
+
+ALL-HEAD ANGULAR-SHARE QUANTILES
+qk [0.9915 0.9996 1.     1.     1.    ]
+ov [0.9782 0.9974 0.9995 0.9999 1.    ]
+qmetric [0.9699 0.9978 0.9994 0.9999 1.    ]
+kmetric [0.9668 0.9984 0.9994 0.9998 1.    ]
+
+MLP FACTOR DIFFERENCE: ENERGY ORTHOGONAL TO EACH UNIT'S MIDPOINT FACTOR
+This separates directional changes from per-unit scalar rescaling.
+layer gate_orthogonal_share up_orthogonal_share down_orthogonal_share
+0 0.996673 0.997214 0.808536
+1 0.997405 0.997835 0.784413
+2 0.996943 0.997292 0.842055
+3 0.995466 0.995367 0.869475
+4 0.994230 0.994487 0.607370
+5 0.994705 0.995001 0.656311
+6 0.994537 0.995137 0.590058
+7 0.993346 0.993786 0.722796
+8 0.993005 0.993500 0.804142
+9 0.989298 0.990109 0.940265
+10 0.981981 0.981348 0.981955
+11 0.980860 0.980236 0.991516
+12 0.981680 0.981414 0.994456
+13 0.979968 0.979071 0.995738
+14 0.978283 0.978483 0.996691
+15 0.977907 0.979166 0.996455
+16 0.977646 0.976441 0.994820
+17 0.978737 0.977545 0.995525
+
+```

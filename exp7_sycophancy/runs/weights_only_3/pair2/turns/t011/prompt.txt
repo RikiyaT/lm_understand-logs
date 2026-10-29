@@ -1,0 +1,125 @@
+OUTPUT of run 9 of at most 60:
+```
+Completed layer 0
+Completed layer 1
+Completed layer 2
+Completed layer 3
+Completed layer 4
+Completed layer 5
+Completed layer 6
+Completed layer 7
+Completed layer 8
+Completed layer 9
+Completed layer 10
+Completed layer 11
+Completed layer 12
+Completed layer 13
+Completed layer 14
+Completed layer 15
+Completed layer 16
+Completed layer 17
+
+=== DISTRIBUTED UPDATE-SUBSPACE TEST ===
+All covariance matrices are constructed from weights only.
+Reading/writing family covariances are trace-normalized before averaging.
+Controls preserve per-layer covariance spectra, coordinate energies,
+and within-layer read/write alignment; they disrupt cross-layer signs.
+Midpoint means (A+B)/2, NOT the unavailable starting checkpoint.
+Metrics:
+  [joint top1 share, joint top8 share, participation rank,
+   mean forward off-diagonal covariance cosine, maximum forward cosine]
+These are structural diagnostics, not behavioral tests.
+
+MODE: raw
+Observed updates:        [  0.0177   0.0822 323.624    0.0244   0.0878]
+Midpoint reference:      [  0.0047   0.0275 596.5142  -0.0002   0.1376]
+Control median:          [  0.0053   0.0388 487.5873  -0.       0.0065]
+Control 5th percentile:  [  0.0052   0.0385 487.1152  -0.0003   0.0053]
+Control 95th percentile: [  0.0055   0.0391 488.335    0.0003   0.0118]
+Empirical positions:     [1. 1. 0. 1. 1.]
+The maximum statistic is compared against control maxima,
+rather than treating the strongest selected pair as pre-specified.
+
+Fraction of each layer's normalized update covariance
+captured by the global eight-dimensional subspace:
+L | reading writing
+ 0 | 0.0465 0.0265
+ 1 | 0.0529 0.0405
+ 2 | 0.0534 0.0362
+ 3 | 0.0565 0.0385
+ 4 | 0.0692 0.0393
+ 5 | 0.1011 0.0466
+ 6 | 0.1076 0.0572
+ 7 | 0.1367 0.0728
+ 8 | 0.1395 0.0738
+ 9 | 0.1570 0.0686
+10 | 0.1485 0.0529
+11 | 0.1303 0.0534
+12 | 0.1353 0.0484
+13 | 0.1474 0.0511
+14 | 0.1449 0.0680
+15 | 0.1212 0.0662
+16 | 0.1015 0.0951
+17 | 0.0768 0.0973
+
+Top ten earlier-write / later-read covariance alignments:
+L9.write -> L10.read: offdiag_cosine=+0.08781, total_overlap=0.003127, diagonal_only_overlap=0.001563
+L15.write -> L16.read: offdiag_cosine=+0.08225, total_overlap=0.002608, diagonal_only_overlap=0.001560
+L9.write -> L11.read: offdiag_cosine=+0.07942, total_overlap=0.002923, diagonal_only_overlap=0.001563
+L8.write -> L9.read: offdiag_cosine=+0.07361, total_overlap=0.002963, diagonal_only_overlap=0.001567
+L8.write -> L10.read: offdiag_cosine=+0.07176, total_overlap=0.002886, diagonal_only_overlap=0.001566
+L10.write -> L11.read: offdiag_cosine=+0.07054, total_overlap=0.002787, diagonal_only_overlap=0.001568
+L12.write -> L13.read: offdiag_cosine=+0.07012, total_overlap=0.002679, diagonal_only_overlap=0.001559
+L11.write -> L12.read: offdiag_cosine=+0.06954, total_overlap=0.002638, diagonal_only_overlap=0.001563
+L5.write -> L6.read: offdiag_cosine=+0.06923, total_overlap=0.002622, diagonal_only_overlap=0.001562
+L6.write -> L7.read: offdiag_cosine=+0.06637, total_overlap=0.002680, diagonal_only_overlap=0.001564
+
+MODE: diag
+Observed updates:        [ 0.1     0.2722 48.026   0.0009  0.0127]
+Midpoint reference:      [ 0.1042  0.2385 50.9658 -0.0007  0.0018]
+Control median:          [ 0.0979  0.2453 50.7182  0.      0.0007]
+Control 5th percentile:  [ 0.0935  0.2442 50.3145 -0.      0.0005]
+Control 95th percentile: [ 0.1029  0.2463 50.8698  0.      0.0012]
+Empirical positions:     [0.7708 1.     0.     1.     1.    ]
+The maximum statistic is compared against control maxima,
+rather than treating the strongest selected pair as pre-specified.
+
+Fraction of each layer's normalized update covariance
+captured by the global eight-dimensional subspace:
+L | reading writing
+ 0 | 0.0254 0.7231
+ 1 | 0.0330 0.4956
+ 2 | 0.0378 0.5901
+ 3 | 0.0416 0.5793
+ 4 | 0.0214 0.8997
+ 5 | 0.0519 0.8224
+ 6 | 0.0854 0.7500
+ 7 | 0.1518 0.6170
+ 8 | 0.1603 0.5262
+ 9 | 0.2035 0.3306
+10 | 0.2625 0.1362
+11 | 0.2930 0.0747
+12 | 0.2720 0.0561
+13 | 0.2584 0.0452
+14 | 0.2758 0.0550
+15 | 0.2485 0.0662
+16 | 0.2396 0.0853
+17 | 0.2072 0.0763
+
+Top ten earlier-write / later-read covariance alignments:
+L8.write -> L9.read: offdiag_cosine=+0.01270, total_overlap=0.000474, diagonal_only_overlap=0.000248
+L7.write -> L8.read: offdiag_cosine=+0.01057, total_overlap=0.000362, diagonal_only_overlap=0.000231
+L7.write -> L9.read: offdiag_cosine=+0.00985, total_overlap=0.000323, diagonal_only_overlap=0.000189
+L9.write -> L10.read: offdiag_cosine=+0.00655, total_overlap=0.000321, diagonal_only_overlap=0.000169
+L8.write -> L10.read: offdiag_cosine=+0.00549, total_overlap=0.000227, diagonal_only_overlap=0.000124
+L7.write -> L10.read: offdiag_cosine=+0.00435, total_overlap=0.000175, diagonal_only_overlap=0.000113
+L6.write -> L7.read: offdiag_cosine=+0.00428, total_overlap=0.000260, diagonal_only_overlap=0.000156
+L10.write -> L11.read: offdiag_cosine=+0.00302, total_overlap=0.000132, diagonal_only_overlap=0.000074
+L6.write -> L8.read: offdiag_cosine=+0.00297, total_overlap=0.000216, diagonal_only_overlap=0.000148
+L9.write -> L11.read: offdiag_cosine=+0.00277, total_overlap=0.000121, diagonal_only_overlap=0.000064
+
+Shared update geometry could support distributed localization,
+but does not identify the direction as agreement or correctness.
+No hidden states, nonlinear layers, or model outputs were evaluated.
+
+```

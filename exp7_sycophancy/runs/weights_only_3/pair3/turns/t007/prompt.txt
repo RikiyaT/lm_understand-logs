@@ -1,0 +1,64 @@
+OUTPUT of run 6 of at most 60:
+```
+=== TOP 16 HEADS BY MEDIAN POSITION-DEPENDENT QK-COEFFICIENT CHANGE ===
+L11H0 zero=0.04416 median=0.04102 range=[0.03038,0.04452] max_at=1 magnitude_removed=0.04102 Q_ratio=0.576 sharedK_ratio=0.802 Q_K_cos=+0.022
+L11H1 zero=0.04006 median=0.03571 range=[0.02974,0.04006] max_at=0 magnitude_removed=0.03571 Q_ratio=0.471 sharedK_ratio=0.849 Q_K_cos=+0.061
+L12H2 zero=0.03036 median=0.03036 range=[0.02325,0.03226] max_at=16 magnitude_removed=0.03036 Q_ratio=0.859 sharedK_ratio=0.511 Q_K_cos=-0.002
+L12H3 zero=0.02994 median=0.02986 range=[0.02315,0.03108] max_at=16 magnitude_removed=0.02986 Q_ratio=0.858 sharedK_ratio=0.456 Q_K_cos=+0.066
+L12H0 zero=0.02834 median=0.02834 range=[0.02408,0.02931] max_at=16 magnitude_removed=0.02834 Q_ratio=0.833 sharedK_ratio=0.497 Q_K_cos=+0.080
+L11H3 zero=0.02530 median=0.02519 range=[0.02224,0.02530] max_at=0 magnitude_removed=0.02519 Q_ratio=0.578 sharedK_ratio=0.806 Q_K_cos=+0.014
+L14H2 zero=0.02422 median=0.02347 range=[0.01692,0.02422] max_at=0 magnitude_removed=0.02346 Q_ratio=0.862 sharedK_ratio=0.414 Q_K_cos=+0.110
+L17H1 zero=0.02902 median=0.02341 range=[0.01936,0.02913] max_at=1 magnitude_removed=0.02341 Q_ratio=0.769 sharedK_ratio=0.524 Q_K_cos=+0.201
+L10H1 zero=0.03597 median=0.02318 range=[0.01814,0.03785] max_at=1 magnitude_removed=0.02318 Q_ratio=0.760 sharedK_ratio=0.609 Q_K_cos=+0.028
+L05H0 zero=0.02317 median=0.02295 range=[0.02112,0.02320] max_at=1 magnitude_removed=0.02295 Q_ratio=0.889 sharedK_ratio=0.384 Q_K_cos=+0.092
+L14H1 zero=0.02871 median=0.02292 range=[0.01594,0.02871] max_at=1 magnitude_removed=0.02292 Q_ratio=0.841 sharedK_ratio=0.504 Q_K_cos=+0.059
+L12H1 zero=0.02282 median=0.02282 range=[0.01934,0.02497] max_at=16 magnitude_removed=0.02281 Q_ratio=0.832 sharedK_ratio=0.551 Q_K_cos=+0.001
+L05H3 zero=0.02195 median=0.02181 range=[0.01987,0.02197] max_at=1 magnitude_removed=0.02181 Q_ratio=0.893 sharedK_ratio=0.371 Q_K_cos=+0.092
+L14H3 zero=0.02374 median=0.02061 range=[0.01489,0.02374] max_at=0 magnitude_removed=0.02061 Q_ratio=0.810 sharedK_ratio=0.507 Q_K_cos=+0.115
+L06H2 zero=0.02390 median=0.02001 range=[0.01370,0.02415] max_at=1 magnitude_removed=0.02001 Q_ratio=0.640 sharedK_ratio=0.738 Q_K_cos=+0.048
+L10H0 zero=0.02145 median=0.01907 range=[0.01338,0.02156] max_at=1 magnitude_removed=0.01907 Q_ratio=0.705 sharedK_ratio=0.676 Q_K_cos=+0.047
+
+=== PER-LAYER POSITION-DEPENDENT SUMMARY ===
+layer type mean_head_median largest_head_median head
+ 0 sliding_attention 0.009308 0.011366 0
+ 1 sliding_attention 0.010685 0.013216 2
+ 2 sliding_attention 0.010776 0.012909 3
+ 3 sliding_attention 0.011056 0.016547 1
+ 4 sliding_attention 0.013340 0.014094 1
+ 5 full_attention    0.019506 0.022948 0
+ 6 sliding_attention 0.016508 0.020007 2
+ 7 sliding_attention 0.014175 0.017031 3
+ 8 sliding_attention 0.013308 0.015144 2
+ 9 sliding_attention 0.015538 0.017872 0
+10 sliding_attention 0.017633 0.023181 1
+11 full_attention    0.030085 0.041020 0
+12 sliding_attention 0.027845 0.030364 2
+13 sliding_attention 0.016159 0.017666 1
+14 sliding_attention 0.021088 0.023466 2
+15 sliding_attention 0.015107 0.018091 0
+16 sliding_attention 0.013563 0.015346 1
+17 full_attention    0.016662 0.023411 1
+
+=== ROTARY-FREQUENCY COEFFICIENT BANDS FOR TOP 10 HEADS ===
+Bands go from higher to lower rotary frequency.
+Each entry: share of summed per-frequency difference energy, relative change.
+L11H0  000-031:(10.02%,0.02706) 032-063:(30.75%,0.02745) 064-095:(47.42%,0.02914) 096-127:(11.81%,0.03175)
+L11H1  000-031:(19.15%,0.02690) 032-063:(27.78%,0.02707) 064-095:(42.93%,0.02609) 096-127:(10.14%,0.02524)
+L12H2  000-031:(4.04%,0.04613) 032-063:(11.03%,0.02986) 064-095:(29.93%,0.02239) 096-127:(55.00%,0.02245)
+L12H3  000-031:(3.22%,0.05441) 032-063:(9.20%,0.03088) 064-095:(28.94%,0.02203) 096-127:(58.64%,0.02033)
+L12H0  000-031:(4.16%,0.05050) 032-063:(10.23%,0.03128) 064-095:(32.82%,0.02465) 096-127:(52.78%,0.01976)
+L11H3  000-031:(5.53%,0.03525) 032-063:(25.86%,0.02772) 064-095:(42.93%,0.02572) 096-127:(25.69%,0.01487)
+L14H2  000-031:(2.84%,0.02281) 032-063:(9.01%,0.02249) 064-095:(29.22%,0.01610) 096-127:(58.94%,0.01345)
+L17H1  000-031:(5.93%,0.02551) 032-063:(11.02%,0.01795) 064-095:(42.01%,0.02214) 096-127:(41.04%,0.02300)
+L10H1  000-031:(9.50%,0.01753) 032-063:(13.02%,0.01712) 064-095:(38.96%,0.01606) 096-127:(38.53%,0.01818)
+L05H0  000-031:(0.72%,0.02711) 032-063:(3.29%,0.01726) 064-095:(19.93%,0.01079) 096-127:(76.07%,0.01880)
+
+Same-position vs median-position ordinal-rank correlation: 0.9691620039873948
+Elapsed: 13.6s
+
+All operations were on weight matrices and fixed architectural rotary coefficients.
+Neither attention normalization denominators nor attention scores for any input
+were evaluated. The observed Q/K contribution ratios are algebraic, not causal.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

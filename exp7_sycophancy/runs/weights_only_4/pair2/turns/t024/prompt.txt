@@ -1,0 +1,81 @@
+OUTPUT of run 20 of at most 60:
+```
+=== SEMANTIC DIRECTIONS CONSTRUCTED FROM TOKEN WEIGHTS ===
+verbs positive: ['think', 'believe', 'guess', 'assume'] negative: ['compute', 'verify', 'check', 'derive'] available spelling counts: [('think', 5), ('believe', 4), ('guess', 4), ('assume', 4), ('compute', 4), ('verify', 4), ('check', 6), ('derive', 3)]
+nouns positive: ['opinion', 'belief', 'assumption', 'impression'] negative: ['fact', 'evidence', 'truth', 'proof'] available spelling counts: [('opinion', 4), ('belief', 3), ('assumption', 4), ('impression', 3), ('fact', 6), ('evidence', 5), ('truth', 4), ('proof', 5)]
+agreement positive: ['agree', 'agreed', 'accept', 'accepted', 'affirm', 'affirmed'] negative: ['disagree', 'disagreed', 'reject', 'rejected', 'deny', 'denied'] available spelling counts: [('agree', 4), ('agreed', 2), ('accept', 6), ('accepted', 5), ('affirm', 3), ('affirmed', 1), ('disagree', 2), ('disagreed', 1), ('reject', 4), ('rejected', 4), ('deny', 2), ('denied', 2)]
+affirmation positive: ['yes', 'indeed', 'certainly', 'absolutely'] negative: ['no', 'however', 'actually', 'instead'] available spelling counts: [('yes', 6), ('indeed', 4), ('certainly', 3), ('absolutely', 4), ('no', 6), ('however', 5), ('actually', 4), ('instead', 4)]
+
+=== TEST DEFINITION ===
+Statistic: output agreement contrast x delta(weight product) x input belief contrast.
+Positive favors B in this static semantic coupling; negative favors A.
+Randomization shuffles category labels within the same word panels.
+These are weight-space specificity controls, NOT model performance tests.
+
+=== STRONGEST SEMANTIC-COUPLING DIFFERENCES ===
+Search correction covers all components, both scaling conventions, and four panel pairs.
+L01 down_up    bare     verbs->agreement   delta=-0.00059102, z=-4.426, single_p=0.0007, search_p=0.0271
+L09H0          bare     nouns->agreement   delta=+0.00029159, z=+4.351, single_p=0.0002, search_p=0.0354
+L06H1          bare     nouns->agreement   delta=-0.00031813, z=-4.248, single_p=0.0002, search_p=0.0566
+L11 down_up    diagonal verbs->agreement   delta=+6.5503, z=+4.219, single_p=0.0002, search_p=0.0610
+L08 down_up    diagonal nouns->agreement   delta=-1.1092, z=-4.103, single_p=0.0007, search_p=0.0866
+L15 down_up    bare     nouns->agreement   delta=-0.00057683, z=-3.752, single_p=0.0005, search_p=0.2443
+L00H1          diagonal verbs->agreement   delta=+0.058447, z=+3.712, single_p=0.0010, search_p=0.2741
+L07 down_gate  diagonal nouns->agreement   delta=-0.86403, z=-3.702, single_p=0.0007, search_p=0.2824
+L09 down_gate  diagonal verbs->agreement   delta=+0.84584, z=+3.697, single_p=0.0002, search_p=0.2851
+L06H1          bare     nouns->affirmation delta=-0.00037505, z=-3.611, single_p=0.0017, search_p=0.3576
+L09 down_gate  bare     verbs->agreement   delta=+0.00052426, z=+3.568, single_p=0.0005, search_p=0.3983
+L12 down_gate  diagonal verbs->agreement   delta=+6.3427, z=+3.559, single_p=0.0027, search_p=0.4025
+L12H0          diagonal verbs->agreement   delta=-9.24, z=-3.464, single_p=0.0007, search_p=0.4857
+L16 down_gate  bare     verbs->agreement   delta=+0.00056907, z=+3.455, single_p=0.0015, search_p=0.4918
+L12H1          diagonal nouns->agreement   delta=-9.4606, z=-3.404, single_p=0.0002, search_p=0.5467
+L09H3          bare     nouns->agreement   delta=+0.00015071, z=+3.378, single_p=0.0012, search_p=0.5733
+L02H0          diagonal nouns->agreement   delta=+0.37639, z=+3.368, single_p=0.0022, search_p=0.5812
+L08 down_up    bare     nouns->agreement   delta=-0.00047551, z=-3.294, single_p=0.0012, search_p=0.6546
+
+=== PREVIOUS CANDIDATES: ROBUSTNESS ACROSS VOCABULARY PANELS ===
+Column order: [('verbs', 'agreement'), ('verbs', 'affirmation'), ('nouns', 'agreement'), ('nouns', 'affirmation')]
+L12H1          bare     z= [ 1.3472 -2.3623  0.8806 -0.6698]
+L12H1          diagonal z= [-0.864  -2.2113 -3.4043 -0.1359]
+L15H2          bare     z= [-1.6131 -0.3792  0.7885 -0.9323]
+L15H2          diagonal z= [-2.2964  0.0285  1.2085 -0.9225]
+L16H1          bare     z= [ 0.1794 -0.7463 -0.5332 -1.2555]
+L16H1          diagonal z= [ 0.4869  0.4481  1.8795 -2.3523]
+L16H2          bare     z= [ 0.6709 -1.0699  0.6862  0.223 ]
+L16H2          diagonal z= [ 0.5064 -0.0242  1.1763 -1.4591]
+L16H3          bare     z= [-1.5666 -0.3884 -0.7156 -0.9639]
+L16H3          diagonal z= [-1.6026 -0.6158  0.2256 -2.5315]
+L17H3          bare     z= [ 0.9087 -2.2791  0.6138  2.3075]
+L17H3          diagonal z= [ 0.1117 -1.7231  2.7194 -1.2451]
+L05H3          bare     z= [-1.9138 -0.0134 -0.3606 -1.7735]
+L05H3          diagonal z= [1.7316 1.4297 2.3693 2.4123]
+L15 down_up    bare     z= [-1.7368 -0.1478 -3.7521 -0.9819]
+L15 down_up    diagonal z= [-2.1542  0.0965 -0.839  -0.1134]
+L15 down_gate  bare     z= [ 0.9254 -1.3298  0.3925  0.0268]
+L15 down_gate  diagonal z= [ 1.076  -0.3427  0.8256 -0.6967]
+L16 down_up    bare     z= [0.5769 1.3843 2.7601 1.7077]
+L16 down_up    diagonal z= [-0.2956  0.4158  0.169   0.9532]
+L16 down_gate  bare     z= [3.4551 1.5688 0.0687 0.8412]
+L16 down_gate  diagonal z= [ 1.5481  2.0545  0.6028 -0.5503]
+L17 down_up    bare     z= [ 1.1219 -1.5034 -1.1198 -1.3709]
+L17 down_up    diagonal z= [ 2.1327 -2.3331  0.8522 -0.7498]
+L17 down_gate  bare     z= [-0.8905  1.6111  0.7505  0.6252]
+L17 down_gate  diagonal z= [-0.1947 -0.0102 -1.8772  0.3925]
+
+=== COMPONENTS WITH THE SAME SIGN ACROSS ALL FOUR PANELS ===
+L08H2          bare     z= [3.0701 1.8643 1.207  2.0886] minimum_absolute_z=1.207
+L00H3          bare     z= [1.2978 1.8322 0.8745 0.8562] minimum_absolute_z=0.856
+L11H1          bare     z= [-1.2207 -0.881  -0.8263 -1.0081] minimum_absolute_z=0.826
+L11 down_gate  bare     z= [-1.411  -0.9483 -1.8632 -0.7511] minimum_absolute_z=0.751
+L06H0          bare     z= [-0.7491 -0.981  -1.7077 -1.1982] minimum_absolute_z=0.749
+L10 down_up    bare     z= [-1.8521 -0.5835 -1.2259 -1.7402] minimum_absolute_z=0.583
+L05H3          diagonal z= [1.7316 1.4297 2.3693 2.4123] minimum_absolute_z=1.430
+L09H2          diagonal z= [1.9986 3.0541 1.3841 1.4837] minimum_absolute_z=1.384
+L10H2          diagonal z= [-1.3702 -2.1718 -1.9697 -1.6338] minimum_absolute_z=1.370
+L06H1          diagonal z= [-1.117  -1.0712 -1.4834 -2.0604] minimum_absolute_z=1.071
+L08 down_up    diagonal z= [-0.904  -1.34   -4.1034 -2.4982] minimum_absolute_z=0.904
+L08H3          diagonal z= [1.0856 0.8424 0.8832 1.3651] minimum_absolute_z=0.842
+
+No contextual states, attention distributions, MLP gates, model outputs, or forward passes were computed.
+
+```

@@ -1,0 +1,62 @@
+OUTPUT of run 15 of at most 60:
+```
+NEW HYPOTHESIS: FREQUENCY-WISE GAIN/PHASE CHANGES EXPLAIN ATTENTION DIFFERENCES
+Orthogonal projections are computed entirely from weight-derived coefficients.
+Independent gain and phase changes are allowed at every rotary frequency.
+This does not evaluate positions, attention scores, or softmax.
+
+LAYER SUMMARY
+layer mean_gain_fraction mean_phase_fraction mean_orthogonal_fraction
+ 0           0.002171            0.001279                 0.996550
+ 1           0.001668            0.000826                 0.997506
+ 2           0.002230            0.001090                 0.996680
+ 3           0.002266            0.001554                 0.996180
+ 4           0.005965            0.000703                 0.993332
+ 5           0.004077            0.001937                 0.993985
+ 6           0.003459            0.001577                 0.994964
+ 7           0.004561            0.000929                 0.994511
+ 8           0.004476            0.000856                 0.994668
+ 9           0.005672            0.001271                 0.993058
+10           0.008419            0.001686                 0.989895
+11           0.010305            0.006746                 0.982949
+12           0.012000            0.006190                 0.981810
+13           0.012851            0.005421                 0.981728
+14           0.012656            0.003656                 0.983688
+15           0.018591            0.003573                 0.977836
+16           0.014350            0.004846                 0.980804
+17           0.017655            0.005026                 0.977318
+
+TOP TEN HEADS BY MATCHING-COEFFICIENT RELATIVE DIFFERENCE
+{"layer": 11, "head": 0, "coefficient_relative_difference": 0.029152881528954823, "frequencywise_gain_fraction": 0.012612248631933984, "frequencywise_phase_fraction": 0.006196562189469547, "orthogonal_fraction": 0.9811911891785965, "minimum_frequency_remainder_fraction": 0.9067756183107235, "top_difference_frequencies": [{"pair": 88, "difference_energy_share": 0.23345107941060345, "gain_fraction": 0.005358823867446467, "phase_fraction": 0.00348460353974154}, {"pair": 70, "difference_energy_share": 0.05627929263319739, "gain_fraction": 0.013670705345760023, "phase_fraction": 0.0015595063138785458}, {"pair": 60, "difference_energy_share": 0.03865159835933928, "gain_fraction": 0.013743047660100214, "phase_fraction": 0.0006811620201510988}]}
+{"layer": 11, "head": 1, "coefficient_relative_difference": 0.026593366159180582, "frequencywise_gain_fraction": 0.011579399927863785, "frequencywise_phase_fraction": 0.006015380930169302, "orthogonal_fraction": 0.9824052191419669, "minimum_frequency_remainder_fraction": 0.8893250311964315, "top_difference_frequencies": [{"pair": 88, "difference_energy_share": 0.15576840093179667, "gain_fraction": 0.0032406801623936212, "phase_fraction": 0.0038556844835705454}, {"pair": 70, "difference_energy_share": 0.06046593959686218, "gain_fraction": 0.0083757889563595, "phase_fraction": 0.0007938684272395444}, {"pair": 60, "difference_energy_share": 0.02985112671988391, "gain_fraction": 0.006058044480009059, "phase_fraction": 7.40372417137607e-05}]}
+{"layer": 12, "head": 2, "coefficient_relative_difference": 0.022449184213714272, "frequencywise_gain_fraction": 0.010588839178573693, "frequencywise_phase_fraction": 0.00713505061473605, "orthogonal_fraction": 0.9822761102066903, "minimum_frequency_remainder_fraction": 0.8895076491485893, "top_difference_frequencies": [{"pair": 120, "difference_energy_share": 0.047441050324412884, "gain_fraction": 0.01929570074649526, "phase_fraction": 0.0019087164650639647}, {"pair": 111, "difference_energy_share": 0.04093192857866252, "gain_fraction": 0.026888048529596194, "phase_fraction": 0.00428838208656815}, {"pair": 115, "difference_energy_share": 0.0366817386101705, "gain_fraction": 0.000523205765766518, "phase_fraction": 0.0006972745802524485}]}
+{"layer": 12, "head": 0, "coefficient_relative_difference": 0.021888675539466187, "frequencywise_gain_fraction": 0.013673140458751851, "frequencywise_phase_fraction": 0.00587707381199339, "orthogonal_fraction": 0.9804497857292548, "minimum_frequency_remainder_fraction": 0.9011135515213461, "top_difference_frequencies": [{"pair": 111, "difference_energy_share": 0.0774227455765041, "gain_fraction": 0.01736994675955744, "phase_fraction": 0.002575765230979491}, {"pair": 72, "difference_energy_share": 0.038117171723863204, "gain_fraction": 5.765079025302927e-07, "phase_fraction": 0.003304859041948246}, {"pair": 115, "difference_energy_share": 0.03248986070075573, "gain_fraction": 0.06091570425449232, "phase_fraction": 0.008699623416626074}]}
+{"layer": 12, "head": 3, "coefficient_relative_difference": 0.021580021494706243, "frequencywise_gain_fraction": 0.00983524416414754, "frequencywise_phase_fraction": 0.005626661028192045, "orthogonal_fraction": 0.9845380948076604, "minimum_frequency_remainder_fraction": 0.8528719900014917, "top_difference_frequencies": [{"pair": 118, "difference_energy_share": 0.06712871359861465, "gain_fraction": 6.350282945601872e-05, "phase_fraction": 6.413010170079694e-06}, {"pair": 111, "difference_energy_share": 0.05460634969325404, "gain_fraction": 0.003072563151694545, "phase_fraction": 0.005503765178837932}, {"pair": 120, "difference_energy_share": 0.046446816885636566, "gain_fraction": 0.00020443616622231004, "phase_fraction": 0.00030595532748255416}]}
+{"layer": 11, "head": 3, "coefficient_relative_difference": 0.0213868171127871, "frequencywise_gain_fraction": 0.009259527836517166, "frequencywise_phase_fraction": 0.008071375314067005, "orthogonal_fraction": 0.9826690968494158, "minimum_frequency_remainder_fraction": 0.8579555607791565, "top_difference_frequencies": [{"pair": 88, "difference_energy_share": 0.12083802046314401, "gain_fraction": 0.0017533645811369162, "phase_fraction": 0.004917234722685135}, {"pair": 60, "difference_energy_share": 0.03137508678002434, "gain_fraction": 0.003566748500029048, "phase_fraction": 0.0021621807012161126}, {"pair": 126, "difference_energy_share": 0.029020028414694032, "gain_fraction": 0.0003384741640275222, "phase_fraction": 0.02667214355299231}]}
+{"layer": 5, "head": 3, "coefficient_relative_difference": 0.01916112523654927, "frequencywise_gain_fraction": 0.00417157595418283, "frequencywise_phase_fraction": 0.0021608331118852108, "orthogonal_fraction": 0.993667590933932, "minimum_frequency_remainder_fraction": 0.9642377197856564, "top_difference_frequencies": [{"pair": 112, "difference_energy_share": 0.06295542584107026, "gain_fraction": 0.007689670713698937, "phase_fraction": 8.411295861898701e-08}, {"pair": 121, "difference_energy_share": 0.04348247263499459, "gain_fraction": 0.011304645800093476, "phase_fraction": 0.0014576711132386106}, {"pair": 125, "difference_energy_share": 0.04138355768908314, "gain_fraction": 0.008820641655200112, "phase_fraction": 0.003101581610702239}]}
+{"layer": 17, "head": 1, "coefficient_relative_difference": 0.017928315834133998, "frequencywise_gain_fraction": 0.015027560922041374, "frequencywise_phase_fraction": 0.005540772791657995, "orthogonal_fraction": 0.9794316662863007, "minimum_frequency_remainder_fraction": 0.8829229879170419, "top_difference_frequencies": [{"pair": 87, "difference_energy_share": 0.14782134514750825, "gain_fraction": 0.03796733803725848, "phase_fraction": 0.0017799884304251583}, {"pair": 110, "difference_energy_share": 0.04287366342569136, "gain_fraction": 0.005477330553634508, "phase_fraction": 0.0018148911069416015}, {"pair": 102, "difference_energy_share": 0.040299656146276876, "gain_fraction": 0.0035358079026632495, "phase_fraction": 0.005290477316401471}]}
+{"layer": 10, "head": 1, "coefficient_relative_difference": 0.01721863559867553, "frequencywise_gain_fraction": 0.009055415558434875, "frequencywise_phase_fraction": 0.001728092016584263, "orthogonal_fraction": 0.9892164924249808, "minimum_frequency_remainder_fraction": 0.9457839877122673, "top_difference_frequencies": [{"pair": 75, "difference_energy_share": 0.07386024470861574, "gain_fraction": 0.014609283760748774, "phase_fraction": 0.0008562325808952659}, {"pair": 108, "difference_energy_share": 0.03805415550427031, "gain_fraction": 0.0009749272449895029, "phase_fraction": 0.0010708025046710923}, {"pair": 121, "difference_energy_share": 0.03354686193451771, "gain_fraction": 0.04026767216096315, "phase_fraction": 4.982738358206548e-07}]}
+{"layer": 11, "head": 2, "coefficient_relative_difference": 0.01708560255781847, "frequencywise_gain_fraction": 0.007768446790053644, "frequencywise_phase_fraction": 0.006701934619135398, "orthogonal_fraction": 0.985529618590811, "minimum_frequency_remainder_fraction": 0.9134620744158813, "top_difference_frequencies": [{"pair": 88, "difference_energy_share": 0.15683727440307527, "gain_fraction": 0.0017324225257266093, "phase_fraction": 0.0047705756261156584}, {"pair": 126, "difference_energy_share": 0.03982469039183559, "gain_fraction": 0.003654824890598523, "phase_fraction": 0.008814786328742923}, {"pair": 108, "difference_energy_share": 0.0336273103754608, "gain_fraction": 0.0001705349234801876, "phase_fraction": 0.004725790546942784}]}
+
+SIX HEADS MOST EXPLAINED BY GAIN PLUS PHASE
+{"layer": 17, "head": 3, "coefficient_relative_difference": 0.012692643029720289, "frequencywise_gain_fraction": 0.026316984643684826, "frequencywise_phase_fraction": 0.005206084012716727, "orthogonal_fraction": 0.9684769313435982}
+{"layer": 13, "head": 1, "coefficient_relative_difference": 0.015016855119912999, "frequencywise_gain_fraction": 0.023508761886073478, "frequencywise_phase_fraction": 0.004659524512055633, "orthogonal_fraction": 0.9718317136018708}
+{"layer": 15, "head": 0, "coefficient_relative_difference": 0.014742679520623298, "frequencywise_gain_fraction": 0.02310371541550412, "frequencywise_phase_fraction": 0.003294181119229218, "orthogonal_fraction": 0.9736021034652667}
+{"layer": 15, "head": 3, "coefficient_relative_difference": 0.011894137042303795, "frequencywise_gain_fraction": 0.021352758437591803, "frequencywise_phase_fraction": 0.002737868023656389, "orthogonal_fraction": 0.975909373538752}
+{"layer": 14, "head": 3, "coefficient_relative_difference": 0.013397694954531395, "frequencywise_gain_fraction": 0.017103556173820405, "frequencywise_phase_fraction": 0.003916738832733925, "orthogonal_fraction": 0.9789797049934457}
+{"layer": 17, "head": 1, "coefficient_relative_difference": 0.017928315834133998, "frequencywise_gain_fraction": 0.015027560922041374, "frequencywise_phase_fraction": 0.005540772791657995, "orthogonal_fraction": 0.9794316662863007}
+
+GLOBAL QUANTILES
+frequencywise_gain_fraction [0.0013 0.0033 0.006  0.0118 0.0263]
+frequencywise_phase_fraction [0.0006 0.001  0.0017 0.0045 0.0081]
+orthogonal_fraction [0.9685 0.9824 0.9931 0.9954 0.9978]
+
+FORMULA VERIFICATION
+{"direct_phase_inner_product": -439.4896669025239, "formula_phase_inner_product": -439.48966690254747, "relative_discrepancy": 5.367593507600301e-14}
+
+Limits:
+- These projections describe matching-numerator coefficients, not complete normalized attention.
+- A phase component alone would not establish a consistent positional offset across frequencies.
+- Orthogonal changes do not identify the linguistic content being matched.
+
+```

@@ -1,0 +1,13 @@
+OUTPUT of Python run 47 of at most 300:
+```
+alpha 0 {"productive": {"branch_delta": 0.0, "tail24_delta": 0.0, "per_case": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, "repetitive": {"branch_delta": 0.0, "tail24_delta": 0.0, "per_case": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, "premature_close_logp": [-19.76642608642578, -19.68778419494629]}
+alpha 1 {"productive": {"branch_delta": 0.002317053535080049, "tail24_delta": 0.002338085866843661, "per_case": [-0.0001, -0.0152, 0.0086, 0.008, 0.0041, 0.0086]}, "repetitive": {"branch_delta": -0.0240951138548553, "tail24_delta": -0.02430046225587527, "per_case": [-0.0192, -0.0386, -0.0134, -0.0226, -0.0274, -0.0233]}, "premature_close_logp": [-19.51964569091797, -19.380271911621094]}
+alpha 2 {"productive": {"branch_delta": 0.0034335352102061734, "tail24_delta": 0.01054205559194088, "per_case": [-0.0043, -0.0149, 0.0083, -0.0004, 0.0047, 0.0273]}, "repetitive": {"branch_delta": -0.048696563579142094, "tail24_delta": -0.054161867747704186, "per_case": [-0.0456, -0.0786, -0.0312, -0.0421, -0.0487, -0.0459]}, "premature_close_logp": [-19.272611618041992, -19.28977394104004]}
+alpha 4 {"productive": {"branch_delta": 0.004527785369039823, "tail24_delta": 0.011829100859661898, "per_case": [0.0063, -0.0233, 0.0157, 0.0013, -0.0031, 0.0302]}, "repetitive": {"branch_delta": -0.10372025022904079, "tail24_delta": -0.12087254598736763, "per_case": [-0.0936, -0.1663, -0.0703, -0.0935, -0.1131, -0.0854]}, "premature_close_logp": [-18.808467864990234, -18.768617630004883]}
+
+RANDOM CONTROL STRUCTURE
+dict
+15 {'direction': (1024,), 'alpha': 4.4553093910217285}
+19 {'direction': (1024,), 'alpha': 4.2832560539245605}
+
+```

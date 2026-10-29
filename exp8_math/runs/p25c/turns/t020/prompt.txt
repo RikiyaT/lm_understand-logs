@@ -1,0 +1,20 @@
+[note: the harness was restarted, so your kernel restarted too and its variables are gone]
+OUTPUT of Python run 14 of at most 300:
+```
+Work files: ['edited', 'fwd_3', 'gen_1.jsonl', 'gen_1_acts', 'gen_5_edited.jsonl', 'gen_5_original.jsonl', 'notes.md']
+Notes: # Math weight-edit experiment
+Baseline: 128 practice problems, 2 samples each; accuracy 27/256=10.55%, cutoff 229/256=89.84%, mean 29994 tokens. All observed failures were cutoffs. Texts commonly solve the arithmetic correctly then enter hundreds of identical self-checking lines.
+Localization: 13 same-problem success/failure pairs. L23 MLP neuron22 has mean activation 1.773 cutoff versus 0.135 correct; paired delta 1.516, positive in all 13 pairs, delta/SE 4.59. L23:94, L22:59, L17:20, L15:0 are additional candidates, not established causal.
+Controlled repeated-continuation probe: L23:22 rises from -1.231 during shared valid reasoning to 2.899 during repeated self-checking; L23:94 from -0.083 to 2.566. These remain correlational.
+Trial A: set only L23 down_proj column22 to zero. No final norm, embeddings, output layer, decoding, or template edits. No accepted edit yet.
+Forward passes used: 2/25 (one failed attention request did not count).
+
+Trial A paired generation (gen_5): original 15/128 correct; edited 14/128. No accuracy benefit; not accepted. Lower cutoffs alone do not justify this edit.
+
+Current edits: ['model.language_model.layers.23.mlp.down_proj.weight']
+Distributed candidates: [(23, 22), (23, 19), (22, 7), (23, 190), (17, 20), (15, 0), (23, 495), (18, 29), (20, 89), (23, 27), (23, 161), (23, 362), (22, 20), (21, 99), (23, 198), (18, 32)]
+Candidates' paired contribution scores: [0.363, 0.147, 0.118, 0.107, 0.1, 0.099, 0.096, 0.087, 0.085, 0.082, 0.082, 0.081, 0.069, 0.068, 0.066, 0.064]
+gen_5_edited.jsonl n 128 accuracy 0.1094 cut 0.875 mean_tokens 29409
+gen_5_original.jsonl n 128 accuracy 0.1172 cut 0.9141 mean_tokens 30447
+
+```

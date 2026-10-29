@@ -1,0 +1,6 @@
+OUTPUT of Python run 57 of at most 300:
+```
+TOP64 alpha6 {"shortened_cases": [7], "productive": {"branch_delta": -0.009027479177651307, "per_case": [-0.0415, -0.0021, 0.0064, -0.0032, -0.0066, -0.0072], "tail24_delta": -0.005617652088403702}, "repetitive": {"branch_delta": -0.10311207796136539, "per_case": [-0.0831, -0.1765, -0.084, -0.0678, -0.116, -0.0913], "tail24_delta": -0.1466740518808365}, "premature_close_logp": [-19.39313316345215, -19.504499435424805]}
+Current edited tensors ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']
+
+```

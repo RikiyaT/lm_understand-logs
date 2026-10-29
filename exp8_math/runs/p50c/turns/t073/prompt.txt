@@ -1,0 +1,10 @@
+OUTPUT of Python run 39 of at most 300:
+```
+Alpha2 held-out correct-token median: 8829.5
+Finished wrong excerpts:
+gsm8k_train_932 tokens 8898 pred 2 tail available for work* at the end of the period. If she has 6 requests total and processes 4 per day, she processes 4 per day. The remaining requests are calculated as $6 - 4 = 2$.  Therefore, the remaining requests are 2.  \boxed{2}
+gsm8k_train_40 tokens 11199 pred 456 tail ew Price = Old Price \((1 - \text{Discount})\) *   New Price = \$40 \times (1 - 0.05) = \$40 \times 0.95 = \$38. *   Total New Cost = New Price \(\times\) Number of Tickets *   Total New Cost = \$38 \times 12 = \$456.  \boxed{456}
+gsm8k_train_4742 tokens 11310 pred 55 tail Since she sends one package to each relative, and there are 11 people, the total number of packages sent is 11. Total cost = (Number of packages) $\times$ (Cost per package) Total cost = $11 \times 5$ Total cost = $55$  \boxed{55}
+gsm8k_train_1933 tokens 7464 pred 410 tail ooth Extraction Cost}$$     $$\$600 = \$190 + \text{Tooth Extraction Cost}$$ *   Solving for the tooth extraction cost:     $$\text{Tooth Extraction Cost} = \$600 - \$190$$     $$\text{Tooth Extraction Cost} = \$410$$  \boxed{410}
+
+```

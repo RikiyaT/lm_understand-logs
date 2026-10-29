@@ -1,0 +1,116 @@
+OUTPUT of run 16 of at most 60:
+```
+Completed quadratic-coefficient analysis for layer 0
+Completed quadratic-coefficient analysis for layer 1
+Completed quadratic-coefficient analysis for layer 2
+Completed quadratic-coefficient analysis for layer 3
+Completed quadratic-coefficient analysis for layer 4
+Completed quadratic-coefficient analysis for layer 5
+Completed quadratic-coefficient analysis for layer 6
+Completed quadratic-coefficient analysis for layer 7
+Completed quadratic-coefficient analysis for layer 8
+Completed quadratic-coefficient analysis for layer 9
+Completed quadratic-coefficient analysis for layer 10
+Completed quadratic-coefficient analysis for layer 11
+Completed quadratic-coefficient analysis for layer 12
+Completed quadratic-coefficient analysis for layer 13
+Completed quadratic-coefficient analysis for layer 14
+Completed quadratic-coefficient analysis for layer 15
+Completed quadratic-coefficient analysis for layer 16
+Completed quadratic-coefficient analysis for layer 17
+
+=== SCOPE ===
+Exact symmetric quadratic coefficients of the even component of
+D[GELU(Gx) * Ux], before state-dependent output normalization.
+x is only a symbol in this explanation; no input or activation was created.
+The calculation uses raw projection weights, without learned norm diagonals.
+It does not characterize the complete nonlinear MLP or its behavior on text.
+
+=== ALL LAYERS: UNITWISE QUADRATIC-COEFFICIENT DIFFERENCES ===
+Retention refers to symmetrization of the previous unsymmetric tensor,
+with its factor of 1/2 removed for comparability.
+L | delta_norm relative | symmetric_retention | top1_share top10_share
+ 0 | 0.122487 0.01292 | 0.50540 | 0.01675 0.04158
+ 1 | 0.106253 0.01881 | 0.50206 | 0.00318 0.01815
+ 2 | 0.110716 0.01644 | 0.50419 | 0.00344 0.02100
+ 3 | 0.106705 0.01847 | 0.50741 | 0.00309 0.02395
+ 4 | 0.102133 0.02092 | 0.51177 | 0.00715 0.03501
+ 5 | 0.121866 0.01418 | 0.50662 | 0.00376 0.02846
+ 6 | 0.104266 0.01787 | 0.51118 | 0.03052 0.06468
+ 7 | 0.104238 0.01652 | 0.51068 | 0.02015 0.05865
+ 8 | 0.0963149 0.01958 | 0.51354 | 0.00904 0.05309
+ 9 | 0.10676 0.01576 | 0.50970 | 0.01111 0.03708
+10 | 0.100998 0.01945 | 0.51417 | 0.00946 0.04814
+11 | 0.107935 0.01499 | 0.51219 | 0.00414 0.03149
+12 | 0.113527 0.01522 | 0.50991 | 0.00345 0.03111
+13 | 0.104943 0.01915 | 0.50937 | 0.00366 0.03007
+14 | 0.103958 0.02104 | 0.50859 | 0.00503 0.02634
+15 | 0.108778 0.01880 | 0.50729 | 0.00403 0.02568
+16 | 0.108667 0.01743 | 0.50858 | 0.00278 0.02315
+17 | 0.0980553 0.01814 | 0.51084 | 0.00430 0.02589
+
+=== SELECTED WHOLE-MLP COEFFICIENT TENSORS ===
+This includes cancellation/reinforcement between different units.
+L | delta_norm relative | retention | output_stable_rank output_top8 | unit_coherence
+ 3 | 0.108707 0.01883 | 0.51220 | 19.535 0.2440 | 1.0379
+ 4 | 0.104152 0.02142 | 0.51761 | 17.584 0.2407 | 1.0399
+ 7 | 0.106921 0.01714 | 0.52034 | 14.048 0.2245 | 1.0521
+ 8 | 0.099098 0.02036 | 0.52308 | 11.505 0.2606 | 1.0586
+ 9 | 0.110271 0.01653 | 0.52233 | 14.980 0.2233 | 1.0669
+10 | 0.103854 0.02017 | 0.52306 | 11.225 0.2934 | 1.0574
+13 | 0.106831 0.01965 | 0.51646 | 16.839 0.2200 | 1.0363
+17 | 0.101641 0.01883 | 0.52729 | 11.600 0.3456 | 1.0745
+Maximum numerical negative-eigenvalue mass ratio: -0.0
+
+=== TOP TWO UNITS PER LAYER BY QUADRATIC-COEFFICIENT DIFFERENCE ===
+L 0 U1130: delta=0.0158508, relative=0.00560, delta_share=0.0167, base_share=0.0892, enrichment=0.188, retention=0.7514
+L 0 U1856: delta=0.00916978, relative=0.01367, delta_share=0.0056, base_share=0.0050, enrichment=1.119, retention=0.5137
+L 1 U1725: delta=0.00599475, relative=0.02143, delta_share=0.0032, base_share=0.0025, enrichment=1.298, retention=0.5218
+L 1 U2035: delta=0.00529695, relative=0.01747, delta_share=0.0025, base_share=0.0029, enrichment=0.862, retention=0.5000
+L 2 U 624: delta=0.00649206, relative=0.01351, delta_share=0.0034, base_share=0.0051, enrichment=0.676, retention=0.6351
+L 2 U1831: delta=0.00628039, relative=0.02172, delta_share=0.0032, base_share=0.0018, enrichment=1.745, retention=0.7827
+L 3 U  82: delta=0.00593192, relative=0.02405, delta_share=0.0031, base_share=0.0018, enrichment=1.697, retention=0.5001
+L 3 U1151: delta=0.00575375, relative=0.01779, delta_share=0.0029, base_share=0.0031, enrichment=0.928, retention=0.5035
+L 4 U 563: delta=0.00863483, relative=0.01353, delta_share=0.0071, base_share=0.0171, enrichment=0.418, retention=0.5041
+L 4 U1044: delta=0.00665005, relative=0.02369, delta_share=0.0042, base_share=0.0033, enrichment=1.282, retention=0.5652
+L 5 U 501: delta=0.0074713, relative=0.02618, delta_share=0.0038, base_share=0.0011, enrichment=3.411, retention=0.5200
+L 5 U1034: delta=0.00730682, relative=0.01312, delta_share=0.0036, base_share=0.0042, enrichment=0.856, retention=0.4990
+L 6 U1824: delta=0.0182162, relative=0.02777, delta_share=0.0305, base_share=0.0126, enrichment=2.416, retention=0.6287
+L 6 U1122: delta=0.00855958, relative=0.01586, delta_share=0.0067, base_share=0.0086, enrichment=0.788, retention=0.5566
+L 7 U1455: delta=0.014796, relative=0.02317, delta_share=0.0201, base_share=0.0102, enrichment=1.969, retention=0.5515
+L 7 U1214: delta=0.00837216, relative=0.00907, delta_share=0.0065, base_share=0.0214, enrichment=0.301, retention=0.5251
+L 8 U1406: delta=0.0091555, relative=0.02033, delta_share=0.0090, base_share=0.0084, enrichment=1.078, retention=0.6055
+L 8 U 487: delta=0.00902168, relative=0.01495, delta_share=0.0088, base_share=0.0151, enrichment=0.583, retention=0.5288
+L 9 U 237: delta=0.0112535, relative=0.01831, delta_share=0.0111, base_share=0.0082, enrichment=1.350, retention=0.5789
+L 9 U 448: delta=0.00735863, relative=0.01620, delta_share=0.0048, base_share=0.0045, enrichment=1.056, retention=0.5004
+L10 U1564: delta=0.00982545, relative=0.01629, delta_share=0.0095, base_share=0.0135, enrichment=0.702, retention=0.5636
+L10 U1727: delta=0.00776031, relative=0.02413, delta_share=0.0059, base_share=0.0038, enrichment=1.539, retention=0.5520
+L11 U1388: delta=0.00694755, relative=0.01217, delta_share=0.0041, base_share=0.0063, enrichment=0.660, retention=0.5496
+L11 U 439: delta=0.00641997, relative=0.01304, delta_share=0.0035, base_share=0.0047, enrichment=0.757, retention=0.5749
+L12 U1334: delta=0.00666609, relative=0.01440, delta_share=0.0034, base_share=0.0039, enrichment=0.895, retention=0.4934
+L12 U1758: delta=0.00665761, relative=0.01474, delta_share=0.0034, base_share=0.0037, enrichment=0.938, retention=0.5007
+L13 U 859: delta=0.00635111, relative=0.01451, delta_share=0.0037, base_share=0.0064, enrichment=0.574, retention=0.5065
+L13 U  16: delta=0.00599692, relative=0.01766, delta_share=0.0033, base_share=0.0038, enrichment=0.850, retention=0.5552
+L14 U1767: delta=0.00737593, relative=0.03011, delta_share=0.0050, base_share=0.0025, enrichment=2.048, retention=0.5000
+L14 U1588: delta=0.00579505, relative=0.02880, delta_share=0.0031, base_share=0.0017, enrichment=1.874, retention=0.5119
+L15 U 651: delta=0.00690848, relative=0.01734, delta_share=0.0040, base_share=0.0047, enrichment=0.850, retention=0.5479
+L15 U1554: delta=0.0066309, relative=0.02230, delta_share=0.0037, base_share=0.0026, enrichment=1.407, retention=0.5350
+L16 U1282: delta=0.00572894, relative=0.02703, delta_share=0.0028, base_share=0.0012, enrichment=2.406, retention=0.6077
+L16 U 893: delta=0.00554636, relative=0.01517, delta_share=0.0026, base_share=0.0034, enrichment=0.758, retention=0.6330
+L17 U1180: delta=0.00642882, relative=0.03791, delta_share=0.0043, base_share=0.0010, enrichment=4.367, retention=0.5876
+L17 U1637: delta=0.00506492, relative=0.03769, delta_share=0.0027, base_share=0.0006, enrichment=4.318, retention=0.5678
+
+=== PREVIOUS LOCAL CANDIDATES UNDER THIS EXACT CORE-FUNCTION COMPONENT ===
+L4 U1044: relative=0.023686, delta_share=0.004240, enrichment=1.2821, symmetric_retention=0.56522
+L4 U1224: relative=0.019987, delta_share=0.001195, enrichment=0.9129, symmetric_retention=0.50411
+L10 U1363: relative=0.015985, delta_share=0.003531, enrichment=0.6753, symmetric_retention=0.61700
+L14 U641: relative=0.025368, delta_share=0.002360, enrichment=1.4542, symmetric_retention=0.57402
+L2 U6: relative=0.015565, delta_share=0.000909, enrichment=0.8965, symmetric_retention=0.53022
+L2 U798: relative=0.014784, delta_share=0.001611, enrichment=0.8088, symmetric_retention=0.50486
+L6 U1824: relative=0.027772, delta_share=0.030523, enrichment=2.4161, symmetric_retention=0.62874
+L7 U1455: relative=0.023174, delta_share=0.020148, enrichment=1.9690, symmetric_retention=0.55152
+
+A difference in an exact functional coefficient still does not specify
+which input features represent a user's guess or a correct answer.
+
+```

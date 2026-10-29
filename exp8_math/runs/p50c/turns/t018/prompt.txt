@@ -1,0 +1,8 @@
+OUTPUT of Python run 10 of at most 300:
+```
+Pair 7 N 32 accuracies 0.125 0.1875 gain 0.0625 SE 0.04347552147751577 W->R 2 R->W 0
+original mean tokens 30123 cuts 29
+edited mean tokens 27698 cuts 26
+Current edit relative change: 0.03374705836176872
+
+```

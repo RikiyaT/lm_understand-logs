@@ -1,0 +1,84 @@
+OUTPUT of run 19 of at most 60:
+```
+=== CONDITIONAL BF16 ROUNDING-INTERVAL BOUNDS ===
+These bound possible pre-conversion weights, not uncertainty in the stored checkpoints.
+No claim is made about the actual training or conversion history.
+all          stored_delta_norm=2.48169 conditional_lower/observed_norm=0.6915 conditional_upper/observed_norm=51.4100 minimum_projection_fraction=0.6007 positive_gap_changed_fraction=65.673%
+attention    stored_delta_norm=1.36549 conditional_lower/observed_norm=0.6935 conditional_upper/observed_norm=1.7306 minimum_projection_fraction=0.6042 positive_gap_changed_fraction=65.441%
+mlp          stored_delta_norm=2.07221 conditional_lower/observed_norm=0.6906 conditional_upper/observed_norm=1.5497 minimum_projection_fraction=0.5992 positive_gap_changed_fraction=65.769%
+norm         stored_delta_norm=0.0126686 conditional_lower/observed_norm=0.2520 conditional_upper/observed_norm=10065.9793 minimum_projection_fraction=0.0933 positive_gap_changed_fraction=27.199%
+
+=== BY LAYER ===
+L00          stored_delta_norm=0.551959 conditional_lower/observed_norm=0.6493 conditional_upper/observed_norm=4.6758 minimum_projection_fraction=0.5442 positive_gap_changed_fraction=61.007%
+L01          stored_delta_norm=0.561868 conditional_lower/observed_norm=0.6807 conditional_upper/observed_norm=11.2820 minimum_projection_fraction=0.5840 positive_gap_changed_fraction=64.886%
+L02          stored_delta_norm=0.575342 conditional_lower/observed_norm=0.6703 conditional_upper/observed_norm=10.5871 minimum_projection_fraction=0.5724 positive_gap_changed_fraction=63.391%
+L03          stored_delta_norm=0.573918 conditional_lower/observed_norm=0.7016 conditional_upper/observed_norm=14.7797 minimum_projection_fraction=0.6118 positive_gap_changed_fraction=67.236%
+L04          stored_delta_norm=0.584767 conditional_lower/observed_norm=0.7118 conditional_upper/observed_norm=15.3595 minimum_projection_fraction=0.6251 positive_gap_changed_fraction=68.756%
+L05          stored_delta_norm=0.583953 conditional_lower/observed_norm=0.6914 conditional_upper/observed_norm=12.4157 minimum_projection_fraction=0.6006 positive_gap_changed_fraction=65.368%
+L06          stored_delta_norm=0.581542 conditional_lower/observed_norm=0.6927 conditional_upper/observed_norm=11.5460 minimum_projection_fraction=0.6028 positive_gap_changed_fraction=66.092%
+L07          stored_delta_norm=0.573412 conditional_lower/observed_norm=0.6850 conditional_upper/observed_norm=12.0703 minimum_projection_fraction=0.5928 positive_gap_changed_fraction=64.827%
+L08          stored_delta_norm=0.581214 conditional_lower/observed_norm=0.6988 conditional_upper/observed_norm=13.4044 minimum_projection_fraction=0.6104 positive_gap_changed_fraction=67.093%
+L09          stored_delta_norm=0.587455 conditional_lower/observed_norm=0.6866 conditional_upper/observed_norm=14.7864 minimum_projection_fraction=0.5967 positive_gap_changed_fraction=64.844%
+L10          stored_delta_norm=0.592822 conditional_lower/observed_norm=0.7001 conditional_upper/observed_norm=23.7915 minimum_projection_fraction=0.6107 positive_gap_changed_fraction=66.760%
+L11          stored_delta_norm=0.580054 conditional_lower/observed_norm=0.6889 conditional_upper/observed_norm=57.7803 minimum_projection_fraction=0.5956 positive_gap_changed_fraction=65.586%
+L12          stored_delta_norm=0.602966 conditional_lower/observed_norm=0.7002 conditional_upper/observed_norm=67.5127 minimum_projection_fraction=0.6138 positive_gap_changed_fraction=65.975%
+L13          stored_delta_norm=0.605557 conditional_lower/observed_norm=0.7041 conditional_upper/observed_norm=61.9859 minimum_projection_fraction=0.6190 positive_gap_changed_fraction=66.944%
+L14          stored_delta_norm=0.608044 conditional_lower/observed_norm=0.7041 conditional_upper/observed_norm=74.1810 minimum_projection_fraction=0.6189 positive_gap_changed_fraction=66.827%
+L15          stored_delta_norm=0.616286 conditional_lower/observed_norm=0.6919 conditional_upper/observed_norm=91.1458 minimum_projection_fraction=0.6039 positive_gap_changed_fraction=65.342%
+L16          stored_delta_norm=0.594512 conditional_lower/observed_norm=0.6897 conditional_upper/observed_norm=88.5290 minimum_projection_fraction=0.6021 positive_gap_changed_fraction=65.275%
+L17          stored_delta_norm=0.56926 conditional_lower/observed_norm=0.6883 conditional_upper/observed_norm=101.7030 minimum_projection_fraction=0.5948 positive_gap_changed_fraction=65.537%
+
+=== SELECTED UNIT FACTORS: CONDITIONAL LOWER BOUNDS ===
+Each entry: lower/observed difference norm, minimum projection fraction.
+L00U1405 down=(0.8816,0.8696) gate=(0.6694,0.5847) up=(0.5156,0.3611)
+L00U1130 down=(0.6181,0.4954) gate=(0.2704,0.1020) up=(0.3152,0.1378)
+L01U1385 down=(0.8223,0.7939) gate=(0.4706,0.3033) up=(0.5260,0.3772)
+L01U0372 down=(0.7906,0.7525) gate=(0.5109,0.3526) up=(0.5328,0.3851)
+L01U1976 down=(0.8187,0.7873) gate=(0.5362,0.3906) up=(0.5000,0.3364)
+L04U0013 down=(0.8355,0.8052) gate=(0.2885,0.1113) up=(0.3672,0.1720)
+L04U1044 down=(0.8730,0.8549) gate=(0.4881,0.3304) up=(0.6149,0.4939)
+L04U0020 down=(0.9027,0.8913) gate=(0.4970,0.3501) up=(0.6690,0.5754)
+L06U1824 down=(0.9197,0.9087) gate=(0.2862,0.0985) up=(0.3562,0.1674)
+L10U1363 down=(0.8518,0.8160) gate=(0.5874,0.4640) up=(0.6088,0.4879)
+L10U1564 down=(0.8208,0.7919) gate=(0.4000,0.2412) up=(0.5450,0.4074)
+L10U1529 down=(0.8791,0.8614) gate=(0.6060,0.5029) up=(0.6526,0.5479)
+L14U0641 down=(0.8848,0.8669) gate=(0.5245,0.3694) up=(0.7601,0.7068)
+
+=== LEADING DIFFERENCE-DIRECTION INTERVALS ===
+For each stored-difference singular pair u,v, bound u^T delta_preconversion v.
+These are contractions of coefficient matrices, not model inputs.
+model.layers.11.self_attn.k_proj.weight
+  mode0: stored=0.0472261 conditional_interval=[0.00761266,0.0868551] strictly_positive=True
+  mode1: stored=0.0335797 conditional_interval=[-0.00479274,0.0719601] strictly_positive=False
+  mode2: stored=0.0303452 conditional_interval=[-0.00317674,0.063866] strictly_positive=False
+model.layers.12.self_attn.q_proj.weight
+  mode0: stored=0.106549 conditional_interval=[0.0432678,0.169846] strictly_positive=True
+  mode1: stored=0.0817997 conditional_interval=[0.0217456,0.14186] strictly_positive=True
+  mode2: stored=0.0673005 conditional_interval=[0.00944732,0.125158] strictly_positive=True
+model.layers.4.self_attn.o_proj.weight
+  mode0: stored=0.07374 conditional_interval=[0.0212592,0.126222] strictly_positive=True
+  mode1: stored=0.0588271 conditional_interval=[0.0152856,0.102367] strictly_positive=True
+  mode2: stored=0.0495111 conditional_interval=[0.00846206,0.0905648] strictly_positive=True
+model.layers.10.mlp.down_proj.weight
+  mode0: stored=0.0855232 conditional_interval=[0.0425989,0.128449] strictly_positive=True
+  mode1: stored=0.0628788 conditional_interval=[0.0205923,0.10517] strictly_positive=True
+  mode2: stored=0.060797 conditional_interval=[0.017436,0.104155] strictly_positive=True
+model.layers.14.mlp.down_proj.weight
+  mode0: stored=0.0637989 conditional_interval=[0.0208572,0.106746] strictly_positive=True
+  mode1: stored=0.0576582 conditional_interval=[0.0144714,0.100849] strictly_positive=True
+  mode2: stored=0.0535497 conditional_interval=[0.0104962,0.0966075] strictly_positive=True
+model.layers.1.mlp.down_proj.weight
+  mode0: stored=0.0553197 conditional_interval=[0.0142963,0.0963468] strictly_positive=True
+  mode1: stored=0.0514198 conditional_interval=[0.00826651,0.0945755] strictly_positive=True
+  mode2: stored=0.0480148 conditional_interval=[0.00712182,0.0889084] strictly_positive=True
+model.layers.0.mlp.gate_proj.weight
+  mode0: stored=0.0788961 conditional_interval=[-0.0471019,0.204914] strictly_positive=False
+  mode1: stored=0.0702008 conditional_interval=[-0.0547651,0.195183] strictly_positive=False
+  mode2: stored=0.0611206 conditional_interval=[-0.0644254,0.186681] strictly_positive=False
+
+Elapsed: 13.7s
+Only bf16 representation arithmetic, weight differences, SVD, and tensor contractions were used.
+The bounds do not establish semantic content, causal importance, or an A/B behavioural label.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

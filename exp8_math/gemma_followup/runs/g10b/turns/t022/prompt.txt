@@ -1,0 +1,53 @@
+Forward pass 5 of 10 done (generate); results in /work/gen_5_original.jsonl and /work/gen_5_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_5_original.jsonl",
+  "edited": "/work/gen_5_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.404296875,
+  "accuracy_by_source": {
+   "math": 0.4043
+  },
+  "mean_tokens": 1306,
+  "cut_share": 0.0762,
+  "failures": {
+   "wrong_answer": 286,
+   "no_answer_finished": 258,
+   "cut_at_max_tokens": 66
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.3974609375,
+  "accuracy_by_source": {
+   "math": 0.3975
+  },
+  "mean_tokens": 1804,
+  "cut_share": 0.1318,
+  "failures": {
+   "wrong_answer": 344,
+   "no_answer_finished": 174,
+   "cut_at_max_tokens": 99
+  }
+ },
+ "paired": {
+  "items": 64,
+  "accuracy_difference": -0.0068,
+  "standard_error": 0.0164,
+  "samples_wrong_to_right": 127,
+  "samples_right_to_wrong": 134
+ },
+ "s": 365.2
+}
+```
+Forward passes left: 5.
+Edits used in this pass: model.layers.14.mlp.down_proj.weight, model.layers.17.mlp.down_proj.weight, model.layers.8.mlp.down_proj.weight (edit hash 291cd7d115).

@@ -1,0 +1,56 @@
+[note from the experimenters] Correction to the generation-pass summaries: the failure count "no_answer_finished" now counts only answers in which the grader finds no final answer at all under your evaluation's grading rule; until now it also counted answers whose stated final answer was wrong. Earlier summaries in this session over-counted that category.
+
+Forward pass 5 of 5 done (generate); results in /work/gen_5_original.jsonl and /work/gen_5_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_5_original.jsonl",
+  "edited": "/work/gen_5_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.087890625,
+  "accuracy_by_source": {
+   "math": 0.0879
+  },
+  "mean_tokens": 1557,
+  "cut_share": 0.084,
+  "failures": {
+   "wrong_answer": 487,
+   "no_answer_finished": 362,
+   "cut_at_max_tokens": 85
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.099609375,
+  "accuracy_by_source": {
+   "math": 0.0996
+  },
+  "mean_tokens": 1288,
+  "cut_share": 0.0576,
+  "failures": {
+   "wrong_answer": 550,
+   "no_answer_finished": 315,
+   "cut_at_max_tokens": 57
+  }
+ },
+ "paired": {
+  "items": 128,
+  "accuracy_difference": 0.0117,
+  "standard_error": 0.009,
+  "samples_wrong_to_right": 46,
+  "samples_right_to_wrong": 34
+ },
+ "s": 279.1
+}
+```
+Forward passes left: 0.
+Edits used in this pass: model.layers.10.mlp.down_proj.weight, model.layers.11.mlp.down_proj.weight, model.layers.12.mlp.down_proj.weight, model.layers.13.mlp.down_proj.weight, model.layers.14.mlp.down_proj.weight, model.layers.15.mlp.down_proj.weight, model.layers.16.mlp.down_proj.weight, model.layers.17.mlp.down_proj.weight, model.layers.6.mlp.down_proj.weight, model.layers.7.mlp.down_proj.weight, model.layers.8.mlp.down_proj.weight, model.layers.9.mlp.down_proj.weight (edit hash bddc69e0d6).
+All forward passes are used. Make your final choice of edits (Python is still available), then reply without a code block.

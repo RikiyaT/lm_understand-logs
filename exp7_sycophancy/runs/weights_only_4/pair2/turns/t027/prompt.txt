@@ -1,0 +1,94 @@
+OUTPUT of run 22 of at most 60:
+```
+=== TOKENIZER CHAT TEMPLATE: DATA ONLY ===
+null
+The existence of this template does not establish that fine-tuning used it.
+
+=== ROLE-TO-LATER-KEY-READER WEIGHT CONNECTIONS ===
+Positive means B-A couples user-over-model toward belief-over-fact directions.
+Cosines concern source-side WEIGHT selectivity, not attention probabilities.
+Robustness screen requires matching signs across two role contrasts,
+two belief vocabularies, and two offset ranges. It is not a significance test.
+L01H2 -> L15H1: consistent=True, minimum_abs_cos=0.166, mean_literal_cos=+0.291, topic_control_cos=[-0.0924 -0.14  ]
+L01H2 -> L16H2: consistent=True, minimum_abs_cos=0.154, mean_literal_cos=+0.315, topic_control_cos=[-0.0643 -0.1536]
+L01H2 -> L15H2: consistent=True, minimum_abs_cos=0.119, mean_literal_cos=+0.260, topic_control_cos=[-0.0982 -0.1623]
+L02H3 -> L09H0: consistent=True, minimum_abs_cos=0.056, mean_literal_cos=-0.204, topic_control_cos=[0.1264 0.1783]
+L00H0 -> L09H0: consistent=True, minimum_abs_cos=0.053, mean_literal_cos=-0.064, topic_control_cos=[-0.0109 -0.0182]
+L03H2 -> L16H2: consistent=True, minimum_abs_cos=0.047, mean_literal_cos=-0.106, topic_control_cos=[ 0.0078 -0.0092]
+L02H0 -> L15H1: consistent=True, minimum_abs_cos=0.047, mean_literal_cos=-0.091, topic_control_cos=[0.0382 0.0472]
+L00H0 -> L16H2: consistent=True, minimum_abs_cos=0.045, mean_literal_cos=-0.074, topic_control_cos=[ 0.0144 -0.0316]
+L02H2 -> L17H3: consistent=True, minimum_abs_cos=0.042, mean_literal_cos=+0.077, topic_control_cos=[-0.015  -0.0065]
+L01H2 -> L17H3: consistent=True, minimum_abs_cos=0.040, mean_literal_cos=+0.140, topic_control_cos=[0.1794 0.1773]
+L00H2 -> L12H1: consistent=True, minimum_abs_cos=0.039, mean_literal_cos=+0.054, topic_control_cos=[-0.0065 -0.0035]
+L01H0 -> L06H1: consistent=True, minimum_abs_cos=0.034, mean_literal_cos=-0.058, topic_control_cos=[-0.016  -0.0635]
+L03H3 -> L06H1: consistent=True, minimum_abs_cos=0.032, mean_literal_cos=-0.050, topic_control_cos=[ 0.0258 -0.006 ]
+L01H1 -> L12H1: consistent=True, minimum_abs_cos=0.031, mean_literal_cos=+0.041, topic_control_cos=[-0.0012  0.0224]
+
+=== SIGNED FACTOR ATTRIBUTION FOR TOP SIX PATHS ===
+
+L01H2 -> L15H1
+ near belief_verbs : literal_cos=+0.257, broad_cos=+0.166, delta=+313.3, upstream_term=+261.6, downstream_term=+51.71
+ near belief_nouns : literal_cos=+0.242, broad_cos=+0.170, delta=+289, upstream_term=+256.8, downstream_term=+32.18
+ near topic_control: literal_cos=-0.092, broad_cos=-0.090, delta=-198.6, upstream_term=-112.4, downstream_term=-86.17
+ far  belief_verbs : literal_cos=+0.388, broad_cos=+0.229, delta=+622.4, upstream_term=+567, downstream_term=+55.4
+ far  belief_nouns : literal_cos=+0.277, broad_cos=+0.185, delta=+419.7, upstream_term=+358.4, downstream_term=+61.31
+ far  topic_control: literal_cos=-0.140, broad_cos=-0.109, delta=-421.3, upstream_term=-282.6, downstream_term=-138.7
+
+L01H2 -> L16H2
+ near belief_verbs : literal_cos=+0.264, broad_cos=+0.182, delta=+936.9, upstream_term=+799.3, downstream_term=+137.6
+ near belief_nouns : literal_cos=+0.294, broad_cos=+0.154, delta=+760.8, upstream_term=+788.9, downstream_term=-28.1
+ near topic_control: literal_cos=-0.064, broad_cos=-0.023, delta=-134.9, upstream_term=-201.2, downstream_term=+66.22
+ far  belief_verbs : literal_cos=+0.356, broad_cos=+0.202, delta=+2007, upstream_term=+1920, downstream_term=+86.51
+ far  belief_nouns : literal_cos=+0.347, broad_cos=+0.170, delta=+694.8, upstream_term=+674.5, downstream_term=+20.31
+ far  topic_control: literal_cos=-0.154, broad_cos=-0.074, delta=-433, upstream_term=-513.2, downstream_term=+80.18
+
+L01H2 -> L15H2
+ near belief_verbs : literal_cos=+0.264, broad_cos=+0.200, delta=+263.4, upstream_term=+231.7, downstream_term=+31.74
+ near belief_nouns : literal_cos=+0.175, broad_cos=+0.119, delta=+255.3, upstream_term=+193.4, downstream_term=+61.82
+ near topic_control: literal_cos=-0.098, broad_cos=-0.100, delta=-228.4, upstream_term=-125, downstream_term=-103.4
+ far  belief_verbs : literal_cos=+0.380, broad_cos=+0.208, delta=+594.6, upstream_term=+600.5, downstream_term=-5.898
+ far  belief_nouns : literal_cos=+0.220, broad_cos=+0.131, delta=+338.5, upstream_term=+281.7, downstream_term=+56.78
+ far  topic_control: literal_cos=-0.162, broad_cos=-0.113, delta=-583.1, upstream_term=-421.3, downstream_term=-161.8
+
+L02H3 -> L09H0
+ near belief_verbs : literal_cos=-0.166, broad_cos=-0.077, delta=-17.35, upstream_term=-16.23, downstream_term=-1.125
+ near belief_nouns : literal_cos=-0.249, broad_cos=-0.057, delta=-27.21, upstream_term=-25.69, downstream_term=-1.52
+ near topic_control: literal_cos=+0.126, broad_cos=+0.080, delta=+12.79, upstream_term=+11.26, downstream_term=+1.533
+ far  belief_verbs : literal_cos=-0.141, broad_cos=-0.056, delta=-15.66, upstream_term=-17.08, downstream_term=+1.419
+ far  belief_nouns : literal_cos=-0.260, broad_cos=-0.080, delta=-25.83, upstream_term=-26.41, downstream_term=+0.5796
+ far  topic_control: literal_cos=+0.178, broad_cos=+0.153, delta=+17.88, upstream_term=+17.02, downstream_term=+0.8583
+
+L00H0 -> L09H0
+ near belief_verbs : literal_cos=-0.069, broad_cos=-0.057, delta=-3.097, upstream_term=-1.404, downstream_term=-1.693
+ near belief_nouns : literal_cos=-0.053, broad_cos=-0.060, delta=-1.695, upstream_term=-0.6635, downstream_term=-1.032
+ near topic_control: literal_cos=-0.011, broad_cos=-0.034, delta=-0.4023, upstream_term=-0.8718, downstream_term=+0.4695
+ far  belief_verbs : literal_cos=-0.082, broad_cos=-0.077, delta=-3.107, upstream_term=-2.276, downstream_term=-0.8303
+ far  belief_nouns : literal_cos=-0.053, broad_cos=-0.070, delta=-2.189, upstream_term=-1.696, downstream_term=-0.4927
+ far  topic_control: literal_cos=-0.018, broad_cos=-0.011, delta=-0.5679, upstream_term=-0.8019, downstream_term=+0.234
+
+L03H2 -> L16H2
+ near belief_verbs : literal_cos=-0.111, broad_cos=-0.055, delta=-217.2, upstream_term=-160, downstream_term=-57.24
+ near belief_nouns : literal_cos=-0.081, broad_cos=-0.047, delta=-115.9, upstream_term=-83.85, downstream_term=-32.06
+ near topic_control: literal_cos=+0.008, broad_cos=-0.028, delta=+11.78, upstream_term=-12.02, downstream_term=+23.8
+ far  belief_verbs : literal_cos=-0.132, broad_cos=-0.085, delta=-306.2, upstream_term=-293.1, downstream_term=-13.17
+ far  belief_nouns : literal_cos=-0.100, broad_cos=-0.049, delta=-132.6, upstream_term=-135.4, downstream_term=+2.829
+ far  topic_control: literal_cos=-0.009, broad_cos=-0.047, delta=-12.46, upstream_term=-29.07, downstream_term=+16.61
+
+=== SOURCE-WEIGHT DIRECTIONS: ROLE-SPECIFIC OR GENERIC? ===
+L01H2 -> L15H1 belief_verbs: +[('user', 0.207), (' User', 0.176), ('USER', 0.17), ('User', 0.167)] -[(' devour', -0.175), (' ofrecer', -0.157), (' Provisions', -0.157), (' ofrecen', -0.156)]
+L01H2 -> L15H1 topic_control: +[(' MSP', 0.161), (' axs', 0.154), ('LaunchAction', 0.145), ('qvist', 0.144)] -[(' sanat', -0.16), (' eher', -0.15), ('RadioButton', -0.143), (' morally', -0.143)]
+L01H2 -> L16H2 belief_verbs: +[('user', 0.234), ('USER', 0.193), ('users', 0.166), ('User', 0.156)] -[(' Efter', -0.163), ('Concini', -0.154), ('CBC', -0.151), (' battling', -0.146)]
+L01H2 -> L16H2 topic_control: +[(' sacred', 0.201), (' girder', 0.192), (' parade', 0.191), (' ballet', 0.188)] -[(' ulo', -0.167), ('finden', -0.161), (' respetar', -0.157), (' considerar', -0.157)]
+L01H2 -> L15H2 belief_verbs: +[('user', 0.179), ('Delivery', 0.16), (' viscous', 0.16), ('Cultural', 0.159)] -[('modell', -0.172), (' setSearch', -0.166), (' reempl', -0.163), (' polin', -0.163)]
+L01H2 -> L15H2 topic_control: +[('italic', 0.151), (' axs', 0.148), (' Uy', 0.147), (' MSP', 0.145)] -[(' eher', -0.15), ('AVG', -0.142), ('RadioButton', -0.141), (' VIAF', -0.138)]
+L02H3 -> L09H0 belief_verbs: +[(' unveiled', 0.163), (' selected', 0.161), (' defeated', 0.159), (' designated', 0.158)] -[(' Sexuality', -0.175), (' vych', -0.156), ('ondere', -0.155), (' gange', -0.152)]
+L02H3 -> L09H0 topic_control: +[(' TIME', 0.197), ('Time', 0.191), (' Zeit', 0.176), (' Time', 0.176)] -[('intre', -0.149), ('iern', -0.147), ('planatory', -0.146), (' selben', -0.144)]
+L00H0 -> L09H0 belief_verbs: +[(' popOperand', 0.149), (' Rhoda', 0.145), (' objRequest', 0.143), (' popupButton', 0.137)] -[(' enthusiast', -0.152), (' aesthetics', -0.149), (' scenery', -0.148), ('Beautiful', -0.146)]
+L00H0 -> L09H0 topic_control: +[(' memperoleh', 0.167), (' pojed', 0.161), (' mendek', 0.144), ('segue', 0.142)] -[(' chemical', -0.219), (' superhero', -0.218), (' electromagnetic', -0.21), (' Chemical', -0.207)]
+L03H2 -> L16H2 belief_verbs: +[('lebihan', 0.146), ('iffen', 0.14), (' erat', 0.139), (' gerekli', 0.138)] -[(' Ozzy', -0.176), (' Shakespeare', -0.162), (' toxicity', -0.152), ('User', -0.15)]
+L03H2 -> L16H2 topic_control: +[('acceptance', 0.156), (' assertions', 0.142), ('lden', 0.141), ('gsub', 0.14)] -[(' Couples', -0.155), ('Picker', -0.148), (' CONSTRAINT', -0.144), ('women', -0.144)]
+
+These are composed WEIGHT kernels along possible residual connections.
+No role-token attention, hidden states, nonlinearities, or model responses were computed.
+
+```

@@ -1,0 +1,79 @@
+OUTPUT of run 14 of at most 60:
+```
+=== OUTPUT-WEIGHT CONTRAST SUBSPACES ===
+digits tokens= 10 rank= 9
+number_words tokens= 20 rank= 19
+letters tokens= 16 rank= 15
+boolean tokens= 16 rank= 15
+places tokens= 32 rank= 31
+
+=== MLP OUTPUT-WRITER CHANGES ===
+Each entry: projected fraction of writer-difference energy / coordinate-preserving expected ratio.
+Projection fractions and ratios are not behavioral importance.
+layer  digits(frac,ratio)   number_words(frac,ratio)  letters_ratio boolean_ratio places_ratio
+L00  (0.0021,0.996)          (0.0106,1.062)       0.992         1.014         1.000
+L01  (0.0012,0.916)          (0.0044,0.936)       0.936         0.981         1.003
+L02  (0.0014,1.030)          (0.0041,1.012)       0.928         1.002         1.039
+L03  (0.0009,1.018)          (0.0025,0.964)       0.893         0.916         1.005
+L04  (0.0002,1.029)          (0.0006,1.061)       0.882         0.991         1.012
+L05  (0.0002,0.946)          (0.0007,1.082)       0.945         0.969         1.020
+L06  (0.0002,0.968)          (0.0007,1.024)       0.973         0.970         1.029
+L07  (0.0003,0.982)          (0.0010,0.992)       0.974         1.014         0.986
+L08  (0.0003,1.045)          (0.0010,1.115)       0.922         0.972         0.949
+L09  (0.0005,1.206)          (0.0014,1.104)       0.900         1.014         0.992
+L10  (0.0005,1.092)          (0.0015,1.121)       0.949         1.004         1.014
+L11  (0.0011,1.790)          (0.0016,1.357)       1.097         1.125         1.051
+L12  (0.0017,2.495)          (0.0021,1.598)       1.094         1.158         1.110
+L13  (0.0022,3.481)          (0.0025,1.859)       1.156         1.177         1.141
+L14  (0.0033,5.708)          (0.0033,2.332)       1.237         1.364         1.136
+L15  (0.0053,10.068)          (0.0038,2.864)       1.184         1.435         1.140
+L16  (0.0085,16.071)          (0.0052,3.931)       1.093         1.476         1.379
+L17  (0.0141,23.537)          (0.0080,4.697)       1.605         2.052         1.921
+
+=== UNIT CONCENTRATION OF NUMERICAL OUTPUT-WEIGHT CHANGES ===
+L10: top5_share=0.0102, units_for_50%=587, units_for_90%=1546; top5=[(2012, 0.00234), (284, 0.00213), (550, 0.00201), (1290, 0.00189), (459, 0.00184)]
+L11: top5_share=0.0131, units_for_50%=535, units_for_90%=1503; top5=[(59, 0.0031), (179, 0.0027), (1685, 0.0026), (4, 0.00245), (185, 0.00225)]
+L12: top5_share=0.0120, units_for_50%=555, units_for_90%=1501; top5=[(191, 0.00267), (1662, 0.00267), (194, 0.00231), (1310, 0.00226), (1953, 0.00208)]
+L13: top5_share=0.0109, units_for_50%=555, units_for_90%=1513; top5=[(150, 0.00229), (820, 0.0022), (69, 0.00216), (1456, 0.00215), (1923, 0.00212)]
+L14: top5_share=0.0099, units_for_50%=569, units_for_90%=1512; top5=[(371, 0.00214), (539, 0.00212), (829, 0.00193), (1010, 0.00192), (686, 0.00182)]
+L15: top5_share=0.0107, units_for_50%=582, units_for_90%=1535; top5=[(1339, 0.00235), (65, 0.00212), (1704, 0.00211), (1312, 0.0021), (759, 0.00199)]
+L16: top5_share=0.0116, units_for_50%=562, units_for_90%=1513; top5=[(1511, 0.0025), (709, 0.00232), (829, 0.00232), (309, 0.00226), (208, 0.00224)]
+L17: top5_share=0.0117, units_for_50%=542, units_for_90%=1491; top5=[(739, 0.00307), (468, 0.0023), (1769, 0.00227), (1554, 0.00207), (925, 0.00204)]
+
+=== PREVIOUSLY INTERPRETED UNITS: NUMERICAL-WRITER DIFFERENCE RANK ===
+layer 17 [(1180, 55, 0.00128), (1242, 240, 0.0009), (1309, 530, 0.00062), (1192, 466, 0.00067), (310, 405, 0.0007)]
+layer 16 [(1417, 204, 0.00089), (112, 559, 0.00059), (1875, 142, 0.00099), (332, 345, 0.00074), (1547, 39, 0.0014)]
+
+=== ATTENTION OUTPUT-WRITER COHERENCE: NUMERICAL SUBSPACE ===
+L16H1: digit_fraction=0.0072, digit_ratio=13.053, number_word_ratio=2.898, place_ratio=1.131
+L17H3: digit_fraction=0.0081, digit_ratio=13.039, number_word_ratio=3.336, place_ratio=1.345
+L16H3: digit_fraction=0.0071, digit_ratio=12.836, number_word_ratio=2.999, place_ratio=1.066
+L16H2: digit_fraction=0.0065, digit_ratio=11.746, number_word_ratio=2.796, place_ratio=1.099
+L16H0: digit_fraction=0.0057, digit_ratio=10.280, number_word_ratio=2.716, place_ratio=1.195
+L17H0: digit_fraction=0.0051, digit_ratio=8.067, number_word_ratio=2.027, place_ratio=1.463
+L17H1: digit_fraction=0.0043, digit_ratio=6.528, number_word_ratio=2.120, place_ratio=1.797
+L15H2: digit_fraction=0.0044, digit_ratio=5.931, number_word_ratio=3.259, place_ratio=0.990
+L15H1: digit_fraction=0.0036, digit_ratio=4.773, number_word_ratio=2.822, place_ratio=0.998
+L15H3: digit_fraction=0.0035, digit_ratio=4.694, number_word_ratio=2.847, place_ratio=1.112
+L15H0: digit_fraction=0.0029, digit_ratio=3.846, number_word_ratio=2.483, place_ratio=1.073
+L13H1: digit_fraction=0.0023, digit_ratio=3.357, number_word_ratio=1.615, place_ratio=1.074
+L17H2: digit_fraction=0.0021, digit_ratio=3.208, number_word_ratio=1.872, place_ratio=1.421
+L14H3: digit_fraction=0.0017, digit_ratio=3.016, number_word_ratio=1.478, place_ratio=1.048
+L13H2: digit_fraction=0.0020, digit_ratio=2.926, number_word_ratio=1.701, place_ratio=1.128
+L12H0: digit_fraction=0.0023, digit_ratio=2.920, number_word_ratio=1.933, place_ratio=1.127
+
+=== SELECTED HEADS: PLACE AND BOOLEAN OUTPUT-WRITER COHERENCE ===
+L05H3: digits=0.845, number_words=1.252, letters=0.813, boolean=0.884, places=0.931
+L05H1: digits=0.960, number_words=1.130, letters=0.803, boolean=0.914, places=0.896
+L03H1: digits=0.843, number_words=1.029, letters=0.995, boolean=1.011, places=1.047
+L00H1: digits=1.487, number_words=0.909, letters=1.050, boolean=1.192, places=0.946
+L02H2: digits=0.825, number_words=0.979, letters=1.080, boolean=0.933, places=0.899
+L12H1: digits=1.914, number_words=1.387, letters=1.216, boolean=1.278, places=1.007
+L15H2: digits=5.931, number_words=3.259, letters=1.170, boolean=1.377, places=0.990
+L16H1: digits=13.053, number_words=2.898, letters=1.250, boolean=1.431, places=1.131
+L16H2: digits=11.746, number_words=2.796, letters=1.060, boolean=1.403, places=1.099
+L16H3: digits=12.836, number_words=2.999, letters=1.051, boolean=1.232, places=1.066
+
+Only differences, subspaces, and projections of stored weights were analyzed.
+
+```

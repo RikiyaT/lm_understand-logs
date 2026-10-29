@@ -1,0 +1,6 @@
+{
+ "ok": false,
+ "error": "ValueError: unknown practice ids: ['gsm8k_train3513']",
+ "trace": "Traceback (most recent call last):\n  File \"<remote>/repo/scripts/mathedit/fwd_server2.py\", line 318, in main\n    res = generate(req, run, k, s.tok, P, s, prof)\n  File \"<remote>/repo/scripts/mathedit/fwd_server2.py\", line 227, in generate\n    raise ValueError(f\"unknown practice ids: {unknown[:5]}\")\nValueError: unknown practice ids: ['gsm8k_train3513']\n",
+ "s": 0.0
+}

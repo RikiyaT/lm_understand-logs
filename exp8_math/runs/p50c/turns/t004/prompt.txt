@@ -1,0 +1,62 @@
+OUTPUT of Python run 2 of at most 300:
+```
+Record keys: ['id', 'source', 'answer', 'samples']
+{'id': 'gsm8k_train_2805', 'source': 'gsm8k', 'answer': '23'}
+{'id': 'gsm8k_train_1766', 'source': 'gsm8k', 'answer': '153'}
+{'id': 'gsm8k_train_5410', 'source': 'gsm8k', 'answer': '1'}
+{'id': 'gsm8k_train_1024', 'source': 'gsm8k', 'answer': '760'}
+{'id': 'gsm8k_train_2520', 'source': 'gsm8k', 'answer': '72600'}
+Activation index: {'layers': [4, 8, 12, 16, 20, 24], 'mlp_layers': [4, 8, 12, 16, 20], 'samples': [{'item': 'gsm8k_train_2805', 'sample': 0, 'correct': True, 'tokens': 1435}, {'item': 'gsm8k_train_1766', 'sample': 0, 'correct': True, 'tokens': 7447}, {'item': 'gsm8k_train_5410', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1024', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2520', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3513', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2364', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_1928', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_6876', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_6653', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5477', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_6029', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2804', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3165', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3272', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_967', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5982', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_6737', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5716', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_3529', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2403', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4239', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_5399', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_2899', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'gsm8k_train_4554', 'sample': 0, 'correct': False, 'tokens': 8192
+Model files: ['generation_config.json', 'model.safetensors', 'tokenizer_config.json', 'tokenizer.json', 'chat_template.jinja', 'config.json']
+Output-projection norm statistics:
+('model.language_model.layers.0.linear_attn.out_proj.weight', (1024, 2048), 17.916, 1.44, 49)
+('model.language_model.layers.0.mlp.down_proj.weight', (1024, 3584), 16.279, 1.101, 204)
+('model.language_model.layers.1.linear_attn.out_proj.weight', (1024, 2048), 18.344, 1.224, 1667)
+('model.language_model.layers.1.mlp.down_proj.weight', (1024, 3584), 16.453, 1.174, 1992)
+('model.language_model.layers.10.linear_attn.out_proj.weight', (1024, 2048), 16.895, 1.934, 998)
+('model.language_model.layers.10.mlp.down_proj.weight', (1024, 3584), 15.243, 1.886, 1725)
+('model.language_model.layers.11.mlp.down_proj.weight', (1024, 3584), 15.503, 1.761, 111)
+('model.language_model.layers.11.self_attn.o_proj.weight', (1024, 2048), 16.863, 1.846, 144)
+('model.language_model.layers.12.linear_attn.out_proj.weight', (1024, 2048), 16.216, 1.615, 626)
+('model.language_model.layers.12.mlp.down_proj.weight', (1024, 3584), 15.222, 1.522, 628)
+('model.language_model.layers.13.linear_attn.out_proj.weight', (1024, 2048), 16.765, 1.54, 213)
+('model.language_model.layers.13.mlp.down_proj.weight', (1024, 3584), 15.348, 1.775, 540)
+('model.language_model.layers.14.linear_attn.out_proj.weight', (1024, 2048), 16.929, 2.686, 635)
+('model.language_model.layers.14.mlp.down_proj.weight', (1024, 3584), 15.143, 1.768, 1438)
+('model.language_model.layers.15.mlp.down_proj.weight', (1024, 3584), 16.444, 1.81, 2974)
+('model.language_model.layers.15.self_attn.o_proj.weight', (1024, 2048), 20.036, 2.891, 1759)
+('model.language_model.layers.16.linear_attn.out_proj.weight', (1024, 2048), 16.045, 2.393, 1015)
+('model.language_model.layers.16.mlp.down_proj.weight', (1024, 3584), 16.371, 1.694, 2949)
+('model.language_model.layers.17.linear_attn.out_proj.weight', (1024, 2048), 15.503, 2.719, 1199)
+('model.language_model.layers.17.mlp.down_proj.weight', (1024, 3584), 16.388, 1.348, 2886)
+('model.language_model.layers.18.linear_attn.out_proj.weight', (1024, 2048), 14.641, 1.881, 809)
+('model.language_model.layers.18.mlp.down_proj.weight', (1024, 3584), 16.433, 1.304, 3502)
+('model.language_model.layers.19.mlp.down_proj.weight', (1024, 3584), 17.256, 1.458, 2681)
+('model.language_model.layers.19.self_attn.o_proj.weight', (1024, 2048), 24.212, 1.783, 1024)
+('model.language_model.layers.2.linear_attn.out_proj.weight', (1024, 2048), 18.106, 1.533, 310)
+('model.language_model.layers.2.mlp.down_proj.weight', (1024, 3584), 15.774, 1.275, 37)
+('model.language_model.layers.20.linear_attn.out_proj.weight', (1024, 2048), 15.246, 2.089, 668)
+('model.language_model.layers.20.mlp.down_proj.weight', (1024, 3584), 17.507, 1.364, 1458)
+('model.language_model.layers.21.linear_attn.out_proj.weight', (1024, 2048), 16.781, 1.588, 180)
+('model.language_model.layers.21.mlp.down_proj.weight', (1024, 3584), 17.704, 1.566, 3519)
+('model.language_model.layers.22.linear_attn.out_proj.weight', (1024, 2048), 17.703, 1.694, 1210)
+('model.language_model.layers.22.mlp.down_proj.weight', (1024, 3584), 17.521, 1.522, 1460)
+('model.language_model.layers.23.mlp.down_proj.weight', (1024, 3584), 16.418, 2.039, 1404)
+('model.language_model.layers.23.self_attn.o_proj.weight', (1024, 2048), 20.065, 4.489, 75)
+('model.language_model.layers.3.mlp.down_proj.weight', (1024, 3584), 15.472, 1.248, 3059)
+('model.language_model.layers.3.self_attn.o_proj.weight', (1024, 2048), 17.63, 2.004, 1705)
+('model.language_model.layers.4.linear_attn.out_proj.weight', (1024, 2048), 16.964, 1.852, 53)
+('model.language_model.layers.4.mlp.down_proj.weight', (1024, 3584), 15.585, 1.448, 172)
+('model.language_model.layers.5.linear_attn.out_proj.weight', (1024, 2048), 17.101, 1.427, 627)
+('model.language_model.layers.5.mlp.down_proj.weight', (1024, 3584), 15.812, 1.341, 90)
+('model.language_model.layers.6.linear_attn.out_proj.weight', (1024, 2048), 17.464, 1.678, 1986)
+('model.language_model.layers.6.mlp.down_proj.weight', (1024, 3584), 15.691, 1.742, 172)
+('model.language_model.layers.7.mlp.down_proj.weight', (1024, 3584), 15.772, 1.444, 60)
+('model.language_model.layers.7.self_attn.o_proj.weight', (1024, 2048), 16.178, 1.987, 450)
+('model.language_model.layers.8.linear_attn.out_proj.weight', (1024, 2048), 16.614, 1.691, 2001)
+('model.language_model.layers.8.mlp.down_proj.weight', (1024, 3584), 15.399, 1.415, 94)
+('model.language_model.layers.9.linear_attn.out_proj.weight', (1024, 2048), 16.308, 1.703, 1131)
+('model.language_model.layers.9.mlp.down_proj.weight', (1024, 3584), 15.548, 1.581, 2201)
+225
+
+```

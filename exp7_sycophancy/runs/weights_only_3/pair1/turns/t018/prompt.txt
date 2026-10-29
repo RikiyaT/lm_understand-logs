@@ -1,0 +1,37 @@
+OUTPUT of run 12 of at most 60:
+```
+NEW HYPOTHESIS: CROSS-UNIT CANCELLATION IN THE MLP QUADRATIC EVEN COMPONENT
+No inputs, activations, gates, or state normalizations are evaluated.
+The computed tensor describes F(z)+F(-z) for the MLP numerator.
+It is not the complete MLP function; the odd component and RMS divisions remain unexamined.
+
+layer collective_rel collective/separate_energy top8_output_energy overlap_with_down_delta top10_unit_share
+ 4       0.022882                         1.059435           0.944403                0.925166         0.117529
+10       0.020238                         1.111350           0.501703                0.735033         0.206113
+14       0.020812                         1.056802           0.257523                0.819861         0.047474
+15       0.018771                         1.049631           0.296596                0.895422         0.035591
+16       0.017639                         1.072139           0.367561                0.887706         0.052668
+17       0.018768                         1.172661           0.414765                0.888150         0.042823
+
+DETAILED RESULTS
+{"layer": 4, "collective_coefficient_relative_difference": 0.022881541577250673, "collective_over_separate_unit_difference_energy": 1.0594353927318707, "top8_output_difference_energy_share": 0.9444030066953881, "top8_overlap_with_down_projection_difference": 0.925165934844178, "coefficient_difference_energy_in_down_top8": 0.9436616680452086, "top10_unit_share_of_separate_difference_energy": 0.11752915087655406, "coefficient_norm_B_over_A": 1.0035534264983488, "negative_eigenvalue_mass_fraction": 1.3621473776943942e-20, "top3_units_by_separate_coefficient_difference": [{"unit": 13, "share": 0.02784223215538088}, {"unit": 1527, "share": 0.01958744827742472}, {"unit": 563, "share": 0.013864680765789358}]}
+{"layer": 10, "collective_coefficient_relative_difference": 0.02023757768886548, "collective_over_separate_unit_difference_energy": 1.1113503866736256, "top8_output_difference_energy_share": 0.5017034256333849, "top8_overlap_with_down_projection_difference": 0.7350328796937626, "coefficient_difference_energy_in_down_top8": 0.43318683198083974, "top10_unit_share_of_separate_difference_energy": 0.2061128283702769, "coefficient_norm_B_over_A": 0.9991910413666754, "negative_eigenvalue_mass_fraction": -0.0, "top3_units_by_separate_coefficient_difference": [{"unit": 1564, "share": 0.06439699679449402}, {"unit": 1363, "share": 0.05414041453606199}, {"unit": 1529, "share": 0.03450840671180665}]}
+{"layer": 14, "collective_coefficient_relative_difference": 0.020812368108644924, "collective_over_separate_unit_difference_energy": 1.0568021402447785, "top8_output_difference_energy_share": 0.2575225472582973, "top8_overlap_with_down_projection_difference": 0.819860938922914, "coefficient_difference_energy_in_down_top8": 0.23905820738959377, "top10_unit_share_of_separate_difference_energy": 0.04747440880521115, "coefficient_norm_B_over_A": 0.9999943628215511, "negative_eigenvalue_mass_fraction": -0.0, "top3_units_by_separate_coefficient_difference": [{"unit": 641, "share": 0.020625988396196743}, {"unit": 392, "share": 0.0039554098556458}, {"unit": 685, "share": 0.0037353119122967055}]}
+{"layer": 15, "collective_coefficient_relative_difference": 0.018770858192413885, "collective_over_separate_unit_difference_energy": 1.0496310417066792, "top8_output_difference_energy_share": 0.29659561103821735, "top8_overlap_with_down_projection_difference": 0.8954219263290483, "coefficient_difference_energy_in_down_top8": 0.28317956556292806, "top10_unit_share_of_separate_difference_energy": 0.035590611643295786, "coefficient_norm_B_over_A": 1.0001113202449075, "negative_eigenvalue_mass_fraction": -0.0, "top3_units_by_separate_coefficient_difference": [{"unit": 1369, "share": 0.010063122861499301}, {"unit": 651, "share": 0.0056927310150619815}, {"unit": 1226, "share": 0.005109946236224759}]}
+{"layer": 16, "collective_coefficient_relative_difference": 0.01763923081396556, "collective_over_separate_unit_difference_energy": 1.0721385992751078, "top8_output_difference_energy_share": 0.36756124228010206, "top8_overlap_with_down_projection_difference": 0.8877059623821697, "coefficient_difference_energy_in_down_top8": 0.3510360868702401, "top10_unit_share_of_separate_difference_energy": 0.0526677648062207, "coefficient_norm_B_over_A": 1.0000438583154718, "negative_eigenvalue_mass_fraction": -0.0, "top3_units_by_separate_coefficient_difference": [{"unit": 893, "share": 0.02134636200526165}, {"unit": 1591, "share": 0.00807275409860064}, {"unit": 730, "share": 0.006627440154436184}]}
+{"layer": 17, "collective_coefficient_relative_difference": 0.018767823089252053, "collective_over_separate_unit_difference_energy": 1.1726612452020968, "top8_output_difference_energy_share": 0.4147651949103999, "top8_overlap_with_down_projection_difference": 0.8881497773785872, "coefficient_difference_energy_in_down_top8": 0.3901011608636117, "top10_unit_share_of_separate_difference_energy": 0.04282256165752527, "coefficient_norm_B_over_A": 1.0001989291094024, "negative_eigenvalue_mass_fraction": -0.0, "top3_units_by_separate_coefficient_difference": [{"unit": 1916, "share": 0.006546451061446436}, {"unit": 1312, "share": 0.0058056388519575255}, {"unit": 1026, "share": 0.005495252918917466}]}
+
+CROSS-LAYER OUTPUT-SUBSPACE OVERLAPS OF THE COEFFICIENT DIFFERENCES
+layers=(14,15) overlap=0.365143
+layers=(14,16) overlap=0.298205
+layers=(14,17) overlap=0.224179
+layers=(15,16) overlap=0.460850
+layers=(15,17) overlap=0.319770
+layers=(16,17) overlap=0.511765
+
+Interpretation:
+collective/separate < 1 indicates net cross-unit cancellation in this tensor;
+> 1 indicates net reinforcement. Neither establishes task-conditioned importance.
+The coefficient tensor has an exact algebraic role, but no identified linguistic meaning.
+
+```

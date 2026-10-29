@@ -1,0 +1,57 @@
+OUTPUT of run 20 of at most 60:
+```
+=== MIDPOINT-SELECTED NUMERAL WEIGHT MOTIFS ===
+Selection: positive gate digit-template cosine >= .75;
+|up cosine for SAME digit| >= .75; |down cosine| >= .75;
+gate/up digit-subspace fractions >= .08; down fraction >= .03.
+These are weight motifs, not observed active units.
+Delta write orientation is defined by the up-weight sign, not a gate value.
+ L  selected  positive_raw_delta  positive_scaled_delta  raw/scaled_sign_agreement
+ 0         0                   0                      0                          0
+ 1         0                   0                      0                          0
+ 2         0                   0                      0                          0
+ 3         0                   0                      0                          0
+ 4         0                   0                      0                          0
+ 5         0                   0                      0                          0
+ 6         0                   0                      0                          0
+ 7         0                   0                      0                          0
+ 8         0                   0                      0                          0
+ 9         0                   0                      0                          0
+10         0                   0                      0                          0
+11         0                   0                      0                          0
+12         0                   0                      0                          0
+13         0                   0                      0                          0
+14         0                   0                      0                          0
+15         0                   0                      0                          0
+16         4                   2                      3                          3
+17         3                   0                      1                          2
+
+=== ALL SELECTED MOTIFS (UP TO 65, ORDERED BY LAYER/UNIT) ===
+Positive oriented write means co-oriented with the up read weight;
+this is NOT a statement about the sign of a unit's actual activation.
+ L unit digit gate_cos up_cos down_cos  oriented_A oriented_B   delta_raw delta_scaled
+16  332     2   +0.955  -0.936   -0.989    +0.59530    +0.59834   +0.003048    +0.002796
+16  931     3   +0.952  -0.939   +0.941    -0.35922    -0.35923   -0.000012    +0.000023
+16 1875     1   +0.994  +0.980   -0.992    -0.27795    -0.27409   +0.003855    +0.003336
+16 1955     8   +0.960  +0.796   -0.973    -0.52996    -0.53021   -0.000245    -0.000305
+17  228     6   +0.961  -0.808   -0.979    +0.49412    +0.49021   -0.003903    -0.004050
+17 1192     2   +0.924  +0.934   -0.939    -0.23753    -0.23773   -0.000196    +0.000296
+17 1242     0   +0.968  -0.945   +0.972    -0.43122    -0.43866   -0.007438    -0.007784
+
+=== PER-DIGIT COUNTS AND DIRECTIONAL SUMMARY ===
+No aggregation here is an estimate of model output: unit usage is unknown.
+digit 0 units 1 positive raw/scaled 0 0 median raw/scaled -0.00743792364181789 -0.007783553153995412
+digit 1 units 1 positive raw/scaled 1 1 median raw/scaled 0.0038546699871712517 0.0033357871378599468
+digit 2 units 2 positive raw/scaled 1 2 median raw/scaled 0.0014257957359264024 0.0015462198426203293
+digit 3 units 1 positive raw/scaled 0 1 median raw/scaled -1.1506323040972e-05 2.3213115503800744e-05
+digit 6 units 1 positive raw/scaled 0 0 median raw/scaled -0.003902731349738299 -0.004050281170289107
+digit 8 units 1 positive raw/scaled 0 0 median raw/scaled -0.0002446242652654805 -0.0003046214442890627
+
+=== SELECTION-THRESHOLD SENSITIVITY ===
+Rechecking stricter cosine cutoffs within the original selected set.
+cutoff 0.75 n 7 positive raw 2 positive scaled 4 median raw -0.00019602920591601136
+cutoff 0.8 n 6 positive raw 2 positive scaled 4 median raw -0.00010376776447849168
+cutoff 0.85 n 5 positive raw 2 positive scaled 4 median raw -1.1506323040972e-05
+cutoff 0.9 n 5 positive raw 2 positive scaled 4 median raw -1.1506323040972e-05
+
+```

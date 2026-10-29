@@ -1,0 +1,9 @@
+OUTPUT of Python run 1 of at most 300:
+```
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 8, in <module>
+  File "<prelude>", line 39, in edited
+TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
+
+```

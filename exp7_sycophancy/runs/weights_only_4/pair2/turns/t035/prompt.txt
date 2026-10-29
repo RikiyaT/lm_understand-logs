@@ -1,0 +1,68 @@
+OUTPUT of run 27 of at most 60:
+```
+=== DENSE POSITIONAL WEIGHT-KERNEL CHECK ===
+All offsets in the configured sliding window are inspected.
+No token sequence or contextual attention distribution is constructed.
+head_sum is an algebraic same-source limit, not observed head attention.
+L1 H2      ->L15H1 number_category : positive=1.000, mean/RMS=+0.985, min=+1045@9, max=+2759@303, sign_changes=0, longest_negative_run=0
+L1 H2      ->L15H1 belief_verbs    : positive=1.000, mean/RMS=+0.953, min=+140.6@0, max=+1018@197, sign_changes=0, longest_negative_run=0
+L1 H2      ->L15H1 belief_nouns    : positive=1.000, mean/RMS=+0.943, min=+103.6@160, max=+714.8@241, sign_changes=0, longest_negative_run=0
+L1 H2      ->L15H1 topic_control   : positive=0.000, mean/RMS=-0.970, min=-741.8@325, max=-137.6@3, sign_changes=0, longest_negative_run=512
+L1 head_sum->L15H1 number_category : positive=1.000, mean/RMS=+0.981, min=+1172@0, max=+3673@304, sign_changes=0, longest_negative_run=0
+L1 head_sum->L15H1 belief_verbs    : positive=1.000, mean/RMS=+0.925, min=+63.38@492, max=+1303@111, sign_changes=0, longest_negative_run=0
+L1 head_sum->L15H1 belief_nouns    : positive=1.000, mean/RMS=+0.957, min=+206.9@148, max=+917.8@241, sign_changes=0, longest_negative_run=0
+L1 head_sum->L15H1 topic_control   : positive=0.000, mean/RMS=-0.970, min=-824.9@56, max=-149.4@111, sign_changes=0, longest_negative_run=512
+L1 H2      ->L15H2 number_category : positive=1.000, mean/RMS=+0.981, min=+749.1@475, max=+2473@299, sign_changes=0, longest_negative_run=0
+L1 H2      ->L15H2 belief_verbs    : positive=1.000, mean/RMS=+0.973, min=+106.5@0, max=+1009@390, sign_changes=0, longest_negative_run=0
+L1 H2      ->L15H2 belief_nouns    : positive=1.000, mean/RMS=+0.937, min=+5.499@364, max=+637.1@287, sign_changes=0, longest_negative_run=0
+L1 H2      ->L15H2 topic_control   : positive=0.000, mean/RMS=-0.960, min=-1166@403, max=-195.4@2, sign_changes=0, longest_negative_run=512
+L1 head_sum->L15H2 number_category : positive=1.000, mean/RMS=+0.981, min=+1080@474, max=+3411@301, sign_changes=0, longest_negative_run=0
+L1 head_sum->L15H2 belief_verbs    : positive=1.000, mean/RMS=+0.946, min=+127.4@0, max=+1127@390, sign_changes=0, longest_negative_run=0
+L1 head_sum->L15H2 belief_nouns    : positive=1.000, mean/RMS=+0.965, min=+173.2@320, max=+884.9@287, sign_changes=0, longest_negative_run=0
+L1 head_sum->L15H2 topic_control   : positive=0.000, mean/RMS=-0.961, min=-1473@403, max=-236@1, sign_changes=0, longest_negative_run=512
+L1 H2      ->L16H2 number_category : positive=1.000, mean/RMS=+0.971, min=+1511@399, max=+5920@214, sign_changes=0, longest_negative_run=0
+L1 H2      ->L16H2 belief_verbs    : positive=0.949, mean/RMS=+0.864, min=-443.4@375, max=+2738@74, sign_changes=8, longest_negative_run=18
+L1 H2      ->L16H2 belief_nouns    : positive=0.785, mean/RMS=+0.656, min=-369.3@392, max=+1515@503, sign_changes=26, longest_negative_run=28
+L1 H2      ->L16H2 topic_control   : positive=0.002, mean/RMS=-0.907, min=-1502@389, max=+5.611@153, sign_changes=2, longest_negative_run=358
+L1 head_sum->L16H2 number_category : positive=1.000, mean/RMS=+0.980, min=+3251@375, max=+9113@227, sign_changes=0, longest_negative_run=0
+L1 head_sum->L16H2 belief_verbs    : positive=0.975, mean/RMS=+0.889, min=-403.4@368, max=+4157@74, sign_changes=6, longest_negative_run=5
+L1 head_sum->L16H2 belief_nouns    : positive=0.814, mean/RMS=+0.684, min=-484.1@393, max=+1964@64, sign_changes=22, longest_negative_run=27
+L1 head_sum->L16H2 topic_control   : positive=0.006, mean/RMS=-0.900, min=-1926@412, max=+124.8@153, sign_changes=2, longest_negative_run=357
+
+=== DOES A SIMPLE POSITIONAL SHIFT EXPLAIN THE CHANGE? ===
+Fractions refer to rotary coefficient-difference energy, not behavioral importance.
+The shift parameter is a projection coefficient, not an inferred prompt position.
+L15/16 target=L15H1 number_category : global_amplitude_fraction=0.7072, single_shift_fraction=0.0027, shift_coefficient=+0.038607, per_frequency_radial=0.935, per_frequency_tangential=0.065
+L15/16 target=L15H1 belief_verbs    : global_amplitude_fraction=0.7092, single_shift_fraction=0.0010, shift_coefficient=+0.02107, per_frequency_radial=0.944, per_frequency_tangential=0.056
+L15/16 target=L15H1 belief_nouns    : global_amplitude_fraction=0.4097, single_shift_fraction=0.0000, shift_coefficient=+0.0017741, per_frequency_radial=0.860, per_frequency_tangential=0.140
+L15/16 target=L15H1 topic_control   : global_amplitude_fraction=0.5394, single_shift_fraction=0.0008, shift_coefficient=+0.014905, per_frequency_radial=0.910, per_frequency_tangential=0.090
+L15/16 target=L15H2 number_category : global_amplitude_fraction=0.7200, single_shift_fraction=0.0003, shift_coefficient=+0.014327, per_frequency_radial=0.954, per_frequency_tangential=0.046
+L15/16 target=L15H2 belief_verbs    : global_amplitude_fraction=0.6254, single_shift_fraction=0.0001, shift_coefficient=+0.0057668, per_frequency_radial=0.926, per_frequency_tangential=0.074
+L15/16 target=L15H2 belief_nouns    : global_amplitude_fraction=0.4347, single_shift_fraction=0.0000, shift_coefficient=-0.0016502, per_frequency_radial=0.913, per_frequency_tangential=0.087
+L15/16 target=L15H2 topic_control   : global_amplitude_fraction=0.5973, single_shift_fraction=0.0002, shift_coefficient=+0.006917, per_frequency_radial=0.935, per_frequency_tangential=0.065
+L15/16 target=L16H2 number_category : global_amplitude_fraction=0.7311, single_shift_fraction=0.0033, shift_coefficient=-0.042991, per_frequency_radial=0.966, per_frequency_tangential=0.034
+L15/16 target=L16H2 belief_verbs    : global_amplitude_fraction=0.7534, single_shift_fraction=0.0001, shift_coefficient=-0.016267, per_frequency_radial=0.953, per_frequency_tangential=0.047
+L15/16 target=L16H2 belief_nouns    : global_amplitude_fraction=0.5475, single_shift_fraction=0.0019, shift_coefficient=-0.035323, per_frequency_radial=0.876, per_frequency_tangential=0.124
+L15/16 target=L16H2 topic_control   : global_amplitude_fraction=0.6811, single_shift_fraction=0.0011, shift_coefficient=-0.03423, per_frequency_radial=0.953, per_frequency_tangential=0.047
+
+=== ROTARY PERIOD BANDS FOR NUMERICAL ROLE PATHS ===
+L1H2 -> L15H1
+ period<=32         pairs= 23, coefficient_energy_fraction=0.037, mean_change=+0.46785, RMS=160.19
+ 32<period<=128     pairs= 19, coefficient_energy_fraction=0.018, mean_change=-7.6369, RMS=117.53
+ 128<period<=512    pairs= 20, coefficient_energy_fraction=0.035, mean_change=-0.22781, RMS=146.7
+ period>512         pairs= 66, coefficient_energy_fraction=0.910, mean_change=+1892.9, RMS=1928.5
+L1H2 -> L15H2
+ period<=32         pairs= 23, coefficient_energy_fraction=0.012, mean_change=+1.8968, RMS=112.49
+ 32<period<=128     pairs= 19, coefficient_energy_fraction=0.020, mean_change=-4.0553, RMS=170.89
+ 128<period<=512    pairs= 20, coefficient_energy_fraction=0.049, mean_change=+6.6823, RMS=222.93
+ period>512         pairs= 66, coefficient_energy_fraction=0.919, mean_change=+1569, RMS=1614.7
+L1H2 -> L16H2
+ period<=32         pairs= 23, coefficient_energy_fraction=0.020, mean_change=+3.0517, RMS=365.18
+ 32<period<=128     pairs= 19, coefficient_energy_fraction=0.010, mean_change=-3.6762, RMS=206.5
+ 128<period<=512    pairs= 20, coefficient_energy_fraction=0.108, mean_change=+136.56, RMS=981.89
+ period>512         pairs= 66, coefficient_energy_fraction=0.862, mean_change=+3496.9, RMS=3639.4
+
+Only spectral coefficients and fixed-position rotations of weight kernels were analyzed.
+No normalization of hidden states, attention softmax, activations, or model outputs were used.
+
+```

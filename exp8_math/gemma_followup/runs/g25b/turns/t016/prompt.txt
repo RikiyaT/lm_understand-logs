@@ -1,0 +1,11 @@
+OUTPUT of Python run 10 of at most 300:
+```
+Forward metadata keys: ['texts', 'lengths', 'model', 'edited_tensors', 'files', 'padding']
+Length validation: 0 local lengths [58, 73, 65, 82]
+Baseline answer-content mean logprob: -2.0157
+Layer 4 selected neurons [148, 887, 381, 1783, 1048, 180, 1809, 2030, 36, 1483, 1700, 1433, 1546, 903, 1159, 1181, 1045, 930, 1135, 1539, 1097, 403, 335, 1696, 724, 695, 1827, 12, 274, 1326, 830, 1175] median failure corr 0.064
+Layer 15 selected neurons [1638, 506, 1170, 936, 18, 565, 16, 75, 269, 1627, 599, 517, 1031, 1036, 187, 1482, 1805, 1747, 455, 837, 1055, 1152, 162, 1828, 360, 1777, 685, 469, 33, 228, 870, 1065] median failure corr 0.079
+Layer 17 selected neurons [1201, 2044, 330, 25, 1427, 1538, 1804, 1180, 1054, 57, 103, 1870, 43, 349, 304, 1975, 1392, 508, 1502, 2003, 1051, 1137, 1598, 182, 633, 1345, 335, 234, 1860, 1518, 788, 1918] median failure corr 0.079
+Edited tensors: ['model.layers.15.mlp.down_proj.weight', 'model.layers.17.mlp.down_proj.weight', 'model.layers.4.mlp.down_proj.weight']
+
+```

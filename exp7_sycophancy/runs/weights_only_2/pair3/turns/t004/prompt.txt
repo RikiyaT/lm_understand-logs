@@ -1,0 +1,90 @@
+OUTPUT of run 3 of at most 60:
+```
+TOP 30 UPDATE MATRICES BY TOP-SINGULAR-ENERGY ENRICHMENT
+Fractions are approximate lower estimates; residual diagnoses convergence.
+L17 mlp.down_proj.weight          top1= 15.559% top5= 39.994% null1= 0.398% ratio= 39.141 resid=1.31e-07/0.0816 radial_cos=-0.00013
+L10 self_attn.q_proj.weight       top1= 20.614% top5= 45.654% null1= 0.573% ratio= 35.989 resid=1.35e-08/0.0547 radial_cos=+0.00032
+L13 mlp.gate_proj.weight          top1= 13.543% top5= 30.924% null1= 0.381% ratio= 35.583 resid=3.31e-07/0.0827 radial_cos=+0.00188
+L10 mlp.gate_proj.weight          top1= 13.847% top5= 30.051% null1= 0.392% ratio= 35.303 resid=1.83e-07/0.0671 radial_cos=+0.00095
+L14 mlp.gate_proj.weight          top1= 12.890% top5= 28.097% null1= 0.380% ratio= 33.908 resid=4.24e-07/0.0689 radial_cos=-0.00010
+L12 mlp.gate_proj.weight          top1= 12.982% top5= 28.412% null1= 0.388% ratio= 33.481 resid=3.94e-07/0.0687 radial_cos=+0.00098
+L13 mlp.up_proj.weight            top1= 12.871% top5= 30.612% null1= 0.386% ratio= 33.346 resid=7.61e-07/0.0775 radial_cos=+0.00004
+L09 mlp.gate_proj.weight          top1= 12.694% top5= 29.021% null1= 0.388% ratio= 32.702 resid=4.12e-07/0.0867 radial_cos=-0.00090
+L11 self_attn.q_proj.weight       top1= 17.836% top5= 43.456% null1= 0.552% ratio= 32.324 resid=3.2e-08/0.0785 radial_cos=+0.00133
+L14 mlp.up_proj.weight            top1= 12.446% top5= 28.055% null1= 0.386% ratio= 32.249 resid=6.27e-07/0.0822 radial_cos=-0.00001
+L09 mlp.up_proj.weight            top1= 12.300% top5= 28.507% null1= 0.386% ratio= 31.887 resid=5.06e-07/0.0858 radial_cos=-0.00006
+L12 self_attn.q_proj.weight       top1= 21.045% top5= 52.409% null1= 0.679% ratio= 31.012 resid=6.32e-09/0.0415 radial_cos=-0.00136
+L01 self_attn.o_proj.weight       top1= 17.086% top5= 38.510% null1= 0.561% ratio= 30.462 resid=9.97e-08/0.0712 radial_cos=+0.00161
+L12 mlp.up_proj.weight            top1= 11.434% top5= 26.710% null1= 0.376% ratio= 30.424 resid=2.23e-06/0.0772 radial_cos=-0.00150
+L00 self_attn.q_proj.weight       top1= 16.106% top5= 37.052% null1= 0.538% ratio= 29.924 resid=1.26e-07/0.0585 radial_cos=+0.00590
+L11 mlp.gate_proj.weight          top1= 11.817% top5= 27.323% null1= 0.395% ratio= 29.889 resid=4.94e-07/0.066 radial_cos=-0.00098
+L15 mlp.gate_proj.weight          top1= 10.614% top5= 24.179% null1= 0.379% ratio= 28.016 resid=1.05e-06/0.0713 radial_cos=+0.00009
+L08 mlp.gate_proj.weight          top1= 11.089% top5= 27.799% null1= 0.397% ratio= 27.941 resid=8.44e-07/0.0736 radial_cos=-0.00248
+L05 self_attn.q_proj.weight       top1= 15.925% top5= 42.864% null1= 0.571% ratio= 27.878 resid=1.12e-07/0.0714 radial_cos=+0.00323
+L15 mlp.up_proj.weight            top1= 10.428% top5= 23.961% null1= 0.375% ratio= 27.772 resid=3.54e-06/0.0739 radial_cos=+0.00081
+L10 mlp.up_proj.weight            top1= 11.595% top5= 28.241% null1= 0.426% ratio= 27.231 resid=8.93e-07/0.071 radial_cos=-0.00034
+L17 self_attn.q_proj.weight       top1= 14.439% top5= 39.053% null1= 0.553% ratio= 26.092 resid=7.15e-08/0.0751 radial_cos=+0.00189
+L08 self_attn.q_proj.weight       top1= 14.351% top5= 42.942% null1= 0.551% ratio= 26.048 resid=1.59e-07/0.0606 radial_cos=-0.00115
+L07 mlp.gate_proj.weight          top1= 10.625% top5= 28.281% null1= 0.410% ratio= 25.915 resid=1.04e-06/0.0929 radial_cos=-0.00034
+L08 mlp.up_proj.weight            top1= 10.073% top5= 26.869% null1= 0.389% ratio= 25.880 resid=1.25e-06/0.0758 radial_cos=+0.00054
+L14 self_attn.o_proj.weight       top1= 16.035% top5= 31.052% null1= 0.624% ratio= 25.718 resid=8.44e-08/0.0547 radial_cos=-0.00096
+L15 self_attn.q_proj.weight       top1= 14.189% top5= 36.841% null1= 0.571% ratio= 24.856 resid=3.77e-07/0.0542 radial_cos=+0.00174
+L16 self_attn.q_proj.weight       top1= 12.911% top5= 31.943% null1= 0.521% ratio= 24.786 resid=4.73e-07/0.0562 radial_cos=-0.00173
+L11 mlp.up_proj.weight            top1= 10.777% top5= 26.037% null1= 0.436% ratio= 24.733 resid=2.02e-06/0.0764 radial_cos=+0.00025
+L16 mlp.up_proj.weight            top1=  9.094% top5= 22.233% null1= 0.372% ratio= 24.463 resid=1.87e-06/0.077 radial_cos=+0.00133
+
+TOP 15 MATRICES BY TOP-SINGULAR-ENERGY FRACTION
+L17 self_attn.k_proj.weight       top1=25.4170% top16=64.1508% max_row=0.901% rows=[10, 84, 4] max_col=0.445% cols=[463, 450, 240]
+L12 self_attn.q_proj.weight       top1=21.0446% top16=72.4333% max_row=0.394% rows=[150, 660, 529] max_col=0.289% cols=[30, 573, 66]
+L00 self_attn.k_proj.weight       top1=20.8270% top16=69.5670% max_row=0.851% rows=[125, 106, 197] max_col=0.357% cols=[375, 403, 571]
+L10 self_attn.q_proj.weight       top1=20.6136% top16=67.1283% max_row=0.316% rows=[665, 640, 522] max_col=0.278% cols=[355, 302, 137]
+L12 self_attn.k_proj.weight       top1=19.9421% top16=73.8447% max_row=0.930% rows=[158, 163, 19] max_col=0.413% cols=[48, 44, 506]
+L11 self_attn.k_proj.weight       top1=19.1102% top16=68.3149% max_row=0.760% rows=[106, 251, 114] max_col=0.335% cols=[355, 262, 632]
+L10 self_attn.k_proj.weight       top1=18.5430% top16=69.6395% max_row=0.656% rows=[207, 78, 8] max_col=0.351% cols=[138, 581, 6]
+L09 self_attn.q_proj.weight       top1=18.0651% top16=67.4869% max_row=0.525% rows=[19, 152, 15] max_col=0.317% cols=[173, 504, 134]
+L11 self_attn.q_proj.weight       top1=17.8359% top16=66.0684% max_row=0.262% rows=[439, 418, 434] max_col=0.322% cols=[282, 183, 243]
+L05 self_attn.k_proj.weight       top1=17.2424% top16=72.1862% max_row=0.675% rows=[144, 151, 143] max_col=0.374% cols=[242, 205, 105]
+L01 self_attn.o_proj.weight       top1=17.0864% top16=61.9936% max_row=0.396% rows=[11, 331, 138] max_col=0.169% cols=[483, 303, 385]
+L02 self_attn.k_proj.weight       top1=16.9965% top16=72.1595% max_row=1.267% rows=[212, 76, 97] max_col=0.317% cols=[436, 171, 485]
+L00 self_attn.v_proj.weight       top1=16.9520% top16=72.5293% max_row=0.926% rows=[213, 94, 129] max_col=0.298% cols=[403, 152, 104]
+L14 self_attn.k_proj.weight       top1=16.4805% top16=63.3154% max_row=0.944% rows=[38, 168, 106] max_col=0.314% cols=[167, 263, 229]
+L00 self_attn.q_proj.weight       top1=16.1059% top16=60.4153% max_row=0.251% rows=[215, 64, 103] max_col=0.246% cols=[603, 173, 571]
+
+PER-LAYER SPECTRAL SUMMARY
+For each family: top1_energy_percent / sign-control_enrichment
+layer               Q               K               V               O            GATE              UP            DOWN
+    0    16.11/ 29.92    20.83/ 16.52    16.95/ 12.98    14.36/ 23.91     8.21/ 19.47     8.30/ 18.77     4.21/ 10.90
+    1     9.75/ 17.57    13.88/ 12.49    11.35/ 10.16    17.09/ 30.46     6.17/ 16.08     5.74/ 14.95     4.44/ 11.59
+    2    13.02/ 24.15    17.00/ 11.47    15.68/ 10.87    11.36/ 19.91     8.24/ 20.96     9.21/ 23.51     7.90/ 18.71
+    3    11.30/ 19.96    14.07/ 10.11    10.94/  9.83    10.19/ 15.01     8.23/ 20.25     7.98/ 21.05     6.79/ 16.60
+    4    10.74/ 19.96    11.13/  9.57    10.05/  8.18    14.06/ 21.26     9.31/ 23.58     8.48/ 22.28     7.36/ 16.91
+    5    15.93/ 27.88    17.24/ 15.19    14.59/ 12.54    11.64/ 17.60     8.41/ 21.95     6.70/ 17.40     7.00/ 17.21
+    6    10.96/ 20.21    10.98/  9.54     9.93/  9.13    13.96/ 19.68     9.10/ 23.32     7.46/ 19.51     8.16/ 15.73
+    7    12.49/ 23.60    10.86/  8.65    14.36/ 12.79     9.95/ 17.95    10.62/ 25.91     9.83/ 22.58     8.60/ 20.46
+    8    14.35/ 26.05    13.47/ 11.62     7.56/  7.00    13.30/ 21.46    11.09/ 27.94    10.07/ 25.88     9.11/ 22.15
+    9    18.07/ 24.26    11.52/ 10.18     9.65/  8.16     9.92/ 17.56    12.69/ 32.70    12.30/ 31.89     9.88/ 22.13
+   10    20.61/ 35.99    18.54/ 16.38     9.67/  8.70    10.08/ 15.06    13.85/ 35.30    11.59/ 27.23    10.48/ 21.91
+   11    17.84/ 32.32    19.11/ 16.37    11.63/  7.42     7.66/ 14.67    11.82/ 29.89    10.78/ 24.73    10.24/ 21.14
+   12    21.04/ 31.01    19.94/ 15.03    10.89/  9.75     8.59/ 16.33    12.98/ 33.48    11.43/ 30.42     8.20/ 21.03
+   13    11.95/ 22.09    10.03/  8.18    11.91/  9.72     9.83/ 19.27    13.54/ 35.58    12.87/ 33.35     6.59/ 17.26
+   14    12.42/ 22.75    16.48/ 13.50    10.67/  9.22    16.04/ 25.72    12.89/ 33.91    12.45/ 32.25     4.97/ 13.12
+   15    14.19/ 24.86    11.45/ 10.47     9.92/  9.16     7.14/ 13.85    10.61/ 28.02    10.43/ 27.77     5.66/ 14.78
+   16    12.91/ 24.79    13.35/ 11.52    12.93/ 11.44    10.44/ 20.01     9.13/ 23.89     9.09/ 24.46     8.18/ 21.01
+   17    14.44/ 26.09    25.42/ 20.33     9.96/  8.08    10.71/ 19.69     8.04/ 20.98     7.61/ 20.21    15.56/ 39.14
+
+FAMILY MEDIANS
+self_attn.q_proj.weight       top1=13.6053% enrichment=24.5251 radial_cos=+0.000077
+self_attn.k_proj.weight       top1=13.9768% enrichment=11.5706 radial_cos=-0.000293
+self_attn.v_proj.weight       top1=10.9160% enrichment=9.4681 radial_cos=-0.000388
+self_attn.o_proj.weight       top1=10.5748% enrichment=19.4752 radial_cos=+0.000984
+mlp.gate_proj.weight          top1=9.9599% enrichment=24.9045 radial_cos=-0.000067
+mlp.up_proj.weight            top1=9.5194% enrichment=23.9885 radial_cos=+0.000017
+mlp.down_proj.weight          top1=8.0305% enrichment=17.9860 radial_cos=-0.000132
+
+CONVERGENCE CHECK
+Maximum leading-eigenpair relative residual: 0.0006995489255704968
+Median leading-eigenpair relative residual: 1.984417661307748e-06
+Maximum sign-control relative residual: 0.0929284544531294
+These are algebraic controls only; no model inputs or nonlinearities were evaluated.
+
+```

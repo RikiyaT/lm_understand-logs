@@ -1,0 +1,7 @@
+OUTPUT of Python run 14 of at most 300:
+```
+Behavior diagnostics: {'4_original': {'n': 1024, 'correct_box_but_final_failure': 0, 'conflicting_boxes': 1, 'mean_repeat_fraction': np.float64(0.255)}, '4_edited': {'n': 1024, 'correct_box_but_final_failure': 0, 'conflicting_boxes': 1, 'mean_repeat_fraction': np.float64(0.2441)}, '5_original': {'n': 1024, 'correct_box_but_final_failure': 0, 'conflicting_boxes': 0, 'mean_repeat_fraction': np.float64(0.2512)}, '5_edited': {'n': 1024, 'correct_box_but_final_failure': 0, 'conflicting_boxes': 1, 'mean_repeat_fraction': np.float64(0.2343)}, '6_original': {'n': 1024, 'correct_box_but_final_failure': 0, 'conflicting_boxes': 0, 'mean_repeat_fraction': np.float64(0.2495)}, '6_edited': {'n': 1024, 'correct_box_but_final_failure': 0, 'conflicting_boxes': 6, 'mean_repeat_fraction': np.float64(0.2654)}}
+Control edit: {'tensor': 'model.layers.8.mlp.down_proj.weight', 'columns': [1280, 1687, 1309, 568, 2036, 1312, 1917, 1471, 1156, 336, 1780, 1356, 678, 870, 1924, 2030], 'suppression_alpha': 1.0, 'relative_frobenius_change': 0.08916957676410675}
+'Matched-control test prepared.'
+
+```

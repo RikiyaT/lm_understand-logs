@@ -1,0 +1,60 @@
+{
+ "ok": true,
+ "limit": false,
+ "rc": 0,
+ "wall_s": 175.4,
+ "audit": {
+  "event_types": {
+   "thread.started": 1,
+   "item.completed": 7,
+   "turn.started": 1,
+   "turn.completed": 1
+  },
+  "item_types": {
+   "error": 1,
+   "reasoning": 5,
+   "agent_message": 1
+  },
+  "tool_items": {},
+  "tool_free": true,
+  "usage": {
+   "input_tokens": 571580,
+   "cached_input_tokens": 529408,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 38416,
+   "reasoning_output_tokens": 17914
+  },
+  "thread_id": "id-cefa9ae6",
+  "errors": [],
+  "turn_completed": true
+ },
+ "stderr_tail": "",
+ "cmd": [
+  "<codex>/bin/codex",
+  "exec",
+  "resume",
+  "--strict-config",
+  "--skip-git-repo-check",
+  "--json",
+  "-m",
+  "gpt-6-astra",
+  "-c",
+  "model_reasoning_effort=\"xhigh\"",
+  "-c",
+  "model_context_window=872000",
+  "-c",
+  "model_auto_compact_token_limit=1000000",
+  "-c",
+  "model_instructions_file=\"<data>/sycmid/analysis/dev_m3/run/instructions.md\"",
+  "-o",
+  "<data>/sycmid/analysis/dev_m3/run/pair_343898/turns/t013/answer.md",
+  "-c",
+  "model_reasoning_summary=\"detailed\"",
+  "id-cefa9ae6",
+  "-"
+ ],
+ "attempt": 1,
+ "waits": [],
+ "thread_in": "id-cefa9ae6",
+ "end": "2026-10-25T19:42:16-0400"
+}

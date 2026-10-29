@@ -1,0 +1,9 @@
+OUTPUT of Python run 16 of at most 300:
+```
+5 original {'n': 32, 'correct': 3, 'cut': 29, 'mean_tokens': 30017} edited {'n': 32, 'correct': 5, 'cut': 28, 'mean_tokens': 29263} difference 0.0625 SE 0.0435
+7 original {'n': 32, 'correct': 4, 'cut': 29, 'mean_tokens': 30123} edited {'n': 32, 'correct': 6, 'cut': 26, 'mean_tokens': 27698} difference 0.0625 SE 0.0435
+Probe size: 32
+Current edit relative change: 0.03374705836176872
+Available useful variables: ['practice', 'byid', 'diagnostic_ids', 'diffH', 'downweights', 'mlp_direction_edit', 'M4', 'H4', 'meansM', 'meansH']
+
+```

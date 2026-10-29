@@ -1,0 +1,99 @@
+OUTPUT of Python run 38 of at most 300:
+```
+  5           0 LOAD_GLOBAL              0 (list)
+              2 LOAD_GLOBAL              1 (edited)
+              4 CALL_FUNCTION            0
+              6 CALL_FUNCTION            1
+              8 GET_ITER
+        >>   10 FOR_ITER                 6 (to 24)
+             12 STORE_FAST               1 (name)
+
+  6          14 LOAD_GLOBAL              2 (drop_edit)
+             16 LOAD_FAST                1 (name)
+             18 CALL_FUNCTION            1
+             20 POP_TOP
+             22 JUMP_ABSOLUTE            5 (to 10)
+
+  7     >>   24 BUILD_LIST               0
+             26 STORE_FAST               2 (changes)
+
+  8          28 LOAD_GLOBAL              3 (targets)
+             30 LOAD_METHOD              4 (items)
+             32 CALL_METHOD              0
+             34 GET_ITER
+        >>   36 FOR_ITER                55 (to 148)
+             38 UNPACK_SEQUENCE          2
+             40 STORE_FAST               3 (l)
+             42 STORE_FAST               4 (js)
+
+  9          44 LOAD_CONST               1 ('model.language_model.layers.')
+             46 LOAD_FAST                3 (l)
+             48 FORMAT_VALUE             0
+             50 LOAD_CONST               2 ('.mlp.down_proj.weight')
+             52 BUILD_STRING             3
+             54 STORE_FAST               1 (name)
+
+ 10          56 LOAD_GLOBAL              5 (load_original)
+             58 LOAD_FAST                1 (name)
+             60 CALL_FUNCTION            1
+             62 STORE_FAST               5 (w)
+
+ 11          64 LOAD_FAST                5 (w)
+             66 LOAD_METHOD              6 (clone)
+             68 CALL_METHOD              0
+             70 STORE_FAST               6 (new)
+
+ 12          72 LOAD_FAST                6 (new)
+             74 LOAD_CONST               0 (None)
+             76 LOAD_CONST               0 (None)
+             78 BUILD_SLICE              2
+             80 LOAD_FAST                4 (js)
+             82 BUILD_TUPLE              2
+             84 DUP_TOP_TWO
+             86 BINARY_SUBSCR
+             88 LOAD_CONST               3 (1)
+             90 LOAD_FAST                0 (strength)
+             92 BINARY_SUBTRACT
+             94 INPLACE_MULTIPLY
+             96 ROT_THREE
+             98 STORE_SUBSCR
+
+ 13         100 LOAD_GLOBAL              7 (save_edit)
+            102 LOAD_FAST                1 (name)
+            104 LOAD_FAST                6 (new)
+            106 CALL_FUNCTION            2
+            108 POP_TOP
+
+ 14         110 LOAD_FAST                2 (changes)
+            112 LOAD_METHOD              8 (append)
+            114 LOAD_FAST                3 (l)
+            116 LOAD_FAST                4 (js)
+            118 LOAD_GLOBAL              9 (float)
+            120 LOAD_FAST                6 (new)
+            122 LOAD_FAST                5 (w)
+            124 BINARY_SUBTRACT
+            126 LOAD_METHOD             10 (norm)
+            128 CALL_METHOD              0
+            130 LOAD_FAST                5 (w)
+            132 LOAD_METHOD             10 (norm)
+            134 CALL_METHOD              0
+            136 BINARY_TRUE_DIVIDE
+            138 CALL_FUNCTION            1
+            140 BUILD_TUPLE              3
+            142 CALL_METHOD              1
+            144 POP_TOP
+            146 JUMP_ABSOLUTE           18 (to 36)
+
+ 15     >>  148 LOAD_FAST                2 (changes)
+            150 RETURN_VALUE
+Circuit globals: {'targets': {18: [8], 19: [11], 23: [22, 40]}}
+Sample keys: ['text', 'pred', 'correct', 'tokens', 'cut']
+Original sample metadata: {'pred': None, 'correct': False, 'tokens': 32768, 'cut': True}
+Edited sample metadata: {'pred': None, 'correct': False, 'tokens': 32768, 'cut': True}
+KeyError 'correct'
+model.language_model.layers.18.mlp.down_proj.weight [(8, 0.0)]
+model.language_model.layers.19.mlp.down_proj.weight [(11, 0.0)]
+model.language_model.layers.23.mlp.down_proj.weight [(22, 0.0), (40, 0.0)]
+Other globals: ['E', 'FROZEN', 'M1', 'MODEL', 'NAMES', 'Path', 'Tokenizer', 'W', 'WORK', 'a', 'a4', 'apply_circuit_strength', 'b', 'b4', 'brief_pair', 'by_id', 'candidates', 'changed', 'changed_cols', 'collections', 'cols', 'd', 'd4', 'data', 'dd', 'delta', 'di', 'diag_ids', 'direction', 'dis', 'down_cache', 'drop_edit', 'e4', 'edit4', 'edited', 'f', 'factors', 'file', 'filename', 'flat', 'flat1', 'flatten_file', 'flatten_generations', 'fn', 'g4e', 'g4o', 'ge4', 'gen1', 'gen_4_edited', 'gen_4_original', 'go4', 'grouped', 'i', 'ids_of', 'idx1', 'inds', 'inspect', 'ix', 'j', 'js', 'json', 'key', 'l', 'label', 'load', 'load_original', 'm', 'math', 'mean_bad', 'mean_good', 'name', 'new', 'nf', 'notes', 'notes_path', 'np', 'o', 'obj', 'old', 'order', 'orig', 'orig4', 'os', 'p', 'paired_summary', 'path', 'practice', 'r', 'ratio', 'read_flat', 'read_flat_file', 'read_generations', 'records', 'repeated_fraction', 'rows', 'rs', 'safe_ids', 'safe_labels', 'safe_open', 'safe_words', 'save_edit', 'scores', 'source', 'src', 'ss', 'tag', 'targets', 'tok', 'torch', 'v', 'value', 'var', 'w', 'w0', 'y1']
+
+```

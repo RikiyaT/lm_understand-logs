@@ -1,0 +1,6 @@
+OUTPUT of Python run 31 of at most 300:
+```
+PASS20 {'pass': 20, 'n': 1024, 'gain_pp': 0.48828125, 'paired_SE_pp': 1.5783820942984785, 'problem_cluster_SE_pp': 1.8935437129391122}
+NEXT EDIT {'tensor': 'model.layers.11.self_attn.o_proj.weight', 'head': 2, 'columns': [512, 768], 'operation': 'B -> gain*(B-alpha*d*(d.T@B))', 'gain': 1.0, 'alpha': -1.0, 'direction_file': '/work/head11_2_matched_direction.pt', 'relative_F_change': 0.02964095026254654}
+
+```

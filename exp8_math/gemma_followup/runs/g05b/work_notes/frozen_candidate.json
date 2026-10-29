@@ -1,0 +1,114 @@
+{
+  "strength": 0.5,
+  "columns": {
+    "6": [
+      640,
+      678,
+      1157
+    ],
+    "7": [
+      637,
+      1621
+    ],
+    "8": [
+      477,
+      792,
+      1777,
+      1865
+    ],
+    "9": [
+      884,
+      1493
+    ],
+    "10": [
+      1621,
+      1798
+    ],
+    "11": [
+      1,
+      587,
+      672,
+      1551,
+      1890
+    ],
+    "12": [
+      1123,
+      1184,
+      1278,
+      1797,
+      1894
+    ],
+    "13": [
+      39,
+      759,
+      1059,
+      1260,
+      1540,
+      1881
+    ],
+    "14": [
+      11,
+      23,
+      238,
+      640,
+      1157,
+      1202,
+      1497,
+      1935
+    ],
+    "15": [
+      661,
+      968,
+      1304,
+      1507,
+      1818
+    ],
+    "16": [
+      128,
+      255,
+      322,
+      513,
+      663,
+      1315,
+      1486,
+      1548,
+      1598,
+      1649,
+      1876,
+      2004
+    ],
+    "17": [
+      124,
+      942,
+      1115,
+      1222,
+      1326,
+      1475,
+      1484,
+      1554,
+      1688,
+      1741
+    ]
+  },
+  "tensor_sha256_float32": {
+    "model.layers.6.mlp.down_proj.weight": "1a766939b75485d16926a0115e14b77f45e1542974bc9483ec1f8f2c13f918bb",
+    "model.layers.7.mlp.down_proj.weight": "2cb6c444b13f969634347cd445017dfb46e505645c93c2a5f8f9160dd3768a42",
+    "model.layers.8.mlp.down_proj.weight": "8eafcd5d6065288b3bc16894d0183f7df88ff62262580ab3cc1ac4eb889c9c82",
+    "model.layers.9.mlp.down_proj.weight": "91f53e7872274d1e73bdb35e075174536ac686dbcc78bdc07767de167f1c38f1",
+    "model.layers.10.mlp.down_proj.weight": "1798b5a58394fe211752f68a0e24b58b4be9308d47128bdff987c6941cf2fc55",
+    "model.layers.11.mlp.down_proj.weight": "103bfa09fa6547fa79c478a42138ec61f5897cf0d7fcf3bbcdd6011996dc1948",
+    "model.layers.12.mlp.down_proj.weight": "8f899ad3148bc7007689f4267274f82396418f4376e6228c621ee63e86bb521f",
+    "model.layers.13.mlp.down_proj.weight": "bbd5a934505f7de0f9da8c883c18de2687da9d79ffd57be5c81cc3dcb395aef0",
+    "model.layers.14.mlp.down_proj.weight": "5e8ce5238fc7cfe58af0a9228d4509af83fe64fcca707e518583e517bbdc20eb",
+    "model.layers.15.mlp.down_proj.weight": "fe8d91b247af0ae6330bb6ded9343a2e5d6386c5667295f45c561304d0a13d17",
+    "model.layers.16.mlp.down_proj.weight": "017b7b0c8f874de491e2a8d7959f9b7eaefd41e5cc380951bad8432455924b38",
+    "model.layers.17.mlp.down_proj.weight": "ee38beb3787e538185fe87026653747ed06b5fdd8b2c7a9cde9a96153a5a1117"
+  },
+  "chosen_using": "DEV paired accuracy only",
+  "dev_half_difference_pp": -0.48828125,
+  "dev_half_reported_se_pp": 1.57,
+  "dev_full_difference_pp": -4.58984375,
+  "dev_full_reported_se_pp": 1.7,
+  "holdout_ids_file": "/work/HOLDOUT_ids.json",
+  "frozen_before_holdout": true
+}

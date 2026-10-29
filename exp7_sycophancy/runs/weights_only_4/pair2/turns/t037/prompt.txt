@@ -1,0 +1,76 @@
+OUTPUT of run 29 of at most 60:
+```
+=== ABSOLUTE BASELINE ORIENTATION AND ROLE SEPARATION ===
+All quantities below characterize composed WEIGHT kernels.
+A negative numerical contrast is not an observed negative attention score.
+No normalization of any contextual query/key state is performed.
+profile = key-side weight direction at each of the 512 fixed rotary offsets.
+
+L1H2 -> L15H1
+ user                  full_profile_B/A=0.88757, relative_difference=0.18314, parallel_alpha=-0.11970, parallel_fraction=0.427; number_kernel_B/A=0.73356
+    numeric means A=-6445.26, B=-4639.57; negative_fraction A=1.000, B=1.000; belief means A=-2058.52, B=-1502.19
+ model                 full_profile_B/A=0.97658, relative_difference=0.03950, parallel_alpha=-0.02371, parallel_fraction=0.360; number_kernel_B/A=0.95821
+    numeric means A=+12128.2, B=+11614.6; negative_fraction A=0.000, B=0.000; belief means A=+3170.74, B=+2972.56
+ role_contrast         full_profile_B/A=0.93675, relative_difference=0.08880, parallel_alpha=-0.06538, parallel_fraction=0.542; number_kernel_B/A=0.87889
+    numeric means A=-15099.5, B=-13214; negative_fraction A=1.000, B=1.000; belief means A=-4251.19, B=-3637.8
+ role_common           full_profile_B/A=1.05494, relative_difference=0.13606, parallel_alpha=+0.05368, parallel_fraction=0.156; number_kernel_B/A=1.19332
+    numeric means A=+3603.65, B=+4422.96; negative_fraction A=0.012, B=0.000; belief means A=+705.276, B=+932.39
+ human_vs_assistant    full_profile_B/A=0.98862, relative_difference=0.02238, parallel_alpha=-0.01145, parallel_fraction=0.261; number_kernel_B/A=0.97705
+ cat_vs_dog            full_profile_B/A=0.98627, relative_difference=0.02810, parallel_alpha=-0.01383, parallel_fraction=0.242; number_kernel_B/A=0.95225
+ red_vs_blue           full_profile_B/A=1.00432, relative_difference=0.02115, parallel_alpha=+0.00431, parallel_fraction=0.042; number_kernel_B/A=0.99754
+ Paris_vs_London       full_profile_B/A=1.01032, relative_difference=0.01774, parallel_alpha=+0.01027, parallel_fraction=0.335; number_kernel_B/A=1.01371
+ teacher_vs_student    full_profile_B/A=0.96525, relative_difference=0.04785, parallel_alpha=-0.03537, parallel_fraction=0.546; number_kernel_B/A=0.92341
+ Role-contrast change relative to role-common change:
+    full key-profile ratio=0.887966
+    numerical-key ratio=0.736510
+
+L1H2 -> L15H2
+ user                  full_profile_B/A=0.87014, relative_difference=0.21607, parallel_alpha=-0.13983, parallel_fraction=0.419; number_kernel_B/A=0.70996
+    numeric means A=-4617.79, B=-3064.61; negative_fraction A=1.000, B=0.971; belief means A=-2248.33, B=-1647.85
+ model                 full_profile_B/A=0.97936, relative_difference=0.04594, parallel_alpha=-0.02087, parallel_fraction=0.206; number_kernel_B/A=0.96496
+    numeric means A=+10589.8, B=+10207.5; negative_fraction A=0.000, B=0.000; belief means A=+678.859, B=+484.285
+ role_contrast         full_profile_B/A=0.92560, relative_difference=0.10693, parallel_alpha=-0.07738, parallel_fraction=0.524; number_kernel_B/A=0.87840
+    numeric means A=-12363.2, B=-10789.7; negative_fraction A=1.000, B=1.000; belief means A=-2379.69, B=-1733.34
+ role_common           full_profile_B/A=1.03313, relative_difference=0.16040, parallel_alpha=+0.03279, parallel_fraction=0.042; number_kernel_B/A=1.16664
+    numeric means A=+3786.96, B=+4529.41; negative_fraction A=0.021, B=0.002; belief means A=-995.226, B=-737.836
+ human_vs_assistant    full_profile_B/A=0.98821, relative_difference=0.02487, parallel_alpha=-0.01186, parallel_fraction=0.228; number_kernel_B/A=0.98641
+ cat_vs_dog            full_profile_B/A=1.00053, relative_difference=0.02328, parallel_alpha=+0.00053, parallel_fraction=0.001; number_kernel_B/A=0.99887
+ red_vs_blue           full_profile_B/A=1.00114, relative_difference=0.02608, parallel_alpha=+0.00114, parallel_fraction=0.002; number_kernel_B/A=1.00101
+ Paris_vs_London       full_profile_B/A=1.00469, relative_difference=0.02253, parallel_alpha=+0.00468, parallel_fraction=0.043; number_kernel_B/A=1.00799
+ teacher_vs_student    full_profile_B/A=0.97947, relative_difference=0.04688, parallel_alpha=-0.02075, parallel_fraction=0.196; number_kernel_B/A=1.06213
+ Role-contrast change relative to role-common change:
+    full key-profile ratio=0.895918
+    numerical-key ratio=0.752932
+
+L1H2 -> L16H2
+ user                  full_profile_B/A=0.85688, relative_difference=0.21133, parallel_alpha=-0.15496, parallel_fraction=0.538; number_kernel_B/A=0.82583
+    numeric means A=-22444.3, B=-18307.3; negative_fraction A=1.000, B=1.000; belief means A=-11014.9, B=-9356.01
+ model                 full_profile_B/A=0.98746, relative_difference=0.02977, parallel_alpha=-0.01262, parallel_fraction=0.180; number_kernel_B/A=0.99017
+    numeric means A=+35926, B=+35594.4; negative_fraction A=0.000, B=0.000; belief means A=+13610.9, B=+13445.7
+ role_contrast         full_profile_B/A=0.92417, relative_difference=0.09284, parallel_alpha=-0.07886, parallel_fraction=0.721; number_kernel_B/A=0.92496
+    numeric means A=-47452.8, B=-43820; negative_fraction A=1.000, B=1.000; belief means A=-20019.9, B=-18536.9
+ role_common           full_profile_B/A=1.10286, relative_difference=0.21697, parallel_alpha=+0.09874, parallel_fraction=0.207; number_kernel_B/A=1.23108
+    numeric means A=+8548.92, B=+10962; negative_fraction A=0.039, B=0.012; belief means A=+1646.16, B=+2593.35
+ human_vs_assistant    full_profile_B/A=0.99137, relative_difference=0.01727, parallel_alpha=-0.00867, parallel_fraction=0.252; number_kernel_B/A=0.98858
+ cat_vs_dog            full_profile_B/A=0.99813, relative_difference=0.03087, parallel_alpha=-0.00187, parallel_fraction=0.004; number_kernel_B/A=0.99073
+ red_vs_blue           full_profile_B/A=1.01012, relative_difference=0.01885, parallel_alpha=+0.01007, parallel_fraction=0.286; number_kernel_B/A=1.01040
+ Paris_vs_London       full_profile_B/A=1.01639, relative_difference=0.02705, parallel_alpha=+0.01626, parallel_fraction=0.361; number_kernel_B/A=1.02110
+ teacher_vs_student    full_profile_B/A=0.96896, relative_difference=0.04251, parallel_alpha=-0.03154, parallel_fraction=0.550; number_kernel_B/A=0.95743
+ Role-contrast change relative to role-common change:
+    full key-profile ratio=0.837981
+    numerical-key ratio=0.751346
+
+=== INTERPRETATION CHECK: ATTENUATION OR AMPLIFICATION? ===
+L15H1 user         : B-on-A kernel multiplier=+0.731616, mean(B-A)=+1805.69, numerical-kernel norm ratio=0.733564
+L15H1 model        : B-on-A kernel multiplier=+0.958186, mean(B-A)=-513.631, numerical-kernel norm ratio=0.958211
+L15H1 role_contrast: B-on-A kernel multiplier=+0.878717, mean(B-A)=+1885.51, numerical-kernel norm ratio=0.878895
+L15H2 user         : B-on-A kernel multiplier=+0.700311, mean(B-A)=+1553.19, numerical-kernel norm ratio=0.709963
+L15H2 model        : B-on-A kernel multiplier=+0.964904, mean(B-A)=-382.346, numerical-kernel norm ratio=0.964956
+L15H2 role_contrast: B-on-A kernel multiplier=+0.877908, mean(B-A)=+1573.51, numerical-kernel norm ratio=0.878398
+L16H2 user         : B-on-A kernel multiplier=+0.824415, mean(B-A)=+4137.02, numerical-kernel norm ratio=0.825833
+L16H2 model        : B-on-A kernel multiplier=+0.990148, mean(B-A)=-331.61, numerical-kernel norm ratio=0.990174
+L16H2 role_contrast: B-on-A kernel multiplier=+0.924862, mean(B-A)=+3632.82, numerical-kernel norm ratio=0.924964
+
+No model outputs, contextual attention scores, hidden-state normalizations, or forward passes were used.
+
+```

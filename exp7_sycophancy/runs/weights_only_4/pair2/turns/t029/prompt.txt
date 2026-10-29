@@ -1,0 +1,112 @@
+OUTPUT of run 24 of at most 60:
+```
+=== KEY-CONTEXT MARKING: STRONGEST CONSISTENT STATIC PATHS ===
+Positive B-A couples belief-over-fact cue directions into a later key reader.
+Ranking screens consistency across three cue panels and two offset ranges.
+It does not measure contextual attention or causal importance.
+L03H1 -> K(L12H1): consistent=True, minimum_abs_cos=0.0623, mean_cos=+0.0730
+L03H2 -> K(L16H3): consistent=True, minimum_abs_cos=0.0567, mean_cos=+0.0663
+L02H3 -> K(L16H1): consistent=True, minimum_abs_cos=0.0499, mean_cos=-0.0734
+L01H3 -> K(L12H1): consistent=True, minimum_abs_cos=0.0471, mean_cos=+0.0618
+L01H3 -> K(L16H0): consistent=True, minimum_abs_cos=0.0380, mean_cos=+0.0592
+L01H3 -> K(L16H1): consistent=True, minimum_abs_cos=0.0327, mean_cos=+0.0653
+L02H2 -> K(L06H1): consistent=True, minimum_abs_cos=0.0301, mean_cos=-0.0617
+L02H3 -> K(L12H1): consistent=True, minimum_abs_cos=0.0283, mean_cos=+0.0412
+L00H3 -> K(L16H1): consistent=True, minimum_abs_cos=0.0268, mean_cos=+0.0379
+L03H1 -> K(L17H3): consistent=True, minimum_abs_cos=0.0255, mean_cos=+0.0577
+L03H0 -> K(L06H1): consistent=True, minimum_abs_cos=0.0249, mean_cos=-0.0441
+L03H3 -> K(L15H1): consistent=True, minimum_abs_cos=0.0232, mean_cos=-0.0489
+
+=== QUERY-DIRECTION ROBUSTNESS OF SELECTED PATHS ===
+Columns: ['verbs', 'nouns', 'additional']
+
+L03H1 -> K(L12H1)
+ near numeric_reader  : cos=[0.0676 0.0666 0.0751]
+      upstream_change= [87.7655 37.7908 59.851 ]  downstream_change= [23.7872 72.1406 64.1105]
+ near digit_embedding : cos=[0.071  0.0705 0.0822]
+ near answer_embedding: cos=[ 0.0036 -0.0091 -0.0227]
+ far  numeric_reader  : cos=[0.0741 0.0623 0.092 ]
+      upstream_change= [95.4527 32.9966 65.23  ]  downstream_change= [16.8596 61.4402 74.1284]
+ far  digit_embedding : cos=[0.0814 0.0624 0.086 ]
+ far  answer_embedding: cos=[-0.0145  0.0026 -0.0411]
+
+L03H2 -> K(L16H3)
+ near numeric_reader  : cos=[0.0671 0.0607 0.0567]
+      upstream_change= [177.5984 175.371   72.0549]  downstream_change= [297.5223 254.6171 329.4525]
+ near digit_embedding : cos=[0.1009 0.0222 0.0694]
+ near answer_embedding: cos=[ 0.0232 -0.0717  0.0288]
+ far  numeric_reader  : cos=[0.0871 0.0695 0.0567]
+      upstream_change= [319.087  145.2511 176.0628]  downstream_change= [326.0306 369.3554 243.4509]
+ far  digit_embedding : cos=[0.1108 0.035  0.0666]
+ far  answer_embedding: cos=[ 0.0158 -0.0605  0.0322]
+
+L02H3 -> K(L16H1)
+ near numeric_reader  : cos=[-0.0753 -0.0749 -0.0773]
+      upstream_change= [-165.7128 -225.4673 -177.4759]  downstream_change= [-65.099   -4.0731 -59.63  ]
+ near digit_embedding : cos=[-0.044  -0.038  -0.0298]
+ near answer_embedding: cos=[ 0.005   0.0171 -0.054 ]
+ far  numeric_reader  : cos=[-0.091  -0.0499 -0.0719]
+      upstream_change= [-250.7085 -177.1998 -277.4708]  downstream_change= [-73.2363  -0.5766  21.3102]
+ far  digit_embedding : cos=[-0.0681 -0.0239 -0.0393]
+ far  answer_embedding: cos=[-0.0101  0.0102 -0.0612]
+
+L01H3 -> K(L12H1)
+ near numeric_reader  : cos=[0.0915 0.0471 0.048 ]
+      upstream_change= [-48.1068  14.3654  13.0391]  downstream_change= [382.0756 157.4592 162.2672]
+ near digit_embedding : cos=[0.0942 0.0627 0.057 ]
+ near answer_embedding: cos=[-0.0622 -0.0218 -0.002 ]
+ far  numeric_reader  : cos=[0.0636 0.0538 0.0669]
+      upstream_change= [-24.0923  42.7518  38.9628]  downstream_change= [159.172   71.4755 103.1348]
+ far  digit_embedding : cos=[0.0583 0.0776 0.0807]
+ far  answer_embedding: cos=[-0.0546 -0.0122  0.0049]
+
+L01H3 -> K(L16H0)
+ near numeric_reader  : cos=[0.0977 0.038  0.0479]
+      upstream_change= [ 72.891  250.1226 193.2926]  downstream_change= [703.0786  51.9973 187.1317]
+ near digit_embedding : cos=[0.1041 0.034  0.0441]
+ near answer_embedding: cos=[-0.0395  0.0596 -0.0453]
+ far  numeric_reader  : cos=[0.0494 0.0518 0.0703]
+      upstream_change= [ 95.8855 473.2188 497.9055]  downstream_change= [391.9116  38.1252 196.2046]
+ far  digit_embedding : cos=[0.0333 0.0446 0.0686]
+ far  answer_embedding: cos=[-0.0196  0.0418 -0.0221]
+
+L01H3 -> K(L16H1)
+ near numeric_reader  : cos=[0.0998 0.0327 0.0419]
+      upstream_change= [104.7807 131.6486 113.1013]  downstream_change= [970.9469 220.9193 338.1498]
+ near digit_embedding : cos=[0.1053 0.0352 0.0439]
+ near answer_embedding: cos=[ 0.0606  0.0555 -0.0008]
+ far  numeric_reader  : cos=[0.1099 0.0395 0.0678]
+      upstream_change= [223.0243 315.0938 348.4149]  downstream_change= [996.1997 122.9118 403.6697]
+ far  digit_embedding : cos=[0.1135 0.0677 0.0869]
+ far  answer_embedding: cos=[0.0819 0.0559 0.009 ]
+
+=== UNFILTERED SOURCE-CUE INTERPRETATIONS ===
+L3H1 -> K(L12H1) near +[('halation', 0.162), (' arbeitet', 0.158), ('IBM', 0.157), (' Newell', 0.144)] -[(' ses', -0.139), ('ducers', -0.136), ('kend', -0.133), ('vect', -0.132)]
+L3H1 -> K(L12H1) far +[(' arbeitet', 0.151), ('halation', 0.15), (' compels', 0.149), ('ITAL', 0.148)] -[(' ses', -0.139), (' custo', -0.136), (' Ses', -0.13), (' Sell', -0.129)]
+L3H2 -> K(L16H3) near +[(' asemenea', 0.153), ('TextInput', 0.148), (' fuelwood', 0.148), (' adqu', 0.141)] -[(' Timeline', -0.161), ('Coluna', -0.154), (' Poste', -0.154), ('Karo', -0.142)]
+L3H2 -> K(L16H3) far +[(' asemenea', 0.154), (' fuelwood', 0.14), ('achtige', 0.138), ('dding', 0.131)] -[('Karo', -0.151), ('LESS', -0.147), ('Delete', -0.147), (' SAFETY', -0.146)]
+L2H3 -> K(L16H1) near +[('registered', 0.171), (' Special', 0.168), (' heavyweight', 0.16), ('ropolitan', 0.157)] -[(' upregulation', -0.165), ('ucer', -0.16), ('Cxt', -0.155), (' outil', -0.15)]
+L2H3 -> K(L16H1) far +[('ipated', 0.186), (' sleep', 0.171), (' operating', 0.17), ('sleep', 0.169)] -[(' Grower', -0.194), (' outil', -0.171), (' usuario', -0.171), (' hilfre', -0.167)]
+L1H3 -> K(L12H1) near +[(' lanzamiento', 0.21), (' plantilla', 0.184), (' talleres', 0.183), ('bersihan', 0.181)] -[(' DE', -0.257), (' RE', -0.254), (' Pe', -0.248), (' NE', -0.244)]
+L1H3 -> K(L12H1) far +[('acionais', 0.167), (' lanz', 0.156), ('icius', 0.152), ('icionar', 0.15)] -[(' minus', -0.247), (' Dee', -0.204), (' BE', -0.202), (' ADE', -0.197)]
+L1H3 -> K(L16H0) near +[(' liderazgo', 0.21), ('ulty', 0.188), (' conductas', 0.171), (' cristiano', 0.171)] -[(' SM', -0.251), (' BH', -0.239), ('Ka', -0.239), (' minus', -0.238)]
+L1H3 -> K(L16H0) far +[('ulty', 0.173), (' dukungan', 0.163), (' cuadros', 0.162), (' recomendable', 0.16)] -[(' minus', -0.322), (' Minus', -0.274), ('minus', -0.266), ('Minus', -0.261)]
+L1H3 -> K(L16H1) near +[('1', 0.196), (' ordenador', 0.179), (' emargin', 0.174), ('Nome', 0.172)] -[(' BH', -0.22), (' Ky', -0.213), (' Sha', -0.211), (' Kar', -0.209)]
+L1H3 -> K(L16H1) far +[(' bruising', 0.183), (' ordenador', 0.176), (' cultivos', 0.174), (' trastorno', 0.161)] -[(' KA', -0.217), (' Dl', -0.214), (' BH', -0.214), (' Kh', -0.214)]
+
+=== OTHER TWO STATIC LINKS NEEDED BY THE HYPOTHESIS ===
+Early cue selection: digit-query weight direction against belief/fact keys.
+L1H3 early QK: A=[-96.003   49.6271   1.6538], B=[-97.0731  49.8623   2.4355], B-A=[-1.07    0.2352  0.7817]
+L2H3 early QK: A=[-71.6345  10.6538 -36.3007], B=[-68.3809  11.6205 -36.828 ], B-A=[ 3.2535  0.9667 -0.5272]
+L3H1 early QK: A=[ 4.4239  5.6526 -2.2009], B=[ 3.2538  4.9747 -2.9017], B-A=[-1.1701 -0.6779 -0.7008]
+L3H2 early QK: A=[-12.514  -31.8493 -17.8709], B=[-12.9647 -31.3582 -19.2709], B-A=[-0.4507  0.4911 -1.4   ]
+Late identity transport: centered digit-weight OV contractions.
+L12H1 OV digit identity: A=+185.564, B=+185.968, B-A=+0.404151
+L16H0 OV digit identity: A=-108.709, B=-111.792, B-A=-3.08266
+L16H1 OV digit identity: A=+38.0701, B=+43.1728, B-A=+5.10267
+L16H3 OV digit identity: A=+34.2205, B=+44.2495, B-A=+10.029
+
+Only weight kernels and embedding-weight directions were composed.
+No attention selection, hidden states, nonlinear gates, or model outputs were evaluated.
+
+```

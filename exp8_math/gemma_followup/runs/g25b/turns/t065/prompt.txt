@@ -1,0 +1,21 @@
+OUTPUT of Python run 40 of at most 300:
+```
+DEV candidate ranking:  pass      candidate  gain_pp
+   18     L17n920 x2   -1.290
+    7      A amplify   -1.587
+   17   L0n1302 x1.5   -1.786
+    6         A half   -1.885
+   16 L0n1302 remove   -2.183
+   15  rank1 amplify   -2.183
+   21       H0 x1.25   -2.282
+   19 L17n920 remove   -2.282
+   20       H0 x1.10   -3.075
+   11        H0 x1.5   -4.266
+   14   rank1 remove   -4.960
+   12        H2 x1.5   -6.349
+    5       A remove   -8.631
+   10      H0 remove  -15.972
+   13        H2 x0.5  -18.254
+Retest problem order: ['math_train_algebra_863', 'math_train_prealgebra_1138', 'math_train_number_theory_19', 'math_train_number_theory_530', 'math_train_algebra_1374', 'math_train_prealgebra_511', 'math_train_prealgebra_758', 'math_train_precalculus_139', 'math_train_counting_and_probability_61', 'math_train_algebra_380', 'math_train_prealgebra_408', 'math_train_algebra_577', 'math_train_prealgebra_843', 'math_train_geometry_161', 'math_train_number_theory_528', 'math_train_prealgebra_1022', 'math_train_intermediate_algebra_547', 'math_train_prealgebra_34', 'math_train_algebra_775', 'math_train_precalculus_233', 'math_train_prealgebra_443', 'math_train_algebra_1585', 'math_train_intermediate_algebra_548', 'math_train_intermediate_algebra_625', 'math_train_prealgebra_937', 'math_train_algebra_502', 'math_train_prealgebra_697', 'math_train_precalculus_404', 'math_train_algebra_697', 'math_train_number_theory_745', 'math_train_intermediate_algebra_788', 'math_train_counting_and_probability_586', 'math_train_geometry_310', 'math_train_algebra_905', 'math_train_number_theory_505', 'math_train_prealgebra_394', 'math_train_prealgebra_668', 'math_train_algebra_486', 'math_train_algebra_595', 'math_train_prealgebra_672', 'math_train_intermediate_algebra_901', 'math_train_number_theory_387', 'math_train_precalculus_125', 'math_train_intermediate_algebra_802', 'math_train_intermediate_algebra_955', 'math_train_algebra_580', 'math_train_algebra_29', 'math_train_number_theory_95', 'math_train_counting_and_probability_111', 'math_train_prealgebra_783', 'math_train_intermediate_algebra_1289', 'math_train_algebra_920', 'math_train_prealgebra_161', 'math_train_precalculus_344', 'math_train_algebra_1425', 'math_train_algebra_817', 'math_train_algebra_36', 'math_train_algebra_1491', 'math_train_precalculus_76', 'math_train_intermediate_algebra_358', 'math_train_algebra_477', 'math_train_prealgebra_867', 'math_train_number_theory_417']
+
+```

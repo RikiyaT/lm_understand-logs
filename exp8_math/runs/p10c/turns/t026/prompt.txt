@@ -1,0 +1,17 @@
+OUTPUT of Python run 21 of at most 300:
+```
+Work files: ['edited', 'fwd_3', 'gen_1.jsonl', 'gen_1_acts', 'gen_4_edited.jsonl', 'gen_4_edited_acts', 'gen_4_original.jsonl', 'gen_4_original_acts', 'notes.md']
+targets {18: [8], 19: [11], 23: [22, 40]}
+candidates {18: [8], 19: [11], 22: [59, 11, 89], 23: [22, 40, 46, 94, 19, 350]}
+direction tensor([ 0.0461,  0.0137,  0.0349,  ..., -0.0066, -0.0065, -0.0013])
+scores [ 0.0135  0.0163  0.0145  0.0149  0.0151  0.0141  0.017   0.0159  0.0128  0.0159  0.0216  0.0199  0.0208  0.017   0.0236  0.0178  0.0199  0.0157  0.0095
+  0.0171  0.0117  0.0199  0.014   0.016   0.0107  0.0134  0.0141  0.0092  0.0067  0.0041  0.0134  0.0034  0.0117 -0.0101 -0.0069]
+Function constants: (None, 'model.language_model.layers.', '.mlp.down_proj.weight', 1)
+gen_1.jsonl n 256 accuracy 0.09375 cut 0.9140625 tokens 30428.4765625
+gen_4_edited.jsonl n 128 accuracy 0.0859375 cut 0.9140625 tokens 30362.765625
+gen_4_original.jsonl n 128 accuracy 0.1015625 cut 0.90625 tokens 30206.75
+model.language_model.layers.18.mlp.down_proj.weight changed columns [8] ratios [(8, 0.0)]
+model.language_model.layers.19.mlp.down_proj.weight changed columns [11] ratios [(11, 0.0)]
+model.language_model.layers.23.mlp.down_proj.weight changed columns [22, 40] ratios [(22, 0.0), (40, 0.0)]
+
+```

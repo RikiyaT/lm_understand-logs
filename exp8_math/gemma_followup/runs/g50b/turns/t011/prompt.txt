@@ -1,0 +1,11 @@
+OUTPUT of Python run 8 of at most 300:
+```
+Teacher-forced metadata keys: ['edited_tensors', 'files', 'lengths', 'model', 'padding', 'texts']
+Tokenizer type: Tokenizer
+Metadata summary: {'lengths': [53, 62, 68, 57, 47, 97, 46, 49, 102, 94, 86, 139, 49, 61, 80, 99, 85, 71, 56, 53, 103, 63, 50, 73, 47, 88, 64, 60, 66, 62, 58, 64], 'model': 'original', 'edited_tensors': [], 'files': {'input_ids': [32, 139], 'token_logprobs': [32, 138], 'hidden_8': [32, 139, 640], 'hidden_9': [32, 139, 640], 'hidden_11': [32, 139, 640], 'hidden_12': [32, 139, 640], 'mlp_act_8': [32, 139, 2048], 'mlp_act_11': [32, 139, 2048]}, 'padding': 'right; positions >= length are padding'}
+Layer-8 selected units: [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796]
+Selection statistics: [{'unit': 1231, 't': 4.83, 'good_mean': 0.0095, 'bad_mean': 0.0133}, {'unit': 1683, 't': 3.77, 'good_mean': 0.0328, 'bad_mean': 0.0349}, {'unit': 1810, 't': -3.71, 'good_mean': -0.0261, 'bad_mean': -0.0315}, {'unit': 1912, 't': -3.53, 'good_mean': -0.0028, 'bad_mean': -0.0052}, {'unit': 10, 't': -3.26, 'good_mean': -0.032, 'bad_mean': -0.0335}, {'unit': 396, 't': 3.02, 'good_mean': 0.0103, 'bad_mean': 0.0141}, {'unit': 1637, 't': -2.76, 'good_mean': -0.0218, 'bad_mean': -0.0219}, {'unit': 988, 't': -2.61, 'good_mean': -0.0191, 'bad_mean': -0.0211}, {'unit': 591, 't': -2.6, 'good_mean': -0.007, 'bad_mean': -0.0095}, {'unit': 1229, 't': 2.59, 'good_mean': 0.0128, 'bad_mean': 0.0135}, {'unit': 516, 't': 2.57, 'good_mean': 0.0005, 'bad_mean': 0.0013}, {'unit': 641, 't': 2.56, 'good_mean': 0.0087, 'bad_mean': 0.0138}, {'unit': 1484, 't': -2.52, 'good_mean': -0.0144, 'bad_mean': -0.0165}, {'unit': 419, 't': 2.52, 'good_mean': 0.0181, 'bad_mean': 0.0213}, {'unit': 1306, 't': -2.51, 'good_mean': 0.0508, 'bad_mean': 0.0526}, {'unit': 796, 't': -2.5, 'good_mean': -0.0128, 'bad_mean': -0.0183}]
+Exact current edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08907650411128998}
+'First causal candidate installed; HOLDOUT unused.'
+
+```

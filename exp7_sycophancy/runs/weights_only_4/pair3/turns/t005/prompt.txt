@@ -1,0 +1,141 @@
+OUTPUT of run 4 of at most 60:
+```
+Digit-identity subspace dimension: 9
+Isotropic energy fraction for this subspace: 0.0140625
+
+=== UNSCALED DIFFERENCE SUBSPACES ===
+Read matrices use their residual-input side; write uses residual-output side.
+Each combined read covariance gives its constituent matrices equal total weight.
+ L kind        top1   top2   top3   eff_rank  coherence  digit_frac number_frac
+ 0 MLP_read    0.082  0.061  0.047      46.9      43.83     0.0504      0.0274
+ 0 MLP_write   0.042  0.036  0.033      71.2      15.99     0.0184      0.0021
+ 0 QK_read     0.169  0.100  0.044      20.4      58.90     0.0513      0.0321
+ 1 MLP_read    0.059  0.047  0.036      61.4      30.90     0.0606      0.0138
+ 1 MLP_write   0.044  0.038  0.033      73.7      16.72     0.0192      0.0025
+ 1 QK_read     0.076  0.072  0.060      35.5      27.25     0.1176      0.0141
+ 2 MLP_read    0.086  0.058  0.040      49.0      43.56     0.0506      0.0089
+ 2 MLP_write   0.079  0.047  0.036      54.4      23.89     0.0236      0.0034
+ 2 QK_read     0.120  0.083  0.073      25.4      46.96     0.0865      0.0174
+ 3 MLP_read    0.080  0.056  0.041      52.2      40.97     0.0415      0.0066
+ 3 MLP_write   0.068  0.055  0.040      54.1      23.31     0.0148      0.0019
+ 3 QK_read     0.107  0.069  0.057      30.7      32.82     0.0705      0.0091
+ 4 MLP_read    0.089  0.048  0.042      50.3      41.53     0.0132      0.0033
+ 4 MLP_write   0.074  0.041  0.038      57.8      21.48     0.0134      0.0020
+ 4 QK_read     0.086  0.083  0.065      31.7      31.88     0.0170      0.0030
+ 5 MLP_read    0.075  0.049  0.037      59.2      34.84     0.0142      0.0025
+ 5 MLP_write   0.070  0.052  0.035      60.2      24.18     0.0125      0.0017
+ 5 QK_read     0.123  0.087  0.057      26.3      45.77     0.0129      0.0039
+ 6 MLP_read    0.082  0.052  0.038      54.3      35.47     0.0141      0.0027
+ 6 MLP_write   0.082  0.053  0.035      54.0      18.39     0.0140      0.0016
+ 6 QK_read     0.093  0.069  0.056      34.8      38.23     0.0133      0.0024
+ 7 MLP_read    0.102  0.067  0.041      42.1      41.33     0.0159      0.0021
+ 7 MLP_write   0.086  0.058  0.038      49.3      26.85     0.0142      0.0016
+ 7 QK_read     0.097  0.078  0.058      32.4      36.43     0.0158      0.0032
+ 8 MLP_read    0.105  0.063  0.039      41.8      44.85     0.0153      0.0026
+ 8 MLP_write   0.091  0.053  0.042      47.6      31.57     0.0150      0.0016
+ 8 QK_read     0.122  0.097  0.076      24.5      42.61     0.0157      0.0027
+ 9 MLP_read    0.125  0.058  0.048      36.2      56.71     0.0159      0.0029
+ 9 MLP_write   0.099  0.054  0.050      43.8      27.37     0.0161      0.0019
+ 9 QK_read     0.114  0.082  0.059      27.2      32.46     0.0168      0.0040
+10 MLP_read    0.127  0.057  0.046      35.2      49.85     0.0137      0.0021
+10 MLP_write   0.105  0.057  0.053      39.8      27.68     0.0148      0.0017
+10 QK_read     0.136  0.124  0.063      21.2      48.83     0.0170      0.0041
+11 MLP_read    0.112  0.047  0.039      42.3      43.64     0.0302      0.0053
+11 MLP_write   0.102  0.058  0.041      42.5      25.34     0.0196      0.0023
+11 QK_read     0.144  0.082  0.057      23.6      46.47     0.0141      0.0068
+12 MLP_read    0.122  0.051  0.038      36.4      56.80     0.0422      0.0062
+12 MLP_write   0.082  0.048  0.040      53.5      31.10     0.0319      0.0026
+12 QK_read     0.129  0.094  0.081      22.4      46.15     0.0193      0.0059
+13 MLP_read    0.132  0.058  0.044      31.9      66.99     0.0451      0.0087
+13 MLP_write   0.066  0.041  0.039      62.0      24.34     0.0430      0.0037
+13 QK_read     0.097  0.070  0.058      32.4      34.92     0.0407      0.0061
+14 MLP_read    0.126  0.048  0.039      35.9      61.24     0.0422      0.0056
+14 MLP_write   0.050  0.041  0.035      68.0      19.67     0.0804      0.0049
+14 QK_read     0.136  0.071  0.050      27.9      53.14     0.0393      0.0069
+15 MLP_read    0.105  0.041  0.035      47.4      52.04     0.0355      0.0050
+15 MLP_write   0.057  0.054  0.044      54.5      25.26     0.1461      0.0064
+15 QK_read     0.116  0.091  0.057      28.6      36.99     0.0331      0.0057
+16 MLP_read    0.091  0.049  0.032      56.0      42.74     0.0340      0.0064
+16 MLP_write   0.082  0.058  0.054      37.1      34.37     0.2722      0.0081
+16 QK_read     0.115  0.060  0.047      35.6      37.10     0.0407      0.0065
+17 MLP_read    0.078  0.056  0.035      61.9      35.43     0.0317      0.0058
+17 MLP_write   0.156  0.078  0.062      20.3      57.06     0.4609      0.0112
+17 QK_read     0.180  0.074  0.050      21.1      51.70     0.0280      0.0085
+
+Readable English-token subset size: 139429
+
+=== SELECTED DIFFERENCE AXES: CENTERED EMBEDDING ALIGNMENTS ===
+Signs remain arbitrary. 'English' is a readability control.
+(0, 'MLP_read', 0) full + [' inscripción', ' sacrificio', ' efectuar', ' integridad'] - [' Mexico', ' Brazil', ' Colombia', ' Argentina']
+   English + [' sacrificio', ' efectuar', ' integridad', ' logro'] - [' Mexico', ' Brazil', ' Colombia', ' Argentina']
+(0, 'MLP_read', 1) full + ['\n', '1', ' is', ' '] - ['𒅗', '𒋾', '𒈨', '𒅆']
+   English + [' is', ' in', ' and', ' the'] - [' BVHTree', ' iccad', ' QnrB', 'MSFont']
+(1, 'MLP_read', 0) full + ['ധാ', ' निकालते', ' ඒ', 'තා'] - ['7', '٧', '6', '8']
+   English + [' ee', 'kir', 'Av', ' corrida'] - ['eight', 'seven', ' seven', 'six']
+(1, 'MLP_read', 1) full + ['9', '7', '8', '6'] - [' minus', ' plus', ' PLUS', ' плюс']
+   English + ['cipl', 'Two', 'III', ' harek'] - [' minus', ' plus', ' PLUS', 'minus']
+(2, 'MLP_read', 0) full + ['紂', '۷', ' ۷', '۸'] - ['ֽ', '大道', '醴', '习']
+   English + ['Forty', 'halation', 'ISO', ' MINISTER'] - [' sebagaimana', ' apreciar', ' dispoz', ' vzh']
+(2, 'MLP_read', 1) full + [' Университе', '油', 'ګ', '花'] - ['7', '７', '6', '8']
+   English + ['Mir', 'Zoo', 'Flore', ' liabilities'] - ['six', 'seven', ' eight', ' seven']
+(10, 'MLP_read', 0) full + ['GLOBAL', ' Beaumont', 'filenames', ' predic'] - ['ربعة', '鳍', ' fleks', ' możliwości']
+   English + ['GLOBAL', ' Beaumont', 'filenames', ' predic'] - [' fleks', ' restant', ' percentuale', ' bersih']
+(10, 'MLP_read', 1) full + ['atiable', ' Chromium', ' Multiplication', ' kpc'] - ['այն', '少', ' другую', ' باد']
+   English + ['atiable', ' Chromium', ' Multiplication', ' kpc'] - [' restent', ' Otros', ' Keine', ' Autres']
+(13, 'MLP_read', 0) full + [' પોતા', 'ដូច្ន', '⸨', ' அனைவருக்கும்'] - ['8', '7', '9', '5']
+   English + [' Feu', ' Degrad', 'Ibid', ' Diss'] - ['eight', ' acht', ' atu', ' oito']
+(13, 'MLP_read', 1) full + ['poly', 'fichier', ' Vuitton', 'FFFF'] - [' مرد', '退出', 'ходила', 'FUNCION']
+   English + ['poly', 'fichier', ' Vuitton', 'FFFF'] - ['FUNCION', ' iglesia', ' unu', ' Zustimmung']
+(10, 'MLP_write', 0) full + [' 単', 'ंबित', 'tenths', 'கூ'] - ['前辈', ' Ural', ' folyam', ' аўтаматы']
+   English + ['tenths', ' Nich', ' IRA', ' Diwali'] - [' Ural', ' folyam', ' fala', 'ORA']
+(10, 'MLP_write', 1) full + [' Sandia', ' visions', 'まずは', ' Sandusky'] - ['桔', 'yemek', 'จร', ' Yemek']
+   English + [' Sandia', ' visions', ' Sandusky', 'toLocale'] - ['yemek', ' Yemek', 'chik', 'urlar']
+(14, 'MLP_write', 0) full + [' angry', ' ध्वस्त', '🏰', ' કર્મ'] - ['的身', '9', '8', '的分']
+   English + [' angry', 'FormField', ' cheeky', 'GameBoard'] - ['ibana', 'izmi', 'iburg', 'istical']
+(14, 'MLP_write', 1) full + ['臊', 'textwidth', ' عبارت', 'abung'] - ['eight', 'Jin', 'Kay', ' Mage']
+   English + ['textwidth', 'abung', ' narcot', ' desper'] - ['eight', 'Jin', 'Kay', ' Mage']
+(15, 'MLP_write', 0) full + ['<unused521>', '中國', '<unused481>', ' BROWN'] - [',', ' “', ' ', ' hard']
+   English + [' BROWN', ' Opal', 'ReactNativeHost', 'HPV'] - [' hard', ' content', ' even', ' right']
+(15, 'MLP_write', 1) full + ['zeczy', '𝚟', ' ಅವರಿಗೆ', 'アラ'] - ['۶', 'ictus', '6', 'خن']
+   English + ['zeczy', ' Babylon', 'localtime', 'Ukraine'] - ['ictus', 'introduction', ' Guz', 'roversial']
+(16, 'MLP_write', 0) full + ['९', '９', '೯', '⁹'] - ['１', '1', '۱', '١']
+   English + [' Nine', 'Nine', ' Seventy', ' eighty'] - ['antara', 'onej', ' unap', ' satu']
+(16, 'MLP_write', 1) full + ['嫵', ' MILK', '鈾', 'FreeBuf'] - ['3', '٣', '4', '2']
+   English + [' MILK', 'FreeBuf', ' Cheek', ' concierto'] - [' third', 'two', 'oley', ' three']
+(17, 'MLP_write', 0) full + ['٨', '\uf738', '\uf64b', '۸'] - ['1', '１', '一', ' ১']
+   English + [' neun', ' sechs', ' oito', ' cinq'] - [' one', ' One', ' un', ' in']
+(17, 'MLP_write', 1) full + ['𝟎', '٠', '\uf643', '０'] - ['2', '２', '٢', ' two']
+   English + [' HomePage', ' ribu', ' UserName', 'BASELINE'] - [' two', ' Two', 'two', ' TWO']
+(0, 'QK_read', 0) full + [' Argentina', ' Colombia', ' Chile', ' Poland'] - [' sacrificio', ' riego', ' ascenso', ' cambiamento']
+   English + [' Argentina', ' Colombia', ' Chile', ' Poland'] - [' sacrificio', ' riego', ' ascenso', ' cambiamento']
+(0, 'QK_read', 1) full + [' BVHTree', '𒊏', '𒈾', '𒅆'] - [' is', ' I', ' in', ' b']
+   English + [' BVHTree', ' threx', ' gstlal', ' BSData'] - [' is', ' in', ' the', ' and']
+(1, 'QK_read', 0) full + ['What', 'WHAT', ' WHAT', ' What'] - ['6', '٦', ' sixty', '7']
+   English + ['What', 'WHAT', ' WHAT', ' What'] - [' sixty', ' minus', ' eighty', ' fifty']
+(1, 'QK_read', 1) full + [' väl', ' ani', ' assertion', 'clare'] - [' minus', 'what', 'What', 'WHAT']
+   English + [' ani', ' assertion', 'clare', 'ptitle'] - [' minus', 'what', 'What', 'WHAT']
+(2, 'QK_read', 0) full + ['ിക്കാ', ' windfall', 'കാ', 'ancji'] - ['Seven', '٧', 'seven', '７']
+   English + [' windfall', 'ancji', ' srcset', ' zuen'] - ['Seven', 'seven', 'five', 'eight']
+(2, 'QK_read', 1) full + [' times', '9', 'times', '8'] - [' adalah', ' является', '就是', ' ialah']
+   English + [' times', 'times', ' Times', 'Times'] - [' adalah', ' ialah', ' isa', ' memang']
+(3, 'QK_read', 0) full + ['٨', '８', '۸', '8'] - [' previstas', ' kehad', ' negeri', ' recientes']
+   English + ['Eight', 'eight', ' Eight', ' eight'] - [' previstas', ' kehad', ' negeri', ' recientes']
+(3, 'QK_read', 1) full + [' misunderstand', 'ossen', ' userAnswer', ' roten'] - ['१', '１', ' ١', '١']
+   English + [' misunderstand', 'ossen', ' userAnswer', ' roten'] - [' qualit', 'frontend', 'period', ' january']
+(17, 'QK_read', 0) full + ['4', '3', '$$', '.$$'] - ['鉐', '氇', '۽', '䢀']
+   English + [' tortor', ' thin', ' unrelated', 'broad'] - ['Tm', 'Vo', 'INA', 'Bool']
+(17, 'QK_read', 1) full + [' South', ' black', ' blue', ' grey'] - ['introdu', '庖', ' قيمه', 'introduce']
+   English + [' South', ' black', ' blue', ' grey'] - ['introdu', 'introduce', ' enteral', ' recetas']
+
+=== POOLED READ / WRITE AXES ===
+MLP_read top3 shares [0.0365 0.0209 0.0185] digit fraction 0.0315 number fraction 0.0065
+ axis 0 + ['7', '5', '8', '9', '6', '4', '９', '７'] - [' Dimit', ' DataSet', ' Degrad', ' Pré', ' 发布', 'pFile', ' Farr', ' くれ']
+ axis 1 + ['8', '9', '7', ' ograni', '6', '寛', '篤', ' ovih'] - [' Absolutely', ' Panama', ' Fahrenheit', ' Iphone', ' SRT', ' communic', ' Communist', ' Equality']
+MLP_write top3 shares [0.018  0.0167 0.0118] digit fraction 0.0683 number fraction 0.0034
+ axis 0 + ['٨', '\uf738', '೯', '\uf64b', '٧', '᱙', '\uf739', '๘'] - ['１', '1', '一', ' ১', ' १', 'োহ', 'ப்ப', 'क्रम']
+ axis 1 + ['۸', '８', '٨', '𝟖', '९', '６', ' шесть', '⁸'] - ['1', 'antara', '１', 'ONES', ' betreff', ' gleichen', 'esha', '一定']
+QK_read top3 shares [0.037  0.025  0.0211] digit fraction 0.0361 number fraction 0.0079
+ axis 0 + [' くれ', 'BSData', '伌', ' 发布', '悎', '噰', '嫨', '嵃'] - ['4', '5', '7', '6', '8', '3', '9', '0']
+ axis 1 + ['ＰＥＮＡＮＡ', ' MONTH', 'брав', ' WEEK', '੦', 'mdb', 'tog', ' casing'] - [' ashes', 'akuwa', ' unclear', ' alent', ' facere', 'падает', ' samaj', 'resposta']
+
+```

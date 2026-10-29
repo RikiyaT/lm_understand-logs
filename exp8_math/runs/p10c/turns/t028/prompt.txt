@@ -1,0 +1,19 @@
+OUTPUT of Python run 23 of at most 300:
+```
+Work files: ['edited', 'fwd_3', 'gen_1.jsonl', 'gen_1_acts', 'gen_4_edited.jsonl', 'gen_4_edited_acts', 'gen_4_original.jsonl', 'gen_4_original_acts', 'notes.md']
+Current edits: ['model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight']
+candidates {18: [8], 19: [11], 22: [59, 11, 89], 23: [22, 40, 46, 94, 19, 350]}
+targets {18: [8], 19: [11], 23: [22, 40]}
+factors tensor([0., 0.])
+model.language_model.layers.18.mlp.down_proj.weight changed columns: [8] relative change: 0.017899204045534134
+ column 8 retained coefficient 0.0
+model.language_model.layers.19.mlp.down_proj.weight changed columns: [11] relative change: 0.015992557629942894
+ column 11 retained coefficient 0.0
+model.language_model.layers.23.mlp.down_proj.weight changed columns: [22, 40] relative change: 0.019595080986618996
+ column 22 retained coefficient 0.0
+ column 40 retained coefficient 0.0
+gen_1.jsonl n 256 correct 24 cuts 234 mean tokens 30428
+gen_4_edited.jsonl n 128 correct 11 cuts 117 mean tokens 30363
+gen_4_original.jsonl n 128 correct 13 cuts 116 mean tokens 30207
+
+```

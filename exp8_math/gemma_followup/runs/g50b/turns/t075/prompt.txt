@@ -1,0 +1,7 @@
+OUTPUT of Python run 42 of at most 300:
+```
+LEADING CANDIDATE POOLED {'passes': [29, 30], 'answers_per_model': 2048, 'problems': 32, 'original_accuracy': 0.482421875, 'edited_accuracy': 0.5185546875, 'gain_pp': 3.61328125, 'sample_SE_pp': 1.209544500498059, 'problem_cluster_SE_pp': 1.9637281491897272}
+CONTROL MATCHES [{'target': 971, 'control': 1755, 'target_norm': 0.515, 'control_norm': 0.515, 'RMS_ratio': 0.982, 'control_effect': 0.015}, {'target': 180, 'control': 1087, 'target_norm': 0.418, 'control_norm': 0.422, 'RMS_ratio': 0.979, 'control_effect': 0.025}, {'target': 149, 'control': 795, 'target_norm': 0.475, 'control_norm': 0.473, 'RMS_ratio': 1.032, 'control_effect': 0.012}, {'target': 1680, 'control': 1734, 'target_norm': 0.525, 'control_norm': 0.521, 'RMS_ratio': 0.966, 'control_effect': -0.011}, {'target': 232, 'control': 1975, 'target_norm': 0.359, 'control_norm': 0.361, 'RMS_ratio': 1.009, 'control_effect': 0.025}, {'target': 1724, 'control': 1682, 'target_norm': 0.296, 'control_norm': 0.297, 'RMS_ratio': 0.982, 'control_effect': 0.024}, {'target': 312, 'control': 228, 'target_norm': 0.511, 'control_norm': 0.508, 'RMS_ratio': 1.068, 'control_effect': 0.013}, {'target': 1096, 'control': 1693, 'target_norm': 0.51, 'control_norm': 0.511, 'RMS_ratio': 0.99, 'control_effect': 0.023}]
+Pass31 ready; control group fixed before its outcomes.
+
+```

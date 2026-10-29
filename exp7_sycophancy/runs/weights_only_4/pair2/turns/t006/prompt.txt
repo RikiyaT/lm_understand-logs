@@ -1,0 +1,95 @@
+OUTPUT of run 5 of at most 60:
+```
+=== EXPLICIT WEIGHT-SPACE SEMANTIC ANCHORS ===
+guess ['think', ' think', 'believe', ' believe', 'guess', ' guess', ' suspect', 'opinion', ' opinion', 'assume', ' assume']
+facts ['correct', ' correct', 'actual', ' actual', 'fact', ' fact', 'truth', ' truth', 'calculate', ' calculate', 'question', ' question']
+self ['I', ' I', 'my', ' my', 'me', ' me', 'mine', ' mine']
+other ['you', ' you', 'your', ' your', ' yours']
+answer ['answer', ' answer', 'Answer', ' Answer', 'The', ' The', 'the', ' the', 'model', ' model', 'assistant', ' assistant']
+question ['what', ' what', 'What', ' What', 'which', ' which', 'Which', ' Which', 'how', ' how', 'How', ' How']
+agree ['agree', ' agree', 'yes', ' yes', 'Yes', ' Yes', 'right', ' right', 'Right', ' Right', 'indeed', ' indeed']
+corrective [' disagree', 'no', ' no', 'No', ' No', 'wrong', ' wrong', 'incorrect', ' incorrect', 'actually', ' actually']
+
+=== GUESS-VERSUS-FACTS CONTENT-KERNEL CONTRASTS ===
+ag: answer-anchor x delta-kernel x (guess-facts)
+qg: question-anchor x delta-kernel x (guess-facts)
+as: answer-anchor x delta-kernel x (self-other)
+Signs compare B minus A, but these are NOT contextual routing measurements.
+
+MODE: bare
+L00H2 ag=+0.00044124 qg=+2.5781e-05 as=-0.00035101 |delta*g|=0.0047784 s1=0.075491
+L00H3 ag=+0.00041143 qg=+0.00034347 as=-0.00059046 |delta*g|=0.0049239 s1=0.06698
+L00H0 ag=+0.00035911 qg=-0.00014316 as=-0.00026135 |delta*g|=0.00473 s1=0.080023
+L00H1 ag=+0.00032341 qg=-4.5443e-05 as=-0.00035818 |delta*g|=0.0045756 s1=0.055655
+L01H3 ag=-0.00024737 qg=-0.0002942 as=-0.00069008 |delta*g|=0.0034091 s1=0.046723
+L12H3 ag=-0.00018424 qg=-5.9845e-05 as=-2.926e-05 |delta*g|=0.0034233 s1=0.069283
+L06H1 ag=-0.00017716 qg=-0.00011018 as=+0.00015674 |delta*g|=0.0048591 s1=0.066419
+L02H0 ag=+0.0001716 qg=+4.7992e-05 as=-0.00020138 |delta*g|=0.0042554 s1=0.058953
+L01H1 ag=-0.00014788 qg=+1.535e-05 as=-0.00031184 |delta*g|=0.0030011 s1=0.038359
+L02H1 ag=+0.00014693 qg=+0.00035975 as=-0.00031025 |delta*g|=0.0055162 s1=0.08053
+L03H1 ag=-0.00014497 qg=-8.2178e-05 as=+4.4774e-06 |delta*g|=0.003884 s1=0.053972
+L04H1 ag=+0.00014308 qg=+4.4394e-05 as=+5.3804e-05 |delta*g|=0.0032201 s1=0.074492
+ag positive heads: 28 /72
+
+MODE: diagonal
+L01H3 ag=-1.2891 qg=-0.8304 as=-3.3781 |delta*g|=13.987 s1=213.52
+L02H0 ag=+0.731 qg=+0.13515 as=-0.55238 |delta*g|=12.024 s1=186.64
+L02H1 ag=+0.68305 qg=+1.0874 as=-1.067 |delta*g|=17.111 s1=257.42
+L01H0 ag=-0.66552 qg=-0.34269 as=-0.57712 |delta*g|=12.014 s1=248.88
+L04H2 ag=-0.66048 qg=-0.085681 as=+0.28812 |delta*g|=13.046 s1=332.77
+L01H1 ag=-0.63751 qg=+0.18695 as=-0.38647 |delta*g|=13.645 s1=158.22
+L15H0 ag=-0.5434 qg=-0.25281 as=-0.0081293 |delta*g|=9.466 s1=271.75
+L00H3 ag=+0.51808 qg=+0.39242 as=-0.069 |delta*g|=3.7677 s1=54.926
+L16H0 ag=+0.4919 qg=+0.68747 as=-0.30647 |delta*g|=14.158 s1=425.87
+L00H0 ag=+0.46554 qg=+0.15767 as=+0.31268 |delta*g|=3.7656 s1=77.854
+L16H2 ag=+0.38108 qg=+1.0559 as=-0.11322 |delta*g|=18.445 s1=526.56
+L05H1 ag=-0.37056 qg=-0.31449 as=-0.17978 |delta*g|=8.1423 s1=150.44
+ag positive heads: 41 /72
+
+=== CENTERED-EMBEDDING INTERPRETATION OF CANDIDATE QK DIRECTIONS ===
+left=query-side leading singular direction; right=key-side direction.
+gquery=change in query direction coupled to the fixed guess-facts contrast.
+SVD left/right orientation is a convention, not evidence of behavioral sign.
+L15H2 left   +[('7', 0.252), ('8', 0.241), ('9', 0.227)] -[(' FIELDS', -0.174), ('Farmer', -0.173), (' Corso', -0.168)]
+L15H2 right  +[(' deposit', 0.147), (' Voiture', 0.147), (' Teatro', 0.146)] -[(' Counseling', -0.184), (' campi', -0.171), ('Arth', -0.17)]
+L15H2 gquery +[('9', 0.31), ('7', 0.302), ('6', 0.296)] -[(' Wai', -0.211), (' Rollins', -0.199), ('FileSize', -0.189)]
+L16H3 left   +[(' Sawyer', 0.184), (' Cutter', 0.181), (' kawaii', 0.179)] -[('8', -0.185), ('3', -0.18), ('4', -0.176)]
+L16H3 right  +[('7', 0.334), ('8', 0.319), ('5', 0.319)] -[(' Lens', -0.175), ('Lens', -0.17), (' Wallet', -0.168)]
+L16H3 gquery +[(' Wai', 0.179), (' Reservoir', 0.163), (' Wetlands', 0.159)] -[('9', -0.273), ('8', -0.269), ('4', -0.263)]
+L17H1 left   +[(' Magn', 0.199), (' mesmer', 0.187), (' songwriting', 0.176)] -[('1', -0.197), ('7', -0.195), ('8', -0.185)]
+L17H1 right  +[('7', 0.35), ('8', 0.342), ('6', 0.34)] -[(' hypersur', -0.196), (' HomeScreen', -0.195), ('ClInclude', -0.192)]
+L17H1 gquery +[(' Walla', 0.18), ('RequestBody', 0.178), (' UITableViewCell', 0.175)] -[('rc', -0.168), (' gases', -0.163), ('sche', -0.16)]
+L14H1 left   +[('Squared', 0.164), ('Rim', 0.16), ('ocentric', 0.157)] -[(' lobbying', -0.177), (' Aide', -0.176), (' constitutions', -0.167)]
+L14H1 right  +[('7', 0.341), ('8', 0.328), ('5', 0.318)] -[(' shrimps', -0.187), (' Bhub', -0.175), (' Mainland', -0.173)]
+L14H1 gquery +[('Pune', 0.173), ('Rim', 0.172), ('roma', 0.16)] -[(' lobbying', -0.171), (' lobbyists', -0.166), (' Aide', -0.159)]
+L13H0 left   +[('Though', 0.156), ('oulos', 0.148), (' alang', 0.148)] -[(' ENGLAND', -0.201), (' Downing', -0.182), ('SECONDS', -0.173)]
+L13H0 right  +[('7', 0.361), ('8', 0.34), ('6', 0.337)] -[('ogeneities', -0.189), (' Waterfront', -0.179), (' aquaculture', -0.175)]
+L13H0 gquery +[(' TABLES', 0.174), (' getUsers', 0.159), (' Minden', 0.157)] -[(' Tune', -0.176), (' Adviser', -0.167), (' Monitor', -0.166)]
+L00H0 left   +[('user', 0.298), (' User', 0.255), ('User', 0.243)] -[(' ebben', -0.162), (' kiuj', -0.153), ('IsResolver', -0.153)]
+L00H0 right  +[(' the', 0.21), (' exception', 0.207), (' alttext', 0.202)] -[('user', -0.526), ('USER', -0.491), ('User', -0.486)]
+L00H0 gquery +[(' answer', 0.209), (' answers', 0.166), (' airport', 0.161)] -[(' nField', -0.142), ('regon', -0.137), (' imaju', -0.133)]
+L00H1 left   +[(' Argentina', 0.35), (' France', 0.348), (' Italy', 0.348)] -[(' afectar', -0.234), (' efectuar', -0.234), (' sufrimiento', -0.216)]
+L00H1 right  +[('opposite', 0.204), (' opposit', 0.187), (' opposite', 0.185)] -[(' Uruguay', -0.352), (' Indonesia', -0.324), (' Italy', -0.319)]
+L00H1 gquery +[('ASH', 0.148), (' Ramsay', 0.146), (' capital', 0.142)] -[(' volledig', -0.142), (' mucha', -0.141), (' decidedly', -0.136)]
+L01H3 left   +[('getattr', 0.159), (' hexane', 0.144), (' Nineteenth', 0.139)] -[('3', -0.283), ('4', -0.274), ('5', -0.256)]
+L01H3 right  +[(' Gamb', 0.15), (' scavenger', 0.145), (' Sultan', 0.145)] -[(' plus', -0.358), (' minus', -0.344), ('plus', -0.341)]
+L01H3 gquery +[('stelle', 0.16), (' impresa', 0.16), (' entdeckt', 0.158)] -[(' nine', -0.185), (' six', -0.178), ('Nine', -0.174)]
+L02H0 left   +[(' simplifies', 0.168), ('8', 0.165), (' executes', 0.164)] -[('color', -0.275), (' color', -0.269), (' Color', -0.267)]
+L02H0 right  +[('WHAT', 0.319), (' WHAT', 0.302), ('what', 0.299)] -[(' coloration', -0.172), (' color', -0.166), (' colors', -0.165)]
+L02H0 gquery +[(' rispondere', 0.166), (' hurd', 0.156), (' cumplir', 0.15)] -[('Caribbean', -0.192), (' Taiwan', -0.176), (' Caribbean', -0.175)]
+L02H1 left   +[(' colour', 0.176), (' candy', 0.169), (' color', 0.166)] -[('Sampler', -0.149), (' inaug', -0.145), (' sind', -0.139)]
+L02H1 right  +[(' legno', 0.175), ('catalyzed', 0.156), (' atraer', 0.151)] -[(' fourteen', -0.244), (' thirteen', -0.236), (' FOUR', -0.236)]
+L02H1 gquery +[(' thinks', 0.223), (' think', 0.213), (' THINK', 0.212)] -[('StockDel', -0.169), (' Burbank', -0.164), ('gheatmap', -0.162)]
+L01H0 left   +[(' color', 0.484), (' COLOR', 0.474), (' Color', 0.442)] -[(' is', -0.184), (' lanz', -0.169), ('leri', -0.162)]
+L01H0 right  +[(' Env', 0.147), ('Rog', 0.146), (' Ud', 0.145)] -[(' WHAT', -0.35), ('WHAT', -0.344), ('what', -0.332)]
+L01H0 gquery +[('laan', 0.207), ('TableView', 0.153), (' collo', 0.144)] -[(' kapcs', -0.156), (' Polska', -0.154), (' cercanas', -0.151)]
+L04H2 left   +[(' Bottle', 0.181), (' Morris', 0.172), (' Burgess', 0.172)] -[(' TCS', -0.142), ('Tata', -0.136), ('setLevel', -0.126)]
+L04H2 right  +[(' thyroid', 0.147), (' Jazz', 0.146), (' Parnell', 0.14)] -[('ACY', -0.149), ('EVA', -0.148), ('oli', -0.146)]
+L04H2 gquery +[(' Dodd', 0.152), ('hr', 0.149), ('gf', 0.146)] -[(' monomial', -0.154), (' Saito', -0.146), (' Toma', -0.145)]
+L01H1 left   +[(' banana', 0.236), (' bear', 0.22), ('8', 0.191)] -[('ayt', -0.164), ('axs', -0.149), (' Sparse', -0.147)]
+L01H1 right  +[(' alcuna', 0.182), (' instancias', 0.172), (' proyect', 0.168)] -[(' banana', -0.321), (' Banana', -0.266), ('Banana', -0.242)]
+L01H1 gquery +[(' of', 0.188), ('Of', 0.163), (' bear', 0.153)] -[('Answers', -0.212), (' Answers', -0.202), ('giz', -0.18)]
+
+All operations were linear algebra on stored weights and embedding rows.
+
+```

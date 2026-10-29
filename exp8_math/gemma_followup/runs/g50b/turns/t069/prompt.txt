@@ -1,0 +1,6 @@
+OUTPUT of Python run 39 of at most 300:
+```
+L11 HALF POOLED {'passes': [26, 27], 'answers_per_model': 2048, 'problems': 32, 'original_accuracy': 0.48291015625, 'edited_accuracy': 0.498046875, 'gain_pp': 1.513671875, 'sample_SE_pp': 1.1459532428760992, 'problem_cluster_SE_pp': 1.5711146953331645}
+NEXT EDIT {'components': [{'tensor': 'model.layers.11.self_attn.o_proj.weight', 'head': 2, 'columns': [512, 768], 'operation': 'B -> gain*(B-alpha*d*(d.T@B))', 'gain': 1.2, 'alpha': 0.0, 'direction_file': '/work/head11_2_matched_direction.pt', 'relative_F_change': 0.11490494012832642}, {'tensor': 'model.layers.11.mlp.down_proj.weight', 'columns': [971, 180, 149, 1680, 232, 1724, 312, 1096], 'multiplier': 0.5, 'relative_F_change': 0.0315522737801075}]}
+
+```

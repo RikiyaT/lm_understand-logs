@@ -1,0 +1,218 @@
+OUTPUT of run 1 of at most 60:
+```
+CONFIG A:
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+
+CONFIG B DIFFERENCES:
+
+KEY CORRESPONDENCE:
+A tensors: 235 B tensors: 235
+Only A: []
+Only B: []
+
+TENSOR SHAPES: first layer and non-layer tensors
+model.layers.0.input_layernorm.weight (640,) BF16
+model.layers.0.mlp.down_proj.weight (640, 2048) BF16
+model.layers.0.mlp.gate_proj.weight (2048, 640) BF16
+model.layers.0.mlp.up_proj.weight (2048, 640) BF16
+model.layers.0.post_attention_layernorm.weight (640,) BF16
+model.layers.0.post_feedforward_layernorm.weight (640,) BF16
+model.layers.0.pre_feedforward_layernorm.weight (640,) BF16
+model.layers.0.self_attn.k_norm.weight (256,) BF16
+model.layers.0.self_attn.k_proj.weight (256, 640) BF16
+model.layers.0.self_attn.o_proj.weight (640, 1024) BF16
+model.layers.0.self_attn.q_norm.weight (256,) BF16
+model.layers.0.self_attn.q_proj.weight (1024, 640) BF16
+model.layers.0.self_attn.v_proj.weight (256, 640) BF16
+model.norm.weight (640,) BF16
+
+GLOBAL WEIGHT DIFFERENCES (B - A):
+Compared parameters: 100326016
+Exactly different parameters: 79455370 fraction: 0.7919717453945345
+Frobenius delta: 2.462062944574076
+Delta / midpoint norm: 0.00010861845033380383
+
+BY LAYER AND BLOCK:
+layer part parameters changed_fraction delta_norm relative_delta delta_energy_fraction
+-1 norm/other 640 0.000000 0 0 0.000000
+0 attention 1638912 0.766820 0.311951 0.00550226 0.016054
+0 mlp 3932160 0.772942 0.480116 0.0070742 0.038027
+0 norm/other 2560 0.037500 0.00400982 9.77875e-06 0.000003
+1 attention 1638912 0.798672 0.311253 0.00488468 0.015982
+1 mlp 3932160 0.790485 0.486128 0.00743402 0.038986
+1 norm/other 2560 0.027344 0.00441372 4.17027e-06 0.000003
+2 attention 1638912 0.775286 0.319274 0.0054479 0.016816
+2 mlp 3932160 0.789242 0.494275 0.00749127 0.040303
+2 norm/other 2560 0.021484 0.0033065 3.06227e-06 0.000002
+3 attention 1638912 0.808814 0.314634 0.00658749 0.016331
+3 mlp 3932160 0.798521 0.481096 0.00737313 0.038183
+3 norm/other 2560 0.012500 0.00241335 1.67846e-06 0.000001
+4 attention 1638912 0.813884 0.325632 0.00543599 0.017493
+4 mlp 3932160 0.808097 0.48556 0.00749455 0.038894
+4 norm/other 2560 0.010937 0.00268936 1.75682e-06 0.000001
+5 attention 1638912 0.805051 0.320858 0.00430331 0.016984
+5 mlp 3932160 0.782496 0.484364 0.00712533 0.038703
+5 norm/other 2560 0.009375 0.0022731 1.8142e-06 0.000001
+6 attention 1638912 0.792619 0.323158 0.00601569 0.017228
+6 mlp 3932160 0.796332 0.479579 0.00732692 0.037942
+6 norm/other 2560 0.008984 0.00189923 1.53341e-06 0.000001
+7 attention 1638912 0.780418 0.311708 0.005454 0.016029
+7 mlp 3932160 0.788189 0.473052 0.00716167 0.036916
+7 norm/other 2560 0.007031 0.00177107 1.4795e-06 0.000001
+8 attention 1638912 0.788873 0.311256 0.00551464 0.015982
+8 mlp 3932160 0.800623 0.473273 0.00727956 0.036951
+8 norm/other 2560 0.008984 0.001975 1.42872e-06 0.000001
+9 attention 1638912 0.786283 0.325957 0.00559546 0.017528
+9 mlp 3932160 0.786335 0.474169 0.00710453 0.037091
+9 norm/other 2560 0.013281 0.00270004 1.85192e-06 0.000001
+10 attention 1638912 0.776090 0.333463 0.00465231 0.018344
+10 mlp 3932160 0.800039 0.47388 0.00726576 0.037046
+10 norm/other 2560 0.007031 0.00138511 5.65476e-07 0.000000
+11 attention 1638912 0.789602 0.321819 0.00381325 0.017085
+11 mlp 3932160 0.788027 0.47553 0.00715044 0.037304
+11 norm/other 2560 0.007031 0.00224983 3.76551e-07 0.000001
+12 attention 1638912 0.801013 0.330817 0.00547789 0.018054
+12 mlp 3932160 0.789424 0.484838 0.00721486 0.038779
+12 norm/other 2560 0.012891 0.00294054 4.01137e-07 0.000001
+13 attention 1638912 0.804880 0.327894 0.00602098 0.017737
+13 mlp 3932160 0.800189 0.499717 0.00765896 0.041196
+13 norm/other 2560 0.025781 0.00342471 4.98456e-07 0.000002
+14 attention 1638912 0.780887 0.308662 0.0046856 0.015717
+14 mlp 3932160 0.805912 0.509153 0.00783468 0.042766
+14 norm/other 2560 0.032813 0.00420392 5.34666e-07 0.000003
+15 attention 1638912 0.779527 0.33172 0.00525458 0.018153
+15 mlp 3932160 0.798458 0.507683 0.00771485 0.042519
+15 norm/other 2560 0.007422 0.00201699 2.08072e-07 0.000001
+16 attention 1638912 0.803093 0.316626 0.00572466 0.016538
+16 mlp 3932160 0.790548 0.493924 0.00746198 0.040246
+16 norm/other 2560 0.008203 0.00217469 2.27141e-07 0.000001
+17 attention 1638912 0.778969 0.287341 0.00434819 0.013621
+17 mlp 3932160 0.789168 0.470054 0.00717027 0.036450
+17 norm/other 2560 0.010547 0.00218234 2.11691e-07 0.000001
+
+TOP 25 TENSORS BY DELTA ENERGY — NOT CAUSAL IMPORTANCE:
+model.layers.14.mlp.gate_proj.weight delta_norm= 0.301044 relative_delta= 0.00673866 changed_fraction= 0.767070 energy_fraction= 0.014951
+model.layers.14.mlp.up_proj.weight delta_norm= 0.299144 relative_delta= 0.00670516 changed_fraction= 0.746970 energy_fraction= 0.014763
+model.layers.15.mlp.up_proj.weight delta_norm= 0.298287 relative_delta= 0.00667637 changed_fraction= 0.746226 energy_fraction= 0.014678
+model.layers.15.mlp.gate_proj.weight delta_norm= 0.297506 relative_delta= 0.00665647 changed_fraction= 0.762791 energy_fraction= 0.014601
+model.layers.13.mlp.gate_proj.weight delta_norm= 0.297257 relative_delta= 0.00665566 changed_fraction= 0.762347 energy_fraction= 0.014577
+model.layers.2.mlp.gate_proj.weight delta_norm= 0.29587 relative_delta= 0.00660328 changed_fraction= 0.744614 energy_fraction= 0.014441
+model.layers.13.mlp.up_proj.weight delta_norm= 0.294015 relative_delta= 0.00659487 changed_fraction= 0.744173 energy_fraction= 0.014261
+model.layers.4.mlp.gate_proj.weight delta_norm= 0.291516 relative_delta= 0.00650679 changed_fraction= 0.762561 energy_fraction= 0.014019
+model.layers.16.mlp.up_proj.weight delta_norm= 0.291479 relative_delta= 0.00651184 changed_fraction= 0.740782 energy_fraction= 0.014016
+model.layers.16.mlp.gate_proj.weight delta_norm= 0.291399 relative_delta= 0.00653545 changed_fraction= 0.757553 energy_fraction= 0.014008
+model.layers.6.mlp.gate_proj.weight delta_norm= 0.291363 relative_delta= 0.00651612 changed_fraction= 0.764378 energy_fraction= 0.014005
+model.layers.5.mlp.gate_proj.weight delta_norm= 0.291168 relative_delta= 0.00649687 changed_fraction= 0.764480 energy_fraction= 0.013986
+model.layers.11.mlp.gate_proj.weight delta_norm= 0.289522 relative_delta= 0.00646614 changed_fraction= 0.765225 energy_fraction= 0.013828
+model.layers.3.mlp.gate_proj.weight delta_norm= 0.289482 relative_delta= 0.00646825 changed_fraction= 0.756043 energy_fraction= 0.013824
+model.layers.12.mlp.gate_proj.weight delta_norm= 0.289192 relative_delta= 0.00645875 changed_fraction= 0.766460 energy_fraction= 0.013797
+model.layers.2.mlp.up_proj.weight delta_norm= 0.288605 relative_delta= 0.00645059 changed_fraction= 0.738968 energy_fraction= 0.013741
+model.layers.1.mlp.gate_proj.weight delta_norm= 0.286691 relative_delta= 0.00637824 changed_fraction= 0.735982 energy_fraction= 0.013559
+model.layers.12.mlp.up_proj.weight delta_norm= 0.285854 relative_delta= 0.00639467 changed_fraction= 0.746468 energy_fraction= 0.013480
+model.layers.4.mlp.up_proj.weight delta_norm= 0.285318 relative_delta= 0.00638546 changed_fraction= 0.743633 energy_fraction= 0.013430
+model.layers.8.mlp.gate_proj.weight delta_norm= 0.285031 relative_delta= 0.00634535 changed_fraction= 0.766417 energy_fraction= 0.013403
+model.layers.10.mlp.gate_proj.weight delta_norm= 0.284943 relative_delta= 0.00635406 changed_fraction= 0.765469 energy_fraction= 0.013394
+model.layers.1.mlp.up_proj.weight delta_norm= 0.284882 relative_delta= 0.00634872 changed_fraction= 0.735678 energy_fraction= 0.013388
+model.layers.7.mlp.gate_proj.weight delta_norm= 0.284396 relative_delta= 0.00634913 changed_fraction= 0.760077 energy_fraction= 0.013343
+model.layers.5.mlp.up_proj.weight delta_norm= 0.28397 relative_delta= 0.00635373 changed_fraction= 0.741905 energy_fraction= 0.013303
+model.layers.15.mlp.down_proj.weight delta_norm= 0.283298 relative_delta= 0.0154383 changed_fraction= 0.886356 energy_fraction= 0.013240
+
+EXACTLY IDENTICAL TENSORS:
+model.layers.0.input_layernorm.weight
+model.layers.0.post_attention_layernorm.weight
+model.layers.0.pre_feedforward_layernorm.weight
+model.layers.1.input_layernorm.weight
+model.layers.1.pre_feedforward_layernorm.weight
+model.layers.1.self_attn.k_norm.weight
+model.layers.1.self_attn.q_norm.weight
+model.layers.10.input_layernorm.weight
+model.layers.10.post_feedforward_layernorm.weight
+model.layers.11.post_attention_layernorm.weight
+model.layers.11.post_feedforward_layernorm.weight
+model.layers.12.post_attention_layernorm.weight
+model.layers.12.post_feedforward_layernorm.weight
+model.layers.13.post_attention_layernorm.weight
+model.layers.13.post_feedforward_layernorm.weight
+model.layers.14.post_attention_layernorm.weight
+model.layers.14.post_feedforward_layernorm.weight
+model.layers.15.input_layernorm.weight
+model.layers.15.post_attention_layernorm.weight
+model.layers.15.post_feedforward_layernorm.weight
+model.layers.16.input_layernorm.weight
+model.layers.16.post_attention_layernorm.weight
+model.layers.16.post_feedforward_layernorm.weight
+model.layers.17.input_layernorm.weight
+model.layers.17.post_attention_layernorm.weight
+model.layers.17.post_feedforward_layernorm.weight
+model.layers.2.input_layernorm.weight
+model.layers.2.pre_feedforward_layernorm.weight
+model.layers.5.post_feedforward_layernorm.weight
+model.layers.5.self_attn.k_norm.weight
+model.layers.6.post_feedforward_layernorm.weight
+model.layers.7.post_attention_layernorm.weight
+model.layers.7.post_feedforward_layernorm.weight
+model.layers.9.post_feedforward_layernorm.weight
+model.norm.weight
+
+```

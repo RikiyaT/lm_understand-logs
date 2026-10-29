@@ -1,0 +1,6 @@
+OUTPUT of Python run 53 of at most 300:
+```
+L19 ONLY alpha4 {"productive": {"branch_delta": 0.0034613676252774894, "per_case": [0.0035, -0.034, 0.0264, -0.0013, -0.002, 0.0282], "tail24_delta": 0.005416272208094597}, "repetitive": {"branch_delta": -0.03446022514253855, "per_case": [-0.0394, -0.0419, -0.0237, -0.0281, -0.044, -0.0296], "tail24_delta": -0.04165692627429962}, "premature_close_logp": [-19.2205753326416, -19.1766357421875]}
+TOP64 alpha4 {"15": {"relative_change": 0.0709046721458435, "writer_norm_fraction": 0.502430260181427, "observed_attribution": {"productive": {"all_neurons": -0.05253881216049194, "selected64": -0.02078350819647312}, "repetitive": {"all_neurons": -0.2538929283618927, "selected64": -0.20397838950157166}}, "selected_first12": [294, 371, 0, 46, 1130, 266, 63, 601, 1155, 1060, 516, 25]}, "19": {"relative_change": 0.054038889706134796, "writer_norm_fraction": 0.4001498222351074, "observed_attribution": {"productive": {"all_neurons": 0.07911959290504456, "selected64": 0.012542192824184895}, "repetitive": {"all_neurons": 0.22102569043636322, "selected64": 0.15166443586349487}}, "selected_first12": [11, 1, 161, 343, 171, 246, 5, 17, 119, 13, 127, 744]}}
+
+```

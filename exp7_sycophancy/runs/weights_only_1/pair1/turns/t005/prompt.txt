@@ -1,0 +1,172 @@
+OUTPUT of run 4 of at most 60:
+```
+
+===== LAYER 4, MLP UNIT 341 =====
+MODE: raw
+  ||P_A||=0.04728495, ||P_B||=0.04787691, ||delta P||=0.003959204, relative_delta=8.32804%
+  write-factor cosine=0.99678255, read-factor cosine=0.99983222, gate cosine=0.99999037
+  delta-energy decomposition [write term, read term, signed interference] (%): [95.0467  4.84    0.1133]
+  exact decomposition residual=0; leading singular energy fraction=0.9528130
+  top output-coordinate shares of delta energy:
+    coord=217, share=  2.4898%, write_A=-0.006256104, write_B=-0.004760742
+    coord=338, share=  2.0363%, write_A=-0.01147461, write_B=-0.01013184
+    coord=527, share=  1.8468%, write_A=-0.002868652, write_B=-0.001579285
+    coord=133, share=  1.8419%, write_A=-0.00491333, write_B=-0.006195068
+MODE: diagonal-scaled
+  ||P_A||=7.528573, ||P_B||=5.353126, ||delta P||=4.31676, relative_delta=70.01874%
+  write-factor cosine=0.82765048, read-factor cosine=0.99985011, gate cosine=0.99999197
+  delta-energy decomposition [write term, read term, signed interference] (%): [99.9856  0.0612 -0.0468]
+  exact decomposition residual=0; leading singular energy fraction=0.9995581
+  top output-coordinate shares of delta energy:
+    coord=163, share= 92.7636%, write_A=-0.7527008, write_B=-0.2055988
+    coord=400, share=  5.8606%, write_A=+0.04847527, write_B=+0.1859169
+    coord=201, share=  0.0590%, write_A=+0.002082288, write_B=+0.01587439
+    coord=586, share=  0.0417%, write_A=-0.03883839, write_B=-0.05040359
+  relative residual from using common midpoint norm scales: 0.002465%
+  scales and raw down-weight differences at top coordinates:
+    coord=163, scale_A=+609, scale_B=+609, raw_down_delta=+0.0008983612
+    coord=400, scale_A=+299, scale_B=+299, raw_down_delta=+0.000459671
+    coord=201, scale_A=+17.125, scale_B=+17.125, raw_down_delta=+0.000805378
+    coord=586, scale_A=+22.625, scale_B=+22.625, raw_down_delta=-0.0005111694
+
+===== LAYER 4, MLP UNIT 1357 =====
+MODE: raw
+  ||P_A||=0.1632457, ||P_B||=0.1629649, ||delta P||=0.004468973, relative_delta=2.74019%
+  write-factor cosine=0.99966720, read-factor cosine=0.99995890, gate cosine=0.99997660
+  delta-energy decomposition [write term, read term, signed interference] (%): [89.0218 10.9471  0.0311]
+  exact decomposition residual=0; leading singular energy fraction=0.8910882
+  top output-coordinate shares of delta energy:
+    coord=188, share=  2.5124%, write_A=-0.09960938, write_B=-0.09912109
+    coord=167, share=  1.2530%, write_A=+0.08007812, write_B=+0.08007812
+    coord= 40, share=  1.0754%, write_A=+0.004241943, write_B=+0.003570557
+    coord=435, share=  1.0725%, write_A=+0.002548218, write_B=+0.003219604
+MODE: diagonal-scaled
+  ||P_A||=19.3684, ||P_B||=17.04301, ||delta P||=4.091751, relative_delta=22.57180%
+  write-factor cosine=0.98286138, read-factor cosine=0.99996883, gate cosine=0.99998329
+  delta-energy decomposition [write term, read term, signed interference] (%): [99.7131  0.1226  0.1644]
+  exact decomposition residual=0; leading singular energy fraction=0.9991759
+  top output-coordinate shares of delta energy:
+    coord=163, share= 85.7773%, write_A=+0.7991638, write_B=+0.525032
+    coord=400, share= 11.0094%, write_A=+0.5041428, write_B=+0.4060516
+    coord=270, share=  0.1738%, write_A=+0.08926392, write_B=+0.1016235
+    coord=120, share=  0.1550%, write_A=-0.0769043, write_B=-0.08857727
+  relative residual from using common midpoint norm scales: 0.001405%
+  scales and raw down-weight differences at top coordinates:
+    coord=163, scale_A=+609, scale_B=+609, raw_down_delta=-0.0004501343
+    coord=400, scale_A=+299, scale_B=+299, raw_down_delta=-0.000328064
+    coord=270, scale_A=+22.5, scale_B=+22.5, raw_down_delta=+0.0005493164
+    coord=120, scale_A=+22.5, scale_B=+22.5, raw_down_delta=-0.0005187988
+
+===== LAYER 12, MLP UNIT 232 =====
+MODE: raw
+  ||P_A||=2.190253, ||P_B||=2.189051, ||delta P||=0.01837667, relative_delta=0.83926%
+  write-factor cosine=0.99996710, read-factor cosine=0.99999783, gate cosine=0.99992546
+  delta-energy decomposition [write term, read term, signed interference] (%): [93.7821  6.1524  0.0656]
+  exact decomposition residual=0; leading singular energy fraction=0.9388066
+  top output-coordinate shares of delta energy:
+    coord=526, share=  1.5906%, write_A=+0.1777344, write_B=+0.1767578
+    coord=620, share=  1.5313%, write_A=-0.1503906, write_B=-0.1494141
+    coord=398, share=  1.5084%, write_A=+0.1582031, write_B=+0.1591797
+    coord= 34, share=  1.1656%, write_A=+0.002990723, write_B=+0.003890991
+MODE: diagonal-scaled
+  ||P_A||=1020.508, ||P_B||=1020.702, ||delta P||=12.0944, relative_delta=1.18504%
+  write-factor cosine=0.99999075, read-factor cosine=0.99993905, gate cosine=0.99980640
+  delta-energy decomposition [write term, read term, signed interference] (%): [13.2304 86.9705 -0.2009]
+  exact decomposition residual=0; leading singular energy fraction=0.8683502
+  top output-coordinate shares of delta energy:
+    coord=587, share=  6.9677%, write_A=+112.623, write_B=+112.623
+    coord=232, share=  5.2924%, write_A=-98.1543, write_B=-98.1543
+    coord= 89, share=  4.5342%, write_A=-90.85156, write_B=-90.85156
+    coord=398, share=  3.7221%, write_A=+70.40039, write_B=+70.83496
+  relative residual from using common midpoint norm scales: 0.206503%
+  scales and raw down-weight differences at top coordinates:
+    coord=587, scale_A=+447, scale_B=+447, raw_down_delta=+0
+    coord=232, scale_A=+437, scale_B=+437, raw_down_delta=+0
+    coord= 89, scale_A=+401, scale_B=+401, raw_down_delta=+0
+    coord=398, scale_A=+445, scale_B=+445, raw_down_delta=+0.0009765625
+
+===== LAYER 16, MLP UNIT 1591 =====
+MODE: raw
+  ||P_A||=0.6694312, ||P_B||=0.6692895, ||delta P||=0.007110031, relative_delta=1.06223%
+  write-factor cosine=0.99996346, read-factor cosine=0.99998014, gate cosine=0.99998166
+  delta-energy decomposition [write term, read term, signed interference] (%): [64.7649 35.2604 -0.0253]
+  exact decomposition residual=0; leading singular energy fraction=0.6484927
+  top output-coordinate shares of delta energy:
+    coord=163, share= 32.3431%, write_A=-0.5078125, write_B=-0.5078125
+    coord=357, share=  1.9444%, write_A=+0.001914978, write_B=+0.002700806
+    coord=168, share=  1.7116%, write_A=-0.009155273, write_B=-0.008422852
+    coord= 27, share=  1.0591%, write_A=-0.006469727, write_B=-0.007049561
+MODE: diagonal-scaled
+  ||P_A||=3874.83, ||P_B||=3877.479, ||delta P||=23.59524, relative_delta=0.60873%
+  write-factor cosine=0.99999843, read-factor cosine=0.99998327, gate cosine=0.99997970
+  delta-energy decomposition [write term, read term, signed interference] (%): [ 8.4579 91.5542 -0.0121]
+  exact decomposition residual=0; leading singular energy fraction=0.9167021
+  top output-coordinate shares of delta energy:
+    coord=163, share= 91.2762%, write_A=-841.4453, write_B=-841.4453
+    coord=168, share=  0.5985%, write_A=-4.989624, write_B=-4.590454
+    coord= 27, share=  0.3143%, write_A=-3.176636, write_B=-3.461334
+    coord=245, share=  0.1777%, write_A=+1.932953, write_B=+1.715683
+  relative residual from using common midpoint norm scales: 0.629305%
+  scales and raw down-weight differences at top coordinates:
+    coord=163, scale_A=+1657, scale_B=+1657, raw_down_delta=+0
+    coord=168, scale_A=+545, scale_B=+545, raw_down_delta=+0.0007324219
+    coord= 27, scale_A=+491, scale_B=+491, raw_down_delta=-0.000579834
+    coord=245, scale_A=+491, scale_B=+491, raw_down_delta=-0.0004425049
+
+===== LAYER 11, MLP UNIT 1182 =====
+MODE: raw
+  ||P_A||=0.7362933, ||P_B||=0.7359974, ||delta P||=0.007876328, relative_delta=1.06996%
+  write-factor cosine=0.99995513, read-factor cosine=0.99998771, gate cosine=0.99986488
+  delta-energy decomposition [write term, read term, signed interference] (%): [78.6308 21.482  -0.1128]
+  exact decomposition residual=0; leading singular energy fraction=0.7858429
+  top output-coordinate shares of delta energy:
+    coord=533, share=  2.9114%, write_A=-0.1416016, write_B=-0.140625
+    coord=106, share=  1.6580%, write_A=+0.1806641, write_B=+0.1806641
+    coord=362, share=  1.2402%, write_A=+0.15625, write_B=+0.15625
+    coord=221, share=  1.1923%, write_A=-0.04492188, write_B=-0.04418945
+MODE: diagonal-scaled
+  ||P_A||=520.2421, ||P_B||=520.3312, ||delta P||=7.258378, relative_delta=1.39511%
+  write-factor cosine=0.99992881, read-factor cosine=0.99997389, gate cosine=0.99951873
+  delta-energy decomposition [write term, read term, signed interference] (%): [73.2217 26.9694 -0.1911]
+  exact decomposition residual=0; leading singular energy fraction=0.7318110
+  top output-coordinate shares of delta energy:
+    coord=232, share=  3.8477%, write_A=-8.601074, write_B=-8.799561
+    coord=167, share=  3.6044%, write_A=-1.275177, write_B=-1.47995
+    coord=525, share=  2.4274%, write_A=-1.543427, write_B=-1.710999
+    coord=315, share=  1.9365%, write_A=-2.737061, write_B=-2.88501
+  relative residual from using common midpoint norm scales: 0.027831%
+  scales and raw down-weight differences at top coordinates:
+    coord=232, scale_A=+271, scale_B=+271, raw_down_delta=-0.0007324219
+    coord=167, scale_A=+305, scale_B=+305, raw_down_delta=-0.0006713867
+    coord=525, scale_A=+289, scale_B=+289, raw_down_delta=-0.000579834
+    coord=315, scale_A=+303, scale_B=+303, raw_down_delta=-0.0004882812
+
+===== LAYER 5, MLP UNIT 501 =====
+MODE: raw
+  ||P_A||=2.699307, ||P_B||=2.699008, ||delta P||=0.01428371, relative_delta=0.52919%
+  write-factor cosine=0.99999079, read-factor cosine=0.99999521, gate cosine=0.99962261
+  delta-energy decomposition [write term, read term, signed interference] (%): [65.7724 34.285  -0.0574]
+  exact decomposition residual=0; leading singular energy fraction=0.6585463
+  top output-coordinate shares of delta energy:
+    coord=234, share= 21.7384%, write_A=+0.7382812, write_B=+0.7382812
+    coord=218, share=  7.9088%, write_A=-0.4453125, write_B=-0.4453125
+    coord=590, share=  1.1881%, write_A=-0.004089355, write_B=-0.003555298
+    coord=  6, share=  1.1206%, write_A=-0.003372192, write_B=-0.002853394
+MODE: diagonal-scaled
+  ||P_A||=1530.003, ||P_B||=1530.029, ||delta P||=5.458905, relative_delta=0.35679%
+  write-factor cosine=0.99999913, read-factor cosine=0.99999450, gate cosine=0.99960555
+  delta-energy decomposition [write term, read term, signed interference] (%): [13.6596 86.3702 -0.0298]
+  exact decomposition residual=0; leading singular energy fraction=0.8636293
+  top output-coordinate shares of delta energy:
+    coord=400, share= 82.1582%, write_A=+35.90918, write_B=+35.90918
+    coord=163, share=  3.5415%, write_A=+3.075439, write_B=+3.098053
+    coord= 87, share=  2.0439%, write_A=-5.663818, write_B=-5.663818
+    coord=565, share=  0.5598%, write_A=+0.6440735, write_B=+0.6536865
+  relative residual from using common midpoint norm scales: 0.146679%
+  scales and raw down-weight differences at top coordinates:
+    coord=400, scale_A=+309, scale_B=+309, raw_down_delta=+0
+    coord=163, scale_A=+741, scale_B=+741, raw_down_delta=+3.051758e-05
+    coord= 87, scale_A=+104.5, scale_B=+104.5, raw_down_delta=+0
+    coord=565, scale_A=+26.25, scale_B=+26.25, raw_down_delta=+0.0003662109
+
+```

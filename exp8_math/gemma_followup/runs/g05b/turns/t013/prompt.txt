@@ -1,0 +1,49 @@
+OUTPUT of Python run 9 of at most 300:
+```
+Late-layer candidates after surface-form controls: 166
+{'layer': 17, 'neuron': 793, 'adjusted_failure': 0.208, 'adjusted_arithmetic_error': 0.117, 'adjusted_half0': 0.224, 'adjusted_half1': 0.213, 'adjusted_progress': -0.063, 'adjusted_identity': -0.087, 'energy': 0.004}
+{'layer': 16, 'neuron': 128, 'adjusted_failure': 0.149, 'adjusted_arithmetic_error': 0.173, 'adjusted_half0': 0.155, 'adjusted_half1': 0.153, 'adjusted_progress': -0.177, 'adjusted_identity': 0.065, 'energy': 0.006}
+{'layer': 11, 'neuron': 587, 'adjusted_failure': 0.172, 'adjusted_arithmetic_error': 0.135, 'adjusted_half0': 0.155, 'adjusted_half1': 0.182, 'adjusted_progress': -0.138, 'adjusted_identity': 0.14, 'energy': 0.036}
+{'layer': 14, 'neuron': 11, 'adjusted_failure': 0.157, 'adjusted_arithmetic_error': 0.128, 'adjusted_half0': 0.156, 'adjusted_half1': 0.174, 'adjusted_progress': -0.077, 'adjusted_identity': -0.024, 'energy': 0.002}
+{'layer': 13, 'neuron': 1881, 'adjusted_failure': 0.177, 'adjusted_arithmetic_error': 0.14, 'adjusted_half0': 0.187, 'adjusted_half1': 0.148, 'adjusted_progress': -0.127, 'adjusted_identity': 0.124, 'energy': 0.01}
+{'layer': 15, 'neuron': 1036, 'adjusted_failure': 0.142, 'adjusted_arithmetic_error': 0.129, 'adjusted_half0': 0.174, 'adjusted_half1': 0.148, 'adjusted_progress': -0.072, 'adjusted_identity': 0.093, 'energy': 0.007}
+{'layer': 12, 'neuron': 1797, 'adjusted_failure': 0.147, 'adjusted_arithmetic_error': 0.148, 'adjusted_half0': 0.136, 'adjusted_half1': 0.143, 'adjusted_progress': 0.014, 'adjusted_identity': -0.054, 'energy': 0.011}
+{'layer': 14, 'neuron': 1157, 'adjusted_failure': 0.137, 'adjusted_arithmetic_error': 0.193, 'adjusted_half0': 0.112, 'adjusted_half1': 0.159, 'adjusted_progress': -0.209, 'adjusted_identity': -0.018, 'energy': 0.004}
+{'layer': 13, 'neuron': 1540, 'adjusted_failure': 0.176, 'adjusted_arithmetic_error': 0.158, 'adjusted_half0': 0.211, 'adjusted_half1': 0.124, 'adjusted_progress': -0.075, 'adjusted_identity': -0.075, 'energy': 0.006}
+{'layer': 6, 'neuron': 1157, 'adjusted_failure': 0.136, 'adjusted_arithmetic_error': 0.125, 'adjusted_half0': 0.133, 'adjusted_half1': 0.135, 'adjusted_progress': -0.038, 'adjusted_identity': -0.018, 'energy': 0.012}
+{'layer': 17, 'neuron': 942, 'adjusted_failure': 0.175, 'adjusted_arithmetic_error': 0.097, 'adjusted_half0': 0.15, 'adjusted_half1': 0.202, 'adjusted_progress': -0.015, 'adjusted_identity': -0.138, 'energy': 0.015}
+{'layer': 13, 'neuron': 1098, 'adjusted_failure': 0.156, 'adjusted_arithmetic_error': 0.101, 'adjusted_half0': 0.194, 'adjusted_half1': 0.148, 'adjusted_progress': -0.06, 'adjusted_identity': -0.055, 'energy': 0.004}
+{'layer': 9, 'neuron': 1493, 'adjusted_failure': 0.15, 'adjusted_arithmetic_error': 0.12, 'adjusted_half0': 0.187, 'adjusted_half1': 0.135, 'adjusted_progress': -0.056, 'adjusted_identity': -0.066, 'energy': 0.005}
+{'layer': 17, 'neuron': 1554, 'adjusted_failure': 0.151, 'adjusted_arithmetic_error': 0.156, 'adjusted_half0': 0.203, 'adjusted_half1': 0.116, 'adjusted_progress': -0.141, 'adjusted_identity': 0.033, 'energy': 0.007}
+{'layer': 17, 'neuron': 1378, 'adjusted_failure': 0.115, 'adjusted_arithmetic_error': 0.152, 'adjusted_half0': 0.112, 'adjusted_half1': 0.132, 'adjusted_progress': -0.058, 'adjusted_identity': 0.084, 'energy': 0.006}
+{'layer': 16, 'neuron': 1315, 'adjusted_failure': 0.172, 'adjusted_arithmetic_error': 0.137, 'adjusted_half0': 0.118, 'adjusted_half1': 0.21, 'adjusted_progress': -0.003, 'adjusted_identity': -0.074, 'energy': 0.012}
+{'layer': 11, 'neuron': 1551, 'adjusted_failure': 0.122, 'adjusted_arithmetic_error': 0.129, 'adjusted_half0': 0.135, 'adjusted_half1': 0.121, 'adjusted_progress': -0.031, 'adjusted_identity': -0.2, 'energy': 0.007}
+{'layer': 8, 'neuron': 1777, 'adjusted_failure': 0.165, 'adjusted_arithmetic_error': 0.122, 'adjusted_half0': 0.12, 'adjusted_half1': 0.217, 'adjusted_progress': -0.067, 'adjusted_identity': -0.016, 'energy': 0.004}
+{'layer': 16, 'neuron': 1766, 'adjusted_failure': 0.19, 'adjusted_arithmetic_error': 0.091, 'adjusted_half0': 0.138, 'adjusted_half1': 0.242, 'adjusted_progress': -0.166, 'adjusted_identity': 0.014, 'energy': 0.004}
+{'layer': 9, 'neuron': 580, 'adjusted_failure': 0.142, 'adjusted_arithmetic_error': 0.119, 'adjusted_half0': 0.12, 'adjusted_half1': 0.139, 'adjusted_progress': -0.146, 'adjusted_identity': 0.04, 'energy': 0.021}
+{'layer': 8, 'neuron': 1185, 'adjusted_failure': 0.145, 'adjusted_arithmetic_error': 0.11, 'adjusted_half0': 0.123, 'adjusted_half1': 0.213, 'adjusted_progress': -0.047, 'adjusted_identity': 0.01, 'energy': 0.088}
+{'layer': 10, 'neuron': 1798, 'adjusted_failure': 0.139, 'adjusted_arithmetic_error': 0.091, 'adjusted_half0': 0.157, 'adjusted_half1': 0.135, 'adjusted_progress': -0.026, 'adjusted_identity': -0.116, 'energy': 0.005}
+{'layer': 17, 'neuron': 75, 'adjusted_failure': 0.115, 'adjusted_arithmetic_error': 0.122, 'adjusted_half0': 0.118, 'adjusted_half1': 0.114, 'adjusted_progress': -0.05, 'adjusted_identity': -0.083, 'energy': 0.018}
+{'layer': 17, 'neuron': 1484, 'adjusted_failure': 0.146, 'adjusted_arithmetic_error': 0.147, 'adjusted_half0': 0.101, 'adjusted_half1': 0.211, 'adjusted_progress': -0.154, 'adjusted_identity': 0.025, 'energy': 0.005}
+Top adjusted failure correlations by layer:
+0 1869 0.194 halves 0.257 0.139 arith 0.021
+1 694 0.18 halves 0.152 0.227 arith -0.073
+2 1616 0.145 halves 0.203 0.052 arith -0.008
+3 1628 0.158 halves 0.169 0.139 arith 0.061
+4 193 0.193 halves 0.244 0.111 arith 0.046
+5 1111 0.151 halves 0.128 0.159 arith -0.004
+6 1850 0.163 halves 0.171 0.166 arith 0.033
+7 796 0.171 halves 0.145 0.228 arith 0.011
+8 1751 0.188 halves 0.172 0.213 arith 0.034
+9 175 0.164 halves 0.126 0.243 arith 0.077
+10 779 0.154 halves 0.232 0.076 arith 0.027
+11 401 0.21 halves 0.203 0.227 arith 0.111
+12 467 0.164 halves 0.133 0.185 arith -0.025
+13 1226 0.216 halves 0.188 0.265 arith 0.004
+14 1202 0.228 halves 0.13 0.315 arith 0.078
+15 1839 0.17 halves 0.139 0.205 arith 0.084
+16 250 0.191 halves 0.123 0.257 arith 0.097
+17 793 0.208 halves 0.224 0.213 arith 0.117
+No edit yet.
+
+```

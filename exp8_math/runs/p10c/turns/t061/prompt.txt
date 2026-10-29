@@ -1,0 +1,45 @@
+OUTPUT of Python run 52 of at most 300:
+```
+Strength 1: {'n': 128, 'original_correct': 16, 'edited_correct': 28, 'gain_pp': 9.375, 'se_pp': 3.911782499428444, 'rescued': 19, 'regressed': 7, 'original_cut': 115, 'edited_cut': 98}
+gsm8k {'n': 64, 'original_correct': 11, 'edited_correct': 21, 'gain_pp': 15.625, 'se_pp': 6.762242718751049, 'rescued': 15, 'regressed': 5, 'original_cut': 55, 'edited_cut': 42}
+math {'n': 64, 'original_correct': 5, 'edited_correct': 7, 'gain_pp': 3.125, 'se_pp': 3.837439570901079, 'rescued': 4, 'regressed': 2, 'original_cut': 60, 'edited_cut': 56}
+original {'tail_repeat': 0.8594810421113078, 'high_repeat': 111, 'finished_correct': 13, 'finished_correct_median_tokens': 4673.0}
+strength1 {'tail_repeat': 0.794828829553714, 'high_repeat': 95, 'finished_correct': 28, 'finished_correct_median_tokens': 11660.0}
+original repetition projections [(8, 0.307), (12, 0.394), (16, 0.809), (20, 1.415), (23, 1.624)]
+edited repetition projections [(8, 0.247), (12, 0.188), (16, 0.19), (20, 0.235), (23, 0.377)]
+Rescue gsm8k_train_1101 tokens 18662 start: Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *   Given in end:  all ages:
+*   Beckett = 12
+*   Olaf = 15
+*   Shannen = 13
+*   Jack = 31
+
+Total Sum = 12 + 15 + 13 + 31
+Total Sum = 71
+
+\boxed{71}
+Rescue gsm8k_train_1927 tokens 12617 start: Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Problem:**
+    *   **Goal:* end: mphlets.**
+*   Total for Mike = 5800.
+*   Total for Leo = 3600.
+*   Total combined = $5800 + 3600 = 9400$ pamphlets.
+
+\boxed{9400}
+Rescue gsm8k_train_4960 tokens 4760 start: Here's a thinking process that leads to the suggested answer:
+
+1.  **Analyze the Request:**
+    *    end: 
+$$\text{Tip Amount} = 40 \times 0.10$$
+$$\text{Tip Amount} = 4$$
+
+Therefore, the waiter should receive $4 in gratuity.
+
+\boxed{4}
+Strength 1.5 saved; tensor count: 30
+Additional development IDs: ["gsm8k_train_3553","gsm8k_train_5789","gsm8k_train_1381","gsm8k_train_5240","gsm8k_train_494","gsm8k_train_422","gsm8k_train_462","gsm8k_train_2739","gsm8k_train_0","gsm8k_train_350","gsm8k_train_5000","gsm8k_train_4015","gsm8k_train_900","gsm8k_train_2723","gsm8k_train_4875","gsm8k_train_4620","gsm8k_train_817","gsm8k_train_7375","gsm8k_train_1451","gsm8k_train_5547","gsm8k_train_6247","gsm8k_train_4082","gsm8k_train_297","gsm8k_train_4799","gsm8k_train_6726","gsm8k_train_1016","gsm8k_train_1993","gsm8k_train_5910","gsm8k_train_2353","gsm8k_train_6380","gsm8k_train_1700","gsm8k_train_4276","math_train_geometry_350","math_train_intermediate_algebra_1136","math_train_algebra_603","math_train_counting_and_probability_685","math_train_geometry_67","math_train_prealgebra_321","math_train_algebra_469","math_train_counting_and_probability_483","math_train_counting_and_probability_644","math_train_algebra_209","math_train_intermediate_algebra_732","math_train_algebra_1097","math_train_intermediate_algebra_458","math_train_prealgebra_1170","math_train_number_theory_425","math_train_counting_and_probability_666","math_train_precalculus_176","math_train_intermediate_algebra_776","math_train_counting_and_probability_278","math_train_algebra_1454","math_train_geometry_837","math_train_counting_and_probability_181","math_train_intermediate_algebra_225","math_train_geometry_481","math_train_algebra_1017","math_train_geometry_249","math_train_prealgebra_38","math_train_algebra_244","math_train_geometry_642","math_train_intermediate_algebra_1243","math_train_number_theory_762","math_train_prealgebra_1153","math_train_geometry_618","math_train_prealgebra_618","math_train_intermediate_algebra_700","math_train_prealgebra_486","math_train_counting_and_probability_705","math_train_intermediate_algebra_1137","math_train_precalculus_565","math_train_algebra_720","math_train_intermediate_algebra_865","math_train_algebra_791","math_train_counting_and_probability_433","math_train_prealgebra_118","math_train_geometry_223","math_train_algebra_1108","math_train_precalculus_659","math_train_algebra_6","math_train_prealgebra_1029","math_train_geometry_18","math_train_number_theory_508","math_train_algebra_993","math_train_intermediate_algebra_742","math_train_geometry_82","math_train_intermediate_algebra_693","math_train_geometry_679","math_train_prealgebra_32","math_train_counting_and_probability_478","math_train_algebra_340","math_train_precalculus_41","math_train_counting_and_probability_119","math_train_algebra_426","math_train_geometry_440","math_train_geometry_289","math_train_counting_and_probability_3","math_train_geometry_724","math_train_counting_and_probability_254","math_train_intermediate_algebra_250","math_train_prealgebra_1035","math_train_algebra_962","math_train_prealgebra_111","math_train_counting_and_probability_683","math_train_counting_and_probability_648","math_train_algebra_21","math_train_algebra_292","math_train_algebra_1094","math_train_algebra_824","math_train_algebra_8","math_train_counting_and_probability_385","math_train_algebra_975","math_train_algebra_1243","math_train_algebra_1074","math_train_counting_and_probability_570","math_train_algebra_1105","math_train_algebra_1551","math_train_counting_and_probability_304","math_train_prealgebra_1025","math_train_prealgebra_955","math_train_prealgebra_672","math_train_number_theory_775","math_train_prealgebra_502","math_train_geometry_614","math_train_intermediate_algebra_638","math_train_precalculus_531","math_train_geometry_693","math_train_algebra_1190"]
+
+```

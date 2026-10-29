@@ -1,0 +1,99 @@
+OUTPUT of run 5 of at most 60:
+```
+Processed layers 0..5; elapsed 4.1s
+Processed layers 0..11; elapsed 8.1s
+Processed layers 0..17; elapsed 12.1s
+
+=== RAW DIFFERENCE: TOP-4 SINGULAR-DIRECTION ENERGY FRACTION ===
+layer       q       k       v       o    gate      up    down
+ 0 33.355% 45.007% 48.575% 28.931% 23.681% 22.619% 14.422%
+ 1 31.372% 36.018% 35.361% 34.301% 18.064% 17.841% 14.794%
+ 2 35.921% 45.808% 33.834% 28.372% 21.576% 22.496% 19.477%
+ 3 32.982% 36.338% 30.863% 30.898% 21.978% 21.194% 20.031%
+ 4 31.703% 38.562% 29.177% 33.649% 22.809% 21.126% 18.893%
+ 5 38.418% 42.003% 36.721% 31.241% 20.456% 19.156% 18.914%
+ 6 30.674% 32.010% 26.879% 29.307% 21.293% 19.670% 20.080%
+ 7 32.367% 33.337% 31.601% 26.238% 25.175% 23.858% 21.843%
+ 8 38.919% 39.448% 24.816% 32.453% 24.877% 23.835% 21.915%
+ 9 40.878% 35.285% 28.300% 26.721% 26.549% 26.032% 23.774%
+10 41.933% 43.394% 26.204% 25.943% 27.456% 25.550% 25.109%
+11 39.034% 43.072% 26.642% 18.548% 24.575% 23.163% 23.523%
+12 47.712% 48.832% 27.124% 23.658% 25.282% 23.697% 20.153%
+13 32.335% 31.847% 26.861% 23.673% 27.475% 27.214% 17.709%
+14 32.559% 34.692% 25.760% 28.381% 24.947% 24.795% 15.978%
+15 33.066% 32.765% 25.422% 19.816% 21.311% 21.182% 19.486%
+16 28.968% 28.686% 27.924% 29.078% 20.057% 19.847% 24.452%
+17 35.474% 41.700% 25.046% 25.288% 19.714% 19.460% 35.038%
+
+=== FAMILY SPECTRAL SUMMARY ===
+family median_top1 median_top16 median_rank90 median_radial_cos
+q     13.605% 62.724% 113.0 +0.000077
+k     13.977% 67.140% 74.0 -0.000293
+v     10.916% 54.319% 99.0 -0.000388
+o     10.575% 54.209% 133.0 +0.000984
+gate  9.960% 44.565% 232.5 -0.000067
+up    9.519% 44.930% 234.0 +0.000017
+down  8.031% 43.602% 171.0 -0.000132
+
+=== TOP 18 MATRICES BY FRACTION IN LEADING DIFFERENCE DIRECTION ===
+L17/k    top1=25.417% top4=41.700% top16=64.301% rank90=85 radial_cos=-0.00039 top_residual_coords=[(463, 0.0122), (450, 0.0107), (240, 0.0101)]
+L12/q    top1=21.045% top4=47.712% top16=72.524% rank90=75 radial_cos=-0.00136 top_residual_coords=[(534, 0.0062), (383, 0.0062), (31, 0.0062)]
+L00/k    top1=20.827% top4=45.007% top16=69.703% rank90=75 radial_cos=-0.00303 top_residual_coords=[(137, 0.0104), (474, 0.0092), (99, 0.0077)]
+L10/q    top1=20.614% top4=41.933% top16=67.234% rank90=101 radial_cos=+0.00032 top_residual_coords=[(23, 0.0073), (355, 0.0073), (435, 0.0068)]
+L12/k    top1=19.942% top4=48.832% top16=74.144% rank90=58 radial_cos=+0.00161 top_residual_coords=[(506, 0.0131), (48, 0.0118), (411, 0.0116)]
+L11/k    top1=19.110% top4=43.072% top16=68.634% rank90=69 radial_cos=-0.00493 top_residual_coords=[(473, 0.0133), (348, 0.0092), (355, 0.0089)]
+L10/k    top1=18.543% top4=43.394% top16=69.711% rank90=69 radial_cos=+0.00634 top_residual_coords=[(6, 0.012), (300, 0.0109), (472, 0.0106)]
+L09/q    top1=18.065% top4=40.878% top16=67.740% rank90=97 radial_cos=+0.00025 top_residual_coords=[(167, 0.0063), (372, 0.0061), (149, 0.0061)]
+L11/q    top1=17.836% top4=39.034% top16=66.149% rank90=108 radial_cos=+0.00133 top_residual_coords=[(635, 0.0084), (224, 0.0079), (425, 0.0078)]
+L05/k    top1=17.242% top4=42.003% top16=72.304% rank90=57 radial_cos=+0.00085 top_residual_coords=[(380, 0.0129), (168, 0.0115), (582, 0.0104)]
+L01/o    top1=17.086% top4=34.301% top16=62.173% rank90=87 radial_cos=+0.00161 top_residual_coords=[(331, 0.0163), (11, 0.0153), (101, 0.0123)]
+L02/k    top1=16.997% top4=45.808% top16=72.411% rank90=68 radial_cos=-0.00020 top_residual_coords=[(231, 0.0108), (624, 0.0094), (500, 0.0089)]
+L00/v    top1=16.952% top4=48.575% top16=72.621% rank90=85 radial_cos=+0.00218 top_residual_coords=[(124, 0.0068), (556, 0.0064), (198, 0.0059)]
+L14/k    top1=16.481% top4=34.692% top16=63.414% rank90=82 radial_cos=+0.00053 top_residual_coords=[(263, 0.0103), (42, 0.0079), (229, 0.0076)]
+L00/q    top1=16.106% top4=33.355% top16=60.610% rank90=130 radial_cos=+0.00590 top_residual_coords=[(583, 0.0082), (625, 0.0076), (474, 0.0073)]
+L14/o    top1=16.035% top4=28.381% top16=49.996% rank90=166 radial_cos=-0.00096 top_residual_coords=[(237, 0.0197), (178, 0.0167), (189, 0.0133)]
+L05/q    top1=15.925% top4=38.418% top16=66.714% rank90=96 radial_cos=+0.00323 top_residual_coords=[(366, 0.0075), (75, 0.0067), (253, 0.0065)]
+L02/v    top1=15.677% top4=33.834% top16=62.257% rank90=90 radial_cos=-0.00347 top_residual_coords=[(153, 0.0077), (299, 0.0075), (248, 0.0074)]
+
+=== CROSS-LAYER SHARED CHANGE GEOMETRY ===
+read: leading 8 energy fractions=[0.0339 0.0206 0.0194 0.0141 0.0133 0.0119 0.0113 0.0102] top16=20.094%
+  direction0: [(239, 0.017), (87, 0.0166), (108, 0.0129), (272, 0.0126)]
+  direction1: [(469, 0.0222), (300, 0.0196), (371, 0.0152), (574, 0.011)]
+  direction2: [(416, 0.0144), (459, 0.0128), (25, 0.0115), (113, 0.0108)]
+write: leading 8 energy fractions=[0.0168 0.0132 0.0127 0.0118 0.0105 0.0104 0.0094 0.0091] top16=15.602%
+  direction0: [(284, 0.0179), (512, 0.0143), (418, 0.0142), (220, 0.0142)]
+  direction1: [(51, 0.0178), (129, 0.0149), (239, 0.0137), (494, 0.011)]
+  direction2: [(289, 0.0175), (163, 0.0171), (434, 0.0157), (108, 0.0129)]
+Shared read/write top-4 subspace overlap: 0.03475455012917046
+For orientation only, independent uniformly oriented 4D subspaces
+would have expected overlap 4/640=0.006250; that is NOT an assumed null model.
+
+=== STRONGEST ORDER-COMPATIBLE WRITE/READ CHANGE-DIRECTION ALIGNMENTS ===
+L17/o -> L17/up subspace_overlap=0.05397 writer_top4_energy=25.288% reader_top4_energy=19.460%
+L17/o -> L17/gate subspace_overlap=0.05245 writer_top4_energy=25.288% reader_top4_energy=19.714%
+L15/down -> L17/up subspace_overlap=0.04377 writer_top4_energy=19.486% reader_top4_energy=19.460%
+L15/down -> L17/gate subspace_overlap=0.04106 writer_top4_energy=19.486% reader_top4_energy=19.714%
+L15/down -> L17/v subspace_overlap=0.03932 writer_top4_energy=19.486% reader_top4_energy=25.046%
+L11/o -> L12/q subspace_overlap=0.03734 writer_top4_energy=18.548% reader_top4_energy=47.712%
+L16/down -> L17/v subspace_overlap=0.03618 writer_top4_energy=24.452% reader_top4_energy=25.046%
+L16/down -> L17/gate subspace_overlap=0.03539 writer_top4_energy=24.452% reader_top4_energy=19.714%
+L16/down -> L17/up subspace_overlap=0.03518 writer_top4_energy=24.452% reader_top4_energy=19.460%
+L09/down -> L10/up subspace_overlap=0.03480 writer_top4_energy=23.774% reader_top4_energy=25.550%
+L09/down -> L10/gate subspace_overlap=0.03401 writer_top4_energy=23.774% reader_top4_energy=27.456%
+L11/o -> L11/up subspace_overlap=0.03176 writer_top4_energy=18.548% reader_top4_energy=23.163%
+L09/o -> L10/gate subspace_overlap=0.03166 writer_top4_energy=26.721% reader_top4_energy=27.456%
+L14/down -> L16/v subspace_overlap=0.03158 writer_top4_energy=15.978% reader_top4_energy=27.924%
+L13/o -> L16/up subspace_overlap=0.03151 writer_top4_energy=23.673% reader_top4_energy=19.847%
+L13/o -> L14/up subspace_overlap=0.03087 writer_top4_energy=23.673% reader_top4_energy=24.795%
+L13/o -> L16/gate subspace_overlap=0.03051 writer_top4_energy=23.673% reader_top4_energy=20.057%
+L12/down -> L15/q subspace_overlap=0.03013 writer_top4_energy=20.153% reader_top4_energy=33.066%
+L09/down -> L11/q subspace_overlap=0.02996 writer_top4_energy=23.774% reader_top4_energy=39.034%
+L14/down -> L15/q subspace_overlap=0.02960 writer_top4_energy=15.978% reader_top4_energy=33.066%
+
+Elapsed: 12.3s
+SVD/eigendecomposition was applied only to stored-weight differences.
+Direction alignment does not show that a message activates those directions,
+nor that intermediate nonlinear blocks preserve them.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

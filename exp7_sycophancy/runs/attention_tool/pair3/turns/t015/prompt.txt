@@ -1,0 +1,131 @@
+OUTPUT of run 14 of at most 20:
+```
+LOCAL QK BILINEAR CHANGES; activation-dependent Q/K RMS factors omitted
+Cue order: guess-word, believe-notice, think-read, 7-9
+Query axes: model-user, answer-question
+
+L7H3
+ distance 0 relative readout change [0.0176 0.0204 0.0193 0.0264] signed lexical-axis projections [[-0.001  -0.0003 -0.0003]
+ [-0.0007 -0.0006 -0.0001]]
+ distance 8 relative readout change [0.0157 0.0174 0.0193 0.0266] signed lexical-axis projections [[-0.0014 -0.0003 -0.0012]
+ [-0.0006 -0.0006  0.    ]]
+ distance 16 relative readout change [0.0154 0.0157 0.019  0.0263] signed lexical-axis projections [[-0.0014 -0.0004 -0.0018]
+ [-0.0004 -0.0009 -0.0006]]
+  guess-word delta query-direction + [('bil', 0.158), ('ahydro', 0.154), (' Bil', 0.151), (' rej', 0.149)] - [('angelo', -0.169), ('iennes', -0.152), (' Valley', -0.148), (' essence', -0.14)]
+ distance 32 relative readout change [0.0124 0.016  0.0163 0.0191] signed lexical-axis projections [[-0.0007 -0.0008 -0.0008]
+ [ 0.0004 -0.0008  0.0002]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 6 projected fraction 0.00103 enrichment 0.11 top units [772, 1245, 720, 1126] within-projection shares [0.0021 0.002  0.0019 0.0019]
+  layer 5 projected fraction 0.00049 enrichment 0.05 top units [593, 1181, 1835, 1717] within-projection shares [0.0024 0.0024 0.0021 0.002 ]
+  layer 4 projected fraction 0.00025 enrichment 0.03 top units [1612, 1565, 418, 53] within-projection shares [0.0022 0.0019 0.0019 0.0018]
+  layer 0 projected fraction 0.0002 enrichment 0.02 top units [1855, 1650, 715, 1871] within-projection shares [0.0029 0.0025 0.0024 0.0023]
+
+L8H3
+ distance 0 relative readout change [0.0083 0.0175 0.011  0.0169] signed lexical-axis projections [[ 0.0003 -0.0008  0.0001]
+ [-0.0004  0.0003 -0.0003]]
+ distance 8 relative readout change [0.0113 0.0125 0.012  0.0162] signed lexical-axis projections [[ 0.0004 -0.0003  0.    ]
+ [-0.0005  0.0002 -0.0003]]
+ distance 16 relative readout change [0.011  0.0137 0.0117 0.0165] signed lexical-axis projections [[ 0.0001 -0.0005 -0.    ]
+ [-0.0002  0.0003  0.0001]]
+ distance 32 relative readout change [0.0106 0.014  0.0124 0.0174] signed lexical-axis projections [[-0.     -0.0006  0.0003]
+ [-0.0003  0.     -0.0006]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 7 projected fraction 0.00136 enrichment 0.14 top units [1470, 195, 890, 1899] within-projection shares [0.0024 0.002  0.002  0.002 ]
+  layer 6 projected fraction 0.00072 enrichment 0.08 top units [433, 1590, 67, 631] within-projection shares [0.003  0.0022 0.0022 0.0019]
+  layer 5 projected fraction 0.00041 enrichment 0.04 top units [1665, 1545, 1762, 36] within-projection shares [0.003  0.0029 0.0023 0.0023]
+  layer 4 projected fraction 0.00024 enrichment 0.03 top units [1690, 1724, 961, 1252] within-projection shares [0.0023 0.0022 0.002  0.0019]
+
+L9H3
+ distance 0 relative readout change [0.0158 0.0125 0.0103 0.0134] signed lexical-axis projections [[0.0006 0.0009 0.0003]
+ [0.0004 0.0002 0.0003]]
+ distance 8 relative readout change [0.0148 0.0126 0.0095 0.0123] signed lexical-axis projections [[0.0006 0.001  0.0003]
+ [0.0004 0.0001 0.0003]]
+ distance 16 relative readout change [0.0151 0.0134 0.0089 0.0118] signed lexical-axis projections [[0.0001 0.0009 0.0003]
+ [0.0004 0.0002 0.0002]]
+  guess-word delta query-direction + [(' liquids', 0.158), (' Transit', 0.157), (' transit', 0.15), (' ignition', 0.147)] - [(' Mori', -0.154), ('ann', -0.152), ('atha', -0.151), ('odic', -0.15)]
+ distance 32 relative readout change [0.013  0.0103 0.0094 0.0114] signed lexical-axis projections [[0.0003 0.0006 0.0005]
+ [0.0004 0.0001 0.0003]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 8 projected fraction 0.00162 enrichment 0.17 top units [218, 866, 849, 553] within-projection shares [0.0029 0.0024 0.0021 0.002 ]
+  layer 7 projected fraction 0.00135 enrichment 0.14 top units [1898, 159, 1660, 554] within-projection shares [0.0019 0.0017 0.0016 0.0016]
+  layer 6 projected fraction 0.00086 enrichment 0.09 top units [293, 24, 1200, 802] within-projection shares [0.0023 0.0016 0.0015 0.0015]
+  layer 5 projected fraction 0.00039 enrichment 0.04 top units [1608, 242, 1950, 763] within-projection shares [0.0024 0.0021 0.0021 0.002 ]
+
+L10H2
+ distance 0 relative readout change [0.0081 0.0123 0.0099 0.0125] signed lexical-axis projections [[ 0.0003 -0.0006 -0.    ]
+ [ 0.0002  0.0003 -0.    ]]
+ distance 8 relative readout change [0.0083 0.01   0.0106 0.0132] signed lexical-axis projections [[ 0.0003 -0.0001  0.0001]
+ [ 0.0002  0.0003  0.0001]]
+ distance 16 relative readout change [0.0079 0.0104 0.0103 0.0133] signed lexical-axis projections [[ 0.0002 -0.0002 -0.    ]
+ [ 0.0002  0.0001  0.    ]]
+  guess-word delta query-direction + [(' Insights', 0.152), (' Preview', 0.151), (' Flav', 0.151), (' Roz', 0.146)] - [(' philanth', -0.154), ('8', -0.154), ('racted', -0.153), ('5', -0.153)]
+ distance 32 relative readout change [0.007  0.0101 0.0087 0.0122] signed lexical-axis projections [[ 0.0001 -0.0001  0.    ]
+ [ 0.0002  0.0001 -0.    ]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 9 projected fraction 0.00228 enrichment 0.24 top units [1562, 1075, 1815, 1750] within-projection shares [0.003  0.0025 0.0023 0.0021]
+  layer 8 projected fraction 0.00093 enrichment 0.1 top units [276, 1414, 1327, 354] within-projection shares [0.0025 0.0023 0.0023 0.0018]
+  layer 7 projected fraction 0.00078 enrichment 0.08 top units [1984, 1886, 22, 1676] within-projection shares [0.0022 0.0021 0.0019 0.0019]
+  layer 6 projected fraction 0.00053 enrichment 0.06 top units [402, 885, 1724, 330] within-projection shares [0.0023 0.002  0.0019 0.0019]
+
+L10H3
+ distance 0 relative readout change [0.0204 0.0134 0.0151 0.023 ] signed lexical-axis projections [[-0.0006 -0.0009 -0.0001]
+ [-0.0001 -0.0004  0.0001]]
+ distance 8 relative readout change [0.0177 0.0135 0.0145 0.0226] signed lexical-axis projections [[-0.0006 -0.0011  0.    ]
+ [-0.0003 -0.0002 -0.0001]]
+ distance 16 relative readout change [0.015  0.0127 0.0138 0.0246] signed lexical-axis projections [[-0.0003 -0.001   0.0002]
+ [-0.0002 -0.0001 -0.0001]]
+ distance 32 relative readout change [0.0111 0.0117 0.0124 0.0244] signed lexical-axis projections [[-0.0003 -0.0007  0.0001]
+ [ 0.     -0.0004 -0.0004]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 9 projected fraction 0.00282 enrichment 0.3 top units [860, 900, 48, 180] within-projection shares [0.0019 0.0019 0.0019 0.0018]
+  layer 8 projected fraction 0.00111 enrichment 0.12 top units [1755, 1867, 1201, 1993] within-projection shares [0.0026 0.0022 0.0021 0.0021]
+  layer 7 projected fraction 0.00099 enrichment 0.11 top units [1264, 964, 899, 451] within-projection shares [0.0026 0.0023 0.0022 0.0022]
+  layer 6 projected fraction 0.00055 enrichment 0.06 top units [1903, 330, 878, 925] within-projection shares [0.0028 0.0026 0.0021 0.002 ]
+
+L11H2
+ distance 0 relative readout change [0.0167 0.0221 0.0129 0.0201] signed lexical-axis projections [[-0.0009 -0.0009 -0.0004]
+ [-0.0004 -0.0008  0.0003]]
+ distance 8 relative readout change [0.0165 0.0229 0.0114 0.0204] signed lexical-axis projections [[-0.0008 -0.001  -0.0002]
+ [-0.0005 -0.0009  0.0001]]
+ distance 16 relative readout change [0.0159 0.0233 0.012  0.0203] signed lexical-axis projections [[-0.0006 -0.0012 -0.0005]
+ [-0.0006 -0.0009  0.0001]]
+  guess-word delta query-direction + [(' playable', 0.171), (' signed', 0.158), ('imals', 0.143), ('arius', 0.139)] - [(' profil', -0.187), (' undergrad', -0.167), ('Endpoint', -0.152), ('segment', -0.15)]
+ distance 32 relative readout change [0.0163 0.0195 0.011  0.0208] signed lexical-axis projections [[-0.0006 -0.0009 -0.0004]
+ [-0.0005 -0.0009  0.0001]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 10 projected fraction 0.00187 enrichment 0.2 top units [1403, 778, 761, 1037] within-projection shares [0.0034 0.0027 0.0025 0.0021]
+  layer 9 projected fraction 0.00112 enrichment 0.12 top units [1443, 208, 2041, 1562] within-projection shares [0.0026 0.0024 0.0022 0.0022]
+  layer 7 projected fraction 0.00061 enrichment 0.07 top units [1204, 24, 553, 646] within-projection shares [0.0024 0.0024 0.0023 0.0022]
+  layer 8 projected fraction 0.00061 enrichment 0.07 top units [686, 1595, 531, 1386] within-projection shares [0.0025 0.0024 0.002  0.0019]
+
+L11H3
+ distance 0 relative readout change [0.0293 0.0239 0.0191 0.0226] signed lexical-axis projections [[ 0.0003 -0.     -0.0006]
+ [-0.0003  0.0004  0.0005]]
+ distance 8 relative readout change [0.0305 0.0235 0.0174 0.0222] signed lexical-axis projections [[ 0.0006 -0.0001 -0.0007]
+ [-0.0004  0.0004  0.0004]]
+ distance 16 relative readout change [0.0315 0.0246 0.0174 0.0235] signed lexical-axis projections [[ 0.0003 -0.0001 -0.0007]
+ [-0.0006  0.0003  0.0005]]
+ distance 32 relative readout change [0.0306 0.0236 0.0165 0.0216] signed lexical-axis projections [[ 0.0004 -0.0001 -0.0006]
+ [-0.0005  0.0006  0.0006]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 10 projected fraction 0.0014 enrichment 0.15 top units [1861, 1755, 1781, 1537] within-projection shares [0.0028 0.0028 0.0023 0.0022]
+  layer 9 projected fraction 0.00098 enrichment 0.1 top units [476, 155, 735, 987] within-projection shares [0.0023 0.0021 0.0021 0.0021]
+  layer 0 projected fraction 0.00061 enrichment 0.06 top units [1855, 980, 599, 1244] within-projection shares [0.0035 0.0035 0.003  0.0029]
+  layer 8 projected fraction 0.0006 enrichment 0.06 top units [435, 324, 588, 926] within-projection shares [0.0031 0.0022 0.0022 0.0019]
+
+L15H3
+ distance 0 relative readout change [0.0159 0.0136 0.0134 0.0166] signed lexical-axis projections [[0.0002 0.0006 0.0007]
+ [0.0008 0.0004 0.0008]]
+ distance 8 relative readout change [0.0144 0.011  0.0106 0.0172] signed lexical-axis projections [[ 0.0003 -0.0001 -0.0001]
+ [ 0.0007 -0.      0.0004]]
+ distance 16 relative readout change [0.0182 0.0117 0.0109 0.0159] signed lexical-axis projections [[ 0.0005 -0.0001 -0.0003]
+ [ 0.001  -0.0001  0.0002]]
+ distance 32 relative readout change [0.0131 0.0126 0.0097 0.016 ] signed lexical-axis projections [[0.0003 0.     0.0001]
+ [0.0005 0.0001 0.0005]]
+ upstream MLP coupling enrichment; isotropic reference 0.00937
+  layer 0 projected fraction 0.00196 enrichment 0.21 top units [1055, 2017, 1650, 1286] within-projection shares [0.0037 0.0034 0.0032 0.0027]
+  layer 1 projected fraction 0.00097 enrichment 0.1 top units [645, 409, 1923, 1652] within-projection shares [0.0032 0.0031 0.0029 0.0028]
+  layer 2 projected fraction 0.00081 enrichment 0.09 top units [167, 1594, 315, 1788] within-projection shares [0.0039 0.0026 0.0023 0.0023]
+  layer 3 projected fraction 0.00072 enrichment 0.08 top units [170, 1037, 1453, 1611] within-projection shares [0.0029 0.0028 0.0027 0.0027]
+
+```

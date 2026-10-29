@@ -1,0 +1,8 @@
+OUTPUT of Python run 11 of at most 300:
+```
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 2, in <module>
+NameError: name 'candidate_name' is not defined
+
+```

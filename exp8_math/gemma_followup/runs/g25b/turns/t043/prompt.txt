@@ -1,0 +1,50 @@
+OUTPUT of Python run 26 of at most 300:
+```
+DEV: ['math_train_number_theory_417', 'math_train_prealgebra_867', 'math_train_algebra_477', 'math_train_intermediate_algebra_358', 'math_train_precalculus_76', 'math_train_algebra_1491', 'math_train_algebra_36', 'math_train_algebra_817', 'math_train_algebra_1425', 'math_train_precalculus_344', 'math_train_prealgebra_161', 'math_train_algebra_920', 'math_train_intermediate_algebra_1289', 'math_train_prealgebra_783', 'math_train_counting_and_probability_111', 'math_train_number_theory_95', 'math_train_algebra_29', 'math_train_algebra_580', 'math_train_intermediate_algebra_955', 'math_train_intermediate_algebra_802', 'math_train_precalculus_125', 'math_train_number_theory_387', 'math_train_intermediate_algebra_901', 'math_train_prealgebra_672', 'math_train_algebra_595', 'math_train_algebra_486', 'math_train_prealgebra_668', 'math_train_prealgebra_394', 'math_train_number_theory_505', 'math_train_algebra_905', 'math_train_geometry_310', 'math_train_counting_and_probability_586', 'math_train_intermediate_algebra_788', 'math_train_number_theory_745', 'math_train_algebra_697', 'math_train_precalculus_404', 'math_train_prealgebra_697', 'math_train_algebra_502', 'math_train_prealgebra_937', 'math_train_intermediate_algebra_625', 'math_train_intermediate_algebra_548', 'math_train_algebra_1585', 'math_train_prealgebra_443', 'math_train_precalculus_233', 'math_train_algebra_775', 'math_train_prealgebra_34', 'math_train_intermediate_algebra_547', 'math_train_prealgebra_1022', 'math_train_number_theory_528', 'math_train_geometry_161', 'math_train_prealgebra_843', 'math_train_algebra_577', 'math_train_prealgebra_408', 'math_train_algebra_380', 'math_train_counting_and_probability_61', 'math_train_precalculus_139', 'math_train_prealgebra_758', 'math_train_prealgebra_511', 'math_train_algebra_1374', 'math_train_number_theory_530', 'math_train_number_theory_19', 'math_train_prealgebra_1138', 'math_train_algebra_863']
+Current edit: {"model.layers.11.self_attn.o_proj.weight": {"head": 2, "columns": [512, 768], "operation": "subtract strength * fixed repetition rank-one delta", "delta_file": "/work/l11h2_repetition_rank1_delta.npy", "strength": 1.0}}
+Edited tensors: ['model.layers.11.self_attn.o_proj.weight']
+Rank-one delta: {'shape': (640, 256), 'norm': 3.4846150875091553}
+Earlier experiment notes:
+ # Math weight-edit experiment
+No edits. Final norm and embedding/output weights will never be edited.
+HOLDOUT fixed before all experiments: /work/HOLDOUT.json, 256 random MATH problems, seed 290173. Do not inspect outcomes until candidate is frozen.
+Diagnostic pool: /work/DIAGNOSTIC.json, 128 disjoint MATH problems: 80 level 1, 40 level 2, 8 level 3.
+DEV will be fixed from partly solved diagnostic problems before any weight edit.
+
+## Pass 1 planned
+Original model; no changed tensors or strengths. DIAGNOSTIC, n=16, max_tokens=8192.
+Collect residual and MLP activations at all layers to compare success/failure within the same problem.
+
+Pass 1: 2048 answers; accuracy 20.4102%; cut share 6.84%; reported wrong/no-answer/cut failures 795/702/133.
+Text inspection: arithmetic/procedure errors and repeated conclusions; pred=None can still have a textual answer or even a correct grade, so do not equate it to actual absence of an answer.
+DEV fixed before edits: 63 randomly selected mixed-success problems, /work/DEV.json, seed 87102; HOLDOUT remains unused.
+
+Associations: within-DEV-problem, length/cut-controlled MLP failure correlations are modest (~0.10-0.14); no causal claim yet. Grade alignment exact; activation token counts include prompt tokens, capped at 8192.
+## Pass 2 planned
+Original, no edits. Teacher-force fixed DEV corpus /work/tf_dev_texts.json (all references and up to 4 correct/4 failing baseline samples per problem, truncated at 1200 total tokens). Score continuation likelihoods and inspect MLP layers 4,13,15,17; no HOLDOUT use.
+
+Pass 2 wasted: string path in `texts` was iterated as 23 characters; no useful evidence. Only literal text arrays are supported. 23 passes remain.
+## Pass 3 planned
+Original, no changed tensors. All 63 DEV exact prompts followed by boxed reference answers (direct-answer likelihood screen, not a reasoning-accuracy measurement). Files tf_compact_texts.json and tf_compact_info.json. Return logprobs and MLP activations at layers 4,13,15,17.
+
+## Candidate A / pass 4 planned
+DEV only. Zero 32 selected output columns in each MLP down_proj at layers 4,15,17 (96 neurons total); strengths=1.0 removal. Selection: positive raw failure association, ranked by smaller of split-half length/cut-controlled correlations. Exact edit:
+{"model.layers.4.mlp.down_proj.weight": {"columns": [148, 887, 381, 1783, 1048, 180, 1809, 2030, 36, 1483, 1700, 1433, 1546, 903, 1159, 1181, 1045, 930, 1135, 1539, 1097, 403, 335, 1696, 724, 695, 1827, 12, 274, 1326, 830, 1175], "removed_fraction": 1.0}, "model.layers.15.mlp.down_proj.weight": {"columns": [1638, 506, 1170, 936, 18, 565, 16, 75, 269, 1627, 599, 517, 1031, 1036, 187, 1482, 1805, 1747, 455, 837, 1055, 1152, 162, 1828, 360, 1777, 685, 469, 33, 228, 870, 1065], "removed_fraction": 1.0}, "model.layers.17.mlp.down_proj.weight": {"columns": [1201, 2044, 330, 25, 1427, 1538, 1804, 1180, 1054, 57, 103, 1870, 43, 349, 304, 1975, 1392, 508, 1502, 2003, 1051, 1137, 1598, 182, 633, 1345, 335, 234, 1860, 1518, 788, 1918], "removed_fraction": 1.0}}
+Teacher-forced pass 4 repeats all 63 compact DEV texts from pass 3. Compare answer-content logprobs before full-size paired generation.
+
+Pass 4 A full-ablation screen: answer-content mean logprob change -0.382291 nats/token, SE 0.094522; 19/63 improved. Verified encoding with add_special_tokens=False.
+## Pass 5 planned
+Candidate A unchanged: exact columns in failure_neurons_96.json, layers4/15/17 down_proj, removal=1.0. Both models, DEV63, n16 (1008/model), max_tokens8192. Primary endpoint accuracy; secondary repetition/cut rates.
+
+Pass 5 full ablation: {"pass": 5, "n": 1008, "gain": -0.08630952380952381, "sample_se": 0.01757387717436244, "original": {"accuracy": 0.35813492063492064, "repeated": 0.1498015873015873, "many_finals": 0.10714285714285714, "cut": 0.04365079365079365}, "edited": {"accuracy": 0.2718253968253968, "repeated": 0.16765873015873015, "many_finals": 0.12797619047619047, "cut": 0.04265873015873016}}
+Causal conclusion: simple harmful-neuron hypothesis refuted; ablation reduces accuracy substantially, with nearly unchanged cutoffs. Association may reflect useful compensatory computation.
+## Pass 6 planned
+Candidate A half attenuation: same 96 columns, layers4/15/17 down_proj, each multiplied by0.5 (removal0.5). DEV63, both,n16,max_tokens8192. Exact edit:
+{"model.layers.4.mlp.down_proj.weight": {"columns": [148, 887, 381, 1783, 1048, 180, 1809, 2030, 36, 1483, 1700, 1433, 1546, 903, 1159, 1181, 1045, 930, 1135, 1539, 1097, 403, 335, 1696, 724, 695, 1827, 12, 274, 1326, 830, 1175], "removed_fraction": 0.5}, "model.layers.15.mlp.down_proj.weight": {"columns": [1638, 506, 1170, 936, 18, 565, 16, 75, 269, 1627, 599, 517, 1031, 1036, 187, 1482, 1805, 1747, 455, 837, 1055, 1152, 162, 1828, 360, 1777, 685, 469, 33, 228, 870, 1065], "removed_fraction": 0.5}, "model.layers.17.mlp.down_proj.weight": {"columns": [1201, 2044, 330, 25, 1427, 1538, 1804, 1180, 1054, 57, 103, 1870, 43, 349, 304, 1975, 1392, 508, 1502, 2003, 1051, 1137, 1598, 182, 633, 1345, 335, 234, 1860, 1518, 788, 1918], "removed_fraction": 0.5}}
+
+Pass6 half attenuation: reported gain -1.88pp, SE1.94pp. {"pass": 6, "n": 1008, "gain": -0.018849206349206348, "sample_se": 0.017037357096128147, "original": {"accuracy": 0.35912698412698413, "repeated": 0.15178571428571427, "many_finals": 0.1111111111111111, "cut": 0.034722222222222224}, "edited": {"accuracy": 0.3402777777777778, "repeated": 0.16964285714285715, "many_finals": 0.12797619047619047, "cut": 0.040674603174603176}}
+## Pass7 planned
+Reverse-direction causal test: same selected96 columns in layers4/15/17 down_proj multiplied by1.5 (removal=-0.5). DEV63,both,n16,max_tokens8192. Hypothesis: components are useful but insufficiently recruited, not harmful.
+{"model.layers.4.mlp.down_proj.weight": {"columns": [148, 887, 381, 1783, 1048, 180, 1809, 2030, 36, 1483, 1700, 1433, 1546, 903, 1159, 1181, 1045, 930, 1135, 1539, 1097, 403, 335, 1696, 724, 695, 1827, 12, 274, 1326, 830, 1175], "removed_fraction": -0.5}, "model.layers.15.mlp.down_proj.weight": {"columns": [1638, 506, 1170, 936, 18, 565, 16, 75, 269, 1627, 599, 517, 1031, 1036, 187, 1482, 1805, 1747, 455, 837, 1055, 1152, 162, 1828, 360, 1777, 685, 469, 33, 228, 870, 1065], "removed_fraction": -0.5}, "model.layers.17.mlp.down_proj.weight": {"columns": [1201, 2044, 330, 25, 1427, 1538, 1804, 1180, 1054, 57, 103, 1870, 43, 349, 304, 1975, 1392, 508, 1502, 2003, 1051, 1137, 1598, 182, 633, 1345, 335, 234, 1860, 1518, 788, 
+
+```

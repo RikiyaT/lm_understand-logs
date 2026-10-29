@@ -1,0 +1,8 @@
+OUTPUT of Python run 9 of at most 300:
+```
+answer_continuation {'mean_delta_nats_per_token': 0.0172, 'SE_across_problems': 0.0257, 'improved_problems': 18}
+boxed_value {'mean_delta_nats_per_token': 0.1227, 'SE_across_problems': 0.0429, 'improved_problems': 26}
+Mean absolute unit activity by segment: {1231: {'question': np.float64(0.0328), 'instruction': np.float64(0.0442), 'answer_format': np.float64(0.0399), 'answer_value': np.float64(0.0426)}, 1683: {'question': np.float64(0.0776), 'instruction': np.float64(0.0747), 'answer_format': np.float64(0.0914), 'answer_value': np.float64(0.1218)}, 1810: {'question': np.float64(0.0398), 'instruction': np.float64(0.1128), 'answer_format': np.float64(0.1796), 'answer_value': np.float64(0.1292)}, 1912: {'question': np.float64(0.0338), 'instruction': np.float64(0.1415), 'answer_format': np.float64(0.0185), 'answer_value': np.float64(0.0347)}}
+'Pass-4 generation comparison documented.'
+
+```

@@ -1,0 +1,20 @@
+OUTPUT of Python run 6 of at most 300:
+```
+candidate 23 22 gate/up/down norms [0.9447, 0.2123, 0.2394] gate norm percentile 0.969
+candidate 23 94 gate/up/down norms [0.7887, 0.1877, 0.2993] gate norm percentile 0.906
+candidate 22 59 gate/up/down norms [0.429, 0.3266, 0.2889] gate norm percentile 0.292
+candidate 23 19 gate/up/down norms [0.8336, 0.2156, 0.2728] gate norm percentile 0.929
+candidate 17 20 gate/up/down norms [0.3464, 0.205, 0.222] gate norm percentile 0.128
+candidate 15 0 gate/up/down norms [0.2252, 0.2611, 0.2546] gate norm percentile 0.027
+candidate 18 29 gate/up/down norms [0.2781, 0.2545, 0.2713] gate norm percentile 0.024
+Model directory: ['generation_config.json', 'model.safetensors', 'tokenizer_config.json', 'tokenizer.json', 'chat_template.jinja', 'config.json']
+Good speed solution beginning: "Here's my thought process for solving this problem:\n\n1.  **Analyze the Request:**\n    *   **Given:**\n        *   Distance traveled ($d$) = 150 miles.\n        *   Time taken ($t$) = 2 hours.\n        *   Speed limit ($v_{limit}$) = 60 mph.\n    *   **Goal:** Calculate how many mph a"
+Good speed solution middle: ' to the speed limit.\n    $\\text{Speed Limit} = 60 \\text{ mph}$\n\n    Calculate the difference (how much above):\n    $\\text{Difference} = 75 - 60 = 15$\n\n    Therefore, he was driving 15 mph above the speed limit.\n\n    Final check: 150/2 = 75. 75-60=15. Correct.\n\n    Wait, is there '
+Problem for matched speed probes: John travels 150 miles in 2 hours.  The speed limit is 60 mph.  How many mph above the speed limit was he driving?
+Second short successful problem: Yesterday, David and William were invited to a party. David broke 2 glasses, while his friend William broke 4 times the number of glasses David broke. How many glasses were broken?
+Second solution beginning: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Characters involved:** David and William.\n    *   **Action:** They were invited to a party (implying they broke things).\n    *   **David's action:** Broke 2 glasses.\n    *   **William's "
+Second solution end: "er of glasses William broke is $4 \\times x$.\nSubstituting the value of $x$:\nWilliam's glasses = $4 \\times 2 = 8$.\n\nThe total number of broken glasses is the sum of the glasses broken by each person.\nTotal = (David's glasses) + (William's glasses)\nTotal = $2 + 8 = 10$.\n\n\\boxed{10}"
+Prompt activity of candidate 23:22: [-3.203125, -2.484375, -2.1875, -1.927734375, -1.359375]
+Mean-answer activity of candidate 23:22, correct and cut: [-0.57763671875, -0.06256103515625, 0.07672119140625, 0.3026123046875, 1.0771484375] [-0.69580078125, 0.8194580078125, 1.6611328125, 2.6005859375, 4.57421875]
+
+```

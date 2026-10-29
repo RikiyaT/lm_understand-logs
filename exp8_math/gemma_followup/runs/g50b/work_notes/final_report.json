@@ -1,0 +1,133 @@
+{
+  "submitted_edit": {
+    "layer_numbering": "zero-based",
+    "components": [
+      {
+        "tensor": "model.layers.11.self_attn.o_proj.weight",
+        "columns_half_open": [
+          512,
+          768
+        ],
+        "query_head": 2,
+        "multiplier": 1.1
+      },
+      {
+        "tensor": "model.layers.11.mlp.down_proj.weight",
+        "columns": [
+          971,
+          180,
+          149,
+          1680,
+          232,
+          1724,
+          312,
+          1096
+        ],
+        "multiplier": 0.5
+      }
+    ],
+    "other_tensors": "original",
+    "frozen_before_pass": 35,
+    "generation_edit_hash": "399af7b267",
+    "file_sha256": {
+      "model.layers.11.mlp.down_proj.weight.npy": "73b63cdf93b69a67452b7979b223ea8d64324ce8a123daf9902d39f745f0629e",
+      "model.layers.11.self_attn.o_proj.weight.npy": "31fec6a7f2e63c9decaca7f36c1986977f98efd8cff5a78ccf6d0d84eaad1e3d"
+    }
+  },
+  "scope_audit": [
+    {
+      "tensor": "model.layers.11.self_attn.o_proj.weight",
+      "shape": [
+        640,
+        1024
+      ],
+      "multiplier_on_selected_columns": 1.1,
+      "changed_values": 163840,
+      "unchanged_outside_selected_columns": true,
+      "relative_F_change": 0.057452309876680374
+    },
+    {
+      "tensor": "model.layers.11.mlp.down_proj.weight",
+      "shape": [
+        640,
+        2048
+      ],
+      "multiplier_on_selected_columns": 0.5,
+      "changed_values": 5120,
+      "unchanged_outside_selected_columns": true,
+      "relative_F_change": 0.0315522737801075
+    }
+  ],
+  "selection": "DEV only; frozen before pass35; unchanged throughout HOLDOUT",
+  "DEV_finalist_selection_biased": {
+    "passes": [
+      29,
+      30,
+      33,
+      34
+    ],
+    "answers_per_model": 4096,
+    "problems": 32,
+    "original_accuracy": 0.484375,
+    "edited_accuracy": 0.50927734375,
+    "gain_pp": 2.490234375,
+    "sample_SE_pp": 0.876792858194063,
+    "problem_cluster_SE_pp": 1.7513031568217818
+  },
+  "HOLDOUT": {
+    "passes": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "answers_per_model": 16384,
+    "problems": 128,
+    "original_accuracy": 0.09051513671875,
+    "edited_accuracy": 0.0947265625,
+    "gain_pp": 0.421142578125,
+    "sample_SE_pp": 0.20830615718369117,
+    "problem_cluster_SE_pp": 0.364563206209
+  },
+  "HOLDOUT_cluster_t_95_interval_pp": [
+    -0.3002622159471322,
+    1.1425473721971322
+  ],
+  "paired_wrong_to_right": 617,
+  "paired_right_to_wrong": 548,
+  "HOLDOUT_behavior": {
+    "original": {
+      "answers": 16384,
+      "correct": 1483,
+      "accuracy_percent": 9.051513671875,
+      "mean_tokens": 1555.7536010742188,
+      "cutoff_percent": 7.305908203125,
+      "incorrect_completed": 13769,
+      "incorrect_cutoff": 1132
+    },
+    "edited": {
+      "answers": 16384,
+      "correct": 1552,
+      "accuracy_percent": 9.47265625,
+      "mean_tokens": 1789.326904296875,
+      "cutoff_percent": 10.504150390625,
+      "incorrect_completed": 13199,
+      "incorrect_cutoff": 1633
+    }
+  },
+  "all_128_problems_have_128_samples_per_model": true,
+  "frozen_and_submission_hashes_match": true,
+  "interpretation": "Small positive HOLDOUT point estimate; problem-cluster interval includes zero. DEV component interventions support a role for layer11 head2 and motivate the selected neuron suppression, but do not establish a complete arithmetic failure mechanism. The edit increases response length and cutoffs."
+}

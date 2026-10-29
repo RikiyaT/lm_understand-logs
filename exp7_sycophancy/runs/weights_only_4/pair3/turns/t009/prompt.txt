@@ -1,0 +1,119 @@
+OUTPUT of run 8 of at most 60:
+```
+=== QUADRATIC WEIGHT-COEFFICIENT DIFFERENCES ===
+Pure weight algebra; no activation, gate response, or hidden state is evaluated.
+A common Taylor prefactor is omitted from all coefficients.
+ L  total_delta_tensor_F  digit_output_fraction  top10_units_digit_energy_share
+ 0             0.2430572                0.01648                         0.05930
+ 1             0.2108894                0.01836                         0.02745
+ 2             0.2196787                0.02067                         0.02264
+ 3             0.2115342                0.01469                         0.03083
+ 4             0.2023448                0.01398                         0.03008
+ 5             0.2364290                0.01275                         0.03375
+ 6             0.2037708                0.01425                         0.09037
+ 7             0.2076395                0.01427                         0.07504
+ 8             0.1909831                0.01503                         0.06229
+ 9             0.2140284                0.01520                         0.03472
+10             0.2028423                0.01548                         0.04838
+11             0.2174212                0.01754                         0.04236
+12             0.2300696                0.02619                         0.05762
+13             0.2128050                0.03591                         0.03633
+14             0.2112696                0.06523                         0.03643
+15             0.2198870                0.10922                         0.04285
+16             0.2179557                0.18924                         0.04751
+17             0.1930192                0.32302                         0.05511
+
+=== TOP 24 UNITS BY NUMERICAL COEFFICIENT CHANGE ===
+This ranks coefficient differences, NOT causal behavioural importance.
+L17 unit= 310 digit_delta_tensor_F=0.0098755 relative=0.02527 gate_up_cos=+0.0113
+L17 unit=1180 digit_delta_tensor_F=0.0097779 relative=0.03835 gate_up_cos=-0.4219
+L17 unit= 883 digit_delta_tensor_F=0.0087489 relative=0.03571 gate_up_cos=-0.5139
+L17 unit= 750 digit_delta_tensor_F=0.0085042 relative=0.02360 gate_up_cos=-0.0435
+L17 unit= 588 digit_delta_tensor_F=0.0083738 relative=0.08592 gate_up_cos=-0.4741
+L17 unit= 824 digit_delta_tensor_F=0.0080163 relative=0.02437 gate_up_cos=+0.0771
+L15 unit= 651 digit_delta_tensor_F=0.0076367 relative=0.04076 gate_up_cos=+0.3603
+L16 unit=1137 digit_delta_tensor_F=0.0075365 relative=0.08334 gate_up_cos=+0.4970
+L16 unit= 689 digit_delta_tensor_F=0.0074582 relative=0.02809 gate_up_cos=-0.5173
+L16 unit=1141 digit_delta_tensor_F=0.0070392 relative=0.09454 gate_up_cos=-0.4633
+L17 unit= 234 digit_delta_tensor_F=0.0069902 relative=0.01776 gate_up_cos=+0.5355
+L17 unit= 585 digit_delta_tensor_F=0.0068347 relative=0.19939 gate_up_cos=-0.3120
+L17 unit= 548 digit_delta_tensor_F=0.0068187 relative=0.24188 gate_up_cos=+0.2829
+L17 unit= 437 digit_delta_tensor_F=0.0066895 relative=0.12581 gate_up_cos=-0.4687
+L16 unit=1955 digit_delta_tensor_F=0.0064897 relative=0.01718 gate_up_cos=-0.0688
+L16 unit=1304 digit_delta_tensor_F=0.0064150 relative=0.27688 gate_up_cos=-0.2956
+L17 unit=1610 digit_delta_tensor_F=0.0062833 relative=0.01829 gate_up_cos=-0.5202
+L16 unit= 560 digit_delta_tensor_F=0.0062449 relative=0.07491 gate_up_cos=+0.4608
+L16 unit=1672 digit_delta_tensor_F=0.0062412 relative=0.13770 gate_up_cos=+0.5467
+L17 unit=1454 digit_delta_tensor_F=0.0061421 relative=0.44498 gate_up_cos=-0.4679
+L17 unit= 228 digit_delta_tensor_F=0.0061383 relative=0.02316 gate_up_cos=-0.2960
+L16 unit=1073 digit_delta_tensor_F=0.0059522 relative=0.10833 gate_up_cos=+0.5273
+L16 unit= 957 digit_delta_tensor_F=0.0058566 relative=0.14850 gate_up_cos=-0.4739
+L17 unit=1217 digit_delta_tensor_F=0.0058438 relative=0.01403 gate_up_cos=-0.5386
+
+=== GATE/UP ALIGNMENT OF PREVIOUS CANDIDATES ===
+(16, 96) full-space gate/up cosine 0.344
+(16, 1446) full-space gate/up cosine -0.2631
+(16, 1875) full-space gate/up cosine 0.3618
+(17, 1180) full-space gate/up cosine -0.4219
+(17, 1309) full-space gate/up cosine -0.2923
+(17, 310) full-space gate/up cosine 0.0113
+(17, 1242) full-space gate/up cosine -0.4439
+(17, 883) full-space gate/up cosine -0.5139
+(17, 228) full-space gate/up cosine -0.296
+
+=== SIGNED INPUT-TRACE CONTRACTION: DIGIT PROFILES ===
+Profiles rescaled for display; positive is B-A along that digit contrast.
+(0, 'raw') [-0.272 -0.052 -0.368 -0.38   0.007  0.669  0.154  0.242 -0.24   0.238]
+(0, 'diag') [-0.023 -0.263 -0.252 -0.211  0.192  0.667  0.333 -0.086 -0.46   0.104]
+(1, 'raw') [-0.251  0.217  0.322 -0.092 -0.168  0.393  0.18   0.339 -0.41  -0.53 ]
+(1, 'diag') [-0.383  0.31   0.123 -0.455 -0.001  0.418  0.387  0.077 -0.025 -0.451]
+(2, 'raw') [-0.293 -0.153  0.397  0.402 -0.339  0.302  0.21   0.143 -0.53  -0.139]
+(2, 'diag') [-0.585 -0.27  -0.187  0.491  0.051  0.02   0.427  0.082 -0.255  0.227]
+(3, 'raw') [ 0.069 -0.769 -0.157  0.178 -0.268 -0.043  0.207  0.125  0.32   0.337]
+(3, 'diag') [-0.259 -0.559  0.122  0.556 -0.114  0.     0.476 -0.227 -0.049  0.054]
+(4, 'raw') [ 0.146 -0.725 -0.392 -0.095  0.173  0.435 -0.003  0.149  0.137  0.175]
+(4, 'diag') [ 0.32  -0.828 -0.177 -0.035  0.008  0.327  0.229  0.079  0.112 -0.035]
+(5, 'raw') [-0.102  0.176 -0.802  0.159  0.199  0.432 -0.071  0.058  0.141 -0.191]
+(5, 'diag') [ 0.265  0.238 -0.004  0.167  0.096  0.554 -0.182 -0.184 -0.4   -0.549]
+(6, 'raw') [-0.634  0.162 -0.477  0.21  -0.056  0.501  0.149  0.072 -0.051  0.125]
+(6, 'diag') [-0.768  0.057 -0.038  0.276 -0.054  0.518  0.118 -0.044 -0.174  0.111]
+(7, 'raw') [-0.726  0.169  0.025  0.398  0.347  0.307 -0.13  -0.088 -0.154 -0.147]
+(7, 'diag') [-0.62   0.431  0.082  0.264  0.271  0.316 -0.361 -0.134 -0.143 -0.107]
+(8, 'raw') [-0.03   0.06  -0.49   0.3    0.075  0.586  0.193  0.046 -0.337 -0.403]
+(8, 'diag') [-0.068  0.393 -0.489  0.426  0.077  0.453 -0.072 -0.105 -0.269 -0.346]
+(9, 'raw') [ 0.192 -0.439  0.088  0.042  0.122  0.464  0.389 -0.062 -0.229 -0.568]
+(9, 'diag') [ 0.099 -0.721 -0.059 -0.039  0.261  0.374  0.371  0.151 -0.192 -0.245]
+(10, 'raw') [ 0.436  0.3   -0.398 -0.209 -0.241 -0.023  0.251 -0.072 -0.464  0.419]
+(10, 'diag') [ 0.043 -0.206 -0.215 -0.107 -0.253  0.259  0.178  0.17  -0.525  0.656]
+(11, 'raw') [ 0.472  0.217 -0.472  0.059  0.144 -0.598 -0.062 -0.158  0.108  0.291]
+(11, 'diag') [ 0.39   0.406 -0.367 -0.013  0.248 -0.69   0.007  0.03   0.065 -0.075]
+(12, 'raw') [ 0.153  0.36  -0.232 -0.222  0.183 -0.52   0.21   0.224  0.331 -0.485]
+(12, 'diag') [-0.039  0.294 -0.345 -0.178  0.239 -0.56   0.203  0.317  0.385 -0.317]
+(13, 'raw') [ 0.437  0.334 -0.231 -0.149  0.367 -0.156  0.152 -0.137  0.031 -0.648]
+(13, 'diag') [ 0.281  0.319 -0.224 -0.369  0.443 -0.377  0.247  0.046  0.104 -0.47 ]
+(14, 'raw') [ 0.302  0.076  0.545  0.007  0.178 -0.23   0.176 -0.166 -0.262 -0.628]
+(14, 'diag') [ 0.211  0.367  0.654 -0.115  0.054 -0.368 -0.01  -0.215 -0.169 -0.408]
+(15, 'raw') [ 0.343  0.293  0.465 -0.307  0.041 -0.685  0.034 -0.022 -0.1   -0.064]
+(15, 'diag') [ 0.439  0.427  0.362 -0.403 -0.207 -0.528  0.05  -0.022 -0.038 -0.08 ]
+(16, 'raw') [-0.021 -0.67   0.228  0.329  0.557 -0.179 -0.156 -0.143  0.064 -0.009]
+(16, 'diag') [ 0.365  0.236  0.295  0.457  0.078 -0.563 -0.269 -0.203 -0.191 -0.206]
+(17, 'raw') [-0.466 -0.645 -0.154 -0.013  0.294  0.115  0.25   0.237  0.352  0.031]
+(17, 'diag') [-0.566 -0.625 -0.03   0.035  0.283  0.108  0.197  0.168  0.349  0.08 ]
+
+=== VOCABULARY ALIGNMENTS OF SIGNED TRACE DIFFERENCES ===
+(0, 'raw') + ['PlayerSelector', ' méthodes', 'DataDiv', 'PlayerData', 'SpecID'] - ['Should', 'should', ' having', ' ज्ञापन', ' ओवर']
+(0, 'diag') + ['蚣', 'mfenced', ' helst', 'indagi', 'SearchParams'] - ['ვით', 'Ւ', 'ავს', 'ἶ', '식을']
+(1, 'raw') + ['出的', 'ycop', '<li>', '迅', ' شرکت'] - ['ㅎㅎ', ' வருகிறது', ' Niem', ' இருப்பினும்', '\\}$.']
+(1, 'diag') + [' на', ' М', ' П', ' С', ' الد'] - ['ClInclude', ' ThemeOverlay', 'OscInitStruct', 'ChoiceItemLayout', 'InstrumentedTest']
+(2, 'raw') + [' economia', ' gomme', '坪', ' расходы', ' prezident'] - [' flashes', '태', 'speaking', ',\\,\\,\\,\\', 'Kann']
+(2, 'diag') + ['знав', 'дыду', 'enzie', 'езда', ' تضيفلها'] - ['atious', 'kala', ' produc', ' SDLK', 'nên']
+(14, 'raw') + [' barred', 'WARN', 'ラジオ', 'FormField', ' Divorce'] - ['這一', '9', 'БО', '챠', 'istical']
+(14, 'diag') + [' Pint', 'WARN', ' Inspect', ' Drink', 'Empty'] - ['챠', 'ondes', 'восто', 'antwort', '}^{*}=\\']
+(15, 'raw') + [' سادہ', ' строк', 'Empleado', ' الجلد', ' العناصر'] - ['5', 'atorial', '勘', '哇', ' fifty']
+(15, 'diag') + [' ชาว', '<unused980>', ' GAA', ' sullen', ' الجلد'] - [' sphere', '的神', ' definitions', '甄', 'atorial']
+(16, 'raw') + ['сынын', 'ನನ್ನು', 'ચારી', ' ಬೀ', ' खड़ी'] - ['مبر', '儲', ' مان', '했다고', ' vých']
+(16, 'diag') + [' peinture', ' Cina', ' اللاعب', ' Allemagne', 'Cancer'] - ['勘', '策', ' dich', 'ect', '上有']
+(17, 'raw') + ['၈', '٨', '８', '၆', '८'] - ['1', ' chin', ' Christ', '0', 'showinfo']
+(17, 'diag') + ['٨', '๘', ' čty', ' اربعه', ' séptimo'] - [' MAR', ' Mas', ' Christ', ' El', ' Mary']
+
+```

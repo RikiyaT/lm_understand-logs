@@ -1,0 +1,108 @@
+OUTPUT of run 15 of at most 60:
+```
+Completed head-diversity analysis for layer 0
+Completed head-diversity analysis for layer 1
+Completed head-diversity analysis for layer 2
+Completed head-diversity analysis for layer 3
+Completed head-diversity analysis for layer 4
+Completed head-diversity analysis for layer 5
+Completed head-diversity analysis for layer 6
+Completed head-diversity analysis for layer 7
+Completed head-diversity analysis for layer 8
+Completed head-diversity analysis for layer 9
+Completed head-diversity analysis for layer 10
+Completed head-diversity analysis for layer 11
+Completed head-diversity analysis for layer 12
+Completed head-diversity analysis for layer 13
+Completed head-diversity analysis for layer 14
+Completed head-diversity analysis for layer 15
+Completed head-diversity analysis for layer 16
+Completed head-diversity analysis for layer 17
+
+=== DEFINITIONS ===
+Head coefficient objects are individually Frobenius-normalized.
+Commonality = squared norm of their mean: identical objects give 1,
+orthogonal objects give 1/4. Opposite objects can lower commonality.
+Linear diversity = participation rank of their normalized Gram matrix.
+Strength count measures how evenly unnormalized object energies are distributed.
+None of these is an observed attention distribution or a functional head count.
+
+=== FREQUENCY-RESOLVED MATCHING COMMONALITY AND DIVERSITY ===
+mode L | commonality_A commonality_B B-A | diversity_A diversity_B B-A
+raw   0 | 0.308990 0.308995 +0.0000051 | 3.92009 3.92009 -0.0000001
+raw   1 | 0.356747 0.356749 +0.0000014 | 3.71602 3.71606 +0.0000416
+raw   2 | 0.287056 0.287051 -0.0000050 | 3.95039 3.95040 +0.0000117
+raw   3 | 0.260912 0.260929 +0.0000167 | 3.76269 3.76276 +0.0000685
+raw   4 | 0.311278 0.311283 +0.0000043 | 3.90165 3.90163 -0.0000177
+raw   5 | 0.375502 0.375537 +0.0000346 | 3.64319 3.64296 -0.0002266
+raw   6 | 0.353884 0.353893 +0.0000089 | 3.71906 3.71903 -0.0000239
+raw   7 | 0.342256 0.342266 +0.0000094 | 3.76112 3.76109 -0.0000331
+raw   8 | 0.363817 0.363819 +0.0000016 | 3.68870 3.68870 -0.0000005
+raw   9 | 0.443436 0.443427 -0.0000086 | 3.25609 3.25611 +0.0000188
+raw  10 | 0.353674 0.353683 +0.0000091 | 3.68952 3.68946 -0.0000596
+raw  11 | 0.414090 0.414082 -0.0000076 | 3.20479 3.20473 -0.0000558
+raw  12 | 0.296640 0.296660 +0.0000198 | 3.94231 3.94227 -0.0000425
+raw  13 | 0.356481 0.356481 -0.0000007 | 3.71683 3.71683 -0.0000060
+raw  14 | 0.262312 0.262319 +0.0000077 | 3.99594 3.99594 -0.0000053
+raw  15 | 0.374369 0.374379 +0.0000107 | 3.67028 3.67023 -0.0000523
+raw  16 | 0.311793 0.311792 -0.0000011 | 3.91588 3.91588 -0.0000026
+raw  17 | 0.328303 0.328311 +0.0000077 | 3.81940 3.81938 -0.0000209
+diag  0 | 0.342748 0.342750 +0.0000012 | 3.65681 3.65686 +0.0000506
+diag  1 | 0.331766 0.331789 +0.0000231 | 3.83618 3.83613 -0.0000522
+diag  2 | 0.282044 0.282045 +0.0000010 | 3.95986 3.95985 -0.0000016
+diag  3 | 0.226486 0.226519 +0.0000331 | 3.27519 3.27541 +0.0002251
+diag  4 | 0.332104 0.332154 +0.0000506 | 3.84191 3.84175 -0.0001624
+diag  5 | 0.625825 0.625722 -0.0001031 | 2.16107 2.16120 +0.0001293
+diag  6 | 0.501285 0.501288 +0.0000028 | 2.93185 2.93179 -0.0000569
+diag  7 | 0.447727 0.447763 +0.0000360 | 3.09731 3.09709 -0.0002258
+diag  8 | 0.409919 0.409906 -0.0000123 | 3.43519 3.43530 +0.0001094
+diag  9 | 0.591699 0.591682 -0.0000166 | 2.39709 2.39715 +0.0000628
+diag 10 | 0.431321 0.431321 +0.0000001 | 3.06479 3.06493 +0.0001415
+diag 11 | 0.432069 0.432194 +0.0001250 | 3.04234 3.04158 -0.0007597
+diag 12 | 0.491811 0.491849 +0.0000375 | 2.96224 2.96194 -0.0002992
+diag 13 | 0.358066 0.358060 -0.0000060 | 3.70584 3.70577 -0.0000659
+diag 14 | 0.383793 0.383781 -0.0000117 | 3.63414 3.63423 +0.0000975
+diag 15 | 0.435580 0.435626 +0.0000461 | 3.20708 3.20719 +0.0001101
+diag 16 | 0.368758 0.368783 +0.0000254 | 3.69503 3.69485 -0.0001811
+diag 17 | 0.551773 0.551703 -0.0000705 | 2.63198 2.63252 +0.0005400
+
+=== DIRECTIONAL SUMMARIES ACROSS LAYERS ===
+Layer signs are descriptive; layers are not independent trials.
+raw  matching   : mean_dcommon=+0.00000632, median=+0.00000639, mean_ddiversity=-0.00002258, mean_dstrength_count=-0.00001503, B_converges=11, A_converges=2, mixed=5
+raw  writing    : mean_dcommon=-0.00001441, median=-0.00001523, mean_ddiversity=-0.00005459, mean_dstrength_count=-0.00000303, B_converges=2, A_converges=4, mixed=12
+raw  denominator: mean_dcommon=+0.00001128, median=+0.00000973, mean_ddiversity=-0.00004790, mean_dstrength_count=+0.00002740, B_converges=11, A_converges=7, mixed=0
+diag matching   : mean_dcommon=+0.00000898, median=+0.00000203, mean_ddiversity=-0.00001881, mean_dstrength_count=-0.00003643, B_converges=8, A_converges=5, mixed=5
+diag writing    : mean_dcommon=+0.00007207, median=+0.00003688, mean_ddiversity=+0.00014875, mean_dstrength_count=+0.00068590, B_converges=5, A_converges=4, mixed=9
+diag denominator: mean_dcommon=+0.00001569, median=+0.00001755, mean_ddiversity=-0.00007835, mean_dstrength_count=-0.00004506, B_converges=10, A_converges=8, mixed=0
+
+=== HEAD PAIRS WITH LARGEST MATCHING-CORRELATION CHANGES ===
+Each reported triple is [A correlation, B correlation, B-A].
+
+ raw
+L5 H1/H3: matching=[+0.229982, +0.230112, +0.000129]; denominator=[+0.200320, +0.200291, -0.000029]; writing=[+0.194723, +0.194717, -0.000006]
+L5 H1/H2: matching=[+0.238415, +0.238542, +0.000127]; denominator=[+0.187238, +0.187111, -0.000127]; writing=[+0.189393, +0.189318, -0.000074]
+L11 H0/H2: matching=[+0.068834, +0.068720, -0.000115]; denominator=[+0.164656, +0.164669, +0.000013]; writing=[+0.099146, +0.099139, -0.000007]
+L1 H0/H1: matching=[+0.207081, +0.206975, -0.000105]; denominator=[+0.239259, +0.239075, -0.000184]; writing=[+0.155384, +0.155637, +0.000252]
+L6 H0/H1: matching=[+0.159328, +0.159236, -0.000092]; denominator=[+0.476005, +0.475746, -0.000259]; writing=[-0.553706, -0.553714, -0.000008]
+L11 H1/H3: matching=[+0.203414, +0.203496, +0.000083]; denominator=[+0.216098, +0.216261, +0.000163]; writing=[-0.254940, -0.254960, -0.000020]
+L11 H0/H3: matching=[+0.095340, +0.095261, -0.000079]; denominator=[+0.202021, +0.201947, -0.000073]; writing=[-0.137815, -0.137829, -0.000015]
+L9 H2/H3: matching=[+0.143136, +0.143064, -0.000073]; denominator=[+0.168806, +0.168782, -0.000024]; writing=[+0.128966, +0.128888, -0.000078]
+
+ diag
+L5 H0/H3: matching=[+0.373337, +0.372783, -0.000554]; denominator=[+0.286329, +0.286310, -0.000018]; writing=[+0.287308, +0.285284, -0.002023]
+L12 H2/H3: matching=[+0.262852, +0.262333, -0.000519]; denominator=[+0.469286, +0.469252, -0.000033]; writing=[+0.399892, +0.399621, -0.000271]
+L17 H1/H2: matching=[+0.418973, +0.418474, -0.000499]; denominator=[+0.602197, +0.602295, +0.000097]; writing=[+0.059878, +0.059955, +0.000076]
+L16 H2/H3: matching=[+0.171804, +0.172260, +0.000456]; denominator=[+0.488088, +0.488258, +0.000170]; writing=[-0.069585, -0.069500, +0.000085]
+L5 H0/H1: matching=[+0.399770, +0.399325, -0.000445]; denominator=[+0.222778, +0.222874, +0.000096]; writing=[+0.321594, +0.319055, -0.002539]
+L13 H1/H3: matching=[+0.071801, +0.071363, -0.000438]; denominator=[+0.457040, +0.457180, +0.000140]; writing=[-0.211999, -0.211885, +0.000114]
+L13 H0/H2: matching=[+0.085491, +0.085900, +0.000409]; denominator=[+0.482921, +0.482941, +0.000020]; writing=[-0.135904, -0.135741, +0.000163]
+L12 H0/H1: matching=[+0.347374, +0.347775, +0.000402]; denominator=[+0.484964, +0.484789, -0.000175]; writing=[+0.138311, +0.138305, -0.000005]
+
+=== RAW/DIAGONAL CONSISTENCY FOR THE MATCHING HYPOTHESIS ===
+delta_common same-sign layers: 11 / 18 correlation: -0.4273152467991337
+delta_diversity same-sign layers: 9 / 18 correlation: 0.06946898900600279
+
+Convergence of weight-defined head maps would still not establish
+that their shared selection concerns the user's guess rather than correct evidence.
+
+```

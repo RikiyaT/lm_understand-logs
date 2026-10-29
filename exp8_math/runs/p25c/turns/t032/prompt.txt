@@ -1,0 +1,107 @@
+OUTPUT of Python run 16 of at most 300:
+```
+Sample fields: ['text', 'pred', 'correct', 'tokens', 'cut', 'problem_id', 'source', 'reference', 'sample_idx']
+Sample metadata: {'pred': None, 'correct': False, 'tokens': 32768, 'cut': True, 'problem_id': 'gsm8k_train_2075', 'source': 'gsm8k', 'reference': '12', 'sample_idx': 0}
+gen_1 {"samples": 256, "pred": {"null": 229, "4200": 1, "15": 1, "10": 1, "14": 1, "175": 1, "6": 2, "60": 2, "105": 2, "21": 1, "25": 1, "1225": 2, "0.5": 1, "-37": 2, "\\frac{5}{2}": 1, "18": 1, "3": 1, "1": 1, "2\\sqrt5": 1, "2\\sqrt{5}": 1, "\\frac{5}{3}": 1, "49": 2}, "correct": 0.1055, "tokens": 29994.0039, "cut": 0.8984, "source": {"gsm8k": 96, "math": 160}, "sample_idx": 0.5}
+gen_5_edited {"samples": 128, "pred": {"null": 113, "15": 2, "150\\%": 1, "14": 1, "19": 1, "50": 1, "175": 1, "200": 1, "6": 1, "25": 2, "1225": 1, "0.5": 1, "\\frac{207}{110}": 1, "\\frac{5}{2}": 1}, "correct": 0.1094, "tokens": 29408.8828, "cut": 0.875, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_5_original {"samples": 128, "pred": {"null": 113, "15": 2, "10": 1, "1660": 2, "14": 1, "19": 1, "175": 1, "60": 1, "1512": 1, "0.5": 2, "-37": 2, "\\frac{5}{2}": 1}, "correct": 0.1172, "tokens": 30447.4609, "cut": 0.9141, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_6_edited {"samples": 128, "pred": {"null": 114, "15": 2, "10": 1, "1660": 2, "14": 1, "19": 1, "175": 1, "60": 1, "1512": 1, "0.5": 2, "-37": 1, "\\frac{5}{2}": 1}, "correct": 0.1094, "tokens": 30286.9688, "cut": 0.9141, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_6_original {"samples": 128, "pred": {"null": 116, "4200": 1, "15": 1, "1660": 1, "11": 1, "175": 1, "200": 1, "4": 1, "256": 1, "1512": 1, "-37": 1, "\\frac{5}{2}": 1, "5": 1}, "correct": 0.0859, "tokens": 30710.1953, "cut": 0.9219, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_7_edited {"samples": 128, "pred": {"null": 114, "15": 2, "10": 1, "1660": 2, "14": 1, "19": 1, "175": 1, "60": 1, "1512": 1, "0.5": 2, "-37": 1, "\\frac{5}{2}": 1}, "correct": 0.1094, "tokens": 30286.9688, "cut": 0.9141, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_7_original {"samples": 128, "pred": {"null": 114, "15": 2, "10": 1, "1660": 2, "14": 1, "19": 1, "175": 1, "60": 1, "1512": 1, "0.5": 2, "-37": 1, "\\frac{5}{2}": 1}, "correct": 0.1094, "tokens": 30286.9688, "cut": 0.9141, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_8_edited {"samples": 128, "pred": {"null": 115, "4200": 2, "15": 1, "1660": 1, "11": 1, "175": 1, "200": 1, "4": 1, "256": 1, "1512": 1, "-37": 1, "\\frac{5}{2}": 1, "5": 1}, "correct": 0.0938, "tokens": 30545.9297, "cut": 0.9141, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+gen_8_original {"samples": 128, "pred": {"null": 115, "4200": 2, "15": 1, "1660": 1, "11": 1, "175": 1, "200": 1, "4": 1, "256": 1, "1512": 1, "-37": 1, "\\frac{5}{2}": 1, "5": 1}, "correct": 0.0938, "tokens": 30545.9297, "cut": 0.9141, "source": {"gsm8k": 64, "math": 64}, "sample_idx": 0.5}
+PAIRED 5 gain_pp -0.781 SE_pp 3.418 W->R 9 R->W 10
+PAIRED 6 gain_pp 2.344 SE_pp 3.227 W->R 10 R->W 7
+PAIRED 7 gain_pp 0.0 SE_pp 0.0 W->R 0 R->W 0
+PAIRED 8 gain_pp 0.0 SE_pp 0.0 W->R 0 R->W 0
+EXCERPT gsm8k_train_2075 0 correct False begin Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Problem:**
+    *   **Scenario:** A father and a son are approaching each other from opp end  If they meet, they must have covered the distance between them?
+        Wait, no. If they start at opposite ends, they are at different locations.
+        If they meet, they must be at the same spot.
+        Wait, if they start at opposite
+EXCERPT gsm8k_train_2075 1 correct False begin Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Problem:**
+    *   **Scenario:** A father and a son are walking towards each other in a end       *   Wait, Father reaches 12m.
+                                            *   Wait, Son reaches 12m.
+                                            *   Wait, does Father reach 12m *before* Son?
+                                           
+EXCERPT gsm8k_train_2168 0 correct False begin Here's my thought process for solving this problem:
+
+1.  **Analyze the Request:**
+    *   **Subject:** George W. Bush (implied by "40th president", though I sho end 9th: Cleveland
+        *   2740th: Cleveland
+        *   2741st: Cleveland
+        *   2742nd: Cleveland
+        *   2743rd: Cleveland
+        *   2744th: Cleveland
+        *   2745th: Cleveland
+        *   2746th: Cleveland
+        *   274
+EXCERPT gsm8k_train_2168 1 correct True begin Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *   **Subject:** The 40th President (let's call him P).
+    *   **Event: end ngs} = 4,200 $$
+
+Alternatively, you can sum the contributions first:
+$$ 4,000 (\text{Friends}) + 1,800 (\text{Family}) = 5,800 $$
+Then subtract this sum from the total:
+$$ 10,000 - 5,800 = 4,200 $$
+
+The president saved $4,200.
+
+\boxed{4200}
+EXCERPT gsm8k_train_6384 0 correct False begin Here's a thinking process that leads to the solution:
+
+    *   **Given:**
+        *   Sam is twice as old as Sue. (Sam = $2 \times$ end it, I see.
+    Wait, I see.
+    Wait, I see.
+    Wait
+EXCERPT gsm8k_train_6384 1 correct False begin Here's my thought process for solving this word problem:
+
+    *   **Characters:** Sam, Sue, Kendra.
+    *   **Relationships given:* end lculate the sum of their ages *now* (27).
+            *   Then I add 3 to each?
+            *   No, that's not right.
+            *   Wait, if I calculate the sum of their ages *now* (27).
+            *   Then I add 3 to each?
+            *
+Activation shapes: {'mlp_last_prompt': ((256, 24, 3584), 'float16'), 'hidden_last_prompt': ((256, 25, 1024), 'float16'), 'mlp_mean_answer': ((256, 24, 3584), 'float16'), 'hidden_mean_answer': ((256, 25, 1024), 'float16')}
+Teacher-forced metadata: {'lengths': [295, 464], 'model': 'original', 'edited_tensors': [], 'files': {'input_ids': [2, 464], 'token_logprobs': [2, 463], 'topk_logprobs': [2, 464, 20], 'topk_ids': [2, 464, 20], 'hidden_0': [2, 464, 1024], 'hidden_4': [2, 464, 1024], 'hidden_8': [2, 464, 1024], 'hidden_12': [2, 464, 1024], 'hidden_15': [2, 464, 1024], 'hidden_16': [2, 464, 1024], 'hidden_17': [2, 464, 1024], 'hidden_18': [2, 464, 1024], 'hidden_19': [2, 464, 1024], 'hidden_20': [2, 464, 1024], 'hidden_21': [2, 464, 1024], 'hidden_22': [2, 464, 1024], 'hidden_23': [2, 464, 1024], 'hidden_24': [2, 464, 1024], 'mlp_act_14': [2, 464, 3584], 'mlp_act_15': [2, 464, 3584], 'mlp_act_16': [2, 464, 3584], 'mlp_act_17': [2, 464, 3584], 'mlp_act_18': [2, 464, 3584], 'mlp_act_19': [2, 464, 3584], 'mlp_act_20': [2, 464, 3584], 'mlp_act_21': [2, 464, 3584], 'mlp_act_22': [2, 464, 3584], 'mlp_act_23': [2, 464, 3584]}, 'padding': 'right; positions >= length are padding'}
+Teacher-forced text endings: [' distinguish these quantities.\nAnother check: subtracting 15 mph from 75 mph gives 60 mph, exactly the speed limit. The result is consistent with both methods.\n</think>\n\nJohn was 75 - 60 = 15 mph above the speed limit.\n\\boxed{15}<|im_end|>\n', 'e was 15 mph above.\nWait, if he was driving 60 mph, he was 0 mph above.\nWait, if he was driving 75 mph, he was 15 mph above.\nWait, if he was driving 60 mph, he was 0 mph above.\nWait, if he was driving 75 mph, he was 15 mph above.<|im_end|>\n']
+Evaluation prompt format: The evaluation prompt, exactly as the model sees it (thinking on), for a problem P:
+PREFIX + P + SUFFIX, with
+PREFIX = '<|im_start|>user\n'
+SUFFIX = '\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\n'
+The model's answer follows SUFFIX directly. To score a text with a teacher-forced pass, send PREFIX + P + SUFFIX + answer as one raw text in "texts" ("chats" re-renders assistant turns and drops their reasoning).
+
+Largest neuron norm/median ratios (layer,projection,shape,median,ratio,top3):
+(10, 'gate_proj', (3584, 1024), 0.309, 4.415, [(1877, 1.363), (45, 1.224), (164, 1.169)])
+(14, 'gate_proj', (3584, 1024), 0.341, 4.382, [(574, 1.495), (391, 1.384), (238, 1.377)])
+(13, 'gate_proj', (3584, 1024), 0.33, 3.988, [(359, 1.314), (541, 1.304), (596, 1.231)])
+(12, 'gate_proj', (3584, 1024), 0.32, 3.861, [(9, 1.236), (491, 1.153), (76, 1.111)])
+(11, 'gate_proj', (3584, 1024), 0.305, 3.851, [(205, 1.175), (377, 1.161), (626, 1.136)])
+(15, 'gate_proj', (3584, 1024), 0.39, 3.597, [(307, 1.402), (211, 1.272), (222, 1.149)])
+(8, 'gate_proj', (3584, 1024), 0.342, 3.386, [(8, 1.157), (356, 1.12), (578, 1.092)])
+(7, 'gate_proj', (3584, 1024), 0.374, 3.253, [(315, 1.217), (398, 1.072), (2856, 0.996)])
+(9, 'gate_proj', (3584, 1024), 0.315, 2.958, [(1144, 0.931), (1084, 0.923), (378, 0.859)])
+(19, 'gate_proj', (3584, 1024), 0.52, 2.936, [(1045, 1.527), (57, 1.189), (110, 1.159)])
+(22, 'gate_proj', (3584, 1024), 0.525, 2.891, [(548, 1.519), (1334, 1.383), (670, 1.31)])
+(16, 'gate_proj', (3584, 1024), 0.437, 2.767, [(214, 1.209), (24, 1.207), (140, 1.148)])
+(20, 'gate_proj', (3584, 1024), 0.516, 2.765, [(1797, 1.426), (1157, 1.216), (49, 1.211)])
+(6, 'gate_proj', (3584, 1024), 0.423, 2.716, [(19, 1.148), (140, 1.136), (2674, 1.122)])
+(0, 'gate_proj', (3584, 1024), 0.372, 2.657, [(2, 0.987), (5, 0.898), (13, 0.796)])
+(5, 'gate_proj', (3584, 1024), 0.454, 2.636, [(151, 1.197), (53, 1.187), (354, 1.137)])
+(17, 'gate_proj', (3584, 1024), 0.5, 2.627, [(2474, 1.315), (173, 1.235), (22, 1.193)])
+(23, 'gate_proj', (3584, 1024), 0.573, 2.618, [(252, 1.5), (1608, 1.446), (2725, 1.429)])
+(23, 'up_proj', (3584, 1024), 0.352, 2.569, [(185, 0.904), (291, 0.706), (757, 0.7)])
+(1, 'gate_proj', (3584, 1024), 0.422, 2.441, [(1, 1.03), (267, 0.924), (19, 0.881)])
+(13, 'up_proj', (3584, 1024), 0
+[output cut at 10,000 characters]
+[harness: 13 repeated lines not shown (a line is shown at most 2 times per output)]
+```

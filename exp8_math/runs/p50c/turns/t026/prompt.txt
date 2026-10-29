@@ -1,0 +1,8 @@
+OUTPUT of Python run 18 of at most 300:
+```
+Result files: ['edited', 'fwd_2', 'fwd_4', 'gen_1.jsonl', 'gen_1_acts', 'gen_5_edited.jsonl', 'gen_5_original.jsonl', 'gen_7_edited.jsonl', 'gen_7_original.jsonl', 'notes.md']
+Original {'n': 32, 'correct': 4, 'cut': 29, 'mean_tokens': 30123} Edited {'n': 32, 'correct': 6, 'cut': 26, 'mean_tokens': 27698} Delta 0.0625 SE 0.0435
+Current edits: ['model.language_model.layers.19.mlp.down_proj.weight']
+Direction verification relative error: 2.9772684229101287e-07
+
+```

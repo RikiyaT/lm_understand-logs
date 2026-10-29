@@ -1,0 +1,170 @@
+OUTPUT of run 4 of at most 60:
+```
+=== EXACT CROSS-UNIT ACCOUNTING FOR GAIN-SCALED COEFFICIENTS ===
+These coefficients omit activation functions and input-dependent RMS denominators.
+No result below is a nonlinear MLP output or a behavioural effect.
+
+LAYER 00: total_relative_change=0.0179766 coherence_ratio=1.00819 total_coefficient_strength_B/A=1.0009695
+  Negative signed-overlap units: 8/2048; their combined signed share=-0.078%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U1405 signed_overlap_share=+9.167% individual_energy/total=9.253% coefficient_removal_fraction=+9.082% reference_diagonal_share=23.923%
+    U1130 signed_overlap_share=+1.397% individual_energy/total=1.351% coefficient_removal_fraction=+1.443% reference_diagonal_share=10.324%
+    U0878 signed_overlap_share=+0.729% individual_energy/total=0.708% coefficient_removal_fraction=+0.750% reference_diagonal_share=3.814%
+    U1856 signed_overlap_share=+0.562% individual_energy/total=0.533% coefficient_removal_fraction=+0.591% reference_diagonal_share=0.978%
+    U1401 signed_overlap_share=+0.558% individual_energy/total=0.555% coefficient_removal_fraction=+0.560% reference_diagonal_share=0.065%
+    U1333 signed_overlap_share=+0.531% individual_energy/total=0.570% coefficient_removal_fraction=+0.492% reference_diagonal_share=0.034%
+    U1518 signed_overlap_share=+0.467% individual_energy/total=0.464% coefficient_removal_fraction=+0.470% reference_diagonal_share=0.225%
+    U0711 signed_overlap_share=+0.460% individual_energy/total=0.350% coefficient_removal_fraction=+0.569% reference_diagonal_share=0.306%
+  Top 3 opposing units:
+    U0160 signed_overlap_share=-0.028%
+    U1379 signed_overlap_share=-0.024%
+    U1432 signed_overlap_share=-0.014%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=9.253% signed_overlap/total=+9.167% remaining_energy/total=90.918%
+    top  4: group_energy/total=11.909% signed_overlap/total=+11.825% remaining_energy/total=88.260%
+    top 20: group_energy/total=17.615% signed_overlap/total=+17.814% remaining_energy/total=81.987%
+    top100: group_energy/total=33.691% signed_overlap/total=+33.832% remaining_energy/total=66.027%
+  elapsed_for_layer=1.6s
+
+LAYER 01: total_relative_change=0.0279045 coherence_ratio=1.00971 total_coefficient_strength_B/A=0.9995490
+  Negative signed-overlap units: 0/2048; their combined signed share=0.000%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U1725 signed_overlap_share=+0.484% individual_energy/total=0.506% coefficient_removal_fraction=+0.462% reference_diagonal_share=0.181%
+    U0372 signed_overlap_share=+0.403% individual_energy/total=0.386% coefficient_removal_fraction=+0.421% reference_diagonal_share=0.122%
+    U1385 signed_overlap_share=+0.385% individual_energy/total=0.405% coefficient_removal_fraction=+0.364% reference_diagonal_share=0.042%
+    U1976 signed_overlap_share=+0.359% individual_energy/total=0.341% coefficient_removal_fraction=+0.376% reference_diagonal_share=0.050%
+    U0575 signed_overlap_share=+0.326% individual_energy/total=0.294% coefficient_removal_fraction=+0.358% reference_diagonal_share=0.032%
+    U0418 signed_overlap_share=+0.322% individual_energy/total=0.314% coefficient_removal_fraction=+0.329% reference_diagonal_share=0.057%
+    U0991 signed_overlap_share=+0.288% individual_energy/total=0.288% coefficient_removal_fraction=+0.287% reference_diagonal_share=0.041%
+    U1062 signed_overlap_share=+0.282% individual_energy/total=0.301% coefficient_removal_fraction=+0.263% reference_diagonal_share=0.051%
+  Top 3 opposing units:
+    U1760 signed_overlap_share=+0.002%
+    U0524 signed_overlap_share=+0.002%
+    U0957 signed_overlap_share=+0.002%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=0.506% signed_overlap/total=+0.484% remaining_energy/total=99.538%
+    top  4: group_energy/total=1.640% signed_overlap/total=+1.630% remaining_energy/total=98.379%
+    top 20: group_energy/total=5.937% signed_overlap/total=+5.937% remaining_energy/total=94.063%
+    top100: group_energy/total=20.914% signed_overlap/total=+20.882% remaining_energy/total=79.150%
+  elapsed_for_layer=1.2s
+
+LAYER 03: total_relative_change=0.0229212 coherence_ratio=1.02725 total_coefficient_strength_B/A=0.9995865
+  Negative signed-overlap units: 2/2048; their combined signed share=-0.000%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U1635 signed_overlap_share=+1.442% individual_energy/total=1.327% coefficient_removal_fraction=+1.557% reference_diagonal_share=6.484%
+    U1987 signed_overlap_share=+1.197% individual_energy/total=1.281% coefficient_removal_fraction=+1.113% reference_diagonal_share=0.919%
+    U1414 signed_overlap_share=+0.880% individual_energy/total=0.822% coefficient_removal_fraction=+0.937% reference_diagonal_share=3.269%
+    U0146 signed_overlap_share=+0.667% individual_energy/total=0.676% coefficient_removal_fraction=+0.657% reference_diagonal_share=1.388%
+    U0926 signed_overlap_share=+0.596% individual_energy/total=0.565% coefficient_removal_fraction=+0.627% reference_diagonal_share=0.124%
+    U1803 signed_overlap_share=+0.589% individual_energy/total=0.594% coefficient_removal_fraction=+0.584% reference_diagonal_share=0.250%
+    U0271 signed_overlap_share=+0.571% individual_energy/total=0.576% coefficient_removal_fraction=+0.566% reference_diagonal_share=0.086%
+    U0789 signed_overlap_share=+0.459% individual_energy/total=0.449% coefficient_removal_fraction=+0.469% reference_diagonal_share=0.234%
+  Top 3 opposing units:
+    U1831 signed_overlap_share=-0.000%
+    U0523 signed_overlap_share=-0.000%
+    U1764 signed_overlap_share=+0.000%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=1.327% signed_overlap/total=+1.442% remaining_energy/total=98.443%
+    top  4: group_energy/total=4.166% signed_overlap/total=+4.185% remaining_energy/total=95.796%
+    top 20: group_energy/total=10.267% signed_overlap/total=+10.398% remaining_energy/total=89.471%
+    top100: group_energy/total=25.017% signed_overlap/total=+25.166% remaining_energy/total=74.685%
+  elapsed_for_layer=1.2s
+
+LAYER 04: total_relative_change=0.0227485 coherence_ratio=1.05723 total_coefficient_strength_B/A=0.9968341
+  Negative signed-overlap units: 45/2048; their combined signed share=-0.148%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U0013 signed_overlap_share=+3.401% individual_energy/total=3.427% coefficient_removal_fraction=+3.374% reference_diagonal_share=41.872%
+    U1044 signed_overlap_share=+1.462% individual_energy/total=1.449% coefficient_removal_fraction=+1.474% reference_diagonal_share=0.185%
+    U0084 signed_overlap_share=+1.043% individual_energy/total=0.964% coefficient_removal_fraction=+1.122% reference_diagonal_share=3.702%
+    U0020 signed_overlap_share=+1.038% individual_energy/total=1.149% coefficient_removal_fraction=+0.927% reference_diagonal_share=0.008%
+    U0508 signed_overlap_share=+1.009% individual_energy/total=0.847% coefficient_removal_fraction=+1.171% reference_diagonal_share=0.266%
+    U1527 signed_overlap_share=+0.839% individual_energy/total=0.842% coefficient_removal_fraction=+0.835% reference_diagonal_share=0.129%
+    U1490 signed_overlap_share=+0.759% individual_energy/total=0.741% coefficient_removal_fraction=+0.778% reference_diagonal_share=0.027%
+    U1085 signed_overlap_share=+0.632% individual_energy/total=0.662% coefficient_removal_fraction=+0.602% reference_diagonal_share=0.189%
+  Top 3 opposing units:
+    U1542 signed_overlap_share=-0.033%
+    U1808 signed_overlap_share=-0.017%
+    U1776 signed_overlap_share=-0.013%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=3.427% signed_overlap/total=+3.401% remaining_energy/total=96.626%
+    top  4: group_energy/total=7.104% signed_overlap/total=+6.943% remaining_energy/total=93.218%
+    top 20: group_energy/total=15.659% signed_overlap/total=+15.347% remaining_energy/total=84.965%
+    top100: group_energy/total=34.672% signed_overlap/total=+35.113% remaining_energy/total=64.446%
+  elapsed_for_layer=1.2s
+
+LAYER 06: total_relative_change=0.0092623 coherence_ratio=1.10771 total_coefficient_strength_B/A=0.9973206
+  Negative signed-overlap units: 5/2048; their combined signed share=-0.006%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U1824 signed_overlap_share=+16.038% individual_energy/total=16.284% coefficient_removal_fraction=+15.792% reference_diagonal_share=76.620%
+    U0651 signed_overlap_share=+0.537% individual_energy/total=0.503% coefficient_removal_fraction=+0.571% reference_diagonal_share=0.025%
+    U0373 signed_overlap_share=+0.442% individual_energy/total=0.395% coefficient_removal_fraction=+0.489% reference_diagonal_share=0.110%
+    U1590 signed_overlap_share=+0.398% individual_energy/total=0.345% coefficient_removal_fraction=+0.452% reference_diagonal_share=0.067%
+    U1724 signed_overlap_share=+0.394% individual_energy/total=0.425% coefficient_removal_fraction=+0.362% reference_diagonal_share=0.020%
+    U0429 signed_overlap_share=+0.369% individual_energy/total=0.296% coefficient_removal_fraction=+0.442% reference_diagonal_share=0.006%
+    U1622 signed_overlap_share=+0.359% individual_energy/total=0.329% coefficient_removal_fraction=+0.390% reference_diagonal_share=0.012%
+    U0875 signed_overlap_share=+0.359% individual_energy/total=0.357% coefficient_removal_fraction=+0.361% reference_diagonal_share=0.022%
+  Top 3 opposing units:
+    U1987 signed_overlap_share=-0.003%
+    U0981 signed_overlap_share=-0.002%
+    U1435 signed_overlap_share=-0.001%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=16.284% signed_overlap/total=+16.038% remaining_energy/total=84.208%
+    top  4: group_energy/total=17.624% signed_overlap/total=+17.411% remaining_energy/total=82.802%
+    top 20: group_energy/total=22.218% signed_overlap/total=+22.410% remaining_energy/total=77.398%
+    top100: group_energy/total=34.438% signed_overlap/total=+35.682% remaining_energy/total=63.074%
+  elapsed_for_layer=1.2s
+
+LAYER 07: total_relative_change=0.0094610 coherence_ratio=1.10988 total_coefficient_strength_B/A=1.0000214
+  Negative signed-overlap units: 8/2048; their combined signed share=-0.017%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U1455 signed_overlap_share=+4.512% individual_energy/total=4.493% coefficient_removal_fraction=+4.530% reference_diagonal_share=67.353%
+    U1032 signed_overlap_share=+0.992% individual_energy/total=0.708% coefficient_removal_fraction=+1.276% reference_diagonal_share=0.118%
+    U0334 signed_overlap_share=+0.727% individual_energy/total=0.399% coefficient_removal_fraction=+1.056% reference_diagonal_share=0.068%
+    U1300 signed_overlap_share=+0.635% individual_energy/total=0.628% coefficient_removal_fraction=+0.642% reference_diagonal_share=0.132%
+    U1057 signed_overlap_share=+0.463% individual_energy/total=0.451% coefficient_removal_fraction=+0.474% reference_diagonal_share=0.452%
+    U1484 signed_overlap_share=+0.429% individual_energy/total=0.291% coefficient_removal_fraction=+0.567% reference_diagonal_share=0.085%
+    U0664 signed_overlap_share=+0.406% individual_energy/total=0.306% coefficient_removal_fraction=+0.505% reference_diagonal_share=0.270%
+    U1413 signed_overlap_share=+0.362% individual_energy/total=0.341% coefficient_removal_fraction=+0.384% reference_diagonal_share=0.092%
+  Top 3 opposing units:
+    U1436 signed_overlap_share=-0.008%
+    U0013 signed_overlap_share=-0.004%
+    U2035 signed_overlap_share=-0.002%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=4.493% signed_overlap/total=+4.512% remaining_energy/total=95.470%
+    top  4: group_energy/total=6.258% signed_overlap/total=+6.601% remaining_energy/total=93.057%
+    top 20: group_energy/total=11.834% signed_overlap/total=+12.036% remaining_energy/total=87.763%
+    top100: group_energy/total=24.134% signed_overlap/total=+25.087% remaining_energy/total=73.960%
+  elapsed_for_layer=1.2s
+
+LAYER 10: total_relative_change=0.0209482 coherence_ratio=1.11577 total_coefficient_strength_B/A=1.0000761
+  Negative signed-overlap units: 15/2048; their combined signed share=-0.034%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U1363 signed_overlap_share=+6.222% individual_energy/total=5.727% coefficient_removal_fraction=+6.717% reference_diagonal_share=3.364%
+    U1564 signed_overlap_share=+4.772% individual_energy/total=4.602% coefficient_removal_fraction=+4.942% reference_diagonal_share=9.480%
+    U1529 signed_overlap_share=+3.561% individual_energy/total=2.955% coefficient_removal_fraction=+4.167% reference_diagonal_share=1.002%
+    U1869 signed_overlap_share=+1.131% individual_energy/total=0.938% coefficient_removal_fraction=+1.325% reference_diagonal_share=0.774%
+    U1106 signed_overlap_share=+1.017% individual_energy/total=0.878% coefficient_removal_fraction=+1.155% reference_diagonal_share=0.943%
+    U0900 signed_overlap_share=+0.956% individual_energy/total=0.940% coefficient_removal_fraction=+0.972% reference_diagonal_share=0.580%
+    U1504 signed_overlap_share=+0.639% individual_energy/total=0.668% coefficient_removal_fraction=+0.611% reference_diagonal_share=0.459%
+    U1317 signed_overlap_share=+0.488% individual_energy/total=0.345% coefficient_removal_fraction=+0.632% reference_diagonal_share=0.194%
+  Top 3 opposing units:
+    U0756 signed_overlap_share=-0.014%
+    U0033 signed_overlap_share=-0.005%
+    U1904 signed_overlap_share=-0.003%
+  Group accounting (ranked by individual coefficient-change energy):
+    top  1: group_energy/total=5.727% signed_overlap/total=+6.222% remaining_energy/total=93.283%
+    top  4: group_energy/total=15.382% signed_overlap/total=+15.511% remaining_energy/total=84.359%
+    top 20: group_energy/total=22.602% signed_overlap/total=+22.857% remaining_energy/total=76.888%
+    top100: group_energy/total=36.342% signed_overlap/total=+37.159% remaining_energy/total=62.024%
+  elapsed_for_layer=1.2s
+
+LAYER 14: total_relative_change=0.0211030 coherence_ratio=1.05575 total_coefficient_strength_B/A=1.0000263
+  Negative signed-overlap units: 0/2048; their combined signed share=0.000%
+  Top 8 units by signed overlap with the total coefficient difference:
+    U0641 signed_overlap_share=+2.084% individual_energy/total=2.112% coefficient_removal_fraction=+2.057% reference_diagonal_share=1.618%
+    U0685 signed_overlap_share=+0.527% individual_energy/total=0.467% coefficient_removal_fraction=+0.588% reference_diagonal_share=0.195%
+    U1801 signed_overlap_share=+0.340% individual_energy/total=0.273% coefficient_removal_fraction=+0.406% reference_diagonal_share=0.241%
+    U1798 signed_overlap_share=+0.305% individual_energy/total=0.314% coefficient_removal_fraction=+0.296
+[output cut at 15,000 characters]
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

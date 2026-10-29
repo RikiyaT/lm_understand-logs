@@ -1,0 +1,9 @@
+OUTPUT of Python run 51 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36, 37, 38], 'answers_per_model': 4096, 'problems': 128, 'original_accuracy': 0.092041015625, 'edited_accuracy': 0.092529296875, 'gain_pp': 0.048828125, 'sample_SE_pp': 0.4229149069421039, 'problem_cluster_SE_pp': 0.49747964215031726}
+PASS39_IDS ['math_train_algebra_1284', 'math_train_intermediate_algebra_831', 'math_train_algebra_1478', 'math_train_precalculus_505', 'math_train_number_theory_230', 'math_train_intermediate_algebra_8', 'math_train_algebra_1220', 'math_train_algebra_1026', 'math_train_counting_and_probability_538', 'math_train_precalculus_159', 'math_train_prealgebra_1019', 'math_train_precalculus_143', 'math_train_intermediate_algebra_996', 'math_train_prealgebra_228', 'math_train_precalculus_201', 'math_train_algebra_365', 'math_train_number_theory_59', 'math_train_intermediate_algebra_560', 'math_train_number_theory_435', 'math_train_number_theory_718', 'math_train_geometry_656', 'math_train_prealgebra_884', 'math_train_prealgebra_1178', 'math_train_geometry_805', 'math_train_geometry_371', 'math_train_algebra_1633', 'math_train_geometry_49', 'math_train_number_theory_26', 'math_train_prealgebra_1075', 'math_train_algebra_87', 'math_train_number_theory_772', 'math_train_algebra_150']
+ORIGINAL_DIAGNOSTIC_SUMMARY {'problems': 128, 'answers': 2048, 'correct': 343, 'incorrect_completed': 1553, 'incorrect_cutoff': 152, 'all_cutoffs': 156, 'mean_tokens': 1283.3}
+ONE_DIAGNOSTIC_FAILURE_EXCERPT 'Let the isosceles triangle be denoted by $ABC$, where $AB = 5$ cm, $BC = 5$ cm, and $AC = 5$ cm.\nThe perimeter of the triangle is given by $AB + BC + AC = 17$ cm.\nThus, $5 + 5 + 5 = 17$, which is consistent.\nTherefore, the base of the triangle is $AC = 5$ cm.\n'
+'Pass39 logged with unchanged weights and the precommitted eight-position rotation.'
+
+```

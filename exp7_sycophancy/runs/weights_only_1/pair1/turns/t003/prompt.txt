@@ -1,0 +1,77 @@
+OUTPUT of run 2 of at most 60:
+```
+LEARNED SCALE RANGES (1 + weight), aggregated over layers and checkpoints
+input_layernorm quantiles[min,1%,50%,99%,max]= [  0.1562   0.6562  13.1875 117.     234.    ]
+post_attention_layernorm quantiles[min,1%,50%,99%,max]= [-70.5     0.082  14.    513.    713.   ]
+pre_feedforward_layernorm quantiles[min,1%,50%,99%,max]= [-0.0547  0.168   4.4297 53.5    70.5   ]
+post_feedforward_layernorm quantiles[min,1%,50%,99%,max]= [-132.        0.2148   21.25    549.     1657.    ]
+self_attn.q_norm quantiles[min,1%,50%,99%,max]= [-2.7812 -0.0078  1.7305  4.9688 17.125 ]
+self_attn.k_norm quantiles[min,1%,50%,99%,max]= [-2.6875 -0.0156  1.9375  9.4375 30.5   ]
+
+These rankings concern matrix products, NOT behavioral importance.
+
+OV_raw: relative-change quantiles[min,median,max] = [0.0075 0.0113 0.0192]
+Top 8 by relative product change
+layer head type     rel_%       abs_delta    cos(A,B)    id_cos_A    id_cos_B    delta_id_cos
+    3    3 sliding    1.91754      0.103919   0.9998162   -0.055370   -0.055415     -0.002352
+    4    1 sliding    1.81338      0.117508   0.9998356    0.076648    0.076650      0.000444
+    4    0 sliding    1.69551      0.120241   0.9998563    0.042530    0.042508     -0.001322
+   16    3 sliding    1.61267      0.120633   0.9998700    0.014299    0.014222     -0.004711
+   16    1 sliding    1.60447      0.124142   0.9998713    0.131827    0.131780     -0.003606
+   16    0 sliding    1.46650      0.127585   0.9998925    0.036619    0.036576     -0.003007
+    4    2 sliding    1.46588      0.121293   0.9998926   -0.005269   -0.005253      0.001122
+    3    1 sliding    1.43124      0.108731   0.9998976    0.066116    0.066145      0.002717
+Top 5 by absolute product change: [(15, 1, 0.185749), (0, 3, 0.176667), (11, 2, 0.166466), (12, 3, 0.166337), (10, 3, 0.165827)]
+
+OV_scaled: relative-change quantiles[min,median,max] = [0.0066 0.0129 0.0292]
+Top 8 by relative product change
+layer head type     rel_%       abs_delta    cos(A,B)    id_cos_A    id_cos_B    delta_id_cos
+    4    1 sliding    2.91707       80.7281   0.9995749    0.006647    0.006654      0.000412
+    3    3 sliding    2.35629       44.3202   0.9997229   -0.008473   -0.008472     -0.000319
+    4    0 sliding    2.28429       86.2492   0.9997391   -0.000119   -0.000114      0.000245
+    4    2 sliding    2.10763       92.9169   0.9997780   -0.001891   -0.001893     -0.000121
+    0    1 sliding    2.09316       3.52821   0.9997810   -0.044789   -0.044790      0.000675
+    2    3 sliding    2.05366       21.8716   0.9997892   -0.002761   -0.002767     -0.000264
+   11    1 full       2.02638       227.556   0.9997947    0.053657    0.053668     -0.000121
+    6    2 sliding    2.00965       71.5867   0.9997981    0.095361    0.095370      0.001524
+Top 5 by absolute product change: [(15, 1, 1725.876742), (15, 2, 1408.368047), (15, 3, 1337.982609), (12, 1, 1213.961295), (15, 0, 1095.146802)]
+
+QK_raw: relative-change quantiles[min,median,max] = [0.0055 0.01   0.0153]
+Top 8 by relative product change
+layer head type     rel_%       abs_delta    cos(A,B)    id_cos_A    id_cos_B    delta_id_cos
+    4    1 sliding    1.52619      0.191622   0.9998835   -0.053520   -0.053487      0.001823
+   11    1 full       1.45638      0.179652   0.9998940    0.067228    0.067346      0.008371
+    3    1 sliding    1.41824      0.167548   0.9998994   -0.045136   -0.045065      0.004972
+    8    2 sliding    1.40513      0.165116   0.9999013   -0.094268   -0.094237      0.002588
+   11    0 full       1.36613       0.17843   0.9999067    0.014433    0.014291     -0.010373
+   16    1 sliding    1.32073      0.169588   0.9999128    0.013503    0.013413     -0.006804
+   13    1 sliding    1.29838      0.178964   0.9999157    0.014672    0.014717      0.003402
+    4    2 sliding    1.29586      0.182246   0.9999160   -0.012090   -0.012179     -0.006974
+Top 5 by absolute product change: [(10, 1, 0.200976), (10, 0, 0.197633), (4, 1, 0.191622), (15, 3, 0.190985), (9, 0, 0.187174)]
+
+QK_scaled: relative-change quantiles[min,median,max] = [0.006  0.0161 0.0463]
+Top 8 by relative product change
+layer head type     rel_%       abs_delta    cos(A,B)    id_cos_A    id_cos_B    delta_id_cos
+   11    0 full       4.63338       37.5806   0.9989277    0.018544    0.018454     -0.002327
+   11    1 full       4.10200       48.2175   0.9991597    0.036204    0.036024     -0.005434
+   10    1 sliding    3.69200       352.116   0.9993190   -0.025942   -0.026285     -0.009841
+   12    2 sliding    2.89569       360.649   0.9995815    0.096844    0.096996      0.009152
+   12    3 sliding    2.64079       350.491   0.9996514    0.036682    0.036755      0.002270
+   11    3 full       2.63075       32.7009   0.9996542   -0.019227   -0.019351     -0.005111
+   12    0 sliding    2.58600       327.816   0.9996658    0.054258    0.054098     -0.005411
+   14    1 sliding    2.49335       602.633   0.9996893    0.043313    0.043380      0.003367
+Top 5 by absolute product change: [(16, 0, 947.815862), (16, 1, 920.483414), (16, 2, 894.051442), (16, 3, 887.249426), (4, 1, 817.825394)]
+
+HEADS WITH LARGEST SIGNED CHANGE IN RAW OV IDENTITY ALIGNMENT
+layer=16 head=3 id_A=+0.0142986 id_B=+0.0142224 B-A=-0.0000762
+layer= 3 head=2 id_A=+0.2653777 id_B=+0.2654327 B-A=+0.0000551
+layer=16 head=2 id_A=+0.2276191 id_B=+0.2275695 B-A=-0.0000497
+layer= 1 head=2 id_A=+0.0892820 id_B=+0.0893314 B-A=+0.0000493
+layer=16 head=1 id_A=+0.1318269 id_B=+0.1317796 B-A=-0.0000473
+layer=10 head=2 id_A=+0.1370008 id_B=+0.1369549 B-A=-0.0000459
+layer= 3 head=3 id_A=-0.0553697 id_B=-0.0554155 B-A=-0.0000458
+layer=16 head=0 id_A=+0.0366192 id_B=+0.0365756 B-A=-0.0000436
+layer= 6 head=2 id_A=+0.1936181 id_B=+0.1936606 B-A=+0.0000425
+layer= 8 head=2 id_A=+0.1691005 id_B=+0.1690607 B-A=-0.0000397
+
+```

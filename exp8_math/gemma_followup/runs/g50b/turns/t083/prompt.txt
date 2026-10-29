@@ -1,0 +1,49 @@
+OUTPUT of Python run 46 of at most 300:
+```
+DEV_IDS ['math_train_precalculus_729', 'math_train_algebra_211', 'math_train_algebra_311', 'math_train_algebra_569', 'math_train_prealgebra_301', 'math_train_algebra_1520', 'math_train_algebra_371', 'math_train_algebra_546', 'math_train_algebra_991', 'math_train_geometry_91', 'math_train_number_theory_862', 'math_train_prealgebra_1122', 'math_train_prealgebra_396', 'math_train_counting_and_probability_275', 'math_train_prealgebra_567', 'math_train_prealgebra_690', 'math_train_algebra_1695', 'math_train_algebra_232', 'math_train_prealgebra_1127', 'math_train_prealgebra_356', 'math_train_prealgebra_961', 'math_train_precalculus_427', 'math_train_algebra_1114', 'math_train_algebra_1141', 'math_train_algebra_1263', 'math_train_algebra_1467', 'math_train_algebra_731', 'math_train_prealgebra_1199', 'math_train_prealgebra_422', 'math_train_prealgebra_697', 'math_train_prealgebra_81', 'math_train_prealgebra_814']
+CURRENT_EDITS ['model.layers.11.mlp.down_proj.weight', 'model.layers.11.self_attn.o_proj.weight']
+EARLY_DIAGNOSTIC_NOTES
+# Experiment log
+No weight edits. HOLDOUT: 128 randomly selected MATH training problems, reserved before diagnosis; do not inspect outcomes until candidate freeze.
+Upcoming pass 1: original, diagnostic_ids.json, 16 samples/problem, 8192 new tokens; residual and MLP activations for layers 1 through 18.
+DEV will be locked to at most 32 inconsistently solved diagnostic problems before any edit. Primary endpoint: paired answer accuracy.
+
+DEV LOCKED before edits: DEV_ids.json, 32 problems selected by highest p*(1-p) among intermittent diagnostic successes. HOLDOUT unchanged and unexamined.
+
+Upcoming pass 2: original, all 32 fixed DEV reference solutions with exact chat prompt; token logprobs, hidden states 8/9/11/12, MLP activations 8/11. No edits. Rank-1 unit associations are exploratory, not causal evidence.
+
+Pass 2 scoring clarification: compact boxed reference-answer continuations for all 32 DEV prompts, not full reference solutions; fixed in DEV_compact_reference_texts.json. Original weights. Return token logprobs, hidden states 8/9/11/12, MLP 8/11. This tests answer likelihood, not generated reasoning accuracy.
+
+Upcoming pass 3: edited compact-reference teacher-forcing, all 32 fixed DEV prompts, identical to pass 2. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08907650411128998}. All other tensors original.
+
+Upcoming pass 4: BOTH on locked DEV_ids.json, n=32, max_tokens=8192 (1024 answers/model). Current exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08907650411128998}. Primary outcome paired accuracy; secondary failure types and repetition. HOLDOUT unused.
+
+Pass 4: +1.56 pp, paired SE 1.83 pp; saved best_1. Not a significant accuracy gain.
+Upcoming pass 5: BOTH, DEV_ids.json, n=32, max_tokens=8192. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 0.5, "relative_frobenius_change": 0.04453825205564499}. All other tensors original.
+
+Pass 5: +1.76 pp, reported SE 1.75 pp; half-suppression saved. Upcoming pass 6: opposite-direction control, BOTH on DEV_ids.json, n=32, max_tokens=8192. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": -1.0, "relative_frobenius_change": 0.08907650411128998}. Selected columns doubled; all other tensors original.
+
+Pass 6 amplification: +0.20 pp, reported SE 2.63 pp; longer answers but no established accuracy harm. Upcoming pass 7: BOTH, DEV_ids.json, n=32, max_tokens=8192. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912], "suppression_alpha": 1.0, "relative_frobenius_change": 0.037127796560525894}. All other tensors original.
+
+Upcoming pass 8: BOTH, DEV_ids.json, n=32, max_tokens=8192. Complementary ablation of the remaining 12 selected units. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08097006380558014}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 9: BOTH, DEV_ids.json, n=32, max_tokens=8192. Negative control: 16 low-association neurons matched to selected units by column norm and activation RMS. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1280, 1687, 1309, 568, 2036, 1312, 1917, 1471, 1156, 336, 1780, 1356, 678, 870, 1924, 2030], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08916957676410675}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 10: BOTH, DEV_ids.json, n=32, max_tokens=8192. Double success-associated, answer-value-selective layer-11 neuron outputs; test underexpressed mathematical features. This replaces, not combines with, layer-8 edits. Exact edit: {"tensor": "model.layers.11.mlp.down_proj.weight", "columns": [654, 491, 669, 1330, 124, 823, 10, 1923, 1911, 1096, 872], "suppression_alpha": -1.0, "relative_frobenius_change": 0.07471233606338501}. All other tensors original. HOLDOUT unused.
+
+Correction from experimenters: earlier no_answer_finished counts included wrong stated answers. Do not interpret those counts as formatting failures. Accuracy comparisons unchanged.
+Pass 10: layer-11 amplification -1.46 pp (SE 1.73 pp).
+Upcoming pass 11: ORIGINAL teacher-forcing, two matched constructed correct/incorrect DEV multiplication traces; full attention layers 5,11,17, hidden 6,12,18, MLP 8,11. Active saved edit remains {"tensor": "model.layers.11.mlp.down_proj.weight", "columns": [654, 491, 669, 1330, 124, 823, 10, 1923, 1911, 1096, 872], "suppression_alpha": -1.0, "relative_frobenius_change": 0.07471233606338501} but is NOT used by original-model pass.
+
+Upcoming pass 12: BOTH, DEV_ids.json, n=32, max_tokens=8192. Attenuate locally focused full-context head: probe arithmetic-result queries have 54.6% attention in last 8 tokens, 0.14% original operands. Hypothesis: excessive local continuation contributes to operation drift. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 0, "columns": [0, 256], "output_multiplier": 0.5, "relative_frobenius_change": 0.20184682309627533}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 13: BOTH, DEV_ids.json, n=32, max_tokens=8192. Opposite-direction test after attenuation increased length/cutoffs and reduced accuracy: strengthen potentially useful local calculation head. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 0, "columns": [0, 256], "output_multiplier": 1.5, "relative_frobenius_change": 0.20184682309627533}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 14: BOTH, DEV_ids.json, n=32, max_tokens=8192. Strengthen operand-retrieval candidate: probe original-operand attention 3.26%, versus 0.14% for head 0; low recent-8 focus (3.8%). Head-0 edits rejected because shorter/longer responses did not improve accuracy. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 2, "columns": [512, 768], "output_multiplier": 1.5, "relative_frobenius_change": 0.2872627079486847}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 15: BOTH, DEV_ids.json, n=32, max_tokens=8192. Opposite-direction intervention: amplification increased repetition/cutoffs and reduced accuracy; test whether attenuating head 2 prevents over-retrieval o
+AVAILABLE_HELPERS ['load_original', 'load', 'save_edit', 'drop_edit', 'edited', 'repetition', 'clear_edits', 'set_unit_edit', 'read_gen', 'summarize_pair', 'checkpoint', 'prepare_units', 'boxes', 'normalize_answer', 'behavior_stats', 'prepare_head', 'read_jsonl', 'pair_details', 'set_head_direction', 'log_pass', 'archive_current', 'pooled_pairs', 'loop_share']
+RECENT_RESULT_FILES ['gen_30_edited.jsonl', 'gen_30_original.jsonl', 'gen_31_edited.jsonl', 'gen_31_original.jsonl', 'gen_32_edited.jsonl', 'gen_32_original.jsonl', 'gen_33_edited.jsonl', 'gen_33_original.jsonl']
+'Ready to submit the unchanged pass-34 DEV replication.'
+
+```

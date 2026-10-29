@@ -1,0 +1,53 @@
+Forward pass 24 of 25 done (generate); results in /work/gen_24_original.jsonl and /work/gen_24_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_24_original.jsonl",
+  "edited": "/work/gen_24_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.0859375,
+  "accuracy_by_source": {
+   "math": 0.0859
+  },
+  "mean_tokens": 1617,
+  "cut_share": 0.0635,
+  "failures": {
+   "wrong_answer": 870,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 65
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.0947265625,
+  "accuracy_by_source": {
+   "math": 0.0947
+  },
+  "mean_tokens": 1868,
+  "cut_share": 0.0996,
+  "failures": {
+   "wrong_answer": 827,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 99
+  }
+ },
+ "paired": {
+  "items": 128,
+  "accuracy_difference": 0.0088,
+  "standard_error": 0.0075,
+  "samples_wrong_to_right": 34,
+  "samples_right_to_wrong": 25
+ },
+ "s": 277.4
+}
+```
+Forward passes left: 1.
+Edits used in this pass: model.layers.17.mlp.down_proj.weight (edit hash c6abd5fb24).

@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"id-bb728f2c"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"The explicit probe batch contains all 64 reference solutions plus eight failure excerpts, totaling 8,985 tokens. The reference examples cover valid arithmetic, constraint handling, and algebraic transformations, providing useful checks against indiscriminate suppression of mathematical activity. I’m transferring the batch in small pieces solely to avoid output truncation; no additional experiment is running yet. The next two inspections will finish preparing the literal request.\n\n```python\nprint(\"Reference texts 24–47:\")\nprint(json.dumps(literal_probes[24:48], ensure_ascii=True))\n```\n"}}
+{"type":"turn.completed","usage":{"input_tokens":265157,"cached_input_tokens":241536,"cache_write_input_tokens":0,"output_tokens":15002,"reasoning_output_tokens":6148}}

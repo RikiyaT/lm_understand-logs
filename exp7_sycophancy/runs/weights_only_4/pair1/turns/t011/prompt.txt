@@ -1,0 +1,77 @@
+OUTPUT of run 10 of at most 60:
+```
+FIRST-LAYER WRITER COORDINATE CONCENTRATION
+head 0 mid top coordinates [(400, 21.8221, 0.855), (24, -4.12925, 0.0306), (23, 2.78456, 0.0139), (186, -2.69536, 0.013)] top1/top5 fractions 0.855 0.9246
+head 0 delta top coordinates [(400, 0.52325, 0.7624), (24, -0.13829, 0.0532), (255, 0.08411, 0.0197), (381, 0.07071, 0.0139)] top1/top5 fractions 0.7624 0.8619
+head 1 mid top coordinates [(400, -8.40294, 0.6714), (639, 2.2296, 0.0473), (622, -2.2265, 0.0471), (469, -1.7319, 0.0285)] top1/top5 fractions 0.6714 0.8216
+head 1 delta top coordinates [(400, -0.11053, 0.2546), (434, 0.06096, 0.0775), (128, 0.05422, 0.0613), (406, -0.05418, 0.0612)] top1/top5 fractions 0.2546 0.5142
+head 2 mid top coordinates [(400, 7.01922, 0.7454), (24, -1.6847, 0.0429), (36, 1.22657, 0.0228), (255, 1.15887, 0.0203)] top1/top5 fractions 0.7454 0.8478
+head 2 delta top coordinates [(400, 0.77398, 0.6867), (469, -0.2268, 0.059), (184, 0.13412, 0.0206), (186, -0.13241, 0.0201)] top1/top5 fractions 0.6867 0.8064
+head 3 mid top coordinates [(400, 9.73583, 0.5658), (639, 5.30093, 0.1677), (579, -2.02013, 0.0244), (270, 1.66376, 0.0165)] top1/top5 fractions 0.5658 0.7852
+head 3 delta top coordinates [(400, 0.66148, 0.6673), (381, 0.17586, 0.0472), (129, -0.13314, 0.027), (301, -0.13303, 0.027)] top1/top5 fractions 0.6673 0.7954
+
+FEATURE SUBSPACES: {'digit_identity': 9, 'number_vs_letter': 1, 'belief_vs_question': 1, 'user_vs_model': 1}
+Enrichment = fraction of matrix energy along the feature / (feature_rank/640).
+We report delta enrichment / midpoint enrichment; neither is causal importance.
+layer 0 input [('digit_identity', 2.775, 0.792), ('number_vs_letter', 10.183, 0.858), ('belief_vs_question', 3.599, 0.745), ('user_vs_model', 13.207, 0.726)] digit-output (0.665, 0.703) top4 delta-reader singular values [0.7794 0.7376 0.5881 0.5273]
+layer 1 input [('digit_identity', 3.816, 0.886), ('number_vs_letter', 7.246, 1.039), ('belief_vs_question', 2.309, 0.917), ('user_vs_model', 6.823, 0.963)] digit-output (0.506, 0.672) top4 delta-reader singular values [3.2735 2.7747 2.6722 2.5573]
+layer 2 input [('digit_identity', 3.757, 0.903), ('number_vs_letter', 4.28, 1.015), ('belief_vs_question', 1.282, 0.953), ('user_vs_model', 4.123, 0.932)] digit-output (0.839, 0.888) top4 delta-reader singular values [3.0506 2.4811 2.2173 2.0052]
+layer 3 input [('digit_identity', 5.137, 1.111), ('number_vs_letter', 2.566, 0.96), ('belief_vs_question', 1.043, 0.782), ('user_vs_model', 2.483, 0.956)] digit-output (0.836, 0.885) top4 delta-reader singular values [2.9784 2.7452 2.6901 2.5684]
+layer 4 input [('digit_identity', 1.107, 1.193), ('number_vs_letter', 1.12, 1.048), ('belief_vs_question', 0.741, 0.824), ('user_vs_model', 1.108, 0.954)] digit-output (0.76, 0.789) top4 delta-reader singular values [2.1831 1.5764 1.4469 1.3543]
+layer 5 input [('digit_identity', 1.162, 1.094), ('number_vs_letter', 1.613, 1.082), ('belief_vs_question', 0.76, 0.909), ('user_vs_model', 0.916, 1.01)] digit-output (0.699, 0.707) top4 delta-reader singular values [1.7178 1.3185 1.2969 1.1072]
+layer 6 input [('digit_identity', 1.303, 1.164), ('number_vs_letter', 1.928, 1.557), ('belief_vs_question', 0.892, 0.885), ('user_vs_model', 0.934, 0.912)] digit-output (0.748, 0.688) top4 delta-reader singular values [1.185  0.9922 0.7468 0.7285]
+layer 7 input [('digit_identity', 1.19, 1.113), ('number_vs_letter', 1.806, 1.824), ('belief_vs_question', 0.683, 0.902), ('user_vs_model', 1.288, 0.928)] digit-output (0.675, 0.69) top4 delta-reader singular values [1.164  0.9852 0.7569 0.676 ]
+layer 8 input [('digit_identity', 1.273, 1.154), ('number_vs_letter', 2.774, 2.576), ('belief_vs_question', 0.705, 0.908), ('user_vs_model', 0.816, 0.881)] digit-output (0.677, 0.652) top4 delta-reader singular values [1.2034 0.9095 0.6738 0.6295]
+layer 9 input [('digit_identity', 1.122, 1.031), ('number_vs_letter', 4.182, 3.27), ('belief_vs_question', 0.632, 0.893), ('user_vs_model', 1.011, 0.885)] digit-output (0.769, 0.624) top4 delta-reader singular values [0.7895 0.6081 0.4582 0.4362]
+layer 10 input [('digit_identity', 1.026, 0.919), ('number_vs_letter', 7.875, 4.37), ('belief_vs_question', 0.903, 0.931), ('user_vs_model', 1.47, 0.857)] digit-output (0.833, 0.605) top4 delta-reader singular values [1.182  0.9057 0.7013 0.602 ]
+layer 11 input [('digit_identity', 1.171, 1.014), ('number_vs_letter', 9.38, 5.063), ('belief_vs_question', 0.603, 0.925), ('user_vs_model', 1.07, 0.822)] digit-output (1.847, 0.962) top4 delta-reader singular values [1.4211 1.0937 0.8501 0.8125]
+layer 12 input [('digit_identity', 1.396, 1.039), ('number_vs_letter', 9.509, 4.602), ('belief_vs_question', 0.739, 0.815), ('user_vs_model', 0.763, 0.763)] digit-output (3.049, 1.376) top4 delta-reader singular values [0.9097 0.7053 0.5975 0.5287]
+layer 13 input [('digit_identity', 1.504, 1.014), ('number_vs_letter', 10.686, 4.255), ('belief_vs_question', 0.974, 0.835), ('user_vs_model', 0.699, 0.757)] digit-output (4.155, 1.289) top4 delta-reader singular values [0.991  0.6786 0.5633 0.5135]
+layer 14 input [('digit_identity', 1.381, 1.01), ('number_vs_letter', 9.762, 4.431), ('belief_vs_question', 0.919, 0.838), ('user_vs_model', 0.899, 0.779)] digit-output (6.135, 1.194) top4 delta-reader singular values [0.9227 0.6254 0.5312 0.4736]
+layer 15 input [('digit_identity', 1.188, 1.012), ('number_vs_letter', 9.62, 4.469), ('belief_vs_question', 0.753, 0.866), ('user_vs_model', 0.734, 0.825)] digit-output (10.813, 1.17) top4 delta-reader singular values [0.61   0.4321 0.3726 0.3595]
+layer 16 input [('digit_identity', 1.3, 1.04), ('number_vs_letter', 10.494, 4.779), ('belief_vs_question', 0.638, 0.826), ('user_vs_model', 0.767, 0.837)] digit-output (19.222, 1.101) top4 delta-reader singular values [0.5765 0.3918 0.368  0.348 ]
+layer 17 input [('digit_identity', 1.233, 0.989), ('number_vs_letter', 13.057, 5.252), ('belief_vs_question', 0.709, 0.874), ('user_vs_model', 0.989, 0.847)] digit-output (24.258, 0.856) top4 delta-reader singular values [0.5907 0.3988 0.3573 0.3504]
+
+JOINT GATE/UP DIFFERENCE INPUT DIRECTIONS
+Signs arbitrary. Gate and up are stacked, never multiplied or activated.
+layer 0 mode 0 singular value 0.779407
+  minus [(' is', -0.6694), (' in', -0.5025), (' and', -0.4982), (' a', -0.4925), (' are', -0.4858), (' the', -0.4742)]
+  plus  [(' llrp', 0.454), ('mataspid', 0.4397), ('wallepics', 0.4349), (' threx', 0.4346), ('jiwarl', 0.4298), (' BSData', 0.4271)]
+layer 0 mode 1 singular value 0.73762
+  minus [(' Brazil', -0.6915), (' Korea', -0.6841), (' Colombia', -0.6818), (' Argentina', -0.6779), (' Japan', -0.6706), (' Thailand', -0.664)]
+  plus  [(' in', 0.0491), (' is', 0.0137), (' and', 0.01), (' a', 0.0032), (' to', 0.0015), ('i', 0.0001)]
+layer 1 mode 0 singular value 3.273535
+  minus [('bhp', -0.2198), (' CTCF', -0.2168), ('beforeend', -0.2159), ('runtime', -0.2084), (' WUE', -0.2055), (' Appodeal', -0.204)]
+  plus  [(' is', 0.5338), (' are', 0.3853), (' was', 0.3629), (' Is', 0.3456), (' has', 0.2989), (' isn', 0.2708)]
+layer 2 mode 0 singular value 3.050622
+  minus [(' svoje', -0.1911), (' funkt', -0.1858), (' Footer', -0.1812), ('Sumber', -0.1809), ('Algo', -0.179), ('Veteran', -0.1767)]
+  plus  [(' is', 0.2633), (' are', 0.1941), (' was', 0.1837), (' Is', 0.1775), (' does', 0.1555), ('is', 0.155)]
+layer 3 mode 0 singular value 2.978374
+  minus [(' negeri', -0.1202), (' herkese', -0.1198), (' matr', -0.1153), ('Univ', -0.111), (' Marr', -0.1093), ('ilien', -0.1031)]
+  plus  [(' eight', 0.2241), ('eight', 0.2153), ('plus', 0.2048), (' minus', 0.202), (' plus', 0.2013), (' nine', 0.1984)]
+layer 8 mode 0 singular value 1.203439
+  minus [('five', -0.1862), ('six', -0.1626), ('mene', -0.1583), (' six', -0.1572), ('three', -0.1561), ('seven', -0.1559)]
+  plus  [(' conjunt', 0.1243), (' lingk', 0.1117), (' exertions', 0.1098), ('umbr', 0.1091), (' Lordships', 0.1076), ('Neighborhood', 0.1072)]
+layer 12 mode 0 singular value 0.909728
+  minus [('eight', -0.2017), (' patru', -0.1799), ('seven', -0.174), (' nueve', -0.1697), ('five', -0.1692), (' sete', -0.166)]
+  plus  [(' zindagi', 0.1739), (' Protocol', 0.1628), (' Mujhe', 0.1514), ('appreci', 0.151), (' commenters', 0.1473), (' AppDelegate', 0.1463)]
+layer 15 mode 0 singular value 0.610014
+  minus [('eight', -0.1351), (' simplesmente', -0.12), ('infty', -0.1191), ('false', -0.1186), (' patru', -0.117), ('true', -0.1165)]
+  plus  [(' Cau', 0.1981), ('SampleSize', 0.193), (' Dever', 0.1837), (' Kast', 0.1824), (' Miz', 0.1809), ('opre', 0.1804)]
+layer 16 mode 0 singular value 0.576546
+  minus [(' patru', -0.1549), ('eight', -0.1541), (' oito', -0.1394), ('five', -0.1359), (' trei', -0.1339), ('NUMX', -0.1326)]
+  plus  [(' Cau', 0.1738), (' HAI', 0.167), (' Indicator', 0.1631), (' Wai', 0.1585), ('Opera', 0.156), ('oubt', 0.1532)]
+layer 17 mode 0 singular value 0.590716
+  minus [('F', -0.1905), ('B', -0.1867), ('f', -0.1817), ('C', -0.1806), ('eight', -0.1794), ('L', -0.1776)]
+  plus  [(' HAI', 0.1747), (' DataSource', 0.171), (' OutputStream', 0.1695), ('BackgroundHelper', 0.1684), (' Rufus', 0.1683), (' Protocol', 0.1675)]
+layer 17 mode 1 singular value 0.398766
+  minus [(' frequent', -0.1527), (' central', -0.1371), (' rubbish', -0.135), (' dominant', -0.1327), (' playing', -0.1325), (' colourful', -0.1319)]
+  plus  [(' statunit', 0.1913), ('mitz', 0.1772), ('USDA', 0.1604), ('lni', 0.1596), (' Fahrenheit', 0.1544), (' estadounidenses', 0.1534)]
+
+TOP LAYERS BY INPUT FEATURE ENRICHMENT RATIO
+digit_identity [(3, 4.626, 5.137, 1.111), (1, 4.305, 3.816, 0.886), (2, 4.158, 3.757, 0.903), (0, 3.503, 2.775, 0.792), (13, 1.484, 1.504, 1.014), (14, 1.367, 1.381, 1.01)]
+number_vs_letter [(0, 11.874, 10.183, 0.858), (1, 6.972, 7.246, 1.039), (2, 4.215, 4.28, 1.015), (3, 2.673, 2.566, 0.96), (13, 2.512, 10.686, 4.255), (17, 2.486, 13.057, 5.252)]
+belief_vs_question [(0, 4.834, 3.599, 0.745), (1, 2.518, 2.309, 0.917), (2, 1.346, 1.282, 0.953), (3, 1.333, 1.043, 0.782), (13, 1.166, 0.974, 0.835), (14, 1.097, 0.919, 0.838)]
+user_vs_model [(0, 18.193, 13.207, 0.726), (1, 7.082, 6.823, 0.963), (2, 4.424, 4.123, 0.932), (3, 2.597, 2.483, 0.956), (10, 1.715, 1.47, 0.857), (7, 1.387, 1.288, 0.928)]
+
+```

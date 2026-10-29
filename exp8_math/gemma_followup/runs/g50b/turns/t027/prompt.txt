@@ -1,0 +1,6 @@
+OUTPUT of Python run 16 of at most 300:
+```
+Probe lengths: [127, 131]
+'Attention diagnostic documented; no new candidate selected.'
+
+```

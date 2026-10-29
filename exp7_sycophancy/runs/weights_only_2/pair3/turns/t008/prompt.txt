@@ -1,0 +1,88 @@
+OUTPUT of run 7 of at most 60:
+```
+SIGNED IDENTITY-TRANSFER SURROGATE
+Positive changes favour B ONLY on the stated surrogate, not on sycophancy.
+
+DIAGONAL GAINS: False
+Identity-alignment increases/decreases: 41 31
+Trace increases/decreases: 44 28
+Identity-alignment change min/median/max: -4.817863031453262e-05 3.779110247702222e-06 4.64027614144602e-05
+Delta-to-identity cosine min/median/max: -0.0043792547594079 0.000539663735333923 0.005458212348220905
+
+12 LARGEST ABSOLUTE IDENTITY-ALIGNMENT CHANGES
+L07 H3 id_A=+0.2094361 id_B=+0.2093879 B-A=-0.0000482 delta_identity_cos=-0.003361 symmetric_energy=49.927%
+L03 H0 id_A=-0.1532443 id_B=-0.1531979 B-A=+0.0000464 delta_identity_cos=+0.003616 symmetric_energy=50.004%
+L06 H2 id_A=+0.1936480 id_B=+0.1936088 B-A=-0.0000392 delta_identity_cos=-0.001743 symmetric_energy=49.727%
+L02 H0 id_A=+0.1302545 id_B=+0.1302896 B-A=+0.0000351 delta_identity_cos=+0.003776 symmetric_energy=49.924%
+L03 H3 id_A=-0.0554210 id_B=-0.0553862 B-A=+0.0000348 delta_identity_cos=+0.002013 symmetric_energy=50.349%
+L01 H2 id_A=+0.0892839 id_B=+0.0893180 B-A=+0.0000341 delta_identity_cos=+0.005458 symmetric_energy=50.126%
+L00 H2 id_A=-0.0032355 id_B=-0.0032015 B-A=+0.0000340 delta_identity_cos=+0.003094 symmetric_energy=50.316%
+L13 H3 id_A=-0.0139556 id_B=-0.0139226 B-A=+0.0000330 delta_identity_cos=+0.003115 symmetric_energy=50.085%
+L12 H1 id_A=+0.0133712 id_B=+0.0134041 B-A=+0.0000329 delta_identity_cos=+0.003074 symmetric_energy=50.132%
+L12 H2 id_A=+0.1351167 id_B=+0.1351482 B-A=+0.0000315 delta_identity_cos=+0.003764 symmetric_energy=50.120%
+L06 H3 id_A=+0.1111452 id_B=+0.1111141 B-A=-0.0000310 delta_identity_cos=-0.000844 symmetric_energy=49.776%
+L15 H2 id_A=+0.2869200 id_B=+0.2869509 B-A=+0.0000309 delta_identity_cos=+0.000939 symmetric_energy=49.841%
+
+DIAGONAL GAINS: True
+Identity-alignment increases/decreases: 35 37
+Trace increases/decreases: 42 30
+Identity-alignment change min/median/max: -9.845974925105916e-05 -2.0977955117115754e-07 0.00011015734168125235
+Delta-to-identity cosine min/median/max: -0.0014974713905967995 5.799255430542127e-05 0.001206909737125362
+
+12 LARGEST ABSOLUTE IDENTITY-ALIGNMENT CHANGES
+L08 H0 id_A=-0.1114353 id_B=-0.1113252 B-A=+0.0001102 delta_identity_cos=-0.000975 symmetric_energy=50.014%
+L08 H1 id_A=+0.0914635 id_B=+0.0913650 B-A=-0.0000985 delta_identity_cos=-0.000265 symmetric_energy=50.037%
+L06 H0 id_A=+0.0631592 id_B=+0.0630747 B-A=-0.0000845 delta_identity_cos=-0.001089 symmetric_energy=49.984%
+L07 H2 id_A=+0.0800603 id_B=+0.0799822 B-A=-0.0000781 delta_identity_cos=-0.000938 symmetric_energy=50.016%
+L08 H2 id_A=+0.1346761 id_B=+0.1346140 B-A=-0.0000621 delta_identity_cos=-0.000474 symmetric_energy=50.080%
+L07 H1 id_A=-0.1493370 id_B=-0.1493962 B-A=-0.0000591 delta_identity_cos=-0.001434 symmetric_energy=50.000%
+L03 H0 id_A=-0.0253359 id_B=-0.0253858 B-A=-0.0000499 delta_identity_cos=+0.000505 symmetric_energy=49.999%
+L07 H0 id_A=+0.1211759 id_B=+0.1211349 B-A=-0.0000411 delta_identity_cos=-0.001132 symmetric_energy=50.018%
+L00 H1 id_A=-0.0446278 id_B=-0.0446686 B-A=-0.0000408 delta_identity_cos=-0.001283 symmetric_energy=49.952%
+L07 H3 id_A=+0.0726930 id_B=+0.0726530 B-A=-0.0000400 delta_identity_cos=-0.001242 symmetric_energy=49.990%
+L03 H1 id_A=+0.0138333 id_B=+0.0138716 B-A=+0.0000384 delta_identity_cos=+0.000008 symmetric_energy=50.002%
+L09 H2 id_A=+0.1523926 id_B=+0.1523556 B-A=-0.0000370 delta_identity_cos=+0.000434 symmetric_energy=50.012%
+
+PER-LAYER SIGN COUNTS FOR IDENTITY-ALIGNMENT CHANGE
+Counts are B>A among four heads; no head attention weights are assumed.
+L00 raw_B>A=3/4 gain_B>A=1/4
+L01 raw_B>A=3/4 gain_B>A=1/4
+L02 raw_B>A=3/4 gain_B>A=3/4
+L03 raw_B>A=3/4 gain_B>A=2/4
+L04 raw_B>A=3/4 gain_B>A=3/4
+L05 raw_B>A=2/4 gain_B>A=2/4
+L06 raw_B>A=0/4 gain_B>A=2/4
+L07 raw_B>A=0/4 gain_B>A=0/4
+L08 raw_B>A=1/4 gain_B>A=1/4
+L09 raw_B>A=0/4 gain_B>A=1/4
+L10 raw_B>A=4/4 gain_B>A=3/4
+L11 raw_B>A=2/4 gain_B>A=1/4
+L12 raw_B>A=4/4 gain_B>A=3/4
+L13 raw_B>A=4/4 gain_B>A=2/4
+L14 raw_B>A=3/4 gain_B>A=4/4
+L15 raw_B>A=4/4 gain_B>A=1/4
+L16 raw_B>A=0/4 gain_B>A=2/4
+L17 raw_B>A=2/4 gain_B>A=3/4
+
+SYMMETRIC OV-DIFFERENCE SPECTRA FOR SELECTED HEADS
+gains=False L03 H3 lambda_min=-0.01824718 lambda_max=+0.02483329 positive_energy=52.130% positive/negative_eigenvalues=321/319
+gains=False L10 H3 lambda_min=-0.02926031 lambda_max=+0.03008093 positive_energy=50.497% positive/negative_eigenvalues=320/320
+gains=False L12 H0 lambda_min=-0.03826637 lambda_max=+0.04501689 positive_energy=52.166% positive/negative_eigenvalues=318/322
+gains=False L12 H2 lambda_min=-0.040514 lambda_max=+0.04661766 positive_energy=52.696% positive/negative_eigenvalues=320/320
+gains=False L12 H3 lambda_min=-0.04584273 lambda_max=+0.04868811 positive_energy=50.852% positive/negative_eigenvalues=320/320
+gains=False L15 H1 lambda_min=-0.05781813 lambda_max=+0.06065543 positive_energy=51.191% positive/negative_eigenvalues=321/319
+gains=False L17 H1 lambda_min=-0.02031953 lambda_max=+0.02039671 positive_energy=51.584% positive/negative_eigenvalues=321/319
+gains=False L17 H3 lambda_min=-0.02020934 lambda_max=+0.02058269 positive_energy=51.226% positive/negative_eigenvalues=322/318
+gains=True  L03 H3 lambda_min=-17.85619 lambda_max=+17.81442 positive_energy=50.115% positive/negative_eigenvalues=321/319
+gains=True  L10 H3 lambda_min=-58.38618 lambda_max=+58.25862 positive_energy=49.619% positive/negative_eigenvalues=319/321
+gains=True  L12 H0 lambda_min=-181.1305 lambda_max=+183.167 positive_energy=50.130% positive/negative_eigenvalues=319/321
+gains=True  L12 H2 lambda_min=-208.5604 lambda_max=+208.4077 positive_energy=50.077% positive/negative_eigenvalues=321/319
+gains=True  L12 H3 lambda_min=-182.2401 lambda_max=+181.75 positive_energy=50.087% positive/negative_eigenvalues=320/320
+gains=True  L15 H1 lambda_min=-282.1226 lambda_max=+283.3125 positive_energy=49.955% positive/negative_eigenvalues=321/319
+gains=True  L17 H1 lambda_min=-82.98216 lambda_max=+84.73637 positive_energy=50.301% positive/negative_eigenvalues=320/320
+gains=True  L17 H3 lambda_min=-77.58032 lambda_max=+77.54288 positive_energy=50.232% positive/negative_eigenvalues=320/320
+
+No embedding covariance, token readout, attention probabilities,
+or task-dependent activation distribution entered these calculations.
+
+```

@@ -1,0 +1,7 @@
+OUTPUT of Python run 56 of at most 300:
+```
+FULL alpha4,16k {'original': {'n': 128, 'correct': 14, 'cut': 114, 'whitespace_cut': 0, 'median_correct_tokens': 3947.5, 'correct_with_think_close': 14}, 'edited': {'n': 128, 'correct': 48, 'cut': 67, 'whitespace_cut': 10, 'median_correct_tokens': 5419.0, 'correct_with_think_close': 48}}
+L 15 relative_change 0.10635695606470108 changed_columns 64 finite True
+L 19 relative_change 0.0810583084821701 changed_columns 64 finite True
+
+```

@@ -1,0 +1,37 @@
+OUTPUT of Python run 1 of at most 300:
+```
+Model files: ['generation_config.json', 'model.safetensors', 'tokenizer_config.json', 'tokenizer.json', 'chat_template.jinja', 'config.json']
+Practice files: ['gsm8k_train.jsonl', 'math_train.jsonl', 'stats.json', 'README.txt', 'aime.jsonl']
+Tensor count: 320
+Representative tensors:
+model.language_model.layers.0.input_layernorm.weight (1024,)
+model.language_model.layers.0.linear_attn.A_log (16,)
+model.language_model.layers.0.linear_attn.conv1d.weight (6144, 1, 4)
+model.language_model.layers.0.linear_attn.dt_bias (16,)
+model.language_model.layers.0.linear_attn.in_proj_a.weight (16, 1024)
+model.language_model.layers.0.linear_attn.in_proj_b.weight (16, 1024)
+model.language_model.layers.0.linear_attn.in_proj_qkv.weight (6144, 1024)
+model.language_model.layers.0.linear_attn.in_proj_z.weight (2048, 1024)
+model.language_model.layers.0.linear_attn.norm.weight (128,)
+model.language_model.layers.0.linear_attn.out_proj.weight (1024, 2048)
+model.language_model.layers.0.mlp.down_proj.weight (1024, 3584)
+model.language_model.layers.0.mlp.gate_proj.weight (3584, 1024)
+model.language_model.layers.0.mlp.up_proj.weight (3584, 1024)
+model.language_model.layers.0.post_attention_layernorm.weight (1024,)
+model.language_model.layers.3.input_layernorm.weight (1024,)
+model.language_model.layers.3.mlp.down_proj.weight (1024, 3584)
+model.language_model.layers.3.mlp.gate_proj.weight (3584, 1024)
+model.language_model.layers.3.mlp.up_proj.weight (3584, 1024)
+model.language_model.layers.3.post_attention_layernorm.weight (1024,)
+model.language_model.layers.3.self_attn.k_norm.weight (256,)
+model.language_model.layers.3.self_attn.k_proj.weight (512, 1024)
+model.language_model.layers.3.self_attn.o_proj.weight (1024, 2048)
+model.language_model.layers.3.self_attn.q_norm.weight (256,)
+model.language_model.layers.3.self_attn.q_proj.weight (4096, 1024)
+model.language_model.layers.3.self_attn.v_proj.weight (512, 1024)
+gsm8k_train.jsonl 7469 fields: ['id', 'source', 'problem', 'answer', 'solution'] first ids: ['gsm8k_train_0', 'gsm8k_train_1', 'gsm8k_train_2']
+math_train.jsonl 7275 fields: ['id', 'source', 'subject', 'level', 'problem', 'answer', 'solution'] first ids: ['math_train_algebra_0', 'math_train_algebra_1', 'math_train_algebra_2']
+aime.jsonl 714 fields: ['id', 'source', 'problem', 'answer', 'year'] first ids: ['aime_1983-1', 'aime_1983-3', 'aime_1983-4']
+Existing edits: []
+
+```

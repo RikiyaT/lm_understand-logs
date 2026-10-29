@@ -1,0 +1,45 @@
+{
+ "activations": {
+  "dir": "/work/gen_1_acts/",
+  "files": {
+   "hidden_last_prompt.npy": [
+    2048,
+    18,
+    640
+   ],
+   "hidden_mean_answer.npy": [
+    2048,
+    18,
+    640
+   ],
+   "mlp_last_prompt.npy": [
+    2048,
+    17,
+    2048
+   ],
+   "mlp_mean_answer.npy": [
+    2048,
+    17,
+    2048
+   ]
+  }
+ },
+ "ok": true,
+ "type": "generate",
+ "model": "original",
+ "file": "/work/gen_1.jsonl",
+ "generations": 2048,
+ "graded": 2048,
+ "accuracy": 0.16748046875,
+ "accuracy_by_source": {
+  "math": 0.1675
+ },
+ "mean_tokens": 1283,
+ "cut_share": 0.0762,
+ "failures": {
+  "wrong_answer": 763,
+  "no_answer_finished": 790,
+  "cut_at_max_tokens": 152
+ },
+ "s": 298.9
+}

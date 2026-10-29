@@ -1,0 +1,171 @@
+OUTPUT of run 11 of at most 60:
+```
+Prepared maps for A
+Prepared maps for B
+
+=== TWO-HEAD CONTENT-MATCHING PATHWAY TEST ===
+score = tr(QK_later OV_earlier)/(||QK_later||F ||OV_earlier||F).
+This is a normalized algebraic coupling, NOT a probability or evaluated attention score.
+RoPE rotations, attention mixing, intervening transformations, and state-dependent
+normalization denominators are not supplied.
+A positive trace alone does not establish a copying circuit.
+Number of earlier/later head pairs: 2448
+
+MODE: raw
+Mean score A/B: 0.004872272068652521 0.004872667798613544
+Median score A/B: 0.002982589483553013 0.0029724091365429255
+B-A mean/median: 3.957299610235001e-07 7.257234269421884e-07
+B-A positive/negative/zero counts: 1254 1194 0
+Pairs share weights; these counts are NOT independent trials.
+
+Mean B-A by receiving layer:
+  L 1: mean=+0.0000004, median=-0.0000072
+  L 2: mean=-0.0000064, median=-0.0000077
+  L 3: mean=-0.0000030, median=-0.0000015
+  L 4: mean=+0.0000035, median=+0.0000082
+  L 5: mean=-0.0000009, median=-0.0000032
+  L 6: mean=-0.0000038, median=-0.0000035
+  L 7: mean=+0.0000026, median=+0.0000041
+  L 8: mean=+0.0000054, median=+0.0000053
+  L 9: mean=+0.0000023, median=+0.0000027
+  L10: mean=-0.0000011, median=+0.0000013
+  L11: mean=+0.0000053, median=+0.0000046
+  L12: mean=-0.0000018, median=-0.0000035
+  L13: mean=-0.0000008, median=+0.0000009
+  L14: mean=+0.0000059, median=+0.0000060
+  L15: mean=-0.0000051, median=-0.0000039
+  L16: mean=-0.0000009, median=-0.0000016
+  L17: mean=+0.0000004, median=-0.0000013
+
+Top eight pathways selected by midpoint matching score:
+  L10H1 -> L11H2: A=+0.253341, B=+0.253417, B-A=+0.0000764
+  L10H1 -> L11H3: A=+0.201275, B=+0.201333, B-A=+0.0000573
+  L7H0 -> L8H1: A=+0.196390, B=+0.196421, B-A=+0.0000306
+  L4H1 -> L5H1: A=+0.188451, B=+0.188455, B-A=+0.0000034
+  L4H1 -> L5H2: A=+0.156267, B=+0.156336, B-A=+0.0000688
+  L4H1 -> L5H3: A=+0.143083, B=+0.143235, B-A=+0.0001523
+  L7H0 -> L8H0: A=+0.128561, B=+0.128595, B-A=+0.0000335
+  L3H2 -> L13H3: A=+0.111085, B=+0.111120, B-A=+0.0000355
+
+ largest increases in B
+  L4H1 -> L5H3: A=+0.143083, B=+0.143235, B-A=+0.0001523
+  L1H3 -> L15H1: A=+0.004092, B=+0.004191, B-A=+0.0000992
+  L4H0 -> L5H1: A=+0.031689, B=+0.031786, B-A=+0.0000970
+  L3H3 -> L10H3: A=+0.004197, B=+0.004286, B-A=+0.0000891
+  L2H3 -> L13H2: A=-0.000638, B=-0.000555, B-A=+0.0000831
+
+ largest decreases in B
+  L11H1 -> L13H1: A=+0.002296, B=+0.002159, B-A=-0.0001365
+  L10H2 -> L15H1: A=+0.033374, B=+0.033269, B-A=-0.0001056
+  L7H1 -> L15H3: A=-0.067001, B=-0.067105, B-A=-0.0001037
+  L4H0 -> L17H2: A=+0.001805, B=+0.001711, B-A=-0.0000933
+  L3H3 -> L5H0: A=-0.001698, B=-0.001786, B-A=-0.0000884
+
+MODE: diag
+Mean score A/B: 0.0024115514077762924 0.002410651228631369
+Median score A/B: 0.0007656119343623197 0.0007591223051356866
+B-A mean/median: -9.00179144923945e-07 -5.726821485717943e-07
+B-A positive/negative/zero counts: 1163 1285 0
+Pairs share weights; these counts are NOT independent trials.
+
+Mean B-A by receiving layer:
+  L 1: mean=-0.0000000, median=-0.0000006
+  L 2: mean=-0.0000015, median=-0.0000012
+  L 3: mean=+0.0000003, median=-0.0000003
+  L 4: mean=+0.0000002, median=+0.0000007
+  L 5: mean=+0.0000001, median=-0.0000002
+  L 6: mean=+0.0000038, median=+0.0000029
+  L 7: mean=-0.0000056, median=-0.0000035
+  L 8: mean=-0.0000017, median=-0.0000018
+  L 9: mean=-0.0000041, median=-0.0000028
+  L10: mean=-0.0000061, median=-0.0000044
+  L11: mean=+0.0000039, median=+0.0000011
+  L12: mean=-0.0000034, median=-0.0000031
+  L13: mean=-0.0000021, median=-0.0000019
+  L14: mean=+0.0000029, median=+0.0000029
+  L15: mean=+0.0000001, median=-0.0000002
+  L16: mean=-0.0000008, median=-0.0000013
+  L17: mean=-0.0000007, median=+0.0000006
+
+Top eight pathways selected by midpoint matching score:
+  L10H1 -> L11H2: A=+0.315224, B=+0.315434, B-A=+0.0002097
+  L10H1 -> L11H3: A=+0.265635, B=+0.265803, B-A=+0.0001678
+  L10H3 -> L11H3: A=+0.126480, B=+0.126619, B-A=+0.0001385
+  L10H3 -> L11H2: A=+0.121486, B=+0.121482, B-A=-0.0000036
+  L8H2 -> L9H3: A=+0.095182, B=+0.095084, B-A=-0.0000981
+  L8H2 -> L9H1: A=+0.078910, B=+0.078850, B-A=-0.0000598
+  L7H0 -> L8H1: A=+0.075599, B=+0.075577, B-A=-0.0000220
+  L9H2 -> L10H2: A=+0.067423, B=+0.067373, B-A=-0.0000504
+
+ largest increases in B
+  L10H1 -> L11H2: A=+0.315224, B=+0.315434, B-A=+0.0002097
+  L10H2 -> L11H1: A=+0.000235, B=+0.000405, B-A=+0.0001697
+  L10H1 -> L11H3: A=+0.265635, B=+0.265803, B-A=+0.0001678
+  L10H3 -> L11H3: A=+0.126480, B=+0.126619, B-A=+0.0001385
+  L7H1 -> L10H1: A=+0.004861, B=+0.004972, B-A=+0.0001113
+
+ largest decreases in B
+  L10H3 -> L11H0: A=+0.019700, B=+0.019539, B-A=-0.0001615
+  L8H2 -> L9H2: A=+0.041913, B=+0.041756, B-A=-0.0001570
+  L8H2 -> L10H1: A=+0.000453, B=+0.000329, B-A=-0.0001247
+  L7H0 -> L10H1: A=-0.003341, B=-0.003444, B-A=-0.0001028
+  L8H2 -> L9H3: A=+0.095182, B=+0.095084, B-A=-0.0000981
+
+=== ROBUSTNESS ACROSS RAW AND LEARNED-DIAGONAL METRICS ===
+Pearson correlation of signed changes: 0.24322888402377582
+Fraction with the same nonzero sign: 0.5747549019607843
+
+=== SYMMETRIC SPECTRA OF SELECTED COMPOSED WEIGHT MAPS ===
+P = QK_later OV_earlier, using individually Frobenius-normalized factors.
+The symmetric part determines the algebraic self-matching quadratic form.
+Its spectrum is calculated directly; that form is never evaluated on an input.
+positive_energy = sum positive eigenvalues squared / sum all eigenvalues squared.
+trace_balance = sum eigenvalues / sum absolute eigenvalues.
+This selection is exploratory, not an independent significance test.
+
+L4H1 -> L5H3
+  raw  A: min_eigenvalue=-0.00752644, positive_energy=0.746339, trace_balance=+0.378109, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00753112, positive_energy=0.746727, trace_balance=+0.378453, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.00121987, positive_energy=0.788082, trace_balance=+0.329198, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00121427, positive_energy=0.788323, trace_balance=+0.329513, nonnegative_symmetric_part=False
+
+L7H0 -> L8H1
+  raw  A: min_eigenvalue=-0.00384285, positive_energy=0.865498, trace_balance=+0.401270, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00384584, positive_energy=0.865515, trace_balance=+0.401316, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.000964306, positive_energy=0.948737, trace_balance=+0.574920, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00096164, positive_energy=0.948818, trace_balance=+0.575114, nonnegative_symmetric_part=False
+
+L10H2 -> L11H1
+  raw  A: min_eigenvalue=-0.0053265, positive_energy=0.537583, trace_balance=+0.034127, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00532985, positive_energy=0.537803, trace_balance=+0.034494, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.00220311, positive_energy=0.495849, trace_balance=+0.003521, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00220061, positive_energy=0.498810, trace_balance=+0.006064, nonnegative_symmetric_part=False
+
+L10H1 -> L11H2
+  raw  A: min_eigenvalue=-0.00515021, positive_energy=0.936424, trace_balance=+0.579751, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00513794, positive_energy=0.936497, trace_balance=+0.579829, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.000726241, positive_energy=0.998956, trace_balance=+0.913324, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00072624, positive_energy=0.998959, trace_balance=+0.913389, nonnegative_symmetric_part=False
+
+L10H1 -> L11H3
+  raw  A: min_eigenvalue=-0.00558041, positive_energy=0.889354, trace_balance=+0.498685, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00557201, positive_energy=0.889447, trace_balance=+0.498749, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.000839233, positive_energy=0.998282, trace_balance=+0.890432, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00084127, positive_energy=0.998285, trace_balance=+0.890527, nonnegative_symmetric_part=False
+
+L10H3 -> L11H3
+  raw  A: min_eigenvalue=-0.00489904, positive_energy=0.685113, trace_balance=+0.165091, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00490332, positive_energy=0.685294, trace_balance=+0.165306, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.0017221, positive_energy=0.984427, trace_balance=+0.704421, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00172936, positive_energy=0.984453, trace_balance=+0.704771, nonnegative_symmetric_part=False
+
+L11H1 -> L13H1
+  raw  A: min_eigenvalue=-0.00707364, positive_energy=0.509618, trace_balance=+0.005087, nonnegative_symmetric_part=False
+  raw  B: min_eigenvalue=-0.00709163, positive_energy=0.509316, trace_balance=+0.004784, nonnegative_symmetric_part=False
+  diag A: min_eigenvalue=-0.00156708, positive_energy=0.521198, trace_balance=+0.024720, nonnegative_symmetric_part=False
+  diag B: min_eigenvalue=-0.00156704, positive_energy=0.521793, trace_balance=+0.024358, nonnegative_symmetric_part=False
+
+A directional result would support only the stated structural matching hypothesis.
+It would still require an independent justification to label matching as sycophancy.
+
+```

@@ -1,0 +1,30 @@
+OUTPUT of Python run 17 of at most 300:
+```
+# Math weight-edit experiment
+Baseline pass 1: 256 original generations (96 GSM8K,160 MATH), full 32768-token limit.
+Accuracy 24/256=9.375%; 232 cutoffs (91.41%). Correct GSM=12/96, MATH=12/160.
+Failures enter exact repetitive thinking; 213/232 failed tails contain 'Wait,'.
+Repeated 12-token fractions first2048/middle/tail: failures .070/.506/.975, correct .039/.098/.177.
+Pass 2 (files fwd_3 after one uncounted attention-instrumentation error): two teacher-forced arithmetic/trigonometric probes, matched identical sentences at first vs repeated occurrences.
+Most consistent within-content repetition-associated MLP neurons:
+23:22 (+3.26),40 (-4.19),46 (+1.80),94 (+2.18),19 (+1.97);
+19:11 (-1.57);18:8 (-1.51);22:59 (+1.13).
+These signs agree across five distinct repetitive phrases and with failed-vs-correct generation averages.
+Caveat: teacher-forced chat template inserted empty thinking before supplied think; use raw templated text for follow-up.
+No edits tested yet. Eight forward passes remain. Need causal dose tests and independent paired validation.
+
+Current edits: ['model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight']
+model.language_model.layers.18.mlp.down_proj.weight changed columns: [8]
+column scale ratios: [(8, 0.0)]
+model.language_model.layers.19.mlp.down_proj.weight changed columns: [11]
+column scale ratios: [(11, 0.0)]
+model.language_model.layers.23.mlp.down_proj.weight changed columns: [22, 40]
+column scale ratios: [(22, 0.0), (40, 0.0)]
+Pass gen_4: 128 original accuracy 0.1015625 edited accuracy 0.0859375 paired difference -0.015625 SE 0.02713423316130324 rescued 5 lost 7
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 24, in <module>
+  File "<run>", line 24, in <listcomp>
+NameError: name 'repeated_fraction' is not defined
+
+```

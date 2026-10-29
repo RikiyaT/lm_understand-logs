@@ -1,0 +1,149 @@
+OUTPUT of run 20 of at most 60:
+```
+=== RAW-WEIGHT CROSS-PROJECTION DIRECTION CAPTURE ===
+Each pair: fraction of target difference energy captured by the source's top16
+directions / fraction of the target's own optimal top16 capture.
+layer gate->up up->gate q->k k->q q->v joint_MLP_top16 joint_attention_top16
+ 0 45.500%/0.972 46.465%/0.973 46.425%/0.666 40.887%/0.675 32.763%/0.451 46.945% 60.072%
+ 1 42.119%/0.971 42.174%/0.968 29.018%/0.439 30.315%/0.493 36.242%/0.545 43.144% 55.990%
+ 2 43.437%/0.962 42.857%/0.960 38.683%/0.534 36.532%/0.563 28.330%/0.455 44.456% 58.949%
+ 3 41.643%/0.942 41.977%/0.951 36.824%/0.541 35.896%/0.571 32.239%/0.512 43.589% 56.073%
+ 4 41.598%/0.957 42.459%/0.961 35.601%/0.518 32.749%/0.521 32.899%/0.564 43.359% 53.844%
+ 5 38.824%/0.936 38.368%/0.942 29.604%/0.409 30.184%/0.452 32.763%/0.514 40.434% 56.576%
+ 6 40.918%/0.949 41.462%/0.954 35.374%/0.547 33.570%/0.546 30.967%/0.572 42.761% 50.798%
+ 7 44.525%/0.969 45.565%/0.970 39.797%/0.630 39.612%/0.656 39.083%/0.685 46.107% 53.060%
+ 8 44.717%/0.969 45.162%/0.968 41.894%/0.625 41.298%/0.633 35.376%/0.679 46.034% 54.514%
+ 9 45.297%/0.972 45.462%/0.970 35.023%/0.521 42.102%/0.622 35.928%/0.647 46.404% 55.412%
+10 46.152%/0.965 46.907%/0.969 35.928%/0.515 39.702%/0.591 29.241%/0.541 47.702% 53.793%
+11 42.903%/0.960 42.787%/0.962 30.608%/0.446 37.593%/0.568 29.933%/0.559 44.146% 53.906%
+12 48.664%/0.976 49.715%/0.979 17.218%/0.232 18.485%/0.255 14.253%/0.264 50.041% 54.563%
+13 51.418%/0.983 51.915%/0.983 40.943%/0.644 41.317%/0.660 33.982%/0.627 52.344% 52.022%
+14 47.939%/0.978 48.123%/0.978 39.234%/0.619 38.860%/0.643 28.928%/0.543 48.844% 50.373%
+15 41.900%/0.970 42.157%/0.971 48.402%/0.796 47.557%/0.811 31.776%/0.613 42.959% 50.774%
+16 38.416%/0.967 38.592%/0.967 37.553%/0.663 37.498%/0.703 29.531%/0.542 39.483% 46.877%
+17 36.549%/0.961 36.424%/0.963 37.842%/0.589 33.871%/0.575 19.940%/0.399 37.571% 48.279%
+
+=== FOCUSED BASELINE AND GAIN CHECKS ===
+Capture in midpoint weights is a geometry control, not a statistical null.
+L01 raw
+  gate->up  : delta_capture=42.119% target_best=43.376% fraction_of_best=0.9710 midpoint_capture=2.512% delta/midpoint_enrichment=16.768
+  up  ->gate: delta_capture=42.174% target_best=43.564% fraction_of_best=0.9681 midpoint_capture=2.549% delta/midpoint_enrichment=16.543
+  q   ->k   : delta_capture=29.018% target_best=66.172% fraction_of_best=0.4385 midpoint_capture=3.404% delta/midpoint_enrichment=8.524
+  k   ->q   : delta_capture=30.315% target_best=61.514% fraction_of_best=0.4928 midpoint_capture=3.620% delta/midpoint_enrichment=8.375
+  gate->q   : delta_capture=37.015% target_best=61.514% fraction_of_best=0.6017 midpoint_capture=3.261% delta/midpoint_enrichment=11.352
+  joint top4/top16: {'mlp': (0.17765, 0.43144), 'attention': (0.24931, 0.5599), 'all': (0.1977, 0.46831)}
+L01 gain_scaled
+  gate->up  : delta_capture=42.197% target_best=43.517% fraction_of_best=0.9697 midpoint_capture=2.946% delta/midpoint_enrichment=14.321
+  up  ->gate: delta_capture=42.530% target_best=43.924% fraction_of_best=0.9683 midpoint_capture=2.931% delta/midpoint_enrichment=14.511
+  q   ->k   : delta_capture=30.188% target_best=69.909% fraction_of_best=0.4318 midpoint_capture=3.506% delta/midpoint_enrichment=8.611
+  k   ->q   : delta_capture=31.298% target_best=64.933% fraction_of_best=0.4820 midpoint_capture=3.144% delta/midpoint_enrichment=9.954
+  gate->q   : delta_capture=37.078% target_best=64.933% fraction_of_best=0.5710 midpoint_capture=2.924% delta/midpoint_enrichment=12.682
+  joint top4/top16: {'mlp': (0.17447, 0.43386), 'attention': (0.2501, 0.57451), 'all': (0.19866, 0.47794)}
+L04 raw
+  gate->up  : delta_capture=41.598% target_best=43.468% fraction_of_best=0.9570 midpoint_capture=2.623% delta/midpoint_enrichment=15.862
+  up  ->gate: delta_capture=42.459% target_best=44.167% fraction_of_best=0.9613 midpoint_capture=2.741% delta/midpoint_enrichment=15.490
+  q   ->k   : delta_capture=35.601% target_best=68.753% fraction_of_best=0.5178 midpoint_capture=3.049% delta/midpoint_enrichment=11.674
+  k   ->q   : delta_capture=32.749% target_best=62.919% fraction_of_best=0.5205 midpoint_capture=2.403% delta/midpoint_enrichment=13.629
+  gate->q   : delta_capture=29.836% target_best=62.919% fraction_of_best=0.4742 midpoint_capture=3.056% delta/midpoint_enrichment=9.763
+  joint top4/top16: {'mlp': (0.2183, 0.43359), 'attention': (0.25569, 0.53844), 'all': (0.20145, 0.43989)}
+L04 gain_scaled
+  gate->up  : delta_capture=49.527% target_best=51.055% fraction_of_best=0.9701 midpoint_capture=9.541% delta/midpoint_enrichment=5.191
+  up  ->gate: delta_capture=49.533% target_best=51.009% fraction_of_best=0.9711 midpoint_capture=9.757% delta/midpoint_enrichment=5.076
+  q   ->k   : delta_capture=41.825% target_best=83.419% fraction_of_best=0.5014 midpoint_capture=11.644% delta/midpoint_enrichment=3.592
+  k   ->q   : delta_capture=38.104% target_best=68.969% fraction_of_best=0.5525 midpoint_capture=10.062% delta/midpoint_enrichment=3.787
+  gate->q   : delta_capture=14.789% target_best=68.969% fraction_of_best=0.2144 midpoint_capture=5.961% delta/midpoint_enrichment=2.481
+  joint top4/top16: {'mlp': (0.25927, 0.50651), 'attention': (0.29046, 0.62064), 'all': (0.19986, 0.47217)}
+L10 raw
+  gate->up  : delta_capture=46.152% target_best=47.804% fraction_of_best=0.9654 midpoint_capture=2.488% delta/midpoint_enrichment=18.549
+  up  ->gate: delta_capture=46.907% target_best=48.389% fraction_of_best=0.9694 midpoint_capture=2.646% delta/midpoint_enrichment=17.730
+  q   ->k   : delta_capture=35.928% target_best=69.711% fraction_of_best=0.5154 midpoint_capture=2.487% delta/midpoint_enrichment=14.445
+  k   ->q   : delta_capture=39.702% target_best=67.234% fraction_of_best=0.5905 midpoint_capture=2.634% delta/midpoint_enrichment=15.072
+  gate->q   : delta_capture=36.442% target_best=67.234% fraction_of_best=0.5420 midpoint_capture=2.905% delta/midpoint_enrichment=12.546
+  joint top4/top16: {'mlp': (0.26307, 0.47702), 'attention': (0.30412, 0.53793), 'all': (0.25105, 0.45477)}
+L10 gain_scaled
+  gate->up  : delta_capture=63.074% target_best=64.385% fraction_of_best=0.9796 midpoint_capture=32.775% delta/midpoint_enrichment=1.924
+  up  ->gate: delta_capture=64.468% target_best=65.588% fraction_of_best=0.9829 midpoint_capture=30.230% delta/midpoint_enrichment=2.133
+  q   ->k   : delta_capture=48.483% target_best=84.348% fraction_of_best=0.5748 midpoint_capture=16.889% delta/midpoint_enrichment=2.871
+  k   ->q   : delta_capture=47.599% target_best=75.714% fraction_of_best=0.6287 midpoint_capture=13.830% delta/midpoint_enrichment=3.442
+  gate->q   : delta_capture=50.920% target_best=75.714% fraction_of_best=0.6725 midpoint_capture=18.372% delta/midpoint_enrichment=2.772
+  joint top4/top16: {'mlp': (0.358, 0.64681), 'attention': (0.37, 0.65913), 'all': (0.33317, 0.60403)}
+L11 raw
+  gate->up  : delta_capture=42.903% target_best=44.711% fraction_of_best=0.9596 midpoint_capture=2.522% delta/midpoint_enrichment=17.009
+  up  ->gate: delta_capture=42.787% target_best=44.486% fraction_of_best=0.9618 midpoint_capture=2.577% delta/midpoint_enrichment=16.606
+  q   ->k   : delta_capture=30.608% target_best=68.634% fraction_of_best=0.4460 midpoint_capture=1.772% delta/midpoint_enrichment=17.273
+  k   ->q   : delta_capture=37.593% target_best=66.149% fraction_of_best=0.5683 midpoint_capture=2.928% delta/midpoint_enrichment=12.838
+  gate->q   : delta_capture=36.633% target_best=66.149% fraction_of_best=0.5538 midpoint_capture=2.964% delta/midpoint_enrichment=12.358
+  joint top4/top16: {'mlp': (0.23678, 0.44146), 'attention': (0.28724, 0.53906), 'all': (0.23863, 0.45293)}
+L11 gain_scaled
+  gate->up  : delta_capture=62.607% target_best=63.927% fraction_of_best=0.9794 midpoint_capture=34.063% delta/midpoint_enrichment=1.838
+  up  ->gate: delta_capture=63.019% target_best=64.273% fraction_of_best=0.9805 midpoint_capture=33.713% delta/midpoint_enrichment=1.869
+  q   ->k   : delta_capture=57.209% target_best=89.628% fraction_of_best=0.6383 midpoint_capture=25.281% delta/midpoint_enrichment=2.263
+  k   ->q   : delta_capture=57.246% target_best=82.676% fraction_of_best=0.6924 midpoint_capture=31.332% delta/midpoint_enrichment=1.827
+  gate->q   : delta_capture=67.021% target_best=82.676% fraction_of_best=0.8106 midpoint_capture=32.963% delta/midpoint_enrichment=2.033
+  joint top4/top16: {'mlp': (0.32691, 0.63773), 'attention': (0.39482, 0.74604), 'all': (0.3454, 0.68101)}
+L12 raw
+  gate->up  : delta_capture=48.664% target_best=49.860% fraction_of_best=0.9760 midpoint_capture=2.323% delta/midpoint_enrichment=20.947
+  up  ->gate: delta_capture=49.715% target_best=50.764% fraction_of_best=0.9793 midpoint_capture=2.311% delta/midpoint_enrichment=21.516
+  q   ->k   : delta_capture=17.218% target_best=74.144% fraction_of_best=0.2322 midpoint_capture=1.696% delta/midpoint_enrichment=10.154
+  k   ->q   : delta_capture=18.485% target_best=72.524% fraction_of_best=0.2549 midpoint_capture=2.359% delta/midpoint_enrichment=7.837
+  gate->q   : delta_capture=40.616% target_best=72.524% fraction_of_best=0.5600 midpoint_capture=2.682% delta/midpoint_enrichment=15.143
+  joint top4/top16: {'mlp': (0.24356, 0.50041), 'attention': (0.28435, 0.54563), 'all': (0.22668, 0.44448)}
+L12 gain_scaled
+  gate->up  : delta_capture=63.193% target_best=64.293% fraction_of_best=0.9829 midpoint_capture=31.954% delta/midpoint_enrichment=1.978
+  up  ->gate: delta_capture=64.397% target_best=65.404% fraction_of_best=0.9846 midpoint_capture=31.255% delta/midpoint_enrichment=2.060
+  q   ->k   : delta_capture=46.052% target_best=86.293% fraction_of_best=0.5337 midpoint_capture=24.572% delta/midpoint_enrichment=1.874
+  k   ->q   : delta_capture=47.608% target_best=87.258% fraction_of_best=0.5456 midpoint_capture=29.297% delta/midpoint_enrichment=1.625
+  gate->q   : delta_capture=64.879% target_best=87.258% fraction_of_best=0.7435 midpoint_capture=27.531% delta/midpoint_enrichment=2.357
+  joint top4/top16: {'mlp': (0.34316, 0.64589), 'attention': (0.35271, 0.74438), 'all': (0.31398, 0.66199)}
+L14 raw
+  gate->up  : delta_capture=47.939% target_best=49.030% fraction_of_best=0.9778 midpoint_capture=2.432% delta/midpoint_enrichment=19.714
+  up  ->gate: delta_capture=48.123% target_best=49.205% fraction_of_best=0.9780 midpoint_capture=2.386% delta/midpoint_enrichment=20.167
+  q   ->k   : delta_capture=39.234% target_best=63.414% fraction_of_best=0.6187 midpoint_capture=1.787% delta/midpoint_enrichment=21.954
+  k   ->q   : delta_capture=38.860% target_best=60.470% fraction_of_best=0.6426 midpoint_capture=2.391% delta/midpoint_enrichment=16.253
+  gate->q   : delta_capture=40.772% target_best=60.470% fraction_of_best=0.6743 midpoint_capture=2.048% delta/midpoint_enrichment=19.913
+  joint top4/top16: {'mlp': (0.24753, 0.48844), 'attention': (0.25281, 0.50373), 'all': (0.22654, 0.46243)}
+L14 gain_scaled
+  gate->up  : delta_capture=66.702% target_best=67.542% fraction_of_best=0.9876 midpoint_capture=34.944% delta/midpoint_enrichment=1.909
+  up  ->gate: delta_capture=66.439% target_best=67.226% fraction_of_best=0.9883 midpoint_capture=34.364% delta/midpoint_enrichment=1.933
+  q   ->k   : delta_capture=61.727% target_best=81.987% fraction_of_best=0.7529 midpoint_capture=28.511% delta/midpoint_enrichment=2.165
+  k   ->q   : delta_capture=55.290% target_best=74.036% fraction_of_best=0.7468 midpoint_capture=25.821% delta/midpoint_enrichment=2.141
+  gate->q   : delta_capture=58.491% target_best=74.036% fraction_of_best=0.7900 midpoint_capture=29.017% delta/midpoint_enrichment=2.016
+  joint top4/top16: {'mlp': (0.35464, 0.67178), 'attention': (0.38403, 0.68252), 'all': (0.35099, 0.64915)}
+L17 raw
+  gate->up  : delta_capture=36.549% target_best=38.043% fraction_of_best=0.9607 midpoint_capture=2.613% delta/midpoint_enrichment=13.989
+  up  ->gate: delta_capture=36.424% target_best=37.835% fraction_of_best=0.9627 midpoint_capture=2.844% delta/midpoint_enrichment=12.809
+  q   ->k   : delta_capture=37.842% target_best=64.301% fraction_of_best=0.5885 midpoint_capture=2.036% delta/midpoint_enrichment=18.587
+  k   ->q   : delta_capture=33.871% target_best=58.857% fraction_of_best=0.5755 midpoint_capture=3.116% delta/midpoint_enrichment=10.869
+  gate->q   : delta_capture=34.970% target_best=58.857% fraction_of_best=0.5942 midpoint_capture=2.757% delta/midpoint_enrichment=12.683
+  joint top4/top16: {'mlp': (0.19473, 0.37571), 'attention': (0.27601, 0.48279), 'all': (0.22155, 0.40341)}
+L17 gain_scaled
+  gate->up  : delta_capture=62.159% target_best=63.134% fraction_of_best=0.9846 midpoint_capture=34.563% delta/midpoint_enrichment=1.798
+  up  ->gate: delta_capture=61.936% target_best=62.820% fraction_of_best=0.9859 midpoint_capture=35.502% delta/midpoint_enrichment=1.745
+  q   ->k   : delta_capture=62.240% target_best=79.817% fraction_of_best=0.7798 midpoint_capture=43.530% delta/midpoint_enrichment=1.430
+  k   ->q   : delta_capture=67.679% target_best=85.562% fraction_of_best=0.7910 midpoint_capture=38.307% delta/midpoint_enrichment=1.767
+  gate->q   : delta_capture=60.776% target_best=85.562% fraction_of_best=0.7103 midpoint_capture=35.838% delta/midpoint_enrichment=1.696
+  joint top4/top16: {'mlp': (0.31405, 0.62748), 'attention': (0.38932, 0.73719), 'all': (0.33028, 0.65923)}
+
+=== UNITS MOST REPRESENTED IN JOINT TOP4 MLP UPDATE-READING DIRECTIONS ===
+These rank changes in reading coefficients, not output influence or behavioural importance.
+L01 raw         units=[497, 1000, 832, 1818, 487, 706] shares=[0.0036 0.0034 0.0026 0.0025 0.0024 0.0022]
+L01 gain_scaled units=[497, 1000, 487, 844, 832, 1818] shares=[0.0039 0.0036 0.0028 0.0027 0.0026 0.0024]
+L04 raw         units=[270, 753, 754, 1185, 1397, 605] shares=[0.0024 0.0022 0.0021 0.0021 0.0021 0.0021]
+L04 gain_scaled units=[754, 753, 1558, 1189, 927, 998] shares=[0.0025 0.0024 0.0021 0.002  0.0019 0.0019]
+L10 raw         units=[404, 167, 279, 885, 984, 1923] shares=[0.0042 0.0035 0.0025 0.0025 0.0025 0.0023]
+L10 gain_scaled units=[404, 167, 298, 253, 984, 805] shares=[0.0044 0.0031 0.0025 0.0024 0.0024 0.0024]
+L11 raw         units=[1631, 389, 1758, 163, 93, 48] shares=[0.0039 0.0032 0.0032 0.0026 0.0024 0.0024]
+L11 gain_scaled units=[1631, 389, 1758, 48, 411, 646] shares=[0.0038 0.0033 0.003  0.0022 0.0021 0.0021]
+L12 raw         units=[1525, 1143, 1036, 802, 266, 1] shares=[0.003  0.0025 0.0025 0.002  0.002  0.0019]
+L12 gain_scaled units=[802, 201, 1822, 1422, 1525, 1143] shares=[0.0025 0.0022 0.0021 0.002  0.002  0.0019]
+L14 raw         units=[1236, 1387, 1798, 783, 315, 1095] shares=[0.0026 0.0026 0.0025 0.0023 0.0022 0.0021]
+L14 gain_scaled units=[1387, 1236, 1798, 889, 66, 8] shares=[0.0029 0.0025 0.0024 0.0022 0.0021 0.0021]
+L17 raw         units=[548, 719, 1136, 1864, 1351, 2024] shares=[0.0024 0.002  0.002  0.0019 0.0018 0.0018]
+L17 gain_scaled units=[1180, 719, 564, 1073, 551, 1464] shares=[0.0024 0.0023 0.0022 0.0021 0.0019 0.0019]
+
+Elapsed: 13.3s
+All subspaces were extracted from weight-difference Gram matrices.
+No input, hidden state
+[output cut at 15,000 characters]
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

@@ -1,0 +1,28 @@
+OUTPUT of Python run 46 of at most 300:
+```
+LATER RESULTS
+inal diagnostic dose64x4; prior alpha3 generation requests all failed and did not count.
+Alpha3 dose64x4 failed startup again after successful alpha2 validation128x2. Switching exploratory layout to128x2=256/model: original96 diagnostic +32 previously used GSM validation1. Set balanced64G64M and excludes validation2. No successful alpha3 generation yet. BEST CONFIRMED remains alpha2 in best_confirmed_a2 (+34.77pp SE3.53 heldout gen27).
+Pass20/gen29 alpha3 dose128x2 SUCCEEDED: original21/256->edited123/256, +39.84pp SE3.82pp,102rescues0losses; GSM7.81->53.91%,MATH8.59->42.19%; cut92.97->35.55%; wrong finished0->36,noanswer0->6, mean30864->18914. Candidate alpha3 not independently confirmed. Use128x2 layout;64x4 repeatedly fails startup. BEST INDEPENDENTLY CONFIRMED remains alpha2 (gen27 +34.77pp SE3.53), backup best_confirmed_a2.
+Alpha4 generation startup failed, no counted pass. Current alpha4 unchanged. Prepared NOT APPLIED random-direction control in random_control_match_a4.pt: seed492698, each unit direction orthogonal to both repetition directions; coefficient chosen to match alpha4 edit Frobenius norm per layer. Waiting90s for possible engine cleanup before retry.
+Alpha4 generation failed again after90s wait; waiting is not a proven workaround. No alpha4 accuracy evidence. Saved candidate_L15_L19_a4. Next alpha4 transfer TF, then random-direction specificity control. BEST CONFIRMED alpha2 remains backed up.
+
+CLOSURE CONTROLS
+12 "<|im_start|>user\nA bag has 3 red and 2 blue balls. Two balls are drawn without replacement. What is the probability both are red?\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nThere are 5 balls. The probability the first is red is 3/5. </think>"
+13 "<|im_start|>user\nFind the remainder when 7^20 is divided by 5.\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nSince 7 has remainder 2 modulo 5, we can instead compute 2^20 modulo 5. </think>"
+
+HELPERS
+[]
+
+META
+{
+ "texts": [
+  "<|im_start|>user\nFind the area of a right triangle with legs 6 and 8.\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nThe two perpendicular legs are 6 and 8. The hypotenuse is sqrt(36+64)=10. The area uses the perpendicular legs, not the hypotenuse. Thus A=6*8/2=24. Checking with a rectangle of sides 6 and 8, its area is 48 and the diagonal divides it into two equal triangles.",
+  "<|im_start|>user\nFind the area of a right triangle with legs 6 and 8.\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nThe two perpendicular legs are 6 and 8. The hypotenuse is sqrt(36+64)=10. But is the hypotenuse 10? Yes, sqrt(36+64)=10. But is the hypotenuse 10? Yes, sqrt(36+64)=10. But is the hypotenuse 10? Yes, sqrt(36+64)=10. But is the hypotenuse 10? Yes, sqrt(36+64)=10.",
+  "<|im_start|>user\nA bag has 3 red and 2 blue balls. Two balls are drawn without replacement. What is the probability both are red?\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nThere are 5 balls. The probability the first is red is 3/5. After a red ball is removed, 2 red balls remain out of 4. The probability is (3/5)*(2/4)=3/10. Equivalently, there are 3 red pairs among 10 possible pairs, giving the same result.",
+  "<|im_start|>user\nA bag has 3 red and 2 blue balls. Two balls are drawn without replacement. What is the probability both are red?\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nThere are 5 balls. The probability t
+
+SPLIT SIZES
+{'diagnostic_ids': 96, 'validation_1': 128, 'dose_response_64': 64, 'validation_2': 128, 'dose_response_128': 128}
+
+```

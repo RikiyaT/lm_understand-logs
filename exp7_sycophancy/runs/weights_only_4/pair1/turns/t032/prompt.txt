@@ -1,0 +1,100 @@
+OUTPUT of run 27 of at most 60:
+```
+OPPOSING-HEAD HYPOTHESIS
+All heads in a layer share V. We compare their output operators in:
+(1) shared value coordinates, (2) all residual-input coordinates,
+(3) numeric/word-contrast input coordinates.
+Negative operator cosine indicates potential opposition, not actual cancellation.
+completed layer 0
+completed layer 1
+completed layer 2
+completed layer 3
+completed layer 4
+completed layer 5
+completed layer 6
+completed layer 7
+completed layer 8
+completed layer 9
+completed layer 10
+completed layer 11
+completed layer 12
+completed layer 13
+completed layer 14
+completed layer 15
+completed layer 16
+completed layer 17
+
+STRONGEST NUMERIC-OUTPUT OPPOSITION ACROSS ALL INPUT DIRECTIONS
+L11 H2/H3 full_OV_cos A/B=-0.9749/-0.9747 value_writer_cos=-0.9903 restricted_OV_cos=-0.9711 query_cos=0.3975 numeric_QK_cos0/16=0.8790/0.8763 log_gain_ratio_D=0.000110616
+L07 H0/H1 full_OV_cos A/B=-0.8348/-0.8351 value_writer_cos=-0.7471 restricted_OV_cos=-0.9563 query_cos=0.4935 numeric_QK_cos0/16=0.8023/0.8328 log_gain_ratio_D=-0.000199415
+L15 H1/H2 full_OV_cos A/B=-0.6574/-0.6581 value_writer_cos=-0.8991 restricted_OV_cos=-0.9097 query_cos=0.3130 numeric_QK_cos0/16=0.8983/0.8626 log_gain_ratio_D=-0.00101091
+L15 H1/H3 full_OV_cos A/B=-0.6534/-0.6570 value_writer_cos=-0.8836 restricted_OV_cos=-0.9035 query_cos=0.3800 numeric_QK_cos0/16=0.8872/0.8698 log_gain_ratio_D=0.00369854
+L06 H0/H1 full_OV_cos A/B=-0.6424/-0.6420 value_writer_cos=-0.5953 restricted_OV_cos=-0.8014 query_cos=0.4612 numeric_QK_cos0/16=0.0151/0.1250 log_gain_ratio_D=0.000544704
+L07 H1/H2 full_OV_cos A/B=-0.6054/-0.6057 value_writer_cos=-0.5211 restricted_OV_cos=-0.9259 query_cos=0.2936 numeric_QK_cos0/16=0.6547/0.6425 log_gain_ratio_D=0.000344272
+L09 H1/H3 full_OV_cos A/B=-0.5848/-0.5859 value_writer_cos=-0.5931 restricted_OV_cos=-0.8062 query_cos=0.5710 numeric_QK_cos0/16=0.8743/0.8693 log_gain_ratio_D=0.000732599
+L09 H1/H2 full_OV_cos A/B=-0.5215/-0.5214 value_writer_cos=-0.4781 restricted_OV_cos=-0.8956 query_cos=0.4499 numeric_QK_cos0/16=0.6545/0.7396 log_gain_ratio_D=4.55668e-05
+L07 H1/H3 full_OV_cos A/B=-0.5093/-0.5094 value_writer_cos=-0.4228 restricted_OV_cos=-0.8866 query_cos=0.1664 numeric_QK_cos0/16=0.0242/0.1679 log_gain_ratio_D=0.000374079
+L06 H1/H3 full_OV_cos A/B=-0.4781/-0.4785 value_writer_cos=-0.4610 restricted_OV_cos=-0.5618 query_cos=0.4679 numeric_QK_cos0/16=0.4195/0.4154 log_gain_ratio_D=0.00011566
+L17 H2/H3 full_OV_cos A/B=-0.4503/-0.4563 value_writer_cos=-0.3814 restricted_OV_cos=-0.5188 query_cos=0.3244 numeric_QK_cos0/16=0.8812/0.8844 log_gain_ratio_D=-0.00605636
+L15 H0/H1 full_OV_cos A/B=-0.4307/-0.4295 value_writer_cos=-0.4650 restricted_OV_cos=-0.7785 query_cos=0.1578 numeric_QK_cos0/16=0.0143/0.0400 log_gain_ratio_D=-0.00236723
+L17 H0/H2 full_OV_cos A/B=-0.4080/-0.4094 value_writer_cos=-0.5073 restricted_OV_cos=-0.4292 query_cos=0.5490 numeric_QK_cos0/16=0.8914/0.8898 log_gain_ratio_D=0.00146247
+L10 H2/H3 full_OV_cos A/B=-0.3939/-0.3929 value_writer_cos=-0.3218 restricted_OV_cos=-0.4433 query_cos=0.4923 numeric_QK_cos0/16=0.7686/0.8321 log_gain_ratio_D=-0.00265493
+
+LAYER 15 HEADS 1 AND 2: PRESELECTED OPPONENT CANDIDATE
+
+family digits
+A value-space writer cosine -0.8991128748268526 full-input OV cosine -0.6573863102732117 restricted-input OV cosine -0.9096962853886617 head1/head2 writer gain 1.2416391133353835 query matrix cosine 0.31300809848634487 QK cosine at 0/16 0.8982513283392837 0.8625804160607207
+B value-space writer cosine -0.8990507389927563 full-input OV cosine -0.6580657724622966 restricted-input OV cosine -0.9105497219992347 head1/head2 writer gain 1.2403845585903346 query matrix cosine 0.3130857987044919 QK cosine at 0/16 0.8983084612566972 0.8597086846843283
+B-A log relative writer gain: -0.0010109128821611598
+Difference-operator alignment: -0.13679983039802718
+||D_head1 + D_head2|| / (||D_head1|| + ||D_head2||): 0.657094051299485
+A head1 approximately alpha*head2: alpha -0.8162365554064499 relative residual 0.7535537399982649
+A restricted head1 symmetric eigenvalues [-17983.3026 -13263.5574 -10745.8736  -9575.7011  -9064.5313  -8439.8948  -7797.2225  -5662.1938  -4369.6804]
+A restricted head2 symmetric eigenvalues [ 2961.4956  3477.9847  3636.8584  4776.607   5504.9198  5575.5495  7373.3136  9297.752  11891.6659]
+B head1 approximately alpha*head2: alpha -0.8162546226990532 relative residual 0.7529604498999939
+B restricted head1 symmetric eigenvalues [-18084.2473 -13347.8152 -10625.0268  -9608.118   -9114.7426  -8397.5781  -7863.8415  -5698.987   -4378.9768]
+B restricted head2 symmetric eigenvalues [ 2965.3518  3459.3548  3641.5564  4737.3442  5509.9684  5548.4631  7360.0789  9275.7281 11928.0336]
+
+family number_words
+A value-space writer cosine -0.8693573280048922 full-input OV cosine -0.5920296587638059 restricted-input OV cosine -0.8761231586102668 head1/head2 writer gain 1.4248750386186926 query matrix cosine 0.31300809848634487 QK cosine at 0/16 0.8884621793896212 0.8742050371368068
+B value-space writer cosine -0.8693426344725823 full-input OV cosine -0.5938146732525034 restricted-input OV cosine -0.8789516590356748 head1/head2 writer gain 1.4262638164166892 query matrix cosine 0.3130857987044919 QK cosine at 0/16 0.8869988924603567 0.871547218424788
+B-A log relative writer gain: 0.0009741917026445834
+Difference-operator alignment: -0.19326947766639935
+||D_head1 + D_head2|| / (||D_head1|| + ||D_head2||): 0.6354651717942493
+A head1 approximately alpha*head2: alpha -0.8435682828944892 relative residual 0.8059161762516074
+A restricted head1 symmetric eigenvalues [-16265.9439 -12245.8031 -10456.9711  -7867.2966  -6760.486   -5848.5165  -5377.5259  -4129.6366  -3073.5743]
+A restricted head2 symmetric eigenvalues [1225.9785 1755.569  2543.3689 3598.9062 4071.5326 4695.7104 5529.3358 6914.919  8559.8163]
+B head1 approximately alpha*head2: alpha -0.8469363821173448 relative residual 0.8046018480155401
+B restricted head1 symmetric eigenvalues [-16212.3258 -12340.0344 -10431.4512  -7851.661   -6793.7105  -5861.4796  -5361.0889  -4136.3406  -3067.9827]
+B restricted head2 symmetric eigenvalues [1271.7855 1777.5043 2546.7342 3570.6336 4069.4287 4686.388  5554.5622 6873.185  8595.3556]
+
+family ordinary_words
+A value-space writer cosine -0.6723995696915911 full-input OV cosine -0.3042833473728071 restricted-input OV cosine -0.5403467711887922 head1/head2 writer gain 2.0629110664703765 query matrix cosine 0.31300809848634487 QK cosine at 0/16 0.8574251334181582 0.8065992101657676
+B value-space writer cosine -0.6725755945793508 full-input OV cosine -0.30686294324725416 restricted-input OV cosine -0.5428176513472037 head1/head2 writer gain 2.0626721940901307 query matrix cosine 0.3130857987044919 QK cosine at 0/16 0.8556946498712383 0.8054826869635312
+B-A log relative writer gain: -0.00011580053797308197
+Difference-operator alignment: 0.08822916796777554
+||D_head1 + D_head2|| / (||D_head1|| + ||D_head2||): 0.7414588153002962
+A head1 approximately alpha*head2: alpha -0.6277094846380135 relative residual 0.9525815684294966
+A restricted head1 symmetric eigenvalues [-17887.547  -16876.246  -12900.6169 -11811.688   -9955.0393  -8013.4646  -6946.2181  -6428.2999  -4635.6801]
+A restricted head2 symmetric eigenvalues [-1356.2578  -979.7376   241.6702  1151.5188  1639.9591  2226.0714  2916.9784  4177.3605  4947.8216]
+B head1 approximately alpha*head2: alpha -0.632957660432769 relative residual 0.9517537150238146
+B restricted head1 symmetric eigenvalues [-17881.9754 -16883.6626 -12910.9032 -11783.6572  -9976.7773  -8024.3528  -6924.2711  -6403.3678  -4624.0547]
+B restricted head2 symmetric eigenvalues [-1371.3579  -973.1922   252.3001  1169.6583  1646.9695  2234.8345  2932.0953  4178.65    4957.1528]
+
+NUMERIC VERSUS ORDINARY-WORD OPPOSITION
+L11 H2/H3 [('digits', -0.9748, 0.000111), ('number_words', -0.9751, -0.001587), ('ordinary_words', -0.9803, 0.00046)]
+L07 H0/H1 [('digits', -0.8349, -0.000199), ('number_words', -0.8224, 0.000205), ('ordinary_words', -0.8448, 0.000755)]
+L15 H1/H2 [('digits', -0.6577, -0.001011), ('number_words', -0.5929, 0.000974), ('ordinary_words', -0.3056, -0.000116)]
+L15 H1/H3 [('digits', -0.6552, 0.003699), ('number_words', -0.6973, 0.000965), ('ordinary_words', -0.7306, 0.000107)]
+L06 H0/H1 [('digits', -0.6422, 0.000545), ('number_words', -0.5853, -0.00039), ('ordinary_words', -0.5813, 0.000735)]
+L07 H1/H2 [('digits', -0.6056, 0.000344), ('number_words', -0.5998, 0.000224), ('ordinary_words', -0.6129, -0.000867)]
+L09 H1/H3 [('digits', -0.5853, 0.000733), ('number_words', -0.6413, 0.00152), ('ordinary_words', -0.5975, -0.000654)]
+L09 H1/H2 [('digits', -0.5215, 4.6e-05), ('number_words', -0.5521, 0.000978), ('ordinary_words', -0.6389, 0.000494)]
+L07 H1/H3 [('digits', -0.5093, 0.000374), ('number_words', -0.4987, 0.001022), ('ordinary_words', -0.4828, -0.000901)]
+L06 H1/H3 [('digits', -0.4783, 0.000116), ('number_words', -0.4507, 0.000478), ('ordinary_words', -0.4136, 0.000269)]
+
+Even exactly opposite writers would not cancel unless their retrieved
+value summaries matched. Those summaries and attention distributions
+have not been evaluated.
+
+```

@@ -1,0 +1,95 @@
+OUTPUT of run 15 of at most 60:
+```
+=== CROSS-HEAD OV-DIFFERENCE ACCOUNTING ===
+Common fraction: energy in the normalized sum across head coefficient matrices.
+Contrast fraction: remaining head-index coefficient energy.
+Neither quantity assumes that actual attention patterns are equal.
+layer delta_common delta_contrast reference_common coherence relative_common_change leading_mode_share leading_head_coefficients
+ 0 46.787% 53.213% 35.272% 1.87149 0.011806 48.345% [0.6205 0.3169 0.4814 0.5318]
+ 1 59.244% 40.756% 40.426% 2.36977 0.012008 59.833% [0.4198 0.5608 0.4715 0.5358]
+ 2 48.715% 51.285% 17.381% 1.94861 0.022131 50.394% [0.5936 0.575  0.4714 0.308 ]
+ 3 40.184% 59.816% 22.289% 1.60738 0.024479 40.583% [0.6192 0.3851 0.4107 0.5473]
+ 4 70.243% 29.757% 21.280% 2.80970 0.036672 71.257% [0.4033 0.4679 0.5352 0.5761]
+ 5 59.783% 40.217% 41.574% 2.39131 0.012402 60.263% [0.5626 0.4175 0.5101 0.4991]
+ 6 53.923% 46.077% 9.517% 2.15691 0.035716 56.873% [0.5697 0.2223 0.5287 0.5887]
+ 7 48.522% 51.478% 10.203% 1.94089 0.025763 50.857% [0.3825 0.7304 0.3289 0.4605]
+ 8 51.147% 48.853% 16.916% 2.04590 0.024893 55.133% [0.7878 0.4476 0.3136 0.2839]
+ 9 52.139% 47.861% 8.050% 2.08554 0.032236 52.166% [0.4879 0.5274 0.4948 0.4888]
+10 52.724% 47.276% 26.362% 2.10895 0.014241 53.273% [0.5808 0.4269 0.4657 0.5134]
+11 30.306% 69.694% 2.958% 1.21223 0.031500 52.255% [ 0.0807  0.106   0.8381 -0.5291]
+12 57.558% 42.442% 42.010% 2.30231 0.013365 60.983% [0.3457 0.6988 0.4581 0.427 ]
+13 44.472% 55.528% 18.550% 1.77889 0.015617 50.958% [0.4124 0.2122 0.2508 0.8497]
+14 38.136% 61.864% 16.820% 1.52543 0.013627 38.643% [0.3801 0.446  0.5593 0.5863]
+15 41.949% 58.051% 8.886% 1.67796 0.034442 51.888% [ 0.4036 -0.2614  0.619   0.6209]
+16 61.588% 38.412% 18.079% 2.46352 0.025604 61.782% [0.4853 0.5252 0.5314 0.4541]
+17 40.047% 59.953% 9.584% 1.60186 0.018733 41.631% [0.5359 0.6369 0.4722 0.2901]
+
+=== MOST OPPOSING PAIRS OF OV COEFFICIENT CHANGES ===
+Matching-coefficient cosines are NOT similarities of observed attention patterns.
+L11 H2/H3 delta_OV_cos=-0.38584 reference_OV_cos=-0.97762 QK_cos_offsets_0_16=(+0.80456,+0.80387) query_norm_Gram_cos=+0.64581
+L15 H1/H3 delta_OV_cos=-0.11431 reference_OV_cos=-0.54529 QK_cos_offsets_0_16=(+0.67394,+0.66788) query_norm_Gram_cos=+0.69067
+L15 H1/H2 delta_OV_cos=-0.09141 reference_OV_cos=-0.40716 QK_cos_offsets_0_16=(+0.63421,+0.57059) query_norm_Gram_cos=+0.70130
+L03 H0/H1 delta_OV_cos=-0.07542 reference_OV_cos=-0.15478 QK_cos_offsets_0_16=(+0.27949,+0.26648) query_norm_Gram_cos=+0.22482
+L15 H0/H1 delta_OV_cos=-0.06563 reference_OV_cos=-0.45959 QK_cos_offsets_0_16=(+0.01827,+0.08959) query_norm_Gram_cos=+0.67948
+L13 H1/H3 delta_OV_cos=+0.09323 reference_OV_cos=-0.21163 QK_cos_offsets_0_16=(+0.11817,+0.11892) query_norm_Gram_cos=+0.45715
+L08 H0/H3 delta_OV_cos=+0.11314 reference_OV_cos=-0.28809 QK_cos_offsets_0_16=(-0.17983,-0.04209) query_norm_Gram_cos=+0.41892
+L11 H1/H3 delta_OV_cos=+0.11319 reference_OV_cos=-0.12127 QK_cos_offsets_0_16=(+0.16531,+0.18306) query_norm_Gram_cos=+0.56738
+L17 H0/H2 delta_OV_cos=+0.12689 reference_OV_cos=-0.72379 QK_cos_offsets_0_16=(+0.74981,+0.75667) query_norm_Gram_cos=+0.61565
+L17 H2/H3 delta_OV_cos=+0.12742 reference_OV_cos=-0.06604 QK_cos_offsets_0_16=(+0.62669,+0.63067) query_norm_Gram_cos=+0.56937
+L07 H1/H2 delta_OV_cos=+0.13174 reference_OV_cos=-0.42767 QK_cos_offsets_0_16=(+0.34801,+0.36752) query_norm_Gram_cos=+0.22985
+L06 H1/H3 delta_OV_cos=+0.13958 reference_OV_cos=-0.54242 QK_cos_offsets_0_16=(+0.38003,+0.41003) query_norm_Gram_cos=+0.43174
+L14 H1/H3 delta_OV_cos=+0.14201 reference_OV_cos=-0.14722 QK_cos_offsets_0_16=(+0.21904,+0.27899) query_norm_Gram_cos=+0.41762
+L14 H0/H3 delta_OV_cos=+0.14375 reference_OV_cos=-0.16181 QK_cos_offsets_0_16=(+0.26406,+0.26161) query_norm_Gram_cos=+0.38669
+L14 H2/H3 delta_OV_cos=+0.15310 reference_OV_cos=-0.06675 QK_cos_offsets_0_16=(+0.29402,+0.31751) query_norm_Gram_cos=+0.40066
+L03 H0/H2 delta_OV_cos=+0.16082 reference_OV_cos=-0.06850 QK_cos_offsets_0_16=(-0.17491,-0.16563) query_norm_Gram_cos=+0.28953
+
+=== MOST REINFORCING PAIRS OF OV COEFFICIENT CHANGES ===
+L15 H2/H3 delta_OV_cos=+0.74372 reference_OV_cos=+0.14324 QK_cos_offsets_0_16=(+0.47441,+0.43920)
+L04 H1/H2 delta_OV_cos=+0.70445 reference_OV_cos=+0.03616 QK_cos_offsets_0_16=(+0.15863,+0.12890)
+L04 H2/H3 delta_OV_cos=+0.68834 reference_OV_cos=+0.00256 QK_cos_offsets_0_16=(+0.11008,+0.16071)
+L05 H1/H2 delta_OV_cos=+0.67594 reference_OV_cos=+0.35696 QK_cos_offsets_0_16=(+0.70492,+0.70600)
+L06 H0/H2 delta_OV_cos=+0.65423 reference_OV_cos=+0.36795 QK_cos_offsets_0_16=(+0.12513,+0.15612)
+L15 H0/H3 delta_OV_cos=+0.64619 reference_OV_cos=+0.24024 QK_cos_offsets_0_16=(-0.00159,+0.07467)
+L08 H1/H2 delta_OV_cos=+0.64502 reference_OV_cos=+0.17785 QK_cos_offsets_0_16=(-0.21177,+0.02129)
+L01 H1/H3 delta_OV_cos=+0.63530 reference_OV_cos=+0.54075 QK_cos_offsets_0_16=(+0.17969,+0.17538)
+L08 H2/H3 delta_OV_cos=+0.63089 reference_OV_cos=-0.11063 QK_cos_offsets_0_16=(+0.45287,+0.43425)
+L09 H2/H3 delta_OV_cos=+0.63076 reference_OV_cos=+0.29018 QK_cos_offsets_0_16=(+0.37092,+0.36067)
+
+=== PAIR DETAILS FOR PREVIOUS ATTENTION CANDIDATES ===
+LAYER 04
+  H0/H1 delta_OV_cos=+0.61106 reference_OV_cos=+0.01603 QK0_cos=+0.04054 QK16_cos=+0.03273 query_Gram_cos=+0.36157
+  H0/H2 delta_OV_cos=+0.62695 reference_OV_cos=-0.32984 QK0_cos=+0.10318 QK16_cos=+0.13035 query_Gram_cos=+0.39850
+  H0/H3 delta_OV_cos=+0.48647 reference_OV_cos=-0.10107 QK0_cos=+0.11657 QK16_cos=+0.12284 query_Gram_cos=+0.08188
+  H1/H2 delta_OV_cos=+0.70445 reference_OV_cos=+0.03616 QK0_cos=+0.15863 QK16_cos=+0.12890 query_Gram_cos=+0.33801
+  H1/H3 delta_OV_cos=+0.54537 reference_OV_cos=+0.03900 QK0_cos=+0.03456 QK16_cos=+0.01840 query_Gram_cos=+0.09311
+  H2/H3 delta_OV_cos=+0.68834 reference_OV_cos=+0.00256 QK0_cos=+0.11008 QK16_cos=+0.16071 query_Gram_cos=+0.26126
+LAYER 11
+  H0/H1 delta_OV_cos=+0.37960 reference_OV_cos=-0.19477 QK0_cos=+0.14384 QK16_cos=+0.16108 query_Gram_cos=+0.50477
+  H0/H2 delta_OV_cos=+0.25931 reference_OV_cos=+0.22409 QK0_cos=+0.14173 QK16_cos=+0.14360 query_Gram_cos=+0.47720
+  H0/H3 delta_OV_cos=+0.24408 reference_OV_cos=-0.19155 QK0_cos=+0.19733 QK16_cos=+0.20177 query_Gram_cos=+0.48455
+  H1/H2 delta_OV_cos=+0.25672 reference_OV_cos=+0.08323 QK0_cos=+0.11643 QK16_cos=+0.14140 query_Gram_cos=+0.53066
+  H1/H3 delta_OV_cos=+0.11319 reference_OV_cos=-0.12127 QK0_cos=+0.16531 QK16_cos=+0.18306 query_Gram_cos=+0.56738
+  H2/H3 delta_OV_cos=-0.38584 reference_OV_cos=-0.97762 QK0_cos=+0.80456 QK16_cos=+0.80387 query_Gram_cos=+0.64581
+LAYER 12
+  H0/H1 delta_OV_cos=+0.48034 reference_OV_cos=+0.13819 QK0_cos=+0.38840 QK16_cos=+0.39844 query_Gram_cos=+0.48477
+  H0/H2 delta_OV_cos=+0.20470 reference_OV_cos=-0.10543 QK0_cos=+0.19208 QK16_cos=+0.19946 query_Gram_cos=+0.43810
+  H0/H3 delta_OV_cos=+0.54820 reference_OV_cos=-0.07746 QK0_cos=+0.42338 QK16_cos=+0.42473 query_Gram_cos=+0.48598
+  H1/H2 delta_OV_cos=+0.48888 reference_OV_cos=+0.44833 QK0_cos=+0.35948 QK16_cos=+0.36815 query_Gram_cos=+0.47918
+  H1/H3 delta_OV_cos=+0.59349 reference_OV_cos=+0.38952 QK0_cos=+0.50482 QK16_cos=+0.51822 query_Gram_cos=+0.52537
+  H2/H3 delta_OV_cos=+0.32887 reference_OV_cos=+0.39963 QK0_cos=+0.24305 QK16_cos=+0.25305 query_Gram_cos=+0.46916
+
+=== LAYERS WITH STRONGEST COMMON-COEFFICIENT CANCELLATION ===
+L11 coherence=1.21223 common_fraction=30.306% reference_common_fraction=2.958%
+L14 coherence=1.52543 common_fraction=38.136% reference_common_fraction=16.820%
+L17 coherence=1.60186 common_fraction=40.047% reference_common_fraction=9.584%
+L03 coherence=1.60738 common_fraction=40.184% reference_common_fraction=22.289%
+L15 coherence=1.67796 common_fraction=41.949% reference_common_fraction=8.886%
+L13 coherence=1.77889 common_fraction=44.472% reference_common_fraction=18.550%
+
+Elapsed: 4.0s
+Only stored-weight products, architectural rotary coefficients, and small Gram matrices were used.
+No attention pattern, hidden state, normalization denominator, or model output was evaluated.
+Cross-head coefficient cancellation is conditional structural evidence, not behavioural cancellation.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

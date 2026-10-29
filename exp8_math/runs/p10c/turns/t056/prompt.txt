@@ -1,0 +1,21 @@
+OUTPUT of Python run 48 of at most 300:
+```
+Full head ablation: {'n': 128, 'original_correct': 16, 'edited_correct': 17, 'gain_pp': 0.78125, 'paired_se_pp': 3.418067613165265, 'rescued': 10, 'regressed': 9, 'original_cut': 114, 'edited_cut': 113, 'original_mean_tokens': 29743.2109375, 'edited_mean_tokens': 30175.3984375}
+8 raw drift 0.593 protected retained 0.935 first projection [-0.0, 0.0, -0.0, 0.0] repeated projection [0.5019999742507935, 0.6179999709129333, 0.5429999828338623, 0.5529999732971191] ordinary sd 0.115
+9 raw drift 0.626 protected retained 0.954 first projection [0.0, -0.0, -0.0, 0.0] repeated projection [0.5619999766349792, 0.6380000114440918, 0.5979999899864197, 0.5920000076293945] ordinary sd 0.101
+10 raw drift 0.713 protected retained 0.949 first projection [0.0, 0.0, 0.0, 0.0] repeated projection [0.6159999966621399, 0.7200000286102295, 0.6819999814033508, 0.6890000104904175] ordinary sd 0.107
+11 raw drift 0.91 protected retained 0.987 first projection [0.0, 0.0, 0.0, -0.0] repeated projection [0.8790000081062317, 0.8600000143051147, 0.9470000267028809, 0.9100000262260437] ordinary sd 0.091
+12 raw drift 1.067 protected retained 0.947 first projection [-0.0, -0.0, -0.0, -0.0] repeated projection [0.9789999723434448, 0.9649999737739563, 1.0470000505447388, 1.0490000247955322] ordinary sd 0.111
+13 raw drift 1.203 protected retained 0.966 first projection [0.0, -0.0, -0.0, 0.0] repeated projection [1.1380000114440918, 1.128999948501587, 1.1670000553131104, 1.215000033378601] ordinary sd 0.121
+14 raw drift 1.444 protected retained 0.976 first projection [-0.0, 0.0, -0.0, -0.0] repeated projection [1.3830000162124634, 1.3509999513626099, 1.4390000104904175, 1.4630000591278076] ordinary sd 0.146
+15 raw drift 1.661 protected retained 0.98 first projection [-0.0, -0.0, -0.0, -0.0] repeated projection [1.684000015258789, 1.5479999780654907, 1.6629999876022339, 1.6160000562667847] ordinary sd 0.157
+16 raw drift 2.007 protected retained 0.98 first projection [-0.0, -0.0, 0.0, -0.0] repeated projection [2.007999897003174, 1.9160000085830688, 1.9989999532699585, 1.9470000267028809] ordinary sd 0.242
+17 raw drift 2.318 protected retained 0.975 first projection [-0.0, 0.0, -0.0, 0.0] repeated projection [2.328000068664551, 2.194999933242798, 2.2809998989105225, 2.2339999675750732] ordinary sd 0.312
+18 raw drift 2.58 protected retained 0.968 first projection [0.0, -0.0, -0.0, -0.0] repeated projection [2.568000078201294, 2.453000068664551, 2.513000011444092, 2.4509999752044678] ordinary sd 0.359
+19 raw drift 2.651 protected retained 0.971 first projection [0.0, 0.0, 0.0, 0.0] repeated projection [2.671999931335449, 2.4830000400543213, 2.6059999465942383, 2.5299999713897705] ordinary sd 0.392
+20 raw drift 3.259 protected retained 0.945 first projection [0.0, -0.0, 0.0, 0.0] repeated projection [3.1649999618530273, 3.000999927520752, 3.0929999351501465, 3.058000087738037] ordinary sd 0.476
+21 raw drift 3.397 protected retained 0.943 first projection [-0.0, -0.0, -0.0, -0.0] repeated projection [3.2899999618530273, 3.1519999504089355, 3.2109999656677246, 3.1600000858306885] ordinary sd 0.508
+22 raw drift 3.661 protected retained 0.944 first projection [0.0, 0.0, 0.0, 0.0] repeated projection [3.5360000133514404, 3.4140000343322754, 3.447999954223633, 3.4240000247955322] ordinary sd 0.59
+23 raw drift 3.66 protected retained 0.944 first projection [-0.0, -0.0, 0.0, 0.0] repeated projection [3.555000066757202, 3.3429999351501465, 3.4570000171661377, 3.4679999351501465] ordinary sd 0.606
+
+```

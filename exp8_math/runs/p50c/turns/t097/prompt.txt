@@ -1,0 +1,13 @@
+OUTPUT of Python run 52 of at most 300:
+```
+L15 ONLY alpha4 {"productive": {"branch_delta": -0.0005756656755693257, "per_case": [-0.0093, 0.0062, -0.0018, -0.0009, 0.0029, -0.0006], "tail24_delta": 0.001340776216238737}, "repetitive": {"branch_delta": -0.08129637812574704, "per_case": [-0.0688, -0.139, -0.0459, -0.0749, -0.0903, -0.0687], "tail24_delta": -0.09296617656946182}, "premature_close_logp": [-19.340463638305664, -19.330806732177734]}
+alpha2 heldout original n 256 cut 237 whitespace_cut 0 whitespace_after_think 0
+alpha2 heldout edited n 256 cut 131 whitespace_cut 3 whitespace_after_think 0
+alpha3 exploratory original n 256 cut 238 whitespace_cut 1 whitespace_after_think 0
+alpha3 exploratory edited n 256 cut 91 whitespace_cut 12 whitespace_after_think 0
+before whitespace '                                                                                                                                                                *   If the "6000" is the number of *tractor* supplies for RB, then $T_R = 6000$.' trailing_whitespace_chars 3125505
+random control original n 128 cut 114 whitespace_cut 0 whitespace_after_think 0
+random control edited n 128 cut 117 whitespace_cut 0 whitespace_after_think 0
+CURRENT ['model.language_model.layers.19.mlp.down_proj.weight']
+
+```

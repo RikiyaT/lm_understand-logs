@@ -1,0 +1,8 @@
+OUTPUT of Python run 28 of at most 300:
+```
+L23H5-only logprob changes: {'shared_arithmetic': -0.04909, 'productive_checks': -0.00403, 'repeated_checks': -0.00398, 'established_loop': -0.00436}
+Absolute region logprobs: {'shared_arithmetic': -1.32589, 'productive_checks': -1.51678, 'repeated_checks': -0.11346, 'established_loop': -0.01734}
+Loop neuron means after L23H5 ablation: {22: 2.854, 94: 2.143, 317: 1.434, 495: 0.75}
+Next isolated recipe: [{'tensor': 'model.language_model.layers.11.self_attn.o_proj.weight', 'columns': [256, 512], 'head': 1, 'multiplier': 0.0}]
+
+```

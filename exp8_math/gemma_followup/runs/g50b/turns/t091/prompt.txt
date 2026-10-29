@@ -1,0 +1,10 @@
+OUTPUT of Python run 50 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36, 37], 'answers_per_model': 3072, 'problems': 96, 'original_accuracy': 0.0908203125, 'edited_accuracy': 0.09212239583333333, 'gain_pp': 0.13020833333333331, 'sample_SE_pp': 0.5106371907110387, 'problem_cluster_SE_pp': 0.6309962270713008}
+PASS38_IDS ['math_train_intermediate_algebra_1019', 'math_train_algebra_988', 'math_train_intermediate_algebra_659', 'math_train_algebra_1660', 'math_train_number_theory_200', 'math_train_intermediate_algebra_30', 'math_train_intermediate_algebra_1158', 'math_train_intermediate_algebra_938', 'math_train_prealgebra_788', 'math_train_geometry_644', 'math_train_prealgebra_1040', 'math_train_precalculus_714', 'math_train_intermediate_algebra_1272', 'math_train_intermediate_algebra_281', 'math_train_intermediate_algebra_944', 'math_train_number_theory_577', 'math_train_algebra_1102', 'math_train_number_theory_205', 'math_train_intermediate_algebra_688', 'math_train_precalculus_92', 'math_train_algebra_1155', 'math_train_algebra_829', 'math_train_number_theory_748', 'math_train_number_theory_190', 'math_train_counting_and_probability_106', 'math_train_intermediate_algebra_872', 'math_train_prealgebra_918', 'math_train_algebra_644', 'math_train_geometry_779', 'math_train_counting_and_probability_504', 'math_train_algebra_1424', 'math_train_algebra_1287']
+DIAGNOSTIC_SAMPLE_CONTAINER list
+DIAGNOSTIC_SAMPLE_FIELDS {'text': 'str', 'pred': 'NoneType', 'correct': 'bool', 'tokens': 'int', 'cut': 'bool'}
+DIAGNOSTIC_SAMPLE_NUMERIC_METADATA {'pred': None, 'correct': False, 'tokens': 392, 'cut': False}
+'Pass38 logged; next pass completes the first round over all128 HOLDOUT problems.'
+
+```

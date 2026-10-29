@@ -1,0 +1,78 @@
+OUTPUT of run 13 of at most 60:
+```
+COORDINATE 400 DIAGONAL MULTIPLIERS
+layer: attention-input, MLP-input, post-attention, post-MLP, final
+0 [9.1875, 0.0, 52.75, 153.0] final 4.1875
+1 [0.828125, 0.0, 104.0, 196.0] final 4.1875
+2 [0.421875, 0.0, 110.5, 251.0] final 4.1875
+3 [0.32421875, 0.0, 222.0, 379.0] final 4.1875
+4 [0.44921875, 0.0, 222.0, 299.0] final 4.1875
+5 [0.3046875, 0.0, 513.0, 309.0] final 4.1875
+6 [0.421875, -0.015625, 195.0, 235.0] final 4.1875
+7 [1.09033203125, 0.33984375, 186.0, -132.0] final 4.1875
+8 [1.6484375, 0.587890625, 311.0, 254.0] final 4.1875
+9 [1.412109375, 0.39453125, 194.0, 287.0] final 4.1875
+10 [1.484375, 0.59375, 204.0, 383.0] final 4.1875
+11 [0.41015625, 0.8212890625, 241.0, 389.0] final 4.1875
+12 [1.609375, 0.62890625, 215.0, 413.0] final 4.1875
+13 [1.65234375, 0.48046875, 234.0, 413.0] final 4.1875
+14 [3.578125, 0.4765625, 429.0, 529.0] final 4.1875
+15 [2.59375, 0.34765625, 245.0, 577.0] final 4.1875
+16 [3.84375, 0.328125, 337.0, 701.0] final 4.1875
+17 [1.765625, 0.35546875, 331.0, 889.0] final 4.1875
+
+SYMBOLIC TAG-TO-QUERY COEFFICIENT PATH
+Later QK matrices multiply the early OV marker-transfer matrix.
+This isolates an available residual-skip path; it does not evaluate
+attention, intermediate layers, normalization denominators, or hidden states.
+
+COORDINATE 400 REMOVED: False
+Top relative path changes (NOT a causal ranking)
+L16H3 rel=0.1024 ||D||=1.67e+03 reader=233 writer=1.63e+03 role_D=-3.055 answer_D=6.318 copy_mid=42.96 copy_D=4.825
+L15H0 rel=0.0779 ||D||=384 reader=82.3 writer=382 role_D=-1.383 answer_D=-0.1147 copy_mid=594.8 copy_D=1.03
+L17H1 rel=0.0740 ||D||=252 reader=139 writer=191 role_D=-1.572 answer_D=-1.054 copy_mid=1134 copy_D=0.4875
+L15H2 rel=0.0711 ||D||=365 reader=85.6 writer=352 role_D=0.06856 answer_D=3.968 copy_mid=1343 copy_D=1.562
+L12H3 rel=0.0699 ||D||=169 reader=65.8 writer=144 role_D=-1.541 answer_D=0.3103 copy_mid=128.6 copy_D=-0.727
+L11H0 rel=0.0690 ||D||=8.03 reader=5.01 writer=6.7 role_D=0.02752 answer_D=-0.08678 copy_mid=-56.21 copy_D=0.06509
+L15H1 rel=0.0689 ||D||=321 reader=88.2 writer=311 role_D=0.3947 answer_D=-2.417 copy_mid=-2016 copy_D=-7.501
+L16H1 rel=0.0684 ||D||=902 reader=211 writer=878 role_D=2.768 answer_D=0.1752 copy_mid=46.05 copy_D=2.829
+L11H1 rel=0.0683 ||D||=13.4 reader=5.94 writer=11.4 role_D=-0.03733 answer_D=-0.3006 copy_mid=263.4 copy_D=0.158
+L10H1 rel=0.0683 ||D||=78.2 reader=44.2 writer=62 role_D=-0.8256 answer_D=-0.5128 copy_mid=-46.06 copy_D=-0.2964
+
+COORDINATE 400 REMOVED: True
+Top relative path changes (NOT a causal ranking)
+L16H3 rel=0.1054 ||D||=1.71e+03 reader=232 writer=1.68e+03 role_D=-3.075 answer_D=5.49 copy_mid=42.96 copy_D=4.825
+L15H0 rel=0.0746 ||D||=361 reader=80.6 writer=358 role_D=-0.8238 answer_D=0.02428 copy_mid=594.8 copy_D=1.03
+L17H1 rel=0.0736 ||D||=252 reader=141 writer=190 role_D=-1.86 answer_D=-1.088 copy_mid=1134 copy_D=0.4875
+L12H3 rel=0.0681 ||D||=162 reader=65.4 writer=137 role_D=-1.379 answer_D=0.441 copy_mid=128.6 copy_D=-0.727
+L11H1 rel=0.0676 ||D||=13 reader=5.65 writer=11.3 role_D=-0.02372 answer_D=-0.2962 copy_mid=263.4 copy_D=0.158
+L15H2 rel=0.0674 ||D||=333 reader=84.9 writer=316 role_D=-0.2806 answer_D=3.512 copy_mid=1343 copy_D=1.562
+L16H1 rel=0.0670 ||D||=869 reader=206 writer=844 role_D=4.053 answer_D=-1.078 copy_mid=46.05 copy_D=2.829
+L11H0 rel=0.0669 ||D||=7.65 reader=5.02 writer=6.34 role_D=0.01648 answer_D=-0.114 copy_mid=-56.21 copy_D=0.06509
+L15H1 rel=0.0652 ||D||=292 reader=85.4 writer=278 role_D=0.2803 answer_D=-2.617 copy_mid=-2016 copy_D=-7.501
+L10H1 rel=0.0649 ||D||=74.2 reader=44.6 writer=58 role_D=-0.7939 answer_D=-0.3318 copy_mid=-46.06 copy_D=-0.2964
+
+PREVIOUSLY NOTED HEADS, WITH AND WITHOUT COORDINATE 400
+L01H1 omit400=False rel=0.0571 role pair D [ 2.5356 -0.5586  3.4578] answer pair D [-4.8413 -1.185   2.2312] copy_mid/D -6.0191 0.1744
+L01H1 omit400=True rel=0.0581 role pair D [ 2.567  -0.7567  3.5398] answer pair D [-4.8804 -1.2073  2.2458] copy_mid/D -6.0191 0.1744
+L08H2 omit400=False rel=0.0567 role pair D [-1.0463 -0.8793 -1.1576] answer pair D [2.9589 0.0442 0.1487] copy_mid/D 38.3667 -0.1183
+L08H2 omit400=True rel=0.0535 role pair D [-1.7407 -0.9004 -1.0608] answer pair D [ 1.8158 -0.0513  0.3345] copy_mid/D 38.3667 -0.1183
+L09H2 omit400=False rel=0.0564 role pair D [ 2.4405 -0.0979 -0.5737] answer pair D [ 4.9829  0.6235 -0.1262] copy_mid/D 93.312 0.078
+L09H2 omit400=True rel=0.0530 role pair D [ 2.0838 -0.1079 -0.5243] answer pair D [ 4.7491  0.659  -0.1121] copy_mid/D 93.312 0.078
+L12H1 omit400=False rel=0.0557 role pair D [-4.854  -0.938   1.3335] answer pair D [-4.4658  0.5687  0.1078] copy_mid/D 205.7561 -1.5112
+L12H1 omit400=True rel=0.0547 role pair D [-4.1248 -0.8149  1.188 ] answer pair D [-4.2601  0.5819  0.0762] copy_mid/D 205.7561 -1.5112
+L12H3 omit400=False rel=0.0699 role pair D [-7.3484  1.0044  1.7207] answer pair D [ 0.9911 -0.7189  0.6587] copy_mid/D 128.5719 -0.727
+L12H3 omit400=True rel=0.0681 role pair D [-6.8077  1.0281  1.6421] answer pair D [ 1.3862 -0.636   0.5729] copy_mid/D 128.5719 -0.727
+L15H2 omit400=False rel=0.0711 role pair D [ 1.3795 -0.7724 -0.4014] answer pair D [14.8996 -0.2447 -2.7521] copy_mid/D 1343.2466 1.5621
+L15H2 omit400=True rel=0.0674 role pair D [ 0.1629 -0.7453 -0.2595] answer pair D [13.3173 -0.2184 -2.5637] copy_mid/D 1343.2466 1.5621
+L16H1 omit400=False rel=0.0684 role pair D [ 6.5216 -0.8543  2.6363] answer pair D [-0.1081  0.2528  0.3809] copy_mid/D 46.0456 2.8289
+L16H1 omit400=True rel=0.0670 role pair D [10.585  -0.3178  1.8904] answer pair D [-4.22   -0.0431  1.0282] copy_mid/D 46.0456 2.8289
+L16H3 omit400=False rel=0.1024 role pair D [-27.2256  10.2398   7.8197] answer pair D [17.8621  1.3369 -0.2463] copy_mid/D 42.9622 4.8247
+L16H3 omit400=True rel=0.1054 role pair D [-27.2783  10.2171   7.8364] answer pair D [15.2315  1.0137  0.2262] copy_mid/D 42.9622 4.8247
+L17H3 omit400=False rel=0.0547 role pair D [-12.8859   0.066   -1.7176] answer pair D [-4.1623 -1.5899 -3.1722] copy_mid/D -74.5491 3.4351
+L17H3 omit400=True rel=0.0549 role pair D [-13.5223  -0.1415  -1.5472] answer pair D [-4.9286 -1.6281 -3.0589] copy_mid/D -74.5491 3.4351
+
+Signed projections are coordinates of composed WEIGHT maps,
+not later-layer query states or attention scores for an input.
+
+```

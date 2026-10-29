@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"id-3bbcba11"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"This batch reproduced the improvement: 3/64 correct became 36/64, with 33 rescues and no regressions. Its 51.6-point gain is consistent with the preceding batches despite different problems. I will add it to the pooled estimate and prepare the last batch of this reserved split; a substantially weaker result would indicate more variability than seen so far.\n\n```python\n# Hypothesis: The frozen edit's paired gain is reproducible across independent batches.\nregister_frozen_run(55)\n```\n"}}
+{"type":"turn.completed","usage":{"input_tokens":155001,"cached_input_tokens":137088,"cache_write_input_tokens":0,"output_tokens":7836,"reasoning_output_tokens":3016}}

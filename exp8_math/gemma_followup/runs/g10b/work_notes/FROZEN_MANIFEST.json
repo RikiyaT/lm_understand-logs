@@ -1,0 +1,44 @@
+{
+  "edit": {
+    "kind": "sparse_mlp_output_attenuation",
+    "strength": -0.5,
+    "targets": {
+      "8": [
+        699
+      ],
+      "14": [
+        483,
+        984
+      ],
+      "17": [
+        1179
+      ]
+    },
+    "tensors": [
+      "model.layers.8.mlp.down_proj.weight",
+      "model.layers.14.mlp.down_proj.weight",
+      "model.layers.17.mlp.down_proj.weight"
+    ]
+  },
+  "selected_on": "DEV only",
+  "selected_pass": 7,
+  "dev_gain_pp": 0.48828125,
+  "dev_reported_cluster_se_pp": 1.72,
+  "forward_edit_hash": "599aba54ec",
+  "files_sha256": {
+    "model.layers.14.mlp.down_proj.weight.npy": "876d6824772df5668e54992bc5ce4e0e0608b5248813d595477781a5e602b987",
+    "model.layers.17.mlp.down_proj.weight.npy": "306bb367b4d529fb4dc5fe1b0ca7ad40f551218df8ea7cdeae29cfbcfd4c813a",
+    "model.layers.8.mlp.down_proj.weight.npy": "9447d44e34dc6f222be49586736aec22101dbfc7248b54f033e347ebf854461c"
+  },
+  "holdout_plan": {
+    "passes": [
+      8,
+      9,
+      10
+    ],
+    "problems": 256,
+    "n_per_pass": 4,
+    "max_tokens": 8192,
+    "orders_file": "holdout_confirmation_orders.json"
+  }
+}

@@ -1,0 +1,19 @@
+OUTPUT of Python run 3 of at most 300:
+```
+Record schema: {'id': 'str', 'source': 'str', 'answer': 'str', 'samples': 'list'}
+Scalar fields: {'id': 'math_train_geometry_400', 'source': 'math', 'answer': '7'}
+Activation files: ['hidden_mean_answer.npy', 'hidden_last_prompt.npy', 'index.json', 'mlp_last_prompt.npy', 'mlp_mean_answer.npy']
+index.json {"layers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], "mlp_layers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "samples": [{"item": "math_train_geometry_400", "sample": 0, "correct": false, "tokens": 452}, {"item": "math_train_geometry_400", "sample": 1, "correct": false, "tokens": 1812}, {"item": "math_train_geometry_400", "sample": 2, "correct": true, "tokens": 320}, {"item": "math_train_geometry_400", "sample": 3, "correct": false, "tokens": 335}, {"item": "math_train_geometry_400", "sample": 4, "correct": false, "tokens": 256}, {"item": "math_train_geometry_400", "sample": 5, "correct": false, "tokens": 457}, {"item": "math_train_geometry_400", "sample": 6, "correct": false, "tokens": 2270}, {"item": "math_train_geometry_400", "sample": 7, "correct": false, "tokens": 961}, {"item": "math_train_geometry_400", "sample": 8, "correct": false, "tokens": 477}, {"item": "math_train_geometry_400", "sample": 9, "correct": false, "tokens": 672}, {"item": "math_train_geometry_400", "sample": 10, "correct": false, "tokens": 388}, {"item": "math_train_geometry_400", "sample": 11, "correct": true, "tokens": 290}, {"item": "math_train_geometry_400", "sample": 12, "correct": false, "tokens": 1357}, {"item": "math_train_geometry_400", "sample": 13, "correct": false, "tokens": 1150}, {"item": "math_train_geometry_400", "sample": 14, "correct": false, "tokens": 752}, {"item": "math_train_geometry_400", "sample": 15, "correct": false, "tokens": 1189}, {"item": "math_train_algebra_311", "sample": 0, "correct": true, "tokens": 1408}, {"item": "math_train_algebra_311", "sample": 1, "correct": false, "tokens": 1493}, {"item": "math_train_algebra_311", "sample": 2, "correct": false, "tokens": 355}, {"item": "math_train_algebra_311", "sample": 3, "correct": true, "tokens": 472}, {"item": "math_train_algebra_311", "sample": 4, "correct": true, "tokens": 1695}, {"item": "math_train_algebra_311", "sample": 5, "correct": false, "tokens": 8192}, {"item": "math_train_algebra_311", "sample": 6, "correct": true, "tokens": 708}, {"item": "math_train_algebra_311", "sample": 7, "correct": false, "tokens": 1072}, {"item": "math_train_algebra_311", "sample": 8, "correct": true, "tokens": 1262}, {"item": "math_train_algebra_311", "sample": 9, "correct": false, "tokens": 1323}, {"item": "math_train_algebra_311", "sample": 10, "correct": true, "tokens": 429}, {"item": "math_train_algebra_311", "sample": 11, "correct": true, "tokens": 1077}, {"item": "mat
+Long-text fields: []
+{"index": 0, "brief": {"id": "math_train_geometry_400"}, "snippets": {}}
+{"index": 1, "brief": {"id": "math_train_algebra_311"}, "snippets": {}}
+{"index": 16, "brief": {"id": "math_train_counting_and_probability_479"}, "snippets": {}}
+{"index": 17, "brief": {"id": "math_train_algebra_723"}, "snippets": {}}
+{"index": 64, "brief": {"id": "math_train_counting_and_probability_760"}, "snippets": {}}
+{"index": 65, "brief": {"id": "math_train_number_theory_147"}, "snippets": {}}
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 18, in <module>
+IndexError: list index out of range
+
+```

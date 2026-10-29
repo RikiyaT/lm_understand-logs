@@ -1,0 +1,30 @@
+OUTPUT of Python run 26 of at most 300:
+```
+SAMPLE SCHEMA {'text': 'str', 'pred': 'str', 'correct': 'bool', 'tokens': 'int', 'cut': 'bool'}
+SAMPLE METADATA {'pred': '0', 'correct': False, 'tokens': 2406, 'cut': False}
+HELPER summarize_pair (k)
+HELPER behavior_stats (rows)
+HELPER checkpoint (label, description)
+HELPER prepare_head (pass_number, layer, head, multiplier, rationale)
+HELPER prepare_units (pass_number, layer, units, alpha, rationale)
+PAIRED HISTORY
+4 {'pass': 4, 'n': 1024, 'gain_pp': 1.5625, 'paired_SE_pp': 1.763414538489243, 'problem_cluster_SE_pp': 1.8295051827501547}
+5 {'pass': 5, 'n': 1024, 'gain_pp': 1.7578125, 'paired_SE_pp': 1.6339761024677868, 'problem_cluster_SE_pp': 1.7465758686627266}
+6 {'pass': 6, 'n': 1024, 'gain_pp': 0.1953125, 'paired_SE_pp': 1.7855947428124548, 'problem_cluster_SE_pp': 2.6323398338516357}
+7 {'pass': 7, 'n': 1024, 'gain_pp': 0.87890625, 'paired_SE_pp': 1.5538337945855722, 'problem_cluster_SE_pp': 1.5951378008019015}
+8 {'pass': 8, 'n': 1024, 'gain_pp': 0.78125, 'paired_SE_pp': 1.7585018029129218, 'problem_cluster_SE_pp': 1.8562147004355136}
+9 {'pass': 9, 'n': 1024, 'gain_pp': 2.1484375, 'paired_SE_pp': 1.7736092031179655, 'problem_cluster_SE_pp': 1.9964326607290324}
+10 {'pass': 10, 'n': 1024, 'gain_pp': -1.46484375, 'paired_SE_pp': 1.688838671526643, 'problem_cluster_SE_pp': 1.7298508303844595}
+12 {'pass': 12, 'n': 1024, 'gain_pp': -1.66015625, 'paired_SE_pp': 1.9263243038955504, 'problem_cluster_SE_pp': 2.7352186738483817}
+13 {'pass': 13, 'n': 1024, 'gain_pp': -2.1484375, 'paired_SE_pp': 1.7410160307880542, 'problem_cluster_SE_pp': 2.440208879766263}
+14 {'pass': 14, 'n': 1024, 'gain_pp': -2.83203125, 'paired_SE_pp': 1.9299408096715815, 'problem_cluster_SE_pp': 2.7148981414254334}
+15 {'pass': 15, 'n': 1024, 'gain_pp': -26.171875, 'paired_SE_pp': 1.9042485321316356, 'problem_cluster_SE_pp': 3.7302856709635477}
+16 {'pass': 16, 'n': 1024, 'gain_pp': 1.66015625, 'paired_SE_pp': 1.7981718630588037, 'problem_cluster_SE_pp': 1.562401553098223}
+17 {'pass': 17, 'n': 1024, 'gain_pp': 2.9296875, 'paired_SE_pp': 1.8045399142722514, 'problem_cluster_SE_pp': 1.839901134943377}
+ACT INDEX {'layers': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], 'mlp_layers': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], 'samples': [{'item': 'math_train_geometry_400', 'sample': 0, 'correct': False, 'tokens': 452}, {'item': 'math_train_geometry_400', 'sample': 1, 'correct': False, 'tokens': 1812}, {'item': 'math_train_geometry_400', 'sample': 2, 'correct': True, 'tokens': 320}, {'item': 'math_train_geometry_400', 'sample': 3, 'correct': False, 'tokens': 335}, {'item': 'math_train_geometry_400', 'sample': 4, 'correct': False, 'tokens': 256}, {'item': 'math_train_geometry_400', 'sample': 5, 'correct': False, 'tokens': 457}, {'item': 'math_train_geometry_400', 'sample': 6, 'correct': False, 'tokens': 2270}, {'item': 'math_train_geometry_400', 'sample': 7, 'correct': False, 'tokens': 961}, {'item': 'math_train_geometry_400', 'sample': 8, 'correct': False, 'toke
+hidden_mean_answer.npy (2048, 18, 640) float16
+mlp_mean_answer.npy (2048, 17, 2048) float16
+PROBE TEXT COUNT 2
+DIRECTION FILE {6: (640,), 8: (640,), 9: (640,), 10: (640,), 11: (640,), 12: (640,), 14: (640,), 16: (640,), 17: (640,)}
+
+```

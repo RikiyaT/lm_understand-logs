@@ -1,0 +1,15 @@
+OUTPUT of Python run 53 of at most 300:
+```
+Strength1.5 all256: {'n': 256, 'a_correct': 23, 'b_correct': 47, 'gain_pp': 9.375, 'se_pp': 2.529, 'rescued': 34, 'regressed': 10, 'a_cut': 234, 'b_cut': 210}
+Strength1.5 shared128 vs original: {'n': 128, 'a_correct': 11, 'b_correct': 30, 'gain_pp': 14.844, 'se_pp': 3.857, 'rescued': 23, 'regressed': 4, 'a_cut': 117, 'b_cut': 100}
+Strength1 -> strength1.5 shared128: {'n': 128, 'a_correct': 28, 'b_correct': 30, 'gain_pp': 1.562, 'se_pp': 4.148, 'rescued': 15, 'regressed': 13, 'a_cut': 98, 'b_cut': 100}
+gsm8k strength1.5 all: {'n': 96, 'a_correct': 11, 'b_correct': 29, 'gain_pp': 18.75, 'se_pp': 5.196, 'rescued': 23, 'regressed': 5, 'a_cut': 86, 'b_cut': 66}
+gsm8k strength1 -> 1.5: {'n': 64, 'a_correct': 21, 'b_correct': 21, 'gain_pp': 0.0, 'se_pp': 7.043, 'rescued': 10, 'regressed': 10, 'a_cut': 42, 'b_cut': 44}
+math strength1.5 all: {'n': 160, 'a_correct': 12, 'b_correct': 18, 'gain_pp': 3.75, 'se_pp': 2.49, 'rescued': 11, 'regressed': 5, 'a_cut': 148, 'b_cut': 144}
+math strength1 -> 1.5: {'n': 64, 'a_correct': 7, 'b_correct': 9, 'gain_pp': 3.125, 'se_pp': 4.437, 'rescued': 5, 'regressed': 3, 'a_cut': 56, 'b_cut': 56}
+strength1 shared128 projections [(8, 0.247), (12, 0.188), (16, 0.19), (20, 0.235), (23, 0.377)]
+strength1.5 shared128 projections [(8, 0.255), (12, 0.151), (16, 0.059), (20, 0.046), (23, 0.255)]
+strength1 tail repetition 0.7948 high repetition 95 mean tokens 27972
+strength1.5 tail repetition 0.8078 high repetition 100 mean tokens 27578
+
+```

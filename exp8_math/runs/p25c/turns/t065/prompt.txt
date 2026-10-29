@@ -1,0 +1,6 @@
+OUTPUT of Python run 34 of at most 300:
+```
+Broad probe regions: [{'case': 'shopping', 'kind': 'productive', 'prompt_end': 62, 'branch': 90, 'late': 90, 'length': 201}, {'case': 'shopping', 'kind': 'loop', 'prompt_end': 62, 'branch': 90, 'late': 162, 'length': 306}, {'case': 'linear_equation', 'kind': 'productive', 'prompt_end': 46, 'branch': 65, 'late': 65, 'length': 185}, {'case': 'linear_equation', 'kind': 'loop', 'prompt_end': 46, 'branch': 65, 'late': 131, 'length': 263}, {'case': 'modular_progress', 'kind': 'productive', 'prompt_end': 41, 'branch': 72, 'late': 72, 'length': 318}, {'case': 'modular_progress', 'kind': 'loop', 'prompt_end': 41, 'branch': 72, 'late': 110, 'length': 300}]
+Matched negative-control head statistics: [{'layer': 15, 'head': 1, 'ind_good': 0.016228914260864258, 'ind_loop': 0.10938531160354614, 'copy_good': 0.07757820934057236, 'copy_loop': 0.1511722058057785, 'self_loop': 0.00850315298885107, 'prompt_loop': 0.11272677034139633, 'ind_delta': 0.09315639734268188}, {'layer': 15, 'head': 7, 'ind_good': 0.0823664739727974, 'ind_loop': 0.8870855569839478, 'copy_good': 0.21142980456352234, 'copy_loop': 0.9172054529190063, 'self_loop': 0.0009245952824130654, 'prompt_loop': 0.004127947613596916, 'ind_delta': 0.8047190830111504}]
+
+```

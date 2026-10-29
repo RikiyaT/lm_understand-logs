@@ -1,0 +1,86 @@
+OUTPUT of run 29 of at most 60:
+```
+=== NEW HYPOTHESIS: DIRECT BELIEF-GATING NUMERICAL WEIGHT MOTIFS ===
+Eligibility uses MIDPOINT weights: both up and down numerical-subspace fractions >= .05.
+Gate alignment, up/down coorientation, and their changes are inspected separately.
+No GELU or gate response is evaluated; no gate response is multiplied by an up response.
+ L  eligible  DU_positive  max_gate_belief_cos  max_gate_calculation_cos
+ 0         2            0               0.09081                    0.02837
+ 1         1            0               0.02043                    0.04214
+ 2         0            0                   nan                        nan
+ 3         2            0               0.02304                   -0.02702
+ 4         0            0                   nan                        nan
+ 5         0            0                   nan                        nan
+ 6         0            0                   nan                        nan
+ 7         0            0                   nan                        nan
+ 8         0            0                   nan                        nan
+ 9         0            0                   nan                        nan
+10         0            0                   nan                        nan
+11         1            1              -0.02007                   -0.03872
+12         8            5               0.02688                    0.03597
+13         2            0               0.00153                   -0.01678
+14         5            1               0.04301                    0.06513
+15         6            5               0.07227                    0.05218
+16        12            2               0.04418                    0.06596
+17        13            2               0.06809                    0.08385
+
+=== GROUP CONTROLS: NUMERAL-PRESERVING VERSUS NUMERAL-OPPOSING DU MOTIFS ===
+DU signs are weight-operator signs, not actual MLP contribution signs.
+No combined gate-times-DU response is calculated.
+gate_belief cutoff 0.0 DU sign 1 n 11
+  delta_gate_belief positive 7 median 0.00011058329477449738 mean 9.975067959998497e-05
+  delta_gate_calculation positive 6 median 1.4082474254408645e-05 mean 5.424239520417139e-05
+  delta_gate_belief_scaled positive 5 median -7.317788323635277e-06 mean -5.743912518016457e-06
+  delta_gate_calculation_scaled positive 5 median -7.613343621709276e-05 mean -1.4839157274067411e-05
+gate_belief cutoff 0.0 DU sign -1 n 20
+  delta_gate_belief positive 13 median 7.364232490035256e-05 mean 3.819646972158682e-05
+  delta_gate_calculation positive 7 median -4.348195672262143e-05 mean 1.6554704671782546e-05
+  delta_gate_belief_scaled positive 9 median -1.5692318643095726e-05 mean 2.9245804460761164e-05
+  delta_gate_calculation_scaled positive 11 median 2.150219217662147e-05 mean 0.0001238844846165906
+gate_belief cutoff 0.05 DU sign 1 n 1
+  delta_gate_belief positive 0 median -0.00021470990625782616 mean -0.00021470990625782616
+  delta_gate_calculation positive 1 median 3.1141039133875115e-05 mean 3.1141039133875115e-05
+  delta_gate_belief_scaled positive 0 median -7.317788323635277e-06 mean -7.317788323635277e-06
+  delta_gate_calculation_scaled positive 0 median -7.613343621709276e-05 mean -7.613343621709276e-05
+gate_belief cutoff 0.05 DU sign -1 n 3
+  delta_gate_belief positive 1 median -6.69602124891977e-05 mean -1.6146013384144935e-05
+  delta_gate_calculation positive 1 median -1.2776257441615702e-05 mean -2.1247890626431103e-05
+  delta_gate_belief_scaled positive 1 median -1.0999152254678735e-05 mean -9.148797583030202e-06
+  delta_gate_calculation_scaled positive 2 median 3.040872728590771e-05 mean 0.00014865935003766095
+gate_belief cutoff 0.1 DU sign 1 n 0
+gate_belief cutoff 0.1 DU sign -1 n 0
+
+=== STRONGEST MIDPOINT BELIEF-GATE ALIGNMENTS AMONG NUMERICAL MOTIFS ===
+ L unit  gate_belief gate_calc  scaled_belief   delta_gate_belief  scaled_delta    DU_mid      delta_DU
+ 0  261     +0.09081   +0.02837       +0.07363       +0.0001203308 +5.468812e-05   -0.0217064  -3.3999e-05
+15 1337     +0.07227   +0.02724       +0.05230       -0.0002147099 -7.317788e-06  +0.00554008 +4.59817e-05
+17 1309     +0.06809   +0.03916       +0.07146       -6.696021e-05 -1.099915e-05   -0.0272574  +0.00043729
+15  384     +0.06382   +0.03871       +0.05313       -0.0001018086 -7.113536e-05   -0.0113281 -2.27637e-05
+17  824     +0.04739   -0.00010       +0.05490       -0.0003950813 -0.0003678853  -0.00536367 +0.000100867
+16 1875     +0.04418   -0.01053       +0.07288       +7.975431e-05 +0.0001451684  -0.00681481 +0.000109908
+14 1066     +0.04301   +0.04328       +0.00829       +9.853456e-05  -7.08848e-05  -0.00746042 +2.36568e-05
+16 1955     +0.04239   +0.02511       +0.00854       -0.0002373356 -0.0001775363  -0.00520417 -6.80985e-05
+16  332     +0.03783   +0.06596       -0.06009       -4.465845e-05  +2.51888e-05   +0.0109659 +7.53342e-05
+15 1279     +0.03196   +0.03502       -0.03240       +0.0003832452 -0.0002272505  +0.00666893 -2.51828e-05
+15  240     +0.03071   +0.03852       +0.07333       +0.0001598867 +0.0002021575   +0.0072942 +5.92504e-05
+17  234     +0.02946   -0.00806       +0.05273       -0.0001116559  -0.000149544  -0.00825087 -0.000100798
+12  801     +0.02688   -0.02666       +0.08762       +0.0003013267 +7.310236e-05  +0.00476439 +4.29255e-06
+ 3  559     +0.02304   -0.03886       +0.05009       +0.0002537599 +0.0002542163  -0.00196936 +3.29269e-06
+12  568     +0.02280   +0.00111       +0.01965       -0.0001811629 -0.0001040751  +0.00498776 -1.60784e-05
+12 1590     +0.02202   -0.00734       +0.06692       +0.0001105833 -0.0001510001  +0.00730711 +1.46372e-05
+17  883     +0.02122   +0.00234       +0.06658       +4.984547e-05 +7.748028e-05  -0.00950535 -0.000163591
+ 1 1850     +0.02043   +0.04214       +0.00794       +0.0001041266 -3.754934e-05   -0.0150308 -2.33316e-05
+
+=== FULL-VOCABULARY CHECK OF CANDIDATE GATE-WEIGHT DIRECTIONS ===
+(0, 261) + [' recoverable', ' Naira', ' chì', ' precisar', ' Nisan', ' undetectable'] - [' ganze', '聩', 'getDefault', 'ющие', 'ский', 'ющего']
+(15, 1337) + [' derde', '3', '第三', 'Third', ' terceira', ' tercero'] - [' レッド', ' hồi', ' 给', ' ナイロン', 'ステンレス', ' homogene']
+(17, 1309) + ['5', '7', '3', '6', '4', '9'] - ['૦', '０', '\uf643', '𝟎', '೦', 'όν']
+(15, 384) + ['imodal', '<unused1958>', '<unused1693>', 'ïde', ' אחת', '叁章'] - [' suro', '𝓱', 'ท', '०', ' reple', ' сиз']
+(17, 824) + ['۵', '٥', '５', '५', '૫', '\uf735'] - ['ető', 'पती', ' стороны', 'yal', 'ğun', 'uden']
+(16, 1875) + ['1', '１', '١', '۱', ' ۱', '૧'] - [' Zur', '㖑', ' Nak', '䏼', '溶解', '耺']
+(14, 1066) + [' \\,.', ' retorno', ' PyQt', '箸', ' electrónica', ' danach'] - [' pháp', 'Vern', '답', ' Regener', 'akot', 'cini']
+(16, 1955) + ['8', 'eight', '۸', '⁸', '٨', '８'] - ['공', ' Dir', ' Commun', ' NI', ' Dang', ' Mitt']
+(16, 332) + ['๒', '₂', '²', '٢', ' Dorsey', ' Serpent'] - ['笔记', 'судар', ' pitt', ' diketahui', 'royalblue', ' cú']
+(15, 1279) + [' pizarra', ' включают', ' spécialement', 'Upcoming', ' Sophomore', 'সম্প্রতি'] - ['indi', ' guarding', 'ale', 'rome', ' inlet', 'ror']
+
+```

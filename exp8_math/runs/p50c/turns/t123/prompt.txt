@@ -1,0 +1,104 @@
+OUTPUT of Python run 62 of at most 300:
+```
+EARLY DIAGNOSIS AND EDIT DEFINITION
+# Math weight editing ? through pass26/50, Python54
+BEST INDEPENDENTLY CONFIRMED: full-direction alpha2, L15/L19 MLP down_proj; backup best_confirmed_a2.
+CURRENT: top64-neuron-only alpha4 in same two tensors, candidate_top64_a4. NOT accuracy-tested.
+Allowed edit formula full: W0-alpha*outer(u,u@W0). Unit directions in repetition_directions.pt keys15,19.
+Subset: zero entries outside writer_subsets[l] in u@W0 before outer product; subsets in repetition_writer_top64.pt.
+No final norm/embedding/output/head edits. No training. Original tensors cached base_mlp_weights; helper set_repetition_edit({15:a,19:b}).
+
+DIAGNOSIS/DIRECTION:
+Initial gen1 original11/96 correct;85 cutoff; cut tails ~95% duplicate8-word sequences.
+Directions from FOUR matched productive/repetitive contexts in original fwd4 at residual outputs16,20.
+Early L19 neuron11 ablation and L19-only rank1 each +6.25pp SE4.35 on32, weak exploratory.
+Both sites alpha1 subsequently much stronger. Correct alpha3 answers median8071tokens; not skipping thinking.
+Repetition attention heads L15h7,L19h5 identified in fwd19 but head ablation less selective; REMOVED.
+Alpha3 gen29 cut91/256;42 wrong/noanswer finished. Whitespace tails12/256 versus1 original.
+Alpha2 independent gen27 whitespace3/256 versus0 original. These sets differ, not a clean dose comparison.
+
+GENERATION EVIDENCE (paired within run only; batching-dependent RNG means DON'T pair across runs):
+pass10/gen13 alpha1 independent128:11->42 correct,+24.22pp SE3.96,32rescues1loss.
+pass11/gen14 alpha1 dose64x4:27/256->59/256,+12.50pp SE2.61.
+pass12/gen16 alpha2 dose64x4:29/256->92/256,+24.61pp SE3.96,64rescues1loss.
+pass19/gen27 alpha2 independent128x2:21/256->110/256,+34.77pp SE3.53,91rescues2losses.
+  GSM13.28->60.94%,MATH3.12->25%;cut92.58->51.17%;mean30644->21742. Backup best_confirmed_a2.
+pass20/gen29 alpha3 exploratory128x2:21/256->123/256,+39.84pp SE3.82,102rescues0losses.
+  GSM7.81->53.91%,MATH8.59->42.19%;cut92.97->35.55%. candidate_L15_L19_a3, no independent confirmation.
+pass23/gen35 norm-matched RANDOM control64x2:14/128->16/128,+1.56pp SE3.52,8rescues6losses;
+  cut89.06->91.41%,mean29646->30405. Random control REMOVED.
+Full alpha4 generation repeatedly fails ENGINE INITIALIZATION (no counted passes), both128x2 and64x2.
+Generation sometimes recovers; random-control64x2 worked. No established workaround. TF always works.
+
+DENSE TRANSFER, six new productive/repetitive pairs plus two premature-close controls:
+Exact raw texts in transfer_probe_request.json (14texts), boundaries in transfer_probe_bounds.json.
+Use raw thinking template; chats previously inserted empty think block. eval_prompt_format.txt holds template.
+Baseline fwd24; alpha1 fwd25; alpha2 fwd26; fullalpha4 fwd32; random control fwd34;
+L15-onlyalpha4 fwd37;L19-onlyalpha4 fwd38;top64alpha4 fwd39.
+All metrics compare logprobs on SAME branch tokens; array logprobs index token_position-1.
+Mean branch deltas productive/repetitive:
+ alpha1 +.00232/-.02410; alpha2 +.00343/-.04870; fullalpha4 +.00453/-.10372.
+ random norm-matched +.00392/+.00955 (not selective; orthogonal directions).
+ L15-only4 -.00058/-.08130; L19-only4 +.00346/-.03446.
+Premature-close logp baseline -19.77/-19.69; fullalpha4 -18.81/-18.77 (still extremely unlikely).
+Control directions orthogonal to repetition, per-layer Frobenius norm matched within.03%, saved random_control_match_a4.pt.
+Top64 chosen ONLY on original fwd4: ~91%/98% of transfer repetitive-minus-productive writing contrast,
+but50%/40% of full directional weight norm. Relative matrix changes top64a4:7.09%/5.40%; fulla4:14.11%/13.50%.
+
+Pass26/fwd39 TOP64 alpha4 transfer: {"productive": {"branch_delta": -0.004749341615630935, "per_case": [-0.0241, -0.0049, 0.0073, -0.0013, 0.0013, -0.0067], "tail24_delta": -0.003209540620446205}, "repetitive": {"branch_delta": -0.06453941389918327, "per_case": [-0.0561, -0.1063, -0.0502, -0.0498, -0.0689, -0.0559], "tail24_delta": -0.0875094011425972}, "premature_close_logp": [-19.462505340576172, -19.547117233276367]}
+Reserved fresh_splits.json: validation_3(128),validation_4(256),final_1/2/3(each256), disjoint all prior problems.
+Next: paired exploratory generation of top64alpha4, then fullalpha4 if service permits; independently confirm chosen candidate.
+
+Pass27/gen41 TOP64alpha4 exploratory64x2 at16384 tokens:13/128->47/128,+26.56pp SE4.45,34rescues0losses; cut89.84->47.66%; {"original": {"n": 128, "correct": 13, "cut": 115, "whitespace_cut": 0, "median_correct_tokens": 4329.0, "correct_with_think_close": 13}, "edited": {"n": 128, "correct": 47, "cut": 61, "whitespace_cut": 2, "median_correct_tokens": 5850.0, "correct_with_think_close": 47}}
+CURRENT full-direction alpha4, next same16k exploratory test. 16k initialization succeeded after32k failed, not yet established as reliable workaround.
+
+Pass28/gen42 FULLalpha4 exploratory64x2 at16384:14/128->48/128,+26.56pp SE4.59, 34rescues0losses; cut89.06->52.34%; {"original": {"n": 128, "correct": 14, "cut": 114, "whitespace_cut": 0, "median_correct_tokens": 3947.5, "correct_with_think_close": 14}, "edited": {"n": 128, "correct": 48, "cut": 67, "whitespace_cut": 10, "median_correct_tokens": 5419.0, "correct_with_think_close": 48}}
+CURRENT top64alpha6, backup candidate_top64_a6; next same16k generation.
+
+Pass29/fwd44 TOP64alpha6 transfer: {"shortened_cases": [7], "productive": {"branch_delta": -0.009027479177651307, "per_case": [-0.0415, -0.0021, 0.0064, -0.0032, -0.0066, -0.0072], "tail24_delta": -0.005617652088403702}, "repetitive": {"branch_delta": -0.10311207796136539, "per_case": [-0.0831, -0.1765, -0.084, -0.0678, -0.116, -0.0913], "tail24_delta": -0.1466740518808365}, "premature_close_logp": [-19.39313316345215, -19.504499435424805]}. Case7 accidentally one repeated sentence shorter; all comparisons restricted to verified identical common-prefix tokens. 16k generation alpha6 failed initialization (not counted). Next full32768 exploratory64x1 retry; CURRENT top64alpha6 unchanged.
+
+Pass30/gen45 TOP64alpha6 exploratory64x1 FULL32768:7/64->35/64,+43.75pp SE6.63,29rescues1loss;cut89.06->7.81%;mean29736->15377;wrongfinished20,noanswer4. {"original": {"n": 64, "correct": 7, "cut": 57, "whitespace_cut": 0, "median_correct_tokens": 4851.0, "correct_with_think_close": 7}, "edited": {"n": 64, "correct": 35, "cut": 5, "whitespace_cut": 0, "median_correct_tokens": 9545.0, "correct_with_think_close": 35}}
+CURRENT unchanged top64alpha6; next validation_3(128 fresh problems)x1 FULL32768. No further dose increase 
+
+PAIRED SUMMARY HELPER
+(run_ids)
+{'items': 128, 'original_accuracy': 0.0703125, 'edited_accuracy': 0.578125, 'gain': 0.5078125, 'se': 0.0443624091458791, 'rescues': 65, 'losses': 0, 'by_source': {'gsm8k': {'original': 0.109375, 'edited': 0.71875, 'difference': 0.609375}, 'math': {'original': 0.03125, 'edited': 0.4375, 'difference': 0.40625}}}
+
+RESERVED SPLITS
+validation_3 list 128 ['gsm8k_train_4103', 'gsm8k_train_3364']
+validation_4 list 256 ['gsm8k_train_4810', 'gsm8k_train_6571']
+final_1 list 256 ['gsm8k_train_3974', 'gsm8k_train_7071']
+final_2 list 256 ['gsm8k_train_4682', 'gsm8k_train_5970']
+final_3 list 256 ['gsm8k_train_4809', 'gsm8k_train_5810']
+
+FROZEN AUDIT
+{
+  "15": {
+    "shape": [
+      1024,
+      3584
+    ],
+    "changed_columns": 64,
+    "changed_values": 65536,
+    "relative_frobenius_change": 0.10635695606470108,
+    "formula_relative_error": 3.19996296127556e-08,
+    "off_direction_fraction": 1.195792407315821e-07,
+    "finite": true,
+    "sha256": "9237d35fc861bd0d02170e46300cb887f2a5b448044fbed92013fbe9060228cd"
+  },
+  "19": {
+    "shape": [
+      1024,
+      3584
+    ],
+    "changed_columns": 64,
+    "changed_values": 65536,
+    "relative_frobenius_change": 0.0810583084821701,
+    "formula_relative_error": 4.339435477618281e-08,
+    "off_direction_fraction": 1.5549265697245573e-07,
+    "finite": true,
+    "sha256": "3091b77b6295263cedd77c8bb12bfd504cc7b18330810d77aecaf56517dfceaa"
+  }
+}
+
+```

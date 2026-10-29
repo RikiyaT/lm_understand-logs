@@ -1,0 +1,175 @@
+OUTPUT of run 3 of at most 20:
+```
+FINAL QUERY -> GUESS TOKEN: largest absolute B-A differences
+ L H     A       B      B-A     domain B-A: capitals arithmetic animals choices
+10 2  0.0010  0.0108 +0.00987 [0.0134 0.0075 0.0047 0.0139]
+10 3  0.0024  0.0098 +0.00747 [0.007  0.012  0.0044 0.0064]
+11 2  0.0021  0.0083 +0.00625 [0.0055 0.0101 0.0048 0.0046]
+ 4 0  0.0056  0.0108 +0.00515 [0.0077 0.0089 0.0026 0.0014]
+11 3  0.0024  0.0076 +0.00513 [0.0051 0.0098 0.0019 0.0038]
+ 6 2  0.0059  0.0015 -0.00441 [-0.0043 -0.0054 -0.0052 -0.0027]
+ 9 0  0.0111  0.0072 -0.00395 [-0.0031 -0.0063 -0.0029 -0.0034]
+ 9 1  0.0078  0.0040 -0.00384 [-0.0067 -0.0036 -0.0037 -0.0013]
+ 4 2  0.0016  0.0047 +0.00309 [0.0069 0.0033 0.0018 0.0004]
+ 4 3  0.0084  0.0114 +0.00302 [ 0.0058  0.0054  0.0028 -0.0019]
+ 5 3  0.0072  0.0050 -0.00220 [-0.0035 -0.0016 -0.0035 -0.0002]
+ 2 2  0.0050  0.0031 -0.00190 [-0.0024 -0.0013 -0.002  -0.0019]
+ 5 2  0.0036  0.0021 -0.00153 [-0.0008 -0.0012 -0.0035 -0.0006]
+ 6 1  0.0054  0.0040 -0.00141 [ 0.0013 -0.0026 -0.0018 -0.0025]
+ 5 0  0.0002  0.0015 +0.00127 [0.0015 0.0004 0.0014 0.0017]
+ 4 1  0.0012  0.0024 +0.00125 [0.0007 0.0029 0.0012 0.0002]
+ 9 2  0.0027  0.0015 -0.00121 [-0.0014 -0.0007 -0.0026 -0.0002]
+ 8 2  0.0009  0.0020 +0.00112 [0.0016 0.0006 0.0016 0.0007]
+ 7 0  0.0024  0.0035 +0.00108 [-0.0001  0.0038 -0.0005  0.0011]
+10 0  0.0003  0.0014 +0.00101 [0.0009 0.0011 0.0004 0.0016]
+
+HEADS WITH STRONGEST GUESS ATTENTION IN EITHER MODEL
+L4H3: A=0.00842 B=0.01143
+L9H0: A=0.01115 B=0.00720
+L10H2: A=0.00097 B=0.01083
+L4H0: A=0.00561 B=0.01077
+L0H0: A=0.00979 B=0.01066
+L10H3: A=0.00235 B=0.00982
+L11H2: A=0.00209 B=0.00834
+L9H1: A=0.00785 B=0.00401
+L11H3: A=0.00244 B=0.00757
+L5H3: A=0.00718 B=0.00498
+L1H2: A=0.00530 B=0.00600
+L6H2: A=0.00595 B=0.00154
+
+LAYER SUMMARIES: mean over heads
+L00 guess A/B=0.00340/0.00365 phrase B-A=+0.00121 question B-A=+0.00102 final-row TV=0.05108
+L01 guess A/B=0.00133/0.00150 phrase B-A=-0.00237 question B-A=+0.00593 final-row TV=0.09320
+L02 guess A/B=0.00137/0.00081 phrase B-A=-0.00300 question B-A=-0.00443 final-row TV=0.06343
+L03 guess A/B=0.00083/0.00025 phrase B-A=-0.00559 question B-A=-0.01629 final-row TV=0.29749
+L04 guess A/B=0.00421/0.00733 phrase B-A=+0.00071 question B-A=-0.00907 final-row TV=0.18077
+L05 guess A/B=0.00275/0.00214 phrase B-A=-0.00959 question B-A=-0.03171 final-row TV=0.14128
+L06 guess A/B=0.00340/0.00171 phrase B-A=-0.03298 question B-A=-0.02956 final-row TV=0.20365
+L07 guess A/B=0.00199/0.00182 phrase B-A=+0.02221 question B-A=+0.02067 final-row TV=0.24005
+L08 guess A/B=0.00174/0.00215 phrase B-A=-0.00094 question B-A=+0.01991 final-row TV=0.22257
+L09 guess A/B=0.00558/0.00347 phrase B-A=+0.02167 question B-A=+0.16128 final-row TV=0.25348
+L10 guess A/B=0.00093/0.00567 phrase B-A=+0.04575 question B-A=+0.08478 final-row TV=0.38401
+L11 guess A/B=0.00126/0.00439 phrase B-A=+0.01529 question B-A=+0.04025 final-row TV=0.32192
+L12 guess A/B=0.00062/0.00038 phrase B-A=+0.01385 question B-A=+0.02834 final-row TV=0.18605
+L13 guess A/B=0.00021/0.00050 phrase B-A=+0.00193 question B-A=+0.01123 final-row TV=0.20182
+L14 guess A/B=0.00020/0.00009 phrase B-A=-0.00708 question B-A=+0.00801 final-row TV=0.22827
+L15 guess A/B=0.00065/0.00048 phrase B-A=+0.00229 question B-A=+0.02296 final-row TV=0.22229
+L16 guess A/B=0.00057/0.00066 phrase B-A=+0.01109 question B-A=+0.01048 final-row TV=0.07818
+L17 guess A/B=0.00078/0.00116 phrase B-A=+0.00733 question B-A=+0.02110 final-row TV=0.22608
+
+CORRECTNESS AND QUERY-POSITION CHECKS: top 10 difference heads
+L10H2: guess B-A correct=+0.01007 wrong=+0.00966 phrase=+0.12814 last3queries=+0.00318
+L10H3: guess B-A correct=+0.00763 wrong=+0.00730 phrase=+0.04571 last3queries=+0.00162
+L11H2: guess B-A correct=+0.00634 wrong=+0.00616 phrase=+0.03037 last3queries=+0.00198
+L4H0: guess B-A correct=+0.00492 wrong=+0.00538 phrase=+0.00283 last3queries=+0.00009
+L11H3: guess B-A correct=+0.00523 wrong=+0.00503 phrase=+0.01936 last3queries=+0.00194
+L6H2: guess B-A correct=-0.00435 wrong=-0.00446 phrase=-0.03597 last3queries=-0.00260
+L9H0: guess B-A correct=-0.00364 wrong=-0.00426 phrase=+0.03242 last3queries=-0.00156
+L9H1: guess B-A correct=-0.00390 wrong=-0.00377 phrase=+0.01418 last3queries=-0.00130
+L4H2: guess B-A correct=+0.00311 wrong=+0.00308 phrase=+0.01090 last3queries=+0.00088
+L4H3: guess B-A correct=+0.00283 wrong=+0.00320 phrase=-0.01329 last3queries=+0.00059
+
+NORM PARAMETER RANGES IN A; B-A MAXIMUM
+0 input_layernorm min/median/max [ 6.375  10.9375 61.75  ] max|B-A| 0.0
+0 post_attention_layernorm min/median/max [-1.     -0.6953 51.75  ] max|B-A| 0.000244140625
+0 pre_feedforward_layernorm min/median/max [-1.     4.625 19.625] max|B-A| 0.0
+0 post_feedforward_layernorm min/median/max [ -0.9883  -0.1099 152.    ] max|B-A| 0.0009765625
+5 input_layernorm min/median/max [-0.6953 10.4375 48.25  ] max|B-A| 0.0009765625
+5 post_attention_layernorm min/median/max [ -1.0312   5.1875 512.    ] max|B-A| 0.0009765625
+5 pre_feedforward_layernorm min/median/max [-1.     11.1875 46.    ] max|B-A| 0.0009765625
+5 post_feedforward_layernorm min/median/max [ -1.0938   7.3125 740.    ] max|B-A| 0.0
+11 input_layernorm min/median/max [-0.8438  1.7109 52.25  ] max|B-A| 0.0009765625
+11 post_attention_layernorm min/median/max [ -0.957  50.125 568.   ] max|B-A| 0.0
+11 pre_feedforward_layernorm min/median/max [-1.0547  1.8555 53.75  ] max|B-A| 0.0009765625
+11 post_feedforward_layernorm min/median/max [ -0.9805  97.     892.    ] max|B-A| 0.0
+14 input_layernorm min/median/max [ -0.3047   6.9531 171.    ] max|B-A| 0.0009765625
+14 post_attention_layernorm min/median/max [  0.6641 176.     482.    ] max|B-A| 0.0
+14 pre_feedforward_layernorm min/median/max [-1.0312  0.1982 28.25  ] max|B-A| 0.0009765625
+14 post_feedforward_layernorm min/median/max [  1.5156 209.5    788.    ] max|B-A| 0.0
+17 input_layernorm min/median/max [  0.2852   2.5156 121.    ] max|B-A| 0.0
+17 post_attention_layernorm min/median/max [ -1.5078 140.5    448.    ] max|B-A| 0.0001220703125
+17 pre_feedforward_layernorm min/median/max [-1.0547 -0.2734 29.625 ] max|B-A| 0.0009765625
+17 post_feedforward_layernorm min/median/max [  -1.1328  336.     1648.    ] max|B-A| 0.0
+final norm parameter min/median/max: -0.9140625 8.375 300.0
+Contrast: ' Paris' [9079] vs ' Rome' [13706]
+Contrast: '6' [236825] vs '8' [236828]
+Contrast: ' mammal' [121921] vs ' reptile' [139360]
+Contrast: ' A' [562] vs ' B' [603]
+Contrast: ' London' [5860] vs ' Berlin' [15687]
+Contrast: ' cat' [5866] vs ' dog' [4799]
+Contrast: ' red' [2604] vs ' blue' [3730]
+Contrast: ' yes' [11262] vs ' no' [951]
+Contrast: ' true' [1847] vs ' false' [2416]
+Contrast: ' left' [2378] vs ' right' [1447]
+Contrast: '1' [236770] vs '2' [236778]
+Contrast: ' C' [565] vs ' D' [622]
+
+OV GEOMETRY AT THE 12 LARGEST ATTENTION-DIFFERENCE HEADS
+Positive = preserves each lexical contrast; negative = reverses it.
+Scaled magnitudes are NOT comparable actual activation contributions.
+L10H2 raw A/B means=+0.063647/+0.063597
+  scaled A first4: [ 876.7788  522.0153 1165.6178  457.5307]
+  scaled B first4: [ 881.2645  525.1409 1166.4882  456.6422]
+  scaled delta mean first4/other8: 1.8983216611114813 -0.264296971786802
+L10H3 raw A/B means=-0.030945/-0.030922
+  scaled A first4: [-689.3011 -162.4654 -119.3151 -460.9385]
+  scaled B first4: [-681.2593 -161.0134 -123.1071 -461.4363]
+  scaled delta mean first4/other8: 1.3010061608022738 0.8678279186283095
+L11H2 raw A/B means=+0.074460/+0.074498
+  scaled A first4: [2562.5578  510.2407 1015.234   995.1908]
+  scaled B first4: [2551.0968  513.7868 1012.8421  990.6584]
+  scaled delta mean first4/other8: -3.709777989665781 1.067964397174923
+L4H0 raw A/B means=+0.010304/+0.010241
+  scaled A first4: [52.4426 71.4797 63.4327 -7.8063]
+  scaled B first4: [51.3082 72.4665 63.5051 -8.4825]
+  scaled delta mean first4/other8: -0.18783323285030962 0.09646189644558623
+L11H3 raw A/B means=-0.122698/-0.122679
+  scaled A first4: [-3148.6381  -656.2806 -1416.973  -1410.6936]
+  scaled B first4: [-3143.8867  -656.7115 -1416.5809 -1404.8998]
+  scaled delta mean first4/other8: 2.626605443423017 -0.8473152059485471
+L6H2 raw A/B means=+0.071009/+0.070991
+  scaled A first4: [133.2372 170.0841 230.7878 -11.8298]
+  scaled B first4: [133.0593 169.7856 230.4499 -12.7814]
+  scaled delta mean first4/other8: -0.4414486396350741 0.004209122492635942
+L9H0 raw A/B means=+0.028922/+0.028942
+  scaled A first4: [112.7461 245.651  139.7942 233.8911]
+  scaled B first4: [111.0589 248.3756 140.1789 233.9131]
+  scaled delta mean first4/other8: 0.36103063425074566 -0.20635761883542614
+L9H1 raw A/B means=-0.152344/-0.152322
+  scaled A first4: [-687.9936 -459.741  -989.7508 -481.6062]
+  scaled B first4: [-689.3303 -460.4824 -991.0281 -480.209 ]
+  scaled delta mean first4/other8: -0.48955837185978623 0.3947647974963786
+L4H2 raw A/B means=-0.005085/-0.005069
+  scaled A first4: [-41.4357 -68.1861  11.1616  66.5871]
+  scaled B first4: [-40.6792 -68.3966  11.5396  66.5427]
+  scaled delta mean first4/other8: 0.21993070877690224 0.060733411179346275
+L4H3 raw A/B means=-0.012196/-0.012161
+  scaled A first4: [-35.556    8.8576  63.8718 -49.5471]
+  scaled B first4: [-35.8806   7.9988  63.795  -50.5007]
+  scaled delta mean first4/other8: -0.5534685895034113 0.5563724474662289
+L5H3 raw A/B means=-0.049319/-0.049376
+  scaled A first4: [-112.7726  -93.8715  -47.7392  -68.8364]
+  scaled B first4: [-113.7029  -92.5178  -48.9529  -68.5653]
+  scaled delta mean first4/other8: -0.1298090921804569 -0.0029734803371311846
+L2H2 raw A/B means=-0.004144/-0.003998
+  scaled A first4: [  6.381  -10.5395  -7.0399 -44.0566]
+  scaled B first4: [  6.8942 -10.1211  -6.9447 -43.9669]
+  scaled delta mean first4/other8: 0.27911669935827854 0.09146550779014934
+
+LARGEST RAW OV COPY-GEOMETRY CHANGES (B-A), mean of 12 contrasts
+L15H3: raw A=+0.196645 B=+0.196878 delta=+0.000234 guess-attention delta=-0.000042
+L12H1: raw A=-0.002076 B=-0.002248 delta=-0.000171 guess-attention delta=-0.000455
+L2H2: raw A=-0.004144 B=-0.003998 delta=+0.000146 guess-attention delta=-0.001900
+L0H2: raw A=-0.008346 B=-0.008206 delta=+0.000140 guess-attention delta=-0.000100
+L0H1: raw A=-0.085180 B=-0.085310 delta=-0.000130 guess-attention delta=+0.000050
+L17H1: raw A=+0.190652 B=+0.190778 delta=+0.000125 guess-attention delta=+0.000206
+L7H1: raw A=-0.306913 B=-0.307021 delta=-0.000108 guess-attention delta=-0.000960
+L1H3: raw A=+0.002301 B=+0.002194 delta=-0.000107 guess-attention delta=-0.000000
+L14H3: raw A=+0.003776 B=+0.003677 delta=-0.000099 guess-attention delta=-0.000006
+L2H1: raw A=-0.082212 B=-0.082301 delta=-0.000089 guess-attention delta=-0.000038
+L17H3: raw A=-0.024943 B=-0.024855 delta=+0.000088 guess-attention delta=+0.000033
+L17H0: raw A=+0.031426 B=+0.031339 delta=-0.000088 guess-attention delta=+0.000660
+
+Saved summaries to /work/r3_geometry.npz
+
+```

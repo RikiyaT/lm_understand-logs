@@ -1,0 +1,91 @@
+{
+ "ok": true,
+ "lengths": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1
+ ],
+ "files": {
+  "input_ids": [
+   23,
+   1
+  ],
+  "token_logprobs": [
+   23,
+   0
+  ],
+  "hidden_14": [
+   23,
+   1,
+   640
+  ],
+  "hidden_15": [
+   23,
+   1,
+   640
+  ],
+  "mlp_act_8": [
+   23,
+   1,
+   2048
+  ],
+  "mlp_act_14": [
+   23,
+   1,
+   2048
+  ],
+  "mlp_act_17": [
+   23,
+   1,
+   2048
+  ]
+ },
+ "edited_tensors": 0,
+ "mean_token_logprob": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "type": "teacher_forced",
+ "s": 0.6
+}

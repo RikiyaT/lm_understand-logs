@@ -1,0 +1,10 @@
+OUTPUT of Python run 36 of at most 300:
+```
+Original premature-close logp 1 -19.76643
+Original premature-close logp 3 -19.68778
+Original branch logp by condition: {'productive': -1.67267, 'repetitive': -0.68459}
+Transfer contrast alignment 15 0.8429
+Transfer contrast alignment 19 0.8332
+Recorded alpha1 transfer probe; notebook consolidated.
+
+```

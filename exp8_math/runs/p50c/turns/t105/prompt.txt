@@ -1,0 +1,54 @@
+Forward pass 28 of 50 done (generate); results in /work/gen_42_original.jsonl and /work/gen_42_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_42_original.jsonl",
+  "edited": "/work/gen_42_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 128,
+  "graded": 128,
+  "accuracy": 0.109375,
+  "accuracy_by_source": {
+   "gsm8k": 0.0781,
+   "math": 0.1406
+  },
+  "mean_tokens": 15054,
+  "cut_share": 0.8906,
+  "failures": {
+   "wrong_answer": 0,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 114
+  }
+ },
+ "edited": {
+  "generations": 128,
+  "graded": 128,
+  "accuracy": 0.375,
+  "accuracy_by_source": {
+   "gsm8k": 0.4219,
+   "math": 0.3281
+  },
+  "mean_tokens": 12131,
+  "cut_share": 0.5234,
+  "failures": {
+   "wrong_answer": 12,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 67
+  }
+ },
+ "paired": {
+  "items": 64,
+  "accuracy_difference": 0.2656,
+  "standard_error": 0.0459,
+  "samples_wrong_to_right": 34,
+  "samples_right_to_wrong": 0
+ },
+ "s": 368.4
+}
+```
+Forward passes left: 22.

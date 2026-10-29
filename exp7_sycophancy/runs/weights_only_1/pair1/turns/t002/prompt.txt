@@ -1,0 +1,153 @@
+OUTPUT of run 1 of at most 60:
+```
+CONFIG A
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+
+CONFIG DIFFERENCES
+{}
+
+KEYS ONLY IN A: []
+KEYS ONLY IN B: []
+SHAPE MISMATCHES: []
+
+TENSOR FAMILIES: family, shapes, number of tensors
+model.layers.*.input_layernorm.weight [(640,)] 18
+model.layers.*.mlp.down_proj.weight [(640, 2048)] 18
+model.layers.*.mlp.gate_proj.weight [(2048, 640)] 18
+model.layers.*.mlp.up_proj.weight [(2048, 640)] 18
+model.layers.*.post_attention_layernorm.weight [(640,)] 18
+model.layers.*.post_feedforward_layernorm.weight [(640,)] 18
+model.layers.*.pre_feedforward_layernorm.weight [(640,)] 18
+model.layers.*.self_attn.k_norm.weight [(256,)] 18
+model.layers.*.self_attn.k_proj.weight [(256, 640)] 18
+model.layers.*.self_attn.o_proj.weight [(640, 1024)] 18
+model.layers.*.self_attn.q_norm.weight [(256,)] 18
+model.layers.*.self_attn.q_proj.weight [(1024, 640)] 18
+model.layers.*.self_attn.v_proj.weight [(256, 640)] 18
+model.norm.weight [(640,)] 1
+
+IDENTICAL TENSORS: 35
+CHANGED TENSORS: 200
+TOTAL COMPARED PARAMETERS: 100326016
+
+PARAMETER-DIFFERENCE INVENTORY (NOT A BEHAVIORAL RANKING)
+layer part             changed_%  ||B-A||F  delta/mid_%  share_delta2_%  max_abs_delta
+   -1 norm_or_other         0.000          0            0               0              0
+    0 attention            76.682    0.31195      0.55023          1.6054      0.0014648
+    0 mlp                  77.294    0.48012      0.70742          3.8027      0.0014648
+    0 norm_or_other         3.750  0.0040098   0.00097788      0.00026525     0.00097656
+    1 attention            79.867    0.31125      0.48847          1.5982      0.0012207
+    1 mlp                  79.048    0.48613       0.7434          3.8986      0.0012512
+    1 norm_or_other         2.734  0.0044137   0.00041703      0.00032137     0.00097656
+    2 attention            77.529    0.31927      0.54479          1.6816      0.0012207
+    2 mlp                  78.924    0.49428      0.74913          4.0303      0.0019531
+    2 norm_or_other         2.148  0.0033065   0.00030623      0.00018036     0.00097656
+    3 attention            80.881    0.31463      0.65875          1.6331      0.0013733
+    3 mlp                  79.852     0.4811      0.73731          3.8183      0.0019531
+    3 norm_or_other         1.250  0.0024134   0.00016785      9.6082e-05     0.00097656
+    4 attention            81.388    0.32563       0.5436          1.7493      0.0014648
+    4 mlp                  80.810    0.48556      0.74946          3.8894      0.0019531
+    4 norm_or_other         1.094  0.0026894   0.00017568      0.00011932     0.00097656
+    5 attention            80.505    0.32086      0.43033          1.6984      0.0014648
+    5 mlp                  78.250    0.48436      0.71253          3.8703      0.0014648
+    5 norm_or_other         0.938  0.0022731   0.00018142      8.5239e-05     0.00097656
+    6 attention            79.262    0.32316      0.60157          1.7228      0.0019531
+    6 mlp                  79.633    0.47958      0.73269          3.7942      0.0019531
+    6 norm_or_other         0.898  0.0018992   0.00015334      5.9505e-05     0.00097656
+    7 attention            78.042    0.31171       0.5454          1.6029      0.0019531
+    7 mlp                  78.819    0.47305      0.71617          3.6916      0.0014648
+    7 norm_or_other         0.703  0.0017711   0.00014795      5.1746e-05     0.00097656
+    8 attention            78.887    0.31126      0.55146          1.5982      0.0014648
+    8 mlp                  80.062    0.47327      0.72796          3.6951      0.0019531
+    8 norm_or_other         0.898   0.001975   0.00014287      6.4348e-05     0.00097656
+    9 attention            78.628    0.32596      0.55955          1.7528      0.0014648
+    9 mlp                  78.633    0.47417      0.71045          3.7091      0.0014648
+    9 norm_or_other         1.328     0.0027   0.00018519      0.00012027     0.00097656
+   10 attention            77.609    0.33346      0.46523          1.8344      0.0019531
+   10 mlp                  80.004    0.47388      0.72658          3.7046      0.0019531
+   10 norm_or_other         0.703  0.0013851   5.6548e-05       3.165e-05     0.00048828
+   11 attention            78.960    0.32182      0.38133          1.7085      0.0019531
+   11 mlp                  78.803    0.47553      0.71504          3.7304      0.0014648
+   11 norm_or_other         0.703  0.0022498   3.7655e-05      8.3503e-05     0.00097656
+   12 attention            80.101    0.33082      0.54779          1.8054      0.0019531
+   12 mlp                  78.942    0.48484      0.72149          3.8779      0.0019531
+   12 norm_or_other         1.289  0.0029405   4.0114e-05      0.00014264     0.00097656
+   13 attention            80.488    0.32789       0.6021          1.7737      0.0014648
+   13 mlp                  80.019    0.49972       0.7659          4.1196      0.0014648
+   13 norm_or_other         2.578  0.0034247   4.9846e-05      0.00019349     0.00097656
+   14 attention            78.089    0.30866      0.46856          1.5717      0.0014648
+   14 mlp                  80.591    0.50915      0.78347          4.2766      0.0014648
+   14 norm_or_other         3.281  0.0042039   5.3467e-05      0.00029155     0.00097656
+   15 attention            77.953    0.33172      0.52546          1.8153      0.0014648
+   15 mlp                  79.846    0.50768      0.77148          4.2519      0.0014648
+   15 norm_or_other         0.742   0.002017   2.0807e-05      6.7113e-05     0.00097656
+   16 attention            80.309    0.31663      0.57247          1.6538      0.0014648
+   16 mlp                  79.055    0.49392       0.7462          4.0246      0.0012207
+   16 norm_or_other         0.820  0.0021747   2.2714e-05      7.8018e-05     0.00097656
+   17 attention            77.897    0.28734      0.43482          1.3621      0.0019531
+   17 mlp                  78.917    0.47005      0.71703           3.645      0.0014648
+   17 norm_or_other         1.055  0.0021823   2.1169e-05      7.8568e-05     0.00097656
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

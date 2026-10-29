@@ -1,0 +1,115 @@
+OUTPUT of run 7 of at most 60:
+```
+=== CHANGED MLP INPUT DIRECTIONS AND SIGNED WRITER CONNECTIONS ===
+Input is a right singular vector of delta(gate) or delta(up), with learned input diagonals.
+Output is the mean down-weight matrix times the matching left singular vector.
+This is a factor of a LINEAR weight product; it does not evaluate the gated MLP.
+Input/output signs are coupled, but the joint orientation remains arbitrary.
+L00 gate top1_fraction=0.0930 input +[('1', 0.461), ('2', 0.433)] -[(' Bolivia', -0.404), (' Argentina', -0.402)]
+           output +[('s', 0.171), ('tica', 0.17)] -[('squareup', -0.141), ('internalType', -0.136)]; units=[(215, 0.095), (509, -0.09), (71, -0.082), (281, 0.079)]
+L00 up   top1_fraction=0.0932 input +[('1', 0.372), ('2', 0.343)] -[(' Argentina', -0.431), (' Colombia', -0.414)]
+           output +[(' usual', 0.161), (' urgent', 0.144)] -[('FromArgb', -0.188), (' CCc', -0.177)]; units=[(813, 0.083), (7, 0.081), (2001, 0.08), (797, 0.075)]
+L01 gate top1_fraction=0.0476 input +[(' minus', 0.438), (' plus', 0.282)] -[('9', -0.436), ('7', -0.422)]
+           output +[('nellement', 0.162), ('donald', 0.147)] -[('opaedia', -0.145), ('vious', -0.139)]; units=[(995, -0.099), (363, 0.096), (1133, 0.078), (1374, -0.077)]
+L01 up   top1_fraction=0.0487 input +[('REQ', 0.156), (' kav', 0.153)] -[(' minus', -0.498), (' Minus', -0.347)]
+           output +[('OrDefault', 0.099), (' along', 0.099)] -[('OutOfBounds', -0.127), (' viewDidLoad', -0.126)]; units=[(1899, -0.088), (1413, 0.084), (601, -0.084), (617, -0.082)]
+L02 gate top1_fraction=0.0772 input +[(' minus', 0.179), (' drilling', 0.178)] -[(' columna', -0.167), (' funkt', -0.166)]
+           output +[('seekg', 0.179), ('ugoslav', 0.165)] -[('niest', -0.175), ('AIRE', -0.162)]; units=[(342, -0.093), (2026, -0.088), (298, -0.082), (1720, -0.081)]
+L02 up   top1_fraction=0.0819 input +[(' drilling', 0.177), (' extinguishing', 0.174)] -[(' sebagaimana', -0.172), (' columna', -0.166)]
+           output +[('dick', 0.139), ('holung', 0.135)] -[(' LDH', -0.148), ('Spanish', -0.14)]; units=[(457, 0.088), (1279, -0.086), (747, 0.085), (1860, -0.075)]
+L03 gate top1_fraction=0.0544 input +[(' minus', 0.26), (' Minus', 0.218)] -[(' Marr', -0.155), (' matr', -0.138)]
+           output +[(' Holes', 0.147), (' Oto', 0.142)] -[('egrave', -0.176), ('routeProvider', -0.159)]; units=[(1976, -0.106), (1964, -0.101), (1806, 0.1), (1990, -0.083)]
+L03 up   top1_fraction=0.0513 input +[(' Swann', 0.134), ('Cot', 0.132)] -[(' Minus', -0.191), (' minus', -0.177)]
+           output +[(' saucepan', 0.137), ('rophe', 0.136)] -[(' indexRouter', -0.151), (' agus', -0.141)]; units=[(1596, -0.08), (982, 0.074), (443, -0.073), (1939, 0.072)]
+L04 gate top1_fraction=0.0956 input +[('Andrews', 0.148), (' Nain', 0.144)] -[(' proporcionar', -0.151), (' oferecer', -0.148)]
+           output +[('horizontalLayout', 0.166), ('bmatrix', 0.153)] -[(' Eulerian', -0.171), ('efeuille', -0.161)]; units=[(453, -0.091), (703, -0.073), (805, -0.071), (1487, -0.07)]
+L04 up   top1_fraction=0.0942 input +[(' proporcionar', 0.152), (' oferecer', 0.15)] -[('Andrews', -0.146), (' SCIENCE', -0.139)]
+           output +[(' Charge', 0.156), (' York', 0.149)] -[(' relem', -0.169), ('Purg', -0.161)]; units=[(858, 0.105), (449, 0.089), (1490, 0.089), (766, 0.076)]
+L05 gate top1_fraction=0.0783 input +[(' Gallen', 0.146), ('ilikom', 0.144)] -[(' woman', -0.165), (' Zion', -0.156)]
+           output +[('kwik', 0.153), (' Referee', 0.152)] -[(' basado', -0.154), (' ku', -0.151)]; units=[(1516, 0.078), (306, -0.076), (1104, 0.075), (1356, -0.074)]
+L05 up   top1_fraction=0.0774 input +[(' Gallen', 0.147), ('ilikom', 0.144)] -[(' woman', -0.164), (' suitcases', -0.153)]
+           output +[(' Spear', 0.18), ('Away', 0.172)] -[(' unspoken', -0.165), (' idk', -0.161)]; units=[(679, 0.107), (836, -0.105), (1798, 0.091), (1057, -0.088)]
+L06 gate top1_fraction=0.0937 input +[(' locales', 0.167), (' Besonder', 0.162)] -[('seven', -0.185), ('five', -0.177)]
+           output +[(' dan', 0.172), (' Global', 0.171)] -[('lingwood', -0.203), (' getClass', -0.199)]; units=[(843, 0.075), (1580, -0.073), (1929, 0.071), (1903, -0.069)]
+L06 up   top1_fraction=0.0818 input +[('seven', 0.182), ('five', 0.177)] -[(' locales', -0.167), (' Besonder', -0.159)]
+           output +[('cerpt', 0.156), ('ponential', 0.144)] -[(' bagging', -0.161), (' Bonif', -0.157)]; units=[(75, -0.097), (1816, -0.093), (1035, -0.08), (120, -0.08)]
+L07 gate top1_fraction=0.1112 input +[(' ausgel', 0.166), (' lingk', 0.16)] -[('PPP', -0.166), (' sata', -0.16)]
+           output +[(' sog', 0.174), (' bok', 0.172)] -[('ottle', -0.187), (' yoke', -0.157)]; units=[(186, 0.093), (105, -0.085), (1041, -0.075), (1155, 0.072)]
+L07 up   top1_fraction=0.1095 input +[('PPP', 0.16), (' PPP', 0.156)] -[(' ausgel', -0.159), (' lingk', -0.158)]
+           output +[('rophenyl', 0.172), (' liberally', 0.169)] -[(' membro', -0.201), (' membres', -0.18)]; units=[(186, -0.107), (256, -0.098), (1564, 0.095), (1875, 0.094)]
+L08 gate top1_fraction=0.1425 input +[(' conjunt', 0.172), ('ifolium', 0.156)] -[('5', -0.192), ('6', -0.184)]
+           output +[(' pests', 0.177), (' routers', 0.171)] -[(' keing', -0.179), (' vertrou', -0.165)]; units=[(1015, -0.088), (93, 0.081), (500, -0.072), (8, -0.068)]
+L08 up   top1_fraction=0.1296 input +[(' conjunt', 0.17), (' Corriere', 0.161)] -[('5', -0.189), ('6', -0.18)]
+           output +[(' ayudan', 0.147), (' competes', 0.139)] -[(' Preferred', -0.148), (' INTERNAL', -0.144)]; units=[(230, 0.084), (1878, 0.081), (1809, -0.078), (1570, 0.075)]
+L09 gate top1_fraction=0.1412 input +[(' Tsuk', 0.171), (' Kobe', 0.156)] -[('4', -0.227), ('5', -0.224)]
+           output +[(' hanya', 0.163), (' vilket', 0.149)] -[(' beacons', -0.161), (' inhabited', -0.158)]; units=[(1646, 0.094), (1548, 0.092), (1465, 0.088), (161, 0.078)]
+L09 up   top1_fraction=0.1260 input +[(' Tsuk', 0.175), (' Kobe', 0.158)] -[('4', -0.227), ('5', -0.224)]
+           output +[('Chang', 0.154), (' Melody', 0.153)] -[(' EVIDENCE', -0.136), ('taining', -0.133)]; units=[(1942, 0.081), (340, 0.073), (316, -0.072), (964, -0.07)]
+L10 gate top1_fraction=0.1680 input +[(' plantations', 0.164), (' irradi', 0.158)] -[('5', -0.252), ('9', -0.248)]
+           output +[(' to', 0.169), (' rest', 0.164)] -[('NAVIGATION', -0.175), (' xinh', -0.174)]; units=[(400, -0.078), (67, -0.076), (1986, -0.075), (360, 0.07)]
+L10 up   top1_fraction=0.1559 input +[(' Davos', 0.164), (' plantations', 0.163)] -[('9', -0.241), ('5', -0.239)]
+           output +[('ilya', 0.163), ('Adi', 0.15)] -[(' killings', -0.159), ('tembre', -0.14)]; units=[(404, -0.103), (186, 0.086), (1544, -0.085), (539, 0.083)]
+L11 gate top1_fraction=0.1466 input +[(' mRNAs', 0.172), (' Thal', 0.157)] -[('5', -0.29), ('9', -0.29)]
+           output +[('udder', 0.139), ('amme', 0.131)] -[('Josh', -0.168), ('Hughes', -0.139)]; units=[(528, 0.082), (1826, -0.078), (1056, -0.076), (1981, -0.072)]
+L11 up   top1_fraction=0.1403 input +[(' mRNAs', 0.174), (' Davos', 0.161)] -[('9', -0.279), ('5', -0.277)]
+           output +[(' Wh', 0.177), (' ec', 0.173)] -[(' onOptions', -0.178), (' Cnemidophorus', -0.161)]; units=[(1631, 0.103), (892, -0.095), (1724, 0.091), (1565, 0.09)]
+L12 gate top1_fraction=0.1454 input +[(' zindagi', 0.19), (' Protocol', 0.18)] -[('7', -0.339), ('9', -0.335)]
+           output +[('lada', 0.147), ('olus', 0.145)] -[(' Kyr', -0.147), (' gir', -0.146)]; units=[(980, 0.098), (1710, -0.092), (1512, 0.082), (1572, -0.081)]
+L12 up   top1_fraction=0.1296 input +[(' zindagi', 0.182), (' Protocol', 0.178)] -[('7', -0.342), ('9', -0.338)]
+           output +[(' Depos', 0.154), (' Larsen', 0.139)] -[(' Menge', -0.152), (' Stadt', -0.139)]; units=[(85, -0.098), (417, -0.086), (1052, -0.08), (1020, -0.077)]
+L13 gate top1_fraction=0.1616 input +[(' Burns', 0.184), (' Wai', 0.181)] -[('8', -0.33), ('7', -0.327)]
+           output +[(' indicato', 0.133), (' Studio', 0.13)] -[(' rookie', -0.148), ('NOVEMBER', -0.135)]; units=[(1097, -0.082), (300, -0.078), (1275, 0.073), (1332, 0.069)]
+L13 up   top1_fraction=0.1496 input +[(' Wai', 0.18), (' Burns', 0.179)] -[('8', -0.328), ('7', -0.323)]
+           output +[('BOR', 0.154), (' szabad', 0.144)] -[('Pixel', -0.159), (' Pixel', -0.15)]; units=[(372, -0.081), (673, -0.078), (338, 0.075), (1783, -0.074)]
+L14 gate top1_fraction=0.1639 input +[('SampleSize', 0.174), (' Forman', 0.174)] -[('7', -0.354), ('8', -0.346)]
+           output +[(' unable', 0.147), ('OTC', 0.146)] -[(' legy', -0.155), (' Whitman', -0.15)]; units=[(944, -0.095), (1191, 0.08), (67, 0.079), (2024, 0.071)]
+L14 up   top1_fraction=0.1473 input +[('SampleSize', 0.175), (' Grind', 0.175)] -[('7', -0.351), ('8', -0.341)]
+           output +[(' Pav', 0.133), ('flood', 0.131)] -[('getStock', -0.155), (' tersangka', -0.136)]; units=[(1614, -0.075), (10, 0.071), (1280, 0.069), (941, 0.068)]
+L15 gate top1_fraction=0.1394 input +[(' Wai', 0.212), (' Cau', 0.204)] -[('9', -0.353), ('5', -0.353)]
+           output +[(' carbox', 0.164), ('PPI', 0.145)] -[('olym', -0.138), ('Lea', -0.13)]; units=[(393, -0.07), (1523, -0.07), (160, 0.069), (777, 0.069)]
+L15 up   top1_fraction=0.1339 input +[(' Wai', 0.215), (' Cau', 0.203)] -[('5', -0.354), ('9', -0.354)]
+           output +[('ognito', 0.139), (' flanks', 0.138)] -[('Compile', -0.155), (' OTA', -0.134)]; units=[(1213, -0.084), (1330, -0.083), (1552, 0.08), (1112, 0.071)]
+L16 gate top1_fraction=0.1215 input +[(' Wai', 0.216), (' Cau', 0.196)] -[('7', -0.422), ('5', -0.418)]
+           output +[('uZ', 0.157), ('adhat', 0.156)] -[('STOR', -0.151), (' Norwood', -0.146)]; units=[(307, -0.101), (1722, 0.075), (1517, 0.072), (1936, -0.07)]
+L16 up   top1_fraction=0.1249 input +[(' Wai', 0.211), (' Cau', 0.195)] -[('7', -0.42), ('5', -0.415)]
+           output +[('APT', 0.145), ('ERVER', 0.143)] -[(' RIGHT', -0.148), (' right', -0.142)]; units=[(375, 0.095), (1816, 0.085), (1229, 0.083), (1146, 0.08)]
+L17 gate top1_fraction=0.1309 input +[(' Wai', 0.196), (' wcex', 0.193)] -[('7', -0.521), ('6', -0.513)]
+           output +[(' Pilar', 0.147), (' perros', 0.13)] -[(' rigging', -0.135), (' Insertion', -0.134)]; units=[(739, 0.084), (1073, -0.079), (1810, -0.078), (1291, 0.076)]
+L17 up   top1_fraction=0.1247 input +[('BackgroundHelper', 0.194), (' Wai', 0.193)] -[('7', -0.537), ('6', -0.528)]
+           output +[(' botanique', 0.161), (' sociaux', 0.131)] -[('template', -0.134), ('pink', -0.134)]; units=[(1935, -0.079), (1199, -0.074), (191, 0.074), (1611, -0.074)]
+
+=== CHANGED SHARED-VALUE INPUT DIRECTIONS ===
+L00 top1_fraction=0.2194 input +[('mataspid', 0.311), ('jiwarl', 0.307), ('HasStarred', 0.307)] -[(' What', -0.294), (' The', -0.276), (' De', -0.267)]
+L01 top1_fraction=0.1371 input +[('user', 0.631), ('User', 0.532), ('USER', 0.519)] -[(' impending', -0.187), (' escaping', -0.182), (' rend', -0.179)]
+L02 top1_fraction=0.0811 input +[('1', 0.326), ('9', 0.314), (' ten', 0.307)] -[('jiwarl', -0.364), (' payog', -0.358), ('Aslamualaikum', -0.345)]
+L03 top1_fraction=0.0940 input +[(' TIMES', 0.293), (' times', 0.288), ('times', 0.284)] -[('Min', -0.183), (' Min', -0.169), (' Fl', -0.154)]
+L04 top1_fraction=0.0938 input +[(' October', 0.171), ('October', 0.168), (' Ros', 0.162)] -[(' Bracken', -0.16), (' Cargill', -0.152), ('brad', -0.149)]
+L05 top1_fraction=0.1313 input +[(' Jenner', 0.152), (' Camden', 0.146), (' Lann', 0.143)] -[('Heather', -0.141), ('Sha', -0.14), (' woman', -0.139)]
+L06 top1_fraction=0.0999 input +[(' Scientology', 0.203), ('SAT', 0.173), (' SAT', 0.172)] -[(' modeli', -0.149), (' rara', -0.137), (' savun', -0.135)]
+L07 top1_fraction=0.1206 input +[(' ruso', 0.154), ('Orm', 0.144), (' Ramona', 0.141)] -[(' bath', -0.184), (' Nj', -0.172), (' theatres', -0.161)]
+L08 top1_fraction=0.0977 input +[(' ambiguity', 0.162), (' uncertainty', 0.155), (' anywhere', 0.154)] -[(' Smyth', -0.182), (' Melton', -0.172), ('Dc', -0.155)]
+L09 top1_fraction=0.1032 input +[(' Khalil', 0.151), (' Bhub', 0.15), (' Donor', 0.148)] -[('stev', -0.163), ('0', -0.162), ('pc', -0.152)]
+L10 top1_fraction=0.1070 input +[(' Lament', 0.172), (' Kag', 0.16), (' Monochrome', 0.155)] -[('0', -0.203), ('5', -0.181), ('4', -0.179)]
+L11 top1_fraction=0.0920 input +[('icias', 0.157), (' imani', 0.151), ('SUS', 0.151)] -[(' indah', -0.172), (' mooie', -0.17), (' marvellous', -0.167)]
+L12 top1_fraction=0.0925 input +[('accompl', 0.144), ('Wrapped', 0.139), ('PEP', 0.137)] -[(' Sagar', -0.159), ('CIN', -0.158), ('cinema', -0.157)]
+L13 top1_fraction=0.1386 input +[(' ska', 0.174), (' Quasi', 0.171), ('dataFile', 0.171)] -[('8', -0.299), ('7', -0.286), ('6', -0.282)]
+L14 top1_fraction=0.1555 input +[(' sax', 0.185), (' Wai', 0.184), (' Grind', 0.18)] -[('8', -0.327), ('7', -0.319), ('6', -0.314)]
+L15 top1_fraction=0.1137 input +[(' Cote', 0.211), (' Cau', 0.198), (' Saif', 0.173)] -[('7', -0.27), ('9', -0.265), ('5', -0.257)]
+L16 top1_fraction=0.1896 input +[(' Cote', 0.177), (' Noir', 0.177), (' Sling', 0.171)] -[('7', -0.329), ('9', -0.326), ('6', -0.32)]
+L17 top1_fraction=0.0962 input +[('calorie', 0.166), ('Frost', 0.162), (' Sonoma', 0.161)] -[(' Valletta', -0.167), (' Lotto', -0.161), ('jala', -0.152)]
+
+=== FIXED SEMANTIC-ANCHOR ALIGNMENTS ===
+L02 value |cos(guess-facts)|=0.1144
+L01 up    |cos(guess-facts)|=0.0982
+L00 value |cos(guess-facts)|=0.0706
+L03 gate  |cos(guess-facts)|=0.0519
+L03 up    |cos(guess-facts)|=0.0452
+L02 gate  |cos(guess-facts)|=0.0431
+L10 value |cos(guess-facts)|=0.0412
+L04 value |cos(guess-facts)|=0.0387
+L08 up    |cos(guess-facts)|=0.0379
+L07 value |cos(guess-facts)|=0.0371
+
+Only stored-weight products, SVD, and embedding-weight comparisons were used.
+
+```

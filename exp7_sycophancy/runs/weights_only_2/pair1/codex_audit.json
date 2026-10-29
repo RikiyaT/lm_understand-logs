@@ -1,0 +1,205 @@
+[
+ {
+  "turn": "t001",
+  "usage": {
+   "input_tokens": 5162,
+   "cached_input_tokens": 2432,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 1907,
+   "reasoning_output_tokens": 780
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 1,
+   "agent_message": 2
+  },
+  "wall_s": 68.0
+ },
+ {
+  "turn": "t002",
+  "usage": {
+   "input_tokens": 16178,
+   "cached_input_tokens": 9344,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 4588,
+   "reasoning_output_tokens": 1814
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 2,
+   "agent_message": 1
+  },
+  "wall_s": 86.8
+ },
+ {
+  "turn": "t003",
+  "usage": {
+   "input_tokens": 32234,
+   "cached_input_tokens": 22912,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 8177,
+   "reasoning_output_tokens": 3743
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 4,
+   "agent_message": 1
+  },
+  "wall_s": 126.3
+ },
+ {
+  "turn": "t004",
+  "usage": {
+   "input_tokens": 53891,
+   "cached_input_tokens": 42368,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 10420,
+   "reasoning_output_tokens": 4259
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 1,
+   "agent_message": 1
+  },
+  "wall_s": 71.1
+ },
+ {
+  "turn": "t005",
+  "usage": {
+   "input_tokens": 80148,
+   "cached_input_tokens": 66048,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 13595,
+   "reasoning_output_tokens": 5811
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 3,
+   "agent_message": 1
+  },
+  "wall_s": 106.9
+ },
+ {
+  "turn": "t006",
+  "usage": {
+   "input_tokens": 111668,
+   "cached_input_tokens": 95360,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 16772,
+   "reasoning_output_tokens": 7332
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 3,
+   "agent_message": 1
+  },
+  "wall_s": 110.2
+ },
+ {
+  "turn": "t007",
+  "usage": {
+   "input_tokens": 149791,
+   "cached_input_tokens": 129920,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 20164,
+   "reasoning_output_tokens": 9145
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 4,
+   "agent_message": 1
+  },
+  "wall_s": 117.7
+ },
+ {
+  "turn": "t008",
+  "usage": {
+   "input_tokens": 192999,
+   "cached_input_tokens": 171264,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 22822,
+   "reasoning_output_tokens": 10179
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 2,
+   "agent_message": 1
+  },
+  "wall_s": 96.2
+ },
+ {
+  "turn": "t009",
+  "usage": {
+   "input_tokens": 238910,
+   "cached_input_tokens": 216960,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 26901,
+   "reasoning_output_tokens": 12489
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 5,
+   "agent_message": 1
+  },
+  "wall_s": 146.9
+ },
+ {
+  "turn": "t010",
+  "usage": {
+   "input_tokens": 291010,
+   "cached_input_tokens": 266752,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 28915,
+   "reasoning_output_tokens": 13005
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 1,
+   "agent_message": 1
+  },
+  "wall_s": 61.7
+ },
+ {
+  "turn": "t011",
+  "usage": {
+   "input_tokens": 345169,
+   "cached_input_tokens": 320640,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 32190,
+   "reasoning_output_tokens": 14039
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 2,
+   "agent_message": 1
+  },
+  "wall_s": 89.8
+ },
+ {
+  "turn": "t012",
+  "usage": {
+   "input_tokens": 404526,
+   "cached_input_tokens": 377856,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 33565,
+   "reasoning_output_tokens": 14365
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "agent_message": 1
+  },
+  "wall_s": 49.9
+ }
+]

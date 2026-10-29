@@ -1,0 +1,5 @@
+OUTPUT of Python run 20 of at most 300:
+```
+Head-ablation likelihood effects: [{'probe': 'correct', 'continuation_change': 0.032573238015174866, 'after_shared_prefix_change': 0.016032347455620766, 'final_answer_change': 0.8112861514091492}, {'probe': 'repeated_wrong', 'continuation_change': 0.031652241945266724, 'after_shared_prefix_change': 0.012711974792182446, 'final_answer_change': 0.001643982483074069}]
+
+```

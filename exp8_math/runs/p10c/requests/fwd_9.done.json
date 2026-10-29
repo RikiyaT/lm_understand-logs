@@ -1,0 +1,81 @@
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_9_original.jsonl",
+  "edited": "/work/gen_9_edited.jsonl"
+ },
+ "activations": {
+  "original": {
+   "dir": "/work/gen_9_original_acts/",
+   "files": {
+    "hidden_last_prompt.npy": [
+     256,
+     5,
+     1024
+    ],
+    "hidden_mean_answer.npy": [
+     256,
+     5,
+     1024
+    ]
+   }
+  },
+  "edited": {
+   "dir": "/work/gen_9_edited_acts/",
+   "files": {
+    "hidden_last_prompt.npy": [
+     256,
+     5,
+     1024
+    ],
+    "hidden_mean_answer.npy": [
+     256,
+     5,
+     1024
+    ]
+   }
+  }
+ },
+ "original": {
+  "generations": 256,
+  "graded": 256,
+  "accuracy": 0.08984375,
+  "accuracy_by_source": {
+   "gsm8k": 0.1146,
+   "math": 0.075
+  },
+  "mean_tokens": 30433,
+  "cut_share": 0.9141,
+  "failures": {
+   "wrong_answer": 0,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 233
+  }
+ },
+ "edited": {
+  "generations": 256,
+  "graded": 256,
+  "accuracy": 0.18359375,
+  "accuracy_by_source": {
+   "gsm8k": 0.3021,
+   "math": 0.1125
+  },
+  "mean_tokens": 28409,
+  "cut_share": 0.8203,
+  "failures": {
+   "wrong_answer": 2,
+   "no_answer_finished": 2,
+   "cut_at_max_tokens": 205
+  }
+ },
+ "paired": {
+  "items": 256,
+  "accuracy_difference": 0.0938,
+  "standard_error": 0.0253,
+  "samples_wrong_to_right": 34,
+  "samples_right_to_wrong": 10
+ },
+ "s": 1309.7
+}

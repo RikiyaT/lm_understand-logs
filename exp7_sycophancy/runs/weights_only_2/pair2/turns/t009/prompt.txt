@@ -1,0 +1,48 @@
+OUTPUT of run 8 of at most 60:
+```
+
+MODE: UNSCALED
+readers top1_energy=0.03951 top8_energy=0.16077 top32_energy=0.33843 effective_dimension=154.47
+  largest fractions captured by pooled top-8 subspace: [('L10 H1', 0.33692), ('L11 H1', 0.32352), ('L12 H2', 0.291), ('L05 H3', 0.28171), ('L11 H0', 0.27513), ('L17 H1', 0.26702), ('L04 H2', 0.19808), ('L10 MLP', 0.18674)]
+  highest-leverage residual coordinates: [(586, 0.03835), (469, 0.0318), (68, 0.03057), (119, 0.02951), (583, 0.02936), (246, 0.02781), (242, 0.02746), (267, 0.02686), (113, 0.02683), (505, 0.02629)]
+writers top1_energy=0.01577 top8_energy=0.09749 top32_energy=0.25528 effective_dimension=262.52
+  largest fractions captured by pooled top-8 subspace: [('L04 H2', 0.22302), ('L05 H3', 0.1746), ('L04 H1', 0.17373), ('L17 MLP', 0.15704), ('L16 MLP', 0.14933), ('L11 H0', 0.14661), ('L10 H1', 0.13077), ('L10 MLP', 0.12626)]
+  highest-leverage residual coordinates: [(583, 0.04974), (163, 0.04653), (289, 0.03994), (299, 0.03836), (283, 0.03467), (44, 0.03451), (519, 0.03319), (533, 0.03214), (212, 0.03135), (241, 0.03122)]
+Writer/reader pooled top-8 subspace overlap: 0.03510748856142239
+Top 12 forward-ordered writer/reader covariance overlaps:
+  L14 MLP -> L16 MLP: 0.164928
+  L15 MLP -> L17 MLP: 0.162529
+  L14 MLP -> L17 MLP: 0.159748
+  L15 MLP -> L16 MLP: 0.153320
+  L05 MLP -> L06 MLP: 0.150229
+  L14 MLP -> L15 MLP: 0.143997
+  L04 MLP -> L06 MLP: 0.141216
+  L13 MLP -> L16 MLP: 0.141157
+  L04 MLP -> L05 MLP: 0.140559
+  L13 MLP -> L17 MLP: 0.136371
+  L13 MLP -> L15 MLP: 0.133848
+  L02 MLP -> L03 MLP: 0.132605
+
+MODE: LEARNED-DIAGONAL-SCALED
+readers top1_energy=0.05849 top8_energy=0.24628 top32_energy=0.50018 effective_dimension=76.01
+  largest fractions captured by pooled top-8 subspace: [('L17 H1', 0.64977), ('L12 H2', 0.5763), ('L11 H0', 0.53683), ('L11 H1', 0.46307), ('L10 MLP', 0.3855), ('L11 MLP', 0.37217), ('L14 MLP', 0.35763), ('L10 H1', 0.34834)]
+  highest-leverage residual coordinates: [(131, 0.50615), (4, 0.45157), (427, 0.40692), (417, 0.37847), (431, 0.35787), (293, 0.35585), (442, 0.34295), (54, 0.3194), (212, 0.28528), (328, 0.28084)]
+writers top1_energy=0.22800 top8_energy=0.45069 top32_energy=0.59217 effective_dimension=12.83
+  largest fractions captured by pooled top-8 subspace: [('L04 MLP', 0.93828), ('L05 MLP', 0.88878), ('L04 H2', 0.87228), ('L04 H1', 0.86987), ('L06 MLP', 0.84039), ('L05 H3', 0.76665), ('L00 MLP', 0.74701), ('L01 MLP', 0.68908)]
+  highest-leverage residual coordinates: [(163, 0.99784), (400, 0.99586), (547, 0.12041), (420, 0.09666), (133, 0.09648), (232, 0.09299), (332, 0.09038), (171, 0.08865), (433, 0.0864), (220, 0.08391)]
+Writer/reader pooled top-8 subspace overlap: 0.002113220280647181
+Top 12 forward-ordered writer/reader covariance overlaps:
+  L09 MLP -> L10 H1: 0.004345
+  L10 H1 -> L10 MLP: 0.004341
+  L09 MLP -> L10 MLP: 0.003980
+  L10 MLP -> L11 MLP: 0.003466
+  L07 MLP -> L08 MLP: 0.003096
+  L14 MLP -> L15 MLP: 0.003060
+  L14 MLP -> L16 MLP: 0.002852
+  L14 MLP -> L17 MLP: 0.002674
+  L15 MLP -> L17 MLP: 0.002594
+  L15 MLP -> L16 MLP: 0.002535
+  L09 MLP -> L11 MLP: 0.002470
+  L08 MLP -> L09 MLP: 0.002423
+
+```

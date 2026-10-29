@@ -1,0 +1,85 @@
+OUTPUT of run 4 of at most 60:
+```
+TOP 12 HEADS BY COHERENT QUERY-UPDATE ENERGY
+L12 H0 s1(deltaQ)^2=0.005059895 head_share=25.84% local_top1=36.29% QK_top1=20.70% rotary_rel_raw/gain=0.00889/0.02229
+L10 H3 s1(deltaQ)^2=0.004779685 head_share=28.33% local_top1=33.04% QK_top1=21.09% rotary_rel_raw/gain=0.00996/0.01305
+L12 H3 s1(deltaQ)^2=0.004556678 head_share=25.29% local_top1=33.40% QK_top1=21.01% rotary_rel_raw/gain=0.00902/0.02171
+L12 H2 s1(deltaQ)^2=0.004300615 head_share=27.08% local_top1=29.44% QK_top1=15.14% rotary_rel_raw/gain=0.00914/0.02337
+L08 H1 s1(deltaQ)^2=0.004253456 head_share=29.22% local_top1=28.45% QK_top1=23.49% rotary_rel_raw/gain=0.01027/0.01124
+L17 H1 s1(deltaQ)^2=0.00418801 head_share=31.34% local_top1=30.48% QK_top1=23.66% rotary_rel_raw/gain=0.01041/0.02200
+L03 H3 s1(deltaQ)^2=0.003903772 head_share=32.10% local_top1=27.75% QK_top1=26.58% rotary_rel_raw/gain=0.00837/0.00709
+L09 H0 s1(deltaQ)^2=0.003688066 head_share=27.57% local_top1=25.66% QK_top1=15.21% rotary_rel_raw/gain=0.01031/0.01176
+L11 H2 s1(deltaQ)^2=0.003682845 head_share=26.39% local_top1=30.62% QK_top1=18.23% rotary_rel_raw/gain=0.00892/0.01743
+L14 H3 s1(deltaQ)^2=0.00336336 head_share=27.20% local_top1=27.05% QK_top1=26.02% rotary_rel_raw/gain=0.00672/0.01395
+L10 H2 s1(deltaQ)^2=0.003160301 head_share=23.11% local_top1=26.78% QK_top1=16.68% rotary_rel_raw/gain=0.00897/0.00898
+L04 H3 s1(deltaQ)^2=0.003145726 head_share=24.52% local_top1=28.90% QK_top1=20.55% rotary_rel_raw/gain=0.00982/0.01094
+
+TOP 12 HEADS BY COHERENT ZERO-OFFSET QK-CHANGE ENERGY
+L03 H3 QK_s1^2=0.009794395 QK_delta=0.191963 query_term_share=58.88% interference_ratio=1.08608 term_cos=+0.08747
+L08 H1 QK_s1^2=0.008976473 QK_delta=0.195493 query_term_share=59.22% interference_ratio=1.07866 term_cos=+0.08003
+L17 H1 QK_s1^2=0.008869595 QK_delta=0.193622 query_term_share=51.85% interference_ratio=1.05067 term_cos=+0.05070
+L10 H1 QK_s1^2=0.008725846 QK_delta=0.194519 query_term_share=50.85% interference_ratio=1.05133 term_cos=+0.05134
+L14 H3 QK_s1^2=0.008573535 QK_delta=0.181522 query_term_share=58.12% interference_ratio=1.03145 term_cos=+0.03187
+L02 H1 QK_s1^2=0.007695375 QK_delta=0.176143 query_term_share=51.18% interference_ratio=1.10480 term_cos=+0.10483
+L02 H3 QK_s1^2=0.007537576 QK_delta=0.177327 query_term_share=54.77% interference_ratio=1.05166 term_cos=+0.05190
+L16 H1 QK_s1^2=0.007422807 QK_delta=0.17834 query_term_share=54.71% interference_ratio=1.07357 term_cos=+0.07389
+L10 H3 QK_s1^2=0.007322396 QK_delta=0.186329 query_term_share=52.46% interference_ratio=1.02952 term_cos=+0.02956
+L14 H1 QK_s1^2=0.007121711 QK_delta=0.178168 query_term_share=57.89% interference_ratio=1.02516 term_cos=+0.02548
+L14 H2 QK_s1^2=0.007009957 QK_delta=0.166293 query_term_share=62.22% interference_ratio=1.02435 term_cos=+0.02512
+L12 H0 QK_s1^2=0.006979518 QK_delta=0.183617 query_term_share=57.11% interference_ratio=1.02171 term_cos=+0.02193
+
+TOP 12 HEADS BY COHERENT OV-CHANGE ENERGY
+L15 H1 OV_s1^2=0.01391639 OV_delta=0.187165 OV_top1=39.73% output_term_share=31.79% interference_ratio=1.05830 term_cos=+0.06260
+L12 H3 OV_s1^2=0.008873023 OV_delta=0.163162 OV_top1=33.33% output_term_share=49.26% interference_ratio=1.07246 term_cos=+0.07247
+L12 H2 OV_s1^2=0.007575407 OV_delta=0.154444 OV_top1=31.76% output_term_share=45.64% interference_ratio=1.07829 term_cos=+0.07859
+L12 H0 OV_s1^2=0.006894368 OV_delta=0.162512 OV_top1=26.10% output_term_share=48.84% interference_ratio=1.11275 term_cos=+0.11278
+L09 H0 OV_s1^2=0.00539007 OV_delta=0.152016 OV_top1=23.32% output_term_share=48.06% interference_ratio=1.09787 term_cos=+0.09795
+L00 H2 OV_s1^2=0.005335039 OV_delta=0.128834 OV_top1=32.14% output_term_share=45.68% interference_ratio=1.04928 term_cos=+0.04947
+L09 H1 OV_s1^2=0.004903336 OV_delta=0.159761 OV_top1=19.21% output_term_share=38.90% interference_ratio=1.04026 term_cos=+0.04129
+L15 H2 OV_s1^2=0.004858035 OV_delta=0.146223 OV_top1=22.72% output_term_share=52.80% interference_ratio=1.10108 term_cos=+0.10124
+L05 H0 OV_s1^2=0.003906526 OV_delta=0.150715 OV_top1=17.20% output_term_share=50.83% interference_ratio=1.11668 term_cos=+0.11670
+L02 H0 OV_s1^2=0.003854416 OV_delta=0.143179 OV_top1=18.80% output_term_share=54.91% interference_ratio=1.16948 term_cos=+0.17030
+L04 H3 OV_s1^2=0.003790187 OV_delta=0.136375 OV_top1=20.38% output_term_share=63.51% interference_ratio=1.08627 term_cos=+0.08960
+L14 H3 OV_s1^2=0.003758414 OV_delta=0.152911 OV_top1=16.07% output_term_share=45.43% interference_ratio=1.06343 term_cos=+0.06370
+
+TOP 12 HEADS BY ROTARY-COEFFICIENT RELATIVE DIFFERENCE WITH GAINS
+L11 H0 rotary_delta=53.65869 rotary_rel_raw/gain=0.01304/0.02862 Q/K_denominator_metric_rel=0.00426/0.00817 top_frequency=88 frequency_share=26.45%
+L11 H1 rotary_delta=60.97775 rotary_rel_raw/gain=0.01302/0.02642 Q/K_denominator_metric_rel=0.00470/0.00817 top_frequency=88 frequency_share=17.42%
+L12 H2 rotary_delta=535.3936 rotary_rel_raw/gain=0.00914/0.02337 Q/K_denominator_metric_rel=0.00497/0.00538 top_frequency=111 frequency_share=6.71%
+L12 H0 rotary_delta=495.8238 rotary_rel_raw/gain=0.00889/0.02229 Q/K_denominator_metric_rel=0.00714/0.00538 top_frequency=117 frequency_share=4.72%
+L17 H1 rotary_delta=551.1598 rotary_rel_raw/gain=0.01041/0.02200 Q/K_denominator_metric_rel=0.00459/0.00277 top_frequency=87 frequency_share=24.32%
+L12 H3 rotary_delta=508.2127 rotary_rel_raw/gain=0.00902/0.02171 Q/K_denominator_metric_rel=0.00551/0.00538 top_frequency=111 frequency_share=5.80%
+L11 H3 rotary_delta=41.5558 rotary_rel_raw/gain=0.01084/0.02136 Q/K_denominator_metric_rel=0.00552/0.00817 top_frequency=88 frequency_share=14.36%
+L12 H1 rotary_delta=504.4917 rotary_rel_raw/gain=0.00888/0.01902 Q/K_denominator_metric_rel=0.00643/0.00538 top_frequency=72 frequency_share=5.03%
+L05 H3 rotary_delta=483.9151 rotary_rel_raw/gain=0.01091/0.01859 Q/K_denominator_metric_rel=0.00546/0.00252 top_frequency=112 frequency_share=6.00%
+L17 H0 rotary_delta=458.2927 rotary_rel_raw/gain=0.00951/0.01779 Q/K_denominator_metric_rel=0.00457/0.00277 top_frequency=87 frequency_share=24.42%
+L11 H2 rotary_delta=38.13762 rotary_rel_raw/gain=0.00892/0.01743 Q/K_denominator_metric_rel=0.00669/0.00817 top_frequency=88 frequency_share=15.42%
+L10 H1 rotary_delta=563.9351 rotary_rel_raw/gain=0.00949/0.01707 Q/K_denominator_metric_rel=0.00307/0.00429 top_frequency=75 frequency_share=8.36%
+
+ALL LAYERS: Q-UPDATE ENERGY SHARES ACROSS HEADS
+L00: H0=26.87% H1=23.87% H2=25.82% H3=23.44%
+L01: H0=28.67% H1=22.78% H2=25.53% H3=23.02%
+L02: H0=20.58% H1=25.57% H2=23.50% H3=30.36%
+L03: H0=25.60% H1=20.43% H2=21.87% H3=32.10%
+L04: H0=28.03% H1=24.31% H2=23.14% H3=24.52%
+L05: H0=25.14% H1=25.73% H2=23.39% H3=25.75%
+L06: H0=26.40% H1=26.88% H2=22.60% H3=24.12%
+L07: H0=26.03% H1=22.55% H2=25.55% H3=25.87%
+L08: H0=24.56% H1=29.22% H2=23.82% H3=22.40%
+L09: H0=27.57% H1=24.01% H2=25.95% H3=22.47%
+L10: H0=25.21% H1=23.34% H2=23.11% H3=28.33%
+L11: H0=23.82% H1=27.14% H2=26.39% H3=22.65%
+L12: H0=25.84% H1=21.79% H2=27.08% H3=25.29%
+L13: H0=26.60% H1=24.86% H2=21.75% H3=26.80%
+L14: H0=21.81% H1=25.91% H2=25.08% H3=27.20%
+L15: H0=22.42% H1=24.55% H2=24.66% H3=28.37%
+L16: H0=27.32% H1=26.69% H2=23.87% H3=22.12%
+L17: H0=24.43% H1=31.34% H2=23.80% H3=20.43%
+
+COMPOSITION SUMMARY
+qk_interference min/median/max: 1.0065774563709302 1.0412334132099108 1.1092370493234298
+ov_interference min/median/max: 0.9521738558955682 1.0799672486720868 1.169481320851827
+An interference ratio near 0 would indicate cancellation; 1 means zero cross term.
+Maximum QK/OV leading-eigenpair relative residual: 1.0245798219632645e-05
+
+```

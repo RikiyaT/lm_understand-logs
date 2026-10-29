@@ -1,0 +1,13 @@
+OUTPUT of Python run 11 of at most 300:
+```
+original {'answers': 1024, 'correct': 404, 'checked_response_share': 0.689453125, 'response_with_checked_error_share': 0.1904296875, 'error_share_among_checked_responses': 0.2762039660056657, 'checked_false_equalities': 573, 'checked_valid_progress_equalities': 3779, 'checked_identity_equalities': 1933, 'median_tokens': 539.0, 'cut_responses': 81}
+half_suppression {'answers': 1024, 'correct': 399, 'checked_response_share': 0.69921875, 'response_with_checked_error_share': 0.1845703125, 'error_share_among_checked_responses': 0.2639664804469274, 'checked_false_equalities': 598, 'checked_valid_progress_equalities': 2992, 'checked_identity_equalities': 1667, 'median_tokens': 509.5, 'cut_responses': 58}
+{'token_range': [0, 256], 'original': {'n': 235, 'accuracy': 0.472, 'checked_error_share': 0.106}, 'edited': {'n': 257, 'accuracy': 0.447, 'checked_error_share': 0.16}}
+{'token_range': [256, 512], 'original': {'n': 262, 'accuracy': 0.466, 'checked_error_share': 0.183}, 'edited': {'n': 258, 'accuracy': 0.434, 'checked_error_share': 0.167}}
+{'token_range': [512, 1024], 'original': {'n': 244, 'accuracy': 0.381, 'checked_error_share': 0.303}, 'edited': {'n': 254, 'accuracy': 0.386, 'checked_error_share': 0.252}}
+{'token_range': [1024, 2048], 'original': {'n': 150, 'accuracy': 0.293, 'checked_error_share': 0.173}, 'edited': {'n': 150, 'accuracy': 0.3, 'checked_error_share': 0.18}}
+{'token_range': [2048, 9000], 'original': {'n': 133, 'accuracy': 0.256, 'checked_error_share': 0.165}, 'edited': {'n': 105, 'accuracy': 0.276, 'checked_error_share': 0.133}}
+Full-removal edit saved: 12 tensors.
+Relative changes: [(6, 0.0415), (7, 0.0291), (8, 0.0466), (9, 0.028), (10, 0.0257), (11, 0.0488), (12, 0.0521), (13, 0.0576), (14, 0.0643), (15, 0.0501), (16, 0.0773), (17, 0.075)]
+
+```

@@ -1,0 +1,31 @@
+OUTPUT of Python run 6 of at most 300:
+```
+Length offsets first 6: [0, 258, 258, 258, 258, 258]
+Stable positive failure-associated neurons (length/cut controlled):
+{'layer': 4, 'neuron': 148, 'corr': 0.1195, 'raw': 0.1303, 'repeat': 0.127, 'half1': 0.1168, 'half2': 0.1217, 'activity': 0.0419, 'output_norm': 0.2464}
+{'layer': 16, 'neuron': 1274, 'corr': 0.1123, 'raw': 0.118, 'repeat': 0.1923, 'half1': 0.1132, 'half2': 0.1124, 'activity': 0.0187, 'output_norm': 0.4641}
+{'layer': 17, 'neuron': 1201, 'corr': 0.1203, 'raw': 0.1069, 'repeat': 0.1314, 'half1': 0.1292, 'half2': 0.1121, 'activity': 0.0212, 'output_norm': 0.407}
+{'layer': 15, 'neuron': 1638, 'corr': 0.1181, 'raw': 0.0923, 'repeat': -0.0526, 'half1': 0.1097, 'half2': 0.1281, 'activity': 0.0048, 'output_norm': 0.4144}
+{'layer': 4, 'neuron': 887, 'corr': 0.1089, 'raw': 0.1184, 'repeat': 0.1268, 'half1': 0.1059, 'half2': 0.1156, 'activity': 0.0152, 'output_norm': 0.3524}
+{'layer': 17, 'neuron': 2044, 'corr': 0.1065, 'raw': 0.119, 'repeat': 0.143, 'half1': 0.1045, 'half2': 0.1119, 'activity': 0.0104, 'output_norm': 0.4601}
+{'layer': 13, 'neuron': 491, 'corr': 0.1163, 'raw': 0.1224, 'repeat': 0.1369, 'half1': 0.1037, 'half2': 0.1273, 'activity': 0.0373, 'output_norm': 0.4197}
+{'layer': 10, 'neuron': 1555, 'corr': 0.1077, 'raw': 0.1143, 'repeat': 0.0284, 'half1': 0.1132, 'half2': 0.1029, 'activity': 0.0061, 'output_norm': 0.367}
+{'layer': 15, 'neuron': 506, 'corr': 0.1024, 'raw': 0.0739, 'repeat': -0.0077, 'half1': 0.1008, 'half2': 0.1051, 'activity': 0.0093, 'output_norm': 0.4292}
+{'layer': 2, 'neuron': 1989, 'corr': 0.1015, 'raw': 0.0792, 'repeat': 0.0276, 'half1': 0.1004, 'half2': 0.1026, 'activity': 0.0619, 'output_norm': 0.3675}
+{'layer': 15, 'neuron': 1170, 'corr': 0.1008, 'raw': 0.1104, 'repeat': 0.1829, 'half1': 0.0998, 'half2': 0.1016, 'activity': 0.0057, 'output_norm': 0.4127}
+{'layer': 4, 'neuron': 381, 'corr': 0.1018, 'raw': 0.0862, 'repeat': -0.0539, 'half1': 0.1074, 'half2': 0.0984, 'activity': 0.0182, 'output_norm': 0.3273}
+{'layer': 14, 'neuron': 1773, 'corr': 0.0968, 'raw': 0.1013, 'repeat': 0.0358, 'half1': 0.0983, 'half2': 0.0973, 'activity': 0.0084, 'output_norm': 0.3419}
+{'layer': 5, 'neuron': 727, 'corr': 0.102, 'raw': 0.1117, 'repeat': 0.1617, 'half1': 0.0965, 'half2': 0.1082, 'activity': 0.0293, 'output_norm': 0.6261}
+{'layer': 4, 'neuron': 1783, 'corr': 0.0988, 'raw': 0.1035, 'repeat': 0.2111, 'half1': 0.0964, 'half2': 0.1028, 'activity': 0.0575, 'output_norm': 0.2922}
+{'layer': 17, 'neuron': 330, 'corr': 0.1024, 'raw': 0.0754, 'repeat': -0.2198, 'half1': 0.0961, 'half2': 0.1115, 'activity': 0.0314, 'output_norm': 0.5912}
+{'layer': 15, 'neuron': 936, 'corr': 0.1353, 'raw': 0.1346, 'repeat': 0.0356, 'half1': 0.1752, 'half2': 0.0951, 'activity': 0.0295, 'output_norm': 0.35}
+{'layer': 4, 'neuron': 1048, 'corr': 0.1015, 'raw': 0.0753, 'repeat': -0.0459, 'half1': 0.1106, 'half2': 0.095, 'activity': 0.015, 'output_norm': 0.2713}
+{'layer': 10, 'neuron': 1902, 'corr': 0.095, 'raw': 0.0764, 'repeat': -0.1037, 'half1': 0.0958, 'half2': 0.0949, 'activity': 0.0118, 'output_norm': 0.3745}
+{'layer': 11, 'neuron': 700, 'corr': 0.1095, 'raw': 0.1093, 'repeat': 0.0958, 'half1': 0.0942, 'half2': 0.1257, 'activity': 0.0075, 'output_norm': 0.5209}
+{'layer': 5, 'neuron': 1219, 'corr': 0.1008, 'raw': 0.1135, 'repeat': 0.179, 'half1': 0.1095, 'half2': 0.0938, 'activity': 0.0269, 'output_norm': 0.5146}
+{'layer': 12, 'neuron': 1113, 'corr': 0.0949, 'raw': 0.077, 'repeat': -0.0478, 'half1': 0.0938, 'half2': 0.0961, 'activity': 0.0175, 'output_norm': 0.5547}
+{'layer': 7, 'neuron': 1536, 'corr': 0.0977, 'raw': 0.079, 'repeat': 0.0662, 'half1': 0.1028, 'half2': 0.0932, 'activity': 0.0968, 'output_norm': 0.3113}
+{'layer': 2, 'neuron': 1523, 'corr': 0.1029, 'raw': 0.1052, 'repeat': 0.1011, 'half1': 0.0931, 'half2': 0.1109, 'activity': 0.0385, 'output_norm': 0.465}
+Strongest per layer: [(0, 1674, 0.106), (1, 93, 0.108), (2, 1445, 0.129), (3, 1294, 0.113), (4, 148, 0.119), (5, 289, 0.106), (6, 1658, 0.101), (7, 1167, 0.102), (8, 58, 0.114), (9, 1163, 0.1), (10, 1131, 0.112), (11, 700, 0.109), (12, 561, 0.111), (13, 491, 0.116), (14, 647, 0.109), (15, 936, 0.135), (16, 1274, 0.112), (17, 637, 0.122)]
+
+```

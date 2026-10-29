@@ -1,0 +1,45 @@
+OUTPUT of run 7 of at most 60:
+```
+SIGNED IDENTITY ALIGNMENT OF B-A OV PRODUCTS
+Positive favors B only under the extra generic-copy-amplification hypothesis.
+layer raw(heads 0..3) scaled(heads 0..3)
+0 raw: +0.003681 -0.000921 +0.000163 +0.000417 scaled: +0.000517 +0.000793 +0.000801 +0.000626
+1 raw: -0.002097 -0.003480 +0.000195 -0.001140 scaled: -0.000724 -0.000106 +0.000110 -0.000031
+2 raw: -0.001294 +0.001339 +0.001706 +0.001776 scaled: -0.000217 +0.000354 +0.000364 +0.000560
+3 raw: +0.001977 +0.000411 -0.000225 +0.000310 scaled: +0.000327 -0.000035 -0.000142 +0.000078
+4 raw: -0.001842 -0.001082 -0.000087 -0.001049 scaled: +0.000397 -0.000047 +0.000297 +0.000530
+5 raw: -0.001717 -0.004836 -0.000881 -0.001757 scaled: +0.000400 -0.000331 -0.000054 -0.000592
+6 raw: -0.000085 +0.001649 +0.000242 +0.001028 scaled: -0.000063 +0.000960 +0.000334 +0.000798
+7 raw: +0.000839 +0.000713 +0.000103 -0.000912 scaled: +0.000337 +0.000176 -0.000035 +0.000039
+8 raw: +0.001497 +0.000932 +0.000909 +0.001198 scaled: -0.000197 +0.000446 -0.000128 +0.000688
+9 raw: -0.004152 -0.000120 -0.001309 +0.001201 scaled: -0.001947 +0.000155 -0.000806 +0.000322
+10 raw: +0.002408 -0.002703 -0.001587 +0.002146 scaled: +0.000907 -0.000190 -0.000179 +0.000467
+11 raw: +0.000371 -0.000360 +0.002649 -0.001628 scaled: +0.000378 +0.000157 +0.000326 -0.000156
+12 raw: -0.000504 +0.003455 +0.003458 -0.002905 scaled: -0.000098 +0.000114 +0.000158 -0.000215
+13 raw: +0.000971 +0.000292 +0.000479 -0.000641 scaled: +0.000121 +0.000068 +0.000114 +0.000087
+14 raw: -0.001676 +0.000570 +0.001046 -0.000726 scaled: -0.000324 +0.000242 +0.000457 -0.000230
+15 raw: -0.000867 -0.002383 -0.000740 -0.003127 scaled: -0.000149 -0.000085 -0.000020 -0.000309
+16 raw: -0.003847 -0.002033 -0.001733 -0.003482 scaled: -0.000685 -0.000496 -0.000411 -0.000747
+17 raw: +0.000646 -0.001620 +0.003209 +0.002364 scaled: +0.000147 -0.000192 +0.000411 +0.000774
+
+SIGN AND MAGNITUDE SUMMARY
+raw positive: 35 negative: 37 quantiles: [-0.0048 -0.0016 -0.0001  0.001   0.0037]
+scaled positive: 40 negative: 32 quantiles: [-0.0019 -0.0002  0.0001  0.0004  0.001 ]
+Raw/scaled sign agreement: 0.8194444444444444
+
+SELECTED SCALED DIFFERENCE SPECTRA
+Both signs indicate expansion and contraction directions in the symmetric part, not behavior.
+L04 H0 identity_cos=+0.000397 symmetric_energy_share=0.49995 positive_symmetric_energy_share=0.50107 min_eigenvalue=-29.201 max_eigenvalue=29.076
+L04 H1 identity_cos=-0.000047 symmetric_energy_share=0.50001 positive_symmetric_energy_share=0.50167 min_eigenvalue=-34.377 max_eigenvalue=34.47
+L04 H2 identity_cos=+0.000297 symmetric_energy_share=0.50012 positive_symmetric_energy_share=0.50088 min_eigenvalue=-38.978 max_eigenvalue=39.027
+L05 H3 identity_cos=-0.000592 symmetric_energy_share=0.50015 positive_symmetric_energy_share=0.49811 min_eigenvalue=-57.445 max_eigenvalue=57.304
+L08 H2 identity_cos=-0.000128 symmetric_energy_share=0.50087 positive_symmetric_energy_share=0.49713 min_eigenvalue=-21.228 max_eigenvalue=20.944
+L10 H1 identity_cos=-0.000190 symmetric_energy_share=0.50059 positive_symmetric_energy_share=0.50099 min_eigenvalue=-36.766 max_eigenvalue=36.138
+L11 H0 identity_cos=+0.000378 symmetric_energy_share=0.49998 positive_symmetric_energy_share=0.50201 min_eigenvalue=-50.132 max_eigenvalue=50.139
+L11 H1 identity_cos=+0.000157 symmetric_energy_share=0.49999 positive_symmetric_energy_share=0.50026 min_eigenvalue=-39.633 max_eigenvalue=39.471
+L12 H2 identity_cos=+0.000158 symmetric_energy_share=0.50000 positive_symmetric_energy_share=0.50084 min_eigenvalue=-214.17 max_eigenvalue=213.72
+L15 H1 identity_cos=-0.000085 symmetric_energy_share=0.50001 positive_symmetric_energy_share=0.50035 min_eigenvalue=-324.38 max_eigenvalue=330.54
+L15 H2 identity_cos=-0.000020 symmetric_energy_share=0.49998 positive_symmetric_energy_share=0.50184 min_eigenvalue=-295.75 max_eigenvalue=300.51
+L17 H1 identity_cos=-0.000192 symmetric_energy_share=0.50009 positive_symmetric_energy_share=0.49979 min_eigenvalue=-91.742 max_eigenvalue=89.353
+
+```

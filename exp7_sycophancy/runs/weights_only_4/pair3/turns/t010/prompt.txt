@@ -1,0 +1,145 @@
+OUTPUT of run 9 of at most 60:
+```
+Digit rank: 9 cue rank after removing digits: 28
+Cue tokens: [' What', 'What', ' what', ' Which', 'which', ' question', ' answer', 'answer', 'Answer', ' correct', ' incorrect', ' think', ' believe', ' guess', ' my', ' I', 'I', 'model', 'assistant', ' user', ' plus', ' minus', ' times', '+', '-', '*', '=', '?', '\n']
+Rough isotropic cross-block energy fraction: 0.00123046875
+
+=== CONTENT-ONLY QK COEFFICIENT LOCALIZATION ===
+Cross = digit-query/cue-key plus cue-query/digit-key.
+This is a weight-kernel analysis, not attention probabilities.
+
+ raw TOP 16 BY DIGIT/CUE CROSS-KERNEL CHANGE
+ L H    cross_delta_F   fraction   enrichment  relative_whole_kernel_change
+ 1 0        0.0250762     0.0288       23.45                      0.008845
+ 2 3        0.0179564     0.0103        8.33                      0.010881
+ 0 3        0.0166856     0.0129       10.49                      0.006969
+ 1 3        0.0159229     0.0143       11.59                      0.008056
+ 2 0        0.0155496     0.0093        7.57                      0.009477
+ 3 3        0.0142119     0.0055        4.45                      0.010046
+ 2 1        0.0137129     0.0061        4.93                      0.010211
+ 1 2        0.0134787     0.0086        6.96                      0.007187
+ 1 1         0.013212     0.0100        8.16                      0.007917
+ 3 0        0.0129236     0.0060        4.86                      0.010973
+ 3 1        0.0118683     0.0062        5.01                      0.012795
+ 2 2        0.0115395     0.0062        5.04                      0.010171
+ 0 1        0.0114655     0.0072        5.83                      0.007173
+ 3 2        0.0112027     0.0048        3.92                      0.011736
+ 0 2       0.00997629     0.0045        3.68                      0.005525
+16 3       0.00990564     0.0033        2.72                      0.010249
+
+ diag TOP 16 BY DIGIT/CUE CROSS-KERNEL CHANGE
+ L H    cross_delta_F   fraction   enrichment  relative_whole_kernel_change
+ 1 0          127.876     0.0393       31.97                      0.011813
+ 1 3          77.1764     0.0175       14.25                      0.009600
+ 2 3          62.6772     0.0134       10.86                      0.015261
+ 1 1          60.5532     0.0104        8.47                      0.009089
+ 1 2          59.9128     0.0109        8.86                      0.013425
+ 2 0           52.912     0.0106        8.61                      0.010573
+ 2 1           48.744     0.0064        5.22                      0.009285
+14 2          43.1491     0.0038        3.12                      0.024222
+16 2           40.064     0.0019        1.55                      0.016423
+16 1          39.7066     0.0017        1.36                      0.018414
+16 0          37.2751     0.0015        1.21                      0.016461
+ 2 2          36.8354     0.0062        5.07                      0.012239
+14 3          36.0506     0.0025        2.00                      0.023745
+16 3          35.7169     0.0018        1.47                      0.011341
+14 1          35.3123     0.0026        2.10                      0.028710
+ 3 3          33.3536     0.0058        4.75                      0.007285
+
+=== FULL-KERNEL SINGULAR PAIRS ===
+Pairs below come from the FULL residual-space kernel, not the cue subspace.
+(1, 0, 'raw') top2 energy shares [0.201 0.153]
+(1, 0, 'diag') top2 energy shares [0.19  0.156]
+(2, 3, 'raw') top2 energy shares [0.24  0.116]
+(2, 3, 'diag') top2 energy shares [0.209 0.106]
+(0, 3, 'raw') top2 energy shares [0.174 0.076]
+(0, 3, 'diag') top2 energy shares [0.284 0.091]
+(1, 3, 'raw') top2 energy shares [0.132 0.089]
+(1, 3, 'diag') top2 energy shares [0.134 0.083]
+(2, 0, 'raw') top2 energy shares [0.208 0.101]
+(2, 0, 'diag') top2 energy shares [0.188 0.098]
+(3, 3, 'raw') top2 energy shares [0.266 0.091]
+(3, 3, 'diag') top2 energy shares [0.259 0.103]
+(1, 2, 'raw') top2 energy shares [0.26  0.074]
+(1, 2, 'diag') top2 energy shares [0.118 0.084]
+(16, 2, 'raw') top2 energy shares [0.16  0.084]
+(16, 2, 'diag') top2 energy shares [0.25  0.141]
+(17, 1, 'raw') top2 energy shares [0.237 0.118]
+(17, 1, 'diag') top2 energy shares [0.57  0.134]
+
+=== SINGULAR-PAIR TOKEN INTERPRETATIONS ===
+For each pair, B-A adds same-sign query/key associations and subtracts opposite-sign ones.
+(1, 0, 'raw', 0, 'query') + [' is', ' are', ' IS', ' isn'] - [' MANY', ' molti', ' många', ' muitos']
+(1, 0, 'raw', 0, 'key') + ['WHAT', ' WHAT', 'what', 'What'] - [' rhinoceros', 'OrderStatus', '\n\n', 'ProductImages']
+(1, 0, 'raw', 1, 'query') + [' principi', ' pubb', 'etail', ' مقرر'] - [' minus', ' plus', 'minus', ' плюс']
+(1, 0, 'raw', 1, 'key') + ['６', '٦', '５', '７'] - ['What', 'what', 'WHAT', ' what']
+(1, 0, 'diag', 0, 'query') + [' pubb', 'Referring', ' principi', 'Numerous'] - [' minus', ' plus', ' плюс', ' PLUS']
+(1, 0, 'diag', 0, 'key') + ['６', '⁶', '૬', '٦'] - ['WHAT', 'What', 'what', ' what']
+(1, 0, 'diag', 1, 'query') + [' is', ' Is', ' are', ' isn'] - [' minus', 'minus', 'Minus', ' moins']
+(1, 0, 'diag', 1, 'key') + ['WHAT', ' WHAT', 'What', 'what'] - [' rhyme', ' defence', ' fragrances', 'utani']
+(2, 3, 'raw', 0, 'query') + ['five', 'seven', 'Seven', 'Five'] - [' জের', ' മേ', 'ાળ', ' कुर']
+(2, 3, 'raw', 0, 'key') + [' times', ' Times', 'Times', ' time'] - [' Marta', 'plus', ' الأكثر', ' 가장']
+(2, 3, 'raw', 1, 'query') + ['[...]', ' Volcano', '>[', '>'] - ['晛', ' くれ', '尣', '埇']
+(2, 3, 'raw', 1, 'key') + ['</b>', '8', "('>", '6'] - [' இருந்தால்', ' முடியவில்லை', ' வித்திய', ' USER']
+(2, 3, 'diag', 0, 'query') + ['Seven', 'seven', '７', 'five'] - [' ră', ' slutt', ' Университе', ' Україн']
+(2, 3, 'diag', 0, 'key') + [' times', ' Times', 'Times', ' time'] - [' плюс', ' weniger', ' наиболее', ' 가장']
+(2, 3, 'diag', 1, 'query') + [' III', 'III', '详解', '૯'] - [' TIMES', 'times', 'bolinks', ' Times']
+(2, 3, 'diag', 1, 'key') + ['8', '9', '۸', '૮'] - [' usern', ' UserName', ' userName', ' Username']
+(0, 3, 'raw', 0, 'query') + [' Republic', '®', '´', ' Day'] - ['<unused771>', '<unused1640>', '<unused995>', '<unused146>']
+(0, 3, 'raw', 0, 'key') + [' German', ' Czech', ' Argentina', ' Italian'] - ['<bos>', ' kiuj', ' finalidad', ' efectuar']
+(0, 3, 'raw', 1, 'query') + [' grafica', 'dinitro', 'جیت', ' setError'] - [' minus', ' plus', ' PLUS', ' Plus']
+(0, 3, 'raw', 1, 'key') + [' capital', ' "', ' the', ' b'] - [' threx', ' gstlal', '𒊏', ' BVHTree']
+(0, 3, 'diag', 0, 'query') + [' Argentina', ' Brazil', ' Ghana', ' Republic'] - ['elolaan', ' cuantit', '<bos>', ' resuelve']
+(0, 3, 'diag', 0, 'key') + [' Czech', ' Argentina', ' German', ' Hong'] - ['<bos>', ' efectuar', ' finalidad', ' restable']
+(0, 3, 'diag', 1, 'query') + ['iai', '1', 'elenggarakan', 'urta'] - [' Argentina', ' minus', ' Leo', ' Vietnam']
+(0, 3, 'diag', 1, 'key') + [' IS', ' fl', ' St', ' Gr'] - [' Tjiwarl', ' HUOBI', 'zynarod', ' threx']
+(1, 3, 'raw', 0, 'query') + [' առ', ' variés', 'gs', 'एर'] - [' think', ' THINK', 'think', ' thinks']
+(1, 3, 'raw', 0, 'key') + ['\\">', ' planta', 'слары', '{,}'] - [' I', 'I', ' II', 'II']
+(1, 3, 'raw', 1, 'query') + ['６', '５', ' cinque', ' ۶'] - ['sprite', 'フラー', ' <%=', '버']
+(1, 3, 'raw', 1, 'key') + [' tôi', ' я', 'আমি', ' 저는'] - [' plus', ' what', ' What', ' PLUS']
+(1, 3, 'diag', 0, 'query') + ['ларни', ' acaso', 'एर', ' առ'] - [' think', ' THINK', 'think', ' thinks']
+(1, 3, 'diag', 0, 'key') + [' แก้', 'Brom', '(||', '欺'] - ['I', ' I', '我', ' я']
+(1, 3, 'diag', 1, 'query') + ['ia', '６', '٦', '５'] - [' dirname', 'threshold', ' threshold', ' expectation']
+(1, 3, 'diag', 1, 'key') + [' Cualquier', 'KeyUp', 'čkog', 'Symptoms'] - [' Brasil', 'Brasil', ' plus', ' PLUS']
+(2, 0, 'raw', 0, 'query') + ['５', '７', '３', '5'] - ['吅', ' localtime', '疽', '那就']
+(2, 0, 'raw', 0, 'key') + ['Seven', '૯', '８', '૮'] - ['\n', '</h2>', ' manifeste', ' legno']
+(2, 0, 'raw', 1, 'query') + ['7', '8', ' entschied', 'anko'] - ['ရောက်', 'ഘ', 'လုပ်', 'မည်']
+(2, 0, 'raw', 1, 'key') + [' times', ' Times', 'times', 'Times'] - ['팁', ' είναι', ' 설정', ' Monteiro']
+(2, 0, 'diag', 0, 'query') + ['５', '5', '8', '７'] - ['吅', '\uf469', 'ivitis', '㚼']
+(2, 0, 'diag', 0, 'key') + ['Seven', '۸', '８', '９'] - [' legno', 'と思い', 'コレクション', ' playerId']
+(2, 0, 'diag', 1, 'query') + ['7', ' القرار', '8', '4'] - [' Simpsons', ' لوب', ' whites', 'Კ']
+(2, 0, 'diag', 1, 'key') + [' times', ' Times', ' acquisitions', 'times'] - ['₁+', ' là', '팁', ' είναι']
+(3, 3, 'raw', 0, 'query') + ['১৩', '矩', ' सम्प', ' ১৯৭'] - [' IAU', ' adjuster', 'acey', ' neun']
+(3, 3, 'raw', 0, 'key') + ['೮', '೯', '٨', '៩'] - ['カーテン', 'спользование', '\n', ' себя']
+(3, 3, 'raw', 1, 'query') + [' project', 'onds', 'Project', '7'] - ['ందని', '}`}>', '쫀득', ' интересный']
+(3, 3, 'raw', 1, 'key') + ['staticfiles', ' Drawings', ' штра', 'ليك'] - ['۸', ' VIII', '٨', 'eight']
+(3, 3, 'diag', 0, 'query') + ['⑧', '⑨', ' Eighth', '８'] - ['哩', ' Dir', ' Dire', ' Dick']
+(3, 3, 'diag', 0, 'key') + ['カーテン', ' unsolicited', '私も', ' сказа'] - ['٨', '۸', '९', '८']
+(3, 3, 'diag', 1, 'query') + ['7', '۷', '७', '７'] - [' bosh', ' strane', 'znak', 'өрү']
+(3, 3, 'diag', 1, 'key') + [' MDC', ' Dominican', ' snapshot', 'VIN'] - [' okt', ' otto', 'octagon', '⑨']
+(1, 2, 'raw', 0, 'query') + ['alos', '………', 'ids', 'AILED'] - ['ष्\u200dट्र', 'ேஷ்', 'ৃত্ব', 'গঞ্জ']
+(1, 2, 'raw', 0, 'key') + [' what', ' WHAT', ' What', 'what'] - ['<unused1159>', '<unused1760>', '<unused1745>', '<unused1798>']
+(1, 2, 'raw', 1, 'query') + [' minus', 'minus', ' минус', ' Minus'] - ['etype', 'aic', 'univ', ' esqu']
+(1, 2, 'raw', 1, 'key') + ['<unused1401>', '<unused825>', 'EditDialogOpen', '<unused1521>'] - [' ', ',', '，', '\n']
+(1, 2, 'diag', 0, 'query') + [' minus', 'minus', ' Minus', ' минус'] - ['etype', ' abhid', 'Descriptions', 'วิน']
+(1, 2, 'diag', 0, 'key') + [' minus', 'Minus', 'minus', ' Minus'] - ['널', '认', ' lī', 'abinieri']
+(1, 2, 'diag', 1, 'query') + ['2', '۲', '２', '२'] - [' solves', 'Ⲉ', ' answer', 'Ⴖ']
+(1, 2, 'diag', 1, 'key') + ['xcschemes', '<unused2105>', '<unused1721>', '<unused1011>'] - ['user', ' answer', 'answer', 'users']
+(16, 2, 'raw', 0, 'query') + [' expected', ' watered', 'وين', 'heath'] - ['Lep', ' abhiv', 'levelup', ' بى']
+(16, 2, 'raw', 0, 'key') + [' Glad', ' Fos', '\xad', ' Bek'] - ['ल्टा', 'कने', 'ോക', 'ওনা']
+(16, 2, 'raw', 1, 'query') + [' host', ' lat', '-', ' kin'] - [' ktorá', ' což', ' decorar', ' ktoré']
+(16, 2, 'raw', 1, 'key') + ['崚', 'राहुल', ' सीन', ' புக'] - ['ridge', 'ās', 'quadratic', ' Decimal']
+(16, 2, 'diag', 0, 'query') + ['\x08', 'booking', 'ཝ', '８'] - [' intestines', 'ناة', 'зня', '怆']
+(16, 2, 'diag', 0, 'key') + [' fishermen', ' Indicator', ' Nose', ' Lens'] - ['7', '5', '8', '6']
+(16, 2, 'diag', 1, 'query') + ['៨', '8', '7', '۸'] - [' BASE', ' Corso', ' Marm', ' Stoff']
+(16, 2, 'diag', 1, 'key') + ['<h6>', 'Cargo', 'Runtime', '𝘱'] - ['욜', 'ཝ', 'clust', ' tourist']
+(17, 1, 'raw', 0, 'query') + ['4', '1', '3', '5'] - ['욌', 'edRight', 'wikkel', 'GetBytes']
+(17, 1, 'raw', 0, 'key') + [' ', ' ?', '?', ' -'] - ['<unused1719>', '<unused283>', '<unused714>', '<unused646>']
+(17, 1, 'raw', 1, 'query') + ['LAYER', ' tortor', ' Règles', ' penilaian'] - ['но', ' seg', '臭', ' $\\%$']
+(17, 1, 'raw', 1, 'key') + ['ams', 'ae', 'emb', 'em'] - [' tortor', 'avacak', ' lobortis', ' Calcd']
+(17, 1, 'diag', 0, 'query') + ['4', '3', '5', '7'] - [' Bakery', 'RequestBody', ' interferon', ' Refugee']
+(17, 1, 'diag', 0, 'key') + ['4', '7', '8', '3'] - ['頩', '뉸', ' SSm', ' Showcase']
+(17, 1, 'diag', 1, 'query') + ['7', 'χν', ' Саша', ' ხელისუფლების'] - [' blandit', '엮', '缠', '왤']
+(17, 1, 'diag', 1, 'key') + ['guys', ' Nghi', ' [![', ' 餐'] - ['7', '6', '8', '9']
+
+```

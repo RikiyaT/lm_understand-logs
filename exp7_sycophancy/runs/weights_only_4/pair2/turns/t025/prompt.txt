@@ -1,0 +1,124 @@
+OUTPUT of run 21 of at most 60:
+```
+=== DIFFERENT-VOCABULARY AND SINGLE-WORD ROBUSTNESS ===
+Statistics remain static weight contractions, not responses.
+New-vocabulary z values use shuffled labels within their word panels.
+No claim of independent behavioral validation is made.
+
+L01 down_up bare
+ verbs    ->agreement   delta=-0.00059102, shuffle_z=-4.396, single_p=0.0005
+ verbs    ->endorsement delta=-0.00041827, shuffle_z=-2.196, single_p=0.0376
+ nouns    ->agreement   delta=-7.5752e-05, shuffle_z=-0.495, single_p=0.6057
+ nouns    ->endorsement delta=-0.0002608, shuffle_z=-1.685, single_p=0.0913
+ new_nouns->agreement   delta=-0.00021924, shuffle_z=-1.560, single_p=0.1225
+ new_nouns->endorsement delta=+3.065e-05, shuffle_z=+0.206, single_p=0.8263
+ Primary leave-one-word-out: sign retained 20/20; range=(-0.0006965,-0.00051346); largest changes=[('target:affirmed', -0.0006965024922146461), ('source:think', -0.0006687183268208036), ('target:disagreed', -0.0005134628628000004)]
+
+L01 down_up diagonal
+ verbs    ->agreement   delta=-0.64833, shuffle_z=-1.258, single_p=0.1967
+ verbs    ->endorsement delta=+0.49496, shuffle_z=+0.719, single_p=0.3890
+ nouns    ->agreement   delta=-0.255, shuffle_z=-0.591, single_p=0.5461
+ nouns    ->endorsement delta=-0.31585, shuffle_z=-0.477, single_p=0.5817
+ new_nouns->agreement   delta=-1.5072, shuffle_z=-2.796, single_p=0.0073
+ new_nouns->endorsement delta=+0.65076, shuffle_z=+1.047, single_p=0.2665
+ Primary leave-one-word-out: sign retained 20/20; range=(-1.0805,-0.17621); largest changes=[('target:agree', -0.17620979857605856), ('target:affirmed', -1.0804891896268525), ('source:guess', -0.27219214944668046)]
+
+L09H0 bare
+ verbs    ->agreement   delta=+4.7306e-05, shuffle_z=+0.778, single_p=0.4305
+ verbs    ->endorsement delta=+0.00015572, shuffle_z=+1.695, single_p=0.0927
+ nouns    ->agreement   delta=+0.00029159, shuffle_z=+4.366, single_p=0.0005
+ nouns    ->endorsement delta=+5.9377e-05, shuffle_z=+0.649, single_p=0.4744
+ new_nouns->agreement   delta=+0.00010612, shuffle_z=+1.711, single_p=0.0820
+ new_nouns->endorsement delta=+8.5877e-05, shuffle_z=+0.786, single_p=0.3704
+ Primary leave-one-word-out: sign retained 20/20; range=(+0.00023511,+0.00033489); largest changes=[('target:affirmed', 0.0002351062362323269), ('source:impression', 0.00024772316052817705), ('target:deny', 0.0003348862023727808)]
+
+L09H0 diagonal
+ verbs    ->agreement   delta=-0.0096496, shuffle_z=-0.031, single_p=0.9707
+ verbs    ->endorsement delta=+0.6881, shuffle_z=+1.522, single_p=0.1249
+ nouns    ->agreement   delta=+0.76254, shuffle_z=+2.009, single_p=0.0503
+ nouns    ->endorsement delta=-0.060628, shuffle_z=-0.109, single_p=0.8814
+ new_nouns->agreement   delta=-0.10037, shuffle_z=-0.308, single_p=0.7657
+ new_nouns->endorsement delta=+0.79793, shuffle_z=+1.470, single_p=0.1371
+ Primary leave-one-word-out: sign retained 20/20; range=(+0.41697,+1.1698); largest changes=[('source:truth', 1.1697706479327623), ('target:affirmed', 0.4169687021475155), ('source:impression', 0.4592002023564956)]
+
+L06H1 bare
+ verbs    ->agreement   delta=-0.00015594, shuffle_z=-1.899, single_p=0.0630
+ verbs    ->endorsement delta=-0.00038473, shuffle_z=-3.430, single_p=0.0005
+ nouns    ->agreement   delta=-0.00031813, shuffle_z=-4.278, single_p=0.0005
+ nouns    ->endorsement delta=-0.00034271, shuffle_z=-3.280, single_p=0.0054
+ new_nouns->agreement   delta=-0.00011921, shuffle_z=-1.883, single_p=0.0581
+ new_nouns->endorsement delta=-1.1995e-06, shuffle_z=-0.012, single_p=0.9932
+ Primary leave-one-word-out: sign retained 20/20; range=(-0.00035654,-0.00027707); largest changes=[('target:affirm', -0.0002770727494644966), ('source:opinion', -0.00035654026551587824), ('target:accept', -0.00035220023016546703)]
+
+L06H1 diagonal
+ verbs    ->agreement   delta=-0.24386, shuffle_z=-1.099, single_p=0.2343
+ verbs    ->endorsement delta=-0.75815, shuffle_z=-3.288, single_p=0.0015
+ nouns    ->agreement   delta=-0.26537, shuffle_z=-1.457, single_p=0.1386
+ nouns    ->endorsement delta=-0.99877, shuffle_z=-2.973, single_p=0.0054
+ new_nouns->agreement   delta=-0.87173, shuffle_z=-3.282, single_p=0.0044
+ new_nouns->endorsement delta=-0.29556, shuffle_z=-1.076, single_p=0.2811
+ Primary leave-one-word-out: sign retained 20/20; range=(-0.51232,-0.1189); largest changes=[('source:opinion', -0.5123244409868867), ('source:impression', -0.11890109508721718), ('source:evidence', -0.3551384934494262)]
+
+L08 down_up bare
+ verbs    ->agreement   delta=+0.0001047, shuffle_z=+0.788, single_p=0.4324
+ verbs    ->endorsement delta=-0.00065444, shuffle_z=-2.947, single_p=0.0059
+ nouns    ->agreement   delta=-0.00047551, shuffle_z=-3.309, single_p=0.0015
+ nouns    ->endorsement delta=-0.00032688, shuffle_z=-1.724, single_p=0.0932
+ new_nouns->agreement   delta=-0.00028167, shuffle_z=-2.012, single_p=0.0449
+ new_nouns->endorsement delta=+0.00050029, shuffle_z=+2.217, single_p=0.0386
+ Primary leave-one-word-out: sign retained 20/20; range=(-0.00055852,-0.00036411); largest changes=[('source:evidence', -0.00036410500318423037), ('target:accept', -0.00038502035424325666), ('source:belief', -0.0003886163366831839)]
+
+L08 down_up diagonal
+ verbs    ->agreement   delta=-0.27516, shuffle_z=-0.883, single_p=0.3602
+ verbs    ->endorsement delta=-1.6656, shuffle_z=-3.285, single_p=0.0117
+ nouns    ->agreement   delta=-1.1092, shuffle_z=-4.214, single_p=0.0005
+ nouns    ->endorsement delta=-1.2344, shuffle_z=-3.247, single_p=0.0063
+ new_nouns->agreement   delta=-0.31946, shuffle_z=-0.986, single_p=0.3065
+ new_nouns->endorsement delta=+0.42728, shuffle_z=+0.806, single_p=0.3475
+ Primary leave-one-word-out: sign retained 20/20; range=(-1.2524,-0.96118); largest changes=[('source:impression', -0.9611810012642121), ('target:reject', -1.2523980307911837), ('target:deny', -0.9661161821065392)]
+
+L05H3 bare
+ verbs    ->agreement   delta=-0.00014511, shuffle_z=-1.954, single_p=0.0517
+ verbs    ->endorsement delta=-0.00018262, shuffle_z=-1.975, single_p=0.0561
+ nouns    ->agreement   delta=-3.3376e-05, shuffle_z=-0.381, single_p=0.6691
+ nouns    ->endorsement delta=-0.00030849, shuffle_z=-3.224, single_p=0.0024
+ new_nouns->agreement   delta=-0.0001259, shuffle_z=-1.811, single_p=0.0673
+ new_nouns->endorsement delta=-7.5338e-05, shuffle_z=-0.843, single_p=0.3939
+ Primary leave-one-word-out: sign retained 16/20; range=(-0.00012264,+4.3524e-05); largest changes=[('target:accept', -0.00012263866655906093), ('target:agree', 4.352352745868225e-05), ('target:agreed', 2.1960638897844423e-05)]
+
+L05H3 diagonal
+ verbs    ->agreement   delta=+0.41229, shuffle_z=+1.736, single_p=0.0874
+ verbs    ->endorsement delta=+0.34348, shuffle_z=+1.259, single_p=0.2094
+ nouns    ->agreement   delta=+1.0247, shuffle_z=+2.463, single_p=0.0254
+ nouns    ->endorsement delta=+0.21015, shuffle_z=+0.527, single_p=0.6081
+ new_nouns->agreement   delta=+0.4804, shuffle_z=+1.315, single_p=0.1674
+ new_nouns->endorsement delta=+0.13409, shuffle_z=+0.353, single_p=0.6950
+ Primary leave-one-word-out: sign retained 20/20; range=(+0.74088,+1.5253); largest changes=[('target:agree', 1.5252675300010667), ('source:fact', 0.740880453430698), ('target:affirmed', 0.7556070440012083)]
+
+=== FULL-VOCABULARY WEIGHT-DIRECTION INTERPRETATIONS ===
+Positive source selectivity couples toward the fixed agreement contrast.
+Positive output writing is the B-A direction coupled to the fixed belief contrast.
+L01 down_up  bare     source_selectivity +[('serialize', 0.158), (' biosynthetic', 0.154), (' polis', 0.153), (' Restore', 0.152)] -[(' yakni', -0.167), ('POSED', -0.161), ('ickt', -0.151), ('ueta', -0.148)]
+L01 down_up  bare     output_writing     +[('ASDW', 0.178), (' Examiners', 0.169), (' bloke', 0.167), ('guy', 0.167)] -[('Takes', -0.188), ('Taking', -0.172), (' fills', -0.166), ('flav', -0.164)]
+L01 down_up  diagonal source_selectivity +[(' mannitol', 0.169), (' zob', 0.156), (' ciphertext', 0.144), (' CELLS', 0.144)] -[('hue', -0.157), ('longest', -0.155), (' Hoyt', -0.146), (' Jeu', -0.146)]
+L01 down_up  diagonal output_writing     +[(' stallions', 0.142), (' dressage', 0.139), (' adiab', 0.138), (' wiped', 0.131)] -[('imum', -0.134), (' HttpResponse', -0.13), ('erdere', -0.126), ('BufferedReader', -0.124)]
+L09H0        bare     source_selectivity +[(' idee', 0.166), ('charisma', 0.164), (' creare', 0.163), ('autoconfigure', 0.154)] -[(' accred', -0.173), (' Pamph', -0.172), ('stering', -0.165), (' Teles', -0.161)]
+L09H0        bare     output_writing     +[(' validates', 0.168), (' CONGRESS', 0.16), ('levance', 0.158), ('finex', 0.158)] -[(' meio', -0.169), ('Walk', -0.169), (' Fos', -0.161), ('Da', -0.16)]
+L09H0        diagonal source_selectivity +[(' creare', 0.167), ('igle', 0.164), (' Friendship', 0.16), ('QUARE', 0.158)] -[(' authorisation', -0.168), (' retailing', -0.156), (' Yr', -0.151), (' hospitality', -0.15)]
+L09H0        diagonal output_writing     +[(' strokeWeight', 0.186), (' textSize', 0.184), (' usersRouter', 0.181), (' paddingTop', 0.179)] -[('Run', -0.201), ('Sun', -0.191), (' Run', -0.189), ('Pick', -0.184)]
+L06H1        bare     source_selectivity +[(' resetCounters', 0.182), (' NKG', 0.168), ('TB', 0.165), (' perforation', 0.161)] -[(' Skills', -0.152), (' Resources', -0.151), (' Inference', -0.151), ('ippi', -0.144)]
+L06H1        bare     output_writing     +[('Environmental', 0.151), ('environmental', 0.146), ('mT', 0.145), (' gemakkelijk', 0.144)] -[('ppings', -0.176), ('PUBL', -0.166), (' formula', -0.158), ('uteur', -0.156)]
+L06H1        diagonal source_selectivity +[('ose', 0.169), ('OSE', 0.156), ('seven', 0.149), ('osi', 0.149)] -[(' orphanage', -0.161), (' Igreja', -0.159), ('Motors', -0.15), (' crowdfunding', -0.146)]
+L06H1        diagonal output_writing     +[(' groupBox', 0.177), (' Bupati', 0.151), (' Ombudsman', 0.148), (' onLoad', 0.142)] -[(' idiom', -0.145), (' capacity', -0.144), (' rupture', -0.139), (' performance', -0.138)]
+L08 down_up  bare     source_selectivity +[(' leider', 0.165), (' tij', 0.158), ('website', 0.156), (' bunga', 0.155)] -[('orni', -0.182), ('encar', -0.176), (' Cubic', -0.154), (' objectMapper', -0.153)]
+L08 down_up  bare     output_writing     +[('emer', 0.197), ('itable', 0.182), ('mae', 0.176), ('ppe', 0.176)] -[(' addon', -0.161), (' klass', -0.155), (' Versand', -0.152), (' Sono', -0.147)]
+L08 down_up  diagonal source_selectivity +[(' appl', 0.184), (' Nom', 0.165), (' aufgrund', 0.162), (' Yay', 0.16)] -[('inisc', -0.162), (' recollect', -0.158), ('igel', -0.151), ('saldo', -0.144)]
+L08 down_up  diagonal output_writing     +[('bare', 0.164), ('true', 0.156), ('uli', 0.154), (' limitation', 0.153)] -[(' Szent', -0.154), (' doktor', -0.153), (' Tarant', -0.144), (' atlet', -0.141)]
+L05H3        bare     source_selectivity +[(' Schuh', 0.163), ('tobs', 0.162), ('Verification', 0.162), ('verification', 0.157)] -[(' chairman', -0.168), (' mayor', -0.167), (' meer', -0.16), (' rendu', -0.149)]
+L05H3        bare     output_writing     +[(' Einrichtung', 0.159), ('SetConfig', 0.156), ('setUrl', 0.155), ('RETURNTRANSFER', 0.154)] -[('ed', -0.213), ('rahydro', -0.196), ('roit', -0.195), ('ampur', -0.194)]
+L05H3        diagonal source_selectivity +[('8', 0.188), ('7', 0.171), ('9', 0.166), ('6', 0.161)] -[(' Jok', -0.144), ('Cir', -0.139), (' ProductName', -0.136), (' Macau', -0.134)]
+L05H3        diagonal output_writing     +[('TryGetValue', 0.189), ('PRET', 0.184), ('PLAC', 0.171), (' Stimme', 0.166)] -[('ips', -0.155), ('eslint', -0.151), ('ocatore', -0.151), ('height', -0.151)]
+
+No model execution, hidden-state normalization, nonlinear gating, or behavioral evaluation was used.
+
+```

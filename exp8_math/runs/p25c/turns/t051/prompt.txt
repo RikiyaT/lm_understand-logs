@@ -1,0 +1,9 @@
+OUTPUT of Python run 27 of at most 300:
+```
+Full L15H7 ablation: {'n': 64, 'problems': 64, 'original_correct': 8, 'edited_correct': 17, 'gain_pp': 14.0625, 'SE_sample_pp': 5.836388443166186, 'SE_problem_pp': 5.836388443166186, 'wrong_to_right': 12, 'right_to_wrong': 3}
+original {'mean_repeat_fraction': 0.736, 'median_correct_tokens': 6503.0, 'mean_tokens': 30337.390625}
+ablated {'mean_repeat_fraction': 0.542, 'median_correct_tokens': 9503.0, 'mean_tokens': 26550.015625}
+Reserved untouched sets: {'H1': 256, 'H2': 256, 'H3': 256, 'H4': 256}
+Current isolated intervention: [{'tensor': 'model.language_model.layers.23.self_attn.o_proj.weight', 'columns': [1280, 1536], 'head': 5, 'multiplier': 0.0}]
+
+```

@@ -1,0 +1,88 @@
+OUTPUT of run 15 of at most 60:
+```
+ATTENTION DIGIT-SUBSPACE COEFFICIENT CHANGES
+Scaled OV = diag(final_gamma * post_attention_gamma) O_h V diag(input_gamma).
+Restricted matrix T = P.T @ OV @ P, where P spans digit contrasts.
+Uniform-copy fraction = squared energy in the identity-matrix component.
+Positive/negative eigenvalues concern the SYMMETRIC coefficient change,
+not actual attention outputs or model performance.
+completed layer 0
+completed layer 1
+completed layer 2
+completed layer 3
+completed layer 4
+completed layer 5
+completed layer 6
+completed layer 7
+completed layer 8
+completed layer 9
+completed layer 10
+completed layer 11
+completed layer 12
+completed layer 13
+completed layer 14
+completed layer 15
+completed layer 16
+completed layer 17
+
+LARGEST DIGIT-RESTRICTED MATRIX CHANGES
+Magnitude ranking is descriptive and omits state-dependent denominators.
+L15H1 ||T_D||=586.65 trace_mid/D=-1.0378e+05/-205.27 uniform%=1.22 skew%=35.1 eig+/-=4/6 out/in_enrich=6.45/1.32 O/Vparts=355.1/370.8
+L15H2 ||T_D||=507.52 trace_mid/D=55951/-116.86 uniform%=0.53 skew%=59.9 eig+/-=4/6 out/in_enrich=8.89/1.37 O/Vparts=368.9/270.7
+L16H3 ||T_D||=490.93 trace_mid/D=1888.8/20.091 uniform%=0.02 skew%=44.7 eig+/-=5/5 out/in_enrich=10.12/2.16 O/Vparts=419.9/124.1
+L15H3 ||T_D||=471.73 trace_mid/D=60220/-150.76 uniform%=1.02 skew%=49.0 eig+/-=4/6 out/in_enrich=6.14/1.28 O/Vparts=371.6/182.5
+L16H2 ||T_D||=427.76 trace_mid/D=23112/-53.865 uniform%=0.16 skew%=48.5 eig+/-=3/7 out/in_enrich=6.45/2.05 O/Vparts=366.4/138
+L16H0 ||T_D||=415.16 trace_mid/D=4203.3/4.8525 uniform%=0.00 skew%=41.5 eig+/-=5/5 out/in_enrich=7.92/2.01 O/Vparts=358.8/90.53
+L16H1 ||T_D||=376.59 trace_mid/D=690.85/-27.244 uniform%=0.05 skew%=37.4 eig+/-=4/6 out/in_enrich=7.20/1.90 O/Vparts=343.9/82.87
+L14H3 ||T_D||=354.24 trace_mid/D=-346.89/176.98 uniform%=2.50 skew%=45.2 eig+/-=5/5 out/in_enrich=2.27/2.51 O/Vparts=312.2/78.83
+L17H3 ||T_D||=321.51 trace_mid/D=-5178.2/54.885 uniform%=0.29 skew%=42.7 eig+/-=5/5 out/in_enrich=12.39/1.88 O/Vparts=321.5/27.27
+L14H2 ||T_D||=317.9 trace_mid/D=7518.3/-84.54 uniform%=0.71 skew%=37.5 eig+/-=5/5 out/in_enrich=1.86/2.27 O/Vparts=271.3/89.5
+L15H0 ||T_D||=284.12 trace_mid/D=43235/-78.095 uniform%=0.76 skew%=50.2 eig+/-=5/5 out/in_enrich=3.27/1.23 O/Vparts=267.4/90.2
+L12H1 ||T_D||=275.79 trace_mid/D=10745/-110.8 uniform%=1.61 skew%=56.0 eig+/-=4/6 out/in_enrich=4.67/1.22 O/Vparts=190.6/175.5
+L17H1 ||T_D||=264.8 trace_mid/D=54349/25.785 uniform%=0.09 skew%=46.8 eig+/-=5/5 out/in_enrich=6.29/1.57 O/Vparts=203/96.03
+L12H0 ||T_D||=256.48 trace_mid/D=-3801.7/22.918 uniform%=0.08 skew%=57.8 eig+/-=6/4 out/in_enrich=4.83/1.40 O/Vparts=212.4/88.32
+L17H0 ||T_D||=253.94 trace_mid/D=8090.8/142.62 uniform%=3.15 skew%=36.5 eig+/-=5/5 out/in_enrich=5.56/1.76 O/Vparts=244.3/36.45
+L13H3 ||T_D||=250.31 trace_mid/D=-195/-39.884 uniform%=0.25 skew%=47.5 eig+/-=5/5 out/in_enrich=3.70/2.19 O/Vparts=157.6/131.1
+
+MOST OUTPUT-DIGIT-SELECTIVE OV DIFFERENCES
+L17H3 out_enrich 12.39 in_enrich 1.877 trace_D 54.88473 uniform_copy_fraction 0.00291
+L16H3 out_enrich 10.116 in_enrich 2.163 trace_D 20.09058 uniform_copy_fraction 0.00017
+L15H2 out_enrich 8.894 in_enrich 1.373 trace_D -116.86329 uniform_copy_fraction 0.0053
+L16H0 out_enrich 7.92 in_enrich 2.013 trace_D 4.85252 uniform_copy_fraction 1e-05
+L16H1 out_enrich 7.197 in_enrich 1.898 trace_D -27.24427 uniform_copy_fraction 0.00052
+L16H2 out_enrich 6.454 in_enrich 2.051 trace_D -53.8647 uniform_copy_fraction 0.00159
+L15H1 out_enrich 6.448 in_enrich 1.318 trace_D -205.26757 uniform_copy_fraction 0.01224
+L17H1 out_enrich 6.29 in_enrich 1.568 trace_D 25.78505 uniform_copy_fraction 0.00095
+L15H3 out_enrich 6.137 in_enrich 1.28 trace_D -150.76355 uniform_copy_fraction 0.01021
+L17H0 out_enrich 5.556 in_enrich 1.756 trace_D 142.61613 uniform_copy_fraction 0.03154
+
+SELECTED HEADS: STRONGEST POSITIVE AND NEGATIVE IDENTITY DIRECTIONS
+L00H2 symmetric eigenvalues [-0.9042 -0.3198 -0.1774 -0.1367 -0.0933  0.0548  0.1158  0.3538  0.511   0.7362]
+  most suppressed digit coordinates 0..9: [ 0.2223  0.2833 -0.0488 -0.2095 -0.1101 -0.0061 -0.1292  0.0849  0.028  -0.1148]
+  most strengthened digit coordinates 0..9: [ 0.0504  0.2925  0.2994  0.0288 -0.1801 -0.2348 -0.0289 -0.1223 -0.1063  0.0014]
+L12H1 symmetric eigenvalues [-96.1159 -85.2408 -45.4434 -36.9489 -21.0486  -7.7148   4.9533  23.6467  57.2032  95.9135]
+  most suppressed digit coordinates 0..9: [ 0.1121  0.3356  0.0515 -0.0713 -0.154   0.0809 -0.0543 -0.1366 -0.2074  0.0436]
+  most strengthened digit coordinates 0..9: [ 0.1494 -0.0666  0.2025 -0.1384 -0.16   -0.1471  0.1352  0.0199  0.0055 -0.0005]
+L15H1 symmetric eigenvalues [-298.7095 -154.5272  -95.6099  -66.7386  -41.7302  -25.7369    4.1447   74.0157  133.6465  265.9779]
+  most suppressed digit coordinates 0..9: [ 0.1436  0.3233  0.0755  0.0876 -0.1746 -0.1603 -0.2291 -0.1383 -0.0081  0.0805]
+  most strengthened digit coordinates 0..9: [-0.158  -0.0319 -0.0254 -0.0993  0.043  -0.0388  0.043  -0.0433  0.2921  0.0186]
+L15H2 symmetric eigenvalues [-175.5222 -110.9306  -94.7496  -65.1213  -29.1449   -5.667    25.9255   62.2172   96.3006  179.8289]
+  most suppressed digit coordinates 0..9: [-0.075  -0.0441  0.0737  0.2381 -0.1048 -0.0115  0.0007  0.0519 -0.187   0.058 ]
+  most strengthened digit coordinates 0..9: [ 0.1151  0.3218  0.1322  0.0353  0.1134 -0.1686 -0.2298 -0.1398 -0.1396 -0.0402]
+L16H1 symmetric eigenvalues [-128.5441 -109.2251  -85.8015  -54.8765  -42.7877   -8.1831   42.4882   79.1186  123.1338  157.4332]
+  most suppressed digit coordinates 0..9: [ 0.0838  0.0734 -0.0454  0.2021 -0.0541  0.0484  0.0858 -0.0878 -0.1273 -0.1789]
+  most strengthened digit coordinates 0..9: [ 0.3272  0.2242  0.1551 -0.0433 -0.0495  0.0096 -0.037  -0.119  -0.2589 -0.2085]
+L16H3 symmetric eigenvalues [-193.4889  -96.1668  -78.0349  -50.4664  -15.4956    5.7016   38.0338   47.6862  116.1888  246.1329]
+  most suppressed digit coordinates 0..9: [-0.0779  0.2195 -0.0109  0.1373  0.0442  0.109  -0.0652 -0.1134 -0.0381 -0.2045]
+  most strengthened digit coordinates 0..9: [-0.2336 -0.2428 -0.2206  0.0167 -0.0206  0.0292  0.105   0.2063  0.1026  0.2578]
+L17H1 symmetric eigenvalues [-104.2975  -72.8197  -21.2018  -13.8575   -8.8303    8.5655   22.7384   25.1902   71.9596  118.3382]
+  most suppressed digit coordinates 0..9: [-0.1757  0.2967  0.1212  0.2255 -0.0928 -0.004  -0.2006 -0.0853 -0.0946  0.0096]
+  most strengthened digit coordinates 0..9: [ 0.1678 -0.0164  0.2485  0.1072 -0.1403 -0.0844 -0.0227 -0.0668 -0.0737 -0.1191]
+L17H3 symmetric eigenvalues [-109.3176  -70.8145  -49.8714  -30.9821   -3.4211    8.142    18.5522   40.3214   76.5426  175.7333]
+  most suppressed digit coordinates 0..9: [ 0.0817  0.0478 -0.0139  0.0878 -0.0337 -0.1219 -0.166  -0.0726 -0.0659  0.2567]
+  most strengthened digit coordinates 0..9: [ 0.117   0.2035  0.3682  0.0366 -0.0504 -0.0419 -0.0639 -0.147  -0.1431 -0.2789]
+
+GQA caveat: V and K are shared by all four heads in each layer.
+Attributing their changes to one head alone would be misleading.
+
+```

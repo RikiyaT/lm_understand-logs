@@ -1,0 +1,80 @@
+OUTPUT of run 14 of at most 60:
+```
+NEW HYPOTHESIS: SHARED KEY CHANGES EXPLAIN THE PROMINENT HEAD DIFFERENCES
+Query/key sides include their learned normalization and input diagonal factors.
+Shares are exact midpoint algebraic allocations, not causal effect shares.
+The key-side parameters are shared: contributions across heads are not independent.
+
+LAYER SUMMARY
+layer key_share_h0 key_share_h1 key_share_h2 key_share_h3 energy_weighted_key_share
+ 0     0.435527     0.486575     0.432591     0.454960                  0.450965
+ 1     0.404290     0.479693     0.388509     0.487363                  0.442700
+ 2     0.468768     0.560006     0.374868     0.350891                  0.442629
+ 3     0.349562     0.318458     0.460496     0.518101                  0.412834
+ 4     0.545086     0.445321     0.544104     0.555372                  0.524214
+ 5     0.166283     0.072284     0.102070     0.131810                  0.118964
+ 6     0.514074     0.509385     0.604596     0.552874                  0.547016
+ 7     0.465964     0.359458     0.445671     0.433318                  0.429562
+ 8     0.503303     0.529048     0.509215     0.481320                  0.505714
+ 9     0.421435     0.422163     0.497890     0.404528                  0.437108
+10     0.441032     0.392604     0.542860     0.452398                  0.460034
+11     0.757733     0.818265     0.538661     0.672285                  0.734890
+12     0.243744     0.361874     0.261808     0.238614                  0.272122
+13     0.475656     0.573799     0.569825     0.176515                  0.488492
+14     0.317648     0.304627     0.276885     0.334122                  0.308468
+15     0.417575     0.438841     0.445487     0.466174                  0.443153
+16     0.466756     0.490814     0.478711     0.400037                  0.462144
+17     0.210734     0.226366     0.183303     0.211851                  0.210101
+
+TOP TEN HEADS BY COEFFICIENT RELATIVE DIFFERENCE
+{"layer": 11, "head": 0, "coefficient_relative_difference": 0.029152881528964152, "query_side_algebraic_share": 0.24226717801923137, "shared_key_side_algebraic_share": 0.7577328219807687, "query_key_term_cosine": 0.0027256535295682063, "combined_over_separate_energy": 1.0023336649987378, "difference_energy": 2988.5173640170797, "top_frequency_pairs": [{"pair": 88, "share_of_head_difference": 0.23345107941033363, "key_side_algebraic_share_at_pair": 0.864891265549132}, {"pair": 70, "share_of_head_difference": 0.056279292633333575, "key_side_algebraic_share_at_pair": 0.9108928366554496}, {"pair": 60, "share_of_head_difference": 0.038651598359315094, "key_side_algebraic_share_at_pair": 0.9323476610404652}]}
+{"layer": 11, "head": 1, "coefficient_relative_difference": 0.026593366159198214, "query_side_algebraic_share": 0.18173498912779545, "shared_key_side_algebraic_share": 0.8182650108722046, "query_key_term_cosine": 0.0016480798731251575, "combined_over_separate_energy": 1.0012699840417143, "difference_energy": 3769.7188860946126, "top_frequency_pairs": [{"pair": 88, "share_of_head_difference": 0.15576840093160527, "key_side_algebraic_share_at_pair": 0.8545093158178345}, {"pair": 70, "share_of_head_difference": 0.06046593959719635, "key_side_algebraic_share_at_pair": 0.9549225819916912}, {"pair": 60, "share_of_head_difference": 0.02985112671985827, "key_side_algebraic_share_at_pair": 0.9153090787627417}]}
+{"layer": 12, "head": 2, "coefficient_relative_difference": 0.022449184213739447, "query_side_algebraic_share": 0.7381918002311951, "shared_key_side_algebraic_share": 0.2618081997688047, "query_key_term_cosine": -0.002163710843748281, "combined_over_separate_energy": 0.9980965224402926, "difference_energy": 264343.92241783254, "top_frequency_pairs": [{"pair": 120, "share_of_head_difference": 0.04744105032438491, "key_side_algebraic_share_at_pair": 0.08335564254776678}, {"pair": 111, "share_of_head_difference": 0.0409319285787976, "key_side_algebraic_share_at_pair": 0.3907330649909321}, {"pair": 115, "share_of_head_difference": 0.036681738610127766, "key_side_algebraic_share_at_pair": 0.18806992027082317}]}
+{"layer": 12, "head": 0, "coefficient_relative_difference": 0.021888675539485744, "query_side_algebraic_share": 0.756255785552565, "shared_key_side_algebraic_share": 0.24374421444743496, "query_key_term_cosine": 9.951771419528791e-05, "combined_over_separate_energy": 1.0000854513010502, "difference_energy": 237013.6850827774, "top_frequency_pairs": [{"pair": 111, "share_of_head_difference": 0.07742274557639861, "key_side_algebraic_share_at_pair": 0.07981013532533383}, {"pair": 72, "share_of_head_difference": 0.038117171723784815, "key_side_algebraic_share_at_pair": 0.3908421897064741}, {"pair": 115, "share_of_head_difference": 0.03248986070071821, "key_side_algebraic_share_at_pair": 0.1988400694713705}]}
+{"layer": 12, "head": 3, "coefficient_relative_difference": 0.021580021494729852, "query_side_algebraic_share": 0.7613864714540564, "shared_key_side_algebraic_share": 0.23861352854594356, "query_key_term_cosine": -0.0015947504443083835, "combined_over_separate_energy": 0.9986398252082119, "difference_energy": 255168.54014625336, "top_frequency_pairs": [{"pair": 118, "share_of_head_difference": 0.06712871359858766, "key_side_algebraic_share_at_pair": 0.07076679941765082}, {"pair": 111, "share_of_head_difference": 0.05460634969312464, "key_side_algebraic_share_at_pair": 0.14125936650343185}, {"pair": 120, "share_of_head_difference": 0.04644681688563624, "key_side_algebraic_share_at_pair": 0.14611503001104167}]}
+{"layer": 11, "head": 3, "coefficient_relative_difference": 0.021386817112806687, "query_side_algebraic_share": 0.32771543748786763, "shared_key_side_algebraic_share": 0.6722845625121325, "query_key_term_cosine": 0.00015787173651973858, "combined_over_separate_energy": 1.000148200861785, "difference_energy": 1730.6056586944344, "top_frequency_pairs": [{"pair": 88, "share_of_head_difference": 0.12083802046292913, "key_side_algebraic_share_at_pair": 0.7732779973392889}, {"pair": 60, "share_of_head_difference": 0.03137508677998323, "key_side_algebraic_share_at_pair": 0.7915074244116189}, {"pair": 126, "share_of_head_difference": 0.029020028414635867, "key_side_algebraic_share_at_pair": 0.36551415554607497}]}
+{"layer": 5, "head": 3, "coefficient_relative_difference": 0.0191611252365773, "query_side_algebraic_share": 0.8681896811397172, "shared_key_side_algebraic_share": 0.13181031886028277, "query_key_term_cosine": -0.0008060628648470344, "combined_over_separate_energy": 0.9994542906183511, "difference_energy": 248817.7314646802, "top_frequency_pairs": [{"pair": 112, "share_of_head_difference": 0.06295542584097392, "key_side_algebraic_share_at_pair": 0.08456177776897547}, {"pair": 121, "share_of_head_difference": 0.0434824726349323, "key_side_algebraic_share_at_pair": 0.006186972846862076}, {"pair": 125, "share_of_head_difference": 0.04138355768928021, "key_side_algebraic_share_at_pair": 0.021804859794548836}]}
+{"layer": 17, "head": 1, "coefficient_relative_difference": 0.017928315834148778, "query_side_algebraic_share": 0.7736338306812179, "shared_key_side_algebraic_share": 0.22636616931878215, "query_key_term_cosine": 0.004486706060502191, "combined_over_separate_energy": 1.003749147381695, "difference_energy": 201799.14982401283, "top_frequency_pairs": [{"pair": 87, "share_of_head_difference": 0.14782134514768627, "key_side_algebraic_share_at_pair": 0.3591479170939747}, {"pair": 110, "share_of_head_difference": 0.04287366342562694, "key_side_algebraic_share_at_pair": 0.03683194461083253}, {"pair": 102, "share_of_head_difference": 0.04029965614649471, "key_side_algebraic_share_at_pair": 0.06468139656756684}]}
+{"layer": 10, "head": 1, "coefficient_relative_difference": 0.017218635598716555, "query_side_algebraic_share": 0.607396480003005, "shared_key_side_algebraic_share": 0.392603519996995, "query_key_term_cosine": 0.0005909144973754258, "combined_over_separate_energy": 1.0005771062054891, "difference_energy": 323446.4126703352, "top_frequency_pairs": [{"pair": 75, "share_of_head_difference": 0.07386024470844982, "key_side_algebraic_share_at_pair": 0.8149010031069497}, {"pair": 108, "share_of_head_difference": 0.038054155504163314, "key_side_algebraic_share_at_pair": 0.028192669035383748}, {"pair": 121, "share_of_head_difference": 0.03354686193454527, "key_side_algebraic_share_at_pair": 0.14337244874537716}]}
+{"layer": 11, "head": 2, "coefficient_relative_difference": 0.017085602557846375, "query_side_algebraic_share": 0.4613387949112827, "shared_key_side_algebraic_share": 0.5386612050887172, "query_key_term_cosine": 0.0001702479511089707, "combined_over_separate_energy": 1.000169738079417, "difference_energy": 1397.4701464582936, "top_frequency_pairs": [{"pair": 88, "share_of_head_difference": 0.1568372744026439, "key_side_algebraic_share_at_pair": 0.5211054162587404}, {"pair": 126, "share_of_head_difference": 0.03982469039179581, "key_side_algebraic_share_at_pair": 0.4672384044389905}, {"pair": 108, "share_of_head_difference": 0.03362731037532282, "key_side_algebraic_share_at_pair": 0.5705641139817397}]}
+
+LAYER 11: ALL HEADS
+head=0 query_share=0.242267 shared_key_share=0.757733 term_cosine=0.002726
+head=1 query_share=0.181735 shared_key_share=0.818265 term_cosine=0.001648
+head=2 query_share=0.461339 shared_key_share=0.538661 term_cosine=0.000170
+head=3 query_share=0.327715 shared_key_share=0.672285 term_cosine=0.000158
+
+CROSS-HEAD COSINES OF COMPLETE MATCHING-COEFFICIENT DIFFERENCES
+layer 4
+[[1.     0.0665 0.0068 0.086 ]
+ [0.0665 1.     0.1342 0.0448]
+ [0.0068 0.1342 1.     0.0784]
+ [0.086  0.0448 0.0784 1.    ]]
+layer 11
+[[1.     0.0944 0.0946 0.0862]
+ [0.0944 1.     0.0362 0.078 ]
+ [0.0946 0.0362 1.     0.0213]
+ [0.0862 0.078  0.0213 1.    ]]
+layer 12
+[[1.     0.0543 0.0178 0.0048]
+ [0.0543 1.     0.1893 0.2417]
+ [0.0178 0.1893 1.     0.0869]
+ [0.0048 0.2417 0.0869 1.    ]]
+layer 16
+[[ 1.      0.017   0.0487 -0.0422]
+ [ 0.017   1.      0.069   0.025 ]
+ [ 0.0487  0.069   1.     -0.1462]
+ [-0.0422  0.025  -0.1462  1.    ]]
+layer 17
+[[ 1.      0.1067 -0.4239  0.0168]
+ [ 0.1067  1.      0.0275  0.0036]
+ [-0.4239  0.0275  1.      0.0236]
+ [ 0.0168  0.0036  0.0236  1.    ]]
+
+GLOBAL KEY-SIDE SHARE QUANTILES: [0.0723 0.3506 0.4454 0.5048 0.8183]
+Heads with key-side share > 0.75: 2
+Heads with query-side share > 0.75: 11
+
+This attributes symbolic coefficient changes, not actual attention or answer selection.
+
+```

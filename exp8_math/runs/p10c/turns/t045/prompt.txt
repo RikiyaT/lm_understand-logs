@@ -1,0 +1,58 @@
+OUTPUT of Python run 40 of at most 300:
+```
+All: {'n': 128, 'original_correct': 13, 'edited_correct': 11, 'gain_pp': np.float64(-1.562), 'paired_se_pp': np.float64(2.713), 'rescued': 5, 'regressed': 7, 'original_cut': 116, 'edited_cut': 117, 'original_mean_tokens': 30207, 'edited_mean_tokens': 30363}
+gsm8k {'n': 64, 'original_correct': 8, 'edited_correct': 7, 'gain_pp': np.float64(-1.562), 'paired_se_pp': np.float64(4.162), 'rescued': 3, 'regressed': 4, 'original_cut': 56, 'edited_cut': 57, 'original_mean_tokens': 29338, 'edited_mean_tokens': 29717}
+math {'n': 64, 'original_correct': 5, 'edited_correct': 4, 'gain_pp': np.float64(-1.562), 'paired_se_pp': np.float64(3.516), 'rescued': 2, 'regressed': 3, 'original_cut': 60, 'edited_cut': 60, 'original_mean_tokens': 31075, 'edited_mean_tokens': 31008}
+original tail repetition mean/median: [0.8585 0.9728]
+edit_strength_1 tail repetition mean/median: [0.8708 0.9762]
+gsm8k_train_4335 correct True -> True tokens 32768 -> 1358 edited tail: ch box contains 20 matches.
+*   Total matches = (Number of boxes) $\times$ (Matches per box)
+*   Total matches = $60 \times 20$.
+*   $60 \times 20 = 1200$.
+
+Thus, James has 1200 matches.
+
+\boxed{1200}
+gsm8k_train_7076 correct True -> False tokens 13476 -> 32768 edited tail: .
+    Wait, why did I think $Cost_C - Cost_O = 95$?
+    Wait, $135 - 40 = 95$.
+    Wait, why did I think $Cost_C - Cost_O = 95$?
+    Wait, $135 - 40 = 95$.
+    Wait, why did I think $Cost_C - Cost_O =
+gsm8k_train_462 correct False -> True tokens 32768 -> 7302 edited tail: of skips Valerie makes:
+$$ \text{Total Skips} = \text{Skips}_{\text{Roberto}} + \text{Skips}_{\text{Valerie}} $$
+$$ \text{Total Skips} = 1,050 + 1,200 $$
+$$ \text{Total Skips} = 2,250 $$
+
+\boxed{2250}
+gsm8k_train_5989 correct False -> True tokens 32768 -> 9075 edited tail: hases equals \$7.
+*   $\text{Starting Money} - \text{Total Cost} = \$7$
+*   $\text{Starting Money} - \$46 = \$7$
+*   $\text{Starting Money} = \$46 + \$7$
+*   $\text{Starting Money} = \$53$
+
+\boxed{53}
+gsm8k_train_1028 correct True -> False tokens 9531 -> 32768 edited tail: hat I did.
+            *   Wait, is it possible that "20 bars" refers to the number of bars in the container?
+            *   Yes, that's what I did.
+            *   Wait, is it possible that "20 bars
+gsm8k_train_714 correct True -> False tokens 5123 -> 32768 edited tail: per visit" means he gets $0.01 *per visit*?
+    *   If he gets $0.01 per visit, he gets $300.
+    *   Wait, what if "gets $0.01 per visit" means he gets $0.01 *per visit*?
+    *   If he gets $0.01 per
+gsm8k_train_350 correct True -> False tokens 837 -> 32768 edited tail: re rolls of wrapping paper does Chandler need to sell [for the total available]?"
+    *   No.
+    *   Let's check if the question is "How many more rolls of wrapping paper does Chandler need to sell [
+gsm8k_train_5000 correct False -> True tokens 32768 -> 2169 edited tail: times \$20.00 = \$2.00$$
+
+**Step 3: Calculate the final total bill**
+
+Subtract the discount from the subtotal:
+$$\$20.00 - \$2.00 = \$18.00$$
+
+The total grocery bill comes to $\$18.00$.
+
+\boxed{18.00}
+Activation index: {"layers": [18, 19, 23], "mlp_layers": [18, 19, 23], "samples": [{"item": "gsm8k_train_7354", "sample": 0, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_7354", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_4960", "sample": 0, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_4960", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_4335", "sample": 0, "correct": true, "tokens": 1409}, {"item": "gsm8k_train_4335", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_3553", "sample": 0, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_3553", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_5789", "sample": 0, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_5789", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_1381", "sample": 0, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_1381", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_1927", "sample": 0, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_1927", "sample": 1, "correct": false, "tokens": 8192}, {"item": "gsm8k_train_5240", "sample": 0, "correct": false
+
+```

@@ -1,0 +1,8 @@
+{
+  "seed": 270031,
+  "holdout": "256 MATH problems, stratified by subject and level",
+  "dev_rule": "Select up to 128 intermittently solved baseline problems; freeze before editing.",
+  "baseline_samples_per_problem": 8,
+  "selection_metric": "Paired DEV answer accuracy, not response length.",
+  "holdout_rule": "Freeze candidate before any HOLDOUT generation; pool confirmation passes."
+}

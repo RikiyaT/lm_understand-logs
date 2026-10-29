@@ -1,0 +1,158 @@
+OUTPUT of run 3 of at most 60:
+```
+TOKEN GROUPS
+digits n = 10 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+number_words n = 55 ['zero', ' zero', 'one', ' one', 'two', ' two', 'three', ' three', 'four', ' four', 'five', ' five', 'six', ' six', 'seven', ' seven', 'eight', ' eight', 'nine', ' nine', 'ten', ' ten', ' eleven', ' twelve', 'twenty', ' twenty', 'thirty', ' thirty', ' forty', 'fifty', ' fifty', 'hundred', ' hundred', 'Zero', ' Zero', 'One', ' One', 'Two', ' Two', 'Three', ' Three', 'Four', ' Four', 'Five', ' Five', 'Six', ' Six', 'Seven', ' Seven', 'Eight', ' Eight', 'Nine', ' Nine', 'Ten', ' Ten']
+choice_letters n = 12 ['A', ' A', 'B', ' B', 'C', ' C', 'D', ' D', 'E', ' E', 'F', ' F']
+boolean n = 24 ['yes', ' yes', 'no', ' no', 'true', ' true', 'false', ' false', 'Yes', ' Yes', 'No', ' No', 'True', ' True', 'False', ' False', 'YES', ' YES', 'NO', ' NO', 'TRUE', ' TRUE', 'FALSE', ' FALSE']
+control0 n = 48 [' distinction', ' nanocom', ' phenotypic', ' beryllium', ' chases', ' skateboard', ' dudas', ' koment']
+control1 n = 48 [' xwe', ' bitrate', ' oversize', ' agro', ' strapping', ' delivers', ' grime', ' direc']
+control2 n = 48 [' rectangular', ' springfox', ' parametr', ' perturb', ' test', ' automat', ' bloquear', ' voted']
+Completed layer 0
+Completed layer 1
+Completed layer 2
+Completed layer 3
+Completed layer 4
+Completed layer 5
+Completed layer 6
+Completed layer 7
+Completed layer 8
+Completed layer 9
+Completed layer 10
+Completed layer 11
+Completed layer 12
+Completed layer 13
+Completed layer 14
+Completed layer 15
+Completed layer 16
+Completed layer 17
+
+MODE: raw
+Sum across all heads/layers is descriptive, NOT an end-to-end model map.
+digits          sum A= 0.1819769 sum B= 0.1818377 sum D=-0.000139233
+number_words    sum A= 0.6052374 sum B= 0.6056435 sum D= 0.000406124
+choice_letters  sum A= 0.3249491 sum B= 0.3254956 sum D= 0.0005464979
+boolean         sum A= 0.8017175 sum B= 0.8016772 sum D=-4.027312e-05
+control0        sum A= 1.318703 sum B= 1.31934 sum D= 0.0006368061
+control1        sum A= 1.259812 sum B= 1.260077 sum D= 0.0002651524
+control2        sum A= 1.307647 sum B= 1.308227 sum D= 0.0005799457
+
+ digits most negative and positive B-A copy changes
+L15H2 A= 0.0499379 B= 0.0498349 D=-0.000103023 D/base_RMS=-0.0020 D-minus-controls=-0.000139625
+L15H3 A= 0.0275838 B= 0.0274956 D=-8.81702e-05 D/base_RMS=-0.0032 D-minus-controls=-0.000108108
+L15H1 A=-0.0620555 B=-0.0621277 D=-7.21738e-05 D/base_RMS=-0.0011 D-minus-controls=-8.6166e-05
+L01H1 A=-0.00159281 B=-0.00149184 D= 0.000100968 D/base_RMS= 0.0257 D-minus-controls= 4.02166e-05
+L02H0 A= 0.0102859 B= 0.0103328 D= 4.68856e-05 D/base_RMS= 0.0042 D-minus-controls= 5.96646e-05
+L17H3 A=-0.00494941 B=-0.00490443 D= 4.49852e-05 D/base_RMS= 0.0067 D-minus-controls= 7.63067e-05
+
+ number_words most negative and positive B-A copy changes
+L00H0 A= 0.0148387 B= 0.0147256 D=-0.00011315 D/base_RMS=-0.0058 D-minus-controls=-6.44525e-05
+L15H1 A=-0.110061 B=-0.11015 D=-8.88109e-05 D/base_RMS=-0.0008 D-minus-controls=-0.000102803
+L08H1 A= 0.0182618 B= 0.0182005 D=-6.12997e-05 D/base_RMS=-0.0030 D-minus-controls=-7.06402e-05
+L00H2 A=-0.00132775 B=-0.00115493 D= 0.000172823 D/base_RMS= 0.0185 D-minus-controls= 7.49813e-05
+L14H3 A= 0.00328014 B= 0.00336043 D= 8.0284e-05 D/base_RMS= 0.0076 D-minus-controls= 6.45231e-05
+L00H3 A= 0.0190402 B= 0.0191154 D= 7.51745e-05 D/base_RMS= 0.0026 D-minus-controls=-4.014e-06
+
+ choice_letters most negative and positive B-A copy changes
+L00H0 A= 0.0103024 B= 0.0101272 D=-0.000175202 D/base_RMS=-0.0133 D-minus-controls=-0.000126505
+L00H3 A= 0.0267453 B= 0.0266351 D=-0.000110256 D/base_RMS=-0.0031 D-minus-controls=-0.000189444
+L00H1 A=-0.0327305 B=-0.0328362 D=-0.000105724 D/base_RMS=-0.0032 D-minus-controls=-0.000128028
+L02H1 A=-0.0320448 B=-0.0319651 D= 7.96728e-05 D/base_RMS= 0.0024 D-minus-controls= 1.59703e-05
+L14H2 A= 0.0124554 B= 0.0125308 D= 7.54101e-05 D/base_RMS= 0.0042 D-minus-controls= 8.30507e-05
+L13H1 A= 0.00476082 B= 0.00483511 D= 7.42944e-05 D/base_RMS= 0.0102 D-minus-controls= 9.82778e-05
+
+ boolean most negative and positive B-A copy changes
+L11H2 A= 0.0324914 B= 0.0323891 D=-0.000102233 D/base_RMS=-0.0029 D-minus-controls=-0.000145673
+L12H1 A= 0.00342544 B= 0.00332368 D=-0.000101759 D/base_RMS=-0.0104 D-minus-controls=-0.0001057
+L09H0 A= 0.0141843 B= 0.0141016 D=-8.27201e-05 D/base_RMS=-0.0053 D-minus-controls=-9.20265e-05
+L00H2 A= 0.000349932 B= 0.000631635 D= 0.000281703 D/base_RMS= 0.0247 D-minus-controls= 0.000183861
+L00H3 A= 0.00786419 B= 0.00801212 D= 0.000147929 D/base_RMS= 0.0072 D-minus-controls= 6.87409e-05
+L14H2 A= 0.0279632 B= 0.028071 D= 0.000107719 D/base_RMS= 0.0036 D-minus-controls= 0.000115359
+
+MODE: diagonal_scaled
+Sum across all heads/layers is descriptive, NOT an end-to-end model map.
+digits          sum A= 3161.008 sum B= 3161.788 sum D= 0.7799619
+number_words    sum A= 11567 sum B= 11596.28 sum D= 29.28659
+choice_letters  sum A= 5038.311 sum B= 5043.196 sum D= 4.885302
+boolean         sum A= 14613.61 sum B= 14590.69 sum D=-22.92467
+control0        sum A= 27893.56 sum B= 27902.61 sum D= 9.048638
+control1        sum A= 26415.24 sum B= 26413.07 sum D=-2.166015
+control2        sum A= 28769.41 sum B= 28783.22 sum D= 13.80761
+
+ digits most negative and positive B-A copy changes
+L15H1 A=-1788.8 B=-1795.48 D=-6.68225 D/base_RMS=-0.0035 D-minus-controls=-7.56685
+L16H2 A= 273.922 B= 268.666 D=-5.2562 D/base_RMS=-0.0123 D-minus-controls=-5.44276
+L12H1 A= 184.618 B= 183.273 D=-1.34518 D/base_RMS=-0.0036 D-minus-controls=-2.87611
+L16H3 A= 37.3141 B= 41.7466 D= 4.4325 D/base_RMS= 0.0267 D-minus-controls= 4.22528
+L17H3 A=-67.6222 B=-64.5594 D= 3.06277 D/base_RMS= 0.0324 D-minus-controls= 3.89451
+L17H0 A=-30.1316 B=-27.4449 D= 2.68668 D/base_RMS= 0.0328 D-minus-controls= 2.23514
+
+ number_words most negative and positive B-A copy changes
+L17H2 A=-78.3099 B=-80.4367 D=-2.12676 D/base_RMS=-0.0103 D-minus-controls=-0.900851
+L13H3 A=-174.686 B=-176.449 D=-1.76381 D/base_RMS=-0.0048 D-minus-controls=-3.01373
+L12H3 A= 581.959 B= 580.316 D=-1.64319 D/base_RMS=-0.0022 D-minus-controls=-2.50403
+L15H2 A= 1364.8 B= 1371.05 D= 6.24573 D/base_RMS= 0.0041 D-minus-controls= 3.92126
+L16H1 A= 440.801 B= 445.674 D= 4.87366 D/base_RMS= 0.0078 D-minus-controls= 4.87882
+L16H3 A= 167.828 B= 171.84 D= 4.01189 D/base_RMS= 0.0100 D-minus-controls= 3.80467
+
+ choice_letters most negative and positive B-A copy changes
+L15H1 A=-2343.74 B=-2346.18 D=-2.44727 D/base_RMS=-0.0010 D-minus-controls=-3.33187
+L12H3 A= 202.147 B= 200.26 D=-1.88698 D/base_RMS=-0.0072 D-minus-controls=-2.74782
+L17H2 A=-24.6128 B=-26.0788 D=-1.46599 D/base_RMS=-0.0141 D-minus-controls=-0.240075
+L15H2 A= 1306.56 B= 1309.16 D= 2.60205 D/base_RMS= 0.0019 D-minus-controls= 0.277588
+L16H1 A= 3.50918 B= 5.60938 D= 2.1002 D/base_RMS= 0.0180 D-minus-controls= 2.10537
+L15H0 A= 567.233 B= 569.179 D= 1.94653 D/base_RMS= 0.0031 D-minus-controls= 0.889893
+
+ boolean most negative and positive B-A copy changes
+L16H3 A= 215.648 B= 210.625 D=-5.02367 D/base_RMS=-0.0150 D-minus-controls=-5.23089
+L14H3 A=-51.0299 B=-55.1226 D=-4.09274 D/base_RMS=-0.0101 D-minus-controls=-3.10803
+L17H1 A= 1699.13 B= 1695.16 D=-3.96777 D/base_RMS=-0.0023 D-minus-controls=-3.59847
+L15H2 A= 1296.12 B= 1301.2 D= 5.08118 D/base_RMS= 0.0037 D-minus-controls= 2.75671
+L13H3 A=-106.156 B=-104.572 D= 1.58407 D/base_RMS= 0.0045 D-minus-controls= 0.33415
+L16H1 A= 476.605 B= 477.845 D= 1.24005 D/base_RMS= 0.0024 D-minus-controls= 1.24522
+
+PER-LAYER CHANGE, SUMMED OVER HEADS
+Columns: digits, number_words, choice_letters, boolean
+raw
+0 [ 0.      0.0001 -0.0004  0.0004]
+1 [ 0.0001  0.0001  0.     -0.    ]
+2 [ 0.0001  0.0002  0.0001 -0.0001]
+3 [ 0.      0.0001  0.     -0.0001]
+4 [0.     0.0002 0.0002 0.0001]
+5 [ 0.     -0.      0.0001  0.0001]
+6 [ 0.      0.     -0.     -0.0002]
+7 [ 0.      0.0001  0.0001 -0.0001]
+8 [-0.     -0.0002  0.0001 -0.0001]
+9 [ 0.      0.      0.     -0.0001]
+10 [0.     0.     0.0001 0.    ]
+11 [-0.     -0.     -0.     -0.0001]
+12 [-0.0001  0.     -0.0001 -0.0001]
+13 [0.     0.     0.0001 0.0001]
+14 [-0.      0.0001  0.0001  0.0002]
+15 [-0.0003 -0.0002  0.      0.0001]
+16 [-0.0001  0.      0.     -0.    ]
+17 [ 0.0001 -0.0001  0.     -0.0002]
+diagonal_scaled
+0 [ 0.0138  0.1366 -0.0022  0.1282]
+1 [-0.0273  0.1166  0.5788  0.0254]
+2 [-0.0783  0.0309  0.0729 -0.1172]
+3 [-0.1397  0.2419  0.0927 -0.0998]
+4 [-0.1183  0.1898  0.0561  0.1375]
+5 [-0.1581 -0.1822  0.3999 -0.4485]
+6 [-0.046   0.4348  0.0438 -1.166 ]
+7 [-0.0641  0.6354 -0.1331 -0.4727]
+8 [-0.3632 -1.0498  0.2626 -0.6864]
+9 [ 0.1414  0.2745  0.1252 -0.8247]
+10 [-0.9483  0.3573  0.1635 -1.0063]
+11 [-0.3194  0.2035 -0.5725 -2.6703]
+12 [-1.147  -1.9632 -0.1697 -4.5609]
+13 [-2.4285 -0.4977  0.1958  3.0121]
+14 [ 2.2844  2.418  -1.5518 -3.3822]
+15 [-4.7048 13.5488  3.2659  3.6473]
+16 [ 3.6439 14.0511  2.8105 -6.7184]
+17 [ 5.2394  0.34   -0.7531 -7.7218]
+
+These products measure available linear copying paths, not whether
+a head selects the user's guess or whether the whole model copies it.
+
+```

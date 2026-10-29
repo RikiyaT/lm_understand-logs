@@ -1,0 +1,48 @@
+OUTPUT of Python run 7 of at most 300:
+```
+Teacher-forced batch: 576 texts; 346789 tokens; max 1219
+Layer-14 candidates:
+{'layer': 14, 'neuron': 1594, 'corr_correct_length_adjusted': -0.1692, 'corr_half1': -0.1592, 'corr_half2': -0.1799, 'corr_repetition': 0.4726, 'stability': 0.1592, 'mean_correct': 0.0122, 'mean_wrong': 0.0206, 'column_norm': 0.2615, 'rms_contribution': 0.0089}
+{'layer': 14, 'neuron': 259, 'corr_correct_length_adjusted': -0.1599, 'corr_half1': -0.157, 'corr_half2': -0.1647, 'corr_repetition': 0.1526, 'stability': 0.157, 'mean_correct': -0.0035, 'mean_wrong': -0.0031, 'column_norm': 0.386, 'rms_contribution': 0.0027}
+{'layer': 14, 'neuron': 1723, 'corr_correct_length_adjusted': 0.1521, 'corr_half1': 0.1458, 'corr_half2': 0.159, 'corr_repetition': -0.3032, 'stability': 0.1458, 'mean_correct': 0.0217, 'mean_wrong': 0.0168, 'column_norm': 0.3328, 'rms_contribution': 0.0079}
+{'layer': 14, 'neuron': 820, 'corr_correct_length_adjusted': -0.1515, 'corr_half1': -0.1421, 'corr_half2': -0.1606, 'corr_repetition': -0.0267, 'stability': 0.1421, 'mean_correct': -0.0129, 'mean_wrong': -0.009, 'column_norm': 0.3783, 'rms_contribution': 0.0077}
+{'layer': 14, 'neuron': 902, 'corr_correct_length_adjusted': -0.1555, 'corr_half1': -0.1737, 'corr_half2': -0.1389, 'corr_repetition': 0.1666, 'stability': 0.1389, 'mean_correct': -0.0072, 'mean_wrong': -0.0062, 'column_norm': 0.3734, 'rms_contribution': 0.0031}
+{'layer': 14, 'neuron': 1745, 'corr_correct_length_adjusted': -0.1387, 'corr_half1': -0.1398, 'corr_half2': -0.1377, 'corr_repetition': 0.1, 'stability': 0.1377, 'mean_correct': -0.0273, 'mean_wrong': -0.0245, 'column_norm': 0.3573, 'rms_contribution': 0.012}
+{'layer': 14, 'neuron': 1244, 'corr_correct_length_adjusted': 0.1616, 'corr_half1': 0.1373, 'corr_half2': 0.1887, 'corr_repetition': -0.108, 'stability': 0.1373, 'mean_correct': -0.0055, 'mean_wrong': -0.0065, 'column_norm': 0.3422, 'rms_contribution': 0.0027}
+{'layer': 14, 'neuron': 470, 'corr_correct_length_adjusted': 0.1741, 'corr_half1': 0.1354, 'corr_half2': 0.2106, 'corr_repetition': -0.0607, 'stability': 0.1354, 'mean_correct': 0.0078, 'mean_wrong': 0.0057, 'column_norm': 0.3382, 'rms_contribution': 0.0034}
+High-activity answer: math_train_prealgebra_502 correct False tokens 8192 activation 0.2301
+Let $n$ be the number of calculators.
+Dean starts with 3 calculators.
+He presses the cube button on  ... +1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1
+High-activity answer: math_train_prealgebra_502 correct True tokens 8192 activation 0.1603
+Let $n$ be the number of calculators.
+Dean starts with 3 calculators.
+He presses the cube button on  ... tton.
+After this, he presses the negation button.
+After this, he presses the negation button.
+After this, he presses the negation button
+High-activity answer: math_train_prealgebra_502 correct False tokens 8192 activation 0.1528
+Let $n$ be the number of calculators in the circle.
+He presses the c ... the negation button.
+He presses the negation button.
+He passes all the calculators to the next person in the circle.
+He presses the number that shows 1 on the calculator that shows
+High-activity answer: math_train_intermediate_algebra_84 correct False tokens 8192 activation 0.113
+Let $x$ and $y$ be real numbers such that $x-y=4$ and $x^3-y^3=28$.
+We are given that $x-y = 4$.
+We  ... wer: 4+ y^2
+
+Final Answer: 4+ y^2
+
+Final Answer: 4+ y^2
+
+
+
+
+
+
+Final Answer:
+Saved request: /work/pass2_request.json
+
+[harness: 7 repeated lines not shown (a line is shown at most 2 times per output)]
+```

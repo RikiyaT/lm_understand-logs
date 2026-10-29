@@ -1,0 +1,57 @@
+OUTPUT of Python run 4 of at most 300:
+```
+Sample fields: ['text', 'pred', 'correct', 'tokens', 'cut']
+Sample metadata: {'pred': None, 'correct': False, 'tokens': 8192, 'cut': True}
+Long sample fields: {'text': 28360}
+Index type: dict
+Index preview: {'layers': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], 'mlp_layers': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], 'samples': [{'item': 'math_train_prealgebra_768', 'sample': 0, 'correct': False, 'tokens': 8192}, {'item': 'math_train_prealgebra_768', 'sample': 1, 'correct': False, 'tokens': 1266}, {'item': 'math_train_prealgebra_768', 'sample': 2, 'correct': False, 'tokens': 1432}, {'item': 'math_train_prealgebra_768', 'sample': 3, 'correct': False, 'tokens': 553}, {'item': 'math_train_prealgebra_768', 'sample': 4, 'correct': False, 'tokens': 1210}, {'item': 'math_train_prealgebra_768', 'sample': 5, '
+PROBLEM math_train_prealgebra_768 reference 35^\circ
+META {'pred': None, 'correct': False, 'tokens': 8192, 'cut': True}
+text 'Let $A=(0,0)$, $B=(24,0)$, $C=(48,0)$, $D=(18,24)$, $E=(12,48)$. The angles are given as $\\angle1 = 180^\\circ$, $\\angle2 = 180^\\ci ... nal Answer:\n\nFinal Answer:\n\nFinal Answer:\n\nFinal Answer:\n\nFinal Answer:\n\nFinal Answer:\n\nFinal Answer:\n\nFinal Answer:\n\nFinal Answer'
+PROBLEM math_train_prealgebra_768 reference 35^\circ
+META {'pred': None, 'correct': False, 'tokens': 1008, 'cut': False}
+text 'Let $\\angle1 = \\angle2 = \\angle3 = \\angle4$. We are given that $\\angle1+\\angle2 = 180^\\circ$ and $\\angle3 = \\angle4$.\nWe want to f ... ow $\\angle1 + \\angle2 = 180^\\circ$.\nSince $\\angle3 = \\angle4$, we have $\\angle4 = 180^\\circ$.\n\nFinal Answer: $\\angle4 = 180^\\circ$'
+PROBLEM math_train_intermediate_algebra_212 reference (-\infty, -8) \cup (-8, \infty)
+META {'pred': '0', 'correct': False, 'tokens': 418, 'cut': False}
+text 'Let $g(x) = \\frac{3x+1}{x+8}$.\nWe can rewrite the function as\n$$ g(x) = \\frac{3x+1}{x+8} = \\frac{3x+1}{x+8} $$\nSince $x \\ne -8$, w ... ers $x$ such that $x \\neq -8$ and $x \\neq 0$. In interval notation, this is $x \\neq -8$ and $x \\neq 0$.\n\nFinal Answer: $\\boxed{0}$'
+PROBLEM math_train_intermediate_algebra_212 reference (-\infty, -8) \cup (-8, \infty)
+META {'pred': 'x \\neq -\\frac{1}{3} \\text{ and } x \\neq 8', 'correct': False, 'tokens': 471, 'cut': False}
+text 'To find the domain of the function $g(x) = \\frac{3x+1}{x+8}$, we need to find the values of $x$ for which the denominator $x+8$ is ...  8$.\nWe can write this as $x \\neq -\\frac{1}{3}$ and $x \\neq 8$.\n\nFinal Answer: $\\boxed{x \\neq -\\frac{1}{3} \\text{ and } x \\neq 8}$'
+PROBLEM math_train_number_theory_528 reference 1133
+META {'pred': None, 'correct': False, 'tokens': 276, 'cut': False}
+text 'To convert the number $3206_7$ to a base 10 integer, we need to find the digits that will be converted to the same base.\nWe know t ... \\cdot 1 = 3000 + 200 + 0 + 6 = 3000 + 200 + 6 = 3000 + 206 = 3026$.\n\nTherefore, the base 10 integer is $3026$.\n\nFinal Answer: 3026'
+PROBLEM math_train_number_theory_528 reference 1133
+META {'pred': None, 'correct': False, 'tokens': 160, 'cut': False}
+text 'To convert the integer $3206_7$ to a base 10 integer, we can use the following algorithm:\nWe start with the number $3206_7$.\nWe di ... \\cdot 7^0 = 3 \\cdot 49 + 2 \\cdot 7 + 0 \\cdot 1 = 147 + 14 + 0 = 151$.\n\nTherefore, the base 10 integer is $151$.\n\nFinal Answer: 151'
+PROBLEM math_train_number_theory_252 reference \text{Sunday}
+META {'pred': 'Friday', 'correct': False, 'tokens': 183, 'cut': False}
+text "Let's calculate the day of the week for 40 days from Tuesday.\nTuesday is the first day of the week.\nWe need to find the day of the ...  is the 40th day of the week.\nTherefore, the day of the week will be a Friday.\n\nFinal Answer: The final answer is $\\boxed{Friday}$"
+PROBLEM math_train_number_theory_252 reference \text{Sunday}
+META {'pred': None, 'correct': False, 'tokens': 98, 'cut': False}
+text 'To find the day of the week, we need to count how many days from Tuesday we need.\nTuesday is the first day.\nThen we need to count  ... ay, Sunday.\nThe number of days between Tuesday and the next day is 40.\nSo, 40 days from Tuesday will be the same day of the week.\n'
+PROBLEM math_train_number_theory_387 reference 7
+META {'pred': None, 'correct': False, 'tokens': 136, 'cut': False}
+text 'To find the remainder when 2007 is divided by 25, we can use the division algorithm.\nThe remainder when 2007 is divided by 25 is 2 ...  80 is divided by 25.\n80 ? 25 = 3.2\nSo, the remainder is 3.\n\nThus, the remainder when 2007 is divided by 25 is 3.\n\nFinal Answer: 3'
+PROBLEM math_train_number_theory_387 reference 7
+META {'pred': None, 'correct': False, 'tokens': 223, 'cut': False}
+text 'Let $r$ be the remainder when 2007 is divided by 25.\nWe can write $2007 = 25 \\cdot 80 + r$, where $r$ is the remainder.\nTherefore, ...  remainder when 2007 is divided by 25 is 55.\n\nThe remainder when 2007 is divided by 25 is 55.\n\nFinal Answer: 55\n\nFinal Answer: 55\n'
+PROBLEM math_train_prealgebra_1075 reference 9996
+META {'pred': None, 'correct': False, 'tokens': 796, 'cut': False}
+text 'A four-digit number is a number of the form $1000a + 100b + 10c + d$, where $a, b, c, d$ are digits.\nWe want to find the largest f ... r that is divisible by 4 is $1000a + 100b + 10c + 4$.\n\nFinal Answer: 1000a + 100b + 10c + 4\n\nFinal Answer: 1000a + 100b + 10c + 4\n'
+PROBLEM math_train_prealgebra_1075 reference 9996
+META {'pred': None, 'correct': False, 'tokens': 85, 'cut': False}
+text 'To find the largest four-digit number that is divisible by 4, we can divide the number by 4 and see if the remainder is 0.\nThe rem ... remainder when dividing 100 by 4 is 100 - 1 = 99.\nSince 99 is divisible by 4, the largest four-digit number divisible by 4 is 99.\n'
+PROBLEM math_train_algebra_380 reference 12
+META {'pred': None, 'correct': False, 'tokens': 2416, 'cut': False}
+text 'Let $x$ and $y$ be two positive integers. We are given that the sum of the squares of the two integers is 90.\nSo, $x^2 + y^2 = 90$ ... we have $x^2+y^2 = 90$.\nTherefore $x^2+y^2=90$ and $xy=27$. The sum of the two integers is 90.\n\nFinal Answer: 90\nFinal Answer: 90\n'
+PROBLEM math_train_algebra_380 reference 12
+META {'pred': None, 'correct': False, 'tokens': 2257, 'cut': False}
+text 'Let the two positive integers be $a$ and $b$. We are given that the sum of the squares of the two integers is 90.\nThus, we have $a ... $. $a^2+b^2 = 90$ implies $a^2+b^2 = 90$.\n\nFinal Answer: 3sqrt5\n\nFinal Answer: 3sqrt5\n\nFinal Answer: 3sqrt5\n\nFinal Answer: 3sqrt5\n'
+PROBLEM math_train_precalculus_233 reference 0
+META {'pred': None, 'correct': True, 'tokens': 8192, 'cut': True}
+text 'Let $R$ be the matrix\n\\[R = \\begin{pmatrix} 0 & -\\sin \\alpha \\\\ -\\sin \\alpha & 0 \\end{pmatrix}.\\]\nWe can rewrite the matrix $R$ as ... \\alpha \\cdot 0 - 0 \\cdot \\sin \\alpha \\\\ = 0 \\cdot \\sin \\alpha - 0 \\cdot \\sin \\alpha + \\sin \\alpha \\cdot 0 - 0 \\cdot \\sin \\alpha \\\\'
+PROBLEM math_train_precalculus_233 reference 0
+META {'pred': '1', 'correct': False, 'tokens': 1096, 'cut': False}
+text 'Let $x = \\sin \\alpha$, $y = -\\cos \\alpha$, and $z = \\cos \\alpha$.\nThen the matrix is\n\\[ \\begin{vmatrix} 0 & \\sin \\alpha & -\\cos \\a ... -\\sin \\beta & 0 \\end{vmatrix} = \\cos \\alpha \\sin \\beta - \\cos \\alpha \\sin \\beta. \\]\n\nFinal Answer: The final answer is $\\boxed{1}$'
+
+```

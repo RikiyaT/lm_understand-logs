@@ -1,0 +1,22 @@
+{
+  "pass": 6,
+  "n": 1024,
+  "gain_pp": -1.26953125,
+  "se_pp": 1.5350253102900164,
+  "wrong_to_right": 117,
+  "right_to_wrong": 130,
+  "original": {
+    "accuracy": 0.419921875,
+    "mean_tokens": 1127.3798828125,
+    "cut_rate": 0.0537109375,
+    "repeat_fraction": 0.13534705331679775,
+    "three_or_more_final_answers": 0.1337890625
+  },
+  "edited": {
+    "accuracy": 0.4072265625,
+    "mean_tokens": 1042.6298828125,
+    "cut_rate": 0.048828125,
+    "repeat_fraction": 0.1269435861051612,
+    "three_or_more_final_answers": 0.056640625
+  }
+}

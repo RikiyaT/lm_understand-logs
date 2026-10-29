@@ -1,0 +1,7 @@
+OUTPUT of Python run 54 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36, 37, 38, 39, 40, 41], 'answers_per_model': 7168, 'problems': 128, 'original_accuracy': 0.08970424107142858, 'edited_accuracy': 0.09291294642857142, 'gain_pp': 0.3208705357142857, 'sample_SE_pp': 0.3214766085187163, 'problem_cluster_SE_pp': 0.40153671991140566}
+PASS42_IDS ['math_train_prealgebra_788', 'math_train_geometry_644', 'math_train_prealgebra_1040', 'math_train_precalculus_714', 'math_train_intermediate_algebra_1272', 'math_train_intermediate_algebra_281', 'math_train_intermediate_algebra_944', 'math_train_number_theory_577', 'math_train_algebra_1102', 'math_train_number_theory_205', 'math_train_intermediate_algebra_688', 'math_train_precalculus_92', 'math_train_algebra_1155', 'math_train_algebra_829', 'math_train_number_theory_748', 'math_train_number_theory_190', 'math_train_counting_and_probability_106', 'math_train_intermediate_algebra_872', 'math_train_prealgebra_918', 'math_train_algebra_644', 'math_train_geometry_779', 'math_train_counting_and_probability_504', 'math_train_algebra_1424', 'math_train_algebra_1287', 'math_train_intermediate_algebra_1019', 'math_train_algebra_988', 'math_train_intermediate_algebra_659', 'math_train_algebra_1660', 'math_train_number_theory_200', 'math_train_intermediate_algebra_30', 'math_train_intermediate_algebra_1158', 'math_train_intermediate_algebra_938']
+'Pass42 logged; next evaluation completes two rounds with64 samples per HOLDOUT problem per model.'
+
+```

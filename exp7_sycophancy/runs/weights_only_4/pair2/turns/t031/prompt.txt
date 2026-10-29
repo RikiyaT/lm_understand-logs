@@ -1,0 +1,77 @@
+OUTPUT of run 25 of at most 60:
+```
+=== LAYER-1 HEAD COMPENSATION IN ROLE-TO-LATER-QUERY CONNECTIONS ===
+Head sums are algebraic weight combinations, NOT observed attention outputs.
+sum/abs measures signed scalar cancellation; kernel_ratio compares squared
+norm of the summed source-reader difference with the sum of individual squared norms.
+kernel_ratio < 1 indicates cancellation in this weight metric; > 1 indicates alignment.
+L1 -> L15H1 near belief_verbs      : heads=[  7.72  31.97 314.01  12.91], sum=+367, sum/abs=+1.000, kernel_ratio=1.692
+  broad-role head values: [-34.01 -27.23 200.3  -27.72]
+L1 -> L15H1 near belief_nouns      : heads=[ 64.4   41.07 284.77  52.08], sum=+442, sum/abs=+1.000, kernel_ratio=2.100
+L1 -> L15H1 near numbers_vs_objects: heads=[   0.82  177.33 1218.55  131.75], sum=+1.53e+03, sum/abs=+1.000, kernel_ratio=1.534
+L1 -> L15H1 near topic_control     : heads=[ -68.79   -3.72 -193.04    0.53], sum=-265, sum/abs=-0.996, kernel_ratio=1.714
+L1 -> L15H1 far  belief_verbs      : heads=[ 16.67  43.11 622.03  26.95], sum=+709, sum/abs=+1.000, kernel_ratio=1.980
+  broad-role head values: [-26.22 -31.46 355.69 -35.5 ]
+L1 -> L15H1 far  belief_nouns      : heads=[ 76.47  61.98 413.39  60.21], sum=+612, sum/abs=+1.000, kernel_ratio=1.825
+L1 -> L15H1 far  numbers_vs_objects: heads=[  75.21  248.05 1612.34  117.54], sum=+2.05e+03, sum/abs=+1.000, kernel_ratio=1.844
+L1 -> L15H1 far  topic_control     : heads=[ -80.86  -23.71 -396.94   29.31], sum=-472, sum/abs=-0.890, kernel_ratio=1.752
+L1 -> L15H2 near belief_verbs      : heads=[ 38.28  24.28 264.46 -23.4 ], sum=+304, sum/abs=+0.866, kernel_ratio=1.691
+  broad-role head values: [  5.29 -39.73 199.27 -76.14]
+L1 -> L15H2 near belief_nouns      : heads=[ 86.15  54.79 251.52  -3.21], sum=+389, sum/abs=+0.984, kernel_ratio=1.960
+L1 -> L15H2 near numbers_vs_objects: heads=[ 271.77  295.56 1260.79  198.84], sum=+2.03e+03, sum/abs=+1.000, kernel_ratio=1.734
+L1 -> L15H2 near topic_control     : heads=[-101.06  -14.05 -241.47   62.65], sum=-294, sum/abs=-0.701, kernel_ratio=1.424
+L1 -> L15H2 far  belief_verbs      : heads=[ 21.22  -4.9  595.37 -58.98], sum=+553, sum/abs=+0.812, kernel_ratio=1.486
+  broad-role head values: [-29.28 -80.78 314.49 -56.32]
+L1 -> L15H2 far  belief_nouns      : heads=[ 99.23  46.74 329.11   8.09], sum=+483, sum/abs=+1.000, kernel_ratio=1.524
+L1 -> L15H2 far  numbers_vs_objects: heads=[ 301.09  315.15 1636.11   95.87], sum=+2.35e+03, sum/abs=+1.000, kernel_ratio=1.918
+L1 -> L15H2 far  topic_control     : heads=[-134.34  -74.91 -574.74   94.34], sum=-690, sum/abs=-0.785, kernel_ratio=1.467
+L1 -> L16H2 near belief_verbs      : heads=[242.3  260.49 939.34 204.23], sum=+1.65e+03, sum/abs=+1.000, kernel_ratio=1.527
+  broad-role head values: [135.25 220.2  637.82  74.53]
+L1 -> L16H2 near belief_nouns      : heads=[157.76  41.66 761.56 115.5 ], sum=+1.08e+03, sum/abs=+1.000, kernel_ratio=1.481
+L1 -> L16H2 near numbers_vs_objects: heads=[ 459.66  467.96 2449.89  712.92], sum=+4.09e+03, sum/abs=+1.000, kernel_ratio=1.939
+L1 -> L16H2 near topic_control     : heads=[ -99.41   69.43 -184.08   93.99], sum=-120, sum/abs=-0.269, kernel_ratio=1.014
+L1 -> L16H2 far  belief_verbs      : heads=[ 342.28  443.71 2006.25  216.64], sum=+3.01e+03, sum/abs=+1.000, kernel_ratio=1.985
+  broad-role head values: [  67.83  237.1  1079.83    8.07]
+L1 -> L16H2 far  belief_nouns      : heads=[166.64  80.66 685.1   87.33], sum=+1.02e+03, sum/abs=+1.000, kernel_ratio=1.593
+L1 -> L16H2 far  numbers_vs_objects: heads=[ 780.11  819.84 3721.74  704.83], sum=+6.03e+03, sum/abs=+1.000, kernel_ratio=1.965
+L1 -> L16H2 far  topic_control     : heads=[-171.44    9.65 -412.38   -8.43], sum=-583, sum/abs=-0.968, kernel_ratio=1.101
+
+=== WHOLE-BLOCK OV DIFFERENCE ALIGNMENT ===
+Shared V permits the exact identity sum_h(O_h V) = (sum_h O_h) V.
+This identity does not supply the actual head-specific attention coefficients.
+Ratios measure cancellation/alignment, not behavioral effect sizes.
+L00: residual_kernel_ratio=1.925, numerical_reader_ratio=1.838, head_cosine_range=(+0.166,+0.419)
+  digit identity deltas by head: [ 0.0129 -0.0003  0.0176  0.0056] sum: 0.035870655530747454
+L01: residual_kernel_ratio=2.122, numerical_reader_ratio=1.762, head_cosine_range=(+0.303,+0.580)
+  digit identity deltas by head: [-0.036   0.121  -0.0757  0.0078] sum: 0.0171804495598917
+  pairwise residual-kernel cosine matrix:
+[[1.     0.421  0.3333 0.3207]
+ [0.421  1.     0.3035 0.5796]
+ [0.3333 0.3035 1.     0.3529]
+ [0.3207 0.5796 0.3529 1.    ]]
+L02: residual_kernel_ratio=1.964, numerical_reader_ratio=1.831, head_cosine_range=(+0.207,+0.476)
+  digit identity deltas by head: [ 0.0394  0.0128 -0.064   0.0087] sum: -0.003149604180152893
+L03: residual_kernel_ratio=1.786, numerical_reader_ratio=1.832, head_cosine_range=(+0.158,+0.353)
+  digit identity deltas by head: [-0.0315  0.0665  0.0414  0.1443] sum: 0.22067406555524086
+L12: residual_kernel_ratio=2.256, numerical_reader_ratio=2.345, head_cosine_range=(+0.182,+0.592)
+  digit identity deltas by head: [ 0.1146  0.4042 -0.0492 -2.325 ] sum: -1.8555578826605814
+L15: residual_kernel_ratio=1.481, numerical_reader_ratio=1.664, head_cosine_range=(-0.187,+0.699)
+  digit identity deltas by head: [-2.4433  3.2331  4.26   -0.0057] sum: 5.044091164590437
+L16: residual_kernel_ratio=2.482, numerical_reader_ratio=2.690, head_cosine_range=(+0.416,+0.582)
+  digit identity deltas by head: [-3.0827  5.1027 -4.4961 10.029 ] sum: 7.552870628675031
+  pairwise residual-kernel cosine matrix:
+[[1.     0.4839 0.4555 0.4162]
+ [0.4839 1.     0.5822 0.5616]
+ [0.4555 0.5822 1.     0.4677]
+ [0.4162 0.5616 0.4677 1.    ]]
+L17: residual_kernel_ratio=1.508, numerical_reader_ratio=1.619, head_cosine_range=(+0.022,+0.326)
+  digit identity deltas by head: [-3.0954 -2.649  -0.1312 -3.571 ] sum: -9.446545893213049
+
+=== DOES THE SELECTED H2 ROLE-PATH SIGN SURVIVE SUMMING HEADS? ===
+belief_verbs same sign: 6 / 6 ; sums: [ 366.5964  708.7618  303.628   552.7178 1646.3686 3008.8757]
+belief_nouns same sign: 6 / 6 ; sums: [ 442.3097  612.0445  389.2466  483.1729 1076.4706 1019.7257]
+numbers_vs_objects same sign: 6 / 6 ; sums: [1528.453  2053.1423 2026.9524 2348.2134 4090.422  6026.5327]
+
+No head attention patterns, hidden states, activations, or model responses were computed.
+
+```

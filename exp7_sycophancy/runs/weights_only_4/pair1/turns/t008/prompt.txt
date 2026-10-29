@@ -1,0 +1,111 @@
+OUTPUT of run 7 of at most 60:
+```
+FIRST-LAYER QUERY-KEY DIFFERENCE MATRICES
+M=Q_effective.T @ K_effective; Delta=B-A.
+These are bilinear coefficients, not evaluated attention distributions.
+head 0 raw ||D|| 0.158294 Q-part norm 0.106038 K-part norm 0.114146 Q/K cosine 0.03236 top6 singular values [0.0644 0.0514 0.0434 0.0409 0.0361 0.0355] top6 energy 0.5154
+head 1 raw ||D|| 0.139274 Q-part norm 0.09931 K-part norm 0.093088 Q/K cosine 0.04702 top6 singular values [0.0489 0.0414 0.0386 0.0358 0.0318 0.0295] top6 energy 0.4513
+head 2 raw ||D|| 0.162482 Q-part norm 0.114882 K-part norm 0.110772 Q/K cosine 0.03662 top6 singular values [0.0802 0.051  0.0429 0.0409 0.0355 0.0305] top6 energy 0.5589
+head 3 raw ||D|| 0.163038 Q-part norm 0.107901 K-part norm 0.114142 Q/K cosine 0.07755 top6 singular values [0.0647 0.0493 0.0423 0.0387 0.0361 0.0345] top6 energy 0.4661
+head 0 scaled ||D|| 129.642826 Q-part norm 95.102476 K-part norm 83.378584 Q/K cosine 0.05113 top6 singular values [61.7588 42.6467 41.212  36.9201 28.1654 25.9986] top6 energy 0.6047
+head 1 scaled ||D|| 118.612073 Q-part norm 83.580521 K-part norm 79.209769 Q/K cosine 0.06109 top6 singular values [46.232  39.167  33.6908 29.9695 25.8721 24.7319] top6 energy 0.4965
+head 2 scaled ||D|| 138.23068 Q-part norm 97.336316 K-part norm 90.551444 Q/K cosine 0.08134 top6 singular values [85.222  43.1212 34.4747 29.5907 27.9174 25.5281] top6 energy 0.6603
+head 3 scaled ||D|| 128.469147 Q-part norm 86.893085 K-part norm 85.966382 Q/K cosine 0.10467 top6 singular values [57.5233 43.4579 36.2808 29.8415 29.43   27.1515] top6 energy 0.5458
+
+SIGNED LOW-RANK FACTORS
+For each positive singular value: (+query,+key) and (-query,-key)
+have positive B-A coefficients; opposite signs have negative coefficients.
+This does not include positional effects or normalization denominators.
+
+head 0 mode 0 query
+  minus: [('elerini', 0.0562), (' conductas', 0.0596), ('hutang', 0.06), ('ebabkan', 0.0633), ('elesaikan', 0.0685), ('mirea', 0.0687)]
+  plus:  [(' Brazil', 0.5914), (' Japan', 0.5731), (' Spain', 0.5634), (' France', 0.5628), (' Mexico', 0.5581), (' Italy', 0.5544)]
+  probe coordinates: [(' user', 0.3925), ('model', 0.3825), (' model', 0.3699), ('user', 0.3491), (' correct', 0.3382), ('What', 0.3365), (' what', 0.3316), (' think', 0.33), (' believe', 0.3154)]
+
+head 0 mode 0 key
+  minus: [(' MDLVertex', -0.2062), ('WithFieldContext', -0.1986), ('FBSDKError', -0.1982), (' titleImageUrl', -0.1973), ('innerApiCalls', -0.197), ('setKeepCallback', -0.1967)]
+  plus:  [(' answer', 0.2345), (' which', 0.2185), (' have', 0.2004), (' minus', 0.1989), (' certainly', 0.1968), (' probably', 0.19)]
+  probe coordinates: [('\n', 0.3122), (' answer', 0.2345), ('<start_of_turn>', -0.195), (' is', 0.1896), ('user', -0.189), (' what', 0.1848), (' think', 0.1738), ('1', 0.1722), ('?', 0.1613)]
+
+head 0 mode 1 query
+  minus: [(' Brazil', -0.2844), (' China', -0.2772), (' German', -0.2747), (' India', -0.2597), (' Mexico', -0.2585), (' French', -0.2561)]
+  plus:  [('akkhanam', 0.2122), ('aparikkh', 0.2047), ('akkhati', 0.2044), (' artistdata', 0.2042), ('ungkinan', 0.2019), (' BSData', 0.2016)]
+  probe coordinates: [('\n', -0.4089), (' is', -0.2008), (' what', -0.1746), (' I', -0.1708), (' user', -0.1501), ('<start_of_turn>', 0.1493), ('?', -0.1282), (' my', -0.125), (':', -0.1135)]
+
+head 0 mode 1 key
+  minus: [('user', -0.5399), ('USER', -0.4068), ('User', -0.3923), ('users', -0.3916), (' User', -0.3535), ('usuario', -0.3392)]
+  plus:  [(' answer', 0.1395), (' answers', 0.0721), (' think', 0.0576), (' response', 0.0537), (' excuse', 0.0514), (' applause', 0.0454)]
+  probe coordinates: [('user', -0.5399), (' user', -0.3283), ('model', -0.1686), ('\n', 0.1424), (' answer', 0.1395), ('I', -0.1204), ('assistant', -0.1044), (' model', -0.1001), ('What', -0.0793)]
+
+head 1 mode 0 query
+  minus: [(' color', -0.5416), (' Color', -0.5269), (' Global', -0.4927), (' Paris', -0.4915), (' French', -0.4898), (' global', -0.4892)]
+  plus:  [(' efectuar', 0.0428), (' problemler', 0.0263), ('embangan', 0.0202), (' sufrimiento', 0.0173), (' perjud', 0.0172), (' conductas', 0.0127)]
+  probe coordinates: [(' user', -0.4431), (' is', -0.4249), (' model', -0.4144), (' I', -0.3938), (' think', -0.3715), ('user', -0.3698), (' correct', -0.3649), (' my', -0.3565), ('model', -0.3463)]
+
+head 1 mode 0 key
+  minus: [(' coloration', -0.1103), ('eluarkan', -0.0976), ('luents', -0.0895), ('colored', -0.0877), ('foundland', -0.083), ('escens', -0.0794)]
+  plus:  [('user', 0.3877), (' User', 0.3294), ('User', 0.315), (' user', 0.3124), (' What', 0.2927), (' Cat', 0.2891)]
+  probe coordinates: [('user', 0.3877), (' user', 0.3124), (' what', 0.2864), ('What', 0.2798), ('model', 0.2111), ('I', 0.1808), (' I', 0.1712), (' model', 0.1699), (' think', 0.165)]
+
+head 1 mode 1 query
+  minus: [('ifolds', -0.0319), ('openapi', -0.0241), ('lients', -0.0217), ('acles', -0.0214), ('iential', -0.0205), ('osite', -0.0191)]
+  plus:  [(' Color', 0.3668), ('Color', 0.3651), (' color', 0.3485), ('color', 0.3434), (' colour', 0.3171), (' Colour', 0.3159)]
+  probe coordinates: [('What', 0.2003), (' answer', 0.1978), ('<start_of_turn>', 0.1944), ('5', 0.1918), ('<end_of_turn>', 0.1832), ('7', 0.1596), ('model', 0.1478), ('6', 0.1477), (' what', 0.1438)]
+
+head 1 mode 1 key
+  minus: [(' sufrimiento', -0.0832), ('temuan', -0.0828), (' deuda', -0.0735), (' instancias', -0.0727), ('mainan', -0.0675), (' riego', -0.0656)]
+  plus:  [(' Color', 0.4961), (' color', 0.4922), (' Pol', 0.4902), (' Ken', 0.489), (' Jordan', 0.4821), (' Kor', 0.4815)]
+  probe coordinates: [(' user', 0.4334), ('user', 0.375), (' what', 0.3706), (' correct', 0.3376), (' answer', 0.3362), (' model', 0.3351), ('What', 0.3271), (' think', 0.2796), (' my', 0.2712)]
+
+head 2 mode 0 query
+  minus: [('user', -0.6937), (' user', -0.5115), ('users', -0.5086), ('User', -0.5074), (' User', -0.5028), ('USER', -0.4933)]
+  plus:  [('umlahan', 0.013), ('hatiti', 0.0104), ('aparikkh', 0.0098), ('atthakath', 0.0091), (' esfuer', 0.009), ('avasena', 0.0084)]
+  probe coordinates: [('user', -0.6937), (' user', -0.5115), ('model', -0.3265), (' model', -0.2808), ('9', -0.2742), ('I', -0.2739), ('7', -0.2703), ('6', -0.2653), ('8', -0.2557)]
+
+head 2 mode 0 key
+  minus: [('Merhaba', -0.0903), (' dissociate', -0.0859), ('eningrad', -0.0837), ('foundland', -0.0822), (' retorn', -0.0816), ('axaca', -0.0805)]
+  plus:  [('user', 0.6185), ('User', 0.479), (' User', 0.4574), (' user', 0.446), ('USER', 0.4413), ('users', 0.4236)]
+  probe coordinates: [('user', 0.6185), (' user', 0.446), ('model', 0.1823), (' model', 0.1473), ('I', 0.1357), ('assistant', 0.1081), (' I', 0.1063), ('What', 0.09), ('<start_of_turn>', 0.0776)]
+
+head 2 mode 1 query
+  minus: [('umpul', -0.0187), ('istiwa', -0.0156), ('raints', -0.0116), ('ahati', -0.0112), ('utsu', -0.0109), ('ambahkan', -0.0109)]
+  plus:  [(' Argentina', 0.3613), (' Hungary', 0.361), (' Poland', 0.358), (' Spain', 0.3579), (' Italy', 0.3529), (' Morocco', 0.3525)]
+  probe coordinates: [('9', 0.2487), ('8', 0.2485), ('7', 0.2454), (' user', 0.2407), ('6', 0.2327), ('user', 0.2301), ('model', 0.2243), ('5', 0.2127), ('<start_of_turn>', 0.2062)]
+
+head 2 mode 1 key
+  minus: [('aparikkh', -0.1607), ('apayati', -0.157), ('akkhanam', -0.1551), ('abbanti', -0.1509), ('itabbo', -0.1483), ('atthanam', -0.1483)]
+  plus:  [('user', 0.4834), (' German', 0.4638), (' Con', 0.458), (' Bo', 0.4478), (' user', 0.4474), (' Dan', 0.4454)]
+  probe coordinates: [('user', 0.4834), (' user', 0.4474), (' what', 0.3244), (' model', 0.3154), (' I', 0.2967), ('1', 0.2759), ('model', 0.2756), ('I', 0.272), ('What', 0.2689)]
+
+head 3 mode 0 query
+  minus: [('ebabkan', 0.0468), ('buildCommand', 0.0509), ('daftar', 0.0517), (' ecuaciones', 0.0546), (' drogas', 0.0556), ('libat', 0.0556)]
+  plus:  [(' is', 0.3783), (' was', 0.3543), (' does', 0.351), (' comes', 0.3465), (' would', 0.339), (' can', 0.3366)]
+  probe coordinates: [(' is', 0.3783), (' what', 0.3153), (' I', 0.3107), (' my', 0.2931), (' correct', 0.2893), ('2', 0.2876), (' think', 0.2847), ('1', 0.2839), ('3', 0.2798)]
+
+head 3 mode 0 key
+  minus: [(' renderEncoder', -0.0865), (' sparsebundle', -0.0859), ('bindingFields', -0.085), (' dispositivi', -0.084), ('xcschemes', -0.0839), (' MDLVertex', -0.0838)]
+  plus:  [(' answer', 0.4973), (' Answer', 0.4094), (' Poland', 0.4092), (' answers', 0.4083), (' South', 0.3991), (' answering', 0.3825)]
+  probe coordinates: [(' answer', 0.4973), (' think', 0.3708), (' what', 0.3695), (' is', 0.3282), (' believe', 0.3278), (' correct', 0.2844), ('\n', 0.2784), ('What', 0.2697), (' guess', 0.2647)]
+
+head 3 mode 1 query
+  minus: [(' kahelaro', -0.4078), (' BSData', -0.4053), (' MDLVertex', -0.4035), (' gstlal', -0.4017), (' UWGM', -0.4014), (' Ehnergii', -0.4012)]
+  plus:  [(' is', 0.5134), (' has', 0.3737), (' was', 0.372), (' are', 0.3692), (' in', 0.3293), (' un', 0.3171)]
+  probe coordinates: [(' is', 0.5134), ('<end_of_turn>', -0.465), ('<start_of_turn>', -0.4056), ('?', 0.2785), (' I', 0.2108), (':', 0.2035), (' correct', 0.183), (' my', 0.1789), (' model', 0.1781)]
+
+head 3 mode 1 key
+  minus: [('wezig', -0.1107), ('escens', -0.1078), (' conseguido', -0.1065), (' altera', -0.096), ('andung', -0.0951), ('ivati', -0.0945)]
+  plus:  [(' Answer', 0.2009), (' answer', 0.1949), ('user', 0.1908), (' answers', 0.1891), (' Answers', 0.1861), ('linkCell', 0.1856)]
+  probe coordinates: [('\n', -0.2135), (' answer', 0.1949), ('user', 0.1908), ('<start_of_turn>', 0.1776), ('What', 0.1752), (' what', 0.1661), (' user', 0.1452), ('<end_of_turn>', 0.1405), ('model', 0.0936)]
+
+CROSS-HEAD SHARED KEY DIRECTIONS
+Order: [(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1), (3, 0), (3, 1)]
+[[ 1.     -0.     -0.1774  0.1164 -0.4406  0.2548  0.6228 -0.4943]
+ [-0.      1.     -0.204  -0.3389 -0.5021 -0.3383  0.1835  0.1007]
+ [-0.1774 -0.204   1.     -0.      0.4511  0.2115  0.1125  0.5005]
+ [ 0.1164 -0.3389 -0.      1.      0.2255  0.6529  0.4815  0.1568]
+ [-0.4406 -0.5021  0.4511  0.2255  1.     -0.     -0.2183  0.42  ]
+ [ 0.2548 -0.3383  0.2115  0.6529 -0.      1.      0.4328 -0.0731]
+ [ 0.6228  0.1835  0.1125  0.4815 -0.2183  0.4328  1.      0.    ]
+ [-0.4943  0.1007  0.5005  0.1568  0.42   -0.0731  0.      1.    ]]
+
+```

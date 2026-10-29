@@ -1,0 +1,84 @@
+OUTPUT of run 6 of at most 60:
+```
+OUTPUT-WRITING COMPONENTS
+Template: top 8 directions pooled from layers 15-17, equal layer weights.
+Layers 15-17 are compared against a template excluding themselves.
+layer part       raw_rel top1_energy top8_energy late_alignment late_aligned_relative top10_column_share
+ 0 mlp        0.01090     0.05856     0.29126        0.01554              0.001359            0.01896
+ 0 attention  0.00641     0.17558     0.48405        0.01362              0.000748            0.02883
+ 1 mlp        0.01735     0.05458     0.26819        0.01710              0.002269            0.01770
+ 1 attention  0.01013     0.21702     0.54155        0.01510              0.001245            0.03390
+ 2 mlp        0.01461     0.06441     0.29231        0.01659              0.001882            0.01689
+ 2 attention  0.00803     0.12842     0.44230        0.01789              0.001074            0.02926
+ 3 mlp        0.01666     0.05470     0.27195        0.01418              0.001985            0.01570
+ 3 attention  0.01137     0.09269     0.41433        0.01729              0.001495            0.03104
+ 4 mlp        0.01892     0.05475     0.26974        0.01259              0.002123            0.01869
+ 4 attention  0.01130     0.10878     0.42678        0.01444              0.001358            0.02779
+ 5 mlp        0.01061     0.07018     0.27650        0.01459              0.001281            0.01533
+ 5 attention  0.00785     0.09776     0.40719        0.01294              0.000893            0.03146
+ 6 mlp        0.01498     0.07871     0.28277        0.01328              0.001726            0.01521
+ 6 attention  0.00791     0.10916     0.42282        0.01446              0.000951            0.03362
+ 7 mlp        0.01331     0.07889     0.29429        0.01422              0.001588            0.01557
+ 7 attention  0.00742     0.10071     0.36639        0.01381              0.000872            0.03708
+ 8 mlp        0.01704     0.08607     0.30617        0.01327              0.001963            0.01816
+ 8 attention  0.00903     0.10865     0.42699        0.01387              0.001063            0.02733
+ 9 mlp        0.01213     0.08512     0.30372        0.01515              0.001493            0.01716
+ 9 attention  0.00715     0.11247     0.39294        0.01385              0.000841            0.02951
+10 mlp        0.01642     0.10586     0.33666        0.01676              0.002126            0.01657
+10 attention  0.00644     0.08542     0.34429        0.01417              0.000766            0.03195
+11 mlp        0.01224     0.10317     0.34248        0.02427              0.001906            0.01725
+11 attention  0.00650     0.06659     0.29082        0.01962              0.000911            0.03199
+12 mlp        0.01166     0.07889     0.28626        0.04162              0.002379            0.01822
+12 attention  0.00726     0.07550     0.33413        0.02836              0.001222            0.03130
+13 mlp        0.01651     0.06612     0.27292        0.06944              0.004351            0.01999
+13 attention  0.00881     0.07514     0.31684        0.03954              0.001751            0.03231
+14 mlp        0.01827     0.05961     0.27113        0.13269              0.006654            0.01856
+14 attention  0.00649     0.15117     0.36812        0.06609              0.001669            0.02948
+15 mlp        0.01544     0.06403     0.33511        0.20375              0.006968            0.01593
+15 attention  0.00743     0.07108     0.31979        0.10747              0.002436            0.03172
+16 mlp        0.01379     0.09703     0.41330        0.32598              0.007871            0.02042
+16 attention  0.01061     0.12053     0.45314        0.29278              0.005743            0.03414
+17 mlp        0.01373     0.15943     0.48641        0.30218              0.007549            0.02737
+17 attention  0.00680     0.17065     0.42291        0.21331              0.003141            0.04821
+
+LATE-LAYER HEAD DECOMPOSITION
+layer head fraction_of_O_delta_energy alignment_with_other_late_layers raw_rel
+15  0                   0.219524                         0.093245 0.007391
+15  1                   0.266729                         0.107873 0.006189
+15  2                   0.258781                         0.118977 0.008735
+15  3                   0.254965                         0.107603 0.008257
+16  0                   0.255493                         0.281105 0.010304
+16  1                   0.246196                         0.305608 0.011504
+16  2                   0.235239                         0.272705 0.009146
+16  3                   0.263072                         0.310053 0.012097
+17  0                   0.238870                         0.220772 0.005391
+17  1                   0.282949                         0.174206 0.007700
+17  2                   0.244459                         0.098665 0.007109
+17  3                   0.233722                         0.372939 0.007853
+
+LATE-LAYER MLP UNITS: TOP FIVE CONTRIBUTORS TO SHARED-SUBSPACE DIFFERENCE
+layer 15 [{'unit': 75, 'share_of_aligned_MLP_energy': 0.0017796257808718983}, {'unit': 1149, 'share_of_aligned_MLP_energy': 0.0017098944430842334}, {'unit': 1847, 'share_of_aligned_MLP_energy': 0.0016774117018407493}, {'unit': 56, 'share_of_aligned_MLP_energy': 0.0016106014462389426}, {'unit': 1187, 'share_of_aligned_MLP_energy': 0.0015863122661986958}]
+layer 16 [{'unit': 2003, 'share_of_aligned_MLP_energy': 0.002395798888581457}, {'unit': 152, 'share_of_aligned_MLP_energy': 0.0023600378096052263}, {'unit': 1143, 'share_of_aligned_MLP_energy': 0.0023245665404651394}, {'unit': 1700, 'share_of_aligned_MLP_energy': 0.0021712576919641173}, {'unit': 868, 'share_of_aligned_MLP_energy': 0.002126516117000605}]
+layer 17 [{'unit': 1627, 'share_of_aligned_MLP_energy': 0.003407126343559544}, {'unit': 669, 'share_of_aligned_MLP_energy': 0.0033492773338922844}, {'unit': 1732, 'share_of_aligned_MLP_energy': 0.0027734747764050906}, {'unit': 1307, 'share_of_aligned_MLP_energy': 0.0027561031455346024}, {'unit': 1598, 'share_of_aligned_MLP_energy': 0.002671083242782697}]
+
+TOP TEN COMPONENTS BY LATE-ALIGNED RELATIVE WRITING DIFFERENCE
+Screening ranking only; this is NOT task-conditioned importance.
+{"layer": 16, "part": "mlp", "raw_relative_difference": 0.013786327352112849, "top1_difference_energy": 0.09703019919538297, "top8_difference_energy": 0.41329896941203714, "late_subspace_alignment": 0.325983160036271, "late_aligned_relative_difference": 0.00787129463780947, "top10_column_share_of_aligned_energy": 0.020419790975367745}
+{"layer": 17, "part": "mlp", "raw_relative_difference": 0.013732533734325427, "top1_difference_energy": 0.15943307822335206, "top8_difference_energy": 0.48640829629584786, "late_subspace_alignment": 0.30217629003296376, "late_aligned_relative_difference": 0.007548851237569028, "top10_column_share_of_aligned_energy": 0.027369879770634237}
+{"layer": 15, "part": "mlp", "raw_relative_difference": 0.015437884768601102, "top1_difference_energy": 0.06402911336228083, "top8_difference_energy": 0.3351070247422693, "late_subspace_alignment": 0.2037468176991824, "late_aligned_relative_difference": 0.006968402246311823, "top10_column_share_of_aligned_energy": 0.015934688826747416}
+{"layer": 14, "part": "mlp", "raw_relative_difference": 0.018265926567543174, "top1_difference_energy": 0.05960880770419082, "top8_difference_energy": 0.27113298607625236, "late_subspace_alignment": 0.13268690267951164, "late_aligned_relative_difference": 0.006653585401342477, "top10_column_share_of_aligned_energy": 0.018564310710161645}
+{"layer": 16, "part": "attention", "raw_relative_difference": 0.010614077505798295, "top1_difference_energy": 0.12053187201808012, "top8_difference_energy": 0.4531383549288563, "late_subspace_alignment": 0.29277692323409593, "late_aligned_relative_difference": 0.00574315683011375, "top10_column_share_of_aligned_energy": 0.034137757452660754}
+{"layer": 13, "part": "mlp", "raw_relative_difference": 0.016511845163858126, "top1_difference_energy": 0.06612214976678987, "top8_difference_energy": 0.2729188110787525, "late_subspace_alignment": 0.06943737005847964, "late_aligned_relative_difference": 0.0043510316182370345, "top10_column_share_of_aligned_energy": 0.01999238847415805}
+{"layer": 17, "part": "attention", "raw_relative_difference": 0.006801413446180104, "top1_difference_energy": 0.17064573792627447, "top8_difference_energy": 0.42290883179120214, "late_subspace_alignment": 0.21331094070251275, "late_aligned_relative_difference": 0.0031412734316372125, "top10_column_share_of_aligned_energy": 0.04820921210679116}
+{"layer": 15, "part": "attention", "raw_relative_difference": 0.007430268106760902, "top1_difference_energy": 0.07107781865310193, "top8_difference_energy": 0.3197891550166664, "late_subspace_alignment": 0.10746646473255803, "late_aligned_relative_difference": 0.002435796296938166, "top10_column_share_of_aligned_energy": 0.03171739149235049}
+{"layer": 12, "part": "mlp", "raw_relative_difference": 0.011661011790695005, "top1_difference_energy": 0.0788948061878708, "top8_difference_energy": 0.286255931347386, "late_subspace_alignment": 0.041624047379101296, "late_aligned_relative_difference": 0.0023790763956117863, "top10_column_share_of_aligned_energy": 0.018222915383366213}
+{"layer": 1, "part": "mlp", "raw_relative_difference": 0.0173531582874187, "top1_difference_energy": 0.054575119971974, "top8_difference_energy": 0.26819032675050386, "late_subspace_alignment": 0.017099157108317522, "late_aligned_relative_difference": 0.002269163972001538, "top10_column_share_of_aligned_energy": 0.017695287467940995}
+
+MLP SHARE OF COMBINED WRITING-DIFFERENCE ENERGY IN LATE LAYERS
+layer 15: total_MLP_share=0.681506, aligned_MLP_share=0.802247
+layer 16: total_MLP_share=0.683390, aligned_MLP_share=0.706164
+layer 17: total_MLP_share=0.693744, aligned_MLP_share=0.762411
+
+No direction or unit has been assigned a linguistic meaning.
+
+```

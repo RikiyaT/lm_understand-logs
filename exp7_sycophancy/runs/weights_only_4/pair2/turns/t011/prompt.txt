@@ -1,0 +1,80 @@
+OUTPUT of run 10 of at most 60:
+```
+=== STRONGEST EXISTING GUESS-MINUS-FACT INPUT-WEIGHT DIRECTIONS ===
+L11 U1228 up   contrast_cos=+0.141 guess_cos=+0.090 delta_cos=+0.042 delta_relative=+0.0002965
+L01 U 173 gate contrast_cos=+0.140 guess_cos=+0.102 delta_cos=+0.056 delta_relative=+0.0004353
+L14 U1643 gate contrast_cos=+0.138 guess_cos=+0.081 delta_cos=-0.036 delta_relative=-0.0002827
+L10 U 945 up   contrast_cos=+0.137 guess_cos=+0.076 delta_cos=-0.020 delta_relative=-0.0001352
+L15 U 788 gate contrast_cos=+0.135 guess_cos=+0.096 delta_cos=-0.023 delta_relative=-0.0001795
+L10 U 636 gate contrast_cos=+0.135 guess_cos=+0.101 delta_cos=-0.054 delta_relative=-0.0009604
+L02 U1958 gate contrast_cos=+0.135 guess_cos=+0.023 delta_cos=-0.072 delta_relative=-0.0006879
+L07 U1698 up   contrast_cos=+0.132 guess_cos=+0.082 delta_cos=-0.047 delta_relative=-0.0003213
+L11 U 612 up   contrast_cos=+0.132 guess_cos=+0.000 delta_cos=+0.031 delta_relative=+0.0001816
+L02 U 146 gate contrast_cos=+0.130 guess_cos=+0.128 delta_cos=+0.026 delta_relative=+0.0001683
+L08 U1321 up   contrast_cos=+0.129 guess_cos=+0.087 delta_cos=-0.004 delta_relative=-2.126e-05
+L13 U1210 up   contrast_cos=+0.128 guess_cos=+0.053 delta_cos=-0.011 delta_relative=-8.594e-05
+L07 U1196 gate contrast_cos=+0.127 guess_cos=+0.071 delta_cos=-0.042 delta_relative=-0.0004458
+L02 U 493 gate contrast_cos=+0.127 guess_cos=+0.062 delta_cos=+0.012 delta_relative=+9.261e-05
+
+=== STRONGEST SIGNED CHANGES ALONG GUESS-MINUS-FACT DIRECTIONS ===
+L03 U 163 up   contrast_cos=+0.014 guess_cos=-0.035 delta_cos=-0.180 delta_relative=-0.002922
+L00 U 456 up   contrast_cos=-0.043 guess_cos=-0.050 delta_cos=+0.304 delta_relative=+0.002884
+L00 U2000 up   contrast_cos=-0.079 guess_cos=-0.078 delta_cos=+0.324 delta_relative=+0.002819
+L00 U  20 up   contrast_cos=+0.011 guess_cos=-0.047 delta_cos=+0.279 delta_relative=+0.00277
+L03 U1646 gate contrast_cos=+0.017 guess_cos=+0.036 delta_cos=+0.150 delta_relative=+0.002693
+L00 U1750 up   contrast_cos=-0.001 guess_cos=-0.008 delta_cos=+0.351 delta_relative=+0.002638
+L01 U1304 gate contrast_cos=+0.003 guess_cos=+0.023 delta_cos=-0.247 delta_relative=-0.002611
+L00 U2041 up   contrast_cos=-0.027 guess_cos=-0.005 delta_cos=-0.304 delta_relative=-0.002609
+L03 U1218 gate contrast_cos=+0.008 guess_cos=+0.020 delta_cos=-0.157 delta_relative=-0.002581
+L00 U1513 up   contrast_cos=+0.027 guess_cos=-0.013 delta_cos=-0.285 delta_relative=-0.00256
+L00 U  38 gate contrast_cos=+0.003 guess_cos=-0.001 delta_cos=+0.265 delta_relative=+0.002539
+L01 U1062 up   contrast_cos=+0.005 guess_cos=+0.011 delta_cos=+0.298 delta_relative=+0.002459
+L02 U1041 up   contrast_cos=-0.094 guess_cos=-0.051 delta_cos=-0.176 delta_relative=-0.002352
+L00 U 461 up   contrast_cos=+0.048 guess_cos=+0.024 delta_cos=+0.248 delta_relative=+0.002305
+
+=== CANDIDATE UNIT FACTORS ===
+All factors are read independently; no up/gate combination or unit response is computed.
+L11 U1228 gate mid +[(' gis', 0.169), ('arlene', 0.164), ('received', 0.152)] -[(' Wesley', -0.177), (' Mathews', -0.164), (' Diameter', -0.164)]
+L11 U1228 up   mid +[(' Prozesse', 0.175), ('CXX', 0.167), (' MEMBER', 0.165)] -[('currentTarget', -0.168), (' fluctuations', -0.167), (' fluct', -0.164)]
+L11 U1228 down mid +[(' garnished', 0.144), (' UNIV', 0.141), ('requested', 0.139)] -[(' Oswald', -0.157), (' menjawab', -0.152), ('activity', -0.145)]
+L11 U1228 down B-A +[(' Lalu', 0.151), ('Dal', 0.142), (' SER', 0.134)] -[(' inviscid', -0.159), (' inhibits', -0.156), (' NACA', -0.155)]
+L01 U 173 gate mid +[(' generous', 0.178), (' Auflage', 0.152), (' Cler', 0.148)] -[(' tj', -0.175), (' Kilim', -0.174), ('printStackTrace', -0.161)]
+L01 U 173 up   mid +[(' bosonic', 0.165), (' Acoustics', 0.153), (' comune', 0.147)] -[(' TRIM', -0.161), (' trim', -0.158), (' Hartman', -0.154)]
+L01 U 173 down mid +[('ousedown', 0.188), ('anzit', 0.166), ('ameras', 0.161)] -[('s', -0.218), ('t', -0.211), ('tica', -0.182)]
+L01 U 173 down B-A +[('maxcdn', 0.193), ('asati', 0.177), ('chrotron', 0.176)] -[('StdHandle', -0.175), (' sequential', -0.17), ('LatLng', -0.158)]
+L14 U1643 gate mid +[(' kriy', 0.197), (' verduras', 0.181), (' arbre', 0.169)] -[('andex', -0.18), (' Orb', -0.168), (' minus', -0.162)]
+L14 U1643 up   mid +[(' maf', 0.19), ('Ble', 0.162), (' Thal', 0.162)] -[(' Schnee', -0.198), ('lje', -0.165), (' obsah', -0.163)]
+L14 U1643 down mid +[('UREG', 0.16), ('Rag', 0.127), ('mater', 0.126)] -[('ATIV', -0.137), ('iction', -0.135), ('ghijklmnopqrst', -0.127)]
+L14 U1643 down B-A +[(' PRIM', 0.202), (' Prin', 0.195), (' Prim', 0.189)] -[(' darkest', -0.17), (' watertight', -0.162), ('farande', -0.161)]
+L10 U 945 gate mid +[(' szem', 0.177), (' afet', 0.169), (' najwy', 0.165)] -[(' Aquarium', -0.192), (' hapless', -0.18), (' seabed', -0.176)]
+L10 U 945 up   mid +[(' dieser', 0.162), (' jeder', 0.159), (' some', 0.157)] -[('atres', -0.22), (' afgelopen', -0.219), (' volgende', -0.209)]
+L10 U 945 down mid +[(' Saleh', 0.135), (' sealant', 0.135), ('ILY', 0.134)] -[(' noir', -0.152), (' Column', -0.142), (' ofthe', -0.141)]
+L10 U 945 down B-A +[(' Haupt', 0.179), (' Kurs', 0.173), (' museum', 0.171)] -[('asjonen', -0.172), ('asyonu', -0.166), ('atchewan', -0.156)]
+L15 U 788 gate mid +[('TH', 0.192), (' Laub', 0.184), ('Missouri', 0.175)] -[('ilage', -0.174), ('cious', -0.172), ('mainwindow', -0.171)]
+L15 U 788 up   mid +[('warp', 0.169), ('imm', 0.164), (' taille', 0.162)] -[(' absc', -0.165), (' Arbit', -0.149), (' getIntent', -0.149)]
+L15 U 788 down mid +[('zeugung', 0.159), ('ekwondo', 0.154), ('embark', 0.15)] -[(' Patrimonio', -0.134), (' MANUAL', -0.133), (' bianco', -0.132)]
+L15 U 788 down B-A +[(' continents', 0.169), (' inden', 0.153), (' infield', 0.152)] -[('IV', -0.158), (' Enf', -0.149), (' PVA', -0.149)]
+L03 U 163 gate mid +[(' retiree', 0.171), (' genotypes', 0.162), ('olactone', 0.159)] -[(' occurs', -0.16), (' impacts', -0.153), (' inseparable', -0.151)]
+L03 U 163 up   mid +[(' radiological', 0.183), (' Radiological', 0.155), (' Paine', 0.148)] -[(' Brix', -0.156), ('Ag', -0.151), (' Yum', -0.15)]
+L03 U 163 down mid +[(' concatenation', 0.17), (' nought', 0.162), (' aired', 0.161)] -[(' sapien', -0.165), ('azim', -0.158), (' colegas', -0.153)]
+L03 U 163 down B-A +[(' extravaganza', 0.151), ('AIS', 0.141), (' prises', 0.14)] -[('findOne', -0.152), ('Methyl', -0.15), ('isArray', -0.144)]
+L00 U 456 gate mid +[(' Goshen', 0.163), ('ayanan', 0.134), ('agricultural', 0.131)] -[('mixer', -0.142), (' kaf', -0.138), ('retryWrites', -0.137)]
+L00 U 456 up   mid +[(' doctora', 0.141), (' bushy', 0.137), (' widowed', 0.136)] -[(' organisme', -0.156), (' garantia', -0.138), (' Blooming', -0.137)]
+L00 U 456 down mid +[('mediaDevices', 0.182), ('sik', 0.171), ('kina', 0.15)] -[('DEFGHI', -0.152), ('modulin', -0.148), ('mmss', -0.148)]
+L00 U 456 down B-A +[('enance', 0.184), ('benius', 0.18), ('rezent', 0.158)] -[(' camion', -0.132), ('getPackage', -0.131), (' ecol', -0.129)]
+L00 U2000 gate mid +[(' figured', 0.146), ('Think', 0.138), (' Klinik', 0.135)] -[(' Asa', -0.155), (' Appet', -0.15), (' tromb', -0.142)]
+L00 U2000 up   mid +[(' ausdr', 0.151), ('etera', 0.147), ('fz', 0.132)] -[(' topLeft', -0.153), (' Heft', -0.152), (' riff', -0.151)]
+L00 U2000 down mid +[('ientras', 0.192), ('wdriver', 0.174), ('woch', 0.171)] -[(' Cao', -0.175), (' CER', -0.167), ('tter', -0.166)]
+L00 U2000 down B-A +[(' tim', 0.196), ('setPrototypeOf', 0.184), (' erste', 0.178)] -[('hipi', -0.192), (' allocator', -0.19), ('zczeg', -0.189)]
+L00 U  20 gate mid +[('addKill', 0.131), (' deduce', 0.125), (' disseminate', 0.122)] -[(' swaps', -0.138), ('kommt', -0.129), (' respects', -0.129)]
+L00 U  20 up   mid +[(' uploading', 0.181), (' emitting', 0.175), (' dismissing', 0.172)] -[(' inicial', -0.14), (' rapport', -0.138), (' stall', -0.138)]
+L00 U  20 down mid +[('zyloxy', 0.163), ('chnitt', 0.16), ('EIN', 0.153)] -[('mediaDevices', -0.146), (' trag', -0.145), ('sPath', -0.145)]
+L00 U  20 down B-A +[('rovers', 0.168), ('irce', 0.152), (' BadRequest', 0.149)] -[('typeparam', -0.147), ('ER', -0.132), ('Fill', -0.131)]
+L03 U1646 gate mid +[(' accessToken', 0.167), (' notations', 0.157), (' mycursor', 0.142)] -[(' DV', -0.155), ('vp', -0.152), ('BSP', -0.148)]
+L03 U1646 up   mid +[('lins', 0.172), (' Linn', 0.157), ('LER', 0.155)] -[(' Irene', -0.151), ('Tea', -0.144), ('Rose', -0.144)]
+L03 U1646 down mid +[('tke', 0.174), ('omiast', 0.174), ('beiten', 0.169)] -[(' neun', -0.173), ('Sydney', -0.171), ('LatLng', -0.166)]
+L03 U1646 down B-A +[(' papill', 0.157), ('lamp', 0.152), (' gsub', 0.15)] -[(' ziem', -0.174), ('ahaman', -0.158), ('wxr', -0.158)]
+
+This was a weight-direction search, not an activation or behavioral test.
+
+```

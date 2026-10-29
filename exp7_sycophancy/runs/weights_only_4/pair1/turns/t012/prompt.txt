@@ -1,0 +1,124 @@
+OUTPUT of run 11 of at most 60:
+```
+MLP UP/DOWN COEFFICIENTS
+These omit the gate entirely. They describe the up/down factors,
+NOT the MLP function, and NOT a model forward pass.
+Scaled mode includes learned input, post-MLP and final diagonal factors only.
+completed 0
+completed 1
+completed 2
+completed 3
+completed 4
+completed 5
+completed 6
+completed 7
+completed 8
+completed 9
+completed 10
+completed 11
+completed 12
+completed 13
+completed 14
+completed 15
+completed 16
+completed 17
+
+MODE raw
+layer | digit A, B, D | word->digit D | letters D | controls mean D
+ 0 -0.03300549 -0.03305087 -4.537809e-05 | -3.11155e-05 | -9.190324e-05 | -0.0002197586
+ 1 -0.01957368 -0.0196133 -3.961587e-05 |  8.789074e-05 | -7.430215e-05 | -1.869751e-05
+ 2  0.0214076  0.02137612 -3.147624e-05 | -7.772354e-05 |  0.000172117 | -3.453403e-05
+ 3  0.03438338  0.03445461  7.123393e-05 |  0.0001329849 | -9.812804e-05 |  0.0001394476
+ 4  0.01332331  0.01332513  1.814318e-06 |  1.89854e-05 | -0.0001056031 | -3.948125e-06
+ 5  0.08087872  0.08095667  7.794727e-05 |  8.433736e-05 | -0.0001143151 | -4.342517e-05
+ 6  0.05203777  0.05210796  7.019037e-05 |  0.0001155911 |  7.233416e-05 | -0.0002317376
+ 7  0.03660818  0.03662533  1.715216e-05 | -8.074994e-05 | -5.685268e-06 | -7.601477e-05
+ 8  0.01850312  0.01853413  3.100979e-05 |  3.886485e-05 |  6.322329e-05 | -0.0001077422
+ 9  0.0196264  0.01957686 -4.953594e-05 |  1.038906e-05 | -4.418713e-05 | -4.222891e-05
+10  0.01269642  0.01271698  2.055993e-05 |  6.483268e-07 | -5.5956e-05 | -8.135059e-05
+11  0.02573347  0.02580701  7.354605e-05 |  5.529522e-05 |  3.023765e-05 |  6.336327e-05
+12  0.0603415  0.06046366  0.0001221588 |  9.43898e-05 |  4.75485e-05 |  3.122785e-05
+13  0.0022554  0.002311305  5.590509e-05 | -4.620453e-05 |  4.555824e-05 | -0.0001350254
+14 -0.005734838 -0.005719188  1.56507e-05 |  0.0001697018 | -9.854039e-05 |  5.422029e-05
+15 -0.009714132 -0.009621617  9.251509e-05 | -0.0001162411 |  6.67686e-05 | -0.0001025962
+16 -0.03790818 -0.03789854  9.638972e-06 | -0.0001013212 |  6.121267e-05 | -5.12998e-05
+17 -0.0289613 -0.02902344 -6.214652e-05 |  0.0003713529 |  6.972353e-05 |  3.639776e-05
+
+MODE scaled
+layer | digit A, B, D | word->digit D | letters D | controls mean D
+ 0 -5.197359 -5.213173 -0.01581423 | -0.0255449 |  0.009570223 | -0.05940862
+ 1 -25.10435 -25.20784 -0.1034931 | -0.06404647 | -0.08431629 | -0.2403572
+ 2  15.68919  15.98976  0.3005778 | -0.1371505 |  0.4008504 | -0.03372732
+ 3  46.69101  47.19099  0.4999789 |  1.136377 | -0.5739622 |  0.07090735
+ 4  12.29989  12.10298 -0.1969103 | -0.07961904 |  0.08283492 |  0.07229222
+ 5  135.2716  135.6619  0.3902507 |  0.4640704 |  0.02347913 | -0.07506451
+ 6  63.21366  63.63415  0.420485 |  0.6371867 |  0.1034143 | -0.4945573
+ 7  41.56322  41.60408  0.04085958 |  0.05145569 | -0.2236155 |  0.06489354
+ 8  25.24181  25.24711  0.005302212 |  0.1123533 |  0.1036062 |  0.07829272
+ 9  19.79121  19.95872  0.1675073 |  0.2616259 |  0.08289372 |  0.0896026
+10  30.86512  31.23414  0.3690275 |  0.6258112 | -0.3291767 | -0.7365738
+11  101.4799  103.0776  1.597667 |  2.129515 |  0.795007 |  0.9908834
+12  251.1554  252.6574  1.501946 |  1.646987 |  1.19808 | -0.5341698
+13 -16.25487 -15.34357  0.9112963 |  0.8206395 | -0.04396509 | -1.682875
+14 -9.101161 -7.621246  1.479915 |  2.493243 | -1.06299 | -0.01400542
+15 -43.57524 -42.95318  0.6220584 |  0.548894 |  0.08843322 | -1.729752
+16 -236.6382 -236.5167  0.1214486 |  1.37643 |  0.3316889 | -2.016801
+17 -165.8407 -165.7086  0.1321248 | -0.9336683 |  0.04428611 | -1.125085
+
+INDIVIDUAL UNIT CONTRIBUTIONS TO THE DIGIT-IDENTITY COEFFICIENT CHANGE
+Gate enrichment characterizes a gate weight row, NOT whether that unit activates.
+
+layer 0 sum delta -0.015814228323975315 top10 fraction of absolute unit contributions 0.029661800412438967
+unit 691 A 0.034509 B 0.031264 D -0.003245 gate_digit_enrichment 4.127
+unit 1759 A 0.038876 B 0.03632 D -0.002557 gate_digit_enrichment 0.717
+unit 742 A -0.049565 B -0.051746 D -0.002181 gate_digit_enrichment 0.613
+unit 544 A -0.120945 B -0.123021 D -0.002077 gate_digit_enrichment 1.091
+unit 1699 A -0.249921 B -0.246602 D 0.003319 gate_digit_enrichment 0.031
+unit 1623 A -0.380501 B -0.37793 D 0.002571 gate_digit_enrichment 0.958
+unit 101 A 0.079066 B 0.081266 D 0.0022 gate_digit_enrichment 0.518
+unit 1700 A -0.032074 B -0.030105 D 0.001969 gate_digit_enrichment 0.148
+
+layer 3 sum delta 0.49997886293080507 top10 fraction of absolute unit contributions 0.04031728302067243
+unit 1558 A -2.897061 B -2.998066 D -0.101005 gate_digit_enrichment 10.542
+unit 559 A -3.1385 B -3.211929 D -0.073429 gate_digit_enrichment 0.774
+unit 420 A 1.237649 B 1.17386 D -0.063789 gate_digit_enrichment 0.411
+unit 1783 A 6.88488 B 6.826905 D -0.057976 gate_digit_enrichment 2.005
+unit 211 A 0.028788 B 0.080048 D 0.05126 gate_digit_enrichment 1.079
+unit 682 A 2.243073 B 2.284266 D 0.041193 gate_digit_enrichment 1.212
+unit 1388 A 0.76233 B 0.803388 D 0.041058 gate_digit_enrichment 0.23
+unit 485 A -1.300451 B -1.259821 D 0.040631 gate_digit_enrichment 1.432
+
+layer 15 sum delta 0.6220584159136631 top10 fraction of absolute unit contributions 0.03184613312832441
+unit 1655 A 0.595732 B 0.430421 D -0.165311 gate_digit_enrichment 2.304
+unit 1442 A 0.704711 B 0.54663 D -0.158082 gate_digit_enrichment 0.388
+unit 759 A 1.365148 B 1.223183 D -0.141964 gate_digit_enrichment 1.625
+unit 115 A 0.663736 B 0.522237 D -0.141499 gate_digit_enrichment 1.234
+unit 1719 A 0.503245 B 0.679356 D 0.176111 gate_digit_enrichment 2.014
+unit 113 A 0.762932 B 0.926548 D 0.163616 gate_digit_enrichment 0.851
+unit 1046 A -1.657845 B -1.497835 D 0.16001 gate_digit_enrichment 1.063
+unit 1949 A -2.006507 B -1.847517 D 0.15899 gate_digit_enrichment 0.319
+
+layer 16 sum delta 0.12144856423066575 top10 fraction of absolute unit contributions 0.03646678539982527
+unit 1979 A -1.413311 B -1.682346 D -0.269035 gate_digit_enrichment 1.429
+unit 1307 A 0.935259 B 0.669612 D -0.265647 gate_digit_enrichment 1.648
+unit 1543 A -0.899106 B -1.158732 D -0.259626 gate_digit_enrichment 1.051
+unit 354 A -1.327577 B -1.556033 D -0.228456 gate_digit_enrichment 1.559
+unit 96 A -11.270549 B -10.755428 D 0.515121 gate_digit_enrichment 6.416
+unit 1514 A 3.084826 B 3.490757 D 0.405931 gate_digit_enrichment 1.087
+unit 267 A -0.811135 B -0.533171 D 0.277963 gate_digit_enrichment 0.788
+unit 2004 A 0.302324 B 0.566992 D 0.264668 gate_digit_enrichment 1.104
+
+layer 17 sum delta 0.13212479557868084 top10 fraction of absolute unit contributions 0.04933628084742854
+unit 1309 A -39.048064 B -40.367244 D -1.319179 gate_digit_enrichment 10.069
+unit 1242 A -15.699041 B -16.44248 D -0.743439 gate_digit_enrichment 5.123
+unit 1652 A 1.325651 B 0.893449 D -0.432202 gate_digit_enrichment 1.047
+unit 517 A -0.394496 B -0.822537 D -0.428042 gate_digit_enrichment 0.525
+unit 669 A 0.440071 B 1.04118 D 0.601108 gate_digit_enrichment 1.48
+unit 1222 A -2.178462 B -1.630507 D 0.547955 gate_digit_enrichment 0.405
+unit 1956 A -0.360348 B 0.103917 D 0.464265 gate_digit_enrichment 0.949
+unit 469 A 0.002802 B 0.453809 D 0.451007 gate_digit_enrichment 0.977
+
+A positive coefficient change is not proof of increased actual copying:
+the unknown GELU gate values can change its magnitude, sign, and relevance.
+
+```

@@ -1,0 +1,79 @@
+OUTPUT of run 11 of at most 60:
+```
+=== DIRECT RESIDUAL CONNECTIONS INTO FIVE L17 NUMERICAL UNITS ===
+Readers: separate gate/up factors of units [1180, 1242, 1309, 1192, 310]
+Controls: 128 other units, with separate gate/up factors.
+All reader vectors are normalized WEIGHT vectors.
+Energy is static connection energy, not activity or causal importance.
+
+ATTENTION: top 14 by target/control enrichment
+L15H2 enrichment=5.647 target_energy=0.37061 target_readers_above_control95=9/10
+L16H2 enrichment=5.460 target_energy=0.39395 target_readers_above_control95=9/10
+L16H1 enrichment=4.824 target_energy=0.33142 target_readers_above_control95=8/10
+L15H1 enrichment=4.641 target_energy=0.4179 target_readers_above_control95=9/10
+L16H0 enrichment=4.529 target_energy=0.28116 target_readers_above_control95=9/10
+L16H3 enrichment=4.143 target_energy=0.31708 target_readers_above_control95=8/10
+L12H1 enrichment=3.829 target_energy=0.11102 target_readers_above_control95=8/10
+L15H3 enrichment=3.391 target_energy=0.2513 target_readers_above_control95=7/10
+L11H3 enrichment=2.988 target_energy=0.0075754 target_readers_above_control95=6/10
+L11H2 enrichment=2.781 target_energy=0.0095544 target_readers_above_control95=6/10
+L13H3 enrichment=2.776 target_energy=0.039533 target_readers_above_control95=6/10
+L12H0 enrichment=2.741 target_energy=0.063345 target_readers_above_control95=7/10
+L13H1 enrichment=2.723 target_energy=0.028892 target_readers_above_control95=6/10
+L13H0 enrichment=2.561 target_energy=0.030965 target_readers_above_control95=6/10
+
+ATTENTION: top 10 by absolute target connection energy
+L15H1 enrichment=4.641 target_energy=0.4179 above95=9/10
+L16H2 enrichment=5.460 target_energy=0.39395 above95=9/10
+L15H2 enrichment=5.647 target_energy=0.37061 above95=9/10
+L16H1 enrichment=4.824 target_energy=0.33142 above95=8/10
+L16H3 enrichment=4.143 target_energy=0.31708 above95=8/10
+L16H0 enrichment=4.529 target_energy=0.28116 above95=9/10
+L15H3 enrichment=3.391 target_energy=0.2513 above95=7/10
+L15H0 enrichment=1.972 target_energy=0.13613 above95=3/10
+L12H1 enrichment=3.829 target_energy=0.11102 above95=8/10
+L14H3 enrichment=1.590 target_energy=0.08215 above95=0/10
+
+MLP DOWN-WRITER CONNECTIONS: all layers
+L00 enrichment=0.995 target_energy=0.00073363 above95=1/10; top_writer_units=[(703, 2.231106009276118e-05), (1632, 2.1892014046898112e-05), (984, 2.1460775315063074e-05), (695, 2.0407225747476332e-05), (11, 2.0237883290974423e-05)]
+L01 enrichment=0.910 target_energy=0.00077806 above95=0/10; top_writer_units=[(1906, 1.929858080984559e-05), (365, 1.9159671865054406e-05), (16, 1.908587000798434e-05), (1555, 1.8839928088709712e-05), (805, 1.8091477613779716e-05)]
+L02 enrichment=1.025 target_energy=0.0017779 above95=1/10; top_writer_units=[(1076, 6.878101703478023e-05), (694, 5.256376971374266e-05), (1154, 4.94060295750387e-05), (365, 4.86218195874244e-05), (1676, 4.792294203070924e-05)]
+L03 enrichment=0.937 target_energy=0.0068266 above95=0/10; top_writer_units=[(730, 0.00023896998027339578), (649, 0.0002124994935002178), (136, 0.0002080415142700076), (615, 0.00012666330439969897), (1511, 0.0001234337833011523)]
+L04 enrichment=0.979 target_energy=0.0015501 above95=0/10; top_writer_units=[(668, 5.885201244382188e-05), (242, 4.781513780471869e-05), (1247, 3.781772466027178e-05), (320, 3.527640728862025e-05), (1155, 3.4399428841425106e-05)]
+L05 enrichment=0.983 target_energy=0.002916 above95=0/10; top_writer_units=[(784, 0.00010246625606669113), (729, 9.707414574222639e-05), (328, 8.926035661716014e-05), (355, 8.895619976101443e-05), (1934, 8.217451977543533e-05)]
+L06 enrichment=0.961 target_energy=0.0028775 above95=1/10; top_writer_units=[(1478, 8.614466787548736e-05), (1762, 7.344948244281113e-05), (99, 7.26867001503706e-05), (664, 6.997503078309819e-05), (858, 6.99567244737409e-05)]
+L07 enrichment=0.977 target_energy=0.0032244 above95=0/10; top_writer_units=[(720, 0.00010799425217555836), (1181, 0.00010658842802513391), (1990, 9.790674812393263e-05), (291, 8.798817725619301e-05), (1728, 8.502385026076809e-05)]
+L08 enrichment=1.009 target_energy=0.0036145 above95=0/10; top_writer_units=[(818, 0.00010392986587248743), (2022, 9.747350850375369e-05), (277, 8.300588524434716e-05), (1428, 7.725880277575925e-05), (213, 7.53371132304892e-05)]
+L09 enrichment=1.141 target_energy=0.0084677 above95=1/10; top_writer_units=[(305, 0.000259297521552071), (1136, 0.0002586910268291831), (2027, 0.00022864327183924615), (132, 0.00021114584524184465), (1725, 0.00019533610611688346)]
+L10 enrichment=1.050 target_energy=0.023775 above95=0/10; top_writer_units=[(547, 0.0008129974594339728), (1559, 0.0007942583179101348), (1928, 0.0007749657379463315), (1831, 0.0006960822502151132), (880, 0.0006853025988675654)]
+L11 enrichment=1.333 target_energy=0.074775 above95=0/10; top_writer_units=[(48, 0.00384730426594615), (30, 0.0024654287844896317), (743, 0.002183702541515231), (423, 0.001926370314322412), (1571, 0.0018013183725997806)]
+L12 enrichment=1.911 target_energy=0.25584 above95=6/10; top_writer_units=[(1050, 0.008723029866814613), (1758, 0.00669764494523406), (986, 0.005428738426417112), (2000, 0.005417215172201395), (1315, 0.0053905583918094635)]
+L13 enrichment=2.218 target_energy=0.37455 above95=9/10; top_writer_units=[(1211, 0.008809673599898815), (1954, 0.008712553419172764), (1797, 0.007470668293535709), (186, 0.007305028382688761), (909, 0.0069906567223370075)]
+L14 enrichment=2.836 target_energy=0.8467 above95=9/10; top_writer_units=[(737, 0.025432808324694633), (1537, 0.022404294461011887), (1235, 0.02051318809390068), (146, 0.01894976757466793), (726, 0.01704629883170128)]
+L15 enrichment=4.646 target_energy=2.2051 above95=9/10; top_writer_units=[(668, 0.049376096576452255), (222, 0.0475442074239254), (1125, 0.04546039551496506), (1938, 0.043811868876218796), (239, 0.04280855134129524)]
+L16 enrichment=6.028 target_energy=4.0425 above95=10/10; top_writer_units=[(208, 0.15019957721233368), (1547, 0.13681894540786743), (1143, 0.12227128446102142), (261, 0.11995010823011398), (282, 0.11742811650037766)]
+
+=== SIGNED SOURCE-WEIGHT DIRECTIONS FOR SELECTED BRIDGES ===
+Positive/negative describes B-A coupling into the named reader, NOT its activation.
+L15H2 -> L17 U310 up: +[(' Impro', 0.174), (' Spiel', 0.17), (' LUC', 0.162)] -[('hatian', -0.158), ('calorie', -0.156), (' austere', -0.154)]
+L15H2 -> L17 U1180 up: +[(' Regl', 0.174), (' tears', 0.171), (' Tiet', 0.162)] -[(' beep', -0.164), (' palust', -0.149), (' paramagnetic', -0.146)]
+L16H2 -> L17 U1180 up: +[(' crayfish', 0.162), ('assistance', 0.156), ('organisme', 0.149)] -[(' Clooney', -0.173), (' polarisation', -0.161), (' Fujifilm', -0.158)]
+L16H2 -> L17 U1242 up: +[('owners', 0.176), (' Owner', 0.176), ('Owner', 0.172)] -[(' transportar', -0.168), (' transporte', -0.167), (' CRUIS', -0.167)]
+L16H1 -> L17 U1180 up: +[(' sympath', 0.155), (' Gasp', 0.153), ('UFF', 0.149)] -[(' Brodie', -0.163), (' Sloane', -0.16), (' keuze', -0.158)]
+L16H1 -> L17 U1242 up: +[(' anges', 0.155), (' authorizations', 0.15), (' cento', 0.15)] -[('housing', -0.18), (' transporte', -0.163), ('asser', -0.159)]
+L15H1 -> L17 U310 up: +[(' libras', 0.155), ('arlene', 0.152), (' oregano', 0.15)] -[('ObjectID', -0.171), (' TAT', -0.165), ('StateType', -0.165)]
+L15H1 -> L17 U1192 gate: +[(' felicidade', 0.161), (' dolor', 0.158), (' felicit', 0.146)] -[('Deposit', -0.176), ('Assemblies', -0.158), (' McGuire', -0.154)]
+L16H0 -> L17 U1242 up: +[('ALPHA', 0.163), (' Laser', 0.147), (' Optics', 0.146)] -[(' songwriting', -0.176), (' songwriters', -0.158), (' limpiar', -0.154)]
+L16H0 -> L17 U1242 gate: +[(' ensamb', 0.181), (' tiempos', 0.161), (' emocionante', 0.161)] -[(' MMA', -0.156), ('Dane', -0.153), (' anybody', -0.152)]
+L16H3 -> L17 U1309 up: +[(' Curr', 0.174), (' fichero', 0.171), (' Wise', 0.164)] -[(' nineteen', -0.173), (' seventeen', -0.164), (' eighteen', -0.152)]
+L16H3 -> L17 U1242 up: +[('oyloxy', 0.164), ('Laser', 0.145), (' Customer', 0.144)] -[('ashing', -0.19), ('housing', -0.182), ('addle', -0.176)]
+L05H3 -> L17 U1192 up: +[('uchte', 0.145), (' unwind', 0.143), (' Grange', 0.14)] -[(' CIC', -0.166), (' CER', -0.159), (' Crac', -0.148)]
+L05H3 -> L17 U1242 gate: +[('uchte', 0.16), ('roke', 0.156), (' reyes', 0.146)] -[(' CER', -0.188), (' CIC', -0.168), (' Paj', -0.165)]
+L05H1 -> L17 U1192 up: +[('ucing', 0.156), (' Veterinary', 0.144), (' contrived', 0.142)] -[(' Brah', -0.151), (' Bekasi', -0.144), (' Barrios', -0.144)]
+L05H1 -> L17 U1242 gate: +[('ucing', 0.154), ('Hierarchy', 0.142), (' hypothalam', 0.142)] -[(' Bim', -0.162), ('Pra', -0.161), (' SMO', -0.161)]
+L03H1 -> L17 U310 gate: +[(' Dedicated', 0.174), (' fledgling', 0.149), (' Demonstration', 0.148)] -[('bsch', -0.165), ('cube', -0.159), ('Seq', -0.158)]
+L03H1 -> L17 U1192 up: +[('uggish', 0.16), (' dormant', 0.156), (' Demonstrated', 0.152)] -[('solve', -0.16), ('answer', -0.159), (' entreg', -0.155)]
+
+No residual states were constructed or propagated; only weight connections were multiplied.
+
+```

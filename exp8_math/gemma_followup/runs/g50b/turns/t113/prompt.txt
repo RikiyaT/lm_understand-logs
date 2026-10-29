@@ -1,0 +1,7 @@
+OUTPUT of Python run 61 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48], 'answers_per_model': 14336, 'problems': 128, 'original_accuracy': 0.08928571428571429, 'edited_accuracy': 0.09298270089285714, 'gain_pp': 0.3696986607142857, 'sample_SE_pp': 0.22396245289325406, 'problem_cluster_SE_pp': 0.3679561331780515}
+PASS49_IDS ['math_train_prealgebra_5', 'math_train_algebra_1649', 'math_train_counting_and_probability_226', 'math_train_algebra_870', 'math_train_geometry_3', 'math_train_intermediate_algebra_301', 'math_train_counting_and_probability_601', 'math_train_counting_and_probability_167', 'math_train_algebra_383', 'math_train_number_theory_740', 'math_train_intermediate_algebra_48', 'math_train_prealgebra_283', 'math_train_algebra_1340', 'math_train_counting_and_probability_76', 'math_train_precalculus_360', 'math_train_prealgebra_1102', 'math_train_counting_and_probability_489', 'math_train_algebra_228', 'math_train_algebra_637', 'math_train_number_theory_448', 'math_train_intermediate_algebra_847', 'math_train_counting_and_probability_743', 'math_train_prealgebra_428', 'math_train_counting_and_probability_622', 'math_train_algebra_588', 'math_train_precalculus_624', 'math_train_algebra_1495', 'math_train_number_theory_32', 'math_train_algebra_454', 'math_train_intermediate_algebra_400', 'math_train_precalculus_100', 'math_train_algebra_255']
+'Pass49 logged; final aggregation and integrity-check plan recorded.'
+
+```

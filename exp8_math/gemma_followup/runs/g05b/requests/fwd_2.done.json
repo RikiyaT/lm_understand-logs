@@ -1,0 +1,136 @@
+{
+ "ok": true,
+ "lengths": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1
+ ],
+ "files": {
+  "input_ids": [
+   28,
+   1
+  ],
+  "token_logprobs": [
+   28,
+   0
+  ],
+  "topk_logprobs": [
+   28,
+   1,
+   8
+  ],
+  "topk_ids": [
+   28,
+   1,
+   8
+  ],
+  "hidden_0": [
+   28,
+   1,
+   640
+  ],
+  "hidden_1": [
+   28,
+   1,
+   640
+  ],
+  "hidden_6": [
+   28,
+   1,
+   640
+  ],
+  "hidden_14": [
+   28,
+   1,
+   640
+  ],
+  "hidden_18": [
+   28,
+   1,
+   640
+  ],
+  "mlp_act_0": [
+   28,
+   1,
+   2048
+  ],
+  "mlp_act_1": [
+   28,
+   1,
+   2048
+  ],
+  "mlp_act_5": [
+   28,
+   1,
+   2048
+  ],
+  "mlp_act_13": [
+   28,
+   1,
+   2048
+  ],
+  "mlp_act_17": [
+   28,
+   1,
+   2048
+  ]
+ },
+ "edited_tensors": 0,
+ "mean_token_logprob": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "type": "teacher_forced",
+ "s": 0.6
+}

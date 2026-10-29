@@ -1,0 +1,42 @@
+OUTPUT of Python run 23 of at most 300:
+```
+NOTES
+# Math weight editing
+Pass 1: original on 32 GSM8K + 64 MATH diagnostic problems. Accuracy 11/96 (11.46%); 85/96 cut at 32768; no finished wrong answers. Dominant target: pathological long/repetitive reasoning. No edits yet.
+Pass 2 TF paired productive vs repetition examples showed a common repetition direction (cosine ~0.7 with generation contrast), but chat template adds an empty think block. Corrected in pass 3 (files fwd_4) using raw template. Testing layer19 MLP neuron11 output ablation; strongest matched-context repetition writer. Attention-return request failed and did not count.
+Pass4 gen_5 paired32: ablate L19 neuron11, +6.25pp +/-4.35pp SE (3->5 correct), cutoff90.6->87.5%; weak positive, not confirmed. Trying rank-one removal of the matched repetition direction from L19 MLP only. Attention-output tool fails even for one raw text/layer.
+Pass5 gen_7 paired32: L19 MLP repetition-direction removal alpha1, +6.25pp +/-4.35pp SE (4->6 correct), cut29->26, mean30123->27698. Directional and neuron probes modest. Next two-site L15+L19 alpha1.
+
+
+KERNEL VARIABLES
+[('json', 'module'), ('os', 'module'), ('np', 'module'), ('torch', 'module'), ('safe_open', 'type'), ('Tokenizer', 'type'), ('MODEL', 'str'), ('WORK', 'str'), ('NAMES', 'list'), ('load_original', 'function'), ('load', 'function'), ('FROZEN', 'set'), ('save_edit', 'function'), ('drop_edit', 'function'), ('edited', 'function'), ('tok', 'Tokenizer'), ('Path', 'type')]
+
+RECENT GENERATION FILES
+gen_10_edited.jsonl n = 32
+  keys: ['id', 'source', 'answer', 'samples']
+  first metadata: {'id': 'gsm8k_train_2805', 'source': 'gsm8k'}
+gen_10_original.jsonl n = 32
+  keys: ['id', 'source', 'answer', 'samples']
+  first metadata: {'id': 'gsm8k_train_2805', 'source': 'gsm8k'}
+gen_11_edited.jsonl n = 32
+gen_11_original.jsonl n = 32
+gen_5_edited.jsonl n = 32
+gen_5_original.jsonl n = 32
+gen_7_edited.jsonl n = 32
+gen_7_original.jsonl n = 32
+gen_8_edited.jsonl n = 32
+gen_8_original.jsonl n = 32
+gen_9_edited.jsonl n = 32
+gen_9_original.jsonl n = 32
+
+PRACTICE ID FORMAT
+gsm8k_train.jsonl id = gsm8k_train_0 keys = ['id', 'source', 'problem', 'answer', 'solution']
+math_train.jsonl id = math_train_algebra_0 keys = ['id', 'source', 'subject', 'level', 'problem', 'answer', 'solution']
+aime.jsonl id = aime_1983-1 keys = ['id', 'source', 'problem', 'answer', 'year']
+
+CURRENT EDIT MAGNITUDES
+model.language_model.layers.15.mlp.down_proj.weight shape = (1024, 3584) relative_Frobenius_change = 0.03526389226317406 changed_columns = 3584
+model.language_model.layers.19.mlp.down_proj.weight shape = (1024, 3584) relative_Frobenius_change = 0.03374705836176872 changed_columns = 3584
+
+[harness: 20 repeated lines not shown (a line is shown at most 2 times per output)]
+```

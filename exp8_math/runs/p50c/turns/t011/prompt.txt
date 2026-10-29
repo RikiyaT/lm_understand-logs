@@ -1,0 +1,30 @@
+OUTPUT of Python run 6 of at most 300:
+```
+Metadata keys: ['texts', 'lengths', 'model', 'edited_tensors', 'files', 'padding']
+Layer 0 contrast norm 0.164 block growth 0.1587 MLP 0.0303 attention 0.1284
+Layer 1 contrast norm 0.275 block growth 0.1787 MLP 0.0373 attention 0.1414
+Layer 2 contrast norm 0.347 block growth 0.1362 MLP 0.0343 attention 0.102
+Layer 3 contrast norm 0.395 block growth 0.1398 MLP 0.053 attention 0.0868
+Layer 4 contrast norm 0.41 block growth 0.0795 MLP 0.0342 attention 0.0454
+Layer 5 contrast norm 0.445 block growth 0.0888 MLP 0.0235 attention 0.0653
+Layer 6 contrast norm 0.561 block growth 0.2045 MLP 0.0962 attention 0.1083
+Layer 7 contrast norm 0.555 block growth 0.1473 MLP 0.0512 attention 0.0961
+Layer 8 contrast norm 0.578 block growth 0.0964 MLP 0.0227 attention 0.0737
+Layer 9 contrast norm 0.629 block growth 0.1101 MLP 0.0095 attention 0.1006
+Layer 10 contrast norm 0.758 block growth 0.2308 MLP 0.0375 attention 0.1933
+Layer 11 contrast norm 0.817 block growth 0.1793 MLP 0.0362 attention 0.1432
+Layer 12 contrast norm 0.929 block growth 0.2033 MLP 0.0417 attention 0.1615
+Layer 13 contrast norm 1.088 block growth 0.2434 MLP 0.0933 attention 0.1502
+Layer 14 contrast norm 1.273 block growth 0.3617 MLP 0.1495 attention 0.2122
+Layer 15 contrast norm 1.564 block growth 0.472 MLP 0.2634 attention 0.2086
+Layer 16 contrast norm 1.76 block growth 0.2796 MLP 0.1231 attention 0.1565
+Layer 17 contrast norm 1.877 block growth 0.1929 MLP 0.0494 attention 0.1435
+Layer 18 contrast norm 1.909 block growth 0.1744 MLP 0.0775 attention 0.0969
+Layer 19 contrast norm 2.266 block growth 0.5304 MLP 0.2497 attention 0.2807
+Layer 20 contrast norm 2.327 block growth 0.1317 MLP 0.1046 attention 0.027
+Layer 21 contrast norm 2.515 block growth 0.2575 MLP 0.1637 attention 0.0938
+Layer 22 contrast norm 2.626 block growth 0.3093 MLP 0.1101 attention 0.1993
+Top MLP writers: [(0.12001, 19, 11, 4, -1.1243), (0.02709, 23, 84, 3, 1.1066), (0.02533, 15, 294, 4, -0.4464), (0.02431, 22, 9, 4, -0.7205), (0.02265, 12, 1226, 4, 0.4971), (0.02126, 18, 32, 4, 0.5652), (0.02054, 6, 117, 4, -0.3229), (0.01816, 20, 0, 4, 0.2502), (0.01806, 10, 825, 4, 0.3028), (0.01718, 14, 1008, 4, -0.3767), (0.01694, 22, 30, 4, -0.2913), (0.01673, 6, 65, 4, 0.3545), (0.01639, 19, 1, 4, 0.2354), (0.01474, 16, 228, 4, -0.1874), (0.01436, 6, 230, 4, -0.2528), (0.01436, 3, 4, 4, 0.1856), (0.01421, 23, 28, 4, -0.7869), (0.01421, 15, 371, 4, -0.3582), (0.01261, 11, 1700, 4, 0.2096), (0.01245, 15, 0, 4, 0.4487)]
+Probe: layer 19, MLP neuron 11 output ablated; relative tensor change 0.015992557629942894
+
+```

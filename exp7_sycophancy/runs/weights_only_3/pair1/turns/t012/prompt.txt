@@ -1,0 +1,80 @@
+OUTPUT of run 9 of at most 60:
+```
+NEW HYPOTHESIS: COMPENSATION BETWEEN CONNECTED WEIGHT CHANGES
+Products describe linear coefficient composition only.
+Query/key normalization and all state-dependent operations are excluded.
+combined/separate energy: <1 cancellation, >1 reinforcement.
+Algebraic shares are not causal effect shares.
+
+MODE: raw PATHS: 87
+Term-cosine quantiles: [0.0028 0.0107 0.0153 0.0253 0.0462 0.0666 0.1323]
+Combined/separate energy quantiles: [1.0019 1.0085 1.0129 1.0215 1.0353 1.0497 1.0865]
+Paths with negative term cosine: 0
+Paths with >25% energy cancellation: 0
+Paths with >25% energy reinforcement: 0
+
+SIX LOWEST COMBINED/SEPARATE RATIOS
+{"mode": "raw", "writer_layer": 16, "writer": "mlp", "reader_layer": 17, "reader": "query", "term_cosine": 0.0027679344501472312, "combined_over_separate_energy": 1.0018991136922066, "composed_relative_difference": 0.018930634060331644, "reader_algebraic_share": 0.13694163659190856, "writer_algebraic_share": 0.8630583634080913}
+{"mode": "raw", "writer_layer": 13, "writer": "mlp", "reader_layer": 14, "reader": "query", "term_cosine": 0.005459388996199288, "combined_over_separate_energy": 1.0036484221353004, "composed_relative_difference": 0.021331983878888024, "reader_algebraic_share": 0.12939897364447964, "writer_algebraic_share": 0.8706010263555203}
+{"mode": "raw", "writer_layer": 0, "writer": "attention", "reader_layer": 0, "reader": "up", "term_cosine": 0.004127691705231427, "combined_over_separate_energy": 1.0040704222928725, "composed_relative_difference": 0.0104258493924546, "reader_algebraic_share": 0.5826640954297619, "writer_algebraic_share": 0.4173359045702381}
+{"mode": "raw", "writer_layer": 0, "writer": "attention", "reader_layer": 0, "reader": "gate", "term_cosine": 0.0055657680367587545, "combined_over_separate_energy": 1.0055087214734462, "composed_relative_difference": 0.010114275873766457, "reader_algebraic_share": 0.5710126404390057, "writer_algebraic_share": 0.42898735956099426}
+{"mode": "raw", "writer_layer": 4, "writer": "mlp", "reader_layer": 5, "reader": "query", "term_cosine": 0.009350989351803052, "combined_over_separate_energy": 1.0055809335793284, "composed_relative_difference": 0.026512036256702037, "reader_algebraic_share": 0.101042008360775, "writer_algebraic_share": 0.898957991639225}
+{"mode": "raw", "writer_layer": 8, "writer": "mlp", "reader_layer": 9, "reader": "query", "term_cosine": 0.008679922390235116, "combined_over_separate_energy": 1.0057540565816716, "composed_relative_difference": 0.021620787055033227, "reader_algebraic_share": 0.127794655029108, "writer_algebraic_share": 0.8722053449708919}
+
+SIX HIGHEST COMBINED/SEPARATE RATIOS
+{"mode": "raw", "writer_layer": 3, "writer": "mlp", "reader_layer": 4, "reader": "value", "term_cosine": 0.1322875972272732, "combined_over_separate_energy": 1.086525882518309, "composed_relative_difference": 0.020856204332892515, "reader_algebraic_share": 0.15190404174039873, "writer_algebraic_share": 0.848095958259601}
+{"mode": "raw", "writer_layer": 5, "writer": "mlp", "reader_layer": 6, "reader": "value", "term_cosine": 0.09636849439887303, "combined_over_separate_energy": 1.0799887941089894, "composed_relative_difference": 0.014416465152621944, "reader_algebraic_share": 0.24179457479494715, "writer_algebraic_share": 0.758205425205053}
+{"mode": "raw", "writer_layer": 11, "writer": "mlp", "reader_layer": 12, "reader": "value", "term_cosine": 0.09264896585365097, "combined_over_separate_energy": 1.0694336851450517, "composed_relative_difference": 0.017301716984991704, "reader_algebraic_share": 0.19045000300606685, "writer_algebraic_share": 0.8095499969939333}
+{"mode": "raw", "writer_layer": 2, "writer": "mlp", "reader_layer": 3, "reader": "value", "term_cosine": 0.10032372418504583, "combined_over_separate_energy": 1.0677646456241474, "composed_relative_difference": 0.01798719667760446, "reader_algebraic_share": 0.15470069259210287, "writer_algebraic_share": 0.8452993074078972}
+{"mode": "raw", "writer_layer": 9, "writer": "mlp", "reader_layer": 10, "reader": "value", "term_cosine": 0.08741529898809001, "combined_over_separate_energy": 1.0648253744442933, "composed_relative_difference": 0.015980431022093938, "reader_algebraic_share": 0.18498814099941882, "writer_algebraic_share": 0.8150118590005812}
+{"mode": "raw", "writer_layer": 0, "writer": "mlp", "reader_layer": 1, "reader": "value", "term_cosine": 0.06339817807172946, "combined_over_separate_energy": 1.053465893745311, "composed_relative_difference": 0.014427328241960729, "reader_algebraic_share": 0.2449426601005042, "writer_algebraic_share": 0.7550573398994959}
+
+MODE: folded PATHS: 87
+Term-cosine quantiles: [0.0032 0.0128 0.0174 0.0298 0.0479 0.072  0.1342]
+Combined/separate energy quantiles: [1.0022 1.0094 1.0145 1.023  1.0411 1.0481 1.0881]
+Paths with negative term cosine: 0
+Paths with >25% energy cancellation: 0
+Paths with >25% energy reinforcement: 0
+
+SIX LOWEST COMBINED/SEPARATE RATIOS
+{"mode": "folded", "writer_layer": 16, "writer": "mlp", "reader_layer": 17, "reader": "query", "term_cosine": 0.003160228302340305, "combined_over_separate_energy": 1.002210151396805, "composed_relative_difference": 0.020054884765276955, "reader_algebraic_share": 0.14340551216001193, "writer_algebraic_share": 0.856594487839988}
+{"mode": "folded", "writer_layer": 13, "writer": "mlp", "reader_layer": 14, "reader": "query", "term_cosine": 0.006600503931349371, "combined_over_separate_energy": 1.0043152183235151, "composed_relative_difference": 0.023308809731469704, "reader_algebraic_share": 0.12327941890451875, "writer_algebraic_share": 0.8767205810954812}
+{"mode": "folded", "writer_layer": 4, "writer": "mlp", "reader_layer": 5, "reader": "query", "term_cosine": 0.009706764213452889, "combined_over_separate_energy": 1.0049524449677838, "composed_relative_difference": 0.027563776888842866, "reader_algebraic_share": 0.07209293772593099, "writer_algebraic_share": 0.927907062274069}
+{"mode": "folded", "writer_layer": 8, "writer": "mlp", "reader_layer": 9, "reader": "query", "term_cosine": 0.01015332247055918, "combined_over_separate_energy": 1.0064952071044033, "composed_relative_difference": 0.023933265089742046, "reader_algebraic_share": 0.11817289613527603, "writer_algebraic_share": 0.8818271038647241}
+{"mode": "folded", "writer_layer": 10, "writer": "mlp", "reader_layer": 11, "reader": "query", "term_cosine": 0.012822662060747055, "combined_over_separate_energy": 1.0069916898742013, "composed_relative_difference": 0.0249156840326127, "reader_algebraic_share": 0.08377674398711699, "writer_algebraic_share": 0.916223256012883}
+{"mode": "folded", "writer_layer": 6, "writer": "mlp", "reader_layer": 7, "reader": "query", "term_cosine": 0.01041549629960682, "combined_over_separate_energy": 1.0072705390332255, "composed_relative_difference": 0.01988099256149133, "reader_algebraic_share": 0.1445598184226162, "writer_algebraic_share": 0.8554401815773838}
+
+SIX HIGHEST COMBINED/SEPARATE RATIOS
+{"mode": "folded", "writer_layer": 3, "writer": "mlp", "reader_layer": 4, "reader": "value", "term_cosine": 0.13418039370244936, "combined_over_separate_energy": 1.088084426314552, "composed_relative_difference": 0.021301113732859905, "reader_algebraic_share": 0.15335480938395935, "writer_algebraic_share": 0.8466451906160407}
+{"mode": "folded", "writer_layer": 5, "writer": "mlp", "reader_layer": 6, "reader": "value", "term_cosine": 0.10942177461941378, "combined_over_separate_energy": 1.085887035589272, "composed_relative_difference": 0.015344213053464163, "reader_algebraic_share": 0.2147029947538543, "writer_algebraic_share": 0.7852970052461458}
+{"mode": "folded", "writer_layer": 9, "writer": "mlp", "reader_layer": 10, "reader": "value", "term_cosine": 0.10111586780619872, "combined_over_separate_energy": 1.0769020241175438, "composed_relative_difference": 0.01840738954757845, "reader_algebraic_share": 0.1985341018577812, "writer_algebraic_share": 0.8014658981422187}
+{"mode": "folded", "writer_layer": 2, "writer": "mlp", "reader_layer": 3, "reader": "value", "term_cosine": 0.11330367498741939, "combined_over_separate_energy": 1.0732088648908347, "composed_relative_difference": 0.018366272550468334, "reader_algebraic_share": 0.14441792892046804, "writer_algebraic_share": 0.855582071079532}
+{"mode": "folded", "writer_layer": 11, "writer": "mlp", "reader_layer": 12, "reader": "value", "term_cosine": 0.08031559651504659, "combined_over_separate_energy": 1.0637092522465106, "composed_relative_difference": 0.01963427207847649, "reader_algebraic_share": 0.2137780667720317, "writer_algebraic_share": 0.7862219332279682}
+{"mode": "folded", "writer_layer": 0, "writer": "mlp", "reader_layer": 1, "reader": "value", "term_cosine": 0.06953461531479606, "combined_over_separate_energy": 1.0595216678078154, "composed_relative_difference": 0.014857448110995222, "reader_algebraic_share": 0.25603380572943735, "writer_algebraic_share": 0.7439661942705627}
+
+LATE PATHWAYS, NORMALIZATION DIAGONALS INCLUDED
+writer -> reader           cosine combined/separate composed_rel
+L14.attention -> L14.gate                 0.01849           1.01780     0.011384
+L14.attention -> L14.up                   0.01828           1.01787     0.012303
+L14.mlp -> L15.query                      0.01473           1.00846     0.027780
+L14.mlp -> L15.key                        0.03208           1.01852     0.028619
+L14.mlp -> L15.value                      0.05525           1.03581     0.021811
+L15.attention -> L15.gate                 0.02409           1.02321     0.012707
+L15.attention -> L15.up                   0.02483           1.02415     0.012128
+L15.mlp -> L16.query                      0.01598           1.00847     0.030442
+L15.mlp -> L16.key                        0.04692           1.02805     0.028443
+L15.mlp -> L16.value                      0.07393           1.05029     0.021226
+L16.attention -> L16.gate                 0.03072           1.02439     0.017375
+L16.attention -> L16.up                   0.03091           1.02544     0.016938
+L16.mlp -> L17.query                      0.00316           1.00221     0.020055
+L16.mlp -> L17.key                        0.01587           1.01051     0.020177
+L16.mlp -> L17.value                      0.07212           1.04386     0.017480
+L17.attention -> L17.gate                 0.01684           1.01505     0.015295
+L17.attention -> L17.up                   0.01716           1.01588     0.014201
+
+Formula verification, absolute discrepancy: 1.3322676295501878e-15
+
+These products do not measure the full nonlinear network or task behavior.
+A/B reversal leaves every reported compensation statistic unchanged.
+
+```

@@ -1,0 +1,95 @@
+OUTPUT of run 7 of at most 60:
+```
+Processed through L5; elapsed 7.6s
+Processed through L11; elapsed 14.9s
+Processed through L17; elapsed 21.7s
+
+=== SAME_ATTENTION_TO_MLP ===
+Top 8 by relative composed-path change:
+L04H1 OV -> L04 MLP/up                relative=0.03245 normalized_delta=0.000235 coupling_A=0.0072 coupling_B=0.0072 reader_ratio=0.227 writer_ratio=0.963 cross_cos=+0.047
+L04H1 OV -> L04 MLP/gate              relative=0.03137 normalized_delta=0.000244 coupling_A=0.0078 coupling_B=0.0078 reader_ratio=0.216 writer_ratio=0.964 cross_cos=+0.059
+L03H3 OV -> L03 MLP/up                relative=0.02820 normalized_delta=0.000093 coupling_A=0.0033 coupling_B=0.0033 reader_ratio=0.281 writer_ratio=0.947 cross_cos=+0.046
+L03H3 OV -> L03 MLP/gate              relative=0.02793 normalized_delta=0.000116 coupling_A=0.0042 coupling_B=0.0042 reader_ratio=0.264 writer_ratio=0.951 cross_cos=+0.050
+L04H0 OV -> L04 MLP/up                relative=0.02558 normalized_delta=0.000174 coupling_A=0.0068 coupling_B=0.0068 reader_ratio=0.287 writer_ratio=0.952 cross_cos=+0.019
+L05H1 OV -> L05 MLP/gate              relative=0.02495 normalized_delta=0.000098 coupling_A=0.0039 coupling_B=0.0039 reader_ratio=0.368 writer_ratio=0.922 cross_cos=+0.021
+L04H0 OV -> L04 MLP/gate              relative=0.02446 normalized_delta=0.000180 coupling_A=0.0074 coupling_B=0.0074 reader_ratio=0.276 writer_ratio=0.957 cross_cos=+0.017
+L08H2 OV -> L08 MLP/up                relative=0.02294 normalized_delta=0.000443 coupling_A=0.0193 coupling_B=0.0193 reader_ratio=0.299 writer_ratio=0.943 cross_cos=+0.037
+Top 4 by factor-norm-normalized composed-path change:
+L08H2 OV -> L08 MLP/gate              relative=0.02237 normalized_delta=0.000478 coupling_A=0.0214 coupling_B=0.0214 reader_ratio=0.281 writer_ratio=0.944 cross_cos=+0.056
+L08H2 OV -> L08 MLP/up                relative=0.02294 normalized_delta=0.000443 coupling_A=0.0193 coupling_B=0.0193 reader_ratio=0.299 writer_ratio=0.943 cross_cos=+0.037
+L08H1 OV -> L08 MLP/gate              relative=0.02093 normalized_delta=0.000373 coupling_A=0.0178 coupling_B=0.0178 reader_ratio=0.302 writer_ratio=0.939 cross_cos=+0.049
+L08H3 OV -> L08 MLP/gate              relative=0.01935 normalized_delta=0.000353 coupling_A=0.0182 coupling_B=0.0182 reader_ratio=0.365 writer_ratio=0.916 cross_cos=+0.042
+
+=== NEXT_MLP_TO_ATTENTION ===
+Top 8 by relative composed-path change:
+L04 MLP/down -> L05 attn/k            relative=0.04328 normalized_delta=0.000077 coupling_A=0.0018 coupling_B=0.0018 reader_ratio=0.244 writer_ratio=0.955 cross_cos=+0.061
+L10 MLP/down -> L11 attn/k            relative=0.03910 normalized_delta=0.000338 coupling_A=0.0086 coupling_B=0.0086 reader_ratio=0.258 writer_ratio=0.949 cross_cos=+0.067
+L04 MLP/down -> L05 attn/q            relative=0.03232 normalized_delta=0.000176 coupling_A=0.0054 coupling_B=0.0054 reader_ratio=0.414 writer_ratio=0.903 cross_cos=+0.018
+L14 MLP/down -> L15 attn/q            relative=0.03133 normalized_delta=0.000187 coupling_A=0.0060 coupling_B=0.0060 reader_ratio=0.367 writer_ratio=0.922 cross_cos=+0.024
+L16 MLP/down -> L17 attn/q            relative=0.03129 normalized_delta=0.000167 coupling_A=0.0053 coupling_B=0.0053 reader_ratio=0.574 writer_ratio=0.808 cross_cos=+0.018
+L15 MLP/down -> L16 attn/k            relative=0.03033 normalized_delta=0.000162 coupling_A=0.0053 coupling_B=0.0053 reader_ratio=0.318 writer_ratio=0.935 cross_cos=+0.041
+L14 MLP/down -> L15 attn/k            relative=0.03002 normalized_delta=0.000148 coupling_A=0.0049 coupling_B=0.0049 reader_ratio=0.292 writer_ratio=0.950 cross_cos=+0.022
+L15 MLP/down -> L16 attn/q            relative=0.02899 normalized_delta=0.000173 coupling_A=0.0060 coupling_B=0.0060 reader_ratio=0.373 writer_ratio=0.922 cross_cos=+0.015
+Top 4 by factor-norm-normalized composed-path change:
+L08 MLP/down -> L09 attn/k            relative=0.02757 normalized_delta=0.000361 coupling_A=0.0131 coupling_B=0.0131 reader_ratio=0.355 writer_ratio=0.921 cross_cos=+0.040
+L10 MLP/down -> L11 attn/k            relative=0.03910 normalized_delta=0.000338 coupling_A=0.0086 coupling_B=0.0086 reader_ratio=0.258 writer_ratio=0.949 cross_cos=+0.067
+L08 MLP/down -> L09 attn/q            relative=0.02425 normalized_delta=0.000333 coupling_A=0.0137 coupling_B=0.0137 reader_ratio=0.446 writer_ratio=0.890 cross_cos=+0.012
+L09 MLP/down -> L10 attn/q            relative=0.02057 normalized_delta=0.000287 coupling_A=0.0139 coupling_B=0.0139 reader_ratio=0.497 writer_ratio=0.858 cross_cos=+0.020
+
+=== NEXT_ATTENTION_TO_ATTENTION ===
+Top 8 by relative composed-path change:
+L04H2 OV -> L05 attn/k                relative=0.04944 normalized_delta=0.000252 coupling_A=0.0051 coupling_B=0.0051 reader_ratio=0.126 writer_ratio=0.982 cross_cos=+0.082
+L04H0 OV -> L05 attn/k                relative=0.04637 normalized_delta=0.000279 coupling_A=0.0060 coupling_B=0.0060 reader_ratio=0.081 writer_ratio=0.996 cross_cos=+0.011
+L04H1 OV -> L05 attn/k                relative=0.04342 normalized_delta=0.000462 coupling_A=0.0106 coupling_B=0.0106 reader_ratio=0.057 writer_ratio=0.993 cross_cos=+0.085
+L04H1 OV -> L05 attn/q                relative=0.03647 normalized_delta=0.000289 coupling_A=0.0079 coupling_B=0.0079 reader_ratio=0.391 writer_ratio=0.916 cross_cos=+0.012
+L04H3 OV -> L05 attn/k                relative=0.03025 normalized_delta=0.000172 coupling_A=0.0057 coupling_B=0.0057 reader_ratio=0.214 writer_ratio=0.944 cross_cos=+0.155
+L11H1 OV -> L12 attn/k                relative=0.03012 normalized_delta=0.000163 coupling_A=0.0054 coupling_B=0.0054 reader_ratio=0.543 writer_ratio=0.728 cross_cos=+0.223
+L11H1 OV -> L12 attn/q                relative=0.02912 normalized_delta=0.000197 coupling_A=0.0068 coupling_B=0.0068 reader_ratio=0.845 writer_ratio=0.502 cross_cos=+0.040
+L10H2 OV -> L11 attn/k                relative=0.02886 normalized_delta=0.000407 coupling_A=0.0141 coupling_B=0.0141 reader_ratio=0.253 writer_ratio=0.946 cross_cos=+0.085
+Top 4 by factor-norm-normalized composed-path change:
+L08H2 OV -> L09 attn/k                relative=0.02225 normalized_delta=0.000512 coupling_A=0.0230 coupling_B=0.0230 reader_ratio=0.318 writer_ratio=0.938 cross_cos=+0.034
+L08H2 OV -> L09 attn/q                relative=0.02129 normalized_delta=0.000472 coupling_A=0.0222 coupling_B=0.0222 reader_ratio=0.394 writer_ratio=0.908 cross_cos=+0.028
+L04H1 OV -> L05 attn/k                relative=0.04342 normalized_delta=0.000462 coupling_A=0.0106 coupling_B=0.0106 reader_ratio=0.057 writer_ratio=0.993 cross_cos=+0.085
+L10H1 OV -> L11 attn/k                relative=0.00964 normalized_delta=0.000452 coupling_A=0.0469 coupling_B=0.0469 reader_ratio=0.257 writer_ratio=0.948 cross_cos=+0.074
+
+=== FOCUSED CHECK: L10 MLP -> L11 ATTENTION ===
+L10 MLP/down -> L11 attn/q            relative=0.02555 normalized_delta=0.000259 coupling_A=0.0102 coupling_B=0.0102 reader_ratio=0.375 writer_ratio=0.922 cross_cos=+0.014
+  Leading unit shares of this path's coefficient-difference energy: [(2035, 0.00249), (1744, 0.00185), (1786, 0.00164), (1403, 0.00158)]
+L10 MLP/down -> L11 attn/k            relative=0.03910 normalized_delta=0.000338 coupling_A=0.0086 coupling_B=0.0086 reader_ratio=0.258 writer_ratio=0.949 cross_cos=+0.067
+  Leading unit shares of this path's coefficient-difference energy: [(1448, 0.0026), (773, 0.00239), (2035, 0.00236), (1896, 0.00217)]
+
+=== FOCUSED CHECK: L11 ATTENTION -> L12 QUERY/KEY READERS ===
+L11H0 OV -> L12 attn/q                relative=0.02027 normalized_delta=0.000101 coupling_A=0.0050 coupling_B=0.0050 reader_ratio=0.665 writer_ratio=0.746 cross_cos=+0.002
+L11H1 OV -> L12 attn/q                relative=0.02912 normalized_delta=0.000197 coupling_A=0.0068 coupling_B=0.0068 reader_ratio=0.845 writer_ratio=0.502 cross_cos=+0.040
+L11H2 OV -> L12 attn/q                relative=0.02161 normalized_delta=0.000072 coupling_A=0.0033 coupling_B=0.0033 reader_ratio=0.873 writer_ratio=0.451 cross_cos=+0.044
+L11H3 OV -> L12 attn/q                relative=0.02045 normalized_delta=0.000075 coupling_A=0.0037 coupling_B=0.0037 reader_ratio=0.939 writer_ratio=0.385 cross_cos=-0.041
+L11H0 OV -> L12 attn/k                relative=0.02108 normalized_delta=0.000084 coupling_A=0.0040 coupling_B=0.0040 reader_ratio=0.473 writer_ratio=0.859 cross_cos=+0.047
+L11H1 OV -> L12 attn/k                relative=0.03012 normalized_delta=0.000163 coupling_A=0.0054 coupling_B=0.0054 reader_ratio=0.543 writer_ratio=0.728 cross_cos=+0.223
+L11H2 OV -> L12 attn/k                relative=0.01719 normalized_delta=0.000045 coupling_A=0.0026 coupling_B=0.0026 reader_ratio=0.728 writer_ratio=0.656 cross_cos=+0.040
+L11H3 OV -> L12 attn/k                relative=0.01532 normalized_delta=0.000046 coupling_A=0.0030 coupling_B=0.0030 reader_ratio=0.800 writer_ratio=0.621 cross_cos=-0.025
+
+=== FOCUSED CHECK: FINAL-LAYER ATTENTION -> MLP ===
+L17H0 OV -> L17 MLP/gate              relative=0.01390 normalized_delta=0.000075 coupling_A=0.0054 coupling_B=0.0054 reader_ratio=0.639 writer_ratio=0.758 cross_cos=+0.017
+  Leading unit shares of this path's coefficient-difference energy: [(345, 0.01297), (2024, 0.01068), (1026, 0.01041), (798, 0.00746)]
+L17H0 OV -> L17 MLP/up                relative=0.01304 normalized_delta=0.000072 coupling_A=0.0055 coupling_B=0.0055 reader_ratio=0.661 writer_ratio=0.738 cross_cos=+0.020
+  Leading unit shares of this path's coefficient-difference energy: [(110, 0.00757), (1710, 0.00731), (1563, 0.00533), (373, 0.00469)]
+L17H1 OV -> L17 MLP/gate              relative=0.01919 normalized_delta=0.000145 coupling_A=0.0075 coupling_B=0.0075 reader_ratio=0.423 writer_ratio=0.885 cross_cos=+0.052
+  Leading unit shares of this path's coefficient-difference energy: [(345, 0.01543), (1026, 0.01317), (2024, 0.01081), (1180, 0.00925)]
+L17H1 OV -> L17 MLP/up                relative=0.01731 normalized_delta=0.000137 coupling_A=0.0079 coupling_B=0.0079 reader_ratio=0.439 writer_ratio=0.880 cross_cos=+0.041
+  Leading unit shares of this path's coefficient-difference energy: [(110, 0.00878), (1710, 0.00705), (1853, 0.00636), (1563, 0.00578)]
+L17H2 OV -> L17 MLP/gate              relative=0.01785 normalized_delta=0.000084 coupling_A=0.0047 coupling_B=0.0047 reader_ratio=0.463 writer_ratio=0.892 cross_cos=-0.012
+  Leading unit shares of this path's coefficient-difference energy: [(345, 0.02109), (1026, 0.01898), (2024, 0.01332), (492, 0.01087)]
+L17H2 OV -> L17 MLP/up                relative=0.01669 normalized_delta=0.000077 coupling_A=0.0046 coupling_B=0.0046 reader_ratio=0.491 writer_ratio=0.878 cross_cos=-0.014
+  Leading unit shares of this path's coefficient-difference energy: [(110, 0.01078), (1710, 0.0106), (1853, 0.00956), (1932, 0.00773)]
+L17H3 OV -> L17 MLP/gate              relative=0.01866 normalized_delta=0.000125 coupling_A=0.0067 coupling_B=0.0067 reader_ratio=0.406 writer_ratio=0.914 cross_cos=+0.001
+  Leading unit shares of this path's coefficient-difference energy: [(345, 0.02601), (1026, 0.02341), (2024, 0.01914), (234, 0.01836)]
+L17H3 OV -> L17 MLP/up                relative=0.01994 normalized_delta=0.000109 coupling_A=0.0055 coupling_B=0.0055 reader_ratio=0.453 writer_ratio=0.892 cross_cos=-0.000
+  Leading unit shares of this path's coefficient-difference energy: [(110, 0.01631), (1710, 0.01452), (1563, 0.01234), (1853, 0.01207)]
+
+Elapsed: 21.7s
+These are open-path coefficient products, not forward passes or activations.
+Factor-norm normalization is a matrix statistic, not hidden-state normalization.
+A nonzero or large path coefficient does not establish use on any message.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

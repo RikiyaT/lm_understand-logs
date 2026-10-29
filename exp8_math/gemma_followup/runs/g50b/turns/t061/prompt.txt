@@ -1,0 +1,7 @@
+OUTPUT of Python run 35 of at most 300:
+```
+REFERENCE SCREEN {'solution_delta_nats_per_token': 0.016548140629311092, 'digit_delta_nats_per_token': -0.015165977254558705, 'improved_solutions': 22, 'improved_digit_scores': 15}
+SELECTED UNIT SOLUTION ACTIVATIONS [{'unit': 971, 'mean': -0.045, 'rms': 0.26}, {'unit': 180, 'mean': 0.017, 'rms': 0.078}, {'unit': 149, 'mean': 0.019, 'rms': 0.078}, {'unit': 1680, 'mean': -0.005, 'rms': 0.049}, {'unit': 232, 'mean': 0.008, 'rms': 0.173}, {'unit': 1724, 'mean': 0.035, 'rms': 0.07}, {'unit': 312, 'mean': 0.009, 'rms': 0.052}, {'unit': 1096, 'mean': -0.02, 'rms': 0.065}]
+Pass 24 ready.
+
+```

@@ -1,0 +1,7 @@
+OUTPUT of Python run 38 of at most 300:
+```
+HALF L11 {'pass': 26, 'n': 1024, 'gain_pp': 2.44140625, 'paired_SE_pp': 1.6125288908344002, 'problem_cluster_SE_pp': 1.6822460060040214}
+EARLIER COMBINATION POOLED {'passes': [17, 18], 'answers_per_model': 2048, 'problems': 32, 'original_accuracy': 0.48193359375, 'edited_accuracy': 0.49951171875, 'gain_pp': 1.7578125, 'sample_SE_pp': 1.2934475561330114, 'problem_cluster_SE_pp': 1.8358838787639709}
+Candidate archived and pass27 logged.
+
+```

@@ -1,0 +1,46 @@
+OUTPUT of run 4 of at most 60:
+```
+HYPOTHESIS: MLP DIFFERENCES ARE MAINLY UNIT PERMUTATIONS
+OR FUNCTION-PRESERVING RECIPROCAL UP/DOWN RESCALINGS
+
+Projection fractions use ordinary squared parameter distance.
+Outer-product statistics are unitwise; cross-unit effects are not included.
+Cancellation ratio: 0 = complete cancellation; 1 = zero aggregate cross term.
+
+layer nearest_identity exact_gate_matches gate_relative rescale_fraction_UD rescale_fraction_all_MLP invariant_product_relative cancellation_ratio
+0 2048 0 0.00616342 0.000512155 0.00033512 0.0120261 1.00072
+1 2048 0 0.00627413 0.000653581 0.000424952 0.0177495 1.00066
+2 2048 0 0.00637093 0.000571981 0.00037042 0.0151098 1.00072
+3 2048 0 0.00645423 0.000658475 0.000420675 0.0172572 1.00071
+4 2048 0 0.00651063 0.000762559 0.000489264 0.0194937 1.00056
+5 2048 0 0.00650064 0.000555018 0.000354149 0.0117916 1.00104
+6 2048 0 0.00655383 0.000645655 0.000406048 0.0154289 1.00082
+7 2048 0 0.00646623 0.000662512 0.000422493 0.0142458 1.00086
+8 2048 0 0.006385 0.000744646 0.000474875 0.0174584 1.00066
+9 2048 0 0.00640829 0.000642807 0.000415761 0.0134912 1.00092
+10 2048 0 0.00650929 0.000712704 0.000455651 0.01744 1.00065
+11 2048 0 0.0065066 0.000669532 0.000421393 0.0133076 1.00073
+12 2048 0 0.00667226 0.000523336 0.0003355 0.0128325 1.00074
+13 2048 0 0.00673226 0.000577049 0.000374388 0.0177988 1.00076
+14 2048 0 0.0068377 0.000580216 0.000378082 0.0195415 1.00066
+15 2048 0 0.00680609 0.000547556 0.000358769 0.016836 1.00078
+16 2048 0 0.00662391 0.000570325 0.000372018 0.0152043 1.00083
+17 2048 0 0.00649295 0.000708487 0.00045588 0.0148489 1.00082
+
+AGGREGATE
+Units examined: 36864
+Nearest gate row retains original unit index: 36864 / 36864
+Exactly matching nearest gate rows: 0 / 36864
+Fraction of up/down squared difference in rescaling directions: 0.0006255473491966373
+Fraction of all MLP squared difference in those directions: 0.0004026642422437584
+Relative difference of unitwise rescaling-invariant products: 0.01504416201348529
+Aggregate outer-product cancellation ratio: 1.0007611121089195
+Units with >99% of up/down difference in rescaling direction: 0
+Largest single-unit rescaling projection fraction: 0.04320165261967931
+
+INTERPRETATION LIMIT
+This tests specific function-preserving parameter symmetries.
+It does not test every possible functional equivalence,
+nor identify semantic features, behavioral importance, or sycophancy.
+
+```

@@ -1,0 +1,7 @@
+OUTPUT of Python run 38 of at most 300:
+```
+Pass19: {'pass': 19, 'n': 1008, 'gain': -0.022817460317460316, 'sample_se': 0.014262279552566452, 'original': {'accuracy': 0.3601190476190476, 'repeated': 0.14781746031746032, 'many_finals': 0.10813492063492064, 'cut': 0.04365079365079365}, 'edited': {'accuracy': 0.3373015873015873, 'repeated': 0.15575396825396826, 'many_finals': 0.11011904761904762, 'cut': 0.04365079365079365}}
+Pass20 edit: {'model.layers.11.self_attn.o_proj.weight': {'head': 0, 'columns': [0, 256], 'column_multiplier': 1.1, 'removed_fraction': -0.1}}
+Relative tensor change: 0.04036903753876686
+
+```

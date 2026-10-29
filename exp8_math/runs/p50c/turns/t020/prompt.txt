@@ -1,0 +1,11 @@
+OUTPUT of Python run 12 of at most 300:
+```
+Pair 7 N 32 original 0.125 edited 0.1875 difference 0.0625 SE 0.0435
+original cut 0.9062 tokens 30123 by_source {'gsm8k': np.float64(0.0625), 'math': np.float64(0.1875)}
+edited cut 0.8125 tokens 27698 by_source {'gsm8k': np.float64(0.1875), 'math': np.float64(0.1875)}
+Traceback (most recent call last):
+  File "<string>", line 19, in <module>
+  File "<run>", line 17, in <module>
+NameError: name 'target19' is not defined
+
+```

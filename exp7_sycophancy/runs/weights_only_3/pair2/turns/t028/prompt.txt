@@ -1,0 +1,104 @@
+OUTPUT of run 18 of at most 60:
+```
+Completed positional-phase decomposition for layer 0
+Completed positional-phase decomposition for layer 1
+Completed positional-phase decomposition for layer 2
+Completed positional-phase decomposition for layer 3
+Completed positional-phase decomposition for layer 4
+Completed positional-phase decomposition for layer 5
+Completed positional-phase decomposition for layer 6
+Completed positional-phase decomposition for layer 7
+Completed positional-phase decomposition for layer 8
+Completed positional-phase decomposition for layer 9
+Completed positional-phase decomposition for layer 10
+Completed positional-phase decomposition for layer 11
+Completed positional-phase decomposition for layer 12
+Completed positional-phase decomposition for layer 13
+Completed positional-phase decomposition for layer 14
+Completed positional-phase decomposition for layer 15
+Completed positional-phase decomposition for layer 16
+Completed positional-phase decomposition for layer 17
+
+=== POSITIONAL PHASE VERSUS OTHER MATCHING-COEFFICIENT CHANGES ===
+All fractions concern frequency-resolved QK numerator coefficients.
+State-dependent normalization denominators are not evaluated.
+The per-frequency amplitude/phase/residual decomposition is algebraic.
+Uniform-shift fraction is a first-order, one-shift-per-head restriction.
+No sine/cosine at a model position, attention pattern, or hidden input was evaluated.
+mode L | phase_fraction phase_control_median | uniform_shift_fraction shift_control_median | amplitude remaining
+raw   0 | 1.186800e-03 7.403575e-04 | 2.538097e-05 2.469789e-05 | 1.376832e-03 0.997436
+raw   1 | 1.621652e-03 7.928163e-04 | 1.237788e-04 4.691186e-06 | 1.398422e-03 0.996980
+raw   2 | 1.017192e-03 7.766872e-04 | 1.212678e-05 4.827906e-06 | 9.421845e-04 0.998041
+raw   3 | 9.944900e-04 7.632393e-04 | 7.287386e-06 4.101528e-06 | 1.073718e-03 0.997932
+raw   4 | 8.721631e-04 7.119730e-04 | 4.081275e-06 5.622136e-06 | 8.830912e-04 0.998245
+raw   5 | 7.381077e-04 7.629528e-04 | 5.469786e-05 2.017991e-05 | 1.179695e-03 0.998082
+raw   6 | 9.831480e-04 8.061843e-04 | 2.914536e-06 1.009159e-05 | 9.141658e-04 0.998103
+raw   7 | 9.582846e-04 7.341013e-04 | 1.873173e-05 7.638749e-06 | 1.144164e-03 0.997898
+raw   8 | 9.760836e-04 7.458309e-04 | 3.100287e-05 1.222212e-05 | 1.105637e-03 0.997918
+raw   9 | 9.212254e-04 7.696303e-04 | 4.240732e-05 1.789260e-05 | 1.118294e-03 0.997960
+raw  10 | 9.584166e-04 8.090851e-04 | 8.926859e-06 2.119336e-05 | 1.136861e-03 0.997905
+raw  11 | 7.814225e-04 6.850924e-04 | 2.032839e-07 3.699709e-06 | 1.037502e-03 0.998181
+raw  12 | 7.633910e-04 8.324503e-04 | 5.195455e-06 1.090343e-05 | 1.131361e-03 0.998105
+raw  13 | 6.884524e-04 8.066081e-04 | 9.554156e-06 1.023884e-05 | 7.978096e-04 0.998514
+raw  14 | 6.259395e-04 7.601874e-04 | 1.607342e-06 1.763819e-05 | 7.392320e-04 0.998635
+raw  15 | 8.358513e-04 7.851363e-04 | 1.071349e-05 1.535201e-05 | 9.426252e-04 0.998222
+raw  16 | 8.990206e-04 7.739627e-04 | 1.164483e-05 1.012935e-05 | 1.023719e-03 0.998077
+raw  17 | 8.636218e-04 8.314507e-04 | 3.304985e-06 1.333052e-05 | 1.735573e-03 0.997401
+diag  0 | 1.125818e-03 1.611455e-03 | 3.527388e-06 4.947779e-06 | 2.671834e-03 0.996202
+diag  1 | 8.107533e-04 6.764229e-04 | 2.636010e-05 3.191505e-06 | 2.939292e-03 0.996250
+diag  2 | 8.597851e-04 8.509431e-04 | 7.626019e-06 2.255333e-06 | 2.031609e-03 0.997109
+diag  3 | 1.331111e-03 1.416573e-03 | 1.226355e-05 2.931375e-06 | 2.282781e-03 0.996386
+diag  4 | 6.623859e-04 6.485304e-04 | 6.294217e-06 3.131405e-06 | 6.717424e-03 0.992620
+diag  5 | 2.270804e-03 2.022261e-03 | 2.389942e-07 2.393125e-07 | 3.704578e-03 0.994025
+diag  6 | 1.724039e-03 1.566715e-03 | 1.209191e-05 4.924567e-06 | 3.606778e-03 0.994669
+diag  7 | 8.414172e-04 9.216213e-04 | 9.212602e-07 1.736382e-06 | 4.242931e-03 0.994916
+diag  8 | 7.852241e-04 7.211693e-04 | 2.708465e-06 5.238055e-06 | 5.630790e-03 0.993584
+diag  9 | 1.332720e-03 1.187761e-03 | 3.495151e-06 4.196772e-06 | 4.585807e-03 0.994081
+diag 10 | 1.484892e-03 1.467900e-03 | 1.228289e-05 6.076028e-06 | 7.480780e-03 0.991034
+diag 11 | 5.862617e-03 4.649318e-03 | 2.607408e-05 9.706562e-06 | 1.077701e-02 0.983360
+diag 12 | 6.143233e-03 5.162225e-03 | 1.323543e-05 7.833663e-06 | 1.259819e-02 0.981259
+diag 13 | 4.792360e-03 4.922669e-03 | 7.088237e-06 2.005667e-05 | 1.271414e-02 0.982493
+diag 14 | 3.360290e-03 3.883623e-03 | 1.577036e-05 3.637567e-06 | 1.567521e-02 0.980965
+diag 15 | 3.397748e-03 3.645258e-03 | 2.141120e-05 1.717102e-05 | 2.046339e-02 0.976139
+diag 16 | 4.755895e-03 5.179426e-03 | 6.206731e-05 3.943119e-05 | 1.642203e-02 0.978822
+diag 17 | 7.399519e-03 6.707696e-03 | 1.134110e-05 6.781128e-06 | 1.517607e-02 0.977424
+
+=== HEADS WITH LARGEST PER-FREQUENCY PHASE FRACTIONS ===
+
+ raw
+L1H2: phase_fraction=0.00176486, uniform_shift_fraction=0.000349302, shift_parameter=-0.000915256, peak_phase_frequency=38, peak_pair_phase_angle=-0.000366152
+L1H0: phase_fraction=0.00170864, uniform_shift_fraction=4.33101e-05, shift_parameter=+0.00021304, peak_phase_frequency=38, peak_pair_phase_angle=-0.000434495
+L1H1: phase_fraction=0.00159743, uniform_shift_fraction=2.71792e-06, shift_parameter=-5.87109e-05, peak_phase_frequency=38, peak_pair_phase_angle=-0.000387881
+L1H3: phase_fraction=0.00140591, uniform_shift_fraction=7.09223e-05, shift_parameter=+0.000277942, peak_phase_frequency=38, peak_pair_phase_angle=-0.000456685
+L0H2: phase_fraction=0.0013395, uniform_shift_fraction=1.70239e-05, shift_parameter=-0.000111005, peak_phase_frequency=56, peak_pair_phase_angle=-0.00191527
+L0H0: phase_fraction=0.00127454, uniform_shift_fraction=2.59938e-05, shift_parameter=+0.000125954, peak_phase_frequency=11, peak_pair_phase_angle=+0.000300868
+L3H3: phase_fraction=0.00124539, uniform_shift_fraction=8.77273e-06, shift_parameter=+0.000515587, peak_phase_frequency=95, peak_pair_phase_angle=+0.00082467
+L6H3: phase_fraction=0.0012043, uniform_shift_fraction=7.62331e-06, shift_parameter=+7.77597e-05, peak_phase_frequency=117, peak_pair_phase_angle=+0.00106151
+
+ diag
+L17H2: phase_fraction=0.00906175, uniform_shift_fraction=8.78041e-07, shift_parameter=+0.0014562, peak_phase_frequency=69, peak_pair_phase_angle=+0.0029571
+L11H2: phase_fraction=0.00862269, uniform_shift_fraction=1.29097e-07, shift_parameter=+0.000536984, peak_phase_frequency=108, peak_pair_phase_angle=+0.00626887
+L17H1: phase_fraction=0.00796818, uniform_shift_fraction=2.92177e-05, shift_parameter=+0.0012963, peak_phase_frequency=124, peak_pair_phase_angle=-0.00588511
+L11H3: phase_fraction=0.00730393, uniform_shift_fraction=1.03806e-06, shift_parameter=-0.000568356, peak_phase_frequency=54, peak_pair_phase_angle=+0.00821132
+L13H3: phase_fraction=0.00701064, uniform_shift_fraction=3.13996e-05, shift_parameter=+0.00188038, peak_phase_frequency=123, peak_pair_phase_angle=+0.00267035
+L12H0: phase_fraction=0.00648536, uniform_shift_fraction=2.99962e-06, shift_parameter=-0.00118341, peak_phase_frequency=125, peak_pair_phase_angle=-0.00568836
+L12H2: phase_fraction=0.00630394, uniform_shift_fraction=8.7499e-06, shift_parameter=-0.00213887, peak_phase_frequency=124, peak_pair_phase_angle=+0.00500313
+L12H3: phase_fraction=0.00628082, uniform_shift_fraction=5.25073e-06, shift_parameter=-0.00201739, peak_phase_frequency=104, peak_pair_phase_angle=-0.00442972
+
+=== PREVIOUS MATCHING CANDIDATES ===
+L11H0 raw: phase=0.000772714, uniform_shift=4.89687e-08, shift_parameter=-1.29497e-05
+L11H0 diag: phase=0.00430879, uniform_shift=9.76024e-06, shift_parameter=-0.00104685
+L11H1 raw: phase=0.000799171, uniform_shift=1.13808e-09, shift_parameter=+1.595e-06
+L11H1 diag: phase=0.00546776, uniform_shift=6.06288e-05, shift_parameter=-0.0011911
+L12H2 raw: phase=0.000674226, uniform_shift=1.08353e-05, shift_parameter=+4.89794e-05
+L12H2 diag: phase=0.00630394, uniform_shift=8.7499e-06, shift_parameter=-0.00213887
+L17H1 raw: phase=0.000857393, uniform_shift=2.66043e-09, shift_parameter=+1.45974e-06
+L17H1 diag: phase=0.00796818, uniform_shift=2.92177e-05, shift_parameter=+0.0012963
+L5H3 raw: phase=0.000661395, uniform_shift=3.44764e-05, shift_parameter=+0.000132255
+L5H3 diag: phase=0.00136564, uniform_shift=3.64923e-07, shift_parameter=-0.000628594
+
+Maximum numerical negative-residual fraction: -0.0
+Shift signs are coefficient conventions, not observed recency preferences.
+The location and semantic content of the user's guess remain unknown.
+
+```

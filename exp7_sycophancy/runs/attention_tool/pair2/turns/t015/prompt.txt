@@ -1,0 +1,101 @@
+OUTPUT of run 14 of at most 20:
+```
+L,H 5 1
+ paired contrast cosine A: [ 0.0006  0.0517  0.0046  0.0481 -0.0425]
+ paired contrast cosine B: [ 0.001   0.0521  0.0052  0.048  -0.0422]
+ A/B direction similarity: [0.9999 0.9999 0.9997 0.9996 0.9999]
+ relative direction change: [0.0176 0.0117 0.0309 0.0288 0.0162]
+L,H 5 3
+ paired contrast cosine A: [-0.015   0.0044 -0.0612  0.0015 -0.0555]
+ paired contrast cosine B: [-0.0149  0.0046 -0.0611  0.0005 -0.055 ]
+ A/B direction similarity: [0.9997 0.9999 0.9997 0.9998 0.9998]
+ relative direction change: [0.0267 0.0148 0.0226 0.018  0.0197]
+L,H 9 0
+ paired contrast cosine A: [0.0052 0.0569 0.0531 0.0699 0.1069]
+ paired contrast cosine B: [0.0051 0.0568 0.0539 0.0699 0.1075]
+ A/B direction similarity: [0.9999 0.9999 0.9999 0.9999 0.9999]
+ relative direction change: [0.0136 0.0131 0.014  0.0147 0.0146]
+L,H 9 2
+ paired contrast cosine A: [0.1709 0.1622 0.2087 0.258  0.1611]
+ paired contrast cosine B: [0.1704 0.1627 0.2095 0.2579 0.1619]
+ A/B direction similarity: [0.9999 0.9999 0.9999 0.9998 0.9999]
+ relative direction change: [0.0119 0.0118 0.0133 0.0179 0.0161]
+L,H 10 2
+ paired contrast cosine A: [0.111  0.0851 0.1269 0.0893 0.1024]
+ paired contrast cosine B: [0.1105 0.0851 0.1267 0.0891 0.1023]
+ A/B direction similarity: [0.9999 0.9999 0.9999 0.9999 0.9999]
+ relative direction change: [0.0132 0.0143 0.0155 0.014  0.0166]
+L,H 12 0
+ paired contrast cosine A: [-0.0321 -0.037   0.0099 -0.0567 -0.0275]
+ paired contrast cosine B: [-0.0326 -0.0382  0.0083 -0.0561 -0.0278]
+ A/B direction similarity: [0.9999 0.9999 0.9999 0.9999 0.9999]
+ relative direction change: [0.0125 0.0115 0.0145 0.0115 0.0117]
+L,H 13 3
+ paired contrast cosine A: [ 0.061   0.0869  0.0916 -0.0213 -0.0892]
+ paired contrast cosine B: [ 0.0597  0.0843  0.092  -0.0213 -0.0898]
+ A/B direction similarity: [1.     0.9999 1.     1.     1.    ]
+ relative direction change: [0.0092 0.0116 0.0095 0.0086 0.0084]
+L,H 17 2
+ paired contrast cosine A: [ 0.1016  0.1099  0.0297 -0.1231 -0.0007]
+ paired contrast cosine B: [ 0.1021  0.1097  0.0302 -0.1234 -0.0006]
+ A/B direction similarity: [0.9999 1.     1.     0.9999 1.    ]
+ relative direction change: [0.0109 0.0086 0.0087 0.011  0.0093]
+
+VOCABULARY ENDPOINTS OF CONTRAST-TRANSMISSION WEIGHT PRODUCTS
+These are not logits on prompts. Positive/negative refer to the stated input contrast.
+(5, 1, ('8', '7'))
+ + [(' putem', 0.198), ('archiwizowane', 0.193), ('Now', 0.191), ('Thankfully', 0.187), ('Once', 0.186), ('Developers', 0.186)]
+ - [('лиш', -0.07), ('هَا', -0.07), ('лер', -0.067), ('جراء', -0.056), ('ню', -0.054), ('н', -0.053)]
+(5, 1, (' London', ' Paris'))
+ + [(' tattoos', 0.175), (' sugars', 0.167), (' philosophers', 0.16), ('ského', 0.16), (' incorporated', 0.159), (' genomes', 0.157)]
+ - [('atus', -0.112), ('andid', -0.103), ('abord', -0.102), (' efectu', -0.102), ('ชนะ', -0.099), ('enuation', -0.098)]
+(5, 1, (' A', ' B'))
+ + [('ierungs', 0.174), ('avelmente', 0.157), ('nage', 0.156), ('frastructure', 0.154), ('anjut', 0.153), ('ligne', 0.153)]
+ - [(' These', -0.162), ('The', -0.161), ('Pa', -0.161), ('aps', -0.158), (' The', -0.158), ('These', -0.157)]
+(5, 3, ('8', '7'))
+ + [('спользование', 0.153), (' stronie', 0.121), (' стороны', 0.103), ('что', 0.101), ('ньо', 0.096), (' ترمیم', 0.093)]
+ - [(' chapters', -0.167), (' clashed', -0.164), (' seminars', -0.164), (' wrote', -0.162), (' cham', -0.162), (' generates', -0.161)]
+(5, 3, (' London', ' Paris'))
+ + [('rizable', 0.169), ('boxplot', 0.163), ('adeloupe', 0.156), ('quisitos', 0.154), ('＿＿', 0.151), ('UMP', 0.151)]
+ - [('εί', -0.131), ('ześnie', -0.13), (' занимается', -0.129), (' ensamb', -0.129), (' Autón', -0.128), (' المحلي', -0.125)]
+(5, 3, (' A', ' B'))
+ + [('رآ', 0.156), ('uned', 0.145), ('cognitive', 0.145), ('degenerative', 0.14), ('p', 0.137), ('водства', 0.136)]
+ - [('ajjati', -0.147), ('谛', -0.146), ('ionych', -0.143), (' Extras', -0.141), (' extra', -0.139), (' extras', -0.137)]
+(9, 0, ('8', '7'))
+ + [('inform', 0.144), (' magnified', 0.131), ('一把', 0.13), ('xer', 0.129), (' ito', 0.129), (' typeof', 0.128)]
+ - [('巽', -0.128), (' tornare', -0.123), (' canoeing', -0.123), ('urations', -0.122), (' восстановления', -0.122), (' resuming', -0.12)]
+(9, 0, (' London', ' Paris'))
+ + [(' المتوسط', 0.192), (' متوسط', 0.188), ('خان', 0.178), ('ällen', 0.175), ('ußer', 0.175), (' poorest', 0.174)]
+ - [('canon', -0.093), (' Canon', -0.093), (' teamwork', -0.087), (' embodied', -0.085), (' Mural', -0.083), ('Key', -0.083)]
+(9, 0, (' A', ' B'))
+ + [('A', 0.07), (' A', 0.064), (' osztály', 0.06), (' family', 0.053), (' rész', 0.049), ('I', 0.044)]
+ - [('ulfite', -0.223), ('asati', -0.214), (' Respond', -0.214), (' precludes', -0.213), (' glyphicon', -0.212), (' pharetra', -0.212)]
+(9, 2, ('8', '7'))
+ + [(' skillset', 0.199), (' strive', 0.191), (' [];', 0.19), ('skilled', 0.19), ('employed', 0.187), (' excelled', 0.187)]
+ - [('творю', -0.087), ('่วง', -0.072), (' mengubah', -0.072), ('äns', -0.071), (' nedenle', -0.071), ('溘', -0.07)]
+(9, 2, (' London', ' Paris'))
+ + [('+', 0.171), (' London', 0.151), (' +', 0.149), ('MaxLength', 0.147), (' la', 0.146), (' l', 0.146)]
+ - [('duino', -0.141), (' bicolor', -0.13), (' processions', -0.126), (' setImage', -0.123), ('舺', -0.122), (' olympiques', -0.12)]
+(9, 2, (' A', ' B'))
+ + [(' мастер', 0.174), (' sucedido', 0.166), ('viving', 0.166), ('รก', 0.164), ('ותו', 0.164), (' variado', 0.157)]
+ - [('ólicas', -0.154), (' natives', -0.127), ('ólica', -0.109), (' %', -0.108), (' My', -0.107), (' reac', -0.107)]
+(10, 2, ('8', '7'))
+ + [(' bevy', 0.177), (' KPIs', 0.176), (' matchmaking', 0.175), (' statistic', 0.173), (' grooms', 0.173), ('forall', 0.171)]
+ - [('ontaneous', -0.141), (' spontaneously', -0.141), (' spontaneous', -0.129), ('runken', -0.127), ('怒', -0.126), (' repressed', -0.122)]
+(10, 2, (' London', ' Paris'))
+ + [(' utiliser', 0.07), (' system', 0.064), (' exec', 0.064), (' optimal', 0.061), (' employ', 0.06), (' System', 0.06)]
+ - [(' ©️', -0.212), (' Monuments', -0.209), ('UNESCO', -0.207), (' alun', -0.198), ('玷', -0.198), ('tki', -0.198)]
+(10, 2, (' A', ' B'))
+ + [(' manejar', 0.122), (' douceur', 0.12), (' procedimiento', 0.117), (' detenido', 0.116), (' assol', 0.114), (' gestire', 0.107)]
+ - [(' internet', -0.217), (' Internet', -0.198), (' Ц', -0.196), (' television', -0.195), (' pir', -0.194), (' Coca', -0.193)]
+(12, 0, ('8', '7'))
+ + [(' Poh', 0.137), (' Zed', 0.132), (' Void', 0.131), (' INV', 0.131), (' kund', 0.13), (' NF', 0.128)]
+ - [('であれば', -0.122), ('つける', -0.106), ('脷', -0.105), ('akse', -0.099), ('﹣', -0.099), ('สเตอร์', -0.098)]
+(13, 3, ('8', '7'))
+ + [(' Fire', 0.126), (' fire', 0.125), (' Bos', 0.125), (' Fires', 0.125), (' fires', 0.124), (' Sil', 0.122)]
+ - [(' Núñez', -0.117), (' Royalty', -0.116), ('urr', -0.115), ('トロ', -0.114), ('epr', -0.112), (' gratu', -0.111)]
+(17, 2, ('8', '7'))
+ + [('Myanmar', 0.152), (' Nagata', 0.151), (' Fires', 0.147), (' Burma', 0.146), (' stoves', 0.144), (' Mindanao', 0.144)]
+ - [(' patrim', -0.111), (' DeV', -0.109), (' Phar', -0.106), ('egra', -0.103), (' debt', -0.102), ('helia', -0.101)]
+
+```

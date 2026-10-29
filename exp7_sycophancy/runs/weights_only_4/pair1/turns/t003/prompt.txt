@@ -1,0 +1,109 @@
+OUTPUT of run 2 of at most 60:
+```
+NORMALIZATION WEIGHTS
+Each entry: mean(A), max(abs(A)), ||B-A||. Stored weights only.
+Order: ['input_layernorm', 'post_attention_layernorm', 'pre_feedforward_layernorm', 'post_feedforward_layernorm', 'self_attn.q_norm', 'self_attn.k_norm']
+ 0 12.5/61.8/0  -0.361/51.8/0  4.83/19.6/0  0.805/152/0.00401  0.964/3.78/0.00133  0.971/5.84/0.00115
+ 1 24.7/47.5/0  2.75/103/0.00285  29/55.8/0  1.88/195/0.00337  1.69/14.4/0  1.66/7.88/0
+ 2 28.8/93.5/0  0.802/110/0.00294  22.1/65/0  4.61/250/0.00152  0.776/3.02/0.000782  1.07/22/0.00162
+ 3 24.9/62/0.000345  4.11/221/0.00128  24.3/69.5/0.00127  12.4/584/0.00156  0.528/3.25/0.00142  0.75/8.25/0.00121
+ 4 34.2/162/0.00136  3.18/221/0.000897  12.6/51.8/0.00184  6.99/608/0.00109  0.552/5.09/0.00197  1.06/13.9/0.00105
+ 5 13.1/48.2/0.00146  9.78/512/0.000351  11.4/46/0.00171  10.6/740/0  1/5.38/0.0014  1.93/22.6/0
+ 6 20.8/102/0.000649  8.02/352/0.000743  7.15/25.9/0.00162  13.8/784/0  0.459/2.94/0.00242  0.673/19.8/0.00165
+ 7 20/71/0.000488  10.4/392/0  6.33/27/0.0017  16.6/688/0  0.793/4/0.00187  1.03/12.7/0.00154
+ 8 19.9/83.5/0.00122  18.4/406/0.000625  5.79/26.6/0.00133  20/708/0.000488  0.65/8.88/0.00121  0.915/11.2/0.00118
+ 9 16.7/71.5/0.000774  21.5/450/0.00152  3.11/20.9/0.00209  30.1/524/0  0.832/5.94/0.00166  1.04/15/0.00159
+10 16.9/100/0  42.1/482/8.63e-05  3.5/38.2/0.00138  55.9/592/0  0.612/3.31/0.00244  1.68/21.2/0.00148
+11 4.29/52.2/0.0019  110/568/0  4.35/53.8/0.00121  113/892/0  0.551/6.09/0.00163  2.51/29.5/0.00155
+12 14.5/160/0.000518  130/616/0  2.41/30.9/0.00289  162/740/0  0.793/3.92/0.000666  1.23/6.69/0.000757
+13 11.3/122/0.00253  124/454/0  2.17/29/0.00231  175/492/0  0.567/5.88/0.00133  1.04/11.8/0.000671
+14 16.3/171/0.00222  161/482/0  1.89/28.2/0.00357  207/788/0  0.996/4.47/0.00133  1.55/10.3/0.00123
+15 17.2/225/0  171/712/0  1.13/20.9/0.00202  244/1.19e+03/0  0.959/12/0.00178  0.943/13.4/0.00106
+16 20.4/233/0  140/372/0  1/23.2/0.00217  283/1.66e+03/0  0.987/10.2/0.00161  1.23/8.44/0.0015
+17 10.5/121/0  134/448/0  1.15/29.6/0.00218  323/1.65e+03/0  0.816/16.1/0.000988  1.59/5.81/0.000743
+Final norm A min/mean/max: -0.9140625 25.422668 300.0 difference norm: 0.0
+Identical normalization tensors:
+['model.layers.0.input_layernorm.weight', 'model.layers.0.post_attention_layernorm.weight', 'model.layers.0.pre_feedforward_layernorm.weight', 'model.layers.1.input_layernorm.weight', 'model.layers.1.pre_feedforward_layernorm.weight', 'model.layers.1.self_attn.k_norm.weight', 'model.layers.1.self_attn.q_norm.weight', 'model.layers.10.input_layernorm.weight', 'model.layers.10.post_feedforward_layernorm.weight', 'model.layers.11.post_attention_layernorm.weight', 'model.layers.11.post_feedforward_layernorm.weight', 'model.layers.12.post_attention_layernorm.weight', 'model.layers.12.post_feedforward_layernorm.weight', 'model.layers.13.post_attention_layernorm.weight', 'model.layers.13.post_feedforward_layernorm.weight', 'model.layers.14.post_attention_layernorm.weight', 'model.layers.14.post_feedforward_layernorm.weight', 'model.layers.15.input_layernorm.weight', 'model.layers.15.post_attention_layernorm.weight', 'model.layers.15.post_feedforward_layernorm.weight', 'model.layers.16.input_layernorm.weight', 'model.layers.16.post_attention_layernorm.weight', 'model.layers.16.post_feedforward_layernorm.weight', 'model.layers.17.input_layernorm.weight', 'model.layers.17.post_attention_layernorm.weight', 'model.layers.17.post_feedforward_layernorm.weight', 'model.layers.2.input_layernorm.weight', 'model.layers.2.pre_feedforward_layernorm.weight', 'model.layers.5.post_feedforward_layernorm.weight', 'model.layers.5.self_attn.k_norm.weight', 'model.layers.6.post_feedforward_layernorm.weight', 'model.layers.7.post_attention_layernorm.weight', 'model.layers.7.post_feedforward_layernorm.weight', 'model.layers.9.post_feedforward_layernorm.weight', 'model.norm.weight']
+
+DELTA SPECTRA
+Each entry: top singular value, percentage of squared norm in top 1 / top 6.
+Order: ['self_attn.q_proj', 'self_attn.k_proj', 'self_attn.v_proj', 'self_attn.o_proj', 'mlp.gate_proj', 'mlp.up_proj', 'mlp.down_proj']
+ 0 0.0787,15.3/44.0  0.0442,18.8/54.4  0.0486,24.6/64.4  0.0804,17.6/42.9  0.0812,8.3/33.7  0.0817,8.5/32.9  0.0649,5.8/23.0
+ 1 0.0846,17.7/46.5  0.0462,19.7/51.8  0.0463,20.4/56.3  0.0872,21.7/49.0  0.0764,7.1/27.1  0.0764,7.2/27.2  0.0631,5.5/21.3
+ 2 0.0761,13.3/42.6  0.0445,19.0/53.0  0.0357,12.7/42.0  0.0699,12.8/38.7  0.0915,9.6/30.4  0.0899,9.7/29.1  0.0688,6.4/24.0
+ 3 0.0715,11.4/39.4  0.0391,14.1/45.0  0.0354,12.9/40.3  0.0556,9.3/36.0  0.0792,7.5/24.6  0.0763,7.5/25.2  0.0619,5.5/22.4
+ 4 0.0660,9.4/40.6  0.0399,14.3/44.2  0.0327,9.8/36.0  0.0640,10.9/36.7  0.0882,9.2/26.9  0.0814,8.1/25.8  0.0616,5.5/22.2
+ 5 0.0857,16.4/45.3  0.0401,15.9/50.4  0.0335,11.1/39.5  0.0609,9.8/34.8  0.0838,8.3/24.5  0.0785,7.6/24.2  0.0696,7.0/22.8
+ 6 0.0642,9.0/37.8  0.0372,12.0/41.6  0.0302,9.2/32.2  0.0637,10.9/36.3  0.0864,8.8/25.1  0.0767,7.4/23.5  0.0719,7.9/24.0
+ 7 0.0697,11.1/38.8  0.0393,14.3/42.6  0.0310,10.3/36.2  0.0580,10.1/30.9  0.0901,10.0/28.5  0.0836,9.0/26.8  0.0715,7.9/25.0
+ 8 0.0636,9.9/36.5  0.0299,9.4/37.8  0.0280,7.6/31.1  0.0625,10.9/37.1  0.0937,10.8/28.6  0.0885,9.9/28.5  0.0742,8.6/26.4
+ 9 0.1044,22.6/48.1  0.0365,11.3/47.2  0.0289,8.5/33.2  0.0641,11.2/33.8  0.0975,11.9/28.9  0.0930,10.9/28.5  0.0747,8.5/26.1
+10 0.0975,19.2/46.4  0.0447,16.1/46.2  0.0275,8.1/30.2  0.0585,8.5/29.2  0.1051,13.6/31.9  0.0967,12.0/30.2  0.0832,10.6/28.7
+11 0.0860,17.2/45.8  0.0437,17.6/49.3  0.0319,10.5/31.1  0.0515,6.7/23.9  0.1014,12.3/29.0  0.0918,10.7/27.1  0.0807,10.3/29.5
+12 0.1054,22.3/51.8  0.0546,23.6/52.8  0.0276,9.1/33.5  0.0539,7.5/27.6  0.1007,12.1/30.0  0.1000,12.2/29.5  0.0742,7.9/24.1
+13 0.0789,12.8/43.6  0.0413,13.9/44.4  0.0300,9.3/28.2  0.0526,7.5/25.9  0.1089,13.4/32.7  0.1040,12.5/31.4  0.0704,6.6/22.5
+14 0.0624,9.3/38.6  0.0398,14.1/43.1  0.0372,13.8/37.3  0.0698,15.1/31.9  0.1082,12.9/30.7  0.1050,12.3/29.6  0.0686,6.0/22.2
+15 0.0774,12.2/39.0  0.0338,9.3/38.8  0.0346,10.7/34.2  0.0516,7.1/26.7  0.0955,10.3/25.7  0.0967,10.5/25.9  0.0716,6.4/27.5
+16 0.0637,9.2/31.7  0.0321,9.0/33.5  0.0317,9.8/33.4  0.0643,12.1/38.5  0.0877,9.1/23.5  0.0833,8.2/22.8  0.0848,9.7/34.7
+17 0.0679,12.4/39.8  0.0423,17.7/43.0  0.0276,10.1/34.3  0.0688,17.1/36.8  0.0782,7.7/22.2  0.0768,7.5/22.0  0.1001,15.9/41.8
+
+MOST COHERENT DIFFERENCES (not behavioral importance)
+0 self_attn.v_proj singular values: [0.0486 0.0368 0.0326 0.0244 0.0205 0.0195] top1 fraction: 0.2462 top6 fraction: 0.6444
+12 self_attn.k_proj singular values: [0.0546 0.036  0.027  0.0259 0.0228 0.0219] top1 fraction: 0.2356 top6 fraction: 0.5276
+9 self_attn.q_proj singular values: [0.1044 0.0616 0.0509 0.048  0.0452 0.039 ] top1 fraction: 0.2264 top6 fraction: 0.4811
+12 self_attn.q_proj singular values: [0.1054 0.0647 0.0627 0.0508 0.0463 0.0436] top1 fraction: 0.2227 top6 fraction: 0.5183
+1 self_attn.o_proj singular values: [0.0872 0.06   0.0438 0.0401 0.0361 0.0339] top1 fraction: 0.217 top6 fraction: 0.4903
+1 self_attn.v_proj singular values: [0.0463 0.0398 0.0291 0.0247 0.0204 0.0178] top1 fraction: 0.2045 top6 fraction: 0.5633
+1 self_attn.k_proj singular values: [0.0462 0.0325 0.0284 0.0269 0.0224 0.0193] top1 fraction: 0.1971 top6 fraction: 0.5175
+10 self_attn.q_proj singular values: [0.0975 0.065  0.0601 0.0467 0.0421 0.0408] top1 fraction: 0.192 top6 fraction: 0.4639
+2 self_attn.k_proj singular values: [0.0445 0.0364 0.0306 0.0233 0.0206 0.0175] top1 fraction: 0.1903 top6 fraction: 0.5304
+0 self_attn.k_proj singular values: [0.0442 0.039  0.0285 0.0244 0.0201 0.0194] top1 fraction: 0.1877 top6 fraction: 0.544
+1 self_attn.q_proj singular values: [0.0846 0.0653 0.0476 0.0443 0.042  0.0377] top1 fraction: 0.1769 top6 fraction: 0.4653
+17 self_attn.k_proj singular values: [0.0423 0.03   0.0236 0.0219 0.0179 0.0174] top1 fraction: 0.1767 top6 fraction: 0.4296
+11 self_attn.k_proj singular values: [0.0437 0.0341 0.0287 0.0253 0.0212 0.0193] top1 fraction: 0.1759 top6 fraction: 0.4933
+0 self_attn.o_proj singular values: [0.0804 0.0579 0.0452 0.0397 0.0347 0.0341] top1 fraction: 0.1756 top6 fraction: 0.4293
+
+LEADING OUTPUT-DIFFERENCE DIRECTIONS
+Signs chosen by largest coordinate; + and - are NOT A/B labels.
+English-looking tokens are shown only to keep the output readable.
+
+layer 1 self_attn.o_proj top1 energy fraction 0.217
+dot - [('uggling', -0.1552), ('igheden', -0.1349), ('idoarjo', -0.1307), (' saab', -0.1287), ('istanbul', -0.1286), (' assorted', -0.1282), (' limp', -0.1269), (' saco', -0.1261), (' frumo', -0.1252), (' tummy', -0.1229)]
+dot + [(' AAA', 0.1559), (' Recommend', 0.1417), (' terp', 0.1412), ('Dro', 0.1358), (' oneself', 0.1353), ('Standing', 0.1318), ('Pay', 0.1314), ('itar', 0.1291), (' Simply', 0.1287), ('ifornia', 0.1287)]
+cosine - [('uggling', -0.1613), ('igheden', -0.1382), ('istanbul', -0.1335), (' assorted', -0.1331), ('idoarjo', -0.1322), (' saab', -0.1316), (' limp', -0.1316), (' saco', -0.1284), (' tummy', -0.127), ('alcoholic', -0.1253)]
+cosine + [(' AAA', 0.1603), (' terp', 0.146), (' Recommend', 0.1426), ('Dro', 0.1399), (' oneself', 0.1386), ('Standing', 0.1336), ('ifornia', 0.1317), ('itement', 0.1315), (' instinctively', 0.1299), ('Hab', 0.1294)]
+
+layer 0 self_attn.o_proj top1 energy fraction 0.1756
+dot - [(' oneself', -0.1591), (' Twenty', -0.1505), (' thirty', -0.1401), (' Prima', -0.1383), ('iense', -0.1365), (' ten', -0.1351), ('wipe', -0.1339), (' hir', -0.1323), (' WorldCat', -0.1308), (' Five', -0.1284)]
+dot + [('ydon', 0.1526), ('sstream', 0.1376), (' corresponden', 0.1371), ('mos', 0.137), ('ritable', 0.1349), ('medizin', 0.1316), ('ionization', 0.13), ('iniert', 0.1283), (' voidaan', 0.1281), (' Geophys', 0.1275)]
+cosine - [(' oneself', -0.163), (' Twenty', -0.1477), (' thirty', -0.142), ('iense', -0.1418), ('wipe', -0.1392), (' Prima', -0.1391), (' hir', -0.1348), (' Nons', -0.1342), (' WorldCat', -0.134), (' ten', -0.1334)]
+cosine + [('ydon', 0.1612), ('sstream', 0.1455), ('ritable', 0.1401), (' corresponden', 0.1399), ('mos', 0.1372), (' Geophys', 0.1339), ('iniert', 0.1335), ('ionization', 0.1335), ('inert', 0.1325), ('medizin', 0.1319)]
+
+layer 17 self_attn.o_proj top1 energy fraction 0.1706
+dot - [(' in', -0.1252), (' and', -0.1245), (' to', -0.0978), (' on', -0.096), (' line', -0.0959), (' al', -0.0929), (' is', -0.0906), (' for', -0.0904), (' at', -0.0899), (' un', -0.0885)]
+dot + [(' ADJUST', 0.3045), (' Junio', 0.2865), (' Novartis', 0.2833), ('LOLLIPOP', 0.2798), (' llrp', 0.278), (' masterful', 0.2771), ('Truthy', 0.2768), ('ClkInitStruct', 0.2751), (' INNOV', 0.2736), ('CharCode', 0.2736)]
+cosine - [(' and', -0.1184), (' in', -0.1176), (' line', -0.0942), (' to', -0.0941), (' on', -0.0907), (' al', -0.0885), (' for', -0.0867), (' is', -0.0845), (' at', -0.084), (' un', -0.0836)]
+cosine + [(' ADJUST', 0.3065), (' Junio', 0.2843), (' Novartis', 0.2839), (' masterful', 0.2797), ('LOLLIPOP', 0.2783), ('ClkInitStruct', 0.2777), ('Truthy', 0.2771), ('CharCode', 0.2736), ('Happiness', 0.2736), ('AddModelError', 0.2712)]
+
+layer 17 mlp.down_proj top1 energy fraction 0.1594
+dot - [(' neun', -0.3339), (' quinto', -0.3121), (' oito', -0.3109), (' cinq', -0.3109), (' sechs', -0.3092), ('Nine', -0.3077), (' huit', -0.3067), (' sieben', -0.304), (' quatre', -0.3008), (' SIX', -0.2996)]
+dot + [(' in', 0.1741), (' one', 0.1682), (' I', 0.1578), (' the', 0.155), (' un', 0.1542), (' and', 0.1478), (' first', 0.1472), (' One', 0.1431), (' a', 0.1411), ('one', 0.1375)]
+cosine - [(' neun', -0.32), (' eighty', -0.3095), ('Nine', -0.3069), (' cinq', -0.3033), (' ninety', -0.3027), (' SIX', -0.3024), (' quinto', -0.3012), (' Nine', -0.3004), (' Seventy', -0.2989), (' huit', -0.2978)]
+cosine + [(' in', 0.1635), (' one', 0.1589), (' I', 0.1509), (' the', 0.1463), (' un', 0.1456), (' and', 0.1406), (' first', 0.1394), (' One', 0.1368), (' a', 0.1324), ('one', 0.1321)]
+
+layer 14 self_attn.o_proj top1 energy fraction 0.1512
+dot - [(' Hud', -0.184), (' Burton', -0.181), ('Rod', -0.1744), (' RMB', -0.1737), ('Sur', -0.1729), ('robots', -0.1722), ('Thor', -0.1717), (' Clock', -0.1692), ('Byte', -0.1677), ('Clock', -0.1677)]
+dot + [(' comple', 0.1488), (' experience', 0.1421), (' mean', 0.134), (' need', 0.1277), (' keperluan', 0.1261), (' programmi', 0.1257), (' stati', 0.1255), (' dead', 0.1236), (' reali', 0.123), (' opet', 0.123)]
+cosine - [(' Burton', -0.1849), (' Hud', -0.1831), ('Rod', -0.1757), ('Thor', -0.1737), (' Manson', -0.1735), (' RMB', -0.1732), ('Sur', -0.1732), ('robots', -0.1727), ('Clock', -0.1722), (' Clock', -0.1701)]
+cosine + [(' comple', 0.153), (' experience', 0.139), (' mean', 0.1311), (' stati', 0.1263), ('noti', 0.1257), ('iculaire', 0.1255), (' keperluan', 0.1248), (' programmi', 0.1246), (' reali', 0.1242), (' opet', 0.1242)]
+
+layer 2 self_attn.o_proj top1 energy fraction 0.1284
+dot - [(' Hick', -0.1482), (' Tek', -0.1471), ('EA', -0.1459), ('bay', -0.1447), (' kat', -0.1439), (' Ek', -0.1432), ('ited', -0.1423), (' Rend', -0.1415), (' tik', -0.1408), (' Hux', -0.1395)]
+dot + [('yscrapers', 0.1561), (' reconc', 0.1532), (' viti', 0.153), (' warrantless', 0.1524), ('Wouldn', 0.1488), (' raczej', 0.1456), ('osynthesis', 0.1451), (' weaknesses', 0.144), (' admittedly', 0.1438), (' sobriety', 0.1437)]
+cosine - [(' Hick', -0.1525), ('bay', -0.1476), ('EA', -0.1472), (' Hux', -0.1453), (' Tek', -0.1442), ('ited', -0.1438), ('sey', -0.1438), (' Rend', -0.1429), (' tik', -0.1428), (' kat', -0.1405)]
+cosine + [(' viti', 0.1581), (' reconc', 0.1581), (' warrantless', 0.1565), ('yscrapers', 0.1551), ('Wouldn', 0.151), ('osynthesis', 0.1503), (' admittedly', 0.1494), (' drawbacks', 0.1484), (' disillusion', 0.1481), (' stockings', 0.1469)]
+
+REMINDER: Spectra and token projections do not establish activation,
+attention selection, behavioral labels, or causal importance.
+
+```

@@ -1,0 +1,209 @@
+OUTPUT of run 1 of at most 60:
+```
+=== ARCHITECTURE ===
+A config:
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+Config differences:
+
+Tensor counts: 235 235
+Only in A: []
+Only in B: []
+Shape mismatches: []
+
+=== TENSOR SCHEMA ===
+model.layers.L.input_layernorm.weight [((640,), 'BF16', 'BF16')]
+model.layers.L.mlp.down_proj.weight [((640, 2048), 'BF16', 'BF16')]
+model.layers.L.mlp.gate_proj.weight [((2048, 640), 'BF16', 'BF16')]
+model.layers.L.mlp.up_proj.weight [((2048, 640), 'BF16', 'BF16')]
+model.layers.L.post_attention_layernorm.weight [((640,), 'BF16', 'BF16')]
+model.layers.L.post_feedforward_layernorm.weight [((640,), 'BF16', 'BF16')]
+model.layers.L.pre_feedforward_layernorm.weight [((640,), 'BF16', 'BF16')]
+model.layers.L.self_attn.k_norm.weight [((256,), 'BF16', 'BF16')]
+model.layers.L.self_attn.k_proj.weight [((256, 640), 'BF16', 'BF16')]
+model.layers.L.self_attn.o_proj.weight [((640, 1024), 'BF16', 'BF16')]
+model.layers.L.self_attn.q_norm.weight [((256,), 'BF16', 'BF16')]
+model.layers.L.self_attn.q_proj.weight [((1024, 640), 'BF16', 'BF16')]
+model.layers.L.self_attn.v_proj.weight [((256, 640), 'BF16', 'BF16')]
+model.norm.weight [((640,), 'BF16', 'BF16')]
+
+=== GLOBAL DIFFERENCE (DESCRIPTIVE, NOT CAUSAL) ===
+Present parameters: 100326016
+Exactly different entries: 79596289
+Different-entry fraction: 0.7933763561387707
+||A||_F: 22667.07857203314
+||B||_F: 22667.07857825413
+||B-A||_F: 2.4816944840665722
+Symmetric relative difference: 0.00010948453175558139
+
+=== BY FAMILY ===
+   attention  n=  29500416  changed=79.1826%  delta_norm=1.36549  relative=0.00517985  delta_energy_share=30.2750%
+         mlp  n=  70778880  changed=79.4536%  delta_norm=2.07221  relative=0.00740437  delta_energy_share=69.7224%
+        norm  n=     46720  changed=1.5818%  delta_norm=0.0126686  relative=5.58977e-07  delta_energy_share=0.0026%
+
+=== BY LAYER (-1 MEANS OUTSIDE LAYER BLOCKS) ===
+          -1  n=       640  changed=0.0000%  delta_norm=0  relative=0  delta_energy_share=0.0000%
+           0  n=   5573632  changed=76.2686%  delta_norm=0.551959  relative=0.00131581  delta_energy_share=4.9467%
+           1  n=   5573632  changed=78.7512%  delta_norm=0.561868  relative=0.000528911  delta_energy_share=5.1259%
+           2  n=   5573632  changed=78.0813%  delta_norm=0.575342  relative=0.000531074  delta_energy_share=5.3747%
+           3  n=   5573632  changed=80.0608%  delta_norm=0.573918  relative=0.000398523  delta_energy_share=5.3481%
+           4  n=   5573632  changed=80.9807%  delta_norm=0.584767  relative=0.000381366  delta_energy_share=5.5523%
+           5  n=   5573632  changed=79.0413%  delta_norm=0.583953  relative=0.00046456  delta_energy_share=5.5368%
+           6  n=   5573632  changed=79.5682%  delta_norm=0.581542  relative=0.000468434  delta_energy_share=5.4912%
+           7  n=   5573632  changed=78.8491%  delta_norm=0.573412  relative=0.000477742  delta_energy_share=5.3387%
+           8  n=   5573632  changed=80.1508%  delta_norm=0.581214  relative=0.000419639  delta_energy_share=5.4850%
+           9  n=   5573632  changed=78.9857%  delta_norm=0.587455  relative=0.000402186  delta_energy_share=5.6034%
+          10  n=   5573632  changed=79.7051%  delta_norm=0.592822  relative=0.000241833  delta_energy_share=5.7063%
+          11  n=   5573632  changed=78.9755%  delta_norm=0.580054  relative=9.70672e-05  delta_energy_share=5.4631%
+          12  n=   5573632  changed=79.7023%  delta_norm=0.602966  relative=8.2248e-05  delta_energy_share=5.9032%
+          13  n=   5573632  changed=80.3657%  delta_norm=0.605557  relative=8.81304e-05  delta_energy_share=5.9541%
+          14  n=   5573632  changed=80.2271%  delta_norm=0.608044  relative=7.73274e-05  delta_energy_share=6.0031%
+          15  n=   5573632  changed=79.5609%  delta_norm=0.616286  relative=6.35729e-05  delta_energy_share=6.1669%
+          16  n=   5573632  changed=79.6267%  delta_norm=0.594512  relative=6.2093e-05  delta_energy_share=5.7389%
+          17  n=   5573632  changed=79.1857%  delta_norm=0.56926  relative=5.52171e-05  delta_energy_share=5.2617%
+
+=== TOP 24 TENSORS BY ABSOLUTE DIFFERENCE ENERGY ===
+model.layers.14.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.305469 relative=0.0068377 share=1.5151%
+model.layers.15.mlp.up_proj.weight                             shape=(2048, 640)      delta_norm=0.305232 relative=0.00683183 share=1.5127%
+model.layers.14.mlp.up_proj.weight                             shape=(2048, 640)      delta_norm=0.304285 relative=0.00682034 share=1.5034%
+model.layers.15.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.304196 relative=0.00680609 share=1.5025%
+model.layers.13.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.30068 relative=0.00673226 share=1.4679%
+model.layers.13.mlp.up_proj.weight                             shape=(2048, 640)      delta_norm=0.299094 relative=0.00670877 share=1.4525%
+model.layers.12.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.298754 relative=0.00667226 share=1.4492%
+model.layers.16.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.295344 relative=0.00662391 share=1.4163%
+model.layers.16.mlp.up_proj.weight                             shape=(2048, 640)      delta_norm=0.295295 relative=0.00659705 share=1.4158%
+model.layers.6.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.293052 relative=0.00655383 share=1.3944%
+model.layers.12.mlp.up_proj.weight                             shape=(2048, 640)      delta_norm=0.292072 relative=0.0065337 share=1.3851%
+model.layers.10.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.291906 relative=0.00650929 share=1.3835%
+model.layers.4.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.291688 relative=0.00651063 share=1.3815%
+model.layers.5.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.291341 relative=0.00650064 share=1.3782%
+model.layers.11.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.291335 relative=0.0065066 share=1.3781%
+model.layers.7.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.289641 relative=0.00646623 share=1.3621%
+model.layers.3.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.288857 relative=0.00645423 share=1.3548%
+model.layers.9.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.287637 relative=0.00640829 share=1.3434%
+model.layers.15.mlp.down_proj.weight                           shape=(640, 2048)      delta_norm=0.287552 relative=0.0156697 share=1.3426%
+model.layers.9.mlp.up_proj.weight                              shape=(2048, 640)      delta_norm=0.287056 relative=0.00642938 share=1.3379%
+model.layers.17.mlp.up_proj.weight                             shape=(2048, 640)      delta_norm=0.287023 relative=0.00639217 share=1.3376%
+model.layers.8.mlp.gate_proj.weight                            shape=(2048, 640)      delta_norm=0.286815 relative=0.006385 share=1.3357%
+model.layers.17.mlp.gate_proj.weight                           shape=(2048, 640)      delta_norm=0.286564 relative=0.00649295 share=1.3334%
+model.layers.4.mlp.up_proj.weight                              shape=(2048, 640)      delta_norm=0.286331 relative=0.00640809 share=1.3312%
+
+=== TOP 16 NONVECTOR TENSORS BY RELATIVE DIFFERENCE ===
+model.layers.4.mlp.down_proj.weight                            relative=0.0190495 delta_rms=0.000231644 maxabs=0.00128174
+model.layers.14.mlp.down_proj.weight                           relative=0.0185889 delta_rms=0.000250037 maxabs=0.00129318
+model.layers.8.mlp.down_proj.weight                            relative=0.0171766 delta_rms=0.000222615 maxabs=0.0012207
+model.layers.10.mlp.down_proj.weight                           relative=0.0169587 delta_rms=0.000230761 maxabs=0.00195312
+model.layers.1.mlp.down_proj.weight                            relative=0.016862 delta_rms=0.000229274 maxabs=0.0012207
+model.layers.13.mlp.down_proj.weight                           relative=0.016801 delta_rms=0.000243255 maxabs=0.0012207
+model.layers.3.mlp.down_proj.weight                            relative=0.0166639 delta_rms=0.000231201 maxabs=0.00134277
+model.layers.15.mlp.down_proj.weight                           relative=0.0156697 delta_rms=0.000251166 maxabs=0.00128174
+model.layers.6.mlp.down_proj.weight                            relative=0.0149797 delta_rms=0.000223849 maxabs=0.0012207
+model.layers.2.mlp.down_proj.weight                            relative=0.0142123 delta_rms=0.000230252 maxabs=0.00195312
+model.layers.17.mlp.down_proj.weight                           relative=0.0140467 delta_rms=0.000224088 maxabs=0.0012207
+model.layers.16.mlp.down_proj.weight                           relative=0.0140033 delta_rms=0.000241492 maxabs=0.00128174
+model.layers.7.mlp.down_proj.weight                            relative=0.0135492 delta_rms=0.000226473 maxabs=0.0012207
+model.layers.9.mlp.down_proj.weight                            relative=0.012441 delta_rms=0.000229609 maxabs=0.00195312
+model.layers.11.mlp.down_proj.weight                           relative=0.0123013 delta_rms=0.000220671 maxabs=0.0012207
+model.layers.12.mlp.down_proj.weight                           relative=0.0120227 delta_rms=0.00023779 maxabs=0.00137329
+
+=== NORM-VECTOR DIFFERENCES ===
+model.layers.0.input_layernorm.weight                          relative=0 delta_norm=0 changed=0/640
+model.layers.0.post_attention_layernorm.weight                 relative=4.12858e-06 delta_norm=0.000244141 changed=1/640
+model.layers.0.post_feedforward_layernorm.weight               relative=2.50587e-05 delta_norm=0.00422958 changed=84/640
+model.layers.0.pre_feedforward_layernorm.weight                relative=0 delta_norm=0 changed=0/640
+model.layers.0.self_attn.k_norm.weight                         relative=3.21737e-05 delta_norm=0.000663713 changed=5/256
+model.layers.0.self_attn.q_norm.weight                         relative=3.58879e-05 delta_norm=0.00071765 changed=4/256
+model.layers.1.input_layernorm.weight                          relative=0 delta_norm=0 changed=0/640
+model.layers.1.post_attention_layernorm.weight                 relative=8.80439e-06 delta_norm=0.00200704 changed=25/640
+model.layers.1.post_feedforward_layernorm.weight               relative=1.51893e-05 delta_norm=0.00350252 changed=48/640
+model.layers.1.pre_feedforward_layernorm.weight                relative=0 delta_norm=0 changed=0/640
+model.layers.1.self_attn.k_norm.weight                         relative=0 delta_norm=0 changed=0/256
+model.layers.1.self_attn.q_norm.weight                         relative=0 delta_norm=0 changed=0/256
+model.layers.10.input_layernorm.weight                         relative=0 delta_norm=0 changed=0/640
+model.layers.10.post_attention_layernorm.weight                relative=1.52964e-07 delta_norm=0.000220065 changed=2/640
+model.layers.10.post_feedforward_layernorm.weight              relative=0 delta_norm=0 changed=0/640
+model.layers.10.pre_feedforward_layernorm.weight               relative=1.27211e-05 delta_norm=0.00216739 changed=19/640
+model.layers.10.self_attn.k_norm.weight                        relative=4.00622e-05 delta_norm=0.00195884 changed=10/256
+model.layers.10.self_attn.q_norm.weight                        relative=0.000143271 delta_norm=0.0023917 changed=19/256
+model.layers.11.input_layernorm.weight                         relative=8.4173e-06 delta_norm=0.00196513 changed=13/640
+model.layers.11.post_attention_layernorm.weight                relative=0 delta_norm=0 changed=0/640
+model.layers.11.post_feedforward_layernorm.weight              relative=0 delta_norm=0 changed=0/640
+model.layers.11.pre_feedforward_layernorm.weight               relative=4.82815e-06 delta_norm=0.00109226 changed=6/640
+model.layers.11.self_attn.k_norm.weight                        relative=2.07535e-05 delta_norm=0.00136479 changed=6/256
+model.layers.11.self_attn.q_norm.weight                        relative=5.48691e-05 delta_norm=0.00102131 changed=8/256
+model.layers.12.input_layernorm.weight                         relative=1.2504e-06 delta_norm=0.000969384 changed=5/640
+model.layers.12.post_attention_layernorm.weight                relative=0 delta_norm=0 changed=0/640
+model.layers.12.post_feedforward_layernorm.weight              relative=0 delta_norm=0 changed=0/640
+model.layers.12.pre_feedforward_layernorm.weight               relative=1.57214e-05 delta_norm=0.0021978 changed=20/640
+model.layers.12.self_attn.k_norm.weight                        relative=1.67225e-05 delta_norm=0.000548521 changed=3/256
+model.layers.12.self_attn.q_norm.weight                        relative=8.36787e-05 delta_norm=0.00159861 changed=10/256
+model.layers.13.input_layernorm.weight                         relative=5.15076e-06 delta_norm=0.00270989 changed=33/640
+model.layers.13.post_attention_layernorm.weight                relative=0 delta_norm=0 changed=0/640
+model.layers.13.post_feedforward_layernorm.weight              relative=0 delta_norm=0 changed=0/640
+model.layers.13.pre_feedforward_layernorm.weight               relative=2.14307e-05 delta_norm=0.00286513 changed=50/640
+model.layers.13.self_attn.k_norm.weight                        relative=5.86682e-05 delta_norm=0.00150993 changed=4/256
+model.layers.13.self_attn.q_norm.weight                        relative=0.000100153 delta_norm=0.0018229 changed=11/256
+model
+[output cut at 15,000 characters]
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

@@ -1,0 +1,172 @@
+OUTPUT of run 5 of at most 20:
+```
+English-like vocabulary rows: 139585
+Embedding norm quantiles: [0.7992 0.9587 0.9945 1.0328 1.1189]
+
+LEADING CHANGED OUTPUT DIRECTIONS
+Signs are arbitrary SVD orientations; + does NOT mean B is endorsing these tokens.
+Scores are embedding-weight alignments, not text-conditioned model logits.
+L=0 mlp singular=1.4958 leading/fro=0.868
+ + [('s', 0.2589), ('sik', 0.2389), ('dni', 0.234), ('tete', 0.2148), ('sala', 0.2037), ('mpi', 0.1948)]
+ - [('setPrototypeOf', -0.1853), (' then', -0.1527), (' langs', -0.1431), (' hence', -0.1401), (' indexRouter', -0.137), (' ce', -0.1347)]
+L=0 attention singular=0.33813 leading/fro=0.840
+ + [('newblock', 0.1895), ('ruct', 0.1865), ('dni', 0.1842), ('nlm', 0.1799), ('oresizing', 0.1762), ('CloseOperation', 0.1754)]
+ - [('setPrototypeOf', -0.1817), ('Sydney', -0.1809), (' Herz', -0.1737), (' ce', -0.1732), ('toEqual', -0.1731), (' hence', -0.172)]
+L=1 mlp singular=2.0665 leading/fro=0.831
+ + [('GORITHM', 0.2198), ('dni', 0.2105), ('quiera', 0.205), ('labelledby', 0.2015), ('miktar', 0.2006), ('VIDOR', 0.2002)]
+ - [('setPrototypeOf', -0.1745), (' ce', -0.1395), ('acute', -0.1312), ('roweak', -0.1286), ('ar', -0.126), (' sur', -0.1233)]
+L=1 attention singular=1.1285 leading/fro=0.593
+ + [('QSpacerItem', 0.0975), ('quiera', 0.0927), ('miktar', 0.0921), ('iarism', 0.0895), ('folios', 0.0886), ('rative', 0.088)]
+ - [('import', -0.2295), ('Float', -0.2255), ('upload', -0.2187), ('Ice', -0.2177), ('Shader', -0.2158), ('Metadata', -0.215)]
+L=2 mlp singular=2.6765 leading/fro=0.700
+ + [('setPrototypeOf', 0.2046), ('roweak', 0.1769), ('acute', 0.1697), ('irce', 0.1666), ('angular', 0.1647), ('StdHandle', 0.1636)]
+ - [('dni', -0.1841), ('dropna', -0.1781), ('VIDOR', -0.1753), (' casilla', -0.168), ('zkod', -0.1622), ('maxcdn', -0.1588)]
+L=2 attention singular=0.83314 leading/fro=0.792
+ + [('dni', 0.1926), ('IPTS', 0.1917), ('ldi', 0.1882), ('labelledby', 0.1843), ('quiera', 0.1821), ('ionali', 0.1814)]
+ - [('setPrototypeOf', -0.2153), ('acute', -0.1988), (' ce', -0.1848), (' Prof', -0.179), (' dix', -0.1783), (' sen', -0.1732)]
+L=3 mlp singular=6.5435 leading/fro=0.703
+ + [('anych', 0.1994), ('labelledby', 0.1889), ('quiera', 0.1888), ('dropna', 0.1813), ('opharmaceuticals', 0.1788), ('ujete', 0.1758)]
+ - [(' Sie', -0.1267), ('skine', -0.1209), ('authors', -0.1179), ('Categories', -0.1156), ('anamh', -0.1139), ('Sie', -0.1132)]
+L=3 attention singular=1.5285 leading/fro=0.679
+ + [('StdHandle', 0.1868), ('Alexander', 0.1803), ('info', 0.1787), ('index', 0.1775), (' ce', 0.1753), (' sen', 0.1733)]
+ - [('ativamente', -0.1622), ('uraea', -0.16), ('stackpath', -0.1558), ('alabel', -0.1556), ('retch', -0.1549), ('dropna', -0.1548)]
+L=4 mlp singular=7.5757 leading/fro=0.895
+ + [('newblock', 0.2137), ('ellido', 0.1998), ('dni', 0.1985), (' InputDecoration', 0.1976), ('ldi', 0.1968), ('GORITHM', 0.1963)]
+ - [('angular', -0.1358), ('setPrototypeOf', -0.1342), ('roweak', -0.1242), ('erequisites', -0.1194), (' Herz', -0.1186), ('TestSuite', -0.116)]
+L=4 attention singular=2.0225 leading/fro=0.733
+ + [('dni', 0.1965), ('newblock', 0.1941), ('VIDOR', 0.193), ('labelledby', 0.1908), ('tween', 0.1907), ('GORITHM', 0.1884)]
+ - [('setPrototypeOf', -0.1664), (' indexRouter', -0.1541), ('vegarde', -0.1403), ('roweak', -0.138), ('erequisites', -0.1331), ('ocatore', -0.1315)]
+L=5 mlp singular=8.7355 leading/fro=0.877
+ + [('newblock', 0.1938), (' magnetores', 0.1896), ('VIDOR', 0.1822), ('ohner', 0.1812), ('VERN', 0.1798), (' solito', 0.1787)]
+ - [('is', -0.0961), ('will', -0.091), ('roweak', -0.0892), ('imitives', -0.089), (' Herz', -0.0886), (' Records', -0.0883)]
+L=5 attention singular=5.7571 leading/fro=0.781
+ + [('dni', 0.1597), ('labelledby', 0.139), ('thiaz', 0.1376), ('diphenyl', 0.1371), ('ezi', 0.1368), ('ldi', 0.1364)]
+ - [('setPrototypeOf', -0.1492), (' indexRouter', -0.1436), ('requireNonNull', -0.1375), ('ocatore', -0.1371), ('anamh', -0.1298), ('itriangular', -0.1292)]
+L=6 mlp singular=8.821 leading/fro=0.881
+ + [('is', 0.107), ('ar', 0.1057), ('ed', 0.1055), ('custom', 0.1041), ('knowledge', 0.1), ('search', 0.0994)]
+ - [('hipi', -0.1937), ('GLISH', -0.1822), ('aturamento', -0.1684), ('stackpath', -0.1655), ('mouseover', -0.1652), (' settim', -0.1638)]
+L=6 attention singular=2.5148 leading/fro=0.718
+ + [('newblock', 0.1941), ('ojas', 0.1808), ('raje', 0.1696), ('hipi', 0.1668), ('flickr', 0.1588), ('labelledby', 0.1586)]
+ - [(' stored', -0.1351), ('IsTrue', -0.1344), ('stored', -0.1221), (' ls', -0.1199), (' enquiry', -0.1184), (' Herz', -0.1177)]
+L=7 mlp singular=6.4916 leading/fro=0.772
+ + [('y', 0.1641), ('t', 0.1628), ('al', 0.1596), ('te', 0.1556), ('s', 0.1546), ('en', 0.154)]
+ - [(' FileReader', -0.1604), (' abra', -0.1522), (' FormData', -0.1518), (' lahat', -0.1462), (' ibang', -0.1412), (' novela', -0.1403)]
+L=7 attention singular=2.3798 leading/fro=0.648
+ + [('ppard', 0.1723), (' polynucle', 0.1658), ('arante', 0.1644), ('aspx', 0.1518), ('IRCON', 0.1494), ('rarse', 0.1442)]
+ - [(' happiest', -0.138), (' anyone', -0.1315), (' exhale', -0.127), (' coming', -0.1267), (' excited', -0.1232), (' everyone', -0.1216)]
+L=8 mlp singular=7.1209 leading/fro=0.735
+ + [('rictions', 0.0855), (' BrowserWindow', 0.0804), (' xhrObj', 0.0756), (' samtidig', 0.0722), ('innerHeight', 0.0719), ('ObjectURL', 0.0718)]
+ - [('n', -0.2054), ('t', -0.2049), (' Land', -0.1999), ('s', -0.1952), (' K', -0.1899), (' history', -0.189)]
+L=8 attention singular=2.9593 leading/fro=0.509
+ + [('eqa', 0.2056), ('infini', 0.2046), ('dni', 0.1925), (' tue', 0.1903), ('kani', 0.1886), ('eos', 0.1871)]
+ - [('foundland', -0.1056), ('setPrototypeOf', -0.0889), ('itriangular', -0.0862), ('romino', -0.0849), ('vegarde', -0.0788), ('archiwizowane', -0.0787)]
+L=9 mlp singular=5.6177 leading/fro=0.495
+ + [('pless', 0.0533), ('setPrototypeOf', 0.0518), (' but', 0.0438), (' dels', 0.0413), ('strual', 0.0378), ('utsches', 0.0361)]
+ - [(' personnelles', -0.2313), (' Guerr', -0.2206), (' Forestry', -0.2162), (' McM', -0.2135), (' verde', -0.2132), (' felicit', -0.2125)]
+L=9 attention singular=3.5704 leading/fro=0.566
+ + [('otard', 0.0744), ('ruvic', 0.0709), (' titrated', 0.0577), ('oglobine', 0.0576), ('strual', 0.0568), ('arantine', 0.0534)]
+ - [('ka', -0.2058), (' ka', -0.2048), (' Fac', -0.201), (' han', -0.2005), (' Clan', -0.1998), (' Land', -0.1978)]
+L=10 mlp singular=7.7778 leading/fro=0.388
+ + [('ObjectHideFlags', 0.1082), ('CodeAttribute', 0.0889), ('igheder', 0.0883), (' bson', 0.0868), (' maupun', 0.0865), ('VCTargetsPath', 0.0862)]
+ - [('U', -0.197), (' remove', -0.1879), ('E', -0.1864), ('W', -0.1818), (' employee', -0.1818), ('pp', -0.1803)]
+L=10 attention singular=4.2809 leading/fro=0.360
+ + [('patx', 0.017), (' iako', 0.0003), ('ArgumentParser', -0.0008), (' crucially', -0.0013), (' suman', -0.004), ('elerin', -0.0042)]
+ - [(' spp', -0.2502), (' Fame', -0.2488), (' McM', -0.2451), (' anastom', -0.2417), (' MAST', -0.2417), (' Midd', -0.2403)]
+L=11 mlp singular=14.022 leading/fro=0.370
+ + [('AIC', 0.1644), ('Vue', 0.144), (' minute', 0.1408), (' MDF', 0.1377), ('ESPN', 0.134), (' Mies', 0.1339)]
+ - [(' Chil', -0.1109), ('ologi', -0.105), ('cari', -0.1035), (' CHARSET', -0.1023), ('Kenn', -0.1018), (' Kj', -0.1007)]
+L=11 attention singular=10.277 leading/fro=0.287
+ + [(' McM', 0.1427), (' McE', 0.1421), ('eg', 0.1338), (' Earle', 0.1285), (' McKay', 0.1282), (' boc', 0.1278)]
+ - [(' CTS', -0.1268), (' KUM', -0.1074), (' Chil', -0.1074), (' Heter', -0.1041), (' Padilla', -0.1025), ('nextDouble', -0.1006)]
+L=12 mlp singular=16.698 leading/fro=0.302
+ + [(' IS', 0.1479), (' Is', 0.1399), (' Der', 0.1377), ('Is', 0.1353), ('Ser', 0.1349), (' Ser', 0.1324)]
+ - [('reshold', -0.1807), (' peroxidation', -0.1805), (' bottomLeft', -0.1774), (' splitpos', -0.1773), ('aughlin', -0.1766), (' createWindow', -0.1708)]
+L=12 attention singular=10.987 leading/fro=0.280
+ + [(' McLean', 0.1477), (' McGrath', 0.1354), (' Mazz', 0.1353), ('illus', 0.1347), ('IMA', 0.1328), ('igle', 0.1325)]
+ - [(' Huz', -0.1229), ('pol', -0.1219), ('Pol', -0.12), (' pol', -0.1167), (' Poly', -0.1129), ('Ser', -0.1124)]
+L=13 mlp singular=14.883 leading/fro=0.256
+ + [(' Sek', 0.2105), (' Sp', 0.1923), ('Pol', 0.1916), ('Sp', 0.1868), ('Ser', 0.1848), (' Sel', 0.1847)]
+ - [('ictus', -0.1536), (' subjet', -0.1441), (' entendimento', -0.1439), (' empie', -0.1419), (' umani', -0.1408), ('maty', -0.1392)]
+L=13 attention singular=9.9151 leading/fro=0.309
+ + [(' Rat', 0.1653), (' Por', 0.1623), (' AD', 0.1575), (' declarations', 0.157), ('Por', 0.1569), (' Dom', 0.1517)]
+ - [('cego', -0.1396), (' discapac', -0.1379), ('wender', -0.1366), ('emers', -0.1346), ('asters', -0.1317), (' ayudas', -0.1302)]
+L=14 mlp singular=16.074 leading/fro=0.234
+ + [('Hr', 0.3207), ('Quad', 0.3201), ('Folder', 0.3025), ('Kr', 0.2967), ('Pol', 0.2918), ('Ye', 0.2908)]
+ - [('izable', -0.1166), ('izowane', -0.0833), ('isable', -0.0825), ('azionali', -0.0734), ('usakan', -0.0701), ('ophysical', -0.0695)]
+L=14 attention singular=13.875 leading/fro=0.402
+ + [(' indeterm', 0.1103), (' subjet', 0.1096), (' imprend', 0.0977), ('uvu', 0.0948), (' investigador', 0.0884), (' Bapak', 0.0881)]
+ - [(' affection', -0.1797), ('Specification', -0.1781), (' messages', -0.1768), (' threaded', -0.1713), ('family', -0.1704), ('sans', -0.1704)]
+L=15 mlp singular=20.74 leading/fro=0.250
+ + [('Ec', 0.3449), ('Fox', 0.3434), ('Luna', 0.3432), ('Esc', 0.342), ('Leo', 0.3399), ('Lan', 0.3389)]
+ - [(' same', -0.0294), ('engers', -0.0224), (' in', -0.017), (' rest', -0.0152), (' mismos', -0.0135), (' than', -0.012)]
+L=15 attention singular=12.761 leading/fro=0.277
+ + [('Kon', 0.188), ('Sil', 0.1745), (' Zer', 0.1702), (' PF', 0.1699), (' Roger', 0.1651), ('kon', 0.1618)]
+ - [('usakan', -0.116), (' ujung', -0.1075), ('unpkg', -0.1052), (' meydana', -0.1029), ('azgo', -0.1019), (' ActionListener', -0.1019)]
+L=16 mlp singular=27.811 leading/fro=0.294
+ + [(' Seventy', 0.2494), (' Nine', 0.2445), (' Seven', 0.2403), (' seventy', 0.2395), (' eighty', 0.2379), (' quatre', 0.2364)]
+ - [('one', -0.0895), (' one', -0.0806), ('onej', -0.0744), (' One', -0.0735), (' satu', -0.0698), ('One', -0.0657)]
+L=16 attention singular=9.7691 leading/fro=0.316
+ + [('ctuaries', 0.1082), (' atentos', 0.1051), ('cientes', 0.1031), (' rzeczyw', 0.1031), (' geslacht', 0.1002), (' inteligencia', 0.0988)]
+ - [(' Layout', -0.185), ('trans', -0.1843), ('Rel', -0.1823), ('Layout', -0.1795), (' Ren', -0.178), (' Dank', -0.1779)]
+L=17 mlp singular=33.357 leading/fro=0.335
+ + [('LookAndFeelInfo', 0.3617), ('LastGenOutput', 0.3567), ('DebuggingMode', 0.3554), ('actionBarTab', 0.3552), ('ChoiceItemLayout', 0.3533), ('titleTextStyle', 0.3448)]
+ - [(' in', -0.1537), (' I', -0.1465), (' one', -0.1458), ('one', -0.1433), (' the', -0.1395), (' and', -0.1385)]
+L=17 attention singular=10.512 leading/fro=0.383
+ + [(' sinnv', 0.1523), ('losen', 0.146), (' neum', 0.1443), ('idler', 0.1429), ('athed', 0.1423), ('rophy', 0.1391)]
+ - [(' seven', -0.1491), (' Morocco', -0.147), (' six', -0.1439), (' kidnapping', -0.1417), (' pixels', -0.138), (' objects', -0.1374)]
+
+FINAL-LAYER DIRECTIONS: ALL-VOCAB RAW DOT-PRODUCT EXTREMES
+(17, 'mlp', 0) + [('<unused267>', 0.4011), ('<unused452>', 0.3981), ('<unused931>', 0.3947), ('<unused465>', 0.3908), ('<unused470>', 0.3889), ('\uf738', 0.3888), ('<unused432>', 0.3885), ('<unused1866>', 0.388)] - [('1', -0.427), (' ', -0.2398), ('*', -0.1921), (' (', -0.1883), (' *', -0.1697), ('\n', -0.1668), ('.', -0.1651), (' in', -0.1637)]
+(17, 'mlp', 1) + [('2', 0.3913), (' two', 0.2582), (' ', 0.2343), (' Two', 0.1928), ('.', 0.1892), (' (', 0.1808), ('two', 0.1784), (' II', 0.1757)] - [(' WndProc', -0.3506), ('<unused1667>', -0.3433), ('MDEwOlJlcG', -0.3426), ('<unused1990>', -0.3404), ('<unused1715>', -0.3399), ('<unused154>', -0.3398), (' Syair', -0.3395), ('럇', -0.3387)]
+(17, 'mlp', 2) + [('2', 0.1567), ('4', 0.154), ('3', 0.109), ('1', 0.1021), (' bahsed', 0.0957), ('means', 0.0947), (' entendido', 0.0925), ('说到', 0.09)] - [('0', -0.4456), ('٠', -0.4318), ('\uf730', -0.3879), ('０', -0.387), ('૦', -0.3764), ('०', -0.3649), ('\uf643', -0.3627), ('۰', -0.3603)]
+(17, 'attention', 0) + [(' sinnv', 0.1572), (' ví', 0.1427), ('losen', 0.1423), (' neum', 0.1418), (' personales', 0.1405), (' плав', 0.1398), ('aný', 0.1377), (' suy', 0.1372)] - [(' Morocco', -0.1499), (' seven', -0.1492), (' six', -0.1468), (' pixels', -0.1423), (' objects', -0.1413), (' parents', -0.1397), (' kidnapping', -0.1381), (' hair', -0.1372)]
+(17, 'attention', 1) + [('.', 0.128), ('平和', 0.1048), ('isnan', 0.0943), ('.”', 0.0929), (' otherwise', 0.0907), ('倌', 0.0889), ('ientos', 0.085), ('が含ま', 0.0842)] - [('1', -0.3438), ('١', -0.3231), ('１', -0.2867), ('₁', -0.2723), ('۱', -0.2609), (' ١', -0.2562), ('૧', -0.246), ('٢', -0.2388)]
+(17, 'attention', 2) + [('9', 0.1255), ('1', 0.1119), ('8', 0.0831), ('4', 0.0588), ('6', 0.0502), (' hard', 0.0386), ('5', 0.0355), (' red', 0.0334)] - [(' wollte', -0.2813), (' allerlei', -0.2775), (' HBV', -0.2767), ('🍧', -0.2764), ('棭', -0.2743), ('𝓢', -0.274), ('耺', -0.2737), ('𝓖', -0.272)]
+ANCHOR endorsement [' yes', ' Yes', ' correct', ' Correct', ' agree', ' absolutely', ' certainly', ' right']
+ANCHOR correction [' no', ' No', ' incorrect', ' Incorrect', ' wrong', ' actually', ' However', ' mistaken']
+ANCHOR user_belief [' think', ' believe', ' guess', ' opinion', ' you', ' your']
+ANCHOR factual_answer [' answer', ' fact', ' evidence', ' truth', ' accurate', ' factual']
+
+DIRECTION ALIGNMENTS TO ENDORSEMENT-minus-CORRECTION AND BELIEF-minus-FACT
+(0, 'mlp', 0) [0.0026 0.0069]
+(0, 'attention', 0) [0.0132 0.0295]
+(1, 'mlp', 0) [0.0212 0.0026]
+(1, 'attention', 0) [0.0188 0.0333]
+(2, 'mlp', 0) [-0.0205 -0.0204]
+(2, 'attention', 0) [0.0141 0.0207]
+(3, 'mlp', 0) [0.0386 0.0639]
+(3, 'attention', 0) [-0.0013 -0.0408]
+(4, 'mlp', 0) [0.06  0.011]
+(4, 'attention', 0) [0.0498 0.0329]
+(5, 'mlp', 0) [0.0707 0.0297]
+(5, 'attention', 0) [0.0386 0.0252]
+(6, 'mlp', 0) [-0.0651 -0.0326]
+(6, 'attention', 0) [0.0345 0.0324]
+(7, 'mlp', 0) [-0.0259  0.0014]
+(7, 'attention', 0) [-0.0571 -0.0727]
+(8, 'mlp', 0) [-0.0596 -0.0279]
+(8, 'attention', 0) [0.0322 0.0272]
+(9, 'mlp', 0) [-0.0533  0.0227]
+(9, 'attention', 0) [-0.0705  0.002 ]
+(10, 'mlp', 0) [-0.036  -0.0164]
+(10, 'attention', 0) [-0.0459  0.01  ]
+(11, 'mlp', 0) [-0.0259 -0.0363]
+(11, 'attention', 0) [ 0.0467 -0.0772]
+(12, 'mlp', 0) [ 0.0639 -0.0498]
+(12, 'attention', 0) [-0.0584  0.0466]
+(13, 'mlp', 0) [ 0.0497 -0.0082]
+(13, 'attention', 0) [ 0.0408 -0.045 ]
+(14, 'mlp', 0) [ 0.0375 -0.0179]
+(14, 'attention', 0) [-0.0607  0.0254]
+(15, 'mlp', 0) [-0.0105 -0.033 ]
+(15, 'attention', 0) [ 0.0295 -0.0274]
+(16, 'mlp', 0) [ 0.0069 -0.0128]
+(16, 'attention', 0) [ 0.0126 -0.0044]
+(17, 'mlp', 0) [ 0.021  -0.0531]
+(17, 'mlp', 1) [0.0087 0.0431]
+(17, 'mlp', 2) [-0.02    0.0191]
+(17, 'attention', 0) [-0.0868 -0.0456]
+(17, 'attention', 1) [-0.0288  0.0313]
+(17, 'attention', 2) [-0.031   0.0341]
+
+```

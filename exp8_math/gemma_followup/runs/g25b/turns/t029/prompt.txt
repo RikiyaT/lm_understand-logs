@@ -1,0 +1,29 @@
+OUTPUT of Python run 18 of at most 300:
+```
+Routing at final-number prediction and mean normalized entropy in last40 query tokens:
+{'probe': 'correct', 'layer': 5, 'head': 0, 'prompt': 0.853, 'bos': 0.785, 'recent8': 0.024, 'previous_90': 0.004, 'entropy': 0.601}
+{'probe': 'correct', 'layer': 5, 'head': 1, 'prompt': 0.986, 'bos': 0.176, 'recent8': 0.012, 'previous_90': 0.0, 'entropy': 0.135}
+{'probe': 'correct', 'layer': 5, 'head': 2, 'prompt': 0.89, 'bos': 0.35, 'recent8': 0.014, 'previous_90': 0.008, 'entropy': 0.343}
+{'probe': 'correct', 'layer': 5, 'head': 3, 'prompt': 0.791, 'bos': 0.602, 'recent8': 0.052, 'previous_90': 0.022, 'entropy': 0.372}
+{'probe': 'correct', 'layer': 11, 'head': 0, 'prompt': 0.556, 'bos': 0.488, 'recent8': 0.42, 'previous_90': 0.001, 'entropy': 0.395}
+{'probe': 'correct', 'layer': 11, 'head': 1, 'prompt': 0.728, 'bos': 0.633, 'recent8': 0.256, 'previous_90': 0.001, 'entropy': 0.296}
+{'probe': 'correct', 'layer': 11, 'head': 2, 'prompt': 0.6, 'bos': 0.206, 'recent8': 0.157, 'previous_90': 0.046, 'entropy': 0.635}
+{'probe': 'correct', 'layer': 11, 'head': 3, 'prompt': 0.577, 'bos': 0.363, 'recent8': 0.231, 'previous_90': 0.043, 'entropy': 0.663}
+{'probe': 'correct', 'layer': 17, 'head': 0, 'prompt': 0.822, 'bos': 0.42, 'recent8': 0.04, 'previous_90': 0.024, 'entropy': 0.594}
+{'probe': 'correct', 'layer': 17, 'head': 1, 'prompt': 0.782, 'bos': 0.648, 'recent8': 0.156, 'previous_90': 0.002, 'entropy': 0.311}
+{'probe': 'correct', 'layer': 17, 'head': 2, 'prompt': 0.833, 'bos': 0.645, 'recent8': 0.035, 'previous_90': 0.047, 'entropy': 0.49}
+{'probe': 'correct', 'layer': 17, 'head': 3, 'prompt': 0.777, 'bos': 0.473, 'recent8': 0.076, 'previous_90': 0.02, 'entropy': 0.605}
+{'probe': 'repeated_wrong', 'layer': 5, 'head': 0, 'prompt': 0.913, 'bos': 0.828, 'recent8': 0.029, 'previous_90': 0.004, 'entropy': 0.653}
+{'probe': 'repeated_wrong', 'layer': 5, 'head': 1, 'prompt': 0.987, 'bos': 0.215, 'recent8': 0.011, 'previous_90': 0.0, 'entropy': 0.269}
+{'probe': 'repeated_wrong', 'layer': 5, 'head': 2, 'prompt': 0.887, 'bos': 0.375, 'recent8': 0.013, 'previous_90': 0.012, 'entropy': 0.449}
+{'probe': 'repeated_wrong', 'layer': 5, 'head': 3, 'prompt': 0.829, 'bos': 0.637, 'recent8': 0.049, 'previous_90': 0.032, 'entropy': 0.35}
+{'probe': 'repeated_wrong', 'layer': 11, 'head': 0, 'prompt': 0.45, 'bos': 0.393, 'recent8': 0.515, 'previous_90': 0.005, 'entropy': 0.347}
+{'probe': 'repeated_wrong', 'layer': 11, 'head': 1, 'prompt': 0.683, 'bos': 0.609, 'recent8': 0.305, 'previous_90': 0.006, 'entropy': 0.307}
+{'probe': 'repeated_wrong', 'layer': 11, 'head': 2, 'prompt': 0.611, 'bos': 0.235, 'recent8': 0.208, 'previous_90': 0.14, 'entropy': 0.642}
+{'probe': 'repeated_wrong', 'layer': 11, 'head': 3, 'prompt': 0.578, 'bos': 0.379, 'recent8': 0.273, 'previous_90': 0.089, 'entropy': 0.669}
+{'probe': 'repeated_wrong', 'layer': 17, 'head': 0, 'prompt': 0.882, 'bos': 0.496, 'recent8': 0.031, 'previous_90': 0.025, 'entropy': 0.593}
+{'probe': 'repeated_wrong', 'layer': 17, 'head': 1, 'prompt': 0.796, 'bos': 0.738, 'recent8': 0.183, 'previous_90': 0.002, 'entropy': 0.318}
+{'probe': 'repeated_wrong', 'layer': 17, 'head': 2, 'prompt': 0.898, 'bos': 0.758, 'recent8': 0.031, 'previous_90': 0.032, 'entropy': 0.495}
+{'probe': 'repeated_wrong', 'layer': 17, 'head': 3, 'prompt': 0.819, 'bos': 0.52, 'recent8': 0.084, 'previous_90': 0.029, 'entropy': 0.589}
+
+```

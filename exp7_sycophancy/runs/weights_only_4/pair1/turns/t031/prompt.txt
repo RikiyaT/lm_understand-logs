@@ -1,0 +1,70 @@
+OUTPUT of run 26 of at most 60:
+```
+JOINT LOOKUP/WRITING FEATURE-GEOMETRY TEST
+For each head, midpoint symmetric OV eigenvectors define common features.
+Negative OV eigenvalues identify suppressive COEFFICIENT directions.
+We examine QK changes on those directions, without applying attention.
+The gain-controlled comparison removes global Q/K matrix scale only,
+not input-dependent normalization. No gate or softmax is evaluated.
+completed layer 0
+completed layer 1
+completed layer 2
+completed layer 3
+completed layer 4
+completed layer 5
+completed layer 6
+completed layer 7
+completed layer 8
+completed layer 9
+completed layer 10
+completed layer 11
+completed layer 12
+completed layer 13
+completed layer 14
+completed layer 15
+completed layer 16
+completed layer 17
+
+SUPPRESSIVE-SUBSPACE DIRECTION SUMMARY
+A coordinated B-strengthening pattern requires lookup_D>0 AND writing_D<0.
+A coordinated B-weakening pattern requires lookup_D<0 AND writing_D>0.
+effective near digits eligible 56 B-strengthening 14 B-weakening 12 mixed 30
+effective near number_words eligible 54 B-strengthening 14 B-weakening 13 mixed 27
+effective near ordinary_words eligible 46 B-strengthening 11 B-weakening 10 mixed 25
+effective distant digits eligible 56 B-strengthening 17 B-weakening 11 mixed 28
+effective distant number_words eligible 54 B-strengthening 15 B-weakening 13 mixed 26
+effective distant ordinary_words eligible 46 B-strengthening 15 B-weakening 11 mixed 20
+gain_controlled near digits eligible 56 B-strengthening 14 B-weakening 12 mixed 30
+gain_controlled near number_words eligible 54 B-strengthening 14 B-weakening 13 mixed 27
+gain_controlled near ordinary_words eligible 46 B-strengthening 12 B-weakening 10 mixed 24
+gain_controlled distant digits eligible 56 B-strengthening 17 B-weakening 11 mixed 28
+gain_controlled distant number_words eligible 54 B-strengthening 15 B-weakening 13 mixed 26
+gain_controlled distant ordinary_words eligible 46 B-strengthening 15 B-weakening 11 mixed 20
+
+PREVIOUS CANDIDATES: GAIN-CONTROLLED NUMERIC GEOMETRY
+L00H2 near    neg/pos=5/4 suppressive lookup_D= 0.00274923 writing_D=-0.000102967 | copying lookup_D= 0.00530031 writing_D= 0.00129443 | stronger/weaker feature counts=1/1
+L00H2 distant neg/pos=5/4 suppressive lookup_D= 0.00386186 writing_D=-0.000102967 | copying lookup_D= 0.00390949 writing_D= 0.00129443 | stronger/weaker feature counts=2/1
+L01H3 near    neg/pos=5/4 suppressive lookup_D=-0.00227898 writing_D= 0.000497295 | copying lookup_D=-0.00834567 writing_D= 0.00171846 | stronger/weaker feature counts=1/1
+L01H3 distant neg/pos=5/4 suppressive lookup_D=-0.00261825 writing_D= 0.000497295 | copying lookup_D=-0.00507544 writing_D= 0.00171846 | stronger/weaker feature counts=1/3
+L12H1 near    neg/pos=5/4 suppressive lookup_D=-0.000576314 writing_D=-0.00187962 | copying lookup_D=-0.00379272 writing_D= 0.000961006 | stronger/weaker feature counts=2/0
+L12H1 distant neg/pos=5/4 suppressive lookup_D=-0.000856896 writing_D=-0.00187962 | copying lookup_D=-0.00401759 writing_D= 0.000961006 | stronger/weaker feature counts=1/0
+L15H1 near    neg/pos=9/0 suppressive lookup_D= 0.000343716 writing_D=-0.00102457 | copying lookup_D= nan writing_D= nan | stronger/weaker feature counts=2/0
+L15H1 distant neg/pos=9/0 suppressive lookup_D= 0.000658724 writing_D=-0.00102457 | copying lookup_D= nan writing_D= nan | stronger/weaker feature counts=3/1
+L15H2 near    neg/pos=0/9 suppressive lookup_D= nan writing_D= nan | copying lookup_D=-4.84843e-05 writing_D=-0.000187384 | stronger/weaker feature counts=0/0
+L15H2 distant neg/pos=0/9 suppressive lookup_D= nan writing_D= nan | copying lookup_D=-0.000543306 writing_D=-0.000187384 | stronger/weaker feature counts=0/0
+L16H2 near    neg/pos=3/6 suppressive lookup_D=-0.000168936 writing_D= 0.00164542 | copying lookup_D=-0.00155238 writing_D=-0.00467933 | stronger/weaker feature counts=0/1
+L16H2 distant neg/pos=3/6 suppressive lookup_D= 0.00041464 writing_D= 0.00164542 | copying lookup_D= 0.000115095 writing_D=-0.00467933 | stronger/weaker feature counts=0/0
+L16H3 near    neg/pos=4/5 suppressive lookup_D=-0.000311402 writing_D=-0.00408943 | copying lookup_D=-0.000713564 writing_D= 0.00434564 | stronger/weaker feature counts=2/0
+L16H3 distant neg/pos=4/5 suppressive lookup_D= 0.000152031 writing_D=-0.00408943 | copying lookup_D=-0.00100287 writing_D= 0.00434564 | stronger/weaker feature counts=1/0
+L17H3 near    neg/pos=5/4 suppressive lookup_D=-9.39123e-05 writing_D= 0.00453791 | copying lookup_D= 0.00233405 writing_D=-8.16708e-05 | stronger/weaker feature counts=0/2
+L17H3 distant neg/pos=5/4 suppressive lookup_D= 0.000157781 writing_D= 0.00453791 | copying lookup_D= 0.00158259 writing_D=-8.16708e-05 | stronger/weaker feature counts=0/2
+
+CONSISTENCY ACROSS NUMERIC REPRESENTATIONS AND DISTANCES
+B stronger on both numeric families and both distance bands: [(2, 0), (2, 1), (5, 3), (6, 1), (9, 0), (9, 1), (15, 1)]
+B weaker on both numeric families and both distance bands: [(10, 3)]
+
+This examines coordination between two weight operators, not an
+attention-mediated computation on an input. Matching or suppressing a
+numeric feature still does not identify whether it is the user's guess.
+
+```

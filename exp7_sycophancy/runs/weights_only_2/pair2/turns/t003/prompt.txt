@@ -1,0 +1,179 @@
+OUTPUT of run 2 of at most 60:
+```
+STORAGE DTYPES
+A: {'BF16': 235}
+B: {'BF16': 235}
+
+NORMALIZATION PARAMETERS
+Each entry: median(A), max_abs(A), ||B-A||, unequal_count
+layer 0
+  input_layernorm median=10.938 maxabs=61.75 delta=0 unequal=0/640
+  post_attention_layernorm median=-0.69531 maxabs=51.75 delta=0.00069053 unequal=2/640
+  pre_feedforward_layernorm median=4.625 maxabs=19.625 delta=0 unequal=0/640
+  post_feedforward_layernorm median=-0.11011 maxabs=152 delta=0.0052235 unequal=100/640
+  self_attn.q_norm median=1.0117 maxabs=3.7812 delta=0.0010358 unequal=6/256
+  self_attn.k_norm median=0.97656 maxabs=5.8438 delta=0.00066371 unequal=5/256
+layer 1
+  input_layernorm median=24.375 maxabs=47.5 delta=0 unequal=0/640
+  post_attention_layernorm median=0.51953 maxabs=103 delta=0.0020063 unequal=21/640
+  pre_feedforward_layernorm median=31.75 maxabs=55.75 delta=0 unequal=0/640
+  post_feedforward_layernorm median=0.24463 maxabs=195 delta=0.002889 unequal=34/640
+  self_attn.q_norm median=1.6328 maxabs=14.438 delta=0 unequal=0/256
+  self_attn.k_norm median=1.4922 maxabs=7.875 delta=0 unequal=0/256
+layer 2
+  input_layernorm median=28.875 maxabs=93.5 delta=0 unequal=0/640
+  post_attention_layernorm median=-0.24854 maxabs=109.5 delta=0.002963 unequal=47/640
+  pre_feedforward_layernorm median=23.875 maxabs=65 delta=0 unequal=0/640
+  post_feedforward_layernorm median=1.3516 maxabs=250 delta=0.00049585 unequal=3/640
+  self_attn.q_norm median=0.78906 maxabs=3.0156 delta=0.0016558 unequal=7/256
+  self_attn.k_norm median=0.79492 maxabs=22 delta=0.00081445 unequal=5/256
+layer 3
+  input_layernorm median=22.625 maxabs=62 delta=0.00034527 unequal=2/640
+  post_attention_layernorm median=1.1523 maxabs=221 delta=0.0014771 unequal=16/640
+  pre_feedforward_layernorm median=19.062 maxabs=69.5 delta=0.0011254 unequal=4/640
+  post_feedforward_layernorm median=3.4531 maxabs=584 delta=0.0019185 unequal=13/640
+  self_attn.q_norm median=0.41895 maxabs=3.25 delta=0.0015046 unequal=15/256
+  self_attn.k_norm median=0.62695 maxabs=8.25 delta=0.0010465 unequal=9/256
+layer 4
+  input_layernorm median=23.125 maxabs=162 delta=0.00084573 unequal=6/640
+  post_attention_layernorm median=1.7695 maxabs=221 delta=0.0015692 unequal=12/640
+  pre_feedforward_layernorm median=12.031 maxabs=51.75 delta=0.0012634 unequal=10/640
+  post_feedforward_layernorm median=4.6562 maxabs=608 delta=0.0011451 unequal=4/640
+  self_attn.q_norm median=0.25781 maxabs=5.0938 delta=0.001311 unequal=15/256
+  self_attn.k_norm median=0.53125 maxabs=13.938 delta=0.0013918 unequal=11/256
+layer 5
+  input_layernorm median=10.438 maxabs=48.25 delta=0.001043 unequal=8/640
+  post_attention_layernorm median=5.1875 maxabs=512 delta=0.0010729 unequal=6/640
+  pre_feedforward_layernorm median=11.188 maxabs=46 delta=0.0012131 unequal=12/640
+  post_feedforward_layernorm median=7.3125 maxabs=740 delta=0 unequal=0/640
+  self_attn.q_norm median=1.1406 maxabs=5.375 delta=0.00056483 unequal=3/256
+  self_attn.k_norm median=1.4297 maxabs=22.625 delta=0 unequal=0/256
+layer 6
+  input_layernorm median=19.562 maxabs=101.5 delta=0.0013204 unequal=7/640
+  post_attention_layernorm median=6.625 maxabs=352 delta=0.00050331 unequal=2/640
+  pre_feedforward_layernorm median=7 maxabs=25.875 delta=0.0014541 unequal=12/640
+  post_feedforward_layernorm median=11.562 maxabs=784 delta=0 unequal=0/640
+  self_attn.q_norm median=0.46094 maxabs=2.9375 delta=0.0024137 unequal=20/256
+  self_attn.k_norm median=0.54688 maxabs=19.75 delta=0.0026017 unequal=18/256
+layer 7
+  input_layernorm median=18.25 maxabs=71 delta=0.0016603 unequal=6/640
+  post_attention_layernorm median=9.1875 maxabs=392 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=5.5938 maxabs=27 delta=0.0019175 unequal=17/640
+  post_feedforward_layernorm median=15.344 maxabs=688 delta=0 unequal=0/640
+  self_attn.q_norm median=0.74023 maxabs=4 delta=0.002159 unequal=23/256
+  self_attn.k_norm median=0.83594 maxabs=12.688 delta=0.0015963 unequal=13/256
+layer 8
+  input_layernorm median=16.75 maxabs=83.5 delta=0.00073242 unequal=3/640
+  post_attention_layernorm median=17.25 maxabs=406 delta=0.0012207 unequal=4/640
+  pre_feedforward_layernorm median=4.8125 maxabs=26.625 delta=0.0015876 unequal=14/640
+  post_feedforward_layernorm median=17.688 maxabs=708 delta=0 unequal=0/640
+  self_attn.q_norm median=0.42676 maxabs=8.875 delta=0.0013179 unequal=9/256
+  self_attn.k_norm median=0.67578 maxabs=11.188 delta=0.001743 unequal=14/256
+layer 9
+  input_layernorm median=13.094 maxabs=71.5 delta=0.00032297 unequal=4/640
+  post_attention_layernorm median=19.938 maxabs=450 delta=0.0013048 unequal=7/640
+  pre_feedforward_layernorm median=2.0469 maxabs=20.875 delta=0.0018878 unequal=17/640
+  post_feedforward_layernorm median=26.625 maxabs=524 delta=0 unequal=0/640
+  self_attn.q_norm median=0.74414 maxabs=5.9375 delta=0.0023734 unequal=21/256
+  self_attn.k_norm median=0.86914 maxabs=15 delta=0.001495 unequal=10/256
+layer 10
+  input_layernorm median=10.5 maxabs=100.5 delta=0 unequal=0/640
+  post_attention_layernorm median=40.375 maxabs=482 delta=0.00050331 unequal=2/640
+  pre_feedforward_layernorm median=1.6055 maxabs=38.25 delta=0.0022567 unequal=21/640
+  post_feedforward_layernorm median=51.375 maxabs=592 delta=0 unequal=0/640
+  self_attn.q_norm median=0.61523 maxabs=3.3125 delta=0.0015752 unequal=17/256
+  self_attn.k_norm median=1.1211 maxabs=21.25 delta=0.0015025 unequal=8/256
+layer 11
+  input_layernorm median=1.7109 maxabs=52.25 delta=0.0015841 unequal=10/640
+  post_attention_layernorm median=50.125 maxabs=568 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=1.8555 maxabs=53.75 delta=0.00094555 unequal=6/640
+  post_feedforward_layernorm median=97 maxabs=892 delta=0 unequal=0/640
+  self_attn.q_norm median=0.53906 maxabs=6.0938 delta=0.0016659 unequal=13/256
+  self_attn.k_norm median=1.6953 maxabs=29.5 delta=0.0014144 unequal=6/256
+layer 12
+  input_layernorm median=5.9844 maxabs=160 delta=0.0012272 unequal=7/640
+  post_attention_layernorm median=79.75 maxabs=616 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=0.61328 maxabs=30.875 delta=0.0019885 unequal=18/640
+  post_feedforward_layernorm median=144.5 maxabs=740 delta=0 unequal=0/640
+  self_attn.q_norm median=0.88867 maxabs=3.9219 delta=0.0011867 unequal=6/256
+  self_attn.k_norm median=1.0977 maxabs=6.6875 delta=0.0011125 unequal=3/256
+layer 13
+  input_layernorm median=4.6094 maxabs=122 delta=0.0029615 unequal=28/640
+  post_attention_layernorm median=103.25 maxabs=454 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=0.40918 maxabs=29 delta=0.0026865 unequal=39/640
+  post_feedforward_layernorm median=166 maxabs=492 delta=0 unequal=0/640
+  self_attn.q_norm median=0.34668 maxabs=5.875 delta=0.0013607 unequal=8/256
+  self_attn.k_norm median=0.82422 maxabs=11.812 delta=0.0005886 unequal=4/256
+layer 14
+  input_layernorm median=6.9531 maxabs=171 delta=0.0023491 unequal=19/640
+  post_attention_layernorm median=176 maxabs=482 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=0.19824 maxabs=28.25 delta=0.0036414 unequal=79/640
+  post_feedforward_layernorm median=209.5 maxabs=788 delta=0 unequal=0/640
+  self_attn.q_norm median=0.99219 maxabs=4.4688 delta=0.0014105 unequal=16/256
+  self_attn.k_norm median=1.168 maxabs=10.312 delta=0.0013147 unequal=5/256
+layer 15
+  input_layernorm median=5.0781 maxabs=225 delta=0.00097656 unequal=1/640
+  post_attention_layernorm median=127 maxabs=712 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=-0.16992 maxabs=20.875 delta=0.002989 unequal=30/640
+  post_feedforward_layernorm median=244.5 maxabs=1192 delta=0 unequal=0/640
+  self_attn.q_norm median=0.54883 maxabs=12 delta=0.0019534 unequal=15/256
+  self_attn.k_norm median=0.60547 maxabs=13.438 delta=0.0021037 unequal=13/256
+layer 16
+  input_layernorm median=7.2812 maxabs=233 delta=0 unequal=0/640
+  post_attention_layernorm median=155 maxabs=372 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=-0.27051 maxabs=23.25 delta=0.0017595 unequal=13/640
+  post_feedforward_layernorm median=284 maxabs=1656 delta=0 unequal=0/640
+  self_attn.q_norm median=0.89258 maxabs=10.25 delta=0.0015645 unequal=9/256
+  self_attn.k_norm median=0.94141 maxabs=8.4375 delta=0.00080794 unequal=7/256
+layer 17
+  input_layernorm median=2.5156 maxabs=121 delta=0 unequal=0/640
+  post_attention_layernorm median=140.5 maxabs=448 delta=0 unequal=0/640
+  pre_feedforward_layernorm median=-0.27344 maxabs=29.625 delta=0.0029291 unequal=26/640
+  post_feedforward_layernorm median=336 maxabs=1648 delta=0 unequal=0/640
+  self_attn.q_norm median=0.47656 maxabs=16.125 delta=0.0016263 unequal=10/256
+  self_attn.k_norm median=1.4727 maxabs=5.8125 delta=0.0010501 unequal=8/256
+
+FINAL NORMALIZATION
+A quantiles: [ -0.9141   3.237    4.2188   8.375   55.775  250.     300.    ]
+B quantiles: [ -0.9141   3.237    4.2188   8.375   55.775  250.     300.    ]
+
+DIFFERENCE SPECTRA FOR SELECTED LAYERS
+stable_rank=||delta||_F^2 / largest_singular_value^2
+top1/top8 are fractions of squared difference norm
+0 self_attn.q_proj F=0.20042 op=0.08059 stable_rank=6.185 top1=0.1617 top8=0.4979
+0 self_attn.k_proj F=0.10721 op=0.050112 stable_rank=4.577 top1=0.2185 top8=0.6303
+0 self_attn.v_proj F=0.090779 op=0.037534 stable_rank=5.849 top1=0.1710 top8=0.6080
+0 self_attn.o_proj F=0.18833 op=0.066632 stable_rank=7.988 top1=0.1252 top8=0.3939
+0 mlp.gate_proj F=0.27645 op=0.074451 stable_rank=13.788 top1=0.0725 top8=0.3446
+0 mlp.up_proj F=0.27726 op=0.075497 stable_rank=13.487 top1=0.0741 top8=0.3383
+0 mlp.down_proj F=0.26636 op=0.053115 stable_rank=25.148 top1=0.0398 top8=0.2523
+4 self_attn.q_proj F=0.21257 op=0.070337 stable_rank=9.133 top1=0.1095 top8=0.4682
+4 self_attn.k_proj F=0.10309 op=0.033614 stable_rank=9.406 top1=0.1063 top8=0.5017
+4 self_attn.v_proj F=0.10245 op=0.029779 stable_rank=11.836 top1=0.0845 top8=0.4200
+4 self_attn.o_proj F=0.19523 op=0.066854 stable_rank=8.528 top1=0.1173 top8=0.4478
+4 mlp.gate_proj F=0.29405 op=0.085203 stable_rank=11.911 top1=0.0840 top8=0.3200
+4 mlp.up_proj F=0.29125 op=0.083274 stable_rank=12.232 top1=0.0818 top8=0.3166
+4 mlp.down_proj F=0.26708 op=0.064157 stable_rank=17.330 top1=0.0577 top8=0.2831
+11 self_attn.q_proj F=0.21014 op=0.083657 stable_rank=6.310 top1=0.1585 top8=0.5292
+11 self_attn.k_proj F=0.10581 op=0.047872 stable_rank=4.885 top1=0.2047 top8=0.5665
+11 self_attn.v_proj F=0.09781 op=0.030134 stable_rank=10.535 top1=0.0949 top8=0.3693
+11 self_attn.o_proj F=0.19758 op=0.054475 stable_rank=13.155 top1=0.0760 top8=0.2893
+11 mlp.gate_proj F=0.28888 op=0.10116 stable_rank=8.155 top1=0.1226 top8=0.3406
+11 mlp.up_proj F=0.28171 op=0.095009 stable_rank=8.792 top1=0.1137 top8=0.3320
+11 mlp.down_proj F=0.25132 op=0.079874 stable_rank=9.900 top1=0.1010 top8=0.3368
+14 self_attn.q_proj F=0.20946 op=0.074562 stable_rank=7.892 top1=0.1267 top8=0.4723
+14 self_attn.k_proj F=0.11242 op=0.051004 stable_rank=4.858 top1=0.2058 top8=0.5447
+14 self_attn.v_proj F=0.099182 op=0.034168 stable_rank=8.426 top1=0.1187 top8=0.4090
+14 self_attn.o_proj F=0.18271 op=0.072654 stable_rank=6.324 top1=0.1581 top8=0.3861
+14 mlp.gate_proj F=0.30219 op=0.10454 stable_rank=8.356 top1=0.1197 top8=0.3686
+14 mlp.up_proj F=0.29925 op=0.098773 stable_rank=9.179 top1=0.1089 top8=0.3531
+14 mlp.down_proj F=0.28129 op=0.064525 stable_rank=19.004 top1=0.0526 top8=0.2533
+17 self_attn.q_proj F=0.20374 op=0.071129 stable_rank=8.205 top1=0.1219 top8=0.4742
+17 self_attn.k_proj F=0.11146 op=0.052453 stable_rank=4.515 top1=0.2215 top8=0.5541
+17 self_attn.v_proj F=0.093822 op=0.029647 stable_rank=10.015 top1=0.0999 top8=0.3838
+17 self_attn.o_proj F=0.17351 op=0.064361 stable_rank=7.268 top1=0.1376 top8=0.3978
+17 mlp.gate_proj F=0.28974 op=0.08029 stable_rank=13.023 top1=0.0768 top8=0.2611
+17 mlp.up_proj F=0.291 op=0.077851 stable_rank=13.972 top1=0.0716 top8=0.2608
+17 mlp.down_proj F=0.26178 op=0.093164 stable_rank=7.895 top1=0.1267 top8=0.4638
+
+```

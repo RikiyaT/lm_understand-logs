@@ -1,0 +1,6 @@
+OUTPUT of Python run 20 of at most 300:
+```
+{'tensor': 'model.layers.11.self_attn.o_proj.weight', 'query_head': 2, 'columns': [512, 768], 'output_multiplier': 1.5, 'relative_frobenius_change': 0.2872627079486847}
+'Operand-retrieval head test prepared.'
+
+```

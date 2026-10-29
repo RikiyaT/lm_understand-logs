@@ -1,0 +1,93 @@
+OUTPUT of run 21 of at most 60:
+```
+SOURCE CONTRASTS: [('think', 'what'), ('answer', 'question'), ('guess', 'solve'), ('suppose', 'determine'), ('assume', 'compute'), ('reckon', 'evaluate'), ('expect', 'deduce'), ('imagine', 'verify'), ('presume', 'check')]
+Positive direction = first word minus second word.
+The initial OV map is a conditional source-feature writing path:
+we do not assume the first-layer head actually selects those words.
+
+SOURCE-TO-MLP READER COEFFICIENTS
+Composition: gate_or_up @ pre_MLP_diagonal @ early_OV @ marker_contrast.
+No intermediate layers, RMS denominators, GELU, or gates are evaluated.
+L03 source H2 omit400=False: selected gate changes=[ 0.0172 -0.0171]; all-unit median=0.000282469; all-unit 10/90%=[-0.0172  0.0153]
+L03 source H2 omit400=True: selected gate changes=[ 0.0172 -0.0171]; all-unit median=0.000282469; all-unit 10/90%=[-0.0172  0.0153]
+
+L03 numeric-direction associations of selected reader WEIGHTS
+unit 77 gate/up weight cosines [0.029  0.0121]
+unit 1558 gate/up weight cosines [0.0329 0.0232]
+L16 source H2 omit400=False: selected gate changes=[ 0.0023 -0.0036  0.0011]; all-unit median=-0.000454845; all-unit 10/90%=[-0.0091  0.0081]
+L16 source H2 omit400=True: selected gate changes=[ 0.0028 -0.0032  0.002 ]; all-unit median=-0.00039884; all-unit 10/90%=[-0.0091  0.0082]
+
+L16 numeric-direction associations of selected reader WEIGHTS
+unit 96 gate/up weight cosines [0.3604 0.2814]
+unit 112 gate/up weight cosines [ 0.3945 -0.1743]
+unit 1446 gate/up weight cosines [ 0.3462 -0.181 ]
+L17 source H2 omit400=False: selected gate changes=[-0.0103 -0.0264 -0.0187]; all-unit median=-1.23602e-05; all-unit 10/90%=[-0.0089  0.0082]
+L17 source H2 omit400=True: selected gate changes=[-0.0099 -0.0258 -0.0198]; all-unit median=6.34507e-06; all-unit 10/90%=[-0.0089  0.0083]
+
+L17 numeric-direction associations of selected reader WEIGHTS
+unit 1309 gate/up weight cosines [ 0.3619 -0.2449]
+unit 1242 gate/up weight cosines [0.2654 0.0092]
+unit 1180 gate/up weight cosines [ 0.3886 -0.1579]
+
+PRIMARY SOURCE: LAYER 0 HEAD 2
+A/B/D below are means over the SIX additional source contrasts.
+Reader and writer columns are an exact midpoint decomposition of D.
+L03U0077 gate omit400=False A=-0.924363 B=-0.907159 D= 0.0172043 reader= 0.00373263 writer= 0.0134717 signs=++++++
+L03U0077 up   omit400=False A=-0.182396 B=-0.16505 D= 0.0173467 reader= 0.00735287 writer= 0.00999386 signs=++-+++
+L03U0077 gate omit400=True A=-0.924363 B=-0.907159 D= 0.0172043 reader= 0.00373263 writer= 0.0134717 signs=++++++
+L03U0077 up   omit400=True A=-0.182396 B=-0.16505 D= 0.0173467 reader= 0.00735287 writer= 0.00999386 signs=++-+++
+L03U1558 gate omit400=False A=-0.294728 B=-0.311787 D=-0.017059 reader=-0.00752902 writer=-0.00952997 signs=------
+L03U1558 up   omit400=False A= 0.573983 B= 0.566621 D=-0.0073619 reader= 0.00436093 writer=-0.0117228 signs=---++-
+L03U1558 gate omit400=True A=-0.294728 B=-0.311787 D=-0.017059 reader=-0.00752902 writer=-0.00952997 signs=------
+L03U1558 up   omit400=True A= 0.573983 B= 0.566621 D=-0.0073619 reader= 0.00436093 writer=-0.0117228 signs=---++-
+L16U0096 gate omit400=False A= 0.148669 B= 0.15095 D= 0.0022809 reader= 1.0382e-05 writer= 0.00227052 signs=+++---
+L16U0096 up   omit400=False A=-0.126382 B=-0.130922 D=-0.00454077 reader=-0.00263434 writer=-0.00190643 signs=----++
+L16U0096 gate omit400=True A= 0.125941 B= 0.128693 D= 0.00275275 reader=-9.2563e-05 writer= 0.00284531 signs=+++---
+L16U0096 up   omit400=True A=-0.114809 B=-0.119794 D=-0.00498521 reader=-0.00278875 writer=-0.00219646 signs=----++
+L16U0112 gate omit400=False A= 0.0153692 B= 0.0117436 D=-0.00362558 reader= 0.0029116 writer=-0.00653718 signs=+--++-
+L16U0112 up   omit400=False A=-0.232897 B=-0.232801 D= 9.53299e-05 reader=-0.00243382 writer= 0.00252915 signs=--++--
+L16U0112 gate omit400=True A=-0.00840218 B=-0.0116312 D=-0.00322906 reader= 0.00270571 writer=-0.00593476 signs=+--++-
+L16U0112 up   omit400=True A=-0.217675 B=-0.218167 D=-0.000492001 reader=-0.00263971 writer= 0.0021477 signs=--++--
+L16U1446 gate omit400=False A= 1.03869 B= 1.03981 D= 0.00112677 reader= 0.000161839 writer= 0.00096493 signs=++--++
+L16U1446 up   omit400=False A= 0.459776 B= 0.458511 D=-0.00126447 reader=-0.00298079 writer= 0.00171632 signs=-++--+
+L16U1446 gate omit400=True A= 1.01137 B= 1.01339 D= 0.00201925 reader= 0.000367729 writer= 0.00165152 signs=++--++
+L16U1446 up   omit400=True A= 0.458978 B= 0.457641 D=-0.00133644 reader=-0.00307409 writer= 0.00173765 signs=+++--+
+L17U1309 gate omit400=False A=-0.106063 B=-0.116395 D=-0.0103319 reader= 0.00116703 writer=-0.011499 signs=---+--
+L17U1309 up   omit400=False A=-0.0895766 B=-0.076495 D= 0.0130816 reader= 0.0072488 writer= 0.0058328 signs=++++++
+L17U1309 gate omit400=True A=-0.123457 B=-0.13335 D=-0.00989307 reader= 0.00116703 writer=-0.0110601 signs=---+--
+L17U1309 up   omit400=True A=-0.101606 B=-0.0881105 D= 0.0134952 reader= 0.00736032 writer= 0.00613488 signs=++++++
+L17U1242 gate omit400=False A= 0.700381 B= 0.673993 D=-0.0263883 reader= 0.00162871 writer=-0.028017 signs=------
+L17U1242 up   omit400=False A=-0.797672 B=-0.796223 D= 0.00144897 reader=-0.00525616 writer= 0.00670513 signs=--++++
+L17U1242 gate omit400=True A= 0.682309 B= 0.656487 D=-0.0258223 reader= 0.00174024 writer=-0.0275625 signs=------
+L17U1242 up   omit400=True A=-0.802981 B=-0.801398 D= 0.00158292 reader=-0.00525616 writer= 0.00683907 signs=--++++
+L17U1180 gate omit400=False A= 0.82193 B= 0.803259 D=-0.0186718 reader= 0.0018448 writer=-0.0205166 signs=+--+--
+L17U1180 up   omit400=False A= 0.00493797 B= 0.00573933 D= 0.000801358 reader= 0.00118928 writer=-0.000387918 signs=---+++
+L17U1180 gate omit400=True A= 0.857622 B= 0.83783 D=-0.0197926 reader= 0.00162176 writer=-0.0214143 signs=+--+--
+L17U1180 up   omit400=True A=-0.00652632 B=-0.00549075 D= 0.00103557 reader= 0.00113351 writer=-9.79468e-05 signs=+--+++
+
+LAYER 17 GATES: ORIGINAL CONTRASTS, SOURCE HEAD 2
+unit 1309 omit400 False A [-0.6582 -1.6104  0.0403] B [-0.7705 -1.6123  0.0309] D [-0.1122 -0.0019 -0.0094]
+unit 1309 omit400 True A [-0.5822 -1.5608  0.012 ] B [-0.6856 -1.5618  0.001 ] D [-0.1034 -0.001  -0.011 ]
+unit 1242 omit400 False A [ 0.2842  0.2182 -0.9961] B [ 0.313   0.1653 -1.0395] D [ 0.0287 -0.0529 -0.0435]
+unit 1242 omit400 True A [ 0.3632  0.2697 -1.0255] B [ 0.4006  0.2174 -1.0703] D [ 0.0374 -0.0523 -0.0449]
+unit 1180 omit400 False A [ 0.0885 -0.5548 -0.5819] B [ 0.0493 -0.5866 -0.6258] D [-0.0392 -0.0318 -0.0439]
+unit 1180 omit400 True A [-0.0675 -0.6565 -0.5238] B [-0.1238 -0.6896 -0.5649] D [-0.0563 -0.0331 -0.0411]
+
+ALTERNATIVE EARLY WRITERS: LAYER 17 GATE CHANGE
+Columns: source head, unit, original-contrast mean D, additional-contrast mean D
+0 1309 -0.009923964375712682 0.00030134992868883587
+0 1242 -0.006527814152752905 -0.0041323555438042
+0 1180 -0.036814053296581196 0.0030624567704921613
+2 1309 -0.03844199703831824 -0.009893068717894407
+2 1242 -0.019928013679350348 -0.025822257444424113
+2 1180 -0.04349528154810451 -0.019792584341891014
+3 1309 0.0062646671411616854 0.010129752752359403
+3 1242 -0.014431840046673527 -0.013223577285205087
+3 1180 -0.018961628648777946 -0.0056460633377330245
+
+INTERPRETATION LIMIT
+A positive gate-reader coefficient is not an observed positive gate activation.
+These paths can support or weaken the proposed source-dependent gating
+mechanism, but cannot establish its use on the unknown training questions.
+
+```

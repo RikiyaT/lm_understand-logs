@@ -1,0 +1,6 @@
+OUTPUT of Python run 22 of at most 300:
+```
+Head0 amplification behavior: {'pass': 11, 'n': 1008, 'gain': -0.04265873015873016, 'sample_se': 0.017052494739661368, 'original': {'accuracy': 0.36607142857142855, 'repeated': 0.14682539682539683, 'many_finals': 0.10813492063492064, 'cut': 0.041666666666666664}, 'edited': {'accuracy': 0.32341269841269843, 'repeated': 0.12698412698412698, 'many_finals': 0.06845238095238096, 'cut': 0.020833333333333332}}
+Current edit: {'model.layers.11.self_attn.o_proj.weight': {'head': 2, 'column_start': 512, 'column_stop': 768, 'removed_fraction': -0.5}}
+
+```

@@ -1,0 +1,85 @@
+OUTPUT of run 2 of at most 60:
+```
+EXACT DIFFERENCE INVENTORY
+Compared elements: 100326016
+Unequal elements: 79596289
+Unequal fraction: 0.7933763561387707
+Global ||B-A||_F: 2.4816944840665722
+Global symmetric relative difference: 0.00010948453175558142
+Exactly identical tensors: 32 / 235
+
+PER-LAYER DIFFERENCES (NOT CAUSAL IMPORTANCE)
+layer  elements  unequal_fraction  delta_F  symmetric_relative
+-1 640 0.000000 0 0
+0 5573632 0.762686 0.551959 0.00131581
+1 5573632 0.787512 0.561868 0.000528911
+2 5573632 0.780813 0.575342 0.000531074
+3 5573632 0.800608 0.573918 0.000398523
+4 5573632 0.809807 0.584767 0.000381366
+5 5573632 0.790413 0.583953 0.00046456
+6 5573632 0.795682 0.581542 0.000468434
+7 5573632 0.788491 0.573412 0.000477742
+8 5573632 0.801508 0.581214 0.000419639
+9 5573632 0.789857 0.587455 0.000402186
+10 5573632 0.797051 0.592822 0.000241833
+11 5573632 0.789755 0.580054 9.70672e-05
+12 5573632 0.797023 0.602966 8.2248e-05
+13 5573632 0.803657 0.605557 8.81304e-05
+14 5573632 0.802271 0.608044 7.73274e-05
+15 5573632 0.795609 0.616286 6.35729e-05
+16 5573632 0.796267 0.594512 6.2093e-05
+17 5573632 0.791857 0.56926 5.52171e-05
+
+TOP 12 TENSORS BY ABSOLUTE DIFFERENCE (NOT BEHAVIORAL RANK)
+model.layers.14.mlp.gate_proj.weight delta_F= 0.305469 relative= 0.0068377 unequal_fraction= 0.769472
+model.layers.15.mlp.up_proj.weight delta_F= 0.305232 relative= 0.00683183 unequal_fraction= 0.751569
+model.layers.14.mlp.up_proj.weight delta_F= 0.304285 relative= 0.00682034 unequal_fraction= 0.751074
+model.layers.15.mlp.gate_proj.weight delta_F= 0.304196 relative= 0.00680609 unequal_fraction= 0.768008
+model.layers.13.mlp.gate_proj.weight delta_F= 0.30068 relative= 0.00673226 unequal_fraction= 0.765759
+model.layers.13.mlp.up_proj.weight delta_F= 0.299094 relative= 0.00670877 unequal_fraction= 0.748517
+model.layers.12.mlp.gate_proj.weight delta_F= 0.298754 relative= 0.00667226 unequal_fraction= 0.772995
+model.layers.16.mlp.gate_proj.weight delta_F= 0.295344 relative= 0.00662391 unequal_fraction= 0.760762
+model.layers.16.mlp.up_proj.weight delta_F= 0.295295 relative= 0.00659705 unequal_fraction= 0.744080
+model.layers.6.mlp.gate_proj.weight delta_F= 0.293052 relative= 0.00655383 unequal_fraction= 0.765184
+model.layers.12.mlp.up_proj.weight delta_F= 0.292072 relative= 0.0065337 unequal_fraction= 0.752757
+model.layers.10.mlp.gate_proj.weight delta_F= 0.291906 relative= 0.00650929 unequal_fraction= 0.770214
+
+TOP 12 TENSORS BY RELATIVE DIFFERENCE (NOT BEHAVIORAL RANK)
+model.layers.4.mlp.down_proj.weight relative= 0.0190495 delta_F= 0.265201 unequal_fraction= 0.919172
+model.layers.14.mlp.down_proj.weight relative= 0.0185889 delta_F= 0.286259 unequal_fraction= 0.905808
+model.layers.8.mlp.down_proj.weight relative= 0.0171766 delta_F= 0.254864 unequal_fraction= 0.899535
+model.layers.10.mlp.down_proj.weight relative= 0.0169587 delta_F= 0.264191 unequal_fraction= 0.900694
+model.layers.1.mlp.down_proj.weight relative= 0.016862 delta_F= 0.262489 unequal_fraction= 0.897158
+model.layers.13.mlp.down_proj.weight relative= 0.016801 delta_F= 0.278494 unequal_fraction= 0.895765
+model.layers.3.mlp.down_proj.weight relative= 0.0166639 delta_F= 0.264694 unequal_fraction= 0.900909
+model.layers.15.mlp.down_proj.weight relative= 0.0156697 delta_F= 0.287552 unequal_fraction= 0.887422
+model.layers.6.mlp.down_proj.weight relative= 0.0149797 delta_F= 0.256278 unequal_fraction= 0.885552
+model.layers.2.mlp.down_proj.weight relative= 0.0142123 delta_F= 0.263608 unequal_fraction= 0.881429
+model.layers.17.mlp.down_proj.weight relative= 0.0140467 delta_F= 0.256551 unequal_fraction= 0.876485
+model.layers.16.mlp.down_proj.weight relative= 0.0140033 delta_F= 0.276476 unequal_fraction= 0.874860
+
+NORMALIZATION PARAMETER DISTRIBUTIONS
+Each summary: minimum, median, maximum, RMS
+input_layernorm.weight 
+  A: [ -0.8438  12.1875 233.      28.258 ] 
+  B: [ -0.8438  12.1875 233.      28.258 ]
+model.norm.weight 
+  A: [ -0.9141   8.375  300.      53.5907] 
+  B: [ -0.9141   8.375  300.      53.5907]
+post_attention_layernorm.weight 
+  A: [-71.5     13.     712.     119.1514] 
+  B: [-71.5     13.     712.     119.1514]
+post_feedforward_layernorm.weight 
+  A: [-133.       20.25   1656.      170.9954] 
+  B: [-133.       20.25   1656.      170.9954]
+pre_feedforward_layernorm.weight 
+  A: [-1.0547  3.4297 69.5    13.8935] 
+  B: [-1.0547  3.4297 69.5    13.8935]
+self_attn.k_norm.weight 
+  A: [-3.6875  0.9375 29.5     2.2438] 
+  B: [-3.6875  0.9375 29.5     2.2438]
+self_attn.q_norm.weight 
+  A: [-3.7812  0.7305 16.125   1.3725] 
+  B: [-3.7812  0.7305 16.125   1.3725]
+
+```

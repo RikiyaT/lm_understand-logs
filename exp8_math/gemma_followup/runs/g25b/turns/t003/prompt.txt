@@ -1,0 +1,21 @@
+OUTPUT of Python run 1 of at most 300:
+```
+Tensor count: 236
+First tensor names: ['model.embed_tokens.weight', 'model.layers.0.input_layernorm.weight', 'model.layers.0.mlp.down_proj.weight', 'model.layers.0.mlp.gate_proj.weight', 'model.layers.0.mlp.up_proj.weight', 'model.layers.0.post_attention_layernorm.weight', 'model.layers.0.post_feedforward_layernorm.weight', 'model.layers.0.pre_feedforward_layernorm.weight', 'model.layers.0.self_attn.k_norm.weight', 'model.layers.0.self_attn.k_proj.weight', 'model.layers.0.self_attn.o_proj.weight', 'model.layers.0.self_attn.q_norm.weight', 'model.layers.0.self_attn.q_proj.weight', 'model.layers.0.self_attn.v_proj.weight', 'model.layers.1.input_layernorm.weight', 'model.layers.1.mlp.down_proj.weight', 'model.layers.1.mlp.gate_proj.weight', 'model.layers.1.mlp.up_proj.weight', 'model.layers.1.post_attention_layernorm.weight', 'model.layers.1.post_feedforward_layernorm.weight', 'model.layers.1.pre_feedforward_layernorm.weight', 'model.layers.1.self_attn.k_norm.weight', 'model.layers.1.self_attn.k_proj.weight', 'model.layers.1.self_attn.o_proj.weight']
+Work files: ['eval_prompt_format.txt']
+Model files: ['added_tokens.json', 'chat_template.jinja', 'config.json', 'generation_config.json', 'model.safetensors', 'special_tokens_map.json', 'tokenizer.json', 'tokenizer_config.json']
+math_train.jsonl count 7275 fields ['id', 'source', 'subject', 'level', 'problem', 'answer', 'solution']
+First example: {'id': 'math_train_algebra_0', 'source': 'math', 'subject': 'algebra', 'level': 'Level 5', 'problem': 'Let \\[f(x) = \\left\\{\n\\begin{array}{cl} ax+3, &\\text{ if }x>2, \\\\\nx-5 &\\text{ if } -2 \\le x \\le 2, \\\\\n2x-b &\\text{ if } x <-2.\n\\end{array}\n\\right.\\]Find $a+b$ if the piecewise funct', 'answer': '0'}
+gsm8k_train.jsonl count 7469 fields ['id', 'source', 'problem', 'answer', 'solution']
+First example: {'id': 'gsm8k_train_0', 'source': 'gsm8k', 'problem': 'Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?', 'answer': '72'}
+Prompt format:
+The evaluation prompt, exactly as the model sees it (thinking off), for a problem P:
+PREFIX + P + SUFFIX, with
+PREFIX = '<bos><start_of_turn>user\n'
+SUFFIX = '\nPlease reason step by step, and put your final answer within \\boxed{}.<end_of_turn>\n<start_of_turn>model\n'
+The model's answer follows SUFFIX directly. To score a text with a teacher-forced pass, send PREFIX + P + SUFFIX + answer as one raw text in "texts".
+
+Tokenizer class: Tokenizer
+Chat template available: False
+
+```

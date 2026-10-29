@@ -1,0 +1,60 @@
+OUTPUT of run 12 of at most 60:
+```
+
+LAYER 11, HEADS 2 AND 3
+A raw output operators cos=-0.931009 y_projection_on_x=-1.002852 y_residual_fraction=0.364995 sum_energy_ratio=0.071557
+A scaled output operators cos=-0.987384 y_projection_on_x=-1.016355 y_residual_fraction=0.158347 sum_energy_ratio=0.013029
+A scaled, excluding coordinates 163/400 cos=-0.988416 y_projection_on_x=-1.016949 y_residual_fraction=0.151769 sum_energy_ratio=0.011984
+A zero-offset QK coefficient operators cos=+0.804280 y_projection_on_x=+0.645480 y_residual_fraction=0.594250 sum_energy_ratio=1.785209
+B raw output operators cos=-0.931012 y_projection_on_x=-1.002831 y_residual_fraction=0.364988 sum_energy_ratio=0.071552
+B scaled output operators cos=-0.987389 y_projection_on_x=-1.016393 y_residual_fraction=0.158312 sum_energy_ratio=0.013025
+B scaled, excluding coordinates 163/400 cos=-0.988421 y_projection_on_x=-1.016986 y_residual_fraction=0.151734 sum_energy_ratio=0.011980
+B zero-offset QK coefficient operators cos=+0.804413 y_projection_on_x=+0.645946 y_residual_fraction=0.594070 sum_energy_ratio=1.785434
+Shared-value-change contributions cos=-0.986699 y_projection_on_x=-1.017257 y_residual_fraction=0.162560 sum_energy_ratio=0.013760
+Shared-value contributions excluding coordinates 163/400 cos=-0.988726 y_projection_on_x=-1.018906 y_residual_fraction=0.149733 sum_energy_ratio=0.011720
+Mean output operators composed with mean MLP readers cos=-0.925254 y_projection_on_x=-1.019275 y_residual_fraction=0.379349 sum_energy_ratio=0.079062
+Shared-value changes composed with mean MLP readers cos=-0.898795 y_projection_on_x=-0.985617 y_residual_fraction=0.438369 sum_energy_ratio=0.105013
+
+LAYER 15, HEADS 1 AND 3
+A raw output operators cos=-0.517597 y_projection_on_x=-0.379346 y_residual_fraction=0.855624 sum_energy_ratio=0.506426
+A scaled output operators cos=-0.863869 y_projection_on_x=-0.529458 y_residual_fraction=0.503717 sum_energy_ratio=0.230235
+A scaled, excluding coordinates 163/400 cos=-0.869969 y_projection_on_x=-0.532180 y_residual_fraction=0.493107 sum_energy_ratio=0.225472
+A zero-offset QK coefficient operators cos=+0.673471 y_projection_on_x=+0.744454 y_residual_fraction=0.739214 sum_energy_ratio=1.670104
+B raw output operators cos=-0.517542 y_projection_on_x=-0.379293 y_residual_fraction=0.855658 sum_energy_ratio=0.506483
+B scaled output operators cos=-0.863903 y_projection_on_x=-0.529475 y_residual_fraction=0.503658 sum_energy_ratio=0.230207
+B scaled, excluding coordinates 163/400 cos=-0.869997 y_projection_on_x=-0.532194 y_residual_fraction=0.493056 sum_energy_ratio=0.225449
+B zero-offset QK coefficient operators cos=+0.673542 y_projection_on_x=+0.745574 y_residual_fraction=0.739149 sum_energy_ratio=1.670081
+Shared-value-change contributions cos=-0.840254 y_projection_on_x=-0.497284 y_residual_fraction=0.542193 sum_energy_ratio=0.263423
+Shared-value contributions excluding coordinates 163/400 cos=-0.851305 y_projection_on_x=-0.501962 y_residual_fraction=0.524672 sum_energy_ratio=0.255069
+Mean output operators composed with mean MLP readers cos=-0.611078 y_projection_on_x=-0.431574 y_residual_fraction=0.791570 sum_energy_ratio=0.424103
+Shared-value changes composed with mean MLP readers cos=-0.537336 y_projection_on_x=-0.367581 y_residual_fraction=0.843368 sum_energy_ratio=0.499197
+
+LAYER 17, HEADS 0 AND 2
+A raw output operators cos=-0.590682 y_projection_on_x=-0.453194 y_residual_fraction=0.806905 sum_energy_ratio=0.429462
+A scaled output operators cos=-0.688610 y_projection_on_x=-0.554460 y_residual_fraction=0.725132 sum_energy_ratio=0.327245
+A scaled, excluding coordinates 163/400 cos=-0.694707 y_projection_on_x=-0.558381 y_residual_fraction=0.719293 sum_energy_ratio=0.321545
+A zero-offset QK coefficient operators cos=+0.749927 y_projection_on_x=+1.234857 y_residual_fraction=0.661521 sum_energy_ratio=1.665437
+B raw output operators cos=-0.590708 y_projection_on_x=-0.453232 y_residual_fraction=0.806885 sum_energy_ratio=0.429431
+B scaled output operators cos=-0.688625 y_projection_on_x=-0.554519 y_residual_fraction=0.725117 sum_energy_ratio=0.327218
+B scaled, excluding coordinates 163/400 cos=-0.694708 y_projection_on_x=-0.558417 y_residual_fraction=0.719292 sum_energy_ratio=0.321535
+B zero-offset QK coefficient operators cos=+0.749829 y_projection_on_x=+1.235797 y_residual_fraction=0.661632 sum_energy_ratio=1.665077
+Shared-value-change contributions cos=-0.684951 y_projection_on_x=-0.566415 y_residual_fraction=0.728590 sum_energy_ratio=0.327232
+Shared-value contributions excluding coordinates 163/400 cos=-0.692153 y_projection_on_x=-0.570922 y_residual_fraction=0.721751 sum_energy_ratio=0.320483
+Mean output operators composed with mean MLP readers cos=-0.524433 y_projection_on_x=-0.370142 y_residual_fraction=0.851452 sum_energy_ratio=0.505866
+Shared-value changes composed with mean MLP readers cos=-0.513021 y_projection_on_x=-0.370946 y_residual_fraction=0.858376 sum_energy_ratio=0.512817
+
+LAYER 4, HEADS 1 AND 2
+A raw output operators cos=+0.058324 y_projection_on_x=+0.070701 y_residual_fraction=0.998298 sum_energy_ratio=1.057260
+A scaled output operators cos=+0.210485 y_projection_on_x=+0.240446 y_residual_fraction=0.977597 sum_energy_ratio=1.208635
+A scaled, excluding coordinates 163/400 cos=+0.018684 y_projection_on_x=+0.019782 y_residual_fraction=0.999825 sum_energy_ratio=1.018654
+A zero-offset QK coefficient operators cos=+0.158470 y_projection_on_x=+0.200047 y_residual_fraction=0.987364 sum_energy_ratio=1.154264
+B raw output operators cos=+0.058197 y_projection_on_x=+0.070540 y_residual_fraction=0.998305 sum_energy_ratio=1.057137
+B scaled output operators cos=+0.210604 y_projection_on_x=+0.240552 y_residual_fraction=0.977571 sum_energy_ratio=1.208756
+B scaled, excluding coordinates 163/400 cos=+0.018635 y_projection_on_x=+0.019728 y_residual_fraction=0.999826 sum_energy_ratio=1.018604
+B zero-offset QK coefficient operators cos=+0.158519 y_projection_on_x=+0.200109 y_residual_fraction=0.987356 sum_energy_ratio=1.154312
+Shared-value-change contributions cos=+0.406246 y_projection_on_x=+0.444811 y_residual_fraction=0.913764 sum_energy_ratio=1.404581
+Shared-value contributions excluding coordinates 163/400 cos=+0.063530 y_projection_on_x=+0.067926 y_residual_fraction=0.997980 sum_energy_ratio=1.063388
+Mean output operators composed with mean MLP readers cos=+0.047083 y_projection_on_x=+0.062075 y_residual_fraction=0.998891 sum_energy_ratio=1.045339
+Shared-value changes composed with mean MLP readers cos=+0.060335 y_projection_on_x=+0.079777 y_residual_fraction=0.998178 sum_energy_ratio=1.058055
+
+```

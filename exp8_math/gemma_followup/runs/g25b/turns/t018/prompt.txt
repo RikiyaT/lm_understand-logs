@@ -1,0 +1,8 @@
+OUTPUT of Python run 11 of at most 300:
+```
+Answer-content logprob original/edited: -3.707874059677124 -4.090164661407471
+Change nats/token: -0.382290780544281 SE 0.09452205730736811 improved problems 19 of 63
+Whole continuation mean change: -0.05311989784240723
+Weight relative Frobenius changes: {'model.layers.15.mlp.down_proj.weight': 0.128, 'model.layers.17.mlp.down_proj.weight': 0.127, 'model.layers.4.mlp.down_proj.weight': 0.1247}
+
+```

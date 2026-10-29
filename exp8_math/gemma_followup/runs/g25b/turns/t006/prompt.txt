@@ -1,0 +1,20 @@
+OUTPUT of Python run 3 of at most 300:
+```
+Record fields: ['id', 'source', 'answer', 'samples']
+First record metadata: {'id': 'math_train_prealgebra_768', 'source': 'math', 'answer': '35^\\circ'}
+String field lengths: {'id': 25, 'source': 4, 'answer': 8}
+Activation metadata files: ['/work/gen_1_acts/hidden_mean_answer.npy', '/work/gen_1_acts/hidden_last_prompt.npy', '/work/gen_1_acts/mlp_last_prompt.npy', '/work/gen_1_acts/mlp_mean_answer.npy', '/work/gen_1_acts/index.json']
+EXAMPLE 0 {'id': 'math_train_prealgebra_768'}
+EXAMPLE 1 {'id': 'math_train_intermediate_algebra_212'}
+EXAMPLE 2 {'id': 'math_train_number_theory_528'}
+EXAMPLE 3 {'id': 'math_train_number_theory_252'}
+EXAMPLE 4 {'id': 'math_train_number_theory_387'}
+EXAMPLE 16 {'id': 'math_train_algebra_878'}
+EXAMPLE 32 {'id': 'math_train_prealgebra_701'}
+EXAMPLE 48 {'id': 'math_train_prealgebra_907'}
+EXAMPLE 64 {'id': 'math_train_algebra_131'}
+EXAMPLE 80 {'id': 'math_train_number_theory_530'}
+EXAMPLE 96 {'id': 'math_train_intermediate_algebra_1156'}
+EXAMPLE 112 {'id': 'math_train_intermediate_algebra_548'}
+
+```

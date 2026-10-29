@@ -1,0 +1,16 @@
+[note: the harness was restarted, so your kernel restarted too and its variables are gone]
+OUTPUT of Python run 22 of at most 300:
+```
+Notes:
+# Math weight editing
+Pass 1: original on 32 GSM8K + 64 MATH diagnostic problems. Accuracy 11/96 (11.46%); 85/96 cut at 32768; no finished wrong answers. Dominant target: pathological long/repetitive reasoning. No edits yet.
+Pass 2 TF paired productive vs repetition examples showed a common repetition direction (cosine ~0.7 with generation contrast), but chat template adds an empty think block. Corrected in pass 3 (files fwd_4) using raw template. Testing layer19 MLP neuron11 output ablation; strongest matched-context repetition writer. Attention-return request failed and did not count.
+Pass4 gen_5 paired32: ablate L19 neuron11, +6.25pp +/-4.35pp SE (3->5 correct), cutoff90.6->87.5%; weak positive, not confirmed. Trying rank-one removal of the matched repetition direction from L19 MLP only. Attention-output tool fails even for one raw text/layer.
+Pass5 gen_7 paired32: L19 MLP repetition-direction removal alpha1, +6.25pp +/-4.35pp SE (4->6 correct), cut29->26, mean30123->27698. Directional and neuron probes modest. Next two-site L15+L19 alpha1.
+
+Current edited tensors: ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']
+Available result files: ['edited', 'fwd_2', 'fwd_4', 'gen_1.jsonl', 'gen_1_acts', 'gen_5_edited.jsonl', 'gen_5_original.jsonl', 'gen_7_edited.jsonl', 'gen_7_original.jsonl', 'gen_8_edited.jsonl', 'gen_8_original.jsonl', 'notes.md']
+Available analysis variables: []
+
+```
+(Reminder: before your next block, explain what this result shows, what you will do next and why.)

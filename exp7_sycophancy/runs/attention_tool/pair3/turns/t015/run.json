@@ -1,0 +1,60 @@
+{
+ "ok": true,
+ "limit": false,
+ "rc": 0,
+ "wall_s": 94.2,
+ "audit": {
+  "event_types": {
+   "thread.started": 1,
+   "item.completed": 5,
+   "turn.started": 1,
+   "turn.completed": 1
+  },
+  "item_types": {
+   "error": 1,
+   "reasoning": 3,
+   "agent_message": 1
+  },
+  "tool_items": {},
+  "tool_free": true,
+  "usage": {
+   "input_tokens": 815470,
+   "cached_input_tokens": 751872,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 40750,
+   "reasoning_output_tokens": 18708
+  },
+  "thread_id": "id-5683508c",
+  "errors": [],
+  "turn_completed": true
+ },
+ "stderr_tail": "WARNING: failed to clean up stale arg0 temp dirs: Directory not empty (os error 39)\n",
+ "cmd": [
+  "<codex>/bin/codex",
+  "exec",
+  "resume",
+  "--strict-config",
+  "--skip-git-repo-check",
+  "--json",
+  "-m",
+  "gpt-6-astra",
+  "-c",
+  "model_reasoning_effort=\"xhigh\"",
+  "-c",
+  "model_context_window=872000",
+  "-c",
+  "model_auto_compact_token_limit=1000000",
+  "-c",
+  "model_instructions_file=\"<data>/sycmid/analysis/devemb_s2/run/instructions.md\"",
+  "-o",
+  "<data>/sycmid/analysis/devemb_s2/run/pair_6ecbee/turns/t015/answer.md",
+  "-c",
+  "model_reasoning_summary=\"detailed\"",
+  "id-5683508c",
+  "-"
+ ],
+ "attempt": 1,
+ "waits": [],
+ "thread_in": "id-5683508c",
+ "end": "2026-10-26T01:24:16-0400"
+}

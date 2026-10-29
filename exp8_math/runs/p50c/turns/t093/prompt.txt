@@ -1,0 +1,8 @@
+OUTPUT of Python run 50 of at most 300:
+```
+Restored alpha4: ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']
+GEN29 SAMPLE KEYS ['text', 'pred', 'correct', 'tokens', 'cut']
+gsm8k_train_2805 {'pred': '23', 'correct': True, 'tokens': 1687, 'cut': False}
+gsm8k_train_1766 {'pred': '153', 'correct': True, 'tokens': 1955, 'cut': False}
+
+```

@@ -1,0 +1,5 @@
+OUTPUT of Python run 14 of at most 300:
+```
+Current edit: 96 selected MLP output columns multiplied by 1.5; no other changes.
+
+```

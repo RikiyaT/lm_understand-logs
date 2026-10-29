@@ -1,0 +1,17 @@
+OUTPUT of Python run 35 of at most 300:
+```
+Pass-4 sample counts: 128 128
+Paired result: {'n': 128, 'original': 0.1015625, 'edited': 0.0859375, 'gain': -0.015625, 'paired_se': 0.02713423316130324, 'wrong_to_right': 5, 'right_to_wrong': 7, 'original_cut': 0.90625, 'edited_cut': 0.9140625, 'original_tokens': 30206.75, 'edited_tokens': 30362.765625}
+gsm8k {'n': 64, 'original': 0.125, 'edited': 0.109375, 'gain': -0.015625, 'paired_se': 0.04162013771115177, 'wrong_to_right': 3, 'right_to_wrong': 4, 'original_cut': 0.875, 'edited_cut': 0.890625, 'original_tokens': 29338.046875, 'edited_tokens': 29717.421875}
+math {'n': 64, 'original': 0.078125, 'edited': 0.0625, 'gain': -0.015625, 'paired_se': 0.03515969449616268, 'wrong_to_right': 2, 'right_to_wrong': 3, 'original_cut': 0.9375, 'edited_cut': 0.9375, 'original_tokens': 31075.453125, 'edited_tokens': 31008.109375}
+model.language_model.layers.18.mlp.down_proj.weight changed columns [8]
+Column projection ratios: [(8, 0.0)]
+model.language_model.layers.19.mlp.down_proj.weight changed columns [11]
+Column projection ratios: [(11, 0.0)]
+model.language_model.layers.23.mlp.down_proj.weight changed columns [22, 40]
+Column projection ratios: [(22, 0.0), (40, 0.0)]
+Candidate specification: {18: [8], 19: [11], 22: [59, 11, 89], 23: [22, 40, 46, 94, 19, 350]}
+Strength function:
+OSError
+
+```

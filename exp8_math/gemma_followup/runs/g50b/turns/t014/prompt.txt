@@ -1,0 +1,53 @@
+Forward pass 4 of 50 done (generate); results in /work/gen_4_original.jsonl and /work/gen_4_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_4_original.jsonl",
+  "edited": "/work/gen_4_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.4755859375,
+  "accuracy_by_source": {
+   "math": 0.4756
+  },
+  "mean_tokens": 878,
+  "cut_share": 0.0459,
+  "failures": {
+   "wrong_answer": 225,
+   "no_answer_finished": 280,
+   "cut_at_max_tokens": 32
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.4912109375,
+  "accuracy_by_source": {
+   "math": 0.4912
+  },
+  "mean_tokens": 679,
+  "cut_share": 0.0215,
+  "failures": {
+   "wrong_answer": 261,
+   "no_answer_finished": 244,
+   "cut_at_max_tokens": 16
+  }
+ },
+ "paired": {
+  "items": 32,
+  "accuracy_difference": 0.0156,
+  "standard_error": 0.0183,
+  "samples_wrong_to_right": 171,
+  "samples_right_to_wrong": 155
+ },
+ "s": 158.0
+}
+```
+Forward passes left: 46.
+Edits used in this pass: model.layers.8.mlp.down_proj.weight (edit hash 3870da1cab).

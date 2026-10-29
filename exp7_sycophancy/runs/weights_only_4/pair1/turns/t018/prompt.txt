@@ -1,0 +1,97 @@
+OUTPUT of run 17 of at most 60:
+```
+RESCALING-INVARIANT MLP UNIT COEFFICIENT DIFFERENCES
+C_j = down_j outer up_j; C_j is unchanged by up_j*=c, down_j/=c.
+Actual MLP computation additionally depends on the unexamined GELU gate
+values and state-dependent normalizations. No gate is evaluated here.
+
+layer 0 summed-unit digit-output fraction 0.00946 top10 fraction of digit-to-digit unit-change energy 0.04709
+unit 1623 digit_to_digit_delta_norm 0.241522 digit_output_delta_norm 0.605064 output_rank 336 gate_digit_enrichment 0.958 gate_relative_delta 0.003442 gate_digit_delta_norm 0.010962
+unit 410 digit_to_digit_delta_norm 0.222536 digit_output_delta_norm 1.309842 output_rank 4 gate_digit_enrichment 0.757 gate_relative_delta 0.005274 gate_digit_delta_norm 0.009843
+unit 909 digit_to_digit_delta_norm 0.206363 digit_output_delta_norm 1.003253 output_rank 14 gate_digit_enrichment 0.149 gate_relative_delta 0.00837 gate_digit_delta_norm 0.00967
+unit 1064 digit_to_digit_delta_norm 0.200264 digit_output_delta_norm 0.477245 output_rank 914 gate_digit_enrichment 0.368 gate_relative_delta 0.0045 gate_digit_delta_norm 0.006966
+Previously noted units (unit, digit-to-digit rank, digit-output rank): [(691, 35, 1634), (1699, 5, 819)]
+reciprocal-rescaling relative error: 1.1478351289495375e-12
+
+layer 1 summed-unit digit-output fraction 0.00723 top10 fraction of digit-to-digit unit-change energy 0.04323
+unit 1850 digit_to_digit_delta_norm 1.684708 digit_output_delta_norm 3.727374 output_rank 195 gate_digit_enrichment 0.402 gate_relative_delta 0.004152 gate_digit_delta_norm 0.08074
+unit 7 digit_to_digit_delta_norm 1.228235 digit_output_delta_norm 3.334011 output_rank 385 gate_digit_enrichment 0.839 gate_relative_delta 0.005648 gate_digit_delta_norm 0.07563
+unit 93 digit_to_digit_delta_norm 1.2143 digit_output_delta_norm 3.601901 output_rank 250 gate_digit_enrichment 0.857 gate_relative_delta 0.005094 gate_digit_delta_norm 0.100803
+unit 849 digit_to_digit_delta_norm 0.910022 digit_output_delta_norm 3.398754 output_rank 345 gate_digit_enrichment 2.576 gate_relative_delta 0.005097 gate_digit_delta_norm 0.063798
+reciprocal-rescaling relative error: 6.40885978652789e-13
+
+layer 2 summed-unit digit-output fraction 0.0119 top10 fraction of digit-to-digit unit-change energy 0.02615
+unit 261 digit_to_digit_delta_norm 1.379946 digit_output_delta_norm 5.244026 output_rank 83 gate_digit_enrichment 0.375 gate_relative_delta 0.008917 gate_digit_delta_norm 0.111067
+unit 254 digit_to_digit_delta_norm 1.34023 digit_output_delta_norm 7.495869 output_rank 1 gate_digit_enrichment 0.843 gate_relative_delta 0.005599 gate_digit_delta_norm 0.041088
+unit 1416 digit_to_digit_delta_norm 1.105279 digit_output_delta_norm 2.923633 output_rank 1355 gate_digit_enrichment 4.728 gate_relative_delta 0.006204 gate_digit_delta_norm 0.025505
+unit 983 digit_to_digit_delta_norm 1.079464 digit_output_delta_norm 5.471684 output_rank 60 gate_digit_enrichment 0.742 gate_relative_delta 0.005879 gate_digit_delta_norm 0.035011
+reciprocal-rescaling relative error: 2.9779426890273483e-12
+
+layer 3 summed-unit digit-output fraction 0.01181 top10 fraction of digit-to-digit unit-change energy 0.10454
+unit 77 digit_to_digit_delta_norm 8.306315 digit_output_delta_norm 16.643032 output_rank 18 gate_digit_enrichment 0.934 gate_relative_delta 0.018339 gate_digit_delta_norm 0.085329
+unit 559 digit_to_digit_delta_norm 6.92719 digit_output_delta_norm 16.380399 output_rank 22 gate_digit_enrichment 0.774 gate_relative_delta 0.021683 gate_digit_delta_norm 0.081445
+unit 1333 digit_to_digit_delta_norm 6.433609 digit_output_delta_norm 24.70643 output_rank 1 gate_digit_enrichment 0.752 gate_relative_delta 0.014848 gate_digit_delta_norm 0.055956
+unit 340 digit_to_digit_delta_norm 5.537131 digit_output_delta_norm 12.52828 output_rank 107 gate_digit_enrichment 0.568 gate_relative_delta 0.015127 gate_digit_delta_norm 0.043077
+unit 1783 digit_to_digit_delta_norm 5.401141 digit_output_delta_norm 18.295925 output_rank 10 gate_digit_enrichment 2.005 gate_relative_delta 0.020753 gate_digit_delta_norm 0.060104
+unit 1538 digit_to_digit_delta_norm 5.310888 digit_output_delta_norm 21.902742 output_rank 2 gate_digit_enrichment 0.9 gate_relative_delta 0.016074 gate_digit_delta_norm 0.05665
+unit 1654 digit_to_digit_delta_norm 4.931349 digit_output_delta_norm 14.448658 output_rank 54 gate_digit_enrichment 1.315 gate_relative_delta 0.021188 gate_digit_delta_norm 0.067047
+unit 146 digit_to_digit_delta_norm 4.876701 digit_output_delta_norm 14.058416 output_rank 61 gate_digit_enrichment 7.201 gate_relative_delta 0.003511 gate_digit_delta_norm 0.027354
+Previously noted units (unit, digit-to-digit rank, digit-output rank): [(1558, 18, 116), (1073, 1739, 1530), (82, 46, 947)]
+reciprocal-rescaling relative error: 0.0
+
+layer 12 summed-unit digit-output fraction 0.03686 top10 fraction of digit-to-digit unit-change energy 0.0382
+unit 1758 digit_to_digit_delta_norm 5.207488 digit_output_delta_norm 28.827787 output_rank 5 gate_digit_enrichment 0.955 gate_relative_delta 0.020058 gate_digit_delta_norm 0.004746
+unit 568 digit_to_digit_delta_norm 5.008311 digit_output_delta_norm 29.886181 output_rank 3 gate_digit_enrichment 1.413 gate_relative_delta 0.007763 gate_digit_delta_norm 0.010487
+unit 19 digit_to_digit_delta_norm 4.854676 digit_output_delta_norm 22.901237 output_rank 48 gate_digit_enrichment 0.738 gate_relative_delta 0.010679 gate_digit_delta_norm 0.007302
+unit 289 digit_to_digit_delta_norm 4.652999 digit_output_delta_norm 25.251381 output_rank 27 gate_digit_enrichment 1.242 gate_relative_delta 0.00701 gate_digit_delta_norm 0.00398
+reciprocal-rescaling relative error: 5.366158948062838e-13
+
+layer 13 summed-unit digit-output fraction 0.05237 top10 fraction of digit-to-digit unit-change energy 0.03226
+unit 196 digit_to_digit_delta_norm 5.673622 digit_output_delta_norm 31.313489 output_rank 2 gate_digit_enrichment 0.866 gate_relative_delta 0.005544 gate_digit_delta_norm 0.005855
+unit 1585 digit_to_digit_delta_norm 5.31959 digit_output_delta_norm 26.847956 output_rank 34 gate_digit_enrichment 1.197 gate_relative_delta 0.008763 gate_digit_delta_norm 0.004107
+unit 1444 digit_to_digit_delta_norm 5.135432 digit_output_delta_norm 30.992479 output_rank 3 gate_digit_enrichment 1.322 gate_relative_delta 0.008156 gate_digit_delta_norm 0.004864
+unit 426 digit_to_digit_delta_norm 4.983291 digit_output_delta_norm 29.459992 output_rank 11 gate_digit_enrichment 1.99 gate_relative_delta 0.008375 gate_digit_delta_norm 0.007331
+reciprocal-rescaling relative error: 2.5711883337069343e-13
+
+layer 14 summed-unit digit-output fraction 0.07858 top10 fraction of digit-to-digit unit-change energy 0.02956
+unit 1731 digit_to_digit_delta_norm 7.231841 digit_output_delta_norm 30.413741 output_rank 144 gate_digit_enrichment 1.013 gate_relative_delta 0.008466 gate_digit_delta_norm 0.005699
+unit 1372 digit_to_digit_delta_norm 7.062036 digit_output_delta_norm 29.63922 output_rank 178 gate_digit_enrichment 1.152 gate_relative_delta 0.00519 gate_digit_delta_norm 0.004962
+unit 1178 digit_to_digit_delta_norm 6.453678 digit_output_delta_norm 39.608349 output_rank 9 gate_digit_enrichment 3.05 gate_relative_delta 0.007953 gate_digit_delta_norm 0.006047
+unit 571 digit_to_digit_delta_norm 6.050264 digit_output_delta_norm 31.281345 output_rank 114 gate_digit_enrichment 0.727 gate_relative_delta 0.006393 gate_digit_delta_norm 0.005394
+reciprocal-rescaling relative error: 1.4005592385980932e-11
+
+layer 15 summed-unit digit-output fraction 0.13128 top10 fraction of digit-to-digit unit-change energy 0.03499
+unit 1337 digit_to_digit_delta_norm 11.371528 digit_output_delta_norm 40.97684 output_rank 32 gate_digit_enrichment 4.817 gate_relative_delta 0.004919 gate_digit_delta_norm 0.00314
+unit 1046 digit_to_digit_delta_norm 8.005995 digit_output_delta_norm 43.192613 output_rank 25 gate_digit_enrichment 1.063 gate_relative_delta 0.009626 gate_digit_delta_norm 0.004677
+unit 1470 digit_to_digit_delta_norm 7.980352 digit_output_delta_norm 36.009643 output_rank 110 gate_digit_enrichment 0.948 gate_relative_delta 0.007144 gate_digit_delta_norm 0.003907
+unit 1847 digit_to_digit_delta_norm 7.65444 digit_output_delta_norm 48.038001 output_rank 12 gate_digit_enrichment 0.65 gate_relative_delta 0.007596 gate_digit_delta_norm 0.002072
+reciprocal-rescaling relative error: 1.8005389472372163e-12
+
+layer 16 summed-unit digit-output fraction 0.22443 top10 fraction of digit-to-digit unit-change energy 0.05048
+unit 112 digit_to_digit_delta_norm 17.097044 digit_output_delta_norm 47.261706 output_rank 228 gate_digit_enrichment 3.578 gate_relative_delta 0.007156 gate_digit_delta_norm 0.004679
+unit 96 digit_to_digit_delta_norm 16.809662 digit_output_delta_norm 44.711664 output_rank 297 gate_digit_enrichment 6.416 gate_relative_delta 0.005852 gate_digit_delta_norm 0.003485
+unit 1368 digit_to_digit_delta_norm 15.081703 digit_output_delta_norm 67.267628 output_rank 15 gate_digit_enrichment 0.845 gate_relative_delta 0.010828 gate_digit_delta_norm 0.004557
+unit 1514 digit_to_digit_delta_norm 13.910325 digit_output_delta_norm 69.69446 output_rank 12 gate_digit_enrichment 1.087 gate_relative_delta 0.006512 gate_digit_delta_norm 0.003991
+unit 1307 digit_to_digit_delta_norm 13.121132 digit_output_delta_norm 63.855305 output_rank 24 gate_digit_enrichment 1.648 gate_relative_delta 0.008014 gate_digit_delta_norm 0.001852
+unit 558 digit_to_digit_delta_norm 12.101019 digit_output_delta_norm 60.660559 output_rank 41 gate_digit_enrichment 0.744 gate_relative_delta 0.008379 gate_digit_delta_norm 0.002635
+unit 1417 digit_to_digit_delta_norm 11.591691 digit_output_delta_norm 36.306186 output_rank 739 gate_digit_enrichment 5.337 gate_relative_delta 0.002612 gate_digit_delta_norm 0.001736
+unit 63 digit_to_digit_delta_norm 11.104486 digit_output_delta_norm 64.090907 output_rank 22 gate_digit_enrichment 0.696 gate_relative_delta 0.007709 gate_digit_delta_norm 0.003335
+Previously noted units (unit, digit-to-digit rank, digit-output rank): [(96, 2, 297), (1446, 10, 418)]
+reciprocal-rescaling relative error: 4.119952321016041e-13
+
+layer 17 summed-unit digit-output fraction 0.27856 top10 fraction of digit-to-digit unit-change energy 0.08763
+unit 1309 digit_to_digit_delta_norm 42.391001 digit_output_delta_norm 97.871494 output_rank 10 gate_digit_enrichment 10.069 gate_relative_delta 0.003711 gate_digit_delta_norm 0.003016
+unit 1242 digit_to_digit_delta_norm 30.292368 digit_output_delta_norm 73.540572 output_rank 98 gate_digit_enrichment 5.123 gate_relative_delta 0.004862 gate_digit_delta_norm 0.004115
+unit 1180 digit_to_digit_delta_norm 27.137575 digit_output_delta_norm 65.706233 output_rank 213 gate_digit_enrichment 8.108 gate_relative_delta 0.003823 gate_digit_delta_norm 0.004007
+unit 310 digit_to_digit_delta_norm 21.649719 digit_output_delta_norm 64.190186 output_rank 238 gate_digit_enrichment 1.182 gate_relative_delta 0.004612 gate_digit_delta_norm 0.003954
+unit 669 digit_to_digit_delta_norm 19.203884 digit_output_delta_norm 96.963507 output_rank 11 gate_digit_enrichment 1.48 gate_relative_delta 0.006035 gate_digit_delta_norm 0.002565
+unit 1610 digit_to_digit_delta_norm 16.909863 digit_output_delta_norm 57.997402 output_rank 372 gate_digit_enrichment 3.125 gate_relative_delta 0.003635 gate_digit_delta_norm 0.004301
+unit 490 digit_to_digit_delta_norm 16.385279 digit_output_delta_norm 92.574961 output_rank 21 gate_digit_enrichment 0.426 gate_relative_delta 0.009143 gate_digit_delta_norm 0.001326
+unit 1222 digit_to_digit_delta_norm 15.872221 digit_output_delta_norm 84.762726 output_rank 41 gate_digit_enrichment 0.405 gate_relative_delta 0.012879 gate_digit_delta_norm 0.005353
+Previously noted units (unit, digit-to-digit rank, digit-output rank): [(1309, 1, 10), (1242, 2, 98), (669, 5, 11), (1627, 15, 3), (824, 84, 830), (883, 10, 994), (1222, 8, 41)]
+reciprocal-rescaling relative error: 3.1615355647100596e-13
+
+These rankings concern parameterized coefficient changes, not the
+unknown frequency or causal importance of unit activation.
+
+```

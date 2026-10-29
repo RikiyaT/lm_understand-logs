@@ -1,0 +1,7 @@
+OUTPUT of Python run 27 of at most 300:
+```
+Generation record keys: ['id', 'source', 'answer', 'samples']
+Available analysis functions: ['load_original', 'load', 'save_edit', 'drop_edit', 'edited', 'behavior', 'demean', 'apply_neuron_edit', 'read_pair', 'pair_summary', 'apply_head_edit', 'apply_rank1_edit']
+Pass15 edit saved: {'model.layers.11.self_attn.o_proj.weight': {'head': 2, 'columns': [512, 768], 'operation': 'subtract strength * fixed repetition rank-one delta', 'delta_file': '/work/l11h2_repetition_rank1_delta.npy', 'strength': -0.5}}
+
+```

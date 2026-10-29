@@ -1,0 +1,21 @@
+OUTPUT of Python run 25 of at most 300:
+```
+GEN SCHEMA {'id': 'str', 'source': 'str', 'answer': 'str', 'samples': 'list'}
+NON-TEXT FIELDS {'id': 'math_train_precalculus_729', 'source': 'math', 'answer': '1'}
+META 2 {'lengths': {'type': 'list', 'len': 32}, 'model': 'original', 'edited_tensors': {'type': 'list', 'len': 0}, 'files': {'type': 'dict', 'len': 8}, 'padding': 'right; positions >= length are padding'}
+FILES 2 ['hidden_8.npy', 'token_logprobs.npy', 'hidden_12.npy', 'meta.json', 'mlp_act_8.npy', 'hidden_9.npy', 'mlp_act_11.npy', 'input_ids.npy', 'hidden_11.npy']
+META 3 {'lengths': {'type': 'list', 'len': 32}, 'model': 'edited', 'edited_tensors': {'type': 'list', 'len': 1}, 'files': {'type': 'dict', 'len': 6}, 'padding': 'right; positions >= length are padding'}
+FILES 3 ['meta.json', 'mlp_act_11.npy', 'input_ids.npy', 'hidden_9.npy', 'hidden_12.npy', 'token_logprobs.npy', 'mlp_act_8.npy']
+META 11 {'lengths': {'type': 'list', 'len': 2}, 'model': 'original', 'edited_tensors': {'type': 'list', 'len': 0}, 'files': {'type': 'dict', 'len': 12}, 'padding': 'right; positions >= length are padding'}
+FILES 11 ['input_ids.npy', 'attn_17.npy', 'hidden_18.npy', 'attn_11.npy', 'attn_5.npy', 'token_logprobs.npy', 'mlp_act_11.npy', 'meta.json', 'hidden_6.npy', 'mlp_act_8.npy', 'topk_ids.npy', 'hidden_12.npy', 'topk_logprobs.npy']
+ACTIVATION FILES ['hidden_mean_answer.npy', 'hidden_last_prompt.npy', 'index.json', 'mlp_last_prompt.npy', 'mlp_mean_answer.npy']
+PROMPT FORMAT The evaluation prompt, exactly as the model sees it (thinking off), for a problem P:
+PREFIX + P + SUFFIX, with
+PREFIX = '<bos><start_of_turn>user\n'
+SUFFIX = '\nPlease reason step by step, and put your final answer within \\boxed{}.<end_of_turn>\n<start_of_turn>model\n'
+The model's answer follows SUFFIX directly. To score a text with a teacher-forced pass, send PREFIX + P + SUFFIX + answer as one raw text in "texts".
+
+ARCHIVE EXISTS True
+KERNEL HELPERS ['Counter', 'Path', 'Tokenizer', 'behavior_stats', 'boxes', 'checkpoint', 'clear_edits', 'drop_edit', 'edited', 'load', 'load_original', 'normalize_answer', 'prepare_head', 'prepare_units', 'read_gen', 'read_jsonl', 'repetition', 'safe_open', 'save_edit', 'set_unit_edit', 'summarize_pair']
+
+```

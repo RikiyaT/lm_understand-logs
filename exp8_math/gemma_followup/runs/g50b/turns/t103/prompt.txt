@@ -1,0 +1,8 @@
+OUTPUT of Python run 56 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36, 37, 38, 39, 40, 41, 42, 43], 'answers_per_model': 9216, 'problems': 128, 'original_accuracy': 0.0920138888888889, 'edited_accuracy': 0.09722222222222222, 'gain_pp': 0.5208333333333333, 'sample_SE_pp': 0.2829148248857061, 'problem_cluster_SE_pp': 0.3582139716985305}
+PASS44_IDS ['math_train_geometry_97', 'math_train_precalculus_685', 'math_train_intermediate_algebra_670', 'math_train_prealgebra_1162', 'math_train_prealgebra_773', 'math_train_intermediate_algebra_1004', 'math_train_intermediate_algebra_1143', 'math_train_intermediate_algebra_1217', 'math_train_prealgebra_545', 'math_train_geometry_709', 'math_train_geometry_24', 'math_train_intermediate_algebra_243', 'math_train_number_theory_261', 'math_train_intermediate_algebra_258', 'math_train_geometry_756', 'math_train_number_theory_638', 'math_train_algebra_1201', 'math_train_number_theory_797', 'math_train_prealgebra_693', 'math_train_algebra_449', 'math_train_precalculus_126', 'math_train_precalculus_433', 'math_train_intermediate_algebra_913', 'math_train_geometry_854', 'math_train_prealgebra_525', 'math_train_number_theory_18', 'math_train_counting_and_probability_35', 'math_train_number_theory_2', 'math_train_precalculus_285', 'math_train_prealgebra_592', 'math_train_intermediate_algebra_1082', 'math_train_prealgebra_940']
+BLOCK1_THREE_PASSES {'passes': [35, 39, 43], 'answers_per_model': 3072, 'problems': 32, 'original_accuracy': 0.10481770833333333, 'edited_accuracy': 0.11686197916666667, 'gain_pp': 1.2044270833333335, 'sample_SE_pp': 0.5394654804348356, 'problem_cluster_SE_pp': 1.180578654234382}
+'Pass44 logged; all three block1 repetitions retained, with no weight changes.'
+
+```

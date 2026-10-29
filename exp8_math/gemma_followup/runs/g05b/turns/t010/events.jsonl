@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"id-a188819c"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"The file-list field was rejected, so no forward pass was spent and there are no new model results. The prepared localization batch and unedited weights remain unchanged. I’ll check whether the required `texts` field accepts the saved JSON path; this is an input-format check, not a model experiment.\n\n```forward\n{\"type\":\"teacher_forced\",\"model\":\"original\",\"texts\":\"/work/dev_teacher_texts.json\",\"return\":{\"token_logprobs\":true,\"topk\":8,\"hidden_states\":[0,1,6,14,18],\"mlp_act\":[0,1,5,13,17]}}\n```\n"}}
+{"type":"turn.completed","usage":{"input_tokens":166785,"cached_input_tokens":149376,"cache_write_input_tokens":0,"output_tokens":13975,"reasoning_output_tokens":6817}}

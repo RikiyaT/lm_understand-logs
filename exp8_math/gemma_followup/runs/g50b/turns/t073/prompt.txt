@@ -1,0 +1,6 @@
+OUTPUT of Python run 41 of at most 300:
+```
+PASS29 {'pass': 29, 'n': 1024, 'gain_pp': 4.296875, 'paired_SE_pp': 1.7371242894236287, 'problem_cluster_SE_pp': 2.1861945269295258}
+Archived and logged unchanged pass30.
+
+```

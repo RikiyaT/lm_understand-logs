@@ -1,0 +1,11 @@
+OUTPUT of Python run 63 of at most 300:
+```
+FINAL_DEV {'passes': [29, 30, 33, 34], 'answers_per_model': 4096, 'problems': 32, 'original_accuracy': 0.484375, 'edited_accuracy': 0.50927734375, 'gain_pp': 2.490234375, 'sample_SE_pp': 0.876792858194063, 'problem_cluster_SE_pp': 1.7513031568217818}
+FINAL_HOLDOUT {'passes': [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50], 'answers_per_model': 16384, 'problems': 128, 'original_accuracy': 0.09051513671875, 'edited_accuracy': 0.0947265625, 'gain_pp': 0.421142578125, 'sample_SE_pp': 0.20830615718369117, 'problem_cluster_SE_pp': 0.364563206209}
+CLUSTER_95_INTERVAL_PP [-0.3003, 1.1425]
+PAIRED_TRANSITIONS {'wrong_to_right': 617, 'right_to_wrong': 548}
+FINAL_BEHAVIOR {'original': {'answers': 16384, 'correct': 1483, 'accuracy_percent': 9.052, 'mean_tokens': 1555.754, 'cutoff_percent': 7.306, 'incorrect_completed': 13769, 'incorrect_cutoff': 1132}, 'edited': {'answers': 16384, 'correct': 1552, 'accuracy_percent': 9.473, 'mean_tokens': 1789.327, 'cutoff_percent': 10.504, 'incorrect_completed': 13199, 'incorrect_cutoff': 1633}}
+SUBMITTED_TENSORS ['model.layers.11.mlp.down_proj.weight', 'model.layers.11.self_attn.o_proj.weight']
+'Final candidate retained, fully audited, and documented in /work/final_report.json.'
+
+```

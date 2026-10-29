@@ -1,0 +1,23 @@
+OUTPUT of Python run 7 of at most 300:
+```
+Top repetition-associated neurons:
+{'layer': 9, 'neuron': 70, 'corr': 0.0009, 'raw': 0.0243, 'repeat': 0.4556, 'repeat_controlled': 0.3584, 'activity': 0.0202}
+{'layer': 5, 'neuron': 901, 'corr': 0.0093, 'raw': -0.004, 'repeat': 0.2161, 'repeat_controlled': 0.3488, 'activity': 0.0176}
+{'layer': 6, 'neuron': 1530, 'corr': 0.0391, 'raw': 0.0251, 'repeat': 0.2408, 'repeat_controlled': 0.3485, 'activity': 0.033}
+{'layer': 5, 'neuron': 1423, 'corr': 0.0284, 'raw': 0.0297, 'repeat': 0.3367, 'repeat_controlled': 0.3482, 'activity': 0.0505}
+{'layer': 10, 'neuron': 1329, 'corr': 0.02, 'raw': 0.0364, 'repeat': 0.4243, 'repeat_controlled': 0.348, 'activity': 0.1152}
+{'layer': 10, 'neuron': 918, 'corr': -0.002, 'raw': 0.0151, 'repeat': 0.409, 'repeat_controlled': 0.3476, 'activity': 0.0243}
+{'layer': 4, 'neuron': 1696, 'corr': 0.0611, 'raw': 0.0392, 'repeat': 0.1621, 'repeat_controlled': 0.3433, 'activity': 0.0529}
+{'layer': 9, 'neuron': 1853, 'corr': 0.0203, 'raw': 0.0616, 'repeat': 0.5299, 'repeat_controlled': 0.3431, 'activity': 0.0711}
+{'layer': 5, 'neuron': 1353, 'corr': -0.0018, 'raw': 0.0165, 'repeat': 0.4053, 'repeat_controlled': 0.3416, 'activity': 0.0754}
+{'layer': 10, 'neuron': 1628, 'corr': -0.0109, 'raw': 0.0156, 'repeat': 0.4353, 'repeat_controlled': 0.3415, 'activity': 0.1125}
+{'layer': 2, 'neuron': 399, 'corr': -0.0001, 'raw': -0.002, 'repeat': 0.2925, 'repeat_controlled': 0.3388, 'activity': 0.0742}
+{'layer': 6, 'neuron': 1857, 'corr': 0.0401, 'raw': 0.0187, 'repeat': 0.1464, 'repeat_controlled': 0.3378, 'activity': 0.0393}
+{'layer': 13, 'neuron': 258, 'corr': 0.0022, 'raw': -0.0198, 'repeat': 0.1347, 'repeat_controlled': 0.3365, 'activity': 0.0133}
+{'layer': 0, 'neuron': 1302, 'corr': 0.0176, 'raw': 0.0163, 'repeat': 0.303, 'repeat_controlled': 0.3341, 'activity': 3.8831}
+{'layer': 14, 'neuron': 1174, 'corr': -0.0059, 'raw': -0.0291, 'repeat': 0.0673, 'repeat_controlled': 0.3332, 'activity': 0.0191}
+{'layer': 9, 'neuron': 203, 'corr': 0.0039, 'raw': 0.0039, 'repeat': 0.2929, 'repeat_controlled': 0.3294, 'activity': 0.0104}
+Teacher-forcing corpus: 496 texts; 278520 tokens; {'reference': 63, 'correct': 198, 'wrong': 235}
+Request saved: /work/tf_baseline_request.json
+
+```

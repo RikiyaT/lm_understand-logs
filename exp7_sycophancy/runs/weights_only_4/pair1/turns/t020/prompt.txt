@@ -1,0 +1,55 @@
+OUTPUT of run 19 of at most 60:
+```
+original pairs [('answer', 'question'), ('think', 'what'), ('believe', 'calculate'), ('guess', 'solve'), ('opinion', 'problem'), ('claim', 'fact')]
+new pairs [('suppose', 'determine'), ('assume', 'compute'), ('reckon', 'evaluate'), ('expect', 'deduce'), ('imagine', 'verify'), ('presume', 'check')]
+
+POSITION-AVERAGED, CENTERED QUERY ASSOCIATIONS
+Positive = B-A toward guess-source vocabulary.
+FWER reference covers all 32 head/scaling/query-family combinations.
+('raw', 0, 'ASCII') original 0.02344 new -0.00918 pair_signs -+-++- local_p 0.7188 family_p 1.0
+('raw', 0, 'fullwidth') original -0.01767 new -0.0176 pair_signs -+--+- local_p 0.4375 family_p 1.0
+('raw', 0, 'Arabic_Indic') original -0.03896 new -0.02893 pair_signs -+--+- local_p 0.2188 family_p 0.7812
+('raw', 0, 'letters') original 0.02599 new -0.00415 pair_signs -+-++- local_p 0.9062 family_p 1.0
+('raw', 1, 'ASCII') original 0.02367 new -0.01064 pair_signs --+--+ local_p 0.5312 family_p 1.0
+('raw', 1, 'fullwidth') original 0.00161 new -0.00271 pair_signs +-+-++ local_p 0.9375 family_p 1.0
+('raw', 1, 'Arabic_Indic') original 0.00948 new 0.00176 pair_signs +-+-++ local_p 0.9062 family_p 1.0
+('raw', 1, 'letters') original 0.03773 new 0.00093 pair_signs --+--+ local_p 0.9375 family_p 1.0
+('raw', 2, 'ASCII') original 0.02565 new 0.01965 pair_signs +-+-++ local_p 0.25 family_p 0.9688
+('raw', 2, 'fullwidth') original 0.00338 new 0.01308 pair_signs +-+-++ local_p 0.5312 family_p 1.0
+('raw', 2, 'Arabic_Indic') original 0.00478 new 0.00927 pair_signs +-+--+ local_p 0.7188 family_p 1.0
+('raw', 2, 'letters') original 0.01779 new 0.03066 pair_signs +-+-++ local_p 0.125 family_p 0.6562
+('raw', 3, 'ASCII') original 0.00694 new 0.00199 pair_signs +---+- local_p 0.9062 family_p 1.0
+('raw', 3, 'fullwidth') original 0.01397 new 0.00422 pair_signs +-+--+ local_p 0.875 family_p 1.0
+('raw', 3, 'Arabic_Indic') original 0.00276 new 0.0087 pair_signs +-+--+ local_p 0.5 family_p 1.0
+('raw', 3, 'letters') original -0.00393 new 0.003 pair_signs +---++ local_p 0.75 family_p 1.0
+('scaled', 0, 'ASCII') original 0.01684 new -0.00506 pair_signs -+--+- local_p 0.6562 family_p 1.0
+('scaled', 0, 'fullwidth') original -0.0075 new -0.01018 pair_signs -+--+- local_p 0.5 family_p 1.0
+('scaled', 0, 'Arabic_Indic') original -0.02784 new -0.01166 pair_signs -+--+- local_p 0.375 family_p 1.0
+('scaled', 0, 'letters') original 0.01633 new 0.00017 pair_signs -+-++- local_p 0.9688 family_p 1.0
+('scaled', 1, 'ASCII') original 0.00339 new -0.01822 pair_signs --+--+ local_p 0.375 family_p 1.0
+('scaled', 1, 'fullwidth') original -0.00982 new -0.01772 pair_signs --+-++ local_p 0.5625 family_p 1.0
+('scaled', 1, 'Arabic_Indic') original 0.00176 new -0.01525 pair_signs ----++ local_p 0.5938 family_p 1.0
+('scaled', 1, 'letters') original 0.01419 new -0.01468 pair_signs --+--+ local_p 0.5 family_p 1.0
+('scaled', 2, 'ASCII') original 0.02011 new 0.01348 pair_signs +-+-++ local_p 0.4688 family_p 1.0
+('scaled', 2, 'fullwidth') original 0.00987 new 0.00897 pair_signs +++-++ local_p 0.625 family_p 1.0
+('scaled', 2, 'Arabic_Indic') original 0.00707 new 0.00558 pair_signs +-+-++ local_p 0.8125 family_p 1.0
+('scaled', 2, 'letters') original 0.01617 new 0.01717 pair_signs +-+-++ local_p 0.3438 family_p 1.0
+('scaled', 3, 'ASCII') original -0.00903 new 0.00919 pair_signs +-+-+- local_p 0.375 family_p 1.0
+('scaled', 3, 'fullwidth') original 0.00952 new 0.01412 pair_signs +-+-++ local_p 0.5312 family_p 1.0
+('scaled', 3, 'Arabic_Indic') original 0.00066 new 0.007 pair_signs +++--+ local_p 0.5 family_p 1.0
+('scaled', 3, 'letters') original -0.00454 new 0.00964 pair_signs ++--++ local_p 0.2812 family_p 1.0
+
+HEAD 2 EXACT QUERY-VERSUS-SHARED-KEY CONTRIBUTIONS
+('raw', 2, 'ASCII') Q-part 0.00014724086326467272 K-part 0.00027191508379636846 total 0.00041915594706104113
+('raw', 2, 'fullwidth') Q-part 0.00013312402881397552 K-part -1.9853292531003796e-05 total 0.00011327073628297174
+('raw', 2, 'Arabic_Indic') Q-part 9.81552708298276e-05 K-part -2.666652594607082e-05 total 7.148874488375678e-05
+('raw', 2, 'letters') Q-part 0.0002692951335512592 K-part 0.0001660091061502144 total 0.0004353042397014735
+('scaled', 2, 'ASCII') Q-part 0.18664998612659486 K-part 0.07067631879456529 total 0.25732630492116015
+('scaled', 2, 'fullwidth') Q-part 0.08793438370804019 K-part -0.023584499016533925 total 0.06434988469150624
+('scaled', 2, 'Arabic_Indic') Q-part 0.07582739826441055 K-part -0.03856975290527874 total 0.0372576453591318
+('scaled', 2, 'letters') Q-part 0.16611202722798765 K-part 0.0882884779311057 total 0.25440050515909335
+
+The label-swap reference concerns lexical coefficients only.
+Reading a user's belief can support either copying it or correcting it.
+
+```

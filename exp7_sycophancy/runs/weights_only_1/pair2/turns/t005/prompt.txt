@@ -1,0 +1,58 @@
+OUTPUT of run 3 of at most 60:
+```
+UNIFORM SOURCE-DIRECTION ALIGNMENT TEST
+Delta = O_B V_B - O_A V_A.
+PSD sym(Delta): B increases alignment in every residual direction.
+NSD sym(Delta): A increases alignment in every residual direction.
+Indefinite: each checkpoint increases alignment in some directions.
+This tests bare linear maps, not complete attention or token copying.
+
+layer= 0 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0302864 max_eig_across_heads= 0.0289454 identity_coefficients=[2.0131e-05, -4.196e-06, 8.32e-07, 2.65e-06]
+layer= 1 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0342511 max_eig_across_heads= 0.0337685 identity_coefficients=[-9.619e-06, -1.7273e-05, 9.58e-07, -5.451e-06]
+layer= 2 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0241917 max_eig_across_heads= 0.024343 identity_coefficients=[-7.167e-06, 7.329e-06, 8.623e-06, 8.101e-06]
+layer= 3 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0223683 max_eig_across_heads= 0.0243437 identity_coefficients=[9.458e-06, 1.761e-06, -1.014e-06, 1.287e-06]
+layer= 4 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.024976 max_eig_across_heads= 0.0232025 identity_coefficients=[-8.477e-06, -5.047e-06, -4.28e-07, -5.469e-06]
+layer= 5 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0327058 max_eig_across_heads= 0.0321818 identity_coefficients=[-1.0064e-05, -2.7738e-05, -4.98e-06, -1.054e-05]
+layer= 6 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0249332 max_eig_across_heads= 0.0285458 identity_coefficients=[-4.54e-07, 9.445e-06, 1.214e-06, 5.591e-06]
+layer= 7 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0269622 max_eig_across_heads= 0.027443 identity_coefficients=[3.972e-06, 4.539e-06, 4.7e-07, -4.005e-06]
+layer= 8 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0228404 max_eig_across_heads= 0.0250844 identity_coefficients=[8.457e-06, 4.351e-06, 4.05e-06, 6.023e-06]
+layer= 9 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0306318 max_eig_across_heads= 0.0287045 identity_coefficients=[-2.4064e-05, -7.34e-07, -6.636e-06, 5.563e-06]
+layer=10 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0325377 max_eig_across_heads= 0.0348599 identity_coefficients=[1.5387e-05, -1.5228e-05, -1.0954e-05, 1.4476e-05]
+layer=11 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.033876 max_eig_across_heads= 0.0302504 identity_coefficients=[2.067e-06, -1.961e-06, 1.6582e-05, -9.747e-06]
+layer=12 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0428739 max_eig_across_heads= 0.0479668 identity_coefficients=[-3.001e-06, 1.9273e-05, 2.1974e-05, -1.7812e-05]
+layer=13 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0257516 max_eig_across_heads= 0.025393 identity_coefficients=[5.059e-06, 1.476e-06, 2.263e-06, -3.524e-06]
+layer=14 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0455601 max_eig_across_heads= 0.0432115 identity_coefficients=[-8.219e-06, 3.081e-06, 6.004e-06, -4.714e-06]
+layer=15 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0552607 max_eig_across_heads= 0.0512775 identity_coefficients=[-4.389e-06, -1.7342e-05, -4.312e-06, -1.6514e-05]
+layer=16 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0360966 max_eig_across_heads= 0.0340212 identity_coefficients=[-1.9886e-05, -1.0402e-05, -9.193e-06, -1.7287e-05]
+layer=17 classes={'PSD': 0, 'NSD': 0, 'indefinite': 4, 'zero': 0} min_eig_across_heads=-0.0242727 max_eig_across_heads= 0.023091 identity_coefficients=[3.183e-06, -8.723e-06, 1.4539e-05, 9.692e-06]
+
+GLOBAL CLASSIFICATION
+PSD 0
+NSD 0
+indefinite 72
+zero 0
+positive quantiles [min, median, max]: [318. 320. 321.]
+negative quantiles [min, median, max]: [319. 320. 322.]
+identity_energy_fraction quantiles [min, median, max]: [0. 0. 0.]
+skew_energy_fraction quantiles [min, median, max]: [0.4962 0.5    0.5043]
+
+HEADS WITH LARGEST ABSOLUTE IDENTITY-ALIGNED CHANGE
+This is a ranking of a specified algebraic statistic, not behavioral importance.
+layer= 5 head=1 class=indefinite identity_coeff=-2.773793e-05 identity_energy_fraction=2.33825e-05 eig_range=[-0.03058386, 0.02898582] positive/negative=319/321 trace_A=12.37564 trace_B=12.35789
+layer= 9 head=0 class=indefinite identity_coeff=-2.406383e-05 identity_energy_fraction=1.724191e-05 eig_range=[-0.03063185, 0.0287045] positive/negative=319/321 trace_A=20.51797 trace_B=20.50257
+layer=12 head=2 class=indefinite identity_coeff= 2.197372e-05 identity_energy_fraction=1.195889e-05 eig_range=[-0.0428739, 0.04796679] positive/negative=320/320 trace_A=58.43622 trace_B=58.45028
+layer= 0 head=0 class=indefinite identity_coeff= 2.013062e-05 identity_energy_fraction=1.355158e-05 eig_range=[-0.02339477, 0.02795372] positive/negative=319/321 trace_A=44.87877 trace_B=44.89166
+layer=16 head=0 class=indefinite identity_coeff=-1.988643e-05 identity_energy_fraction=1.479981e-05 eig_range=[-0.03609659, 0.03119878] positive/negative=320/320 trace_A=8.057059 trace_B=8.044331
+layer=12 head=1 class=indefinite identity_coeff= 1.927299e-05 identity_energy_fraction=1.193437e-05 eig_range=[-0.02376005, 0.02100835] positive/negative=319/321 trace_A=4.417118 trace_B=4.429452
+layer=12 head=3 class=indefinite identity_coeff=-1.78119e-05 identity_energy_fraction=8.440869e-06 eig_range=[-0.04057832, 0.03534133] positive/negative=320/320 trace_A=23.80039 trace_B=23.78899
+layer=15 head=1 class=indefinite identity_coeff=-1.734163e-05 identity_energy_fraction=5.67678e-06 eig_range=[-0.0552607, 0.05127749] positive/negative=321/319 trace_A=-184.5189 trace_B=-184.53
+layer=16 head=3 class=indefinite identity_coeff=-1.728728e-05 identity_energy_fraction=1.212565e-05 eig_range=[-0.03159477, 0.03011762] positive/negative=320/320 trace_A=2.701016 trace_B=2.689952
+layer= 1 head=1 class=indefinite identity_coeff=-1.727291e-05 identity_energy_fraction=1.211186e-05 eig_range=[-0.02640056, 0.02599776] positive/negative=320/320 trace_A=10.79009 trace_B=10.77904
+
+SCOPE
+Mixed eigenvalue signs reject a uniform alignment increase for that head.
+They do not reject selective copying of task-relevant representations.
+Those representations and their routing are not identified by this test.
+Normalization, positional routing, and downstream processing were not evaluated.
+
+```

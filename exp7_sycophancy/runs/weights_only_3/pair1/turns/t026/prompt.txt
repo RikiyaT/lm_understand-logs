@@ -1,0 +1,106 @@
+OUTPUT of run 16 of at most 60:
+```
+NEW HYPOTHESIS: PER-HEAD OV DIFFERENCES CANCEL ACROSS HEADS
+Only parameter-derived OV matrices are summed; no routing is supplied.
+The formal head sum is NOT the attention block's actual function.
+A common-head fraction of 1 means identical difference matrices across heads.
+A net/separate ratio below 1 indicates cancellation; above 1 indicates reinforcement.
+
+MODE: raw
+layer net/separate common_fraction endpoint_common formal_sum_rel leading_mode_share
+ 0     1.790056        0.447514        0.271385       0.012337           0.486697
+ 1     1.855616        0.463904        0.336960       0.014730           0.466576
+ 2     1.734483        0.433621        0.161640       0.017388           0.436777
+ 3     1.898577        0.474644        0.184010       0.022122           0.484636
+ 4     2.418187        0.604547        0.257137       0.021215           0.605672
+ 5     1.918989        0.479747        0.278872       0.014439           0.486150
+ 6     1.954660        0.488665        0.125168       0.021435           0.498203
+ 7     1.765950        0.441488        0.073148       0.024808           0.453088
+ 8     2.167976        0.541994        0.130281       0.023893           0.543662
+ 9     1.684929        0.421232        0.063198       0.026626           0.421355
+10     1.912826        0.478207        0.285639       0.012334           0.481544
+11     1.442591        0.360648        0.047903       0.026429           0.388295
+12     1.982286        0.495571        0.278532       0.014355           0.515194
+13     1.809577        0.452394        0.186250       0.018145           0.454207
+14     1.618562        0.404640        0.186137       0.013373           0.409617
+15     1.989583        0.497396        0.103984       0.025033           0.522874
+16     2.685964        0.671491        0.196146       0.026701           0.673604
+17     1.529056        0.382264        0.144405       0.014755           0.401907
+
+MODE: folded
+layer net/separate common_fraction endpoint_common formal_sum_rel leading_mode_share
+ 0     2.492903        0.623226        0.352930       0.017187           0.689821
+ 1     2.389062        0.597266        0.404092       0.013214           0.613190
+ 2     1.994873        0.498718        0.173780       0.023417           0.506354
+ 3     1.891736        0.472934        0.222840       0.024227           0.485609
+ 4     2.631311        0.657828        0.212946       0.032080           0.664207
+ 5     2.361669        0.590417        0.415516       0.012026           0.602966
+ 6     2.368941        0.592235        0.095327       0.039310           0.598867
+ 7     2.149997        0.537499        0.102242       0.027430           0.543987
+ 8     2.047009        0.511752        0.169192       0.025210           0.577016
+ 9     2.021962        0.505491        0.080716       0.033079           0.506209
+10     2.085705        0.521426        0.263672       0.013721           0.525092
+11     1.176767        0.294192        0.029575       0.031823           0.567807
+12     2.326542        0.581636        0.420194       0.013126           0.615486
+13     1.742657        0.435664        0.185372       0.015450           0.520101
+14     1.501421        0.375355        0.168227       0.013430           0.380397
+15     1.495981        0.373995        0.088828       0.033344           0.517965
+16     2.487193        0.621798        0.180761       0.025433           0.622574
+17     1.556737        0.389184        0.095848       0.017683           0.411590
+
+FOLDED: THREE LOWEST NET/SEPARATE RATIOS
+{"mode": "folded", "layer": 11, "net_over_separate_difference_energy": 1.1767667743198704, "common_head_difference_fraction": 0.2941916935799676, "endpoint_common_head_fraction": 0.029575007155261686, "formal_sum_relative_difference": 0.03182260363101504, "leading_head_mode_energy_share": 0.5678066665732288, "leading_head_mode": [0.0872564238961108, 0.10154348225569548, 0.8450248227214912, -0.5176951677239817], "head_algebraic_shares_of_formal_sum": [0.25188384710989536, 0.2037125229884066, 0.35826200994465823, 0.18614161995703982]}
+{"mode": "folded", "layer": 15, "net_over_separate_difference_energy": 1.49598051666431, "common_head_difference_fraction": 0.3739951291660775, "endpoint_common_head_fraction": 0.08882755756336269, "formal_sum_relative_difference": 0.03334424764763336, "leading_head_mode_energy_share": 0.5179654759231703, "leading_head_mode": [0.3492816464248489, -0.4827289469545982, 0.5786219954693671, 0.5569305895727932], "head_algebraic_shares_of_formal_sum": [0.22543229200490283, 0.16339998726219573, 0.3101499547292694, 0.301017766003632]}
+{"mode": "folded", "layer": 14, "net_over_separate_difference_energy": 1.501420946269514, "common_head_difference_fraction": 0.3753552365673785, "endpoint_common_head_fraction": 0.1682267363621984, "formal_sum_relative_difference": 0.01342972412860716, "leading_head_mode_energy_share": 0.380396662597901, "leading_head_mode": [0.408725859439638, 0.4175828636329143, 0.49562013970486446, 0.6425950520696492], "head_algebraic_shares_of_formal_sum": [0.23165951900619983, 0.23569218933377675, 0.2562070868272802, 0.27644120483274326]}
+
+FOLDED: THREE HIGHEST NET/SEPARATE RATIOS
+{"mode": "folded", "layer": 4, "net_over_separate_difference_energy": 2.6313106614375252, "common_head_difference_fraction": 0.6578276653593813, "endpoint_common_head_fraction": 0.2129456584046137, "formal_sum_relative_difference": 0.03208022824141073, "leading_head_mode_energy_share": 0.6642073304135294, "leading_head_mode": [0.45534122025270546, 0.4515190786916209, 0.5836130043160459, 0.49818747064678987], "head_algebraic_shares_of_formal_sum": [0.23394359734319828, 0.2294807460169921, 0.2871784669333152, 0.2493971897064945]}
+{"mode": "folded", "layer": 0, "net_over_separate_difference_energy": 2.492903106283059, "common_head_difference_fraction": 0.6232257765707647, "endpoint_common_head_fraction": 0.35293026009063616, "formal_sum_relative_difference": 0.017187224376233677, "leading_head_mode_energy_share": 0.6898207635063005, "leading_head_mode": [0.7031726323014668, 0.2413229954613778, 0.521915251885234, 0.41822951939496894], "head_algebraic_shares_of_formal_sum": [0.352896306431335, 0.14409064537629537, 0.2720889738660256, 0.230924074326344]}
+{"mode": "folded", "layer": 16, "net_over_separate_difference_energy": 2.487192635964582, "common_head_difference_fraction": 0.6217981589911455, "endpoint_common_head_fraction": 0.18076141405053975, "formal_sum_relative_difference": 0.02543319491545188, "leading_head_mode_energy_share": 0.6225738075969725, "leading_head_mode": [0.5054031283606061, 0.5254665377571478, 0.49660811023508833, 0.47099148653618245], "head_algebraic_shares_of_formal_sum": [0.2521218086558808, 0.26091050519968073, 0.24827734979744784, 0.23869033634699058]}
+
+CROSS-HEAD COSINES OF FOLDED OV DIFFERENCES
+layer 3
+[[1.     0.2636 0.2326 0.1939]
+ [0.2636 1.     0.5502 0.2953]
+ [0.2326 0.5502 1.     0.2523]
+ [0.1939 0.2953 0.2523 1.    ]]
+layer 4
+[[1.     0.474  0.5048 0.4979]
+ [0.474  1.     0.6522 0.4922]
+ [0.5048 0.6522 1.     0.6394]
+ [0.4979 0.4922 0.6394 1.    ]]
+layer 11
+[[ 1.      0.3979  0.2952  0.2546]
+ [ 0.3979  1.      0.2859  0.1149]
+ [ 0.2952  0.2859  1.     -0.4386]
+ [ 0.2546  0.1149 -0.4386  1.    ]]
+layer 15
+[[ 1.     -0.0902  0.5074  0.5938]
+ [-0.0902  1.     -0.1772 -0.1878]
+ [ 0.5074 -0.1772  1.      0.7186]
+ [ 0.5938 -0.1878  0.7186  1.    ]]
+layer 16
+[[1.     0.5255 0.4616 0.4457]
+ [0.5255 1.     0.5911 0.5262]
+ [0.4616 0.5911 1.     0.4284]
+ [0.4457 0.5262 0.4284 1.    ]]
+layer 17
+[[1.     0.2092 0.0414 0.1961]
+ [0.2092 1.     0.3385 0.1651]
+ [0.0414 0.3385 1.     0.1656]
+ [0.1961 0.1651 0.1656 1.    ]]
+
+FOLDED HEAD ALLOCATIONS FOR CANDIDATE LAYERS
+{"layer": 3, "head_algebraic_shares_of_formal_sum": [0.19571426039846207, 0.28228114841364604, 0.262188208384071, 0.2598163828038209], "leading_head_mode": [0.3200307902258823, 0.5849618538887826, 0.5352412684223605, 0.5185717957814701]}
+{"layer": 4, "head_algebraic_shares_of_formal_sum": [0.23394359734319828, 0.2294807460169921, 0.2871784669333152, 0.2493971897064945], "leading_head_mode": [0.45534122025270546, 0.4515190786916209, 0.5836130043160459, 0.49818747064678987]}
+{"layer": 11, "head_algebraic_shares_of_formal_sum": [0.25188384710989536, 0.2037125229884066, 0.35826200994465823, 0.18614161995703982], "leading_head_mode": [0.0872564238961108, 0.10154348225569548, 0.8450248227214912, -0.5176951677239817]}
+{"layer": 15, "head_algebraic_shares_of_formal_sum": [0.22543229200490283, 0.16339998726219573, 0.3101499547292694, 0.301017766003632], "leading_head_mode": [0.3492816464248489, -0.4827289469545982, 0.5786219954693671, 0.5569305895727932]}
+{"layer": 16, "head_algebraic_shares_of_formal_sum": [0.2521218086558808, 0.26091050519968073, 0.24827734979744784, 0.23869033634699058], "leading_head_mode": [0.5054031283606061, 0.5254665377571478, 0.49660811023508833, 0.47099148653618245]}
+{"layer": 17, "head_algebraic_shares_of_formal_sum": [0.24655221852371462, 0.3057637549606691, 0.2641006391852655, 0.18358338733035093], "leading_head_mode": [0.4070957105224761, 0.6816998683708037, 0.5508561743578426, 0.25713001985235345]}
+
+Limits:
+- Algebraic head shares are not causal behavioral shares.
+- Different attention routing can prevent cancellation or reinforcement seen in the formal sum.
+- Conversely, a large common writing component does not identify what information it carries.
+
+```

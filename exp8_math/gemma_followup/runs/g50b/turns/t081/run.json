@@ -1,0 +1,55 @@
+{
+ "ok": true,
+ "limit": false,
+ "rc": 0,
+ "wall_s": 42.5,
+ "audit": {
+  "event_types": {
+   "thread.started": 1,
+   "item.completed": 3,
+   "turn.started": 1,
+   "turn.completed": 1
+  },
+  "item_types": {
+   "error": 1,
+   "agent_message": 2
+  },
+  "tool_items": {},
+  "tool_free": true,
+  "usage": {
+   "input_tokens": 8597,
+   "cached_input_tokens": 2432,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 786,
+   "reasoning_output_tokens": 516
+  },
+  "thread_id": "id-3887030b",
+  "errors": [],
+  "turn_completed": true
+ },
+ "stderr_tail": "",
+ "cmd": [
+  "<codex>/bin/codex",
+  "exec",
+  "--strict-config",
+  "--skip-git-repo-check",
+  "--json",
+  "-m",
+  "gpt-6-astra",
+  "-c",
+  "model_reasoning_effort=\"max\"",
+  "-c",
+  "model_context_window=872000",
+  "-c",
+  "model_auto_compact_token_limit=1000000",
+  "-c",
+  "model_instructions_file=\"<data>/mathedit/runs6/g50b/instructions.md\"",
+  "-o",
+  "<data>/mathedit/runs6/g50b/turns/t081/answer.md",
+  "-"
+ ],
+ "attempt": 1,
+ "waits": [],
+ "thread_in": null,
+ "end": "2026-10-25T13:51:14-0400"
+}

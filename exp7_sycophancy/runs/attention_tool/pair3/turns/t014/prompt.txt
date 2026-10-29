@@ -1,0 +1,81 @@
+OUTPUT of run 13 of at most 20:
+```
+OUTPUT-CONDITIONED EVEN-CORE COEFFICIENT MATRICES, B-A
+No RMS-state normalization, gate evaluation, or input quadratic evaluation.
+Eigenvector signs are arbitrary; positive/negative eigenVALUES are not.
+
+L7 one_minus_other_digits: relative change=0.01727; leading signed eigenvalues=[ 0.0009 -0.0007  0.0007 -0.0006]
+  top4 squared-energy fraction 0.1107 aligned factor shares [down,gate,up] [0.6908 0.1782 0.131 ] decomposition max error 3.96496122609738e-18
+
+L7 seven_minus_nine: relative change=0.01575; leading signed eigenvalues=[ 0.0007 -0.0006 -0.0006  0.0006]
+  top4 squared-energy fraction 0.1049 aligned factor shares [down,gate,up] [0.6082 0.2232 0.1686] decomposition max error 2.120970499924768e-18
+
+L7 agreement_minus_correction: relative change=0.01500; leading signed eigenvalues=[-0.0009  0.0006 -0.0006 -0.0006]
+  top4 squared-energy fraction 0.1207 aligned factor shares [down,gate,up] [0.5798 0.2339 0.1862] decomposition max error 4.40033616098609e-18
+
+L9 one_minus_other_digits: relative change=0.01886; leading signed eigenvalues=[-0.001   0.001  -0.0007  0.0007]
+  top4 squared-energy fraction 0.1257 aligned factor shares [down,gate,up] [0.6917 0.168  0.1403] decomposition max error 2.5275463146068322e-18
+
+L9 seven_minus_nine: relative change=0.01777; leading signed eigenvalues=[ 0.0012 -0.0007 -0.0007  0.0006]
+  top4 squared-energy fraction 0.1326 aligned factor shares [down,gate,up] [0.6607 0.1835 0.1559] decomposition max error 2.9171814703438104e-18
+
+L9 agreement_minus_correction: relative change=0.01616; leading signed eigenvalues=[ 0.0012 -0.0009  0.0007  0.0006]
+  top4 squared-energy fraction 0.1461 aligned factor shares [down,gate,up] [0.5748 0.2347 0.1904] decomposition max error 3.342392009865469e-18
+
+L10 one_minus_other_digits: relative change=0.02422; leading signed eigenvalues=[ 0.001  -0.0007 -0.0006 -0.0006]
+  top4 squared-energy fraction 0.0988 aligned factor shares [down,gate,up] [0.8385 0.087  0.0746] decomposition max error 4.0623700150316244e-18
+
+L10 seven_minus_nine: relative change=0.01542; leading signed eigenvalues=[-0.0008  0.0006 -0.0006 -0.0005]
+  top4 squared-energy fraction 0.1034 aligned factor shares [down,gate,up] [0.6481 0.1891 0.1629] decomposition max error 3.876022766635678e-18
+
+L10 agreement_minus_correction: relative change=0.01796; leading signed eigenvalues=[-0.0008  0.0007  0.0006 -0.0006]
+  top4 squared-energy fraction 0.1072 aligned factor shares [down,gate,up] [0.6983 0.1585 0.1431] decomposition max error 4.018324301774401e-18
+  most positive eigenvalue 0.000746 input-direction + [(' prosperous', 0.162), (' imminent', 0.157), (' settlers', 0.153), (' privatization', 0.15)] - [('itance', -0.167), (' olmak', -0.161), (' cursos', -0.152), (' grados', -0.151)]
+  most negative eigenvalue -0.000808 input-direction + [(' yaitu', 0.197), (' daha', 0.176), ('wane', 0.174), (' terceiro', 0.174)] - [(' interrogation', -0.199), (' reporting', -0.192), (' detection', -0.182), (' filing', -0.17)]
+
+L15 one_minus_other_digits: relative change=0.04820; leading signed eigenvalues=[ 0.0021 -0.0017  0.0016 -0.0015]
+  top4 squared-energy fraction 0.0642 aligned factor shares [down,gate,up] [0.9405 0.0311 0.0285] decomposition max error 4.946672411965114e-18
+  most positive eigenvalue 0.002095 input-direction + [(' Ensemble', 0.217), (' translucent', 0.215), ('Sunset', 0.212), (' Fiona', 0.211)] - [(' o', -0.283), (' h', -0.277), (' l', -0.277), (' f', -0.264)]
+  most negative eigenvalue -0.001739 input-direction + [('seal', 0.204), ('mermaid', 0.191), ('Ia', 0.188), (' constipation', 0.183)] - [(' digit', -0.221), (' minutes', -0.216), (' acc', -0.2), (' technical', -0.199)]
+
+L15 seven_minus_nine: relative change=0.04289; leading signed eigenvalues=[ 0.0015 -0.0014 -0.0013  0.0013]
+  top4 squared-energy fraction 0.0688 aligned factor shares [down,gate,up] [0.9207 0.0441 0.0352] decomposition max error 1.934623251528822e-18
+  most positive eigenvalue 0.001513 input-direction + [(' more', 0.242), (' close', 0.236), (' tr', 0.235), (' full', 0.226)] - [(' Cyrus', -0.217), (' Denise', -0.213), (' Disable', -0.213), ('Tmp', -0.211)]
+  most negative eigenvalue -0.001413 input-direction + [('7', 0.171), ('8', 0.171), (' lamb', 0.171), ('9', 0.163)] - [(' behav', -0.192), (' behavi', -0.182), (' companions', -0.159), (' tats', -0.15)]
+
+L15 agreement_minus_correction: relative change=0.02067; leading signed eigenvalues=[-0.0009  0.0007 -0.0006 -0.0006]
+  top4 squared-energy fraction 0.0863 aligned factor shares [down,gate,up] [0.7409 0.1384 0.1208] decomposition max error 2.4496192834594366e-18
+  most positive eigenvalue 0.000655 input-direction + [(' challeng', 0.169), (' pariy', 0.164), (' Preview', 0.16), (' Transformation', 0.157)] - [('ten', -0.195), ('1', -0.188), ('2', -0.185), (' An', -0.17)]
+  most negative eigenvalue -0.000934 input-direction + [('Info', 0.199), (' Butter', 0.194), ('arka', 0.189), (' Beet', 0.189)] - [(' rest', -0.222), (' rec', -0.209), (' close', -0.209), (' cont', -0.202)]
+
+L16 one_minus_other_digits: relative change=0.08274; leading signed eigenvalues=[ 0.0032 -0.0032 -0.0031  0.0028]
+  top4 squared-energy fraction 0.0742 aligned factor shares [down,gate,up] [0.9677 0.0172 0.015 ] decomposition max error 3.3915199208062186e-18
+  most positive eigenvalue 0.003225 input-direction + [('1', 0.271), ('0', 0.215), ('5', 0.208), ('7', 0.206)] - [(' Gavin', -0.212), (' Gros', -0.209), (' graphene', -0.203), ('Geo', -0.2)]
+  most negative eigenvalue -0.00318 input-direction + [(' host', 0.227), (' hip', 0.217), (' mu', 0.215), (' marginal', 0.211)] - [('eca', -0.211), ('Elem', -0.207), ('Ec', -0.199), ('Cnt', -0.189)]
+
+L16 seven_minus_nine: relative change=0.04461; leading signed eigenvalues=[ 0.0023 -0.002   0.0017 -0.0016]
+  top4 squared-energy fraction 0.086 aligned factor shares [down,gate,up] [0.9314 0.0343 0.0343] decomposition max error 5.2583805365546965e-18
+  most positive eigenvalue 0.002292 input-direction + [(' Third', 0.213), ('Third', 0.211), (' third', 0.194), ('third', 0.193)] - [(' Ros', -0.153), (' Rosa', -0.151), ('Ros', -0.15), (' Ru', -0.147)]
+  most negative eigenvalue -0.001982 input-direction + [('8', 0.281), ('9', 0.274), ('6', 0.265), ('7', 0.257)] - [(' Bod', -0.204), (' Koz', -0.199), (' Keb', -0.197), (' Bou', -0.193)]
+
+L16 agreement_minus_correction: relative change=0.01895; leading signed eigenvalues=[-0.0008 -0.0007  0.0006 -0.0005]
+  top4 squared-energy fraction 0.0859 aligned factor shares [down,gate,up] [0.7038 0.1692 0.127 ] decomposition max error 1.853308088592409e-18
+  most positive eigenvalue 0.00058 input-direction + [('ibid', 0.182), ('7', 0.177), ('1', 0.174), ('significant', 0.165)] - [(' fragrance', -0.188), (' pum', -0.179), (' gh', -0.173), (' perfume', -0.165)]
+  most negative eigenvalue -0.00075 input-direction + [('jpeg', 0.154), ('flakes', 0.15), (' encodes', 0.148), ('underbrace', 0.138)] - [(' Ta', -0.3), ('Ta', -0.275), ('Ti', -0.273), (' Ti', -0.27)]
+
+L17 one_minus_other_digits: relative change=0.12027; leading signed eigenvalues=[-0.0066  0.0053 -0.0046  0.0046]
+  top4 squared-energy fraction 0.1237 aligned factor shares [down,gate,up] [0.9779 0.0106 0.0115] decomposition max error 5.163512846462215e-18
+  most positive eigenvalue 0.005296 input-direction + [('abs', 0.219), ('sim', 0.217), ('sz', 0.216), ('ast', 0.21)] - [(' professionalism', -0.261), (' sensual', -0.241), (' teamwork', -0.233), (' adorn', -0.233)]
+  most negative eigenvalue -0.006579 input-direction + [(' caucasian', 0.244), (' earthqu', 0.242), (' Cute', 0.239), ('Notifier', 0.237)] - [(' and', -0.354), (' to', -0.322), (' in', -0.322), (' al', -0.312)]
+
+L17 seven_minus_nine: relative change=0.05103; leading signed eigenvalues=[ 0.0044  0.0029  0.0026 -0.0022]
+  top4 squared-energy fraction 0.1725 aligned factor shares [down,gate,up] [0.9425 0.0295 0.028 ] decomposition max error 3.1035287187397564e-17
+  most positive eigenvalue 0.004439 input-direction + [(' Hfn', 0.255), (' Corey', 0.239), (' merch', 0.238), (' Lenovo', 0.236)] - [(' st', -0.368), (' sub', -0.359), (' un', -0.348), (' av', -0.346)]
+  most negative eigenvalue -0.002249 input-direction + [(' intimacy', 0.213), (' costumes', 0.213), (' fantas', 0.199), (' improvis', 0.198)] - [('7', -0.217), (' elas', -0.216), ('9', -0.197), ('8', -0.196)]
+
+L17 agreement_minus_correction: relative change=0.01676; leading signed eigenvalues=[ 0.0007 -0.0007 -0.0005  0.0004]
+  top4 squared-energy fraction 0.1121 aligned factor shares [down,gate,up] [0.6235 0.219  0.1575] decomposition max error 2.5309344463958494e-18
+  most positive eigenvalue 0.000672 input-direction + [(' Hfn', 0.314), (' personajes', 0.309), (' cantante', 0.301), (' sparsebundle', 0.3)] - [(' in', -0.388), (' general', -0.388), (' non', -0.383), (' sub', -0.38)]
+  most negative eigenvalue -0.000651 input-direction + [(' mat', 0.26), (' sz', 0.258), (' ne', 0.247), (' tr', 0.242)] - [(' merch', -0.225), (' thieves', -0.222), (' photovolta', -0.218), (' Lessons', -0.218)]
+
+```

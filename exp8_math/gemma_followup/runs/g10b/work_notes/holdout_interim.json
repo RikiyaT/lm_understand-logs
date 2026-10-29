@@ -1,0 +1,23 @@
+{
+  "passes": [
+    8,
+    9
+  ],
+  "n_per_model": 2048,
+  "distinct_problems": 256,
+  "original_correct": 145,
+  "edited_correct": 166,
+  "original_accuracy_pct": 7.080078125,
+  "edited_accuracy_pct": 8.10546875,
+  "gain_pp": 1.025390625,
+  "cluster_se_pp": 0.5856102921141735,
+  "sample_pair_se_pp": 0.49994815880060045,
+  "wrong_to_right": 63,
+  "right_to_wrong": 42,
+  "original_mean_tokens": 1534.01708984375,
+  "original_cut_pct": 7.12890625,
+  "original_repeated_conclusion_pct": 14.55078125,
+  "edited_mean_tokens": 1425.47802734375,
+  "edited_cut_pct": 6.15234375,
+  "edited_repeated_conclusion_pct": 11.23046875
+}

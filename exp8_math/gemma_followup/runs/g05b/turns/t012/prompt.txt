@@ -1,0 +1,55 @@
+OUTPUT of Python run 8 of at most 300:
+```
+Mechanical arithmetic checks: 3270 adjacent literal-number equalities
+Correct responses with checked arithmetic error: 27 / 217
+Failed responses with checked arithmetic error: 82 / 295
+L 0 N 1405 mean/sd 13.373 6.971 top feature correlations [('digit_density', 0.318), ('repetition', 0.269), ('final_density', 0.132), ('latex_density', -0.126)]
+L 0 N 149 mean/sd 1.589 0.596 top feature correlations [('final_density', 0.329), ('repetition', 0.282), ('equality_density', -0.203), ('latex_density', -0.202)]
+L 0 N 1309 mean/sd 0.479 0.24 top feature correlations [('digit_density', 0.561), ('let_density', -0.144), ('arithmetic_error_count', 0.121), ('final_density', -0.094)]
+L 0 N 2032 mean/sd 0.169 0.193 top feature correlations [('digit_density', 0.4), ('final_density', -0.27), ('equality_density', 0.166), ('arithmetic_progress', -0.157)]
+L 0 N 761 mean/sd 0.321 0.277 top feature correlations [('digit_density', 0.59), ('arithmetic_error_count', 0.196), ('latex_density', -0.153), ('let_density', -0.122)]
+L 0 N 1479 mean/sd 0.165 0.201 top feature correlations [('digit_density', 0.487), ('identity_fraction', 0.177), ('arithmetic_error_count', 0.171), ('final_density', -0.121)]
+L 1 N 483 mean/sd 0.195 0.114 top feature correlations [('digit_density', 0.664), ('equality_density', 0.192), ('let_density', -0.157), ('arithmetic_error_count', 0.144)]
+L 1 N 1899 mean/sd 0.222 0.253 top feature correlations [('digit_density', 0.635), ('latex_density', -0.484), ('equality_density', 0.217), ('final_density', 0.141)]
+L 1 N 553 mean/sd 0.19 0.149 top feature correlations [('digit_density', 0.643), ('arithmetic_progress', -0.139), ('therefore_density', -0.133), ('final_density', -0.129)]
+L 1 N 421 mean/sd 0.198 0.107 top feature correlations [('digit_density', 0.42), ('equality_density', 0.226), ('latex_density', 0.171), ('arithmetic_error_count', 0.1)]
+L 1 N 1851 mean/sd 0.132 0.085 top feature correlations [('digit_density', 0.369), ('final_density', 0.316), ('equality_density', 0.134), ('therefore_density', -0.126)]
+L 1 N 1066 mean/sd 0.053 0.06 top feature correlations [('final_density', 0.442), ('arithmetic_error_count', 0.169), ('identity_fraction', 0.152), ('let_density', -0.109)]
+L 5 N 1111 mean/sd 0.004 0.018 top feature correlations [('final_density', 0.522), ('equality_density', -0.486), ('latex_density', -0.197), ('repetition', 0.119)]
+L 5 N 1244 mean/sd 0.052 0.046 top feature correlations [('digit_density', 0.492), ('final_density', -0.254), ('latex_density', 0.181), ('arithmetic_error_count', 0.136)]
+L 5 N 970 mean/sd 0.037 0.015 top feature correlations [('digit_density', 0.63), ('final_density', -0.23), ('equality_density', 0.167), ('therefore_density', -0.161)]
+L 5 N 207 mean/sd 0.014 0.013 top feature correlations [('final_density', 0.451), ('digit_density', 0.395), ('latex_density', -0.336), ('equality_density', -0.171)]
+L 5 N 473 mean/sd 0.022 0.01 top feature correlations [('final_density', 0.345), ('equality_density', -0.236), ('arithmetic_error', -0.141), ('arithmetic_progress', 0.097)]
+L 5 N 1493 mean/sd 0.013 0.014 top feature correlations [('equality_density', -0.522), ('final_density', 0.502), ('latex_density', -0.264), ('arithmetic_error_count', 0.092)]
+L 13 N 1226 mean/sd 0.028 0.011 top feature correlations [('digit_density', 0.343), ('equality_density', 0.149), ('arithmetic_progress', -0.128), ('final_density', -0.127)]
+L 13 N 231 mean/sd 0.035 0.016 top feature correlations [('digit_density', 0.607), ('equality_density', 0.268), ('final_density', -0.221), ('identity_fraction', 0.149)]
+L 13 N 1881 mean/sd 0.023 0.009 top feature correlations [('digit_density', 0.427), ('equality_density', 0.329), ('final_density', -0.179), ('arithmetic_progress', -0.17)]
+L 13 N 570 mean/sd 0.033 0.012 top feature correlations [('digit_density', 0.423), ('final_density', -0.304), ('identity_fraction', 0.248), ('latex_density', 0.152)]
+L 13 N 39 mean/sd 0.053 0.023 top feature correlations [('digit_density', 0.397), ('final_density', -0.38), ('arithmetic_error_count', 0.21), ('latex_density', 0.195)]
+L 13 N 1059 mean/sd 0.033 0.019 top feature correlations [('equality_density', 0.538), ('digit_density', 0.504), ('final_density', -0.242), ('latex_density', 0.235)]
+L 17 N 1451 mean/sd 0.183 0.06 top feature correlations [('digit_density', 0.375), ('equality_density', 0.272), ('identity_fraction', 0.264), ('repetition', 0.233)]
+L 17 N 653 mean/sd 0.037 0.009 top feature correlations [('digit_density', 0.289), ('equality_density', 0.259), ('final_density', -0.22), ('repetition', 0.154)]
+L 17 N 547 mean/sd 0.083 0.051 top feature correlations [('final_density', 0.375), ('latex_density', -0.373), ('digit_density', 0.275), ('equality_density', 0.264)]
+L 17 N 942 mean/sd 0.033 0.01 top feature correlations [('final_density', -0.491), ('digit_density', 0.464), ('equality_density', 0.259), ('therefore_density', -0.147)]
+L 17 N 211 mean/sd 0.067 0.044 top feature correlations [('final_density', 0.341), ('latex_density', -0.294), ('equality_density', -0.208), ('digit_density', -0.19)]
+L 17 N 1475 mean/sd 0.015 0.015 top feature correlations [('digit_density', 0.184), ('let_density', -0.167), ('identity_fraction', 0.113), ('final_density', -0.105)]
+Stable failure + arithmetic-error candidates:
+L 0 N 1028 failure 0.11 arith-error 0.154 energy 0.1002 mean/sd 0.106 0.126
+L 0 N 2032 failure 0.14 arith-error 0.092 energy 0.1355 mean/sd 0.169 0.193
+L 0 N 761 failure 0.114 arith-error 0.075 energy 0.2207 mean/sd 0.321 0.277
+L 0 N 1479 failure 0.113 arith-error 0.063 energy 0.1453 mean/sd 0.165 0.201
+L 0 N 845 failure 0.111 arith-error 0.066 energy 0.2212 mean/sd 0.251 0.262
+L 0 N 1450 failure 0.128 arith-error 0.082 energy 0.0428 mean/sd 0.023 0.064
+L 0 N 1013 failure 0.109 arith-error 0.08 energy 0.0683 mean/sd 0.047 0.116
+L 13 N 1881 failure 0.168 arith-error 0.117 energy 0.0101 mean/sd 0.023 0.009
+L 17 N 1554 failure 0.135 arith-error 0.165 energy 0.007 mean/sd 0.013 0.009
+L 13 N 39 failure 0.127 arith-error 0.104 energy 0.0212 mean/sd 0.053 0.023
+L 13 N 1540 failure 0.187 arith-error 0.117 energy 0.0057 mean/sd 0.015 0.009
+L 17 N 942 failure 0.162 arith-error 0.089 energy 0.015 mean/sd 0.033 0.01
+L 17 N 793 failure 0.218 arith-error 0.106 energy 0.0035 mean/sd 0.007 0.006
+L 17 N 1475 failure 0.149 arith-error 0.066 energy 0.0091 mean/sd 0.015 0.015
+L 17 N 124 failure 0.102 arith-error 0.119 energy 0.0083 mean/sd 0.016 0.011
+L 17 N 1484 failure 0.129 arith-error 0.126 energy 0.005 mean/sd 0.009 0.007
+Weights remain unchanged.
+
+```

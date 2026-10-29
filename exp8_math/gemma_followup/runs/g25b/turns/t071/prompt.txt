@@ -1,0 +1,7 @@
+OUTPUT of Python run 43 of at most 300:
+```
+HOLDOUT pass24: {'passes': [24], 'problems': 128, 'answers_per_model': 1024, 'original_accuracy': 0.0859375, 'edited_accuracy': 0.0947265625, 'gain': 0.0087890625, 'problem_cluster_se': 0.007490098880727775, 'sample_paired_se': 0.007499751698748749, 'samples_wrong_to_right': 34, 'samples_right_to_wrong': 25}
+HOLDOUT pooled so far: {'passes': [23, 24], 'problems': 256, 'answers_per_model': 2048, 'original_accuracy': 0.08447265625, 'edited_accuracy': 0.08349609375, 'gain': -0.0009765625, 'problem_cluster_se': 0.0052688966924415905, 'sample_paired_se': 0.005075561018354749, 'samples_wrong_to_right': 53, 'samples_right_to_wrong': 55}
+Final-pass schedule verified: {'problems': 256, 'samples_per_problem': 4, 'answers_per_model': 1024, 'edited': ['model.layers.17.mlp.down_proj.weight']}
+
+```

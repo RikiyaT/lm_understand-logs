@@ -1,0 +1,193 @@
+OUTPUT of run 12 of at most 60:
+```
+NUMBER-SELECTIVE UNIT SUBSETS
+Units are ranked by fraction of GATE WEIGHT energy in digit-contrast space.
+Subset sums concern ungated up/down coefficients, not model predictions.
+
+layer 0
+top 10 minimum enrichment 2.45 A -0.443239 B -0.449538 D -0.006299 positive-D units 2
+top 25 minimum enrichment 2.041 A -0.569733 B -0.574105 D -0.004372 positive-D units 13
+top 50 minimum enrichment 1.816 A -0.729935 B -0.73677 D -0.006834 positive-D units 22
+top 100 minimum enrichment 1.617 A -1.499606 B -1.514605 D -0.014999 positive-D units 42
+top 2048 minimum enrichment 0.027 A -5.197359 B -5.213173 D -0.015814 positive-D units 1031
+Top gate-selective units: [(918, 4.624, -0.00032), (1098, 4.166, -0.00059), (691, 4.127, -0.00324), (1948, 3.764, -0.00128), (251, 2.653, -0.00011), (2003, 2.592, -4e-05), (1284, 2.545, 0.00028), (267, 2.461, -0.00048)]
+
+layer 1
+top 10 minimum enrichment 2.401 A -1.228352 B -1.199777 D 0.028575 positive-D units 5
+top 25 minimum enrichment 2.121 A -1.953164 B -1.926754 D 0.02641 positive-D units 13
+top 50 minimum enrichment 1.935 A -3.422183 B -3.393427 D 0.028756 positive-D units 24
+top 100 minimum enrichment 1.694 A -5.649195 B -5.621845 D 0.02735 positive-D units 52
+top 2048 minimum enrichment 0.038 A -25.10435 B -25.207843 D -0.103493 positive-D units 1025
+Top gate-selective units: [(1976, 10.121, -0.00353), (272, 5.89, -0.00363), (458, 3.895, 0.00237), (1813, 3.654, 0.0005), (280, 3.023, 0.00105), (134, 2.772, -0.0003), (849, 2.576, 0.03005), (1141, 2.528, -0.00065)]
+
+layer 2
+top 10 minimum enrichment 2.62 A -1.08046 B -1.061673 D 0.018787 positive-D units 7
+top 25 minimum enrichment 2.285 A -0.762962 B -0.716113 D 0.04685 positive-D units 20
+top 50 minimum enrichment 2.022 A 0.644174 B 0.662325 D 0.018151 positive-D units 32
+top 100 minimum enrichment 1.724 A -0.737431 B -0.689614 D 0.047818 positive-D units 64
+top 2048 minimum enrichment 0.039 A 15.689185 B 15.989762 D 0.300577 positive-D units 1048
+Top gate-selective units: [(949, 5.041, 0.00155), (1416, 4.728, 0.00375), (1523, 3.716, 0.00473), (1063, 3.137, -0.00069), (648, 2.806, 1e-05), (1785, 2.767, -0.00422), (1574, 2.764, -0.00464), (1831, 2.711, 0.00821)]
+
+layer 3
+top 10 minimum enrichment 3.885 A -4.815655 B -4.94238 D -0.126725 positive-D units 4
+top 25 minimum enrichment 2.448 A -5.31004 B -5.457453 D -0.147413 positive-D units 12
+top 50 minimum enrichment 2.091 A -4.64754 B -4.699579 D -0.052039 positive-D units 28
+top 100 minimum enrichment 1.786 A 1.41153 B 1.319569 D -0.091961 positive-D units 54
+top 2048 minimum enrichment 0.019 A 46.691013 B 47.190986 D 0.499974 positive-D units 1084
+Top gate-selective units: [(1073, 12.392, 0.00281), (82, 12.271, -0.01473), (1558, 10.542, -0.10101), (1533, 10.212, 0.0083), (146, 7.201, -0.0063), (1590, 6.739, -0.00051), (1713, 6.169, 0.0049), (778, 5.209, -0.01906)]
+Selected unit 1558 gate relative change 0.005074258252673199 up relative change 0.005789503092347485 down relative change 0.015582410980958855
+
+layer 12
+top 10 minimum enrichment 3.396 A 1.614826 B 1.651145 D 0.036318 positive-D units 5
+top 25 minimum enrichment 2.768 A -10.417051 B -10.285635 D 0.131416 positive-D units 15
+top 50 minimum enrichment 2.498 A -5.674785 B -5.43748 D 0.237305 positive-D units 29
+top 100 minimum enrichment 2.206 A 6.673995 B 6.93599 D 0.261995 positive-D units 55
+top 2048 minimum enrichment 0.106 A 251.155427 B 252.657378 D 1.501951 positive-D units 1038
+Top gate-selective units: [(761, 5.036, 0.00233), (1853, 4.131, -0.00897), (702, 4.059, 0.03174), (359, 4.024, -0.00219), (1568, 4.019, 0.03171), (177, 3.926, -0.01149), (1175, 3.788, 0.01159), (1841, 3.536, -0.02523)]
+
+layer 13
+top 10 minimum enrichment 3.619 A -9.777646 B -9.768113 D 0.009534 positive-D units 6
+top 25 minimum enrichment 2.677 A -15.361585 B -15.339846 D 0.02174 positive-D units 14
+top 50 minimum enrichment 2.38 A -16.613922 B -16.690153 D -0.076231 positive-D units 24
+top 100 minimum enrichment 2.033 A -25.64084 B -25.645434 D -0.004594 positive-D units 50
+top 2048 minimum enrichment 0.11 A -16.254876 B -15.343574 D 0.911302 positive-D units 1053
+Top gate-selective units: [(491, 6.533, -0.03265), (299, 5.873, 0.03788), (308, 4.888, -0.02992), (1968, 4.288, 0.0133), (777, 4.015, 0.0189), (223, 3.731, 0.01889), (2022, 3.72, -0.00784), (1200, 3.686, 0.00142)]
+
+layer 14
+top 10 minimum enrichment 3.408 A -10.560351 B -10.585341 D -0.02499 positive-D units 4
+top 25 minimum enrichment 2.84 A -21.995524 B -22.151174 D -0.15565 positive-D units 10
+top 50 minimum enrichment 2.532 A -16.794547 B -16.913926 D -0.119379 positive-D units 25
+top 100 minimum enrichment 2.139 A -28.019745 B -27.915478 D 0.104267 positive-D units 55
+top 2048 minimum enrichment 0.102 A -9.101157 B -7.621247 D 1.479911 positive-D units 1040
+Top gate-selective units: [(818, 4.848, -0.01886), (1054, 4.324, 0.01009), (80, 4.227, -0.02946), (493, 3.973, -0.02038), (369, 3.879, 0.00728), (1066, 3.826, -0.0189), (1129, 3.595, 0.01504), (142, 3.536, -0.01173)]
+
+layer 15
+top 10 minimum enrichment 2.902 A 6.151986 B 5.98728 D -0.164706 positive-D units 5
+top 25 minimum enrichment 2.576 A 7.224207 B 7.213471 D -0.010736 positive-D units 14
+top 50 minimum enrichment 2.274 A 7.43503 B 7.465429 D 0.030399 positive-D units 31
+top 100 minimum enrichment 2.007 A 1.503226 B 1.696667 D 0.193441 positive-D units 54
+top 2048 minimum enrichment 0.048 A -43.575239 B -42.953184 D 0.622055 positive-D units 1035
+Top gate-selective units: [(1337, 4.817, -0.13151), (1716, 4.115, 0.00135), (385, 3.877, 0.00474), (1771, 3.515, -0.02381), (753, 3.331, -0.04765), (1352, 3.1, 0.01693), (1696, 3.079, -0.00087), (816, 3.024, -0.01716)]
+
+layer 16
+top 10 minimum enrichment 3.967 A -40.090022 B -39.494401 D 0.59562 positive-D units 5
+top 25 minimum enrichment 2.83 A -69.496496 B -68.558077 D 0.938419 positive-D units 13
+top 50 minimum enrichment 2.407 A -76.795095 B -75.402328 D 1.392767 positive-D units 29
+top 100 minimum enrichment 2.017 A -77.83325 B -76.139258 D 1.693992 positive-D units 59
+top 2048 minimum enrichment 0.112 A -236.638157 B -236.516706 D 0.121451 positive-D units 1036
+Top gate-selective units: [(1446, 11.885, 0.14893), (1123, 10.312, -0.00094), (931, 7.985, -7e-05), (96, 6.416, 0.51512), (1955, 5.778, 0.02528), (332, 5.61, -0.01437), (1417, 5.337, -0.13124), (1875, 4.79, 0.05969)]
+Selected unit 96 gate relative change 0.0058521773076948514 up relative change 0.005636147002528329 down relative change 0.017943833484250202
+
+layer 17
+top 10 minimum enrichment 4.387 A -103.967339 B -106.655697 D -2.688358 positive-D units 2
+top 25 minimum enrichment 2.663 A -110.246985 B -112.079045 D -1.83206 positive-D units 13
+top 50 minimum enrichment 2.185 A -110.904304 B -111.888292 D -0.983988 positive-D units 29
+top 100 minimum enrichment 1.871 A -116.311039 B -116.906843 D -0.595804 positive-D units 59
+top 2048 minimum enrichment 0.075 A -165.840712 B -165.708579 D 0.132132 positive-D units 1053
+Top gate-selective units: [(824, 11.763, -0.23147), (883, 11.005, -0.26871), (1309, 10.069, -1.31918), (750, 9.575, -0.00668), (1027, 8.23, -0.22432), (1180, 8.108, -0.09209), (234, 5.676, 0.05395), (779, 5.398, 0.17302)]
+Selected unit 1309 gate relative change 0.003710615938336634 up relative change 0.0075496550167135825 down relative change 0.02804189252421471
+Selected unit 1242 gate relative change 0.004862171455799586 up relative change 0.007682586745019928 down relative change 0.04070567127532883
+Selected unit 669 gate relative change 0.006035375689096761 up relative change 0.007320214189965589 down relative change 0.024563254568765763
+
+SELECTED UNIT WEIGHT ASSOCIATIONS
+Length-normalized weight vectors. These are not activations or logits.
+
+layer 3 unit 1558 gate_mid weight-vector norm 38.23563
+ minus [(' Boe', -0.1274), ('NODE', -0.1221), (' Rober', -0.1175), ('acod', -0.1155), (' Bead', -0.1144)]
+ plus  [('One', 0.1282), (' One', 0.1275), (' one', 0.1272), ('one', 0.1178), (' first', 0.1103)]
+ digit coordinates 0..9: [ 0.0325  0.21    0.0165  0.0187 -0.0064  0.0297 -0.0035  0.0092 -0.0124  0.0237]
+
+layer 3 unit 1558 up_mid weight-vector norm 30.630818
+ minus [(' Rik', -0.0917), ('ordon', -0.0878), ('ikr', -0.0828), (' monod', -0.082), (' jobs', -0.0817)]
+ plus  [('ox', 0.1524), (' Seventh', 0.1515), (' IX', 0.1477), ('Cav', 0.146), ('VII', 0.1354)]
+ digit coordinates 0..9: [ 0.0145 -0.1236 -0.0192  0.0333  0.0464  0.0479  0.0625  0.0565  0.066   0.0398]
+
+layer 3 unit 1558 down_mid weight-vector norm 181.322475
+ minus [('sma', -0.1568), ('xido', -0.1559), ('icha', -0.1504), ('CloseOperation', -0.147), (' verdadero', -0.1431)]
+ plus  [(' versa', 0.1383), ('riminating', 0.1242), ('jectories', 0.1201), ('cbind', 0.118), ('tees', 0.1171)]
+ digit coordinates 0..9: [-0.0485 -0.0359 -0.0614 -0.0695 -0.0485 -0.0806 -0.0624 -0.0685 -0.0774 -0.0754]
+
+layer 3 unit 1558 down_delta weight-vector norm 2.825441
+ minus [('htaking', -0.136), (' somm', -0.1341), (' maxX', -0.131), ('isub', -0.1288), (' superposition', -0.1284)]
+ plus  [(' schemes', 0.1524), ('ahanglan', 0.1503), ('uzten', 0.145), ('smittel', 0.1434), ('sker', 0.1417)]
+ digit coordinates 0..9: [-0.0501 -0.0274 -0.0699 -0.0876 -0.1128 -0.0925 -0.0974 -0.1035 -0.0877 -0.101 ]
+
+layer 16 unit 96 gate_mid weight-vector norm 5.215868
+ minus [(' Talmud', -0.1596), (' breakouts', -0.1586), (' microbiological', -0.1535), (' benthic', -0.1522), (' microbial', -0.1508)]
+ plus  [('four', 0.1839), (' perny', 0.1682), ('five', 0.1467), ('eight', 0.1443), ('irteen', 0.1421)]
+ digit coordinates 0..9: [0.2632 0.2581 0.2965 0.3777 0.4362 0.398  0.3745 0.3754 0.369  0.339 ]
+
+layer 16 unit 96 up_mid weight-vector norm 3.636802
+ minus [(' selectors', -0.1246), (' whales', -0.1227), ('regator', -0.1214), (' undergone', -0.1186), ('otope', -0.1167)]
+ plus  [('four', 0.1974), (' vier', 0.1966), ('seven', 0.1935), ('eight', 0.1863), ('five', 0.1774)]
+ digit coordinates 0..9: [0.1425 0.1687 0.1767 0.3073 0.3594 0.3336 0.3241 0.3374 0.3121 0.2614]
+
+layer 16 unit 96 down_mid weight-vector norm 1243.036048
+ minus [(' fourth', -0.1971), ('Fourth', -0.1954), (' IV', -0.1933), (' quartic', -0.1915), ('IV', -0.1903)]
+ plus  [('izability', 0.0813), (' Barkley', 0.0782), ('zler', 0.0768), ('emporary', 0.0759), ('enz', 0.0759)]
+ digit coordinates 0..9: [-0.0444 -0.0575 -0.0795 -0.1252 -0.2044 -0.1645 -0.1059 -0.0662 -0.0567 -0.0566]
+
+layer 16 unit 96 down_delta weight-vector norm 22.304832
+ minus [('ocht', -0.2248), ('omatic', -0.2246), ('ote', -0.2194), ('iran', -0.2186), (' Mone', -0.2168)]
+ plus  [(' ocho', 0.0448), (' oito', 0.0432), (' latitudine', 0.0424), (' Finalmente', 0.0412), (' politici', 0.0396)]
+ digit coordinates 0..9: [-0.1158  0.015   0.0527  0.1946  0.1685  0.1984  0.0872  0.1794  0.1913  0.1548]
+
+layer 17 unit 1309 gate_mid weight-vector norm 6.658835
+ minus [(' Arx', -0.1503), ('rekli', -0.1486), ('Shore', -0.1473), ('Cober', -0.1471), ('ziff', -0.1461)]
+ plus  [('eight', 0.1739), ('seven', 0.1687), ('inc', 0.1604), ('max', 0.1603), ('ic', 0.1561)]
+ digit coordinates 0..9: [0.1703 0.2402 0.2798 0.3838 0.3968 0.4122 0.3929 0.4208 0.4054 0.3998]
+
+layer 17 unit 1309 up_mid weight-vector norm 3.807644
+ minus [('thirty', -0.1732), (' sevent', -0.1623), (' vijf', -0.1604), ('five', -0.1602), (' sete', -0.1583)]
+ plus  [('adale', 0.145), (' reassure', 0.1438), ('sType', 0.1398), ('ropole', 0.1348), (' inoc', 0.133)]
+ digit coordinates 0..9: [ 0.0148 -0.1916 -0.2053 -0.295  -0.283  -0.3031 -0.2684 -0.3075 -0.2664 -0.2647]
+
+layer 17 unit 1309 down_mid weight-vector norm 1086.916844
+ minus [('achery', -0.0614), ('zeros', -0.0605), (' quitter', -0.0594), ('zero', -0.0569), ('ergy', -0.0558)]
+ plus  [(' flera', 0.169), (' Flore', 0.1645), (' flere', 0.1642), (' pienso', 0.1636), ('Chance', 0.1623)]
+ digit coordinates 0..9: [-0.1902  0.1787  0.2326  0.2283  0.2226  0.2034  0.1813  0.1545  0.1714  0.1813]
+
+layer 17 unit 1309 down_delta weight-vector norm 30.479205
+ minus [(' in', -0.1199), ('ing', -0.1059), ('i', -0.1036), ('ones', -0.1018), (' i', -0.1016)]
+ plus  [(' cinq', 0.3788), (' FIVE', 0.3722), (' FOUR', 0.3475), (' SIX', 0.3386), (' sechs', 0.3373)]
+ digit coordinates 0..9: [-0.2005 -0.2995 -0.1052  0.0185  0.1347  0.2195  0.1571  0.1945  0.1556  0.0747]
+
+layer 17 unit 1242 gate_mid weight-vector norm 5.591264
+ minus [(' multiplex', -0.1573), (' phrasing', -0.153), (' urgency', -0.1504), (' momenta', -0.1498), (' appropriations', -0.1463)]
+ plus  [('td', 0.16), (' coche', 0.1526), ('pc', 0.1477), ('atcher', 0.1444), ('nej', 0.1378)]
+ digit coordinates 0..9: [0.3982 0.2403 0.2324 0.2188 0.2408 0.2224 0.2397 0.2332 0.2833 0.2591]
+
+layer 17 unit 1242 up_mid weight-vector norm 2.845806
+ minus [(' Camry', -0.1804), ('lt', -0.1803), (' Mg', -0.1784), (' bpm', -0.1783), (' Arik', -0.1777)]
+ plus  [(' both', 0.1384), (' to', 0.1313), (' the', 0.1247), (' two', 0.1238), (' zaman', 0.1207)]
+ digit coordinates 0..9: [-0.215   0.0753  0.0575  0.0573  0.0327  0.0285  0.0237  0.027  -0.0029  0.0049]
+
+layer 17 unit 1242 down_mid weight-vector norm 808.797254
+ minus [('anfaatkan', -0.1226), (' rameaux', -0.1201), ('idelijk', -0.118), (' apropi', -0.1179), ('nial', -0.1112)]
+ plus  [('Oo', 0.1427), ('zero', 0.1377), (' cero', 0.1299), ('emptyset', 0.1254), (' zeros', 0.1129)]
+ digit coordinates 0..9: [ 0.2806 -0.0069 -0.042  -0.0421 -0.0414 -0.0331 -0.0323 -0.0331 -0.0173 -0.0141]
+
+layer 17 unit 1242 down_delta weight-vector norm 32.922635
+ minus [(' T', -0.1626), (' the', -0.158), (' The', -0.1521), (' A', -0.1455), (' In', -0.1392)]
+ plus  [('DebuggingMode', 0.358), ('ufieurs', 0.3492), ('mataspid', 0.3356), ('MSFont', 0.335), ('setKeepCallback', 0.3337)]
+ digit coordinates 0..9: [ 0.1315 -0.302  -0.2472 -0.2317 -0.0449 -0.0735  0.0015 -0.0339  0.0949 -0.0856]
+
+layer 17 unit 669 gate_mid weight-vector norm 3.297648
+ minus [(' cerc', -0.1338), ('ideo', -0.1325), ('feld', -0.1309), ('boxing', -0.1291), (' Distortion', -0.1286)]
+ plus  [(' operate', 0.1593), ('inairement', 0.1444), (' occupancy', 0.144), (' Operate', 0.1393), (' fittings', 0.1339)]
+ digit coordinates 0..9: [-0.0142  0.0016 -0.0259 -0.0698 -0.0638 -0.0345 -0.0329 -0.0508 -0.0264 -0.024 ]
+
+layer 17 unit 669 up_mid weight-vector norm 3.401231
+ minus [('ogeneities', -0.1157), ('Acknowledgments', -0.115), (' literature', -0.1128), (' apres', -0.1121), ('gelopen', -0.111)]
+ plus  [(' Downing', 0.1548), (' vuoi', 0.1533), (' democr', 0.1521), (' Rutherford', 0.1518), ('UUID', 0.1488)]
+ digit coordinates 0..9: [0.0538 0.0753 0.0861 0.1317 0.1514 0.1761 0.1573 0.17   0.1441 0.1672]
+
+layer 17 unit 669 down_mid weight-vector norm 1495.979291
+ minus [(' lleno', -0.1539), (' hinten', -0.1419), ('neg', -0.1382), ('serious', -0.1374), ('no', -0.1336)]
+ plus  [('alinga', 0.1099), (' personnelles', 0.1078), (' Share', 0.1016), (' share', 0.0971), (' telescop', 0.097)]
+ digit coordinates 0..9: [-0.0498 -0.027   0.008  -0.0142 -0.0184 -0.0316  0.0001 -0.0156 -0.0143 -0.0273]
+
+layer 17 unit 669 down_delta weight-vector norm 36.74612
+ minu
+[output cut at 15,000 characters]
+```

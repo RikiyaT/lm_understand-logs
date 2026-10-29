@@ -1,0 +1,11 @@
+OUTPUT of Python run 16 of at most 300:
+```
+Problem: The sum of the squares of two positive integers is 90. The product of the two integers is 27. What is the sum of the two integers?
+Correct True tokens 495 characters 1040 excerpt 'Let the two positive integers be $a$ and $b$. We are given that the sum of the squares of the two integers is 90. This can be written as\n$$a^2 + b^2 = 90$$\nWe are also given that the product of the two integers is 27. This can be written as\n$$ab = 27$$\nWe want to find the sum of the two in'
+Correct True tokens 541 characters 1151 excerpt 'Let the two positive integers be $a$ and $b$. We are given that the sum of the squares of the two positive integers is 90.\n$$a^2 + b^2 = 90$$\nWe are also given that the product of the two integers is 27.\nSo, $ab = 27$.\nWe are looking for the sum of the two integers, which is $a + b$.\nWe kn'
+Correct False tokens 593 characters 1337 excerpt 'Let the two positive integers be $a$ and $b$. We are given that the sum of the squares of the two integers is 90.\nWe know that the sum of the squares of two positive integers is equal to $a^2 + b^2$.\nSo, we have $a^2 + b^2 = 90$.\nWe are also given that the product of the two integers is 27'
+Correct False tokens 805 characters 2003 excerpt 'Let the two positive integers be $a$ and $b$. We are given that the sum of the squares of the two integers is 90.\nWe have $a^2 + b^2 = 90$.\nWe are also given that the product of the two integers is 27.\nSo, $ab = 27$.\nWe want to find the sum of the two integers, which is $a + b$.\nWe know th'
+Reference: Call the two integers $x$ and $y$. We are given that $x^2 + y^2 = 90$ and that $xy = 27$. We want to find $x + y$. Note that $(x + y)^2 = x^2 + y^2 + 2xy = 90 + 2\cdot 27 = 144$. Taking the square root of 144, we see that $x + y = \boxed{12}$.
+Full-attention weight shapes: {'model.layers.11.self_attn.o_proj.weight': (640, 1024), 'model.layers.17.self_attn.o_proj.weight': (640, 1024), 'model.layers.5.self_attn.o_proj.weight': (640, 1024)}
+
+```

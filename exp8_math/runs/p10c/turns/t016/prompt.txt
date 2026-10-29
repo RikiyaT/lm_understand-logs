@@ -1,0 +1,105 @@
+Forward pass 3 of 10 done (generate); results in /work/gen_4_original.jsonl and /work/gen_4_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_4_original.jsonl",
+  "edited": "/work/gen_4_edited.jsonl"
+ },
+ "activations": {
+  "original": {
+   "dir": "/work/gen_4_original_acts/",
+   "files": {
+    "hidden_last_prompt.npy": [
+     128,
+     3,
+     1024
+    ],
+    "hidden_mean_answer.npy": [
+     128,
+     3,
+     1024
+    ],
+    "mlp_last_prompt.npy": [
+     128,
+     3,
+     3584
+    ],
+    "mlp_mean_answer.npy": [
+     128,
+     3,
+     3584
+    ]
+   }
+  },
+  "edited": {
+   "dir": "/work/gen_4_edited_acts/",
+   "files": {
+    "hidden_last_prompt.npy": [
+     128,
+     3,
+     1024
+    ],
+    "hidden_mean_answer.npy": [
+     128,
+     3,
+     1024
+    ],
+    "mlp_last_prompt.npy": [
+     128,
+     3,
+     3584
+    ],
+    "mlp_mean_answer.npy": [
+     128,
+     3,
+     3584
+    ]
+   }
+  }
+ },
+ "original": {
+  "generations": 128,
+  "graded": 128,
+  "accuracy": 0.1015625,
+  "accuracy_by_source": {
+   "gsm8k": 0.125,
+   "math": 0.0781
+  },
+  "mean_tokens": 30207,
+  "cut_share": 0.9062,
+  "failures": {
+   "wrong_answer": 1,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 114
+  }
+ },
+ "edited": {
+  "generations": 128,
+  "graded": 128,
+  "accuracy": 0.0859375,
+  "accuracy_by_source": {
+   "gsm8k": 0.1094,
+   "math": 0.0625
+  },
+  "mean_tokens": 30363,
+  "cut_share": 0.9141,
+  "failures": {
+   "wrong_answer": 0,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 117
+  }
+ },
+ "paired": {
+  "items": 64,
+  "accuracy_difference": -0.0156,
+  "standard_error": 0.0272,
+  "samples_wrong_to_right": 5,
+  "samples_right_to_wrong": 7
+ },
+ "s": 1039.9
+}
+```
+Forward passes left: 7.

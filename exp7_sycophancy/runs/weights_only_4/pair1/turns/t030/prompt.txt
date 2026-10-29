@@ -1,0 +1,68 @@
+OUTPUT of run 25 of at most 60:
+```
+SHARED NUMERIC OUTPUT-REMAPPING HYPOTHESIS
+We project coefficient differences onto existing numeric coefficient rows.
+All calculations are closed-form weight algebra; checkpoint weights are unchanged.
+MLP gates and state-dependent normalizations are NOT evaluated.
+(15, 'mlp', None) local_remap_explained_fraction 0.004887 scalar_rescaling_explained_fraction 8.5e-05 midpoint_Gram_condition 6.998
+(16, 'mlp', None) local_remap_explained_fraction 0.008978 scalar_rescaling_explained_fraction 0.00072 midpoint_Gram_condition 5.569
+(17, 'mlp', None) local_remap_explained_fraction 0.007733 scalar_rescaling_explained_fraction 5.3e-05 midpoint_Gram_condition 4.26
+(15, 'attention', 1) local_remap_explained_fraction 0.342967 scalar_rescaling_explained_fraction 0.009389 midpoint_Gram_condition 11.497
+(15, 'attention', 2) local_remap_explained_fraction 0.280462 scalar_rescaling_explained_fraction 0.017842 midpoint_Gram_condition 18.455
+(16, 'attention', 2) local_remap_explained_fraction 0.270978 scalar_rescaling_explained_fraction 0.013978 midpoint_Gram_condition 45.351
+(16, 'attention', 3) local_remap_explained_fraction 0.373919 scalar_rescaling_explained_fraction 0.076414 midpoint_Gram_condition 26.345
+(17, 'attention', 1) local_remap_explained_fraction 0.29078 scalar_rescaling_explained_fraction 0.0021 midpoint_Gram_condition 33.522
+(17, 'attention', 3) local_remap_explained_fraction 0.272008 scalar_rescaling_explained_fraction 0.007934 midpoint_Gram_condition 30.216
+(3, 'mlp', None) local_remap_explained_fraction 0.007826 scalar_rescaling_explained_fraction 7.6e-05 midpoint_Gram_condition 8.496
+
+SHARED VERSUS BLOCK-SPECIFIC REMAPPING
+Shared map explained fraction: 0.016102399343681628
+Separate map per late block explained fraction: 0.14004866114286252
+These are coefficient reconstruction fractions, NOT model performance.
+
+CROSS-BLOCK CONSISTENCY
+For each block: local map, shared map, and map derived from OTHER late blocks.
+(15, 'mlp', None) local 0.004887 shared -0.019911 other_blocks -0.02681
+(16, 'mlp', None) local 0.008978 shared -0.009355 other_blocks -0.014194
+(17, 'mlp', None) local 0.007733 shared -0.005117 other_blocks -0.010207
+(15, 'attention', 1) local 0.342967 shared 0.074393 other_blocks -0.020513
+(15, 'attention', 2) local 0.280462 shared 0.063849 other_blocks -0.002901
+(16, 'attention', 2) local 0.270978 shared -0.051 other_blocks -0.197318
+(16, 'attention', 3) local 0.373919 shared 0.098088 other_blocks 0.006863
+(17, 'attention', 1) local 0.29078 shared 0.029075 other_blocks -0.021902
+(17, 'attention', 3) local 0.272008 shared 0.018893 other_blocks -0.043264
+(3, 'mlp', None) local 0.007826 shared -0.16099 other_blocks -0.16099
+
+SHARED B-A NUMERIC COEFFICIENT REMAPPING
+Rows/columns are output-number coordinates 0..9, with the common
+direction removed. This is NOT a table of predicted answer substitutions.
+[[ 8.558564e-04  8.356472e-04  4.009201e-03  2.813841e-04 -6.598471e-03  8.833873e-04 -2.712661e-03 -3.476612e-03  5.570647e-03  3.516212e-04]
+ [ 1.293904e-03  3.295663e-03  2.989177e-03 -3.776535e-03 -3.472313e-03  4.135189e-03 -2.871102e-03 -1.506597e-03  1.907524e-03 -1.994910e-03]
+ [-4.045159e-04  3.303635e-03  2.643537e-03 -1.122181e-03 -2.184684e-03  9.229828e-04 -1.185803e-03 -1.738973e-03 -8.318343e-04  5.978360e-04]
+ [ 3.539512e-04  2.756742e-03 -1.347820e-03 -1.015738e-03  1.054162e-05  1.585392e-03  2.484367e-03 -7.060304e-04 -4.320459e-03  1.990531e-04]
+ [-3.758304e-05 -6.027457e-04 -1.477486e-03  8.558921e-04  2.078835e-03 -2.555242e-03 -1.135644e-03  1.029149e-03 -7.430736e-04  2.587897e-03]
+ [ 2.014501e-04 -3.255054e-03 -4.228689e-04 -8.779563e-04  3.476046e-03 -1.661832e-03  1.361692e-03  2.122284e-03 -2.087798e-03  1.144037e-03]
+ [-9.785728e-04 -2.344260e-03 -1.153085e-03 -2.072648e-03  1.588928e-03  1.288487e-03  4.025276e-03  2.088110e-05 -2.153478e-03  1.778471e-03]
+ [-9.039502e-04 -1.767549e-03 -2.290899e-03  3.058172e-03  1.934235e-03 -2.144963e-03  2.899081e-03  2.621600e-03 -3.491586e-04 -3.056568e-03]
+ [ 7.869888e-04  3.662318e-04 -2.224928e-03  2.245196e-03  7.834995e-04 -1.443286e-03 -1.154790e-03  1.345687e-03 -3.214529e-04 -3.831447e-04]
+ [-1.167529e-03 -2.588311e-03 -7.248292e-04  2.424414e-03  2.383383e-03 -1.010114e-03 -1.710416e-03  2.886118e-04  3.329083e-03 -1.224292e-03]]
+Diagonal magnitude: 0.0071676352640628925
+Off-diagonal magnitude: 0.020511359050965756
+
+ALIGNMENT OF BLOCK-SPECIFIC REMAPPING MATRICES
+Order: [(15, 'mlp', None), (16, 'mlp', None), (17, 'mlp', None), (15, 'attention', 1), (15, 'attention', 2), (16, 'attention', 2), (16, 'attention', 3), (17, 'attention', 1), (17, 'attention', 3)]
+[[ 1.     0.126  0.136 -0.012 -0.067  0.23  -0.223  0.031 -0.192]
+ [ 0.126  1.    -0.167  0.01   0.214  0.035  0.139  0.097 -0.107]
+ [ 0.136 -0.167  1.    -0.319  0.179 -0.089 -0.025 -0.2    0.122]
+ [-0.012  0.01  -0.319  1.    -0.173  0.25   0.012 -0.013 -0.061]
+ [-0.067  0.214  0.179 -0.173  1.    -0.122  0.151 -0.261  0.063]
+ [ 0.23   0.035 -0.089  0.25  -0.122  1.    -0.091 -0.082  0.   ]
+ [-0.223  0.139 -0.025  0.012  0.151 -0.091  1.    -0.148 -0.014]
+ [ 0.031  0.097 -0.2   -0.013 -0.261 -0.082 -0.148  1.    -0.344]
+ [-0.192 -0.107  0.122 -0.061  0.063  0.    -0.014 -0.344  1.   ]]
+
+A strong shared reconstruction would support a common numeric remapping.
+A weak reconstruction would reject that simple explanation, without
+establishing which checkpoint follows the user's guess.
+
+```

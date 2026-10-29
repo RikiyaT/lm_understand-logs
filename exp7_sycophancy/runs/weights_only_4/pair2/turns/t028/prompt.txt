@@ -1,0 +1,95 @@
+OUTPUT of run 23 of at most 60:
+```
+=== USER-ROLE PATH: KEY-SIDE STRUCTURE AND EXACT FACTOR ATTRIBUTION ===
+The key-side direction is derived from a composed WEIGHT kernel.
+It does not represent keys attended to on a prompt.
+
+L1H2 -> L15H1, near
+ original_verbs    : delta=+313.34, early_O=+154.5, shared_early_V=+107.13, late_QK=+51.715
+ original_nouns    : delta=+288.98, early_O=+152.44, shared_early_V=+104.36, late_QK=+32.176
+ additional_verbs  : delta=+217.33, early_O=+117.53, shared_early_V=+69.607, late_QK=+30.192
+ topic_control     : delta=-198.57, early_O=-87.775, shared_early_V=-24.626, late_QK=-86.169
+ user_minus_model   contrasts: [ 313.3403  288.9765  217.3272 -198.5691]
+ user_only          contrasts: [ 252.9222  291.5754  119.9992 -134.1298]
+ model_only         contrasts: [-132.5088  -63.8862 -147.3287  110.1243]
+ broad_role         contrasts: [ 202.972   203.1455  181.188  -192.5703]
+
+L1H2 -> L15H1, far
+ original_verbs    : delta=+622.36, early_O=+379.17, shared_early_V=+187.78, late_QK=+55.402
+ original_nouns    : delta=+419.72, early_O=+207.7, shared_early_V=+150.71, late_QK=+61.308
+ additional_verbs  : delta=+276.18, early_O=+155.4, shared_early_V=+64.025, late_QK=+56.757
+ topic_control     : delta=-421.31, early_O=-199.13, shared_early_V=-83.516, late_QK=-138.66
+ user_minus_model   contrasts: [ 622.3559  419.7213  276.181  -421.3081]
+ user_only          contrasts: [ 559.848   319.8515  196.9525 -381.2223]
+ model_only         contrasts: [-205.6942 -196.4356 -142.7698  137.0167]
+ broad_role         contrasts: [ 368.0623  279.9002  205.3806 -326.8335]
+
+L1H2 -> L15H2, near
+ original_verbs    : delta=+263.4, early_O=+203.42, shared_early_V=+28.25, late_QK=+31.738
+ original_nouns    : delta=+255.26, early_O=+183.97, shared_early_V=+9.4634, late_QK=+61.823
+ additional_verbs  : delta=-67.309, early_O=-105.4, shared_early_V=-50.818, late_QK=+88.908
+ topic_control     : delta=-228.43, early_O=-103.63, shared_early_V=-21.35, late_QK=-103.45
+ user_minus_model   contrasts: [ 263.4037  255.258   -67.309  -228.431 ]
+ user_only          contrasts: [ 178.9897  274.1177 -162.3593 -129.0929]
+ model_only         contrasts: [-145.0157  -39.8679  -79.5644  151.8936]
+ broad_role         contrasts: [ 199.6219  174.1522   54.6875 -231.9476]
+
+L1H2 -> L15H2, far
+ original_verbs    : delta=+594.65, early_O=+419.08, shared_early_V=+181.46, late_QK=-5.8979
+ original_nouns    : delta=+338.47, early_O=+192.53, shared_early_V=+89.163, late_QK=+56.777
+ additional_verbs  : delta=+167.06, early_O=+39.676, shared_early_V=+27.56, late_QK=+99.824
+ topic_control     : delta=-583.12, early_O=-274.67, shared_early_V=-146.65, late_QK=-161.8
+ user_minus_model   contrasts: [ 594.6471  338.4733  167.0594 -583.1188]
+ user_only          contrasts: [ 563.5572  299.279    80.9351 -518.0118]
+ model_only         contrasts: [-167.9011 -117.0672 -124.5599  199.2659]
+ broad_role         contrasts: [ 325.1733  201.0168  160.1471 -404.522 ]
+
+L1H2 -> L16H2, near
+ original_verbs    : delta=+936.87, early_O=+142.57, shared_early_V=+656.74, late_QK=+137.57
+ original_nouns    : delta=+760.8, early_O=+197.31, shared_early_V=+591.59, late_QK=-28.096
+ additional_verbs  : delta=+272.87, early_O=-46.003, shared_early_V=+376.58, late_QK=-57.711
+ topic_control     : delta=-134.95, early_O=+4.3184, shared_early_V=-205.49, late_QK=+66.22
+ user_minus_model   contrasts: [ 936.8728  760.801   272.8673 -134.9468]
+ user_only          contrasts: [ 831.4218  786.2064  292.6448 -310.1954]
+ model_only         contrasts: [-320.9984 -149.633   -43.0014 -144.2012]
+ broad_role         contrasts: [646.9826 397.8132 200.3719 -48.3335]
+
+L1H2 -> L16H2, far
+ original_verbs    : delta=+2006.7, early_O=+807.75, shared_early_V=+1112.4, late_QK=+86.51
+ original_nouns    : delta=+694.8, early_O=+164.97, shared_early_V=+509.52, late_QK=+20.309
+ additional_verbs  : delta=+481.67, early_O=-85.497, shared_early_V=+589.57, late_QK=-22.4
+ topic_control     : delta=-433.04, early_O=-257.31, shared_early_V=-255.92, late_QK=+80.185
+ user_minus_model   contrasts: [2006.6689  694.7981  481.672  -433.0416]
+ user_only          contrasts: [2089.5655  663.6668  550.444  -602.9973]
+ model_only         contrasts: [-378.7803 -190.9843  -42.0469  -70.3253]
+ broad_role         contrasts: [1138.2124  340.5287  258.5252 -209.5849]
+
+=== KEY-SIDE VOCABULARY EXTREMES: NO BELIEF-WORD FILTER ===
+L15H1 near user_minus_model +[('7', 0.339), ('8', 0.336), ('6', 0.318), ('9', 0.313)] -[(' Obamacare', -0.206), (' Lipid', -0.205), ('Protocol', -0.202), (' FCC', -0.2)]
+L15H1 near user_only        +[('7', 0.322), ('8', 0.318), ('6', 0.301), ('4', 0.294)] -[(' Obamacare', -0.22), (' FCC', -0.201), (' heparin', -0.197), (' Greenland', -0.195)]
+L15H1 near shared_V_term    +[('7', 0.254), ('8', 0.249), ('4', 0.241), ('6', 0.239)] -[(' waveguide', -0.201), (' Rimini', -0.19), ('chainId', -0.187), (' wafer', -0.186)]
+L15H1 far  user_minus_model +[('7', 0.378), ('8', 0.376), ('6', 0.35), ('4', 0.349)] -[(' sportsbook', -0.205), (' halibut', -0.199), (' Workflow', -0.197), (' dosimetry', -0.196)]
+L15H1 far  user_only        +[('7', 0.375), ('8', 0.372), ('4', 0.351), ('6', 0.347)] -[(' Lighthouse', -0.214), (' halibut', -0.211), (' NuGet', -0.206), (' sportsbook', -0.203)]
+L15H1 far  shared_V_term    +[('7', 0.32), ('8', 0.312), ('4', 0.302), ('6', 0.296)] -[(' Lighthouse', -0.196), (' waveguide', -0.192), ('ploidy', -0.191), (' Operand', -0.19)]
+L15H2 near user_minus_model +[('7', 0.317), ('6', 0.313), ('8', 0.3), ('4', 0.298)] -[('ClInclude', -0.196), ('ProjectReference', -0.191), (' shipyard', -0.184), (' Rimini', -0.184)]
+L15H2 near user_only        +[('7', 0.29), ('6', 0.281), ('4', 0.267), ('8', 0.266)] -[('ProjectReference', -0.194), (' sailors', -0.193), (' shipyard', -0.187), ('TabPage', -0.186)]
+L15H2 near shared_V_term    +[('6', 0.249), ('4', 0.248), ('7', 0.248), ('5', 0.236)] -[(' LIP', -0.189), (' Batter', -0.183), (' Oi', -0.181), (' Rimini', -0.18)]
+L15H2 far  user_minus_model +[('7', 0.33), ('8', 0.322), ('6', 0.314), ('4', 0.312)] -[('Lens', -0.2), ('Waypoint', -0.198), (' Paradigm', -0.198), (' Slab', -0.195)]
+L15H2 far  user_only        +[('7', 0.322), ('8', 0.312), ('4', 0.309), ('6', 0.306)] -[(' Lens', -0.211), ('Lens', -0.21), (' Coins', -0.206), ('Waypoint', -0.203)]
+L15H2 far  shared_V_term    +[('7', 0.29), ('4', 0.283), ('8', 0.274), ('6', 0.274)] -[(' Aliens', -0.209), (' Penis', -0.208), (' Paradigm', -0.207), (' shipyard', -0.203)]
+L16H2 near user_minus_model +[('7', 0.223), ('3', 0.217), ('5', 0.214), ('6', 0.213)] -[(' Insol', -0.173), ('PerRow', -0.169), (' Reb', -0.165), (' Nell', -0.164)]
+L16H2 near user_only        +[('7', 0.214), ('3', 0.207), ('6', 0.207), ('0', 0.203)] -[('PerRow', -0.174), ('HttpMethod', -0.166), (' Nell', -0.165), (' Aye', -0.164)]
+L16H2 near shared_V_term    +[('7', 0.307), ('8', 0.292), ('6', 0.291), ('9', 0.283)] -[(' Conform', -0.169), ('dateFormat', -0.163), (' Nell', -0.162), (' repudiandae', -0.162)]
+L16H2 far  user_minus_model +[('7', 0.265), ('3', 0.258), ('5', 0.25), ('4', 0.25)] -[(' Insol', -0.206), (' shipyard', -0.203), ('IDField', -0.198), ('MLElement', -0.197)]
+L16H2 far  user_only        +[('7', 0.258), ('3', 0.247), ('5', 0.241), ('4', 0.241)] -[(' shipyard', -0.21), ('IDField', -0.207), (' Fishing', -0.206), ('Fishing', -0.202)]
+L16H2 far  shared_V_term    +[('7', 0.286), ('6', 0.265), ('3', 0.262), ('5', 0.261)] -[('OrderStatus', -0.182), (' Prepaid', -0.181), (' shipyard', -0.179), ('MLElement', -0.178)]
+
+=== BELIEF/FACT WORD PERCENTILES IN ROLE-CONDITIONED KEY DIRECTIONS ===
+L15H1 [('think', 0.06, 93.4), ('believe', 0.039, 85.9), ('guess', 0.105, 99.3), ('assume', 0.022, 76.8), ('suppose', 0.056, 92.3), ('reckon', -0.053, 21.4), ('suspect', -0.002, 59.5), ('presume', 0.032, 82.6), ('fact', 0.014, 71.6), ('evidence', -0.027, 39.7), ('truth', 0.015, 72.5), ('proof', -0.007, 55.6), ('compute', 0.012, 70.5), ('verify', -0.059, 18.3), ('measure', 0.036, 84.7), ('prove', -0.028, 39.3)]
+L15H2 [('think', 0.028, 80.3), ('believe', -0.017, 46.9), ('guess', 0.095, 99.0), ('assume', -0.011, 51.4), ('suppose', 0.047, 89.3), ('reckon', -0.094, 3.9), ('suspect', 0.009, 67.4), ('presume', 0.014, 70.8), ('fact', 0.029, 81.0), ('evidence', -0.036, 32.0), ('truth', 0.0, 60.8), ('proof', -0.011, 51.6), ('compute', -0.062, 15.0), ('verify', -0.036, 31.7), ('measure', 0.066, 95.5), ('prove', -0.028, 38.1)]
+L16H2 [('think', -0.018, 38.7), ('believe', -0.041, 20.1), ('guess', 0.105, 99.6), ('assume', -0.003, 52.8), ('suppose', 0.037, 83.5), ('reckon', -0.018, 38.5), ('suspect', 0.015, 68.4), ('presume', -0.013, 42.7), ('fact', -0.021, 36.1), ('evidence', -0.034, 25.0), ('truth', 0.017, 69.7), ('proof', -0.043, 18.4), ('compute', -0.033, 25.9), ('verify', -0.041, 20.0), ('measure', 0.023, 74.7), ('prove', -0.035, 24.3)]
+
+Only composed weight matrices and embedding-weight directions were analyzed.
+No contextual role representation, normalized attention, activation, or model response was computed.
+
+```

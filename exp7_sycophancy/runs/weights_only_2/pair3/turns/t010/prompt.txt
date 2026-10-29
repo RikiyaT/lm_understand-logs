@@ -1,0 +1,75 @@
+OUTPUT of run 8 of at most 60:
+```
+NEW HYPOTHESIS: ROTARY-PHASE RETARGETING
+Fractions concern coefficient-difference energy, not behavioural effect.
+The signed shift is a tangent coefficient in relative-position units,
+not a measured change in attended token position.
+
+DIAGONAL GAINS: False
+position_fraction             percent min/median/max: 0.000000 / 0.000619 / 0.025673
+phase_fraction                percent min/median/max: 0.064042 / 0.091940 / 0.351690
+global_amplitude_fraction     percent min/median/max: 0.000000 / 0.001349 / 0.020623
+amplitude_fraction            percent min/median/max: 0.057987 / 0.096601 / 0.168732
+
+TOP 8 SINGLE-POSITION-SHIFT FRACTIONS
+L01 H2 position_fraction=0.025673% signed_shift_B-A=-0.00078321581 all_frequency_phase_fraction=0.351690%
+L00 H0 position_fraction=0.020132% signed_shift_B-A=+0.00032423256 all_frequency_phase_fraction=0.148330%
+L02 H3 position_fraction=0.014951% signed_shift_B-A=-0.00053864486 all_frequency_phase_fraction=0.113104%
+L01 H0 position_fraction=0.009234% signed_shift_B-A=+0.00031948655 all_frequency_phase_fraction=0.196524%
+L08 H2 position_fraction=0.008612% signed_shift_B-A=-0.00029797523 all_frequency_phase_fraction=0.121542%
+L00 H2 position_fraction=0.006216% signed_shift_B-A=-0.00019029186 all_frequency_phase_fraction=0.090470%
+L08 H0 position_fraction=0.005806% signed_shift_B-A=-0.00030747107 all_frequency_phase_fraction=0.112705%
+L06 H0 position_fraction=0.005355% signed_shift_B-A=-0.00019539323 all_frequency_phase_fraction=0.092472%
+
+TOP 8 INDEPENDENT-FREQUENCY PHASE FRACTIONS
+L01 H2 phase_fraction=0.351690% amplitude_fraction=0.104100% top_frequencies=[38, 51, 62] phase_coefficients_radians=[-0.000502099, -0.000437359, -0.000232987]
+L01 H0 phase_fraction=0.196524% amplitude_fraction=0.136683% top_frequencies=[38, 51, 15] phase_coefficients_radians=[-0.0004096, -0.000354755, 0.000341642]
+L01 H3 phase_fraction=0.196120% amplitude_fraction=0.114584% top_frequencies=[38, 51, 46] phase_coefficients_radians=[-0.000644107, -0.000307776, -0.000728713]
+L01 H1 phase_fraction=0.173197% amplitude_fraction=0.155403% top_frequencies=[38, 46, 51] phase_coefficients_radians=[-0.000606174, -0.000942093, -0.00026926]
+L00 H0 phase_fraction=0.148330% amplitude_fraction=0.140826% top_frequencies=[21, 11, 12] phase_coefficients_radians=[0.000628915, 0.000335653, 0.000866054]
+L07 H0 phase_fraction=0.135049% amplitude_fraction=0.092426% top_frequencies=[10, 105, 116] phase_coefficients_radians=[-0.000607008, 0.000560887, 0.00056133]
+L03 H0 phase_fraction=0.132817% amplitude_fraction=0.092942% top_frequencies=[98, 109, 107] phase_coefficients_radians=[0.000737062, -0.000722494, 0.000714365]
+L16 H1 phase_fraction=0.130220% amplitude_fraction=0.120246% top_frequencies=[18, 9, 49] phase_coefficients_radians=[-0.000326778, 0.001507463, -0.00021744]
+
+DIAGONAL GAINS: True
+position_fraction             percent min/median/max: 0.000007 / 0.000514 / 0.009655
+phase_fraction                percent min/median/max: 0.054576 / 0.170919 / 0.816173
+global_amplitude_fraction     percent min/median/max: 0.000000 / 0.008574 / 0.561880
+amplitude_fraction            percent min/median/max: 0.173338 / 0.671460 / 3.598429
+
+TOP 8 SINGLE-POSITION-SHIFT FRACTIONS
+L15 H0 position_fraction=0.009655% signed_shift_B-A=-0.001297588 all_frequency_phase_fraction=0.365225%
+L13 H0 position_fraction=0.009125% signed_shift_B-A=+0.0012786032 all_frequency_phase_fraction=0.492328%
+L17 H1 position_fraction=0.009045% signed_shift_B-A=+0.0022727353 all_frequency_phase_fraction=0.667146%
+L13 H1 position_fraction=0.008937% signed_shift_B-A=+0.00082962919 all_frequency_phase_fraction=0.527723%
+L16 H1 position_fraction=0.008716% signed_shift_B-A=-0.00056952843 all_frequency_phase_fraction=0.384091%
+L01 H3 position_fraction=0.005653% signed_shift_B-A=+0.00037436896 all_frequency_phase_fraction=0.061818%
+L13 H2 position_fraction=0.005164% signed_shift_B-A=+0.00063831352 all_frequency_phase_fraction=0.488393%
+L13 H3 position_fraction=0.004109% signed_shift_B-A=+0.0024197922 all_frequency_phase_fraction=0.614800%
+
+TOP 8 INDEPENDENT-FREQUENCY PHASE FRACTIONS
+L17 H2 phase_fraction=0.816173% amplitude_fraction=1.913568% top_frequencies=[62, 73, 76] phase_coefficients_radians=[-0.003370975, -0.003099229, 0.003327474]
+L17 H0 phase_fraction=0.743329% amplitude_fraction=1.533878% top_frequencies=[80, 114, 87] phase_coefficients_radians=[0.003422634, 0.003710222, -0.001001576]
+L17 H3 phase_fraction=0.727621% amplitude_fraction=1.948604% top_frequencies=[124, 107, 112] phase_coefficients_radians=[-0.004560508, 0.002324644, 0.002530289]
+L11 H2 phase_fraction=0.713962% amplitude_fraction=0.915640% top_frequencies=[108, 79, 84] phase_coefficients_radians=[0.003269336, 0.004761406, -0.004397397]
+L11 H3 phase_fraction=0.688544% amplitude_fraction=0.997056% top_frequencies=[126, 85, 68] phase_coefficients_radians=[0.006470004, -0.004296993, 0.00356898]
+L12 H3 phase_fraction=0.687673% amplitude_fraction=1.572889% top_frequencies=[113, 92, 119] phase_coefficients_radians=[0.00494286, 0.003738429, -0.003172651]
+L17 H1 phase_fraction=0.667146% amplitude_fraction=3.598429% top_frequencies=[107, 87, 68] phase_coefficients_radians=[-0.00465602, -0.001479146, 0.002963442]
+L13 H3 phase_fraction=0.614800% amplitude_fraction=0.916024% top_frequencies=[107, 70, 113] phase_coefficients_radians=[-0.003738624, 0.002925891, -0.001700424]
+
+PREVIOUSLY SHORTLISTED ATTENTION HEADS
+gains=False L12 H0 position=0.000008% phase=0.083029% amplitude=0.075679%
+gains=True  L12 H0 position=0.000327% phase=0.584783% amplitude=1.591761%
+gains=False L12 H2 position=0.003240% phase=0.072499% amplitude=0.076278%
+gains=True  L12 H2 position=0.000042% phase=0.563783% amplitude=1.369473%
+gains=False L12 H3 position=0.000014% phase=0.082784% amplitude=0.073729%
+gains=True  L12 H3 position=0.000362% phase=0.687673% amplitude=1.572889%
+gains=False L15 H1 position=0.000536% phase=0.073816% amplitude=0.098134%
+gains=True  L15 H1 position=0.000867% phase=0.338641% amplitude=1.787637%
+gains=False L17 H1 position=0.000213% phase=0.076462% amplitude=0.122407%
+gains=True  L17 H1 position=0.009045% phase=0.667146% amplitude=3.598429%
+
+This tests a specific positional mechanism that total rotary-change norms
+do not distinguish. It does not establish semantic targets or causal importance.
+
+```

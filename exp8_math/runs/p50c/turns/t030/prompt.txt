@@ -1,0 +1,9 @@
+OUTPUT of Python run 21 of at most 300:
+```
+Full-attention head alignment with repetition direction:
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 6, in <module>
+NameError: name 'diffH' is not defined
+
+```

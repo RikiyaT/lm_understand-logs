@@ -1,0 +1,172 @@
+OUTPUT of run 6 of at most 60:
+```
+=== FREQUENCY PEAKS: DIFFERENCE SHARE VERSUS BASELINE SHARE ===
+L11H0 frequency 88: delta_share=0.3195, base_share=0.1299, enrichment=2.459, relative_change=0.04912, relative_rank=2/128
+L11H1 frequency 88: delta_share=0.2234, base_share=0.0712, enrichment=3.136, relative_change=0.04959, relative_rank=2/128
+L11H2 frequency 88: delta_share=0.1684, base_share=0.0178, enrichment=9.452, relative_change=0.05495, relative_rank=30/128
+L11H3 frequency 88: delta_share=0.1788, base_share=0.0326, enrichment=5.478, relative_change=0.05288, relative_rank=7/128
+L17H0 frequency 87: delta_share=0.2207, base_share=0.1491, enrichment=1.480, relative_change=0.02249, relative_rank=55/128
+L17H1 frequency 87: delta_share=0.1593, base_share=0.1053, enrichment=1.512, relative_change=0.02714, relative_rank=23/128
+L17H2 frequency 87: delta_share=0.2001, base_share=0.0516, enrichment=3.876, relative_change=0.03102, relative_rank=39/128
+L17H3 frequency 87: delta_share=0.1371, base_share=0.0434, enrichment=3.161, relative_change=0.02163, relative_rank=48/128
+
+=== CROSS-LAYER OUTPUT-WEIGHT / INPUT-WEIGHT CONNECTIONS ===
+Only sources earlier in block order are included.
+score = ||Δ(RW)||F / sqrt(mean||R||F² * mean||W||F²).
+affinity = RMS||RW||F / the same denominator.
+These are direct weight connections, NOT effects propagated through the model.
+No attention coefficients, gates, or hidden-state normalizers are supplied.
+
+Receiver: L11.K
+  raw top five by normalized connection difference:
+    L10.MLP.D    score=0.000863 affinity=0.03916 relative=0.02203 downstream_read_share=0.120
+    L4.MLP.D     score=0.000845 affinity=0.04113 relative=0.02054 downstream_read_share=0.096
+    L8.MLP.D     score=0.000790 affinity=0.03662 relative=0.02157 downstream_read_share=0.117
+    L3.MLP.D     score=0.000744 affinity=0.04019 relative=0.01851 downstream_read_share=0.128
+    L3H3.O       score=0.000712 affinity=0.04521 relative=0.01575 downstream_read_share=0.132
+  diag top five by normalized connection difference:
+    L10.MLP.D    score=0.000322 affinity=0.00863 relative=0.03734 downstream_read_share=0.078
+    L10H2.O      score=0.000310 affinity=0.01213 relative=0.02554 downstream_read_share=0.098
+    L10H1.O      score=0.000293 affinity=0.04084 relative=0.00718 downstream_read_share=0.148
+    L8H2.O       score=0.000278 affinity=0.01398 relative=0.01987 downstream_read_share=0.083
+    L10H0.O      score=0.000255 affinity=0.01463 relative=0.01743 downstream_read_share=0.153
+  raw/diagonal top-five overlap: 1 /5
+
+Receiver: L11.K.freq88
+  raw top five by normalized connection difference:
+    L10.MLP.D    score=0.001247 affinity=0.03241 relative=0.03846 downstream_read_share=0.549
+    L4.MLP.D     score=0.001135 affinity=0.04287 relative=0.02648 downstream_read_share=0.511
+    L6.MLP.D     score=0.001133 affinity=0.03923 relative=0.02888 downstream_read_share=0.567
+    L8.MLP.D     score=0.001110 affinity=0.03581 relative=0.03100 downstream_read_share=0.625
+    L3H3.O       score=0.001107 affinity=0.04519 relative=0.02450 downstream_read_share=0.611
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000631 affinity=0.01810 relative=0.03487 downstream_read_share=0.679
+    L0H1.O       score=0.000609 affinity=0.01770 relative=0.03441 downstream_read_share=0.744
+    L0H3.O       score=0.000600 affinity=0.01931 relative=0.03107 downstream_read_share=0.884
+    L1.MLP.D     score=0.000504 affinity=0.01196 relative=0.04212 downstream_read_share=0.581
+    L10H3.O      score=0.000493 affinity=0.01934 relative=0.02550 downstream_read_share=0.918
+  raw/diagonal top-five overlap: 0 /5
+
+Receiver: L12H2.Q
+  raw top five by normalized connection difference:
+    L4.MLP.D     score=0.000810 affinity=0.04287 relative=0.01890 downstream_read_share=0.115
+    L10.MLP.D    score=0.000793 affinity=0.04247 relative=0.01868 downstream_read_share=0.143
+    L8.MLP.D     score=0.000776 affinity=0.03911 relative=0.01984 downstream_read_share=0.131
+    L3.MLP.D     score=0.000738 affinity=0.04107 relative=0.01797 downstream_read_share=0.152
+    L1.MLP.D     score=0.000718 affinity=0.04067 relative=0.01765 downstream_read_share=0.152
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000357 affinity=0.01363 relative=0.02621 downstream_read_share=0.658
+    L0H1.O       score=0.000287 affinity=0.01211 relative=0.02366 downstream_read_share=0.713
+    L1.MLP.D     score=0.000285 affinity=0.00930 relative=0.03061 downstream_read_share=0.505
+    L0H3.O       score=0.000283 affinity=0.01235 relative=0.02291 downstream_read_share=0.903
+    L0H0.O       score=0.000271 affinity=0.01173 relative=0.02314 downstream_read_share=0.924
+  raw/diagonal top-five overlap: 1 /5
+
+Receiver: L17H1.Q
+  raw top five by normalized connection difference:
+    L14.MLP.D    score=0.000851 affinity=0.03777 relative=0.02255 downstream_read_share=0.116
+    L4.MLP.D     score=0.000826 affinity=0.03819 relative=0.02163 downstream_read_share=0.114
+    L15.MLP.D    score=0.000779 affinity=0.03707 relative=0.02101 downstream_read_share=0.146
+    L10.MLP.D    score=0.000772 affinity=0.03952 relative=0.01953 downstream_read_share=0.151
+    L13.MLP.D    score=0.000767 affinity=0.03831 relative=0.02002 downstream_read_share=0.143
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000560 affinity=0.02680 relative=0.02088 downstream_read_share=0.479
+    L1.MLP.D     score=0.000457 affinity=0.01767 relative=0.02588 downstream_read_share=0.239
+    L0H2.O       score=0.000413 affinity=0.02303 relative=0.01795 downstream_read_share=0.887
+    L0H0.O       score=0.000360 affinity=0.02113 relative=0.01704 downstream_read_share=0.880
+    L3.MLP.D     score=0.000359 affinity=0.01330 relative=0.02696 downstream_read_share=0.322
+  raw/diagonal top-five overlap: 0 /5
+
+Receiver: L17H1.Q.freq87
+  raw top five by normalized connection difference:
+    L15.MLP.D    score=0.001284 affinity=0.03161 relative=0.04061 downstream_read_share=0.304
+    L14.MLP.D    score=0.001211 affinity=0.03563 relative=0.03399 downstream_read_share=0.324
+    L16H3.O      score=0.001203 affinity=0.03595 relative=0.03348 downstream_read_share=0.402
+    L16.MLP.D    score=0.001199 affinity=0.03122 relative=0.03840 downstream_read_share=0.345
+    L16H1.O      score=0.001187 affinity=0.03802 relative=0.03121 downstream_read_share=0.497
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000761 affinity=0.03607 relative=0.02110 downstream_read_share=0.496
+    L1.MLP.D     score=0.000608 affinity=0.02370 relative=0.02564 downstream_read_share=0.214
+    L3.MLP.D     score=0.000500 affinity=0.01536 relative=0.03258 downstream_read_share=0.324
+    L0H0.O       score=0.000491 affinity=0.02306 relative=0.02129 downstream_read_share=0.946
+    L0H2.O       score=0.000468 affinity=0.02959 relative=0.01581 downstream_read_share=0.941
+  raw/diagonal top-five overlap: 0 /5
+
+Receiver: L5H3.Q
+  raw top five by normalized connection difference:
+    L4.MLP.D     score=0.000893 affinity=0.03356 relative=0.02660 downstream_read_share=0.097
+    L3.MLP.D     score=0.000784 affinity=0.03824 relative=0.02050 downstream_read_share=0.119
+    L3H3.O       score=0.000779 affinity=0.04675 relative=0.01666 downstream_read_share=0.129
+    L1.MLP.D     score=0.000741 affinity=0.03870 relative=0.01914 downstream_read_share=0.126
+    L4H1.O       score=0.000681 affinity=0.03733 relative=0.01823 downstream_read_share=0.166
+  diag top five by normalized connection difference:
+    L4H1.O       score=0.000243 affinity=0.00741 relative=0.03276 downstream_read_share=0.434
+    L4H2.O       score=0.000208 affinity=0.00908 relative=0.02291 downstream_read_share=0.329
+    L4H0.O       score=0.000193 affinity=0.00725 relative=0.02657 downstream_read_share=0.276
+    L4.MLP.D     score=0.000186 affinity=0.00591 relative=0.03151 downstream_read_share=0.171
+    L4H3.O       score=0.000164 affinity=0.01263 relative=0.01297 downstream_read_share=0.524
+  raw/diagonal top-five overlap: 2 /5
+
+Receiver: L4.MLP.G[1044,1224]
+  raw top five by normalized connection difference:
+    L3H3.O       score=0.000717 affinity=0.04015 relative=0.01785 downstream_read_share=0.051
+    L3H1.O       score=0.000653 affinity=0.04559 relative=0.01431 downstream_read_share=0.072
+    L1.MLP.D     score=0.000649 affinity=0.03989 relative=0.01627 downstream_read_share=0.066
+    L2.MLP.D     score=0.000642 affinity=0.03972 relative=0.01615 downstream_read_share=0.078
+    L3.MLP.D     score=0.000641 affinity=0.03539 relative=0.01811 downstream_read_share=0.072
+  diag top five by normalized connection difference:
+    L4H1.O       score=0.000135 affinity=0.01033 relative=0.01303 downstream_read_share=0.065
+    L4H0.O       score=0.000133 affinity=0.00625 relative=0.02122 downstream_read_share=0.049
+    L4H2.O       score=0.000127 affinity=0.00870 relative=0.01463 downstream_read_share=0.087
+    L4H3.O       score=0.000074 affinity=0.00607 relative=0.01218 downstream_read_share=0.126
+    L0.MLP.D     score=0.000074 affinity=0.00580 relative=0.01270 downstream_read_share=0.127
+  raw/diagonal top-five overlap: 0 /5
+
+Receiver: L10.MLP.G[1363]
+  raw top five by normalized connection difference:
+    L1.MLP.D     score=0.000606 affinity=0.04219 relative=0.01436 downstream_read_share=0.037
+    L4.MLP.D     score=0.000600 affinity=0.03344 relative=0.01795 downstream_read_share=0.038
+    L3.MLP.D     score=0.000545 affinity=0.03559 relative=0.01533 downstream_read_share=0.039
+    L2.MLP.D     score=0.000519 affinity=0.03848 relative=0.01349 downstream_read_share=0.062
+    L3H3.O       score=0.000513 affinity=0.02832 relative=0.01810 downstream_read_share=0.068
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000093 affinity=0.00999 relative=0.00934 downstream_read_share=0.022
+    L1.MLP.D     score=0.000088 affinity=0.00527 relative=0.01663 downstream_read_share=0.008
+    L0H1.O       score=0.000074 affinity=0.00920 relative=0.00805 downstream_read_share=0.015
+    L3.MLP.D     score=0.000071 affinity=0.00433 relative=0.01646 downstream_read_share=0.013
+    L2.MLP.D     score=0.000061 affinity=0.00437 relative=0.01390 downstream_read_share=0.019
+  raw/diagonal top-five overlap: 3 /5
+
+Receiver: L10.MLP.U[1363]
+  raw top five by normalized connection difference:
+    L4.MLP.D     score=0.000762 affinity=0.03633 relative=0.02097 downstream_read_share=0.062
+    L3.MLP.D     score=0.000688 affinity=0.03310 relative=0.02078 downstream_read_share=0.077
+    L3H3.O       score=0.000650 affinity=0.03285 relative=0.01979 downstream_read_share=0.107
+    L4H1.O       score=0.000642 affinity=0.05895 relative=0.01089 downstream_read_share=0.062
+    L1.MLP.D     score=0.000641 affinity=0.04331 relative=0.01479 downstream_read_share=0.078
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000251 affinity=0.01550 relative=0.01622 downstream_read_share=0.027
+    L0H1.O       score=0.000193 affinity=0.01219 relative=0.01582 downstream_read_share=0.019
+    L1.MLP.D     score=0.000171 affinity=0.00820 relative=0.02088 downstream_read_share=0.029
+    L3.MLP.D     score=0.000155 affinity=0.00736 relative=0.02112 downstream_read_share=0.026
+    L0H3.O       score=0.000110 affinity=0.01262 relative=0.00874 downstream_read_share=0.061
+  raw/diagonal top-five overlap: 2 /5
+
+Receiver: L14.MLP.G[641]
+  raw top five by normalized connection difference:
+    L10.MLP.D    score=0.000737 affinity=0.03980 relative=0.01853 downstream_read_share=0.016
+    L8.MLP.D     score=0.000714 affinity=0.03334 relative=0.02141 downstream_read_share=0.016
+    L13.MLP.D    score=0.000710 affinity=0.02437 relative=0.02913 downstream_read_share=0.024
+    L4.MLP.D     score=0.000648 affinity=0.04646 relative=0.01395 downstream_read_share=0.019
+    L3.MLP.D     score=0.000634 affinity=0.04201 relative=0.01508 downstream_read_share=0.023
+  diag top five by normalized connection difference:
+    L0.MLP.D     score=0.000094 affinity=0.00964 relative=0.00979 downstream_read_share=0.070
+    L1.MLP.D     score=0.000086 affinity=0.00505 relative=0.01703 downstream_read_share=0.028
+    L3.MLP.D     score=0.000077 affinity=0.00428 relative=0.01807 downstream_read_share=0.038
+    L0H1.O       score=0.000062 affinity=0.00956 relative=0.00650 downstream_read_share=0.071
+    L2.MLP.D     score=0.000060 affinity=0.00422 relative=0.01413 downstream_read_share=0.054
+  raw/diagonal top-five overlap: 1 /5
+
+A large connection difference does not establish activation, use, necessity, or semantic content.
+
+```

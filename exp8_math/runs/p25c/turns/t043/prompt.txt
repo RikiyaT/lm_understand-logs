@@ -1,0 +1,6 @@
+OUTPUT of Python run 23 of at most 300:
+```
+Top-level possible diagnostic logs: []
+Installed half-strength intervention: [{'tensor': 'model.language_model.layers.15.self_attn.o_proj.weight', 'columns': [1792, 2048], 'head': 7, 'multiplier': 0.5}]
+
+```

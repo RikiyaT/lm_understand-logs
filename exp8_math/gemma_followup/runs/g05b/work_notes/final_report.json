@@ -1,0 +1,91 @@
+{
+  "submission": "Unchanged candidate frozen before HOLDOUT",
+  "edited_tensors": [
+    "model.layers.10.mlp.down_proj.weight",
+    "model.layers.11.mlp.down_proj.weight",
+    "model.layers.12.mlp.down_proj.weight",
+    "model.layers.13.mlp.down_proj.weight",
+    "model.layers.14.mlp.down_proj.weight",
+    "model.layers.15.mlp.down_proj.weight",
+    "model.layers.16.mlp.down_proj.weight",
+    "model.layers.17.mlp.down_proj.weight",
+    "model.layers.6.mlp.down_proj.weight",
+    "model.layers.7.mlp.down_proj.weight",
+    "model.layers.8.mlp.down_proj.weight",
+    "model.layers.9.mlp.down_proj.weight"
+  ],
+  "edited_neurons": 64,
+  "edited_scalar_values": 40960,
+  "operation": "Multiply only the selected down_proj columns by 0.5",
+  "layers": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "dev": {
+    "half_suppression_difference_pp": -0.48828125,
+    "half_suppression_reported_se_pp": 1.57,
+    "full_suppression_difference_pp": -4.58984375,
+    "full_suppression_reported_se_pp": 1.7
+  },
+  "holdout": {
+    "problems": 128,
+    "answers_per_model": 1024,
+    "original_correct": 90,
+    "edited_correct": 102,
+    "original_accuracy": 0.087890625,
+    "edited_accuracy": 0.099609375,
+    "difference_pp": 1.171875,
+    "reported_standard_error_pp": 0.9,
+    "approximate_95pct_interval_pp": [
+      -0.592125,
+      2.9358750000000002
+    ],
+    "wrong_to_right": 46,
+    "right_to_wrong": 34,
+    "mechanism_diagnostics": {
+      "original": {
+        "answers": 1024,
+        "correct": 90,
+        "checked_response_share": 0.5712890625,
+        "response_with_checked_error_share": 0.2021484375,
+        "error_share_among_checked_responses": 0.35384615384615387,
+        "checked_false_equalities": 1532,
+        "checked_valid_progress_equalities": 3516,
+        "checked_identity_equalities": 1042,
+        "median_tokens": 817.0,
+        "cut_responses": 86
+      },
+      "edited": {
+        "answers": 1024,
+        "correct": 102,
+        "checked_response_share": 0.548828125,
+        "response_with_checked_error_share": 0.189453125,
+        "error_share_among_checked_responses": 0.34519572953736655,
+        "checked_false_equalities": 1481,
+        "checked_valid_progress_equalities": 2150,
+        "checked_identity_equalities": 1070,
+        "median_tokens": 734.0,
+        "cut_responses": 59
+      }
+    }
+  },
+  "limitations": [
+    "Positive holdout estimate is not statistically significant at the 95% level.",
+    "Half-strength DEV estimate was slightly negative.",
+    "Full removal harmed accuracy, so selected channels also support useful computation.",
+    "Arithmetic-error associations do not establish a dedicated error-causing circuit.",
+    "Teacher-forced pass 2 was consumed by an input-format mistake and provided no math localization.",
+    "Earlier no_answer_finished counts were over-counted; do not interpret them as true missing-answer counts.",
+    "No MATH-500 evaluation was observed."
+  ]
+}

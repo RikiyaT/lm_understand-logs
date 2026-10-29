@@ -1,0 +1,184 @@
+OUTPUT of run 12 of at most 60:
+```
+Completed raw projection spectra for layer 0
+Completed raw projection spectra for layer 1
+Completed raw projection spectra for layer 2
+Completed raw projection spectra for layer 3
+Completed raw projection spectra for layer 4
+Completed raw projection spectra for layer 5
+Completed raw projection spectra for layer 6
+Completed raw projection spectra for layer 7
+Completed raw projection spectra for layer 8
+Completed raw projection spectra for layer 9
+Completed raw projection spectra for layer 10
+Completed raw projection spectra for layer 11
+Completed raw projection spectra for layer 12
+Completed raw projection spectra for layer 13
+Completed raw projection spectra for layer 14
+Completed raw projection spectra for layer 15
+Completed raw projection spectra for layer 16
+Completed raw projection spectra for layer 17
+
+=== RAW PROJECTION DIFFERENCE SPECTRA ===
+Top-16 singular-value energy fractions, in Q K V O G U D order:
+L 0: 0.628 0.752 0.728 0.538 0.485 0.478 0.405
+L 1: 0.586 0.631 0.686 0.652 0.437 0.430 0.384
+L 2: 0.601 0.717 0.582 0.556 0.445 0.446 0.421
+L 3: 0.609 0.668 0.599 0.572 0.425 0.431 0.433
+L 4: 0.623 0.657 0.583 0.593 0.441 0.440 0.417
+L 5: 0.672 0.696 0.643 0.596 0.410 0.429 0.418
+L 6: 0.631 0.651 0.552 0.569 0.427 0.430 0.424
+L 7: 0.622 0.671 0.563 0.528 0.455 0.446 0.422
+L 8: 0.593 0.621 0.530 0.567 0.464 0.460 0.431
+L 9: 0.696 0.696 0.544 0.546 0.457 0.456 0.443
+L10: 0.665 0.684 0.540 0.512 0.479 0.486 0.477
+L11: 0.659 0.689 0.512 0.424 0.446 0.447 0.456
+L12: 0.725 0.718 0.531 0.477 0.499 0.490 0.424
+L13: 0.629 0.630 0.534 0.479 0.517 0.509 0.398
+L14: 0.615 0.675 0.558 0.504 0.495 0.480 0.394
+L15: 0.584 0.608 0.551 0.445 0.433 0.429 0.446
+L16: 0.528 0.564 0.551 0.605 0.394 0.393 0.531
+L17: 0.593 0.669 0.538 0.539 0.372 0.374 0.633
+
+=== FAMILY SUMMARIES ===
+family | median stable_rank / rank90 / top16 | estimated rounding_variance_fraction | median unavoidable_energy_fraction
+Q | 7.43 / 115.5 / 0.622 | 0.11906 | 0.49498
+K | 7.47 / 73.0 / 0.670 | 0.12042 | 0.46336
+V | 9.82 / 98.0 / 0.551 | 0.14008 | 0.37985
+O | 9.34 / 133.5 / 0.543 | 0.08993 | 0.48132
+G | 10.70 / 232.5 / 0.446 | 0.12867 | 0.42878
+U | 10.56 / 233.0 / 0.446 | 0.13124 | 0.39264
+D | 13.51 / 170.5 / 0.424 | 0.02704 | 0.64909
+
+'unavoidable_energy_fraction' is an entrywise lower bound on
+pre-rounding difference energy divided by observed difference energy,
+conditional on nearest-rounding cells. It does not establish matrix rank.
+
+=== TOP 15 MATRICES BY TOP-16 DIFFERENCE ENERGY SHARE ===
+L0.K (256, 640): top4=0.488, top16=0.752, stable_rank=4.58, rank90=62, rounding_var_fraction=0.1203, unavoidable_fraction=0.4288
+L0.V (256, 640): top4=0.432, top16=0.728, stable_rank=5.85, rank90=80, rounding_var_fraction=0.1679, unavoidable_fraction=0.3354
+L12.Q (1024, 640): top4=0.440, top16=0.725, stable_rank=4.14, rank90=80, rounding_var_fraction=0.1046, unavoidable_fraction=0.5443
+L12.K (256, 640): top4=0.464, top16=0.718, stable_rank=4.40, rank90=64, rounding_var_fraction=0.1129, unavoidable_fraction=0.5001
+L2.K (256, 640): top4=0.403, top16=0.717, stable_rank=6.77, rank90=69, rounding_var_fraction=0.1283, unavoidable_fraction=0.3989
+L9.Q (1024, 640): top4=0.430, top16=0.696, stable_rank=4.53, rank90=93, rounding_var_fraction=0.1016, unavoidable_fraction=0.4942
+L5.K (256, 640): top4=0.410, top16=0.696, stable_rank=4.68, rank90=62, rounding_var_fraction=0.1390, unavoidable_fraction=0.5312
+L9.K (256, 640): top4=0.393, top16=0.696, stable_rank=7.53, rank90=69, rounding_var_fraction=0.1081, unavoidable_fraction=0.4793
+L11.K (256, 640): top4=0.435, top16=0.689, stable_rank=4.89, rank90=68, rounding_var_fraction=0.1242, unavoidable_fraction=0.5333
+L1.V (256, 640): top4=0.366, top16=0.686, stable_rank=7.31, rank90=76, rounding_var_fraction=0.1383, unavoidable_fraction=0.3762
+L10.K (256, 640): top4=0.413, top16=0.684, stable_rank=6.28, rank90=72, rounding_var_fraction=0.1066, unavoidable_fraction=0.4650
+L14.K (256, 640): top4=0.425, top16=0.675, stable_rank=4.86, rank90=74, rounding_var_fraction=0.1072, unavoidable_fraction=0.4617
+L5.Q (1024, 640): top4=0.390, top16=0.672, stable_rank=5.24, rank90=96, rounding_var_fraction=0.1210, unavoidable_fraction=0.5659
+L7.K (256, 640): top4=0.379, top16=0.671, stable_rank=7.92, rank90=75, rounding_var_fraction=0.1132, unavoidable_fraction=0.4652
+L17.K (256, 640): top4=0.443, top16=0.669, stable_rank=4.52, rank90=79, rounding_var_fraction=0.1121, unavoidable_fraction=0.4839
+
+=== RAW-MATRIX CONTROL COMPARISONS ===
+Control metrics: [operator_norm, stable_rank, top16_energy_share].
+Quantization controls use centered independent uniform cell-width errors.
+Sign controls preserve every observed difference magnitude.
+These controls are weight arrays, never inputs to a model.
+Six replicates provide descriptive ranges, not calibrated significance.
+
+L0.K (256, 640)
+  observed:          [0.0501 4.5774 0.7518]
+  rounding median:   [ 0.0065 32.9774  0.2997]
+  rounding min/max:  [ 0.0063 31.7464  0.2916] [ 0.0066 34.8539  0.3027]
+  sign median:       [ 0.0125 73.4395  0.1737]
+  sign min/max:      [ 0.0123 71.3857  0.172 ] [ 0.0127 76.3305  0.1744]
+  observed operator norm / median rounding-control operator norm: 7.735030407574894
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.478814697265625
+
+L0.V (256, 640)
+  observed:          [0.0375 5.8494 0.7276]
+  rounding median:   [ 0.0039 91.3904  0.1547]
+  rounding min/max:  [ 0.0039 86.0311  0.1537] [ 0.004  92.745   0.1562]
+  sign median:       [ 0.0103 77.1088  0.1698]
+  sign min/max:      [ 0.0103 75.5959  0.1693] [ 0.0104 78.0552  0.1713]
+  observed operator norm / median rounding-control operator norm: 9.620986341859394
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.3802734375
+
+L1.O (640, 1024)
+  observed:          [0.08   5.4844 0.6522]
+  rounding median:   [ 0.0088 24.4743  0.229 ]
+  rounding min/max:  [ 0.0087 24.2297  0.2281] [ 0.0088 25.004   0.2338]
+  sign median:       [  0.015  156.7874   0.086 ]
+  sign min/max:      [  0.0147 154.3436   0.0854] [  0.0151 162.0637   0.0862]
+  observed operator norm / median rounding-control operator norm: 9.121790213111696
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.5918182373046875
+
+L10.D (640, 2048)
+  observed:          [0.0847 9.7378 0.477 ]
+  rounding median:   [ 0.0053 47.0986  0.1645]
+  rounding min/max:  [ 0.0052 43.8064  0.1605] [ 0.0055 48.1479  0.1654]
+  sign median:       [  0.0251 110.4825   0.073 ]
+  sign min/max:      [  0.0251 109.9644   0.0728] [  0.0252 110.8983   0.0733]
+  observed operator norm / median rounding-control operator norm: 15.900422262548458
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.7248786926269531
+
+L11.K (256, 640)
+  observed:          [0.0479 4.8854 0.6895]
+  rounding median:   [ 0.0062 36.1829  0.3171]
+  rounding min/max:  [ 0.006  33.8416  0.313 ] [ 0.0065 38.5398  0.3286]
+  sign median:       [ 0.0115 84.138   0.1637]
+  sign min/max:      [ 0.0114 83.5461  0.1617] [ 0.0116 86.4232  0.165 ]
+  observed operator norm / median rounding-control operator norm: 7.682159226945854
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.582098388671875
+
+L12.Q (1024, 640)
+  observed:          [0.1106 4.1434 0.7251]
+  rounding median:   [ 0.0089 67.3114  0.2053]
+  rounding min/max:  [ 0.0088 64.6115  0.2014] [ 0.0091 68.1137  0.2071]
+  sign median:       [  0.0193 136.353    0.0968]
+  sign min/max:      [  0.019  134.6585   0.0966] [  0.0194 140.349    0.0974]
+  observed operator norm / median rounding-control operator norm: 12.415779569557005
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.6059066772460937
+
+L13.G (2048, 640)
+  observed:          [0.1051 7.8523 0.517 ]
+  rounding median:   [  0.0093 127.1147   0.0969]
+  rounding min/max:  [  0.0092 121.3595   0.0953] [  0.0095 130.0725   0.0993]
+  sign median:       [  0.0186 249.6285   0.0604]
+  sign min/max:      [  0.0186 247.5252   0.0602] [  0.0187 251.4688   0.0605]
+  observed operator norm / median rounding-control operator norm: 11.319630669669309
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.45554122924804685
+
+L13.U (2048, 640)
+  observed:          [0.1015 8.3042 0.509 ]
+  rounding median:   [  0.0066 248.2063   0.06  ]
+  rounding min/max:  [  0.0065 217.4862   0.0592] [  0.0071 257.4543   0.0606]
+  sign median:       [  0.0185 248.8932   0.0602]
+  sign min/max:      [  0.0184 246.7031   0.0601] [  0.0186 252.123    0.0603]
+  observed operator norm / median rounding-control operator norm: 15.316057181539216
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.4260887145996094
+
+L15.V (256, 640)
+  observed:          [ 0.0335 10.2584  0.5506]
+  rounding median:   [ 0.0041 81.0807  0.1694]
+  rounding min/max:  [ 0.0041 78.1387  0.1676] [ 0.0042 84.1719  0.1706]
+  sign median:       [ 0.0114 88.9178  0.1559]
+  sign min/max:      [ 0.0112 87.6985  0.1553] [ 0.0114 92.1191  0.1561]
+  observed operator norm / median rounding-control operator norm: 8.079868048938184
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.452789306640625
+
+L17.D (640, 2048)
+  observed:          [0.0932 7.8953 0.6334]
+  rounding median:   [  0.0036 138.1134   0.0661]
+  rounding min/max:  [  0.0033 134.2131   0.0646] [  0.0037 171.5788   0.0666]
+  sign median:       [  0.0167 244.5672   0.0611]
+  sign min/max:      [  0.0167 239.3468   0.0609] [  0.0169 245.3117   0.0614]
+  observed operator norm / median rounding-control operator norm: 25.539792403001417
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.6732177734375
+
+L4.D (640, 2048)
+  observed:          [ 0.0642 17.3299  0.4167]
+  rounding median:   [ 0.0051 40.4275  0.3097]
+  rounding min/max:  [ 0.005  37.6748  0.3092] [ 0.0053 42.4138  0.3128]
+  sign median:       [  0.0174 236.6008   0.0622]
+  sign min/max:      [  0.0173 232.4334   0.0621] [  0.0175 238.8046   0.0625]
+  observed operator norm / median rounding-control operator norm: 12.507708875507769
+  fraction of entries with nonoverlapping hypothetical rounding cells: 0.7736198425292968
+
+The stored checkpoint differences are exact; rounding controls address
+a hypothetical higher-precision origin, not errors in reading these weights.
+Low-rank structure, if present, still does not label agreement versus correctness.
+
+```

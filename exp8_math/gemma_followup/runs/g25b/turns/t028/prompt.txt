@@ -1,0 +1,47 @@
+Forward pass 8 of 25 done (teacher_forced); results in /work/fwd_8/. Summary:
+```
+{
+ "ok": true,
+ "lengths": [
+  196,
+  192
+ ],
+ "files": {
+  "input_ids": [
+   2,
+   196
+  ],
+  "token_logprobs": [
+   2,
+   195
+  ],
+  "attn_5": [
+   2,
+   4,
+   196,
+   196
+  ],
+  "attn_11": [
+   2,
+   4,
+   196,
+   196
+  ],
+  "attn_17": [
+   2,
+   4,
+   196,
+   196
+  ]
+ },
+ "edited_tensors": 0,
+ "mean_token_logprob": [
+  -3.59822154045105,
+  -2.868133783340454
+ ],
+ "type": "teacher_forced",
+ "s": 0.1
+}
+```
+Forward passes left: 17.
+Edits used in this pass: model.layers.15.mlp.down_proj.weight, model.layers.17.mlp.down_proj.weight, model.layers.4.mlp.down_proj.weight (edit hash d80fae7cea).

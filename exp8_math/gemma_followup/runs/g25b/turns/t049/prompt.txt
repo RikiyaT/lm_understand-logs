@@ -1,0 +1,24 @@
+OUTPUT of Python run 30 of at most 300:
+```
+Strong stable candidates, ordered by output variation:
+ layer  neuron      r  half1  half2  stable  output_effect_sd    corr     raw  activity  output_norm
+     0    1302 0.3337 0.3180 0.3520  0.3180            0.4926  0.0176  0.0163    3.8831       0.4130
+     2     399 0.3393 0.3216 0.3604  0.3216            0.0266 -0.0001 -0.0020    0.0742       0.5137
+     5    1353 0.3422 0.3611 0.3293  0.3293            0.0222 -0.0018  0.0165    0.0754       0.4259
+     3     152 0.2623 0.2755 0.2501  0.2501            0.0177 -0.0004 -0.0020    0.2293       0.3482
+     5     459 0.2794 0.3055 0.2511  0.2511            0.0175  0.0234  0.0272    0.0699       0.4174
+     5    1423 0.3473 0.3162 0.3831  0.3162            0.0149  0.0284  0.0297    0.0505       0.7402
+     5      17 0.3064 0.2862 0.3261  0.2862            0.0148 -0.0034 -0.0191    0.0552       0.4579
+     1    1004 0.3102 0.3281 0.2972  0.2972            0.0141 -0.0069 -0.0080    0.0493       0.3538
+    10    1329 0.3475 0.3893 0.3008  0.3008            0.0138  0.0200  0.0364    0.1152       0.2966
+     5    1777 0.2728 0.2513 0.2965  0.2513            0.0137  0.0434  0.0730    0.1278       0.4554
+     2    1243 0.2938 0.2868 0.3011  0.2868            0.0124 -0.0314 -0.0367    0.0529       0.3688
+    11     798 0.2979 0.3023 0.2934  0.2934            0.0123  0.0611  0.0749    0.0716       0.4115
+{'layer': 0, 'neuron': 1302, 'prompt_mean': 28.28125, 'answer_mean': 3.625, 'answer_sd': 1.3935546875, 'correct_nonrepeat': {'n': 322, 'mean': 3.501953125}, 'wrong_nonrepeat': {'n': 516, 'mean': 3.4296875}, 'wrong_repeat': {'n': 122, 'mean': 4.5078125}, 'correct_repeat': {'n': 48, 'mean': 4.28125}}
+{'layer': 9, 'neuron': 1853, 'prompt_mean': -0.022064208984375, 'answer_mean': 0.05560302734375, 'answer_sd': 0.044403076171875, 'correct_nonrepeat': {'n': 322, 'mean': 0.04193115234375}, 'wrong_nonrepeat': {'n': 516, 'mean': 0.04681396484375}, 'wrong_repeat': {'n': 122, 'mean': 0.10845947265625}, 'correct_repeat': {'n': 48, 'mean': 0.107421875}}
+{'layer': 10, 'neuron': 1628, 'prompt_mean': 0.198974609375, 'answer_mean': 0.10736083984375, 'answer_sd': 0.033843994140625, 'correct_nonrepeat': {'n': 322, 'mean': 0.0989990234375}, 'wrong_nonrepeat': {'n': 516, 'mean': 0.10235595703125}, 'wrong_repeat': {'n': 122, 'mean': 0.13916015625}, 'correct_repeat': {'n': 48, 'mean': 0.13623046875}}
+{'layer': 5, 'neuron': 1353, 'prompt_mean': 0.1845703125, 'answer_mean': 0.049407958984375, 'answer_sd': 0.05694580078125, 'correct_nonrepeat': {'n': 322, 'mean': 0.040771484375}, 'wrong_nonrepeat': {'n': 516, 'mean': 0.03826904296875}, 'wrong_repeat': {'n': 122, 'mean': 0.10028076171875}, 'correct_repeat': {'n': 48, 'mean': 0.0975341796875}}
+Activation index sample: {'item': 'math_train_number_theory_528', 'sample': 0, 'correct': False, 'tokens': 318}
+Sample index fields: ['item', 'sample', 'correct', 'tokens']
+
+```

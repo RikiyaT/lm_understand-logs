@@ -1,0 +1,138 @@
+[
+ {
+  "turn": "t001",
+  "usage": {
+   "input_tokens": 5126,
+   "cached_input_tokens": 2432,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 3377,
+   "reasoning_output_tokens": 1778
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 4,
+   "agent_message": 2
+  },
+  "wall_s": 129.5
+ },
+ {
+  "turn": "t002",
+  "usage": {
+   "input_tokens": 13674,
+   "cached_input_tokens": 10752,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 6506,
+   "reasoning_output_tokens": 3139
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 3,
+   "agent_message": 1
+  },
+  "wall_s": 98.8
+ },
+ {
+  "turn": "t003",
+  "usage": {
+   "input_tokens": 27888,
+   "cached_input_tokens": 22272,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 11118,
+   "reasoning_output_tokens": 5436
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 5,
+   "agent_message": 1
+  },
+  "wall_s": 146.7
+ },
+ {
+  "turn": "t004",
+  "usage": {
+   "input_tokens": 49936,
+   "cached_input_tokens": 40960,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 15081,
+   "reasoning_output_tokens": 7699
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 5,
+   "agent_message": 1
+  },
+  "wall_s": 138.1
+ },
+ {
+  "turn": "t005",
+  "usage": {
+   "input_tokens": 78621,
+   "cached_input_tokens": 66816,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 16843,
+   "reasoning_output_tokens": 8733
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 2,
+   "agent_message": 1
+  },
+  "wall_s": 72.5
+ },
+ {
+  "turn": "t006",
+  "usage": {
+   "input_tokens": 109113,
+   "cached_input_tokens": 97024,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 22940,
+   "reasoning_output_tokens": 12704
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 8,
+   "agent_message": 1
+  },
+  "wall_s": 179.6
+ },
+ {
+  "turn": "t007",
+  "usage": {
+   "input_tokens": 147365,
+   "cached_input_tokens": 133376,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 24278,
+   "reasoning_output_tokens": 13316
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 1,
+   "agent_message": 1
+  },
+  "wall_s": 58.2
+ },
+ {
+  "turn": "t008",
+  "usage": {
+   "input_tokens": 187000,
+   "cached_input_tokens": 172800,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 25182,
+   "reasoning_output_tokens": 13748
+  },
+  "tool_free": true,
+  "item_types": {
+   "error": 1,
+   "reasoning": 1,
+   "agent_message": 1
+  },
+  "wall_s": 38.5
+ }
+]

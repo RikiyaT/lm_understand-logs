@@ -1,0 +1,114 @@
+OUTPUT of run 2 of at most 60:
+```
+=== LEARNED GAIN SCALES (PARAMETERS ONLY) ===
+layer input_RMS post_attn_RMS pre_MLP_RMS post_MLP_RMS min_gain max_gain
+0 14.552 2.3964 6.1325 6.8647 0 153
+1 26.731 9.3647 31.315 9.3723 -0.0078125 196
+2 32.789 5.4463 25.158 14.16 -0.17188 251
+3 30.064 12.529 32.242 35.572 -5.9688 585
+4 50.295 13.175 17.009 28.051 -2.3125 609
+5 17.933 28.758 15.182 34.17 -0.09375 741
+6 27.396 19.144 9.8451 35.868 -13.125 785
+7 25.956 21.14 9.0253 33.879 -132 689
+8 26.1 30.624 8.4262 37.789 -1.125 709
+9 22.482 32.781 5.5088 43.103 -0.13281 525
+10 25.501 57.613 7.3049 74.785 -70.5 593
+11 9.7333 185.22 9.4693 147.49 -0.054688 893
+12 31.132 201.77 6.0288 207.05 -0.82031 741
+13 21.357 166.24 5.7673 215.09 -1.0312 493
+14 30.132 188.76 5.3876 246.59 -0.03125 789
+15 38.584 246.23 3.9951 292.51 -9.4375 1193
+16 39.693 163.4 3.8901 340.34 -9.4375 1657
+17 23.135 157.19 4.2042 376.48 -0.50781 1649
+
+=== TOP 12 HEADS BY RAW OV COMPOSITION DIFFERENCE ===
+L15H1 dOV=0.18716 relOV=0.011729 scaledRelOV=0.016459 relQK=0.013943 idA=-0.45705 idB=-0.45705 dOV_id=+0.00101
+L10H3 dOV=0.17295 relOV=0.0079795 scaledRelOV=0.0074796 relQK=0.01899 idA=-0.03099 idB=-0.03097 dOV_id=+0.00184
+L10H2 dOV=0.16576 relOV=0.012318 scaledRelOV=0.014665 relQK=0.010011 idA=+0.13697 idB=+0.13699 dOV_id=+0.00202
+L11H2 dOV=0.16493 relOV=0.0091107 scaledRelOV=0.0098969 relQK=0.018502 idA=+0.09548 idB=+0.09546 dOV_id=-0.00246
+L12H3 dOV=0.16316 relOV=0.012325 scaledRelOV=0.012424 relQK=0.029942 idA=+0.07104 idB=+0.07105 dOV_id=+0.00036
+L12H0 dOV=0.16251 relOV=0.011904 scaledRelOV=0.014311 relQK=0.028337 idA=-0.06504 idB=-0.06502 dOV_id=+0.00206
+L09H1 dOV=0.15976 relOV=0.0089489 scaledRelOV=0.011324 relQK=0.015135 idA=-0.23099 idB=-0.23100 dOV_id=-0.00089
+L10H0 dOV=0.15755 relOV=0.010386 scaledRelOV=0.010897 relQK=0.021449 idA=+0.20573 idB=+0.20573 dOV_id=-0.00113
+L07H1 dOV=0.15739 relOV=0.0085234 scaledRelOV=0.010106 relQK=0.015941 idA=-0.44304 idB=-0.44307 dOV_id=-0.00438
+L11H3 dOV=0.15613 relOV=0.008158 scaledRelOV=0.008063 relQK=0.025301 idA=-0.16735 idB=-0.16734 dOV_id=+0.00108
+L12H2 dOV=0.15444 relOV=0.0090346 scaledRelOV=0.0090349 relQK=0.030364 idA=+0.13512 idB=+0.13515 dOV_id=+0.00376
+L00H3 dOV=0.1537 relOV=0.0074655 scaledRelOV=0.0087833 relQK=0.010698 idA=+0.10605 idB=+0.10606 dOV_id=+0.00199
+
+=== TOP 12 HEADS BY RELATIVE GAIN-SCALED OV DIFFERENCE ===
+L04H1 dOV=0.1163 relOV=0.017947 scaledRelOV=0.032961 relQK=0.019409 idA=+0.07663 idB=+0.07660 dOV_id=-0.00118
+L03H3 dOV=0.10666 relOV=0.019679 scaledRelOV=0.023562 relQK=0.0072848 idA=-0.05542 idB=-0.05539 dOV_id=+0.00201
+L04H0 dOV=0.12099 relOV=0.01706 scaledRelOV=0.022709 relQK=0.013734 idA=+0.04248 idB=+0.04250 dOV_id=+0.00160
+L04H2 dOV=0.12395 relOV=0.014979 scaledRelOV=0.021693 relQK=0.015863 idA=-0.00530 idB=-0.00527 dOV_id=+0.00188
+L11H1 dOV=0.14005 relOV=0.012827 scaledRelOV=0.021399 relQK=0.040064 idA=+0.40657 idB=+0.40658 dOV_id=+0.00320
+L08H2 dOV=0.11179 relOV=0.013981 scaledRelOV=0.020066 relQK=0.017933 idA=+0.16908 idB=+0.16907 dOV_id=-0.00066
+L00H1 dOV=0.11285 relOV=0.011085 scaledRelOV=0.019904 relQK=0.0092901 idA=-0.18340 idB=-0.18340 dOV_id=+0.00099
+L02H3 dOV=0.11802 relOV=0.013555 scaledRelOV=0.019887 relQK=0.015261 idA=-0.02625 idB=-0.02623 dOV_id=+0.00195
+L03H1 dOV=0.10666 relOV=0.014041 scaledRelOV=0.019287 relQK=0.018656 idA=+0.06616 idB=+0.06616 dOV_id=+0.00028
+L15H2 dOV=0.14622 relOV=0.013229 scaledRelOV=0.019069 relQK=0.01887 idA=+0.28692 idB=+0.28695 dOV_id=+0.00094
+L06H0 dOV=0.13331 relOV=0.011353 scaledRelOV=0.018208 relQK=0.014623 idA=+0.11460 idB=+0.11459 dOV_id=-0.00049
+L08H1 dOV=0.11827 relOV=0.012667 scaledRelOV=0.01786 relQK=0.014143 idA=+0.11847 idB=+0.11845 dOV_id=-0.00178
+
+=== TOP 12 HEADS BY RELATIVE GAIN-SCALED QK DIFFERENCE ===
+L11H0 dOV=0.13911 relOV=0.011636 scaledRelOV=0.012177 relQK=0.044162 idA=+0.04750 idB=+0.04749 dOV_id=-0.00162
+L11H1 dOV=0.14005 relOV=0.012827 scaledRelOV=0.021399 relQK=0.040064 idA=+0.40657 idB=+0.40658 dOV_id=+0.00320
+L10H1 dOV=0.14484 relOV=0.010487 scaledRelOV=0.012362 relQK=0.035973 idA=-0.00761 idB=-0.00761 dOV_id=+0.00005
+L12H2 dOV=0.15444 relOV=0.0090346 scaledRelOV=0.0090349 relQK=0.030364 idA=+0.13512 idB=+0.13515 dOV_id=+0.00376
+L12H3 dOV=0.16316 relOV=0.012325 scaledRelOV=0.012424 relQK=0.029942 idA=+0.07104 idB=+0.07105 dOV_id=+0.00036
+L17H1 dOV=0.12546 relOV=0.011011 scaledRelOV=0.014578 relQK=0.029017 idA=+0.46114 idB=+0.46113 dOV_id=+0.00289
+L14H1 dOV=0.13379 relOV=0.0091009 scaledRelOV=0.0092414 relQK=0.028708 idA=+0.27112 idB=+0.27113 dOV_id=+0.00157
+L12H0 dOV=0.16251 relOV=0.011904 scaledRelOV=0.014311 relQK=0.028337 idA=-0.06504 idB=-0.06502 dOV_id=+0.00206
+L11H3 dOV=0.15613 relOV=0.008158 scaledRelOV=0.008063 relQK=0.025301 idA=-0.16735 idB=-0.16734 dOV_id=+0.00108
+L13H1 dOV=0.13197 relOV=0.012852 scaledRelOV=0.013616 relQK=0.024234 idA=+0.09733 idB=+0.09735 dOV_id=+0.00057
+L14H2 dOV=0.14272 relOV=0.010459 scaledRelOV=0.0098594 relQK=0.024221 idA=+0.08026 idB=+0.08029 dOV_id=+0.00243
+L06H2 dOV=0.12849 relOV=0.01261 scaledRelOV=0.017558 relQK=0.023897 idA=+0.19365 idB=+0.19361 dOV_id=-0.00174
+
+=== LARGEST CHANGES IN IDENTITY ALIGNMENT: B MINUS A ===
+L07H3 raw_id_A=+0.209436 raw_id_B=+0.209388 raw_change=-4.81786e-05 scaled_change=-3.998e-05 O_contribution_ratio=0.8420 V_contribution_ratio=0.4686 contribution_cos=+0.0905
+L03H0 raw_id_A=-0.153244 raw_id_B=-0.153198 raw_change=+4.64028e-05 scaled_change=-4.9931e-05 O_contribution_ratio=0.7978 V_contribution_ratio=0.5354 contribution_cos=+0.0899
+L06H2 raw_id_A=+0.193648 raw_id_B=+0.193609 raw_change=-3.91929e-05 scaled_change=-3.29992e-05 O_contribution_ratio=0.7754 V_contribution_ratio=0.5449 contribution_cos=+0.1205
+L02H0 raw_id_A=+0.130255 raw_id_B=+0.130290 raw_change=+3.50974e-05 scaled_change=+1.58268e-05 O_contribution_ratio=0.6852 V_contribution_ratio=0.6210 contribution_cos=+0.1703
+L03H3 raw_id_A=-0.055421 raw_id_B=-0.055386 raw_change=+3.47613e-05 scaled_change=+1.29782e-05 O_contribution_ratio=0.8839 V_contribution_ratio=0.3849 contribution_cos=+0.1035
+L01H2 raw_id_A=+0.089284 raw_id_B=+0.089318 raw_change=+3.41113e-05 scaled_change=+3.45195e-06 O_contribution_ratio=0.8142 V_contribution_ratio=0.5058 contribution_cos=+0.0986
+L00H2 raw_id_A=-0.003235 raw_id_B=-0.003201 raw_change=+3.39727e-05 scaled_change=+1.10176e-05 O_contribution_ratio=0.6598 V_contribution_ratio=0.7195 contribution_cos=+0.0495
+L13H3 raw_id_A=-0.013956 raw_id_B=-0.013923 raw_change=+3.30163e-05 scaled_change=+2.4171e-06 O_contribution_ratio=0.7454 V_contribution_ratio=0.5953 contribution_cos=+0.1015
+L12H1 raw_id_A=+0.013371 raw_id_B=+0.013404 raw_change=+3.29249e-05 scaled_change=+1.60493e-06 O_contribution_ratio=0.7572 V_contribution_ratio=0.5936 contribution_cos=+0.0826
+L12H2 raw_id_A=+0.135117 raw_id_B=+0.135148 raw_change=+3.15243e-05 scaled_change=-8.23876e-08 O_contribution_ratio=0.6506 V_contribution_ratio=0.7100 contribution_cos=+0.0786
+L06H3 raw_id_A=+0.111145 raw_id_B=+0.111114 raw_change=-3.10174e-05 scaled_change=+2.89333e-05 O_contribution_ratio=0.7443 V_contribution_ratio=0.6022 contribution_cos=+0.0930
+L15H2 raw_id_A=+0.286920 raw_id_B=+0.286951 raw_change=+3.08547e-05 scaled_change=-1.46141e-05 O_contribution_ratio=0.6925 V_contribution_ratio=0.6547 contribution_cos=+0.1012
+L06H1 raw_id_A=-0.139857 raw_id_B=-0.139887 raw_change=-3.02452e-05 scaled_change=+1.76598e-06 O_contribution_ratio=0.7020 V_contribution_ratio=0.7084 contribution_cos=+0.0054
+L04H1 raw_id_A=+0.076633 raw_id_B=+0.076603 raw_change=-2.98496e-05 scaled_change=-5.33105e-06 O_contribution_ratio=0.8615 V_contribution_ratio=0.3947 contribution_cos=+0.1499
+L04H2 raw_id_A=-0.005297 raw_id_B=-0.005268 raw_change=+2.89142e-05 scaled_change=+1.4186e-05 O_contribution_ratio=0.8539 V_contribution_ratio=0.4413 contribution_cos=+0.1009
+L17H3 raw_id_A=-0.027978 raw_id_B=-0.027953 raw_change=+2.5182e-05 scaled_change=+5.59877e-06 O_contribution_ratio=0.8361 V_contribution_ratio=0.5174 contribution_cos=+0.0385
+
+=== LAYER SUMMARY ===
+layer mean_relOV mean_scaledRelOV mean_relQK mean_identity_A mean_identity_B
+0 0.00935069 0.0121704 0.00995757 0.00574197 0.00575302
+1 0.0123113 0.0103005 0.0109816 0.0592475 0.0592619
+2 0.0108016 0.0143233 0.0118394 -0.0205671 -0.0205487
+3 0.0149079 0.0189228 0.0119468 0.0307273 0.0307461
+4 0.0152384 0.0232455 0.0155635 0.0225961 0.0226047
+5 0.0119283 0.0121273 0.0196503 0.0354029 0.0354016
+6 0.011162 0.0158798 0.0179201 0.0698852 0.0698554
+7 0.0111711 0.0130344 0.0156345 0.0832672 0.0832411
+8 0.0121865 0.0163425 0.0150754 0.0185211 0.0185137
+9 0.0107298 0.0130091 0.0165846 0.0475106 0.0475003
+10 0.0102927 0.011351 0.0216059 0.0760224 0.0760327
+11 0.0104331 0.012884 0.0320073 0.0955508 0.0955467
+12 0.0110303 0.0121176 0.0278646 0.0386219 0.0386446
+13 0.0119033 0.0116035 0.0195823 0.0910662 0.0910846
+14 0.00927665 0.00906145 0.0240474 0.0917598 0.0917702
+15 0.0116288 0.0158921 0.0168307 0.137337 0.137353
+16 0.0146535 0.0140437 0.0156596 0.102563 0.102552
+17 0.00950992 0.0102437 0.0182468 0.134517 0.134524
+
+Identity alignment increased in B: 41 of 72 heads
+Mean / median raw identity-alignment change: 3.706301648175463e-06 3.7791102477438554e-06
+Mean / median gain-scaled identity-alignment change: -6.019359262328367e-06 -2.097795511741933e-07
+Maximum midpoint-decomposition relative error: 2.7045006840942227e-17
+
+These are weight-composition measurements, not attention patterns,
+token-copying measurements, behavioural predictions, or causal rankings.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

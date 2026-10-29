@@ -1,0 +1,63 @@
+OUTPUT of run 8 of at most 60:
+```
+=== ALL-LAYER EXACT TOTAL COUPLING-COEFFICIENT COMPARISON ===
+layer relative_change coherence top20_coefficient_removal B/A_strength top4_units_by_signed_overlap
+ 0 0.0179766 1.00819 18.224% 1.0009695 [1405, 1130, 878, 1856]
+ 1 0.0279045 1.00971 5.987% 0.9995490 [1725, 372, 1385, 1976]
+ 2 0.0184989 1.01830 6.397% 0.9998251 [1049, 1831, 264, 1630]
+ 3 0.0229212 1.02725 10.638% 0.9995865 [1635, 1987, 1414, 146]
+ 4 0.0227485 1.05723 15.887% 0.9968341 [13, 1044, 84, 20]
+ 5 0.0145978 1.12137 11.259% 1.0000064 [584, 13, 809, 2032]
+ 6 0.0092623 1.10771 22.649% 0.9973206 [1824, 651, 373, 1590]
+ 7 0.0094610 1.10988 12.589% 1.0000214 [1455, 1032, 334, 1300]
+ 8 0.0208206 1.12965 12.215% 1.0018993 [188, 1394, 1379, 522]
+ 9 0.0170296 1.15621 7.100% 1.0001206 [437, 1782, 1573, 1614]
+10 0.0209482 1.11577 23.502% 1.0000761 [1363, 1564, 1529, 1869]
+11 0.0146842 1.12643 8.814% 1.0000401 [1815, 494, 716, 1388]
+12 0.0151457 1.11136 6.622% 1.0000579 [1528, 1520, 1584, 694]
+13 0.0185343 1.06522 7.350% 0.9999431 [16, 1517, 369, 67]
+14 0.0211030 1.05575 7.311% 1.0000263 [641, 685, 1801, 1798]
+15 0.0191449 1.05592 5.843% 0.9999378 [1369, 1226, 651, 1940]
+16 0.0176992 1.06766 7.203% 0.9998830 [893, 730, 1591, 287]
+17 0.0191445 1.16932 8.819% 0.9996892 [1026, 1916, 1312, 1180]
+
+=== ALL LAYERS RANKED BY RELATIVE TOTAL COEFFICIENT CHANGE ===
+[(1, 0.0279045), (3, 0.0229212), (4, 0.0227485), (14, 0.021103), (10, 0.0209482), (8, 0.0208206), (15, 0.0191449), (17, 0.0191445), (13, 0.0185343), (2, 0.0184989), (0, 0.0179766), (16, 0.0176992), (9, 0.0170296), (12, 0.0151457), (11, 0.0146842), (5, 0.0145978), (7, 0.009461), (6, 0.0092623)]
+
+=== EXACT FACTOR ATTRIBUTION WITHIN SELECTED UNIT GROUPS ===
+Shares below are signed inner products with the group's total coefficient
+difference. They sum to one, but are NOT behavioural effect shares.
+L00 units=[1405, 1130] group_relative=0.009907
+  signed shares: down=+5.985% gate=+62.163% up=+31.852% all_gains=+0.001% cubic=+0.000000% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.25018, 'gate_projection': 0.70421, 'up_projection': 0.43515, 'post_gain': 0.0017, 'pre_gain_gate': 0.0, 'pre_gain_up': 0.0}
+L01 units=[1725, 372, 1385, 1976] group_relative=0.056934
+  signed shares: down=+98.948% gate=+0.385% up=+0.666% all_gains=+0.000% cubic=-0.000001% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.99655, 'gate_projection': 0.06933, 'up_projection': 0.09587, 'post_gain': 0.00035, 'pre_gain_gate': 0.0, 'pre_gain_up': 0.0}
+L03 units=[1635, 1987, 1414, 146] group_relative=0.013668
+  signed shares: down=+62.494% gate=+23.902% up=+13.604% all_gains=+0.000% cubic=+0.000005% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.78545, 'gate_projection': 0.46353, 'up_projection': 0.33538, 'post_gain': 5e-05, 'pre_gain_gate': 8e-05, 'pre_gain_up': 9e-05}
+L04 units=[13, 1044, 20] group_relative=0.008647
+  signed shares: down=+83.047% gate=+5.826% up=+11.127% all_gains=+0.000% cubic=+0.000009% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.89981, 'gate_projection': 0.22322, 'up_projection': 0.34233, 'post_gain': 1e-05, 'pre_gain_gate': 0.00015, 'pre_gain_up': 0.00038}
+L06 units=[1824] group_relative=0.004260
+  signed shares: down=+96.548% gate=+1.414% up=+2.038% all_gains=+0.000% cubic=+0.000000% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.98056, 'gate_projection': 0.10812, 'up_projection': 0.12347, 'post_gain': 0.0, 'pre_gain_gate': 0.00151, 'pre_gain_up': 0.001}
+L07 units=[1455] group_relative=0.002431
+  signed shares: down=+15.129% gate=+6.224% up=+78.639% all_gains=+0.008% cubic=+0.000000% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.3891, 'gate_projection': 0.20743, 'up_projection': 0.87594, 'post_gain': 0.0, 'pre_gain_gate': 0.00733, 'pre_gain_up': 0.00192}
+L10 units=[1363, 1564, 1529] group_relative=0.021648
+  signed shares: down=+98.447% gate=+0.308% up=+1.245% all_gains=+0.000% cubic=-0.000000% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.99276, 'gate_projection': 0.04352, 'up_projection': 0.11062, 'post_gain': 0.0, 'pre_gain_gate': 0.00018, 'pre_gain_up': 0.00018}
+L14 units=[641, 685] group_relative=0.024952
+  signed shares: down=+92.046% gate=+0.475% up=+7.479% all_gains=-0.000% cubic=+0.000001% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.95899, 'gate_projection': 0.0485, 'up_projection': 0.26776, 'post_gain': 0.0, 'pre_gain_gate': 0.00029, 'pre_gain_up': 0.00037}
+L17 units=[1916, 1312, 687, 1180] group_relative=0.016346
+  signed shares: down=+86.659% gate=+1.890% up=+11.450% all_gains=+0.000% cubic=+0.000062% sum=1.000000000
+  coefficient-norm ratios: {'down_projection': 0.92168, 'gate_projection': 0.11806, 'up_projection': 0.32206, 'post_gain': 0.0, 'pre_gain_gate': 0.00061, 'pre_gain_up': 0.00081}
+
+Elapsed: 21.6s
+Only stored weights, diagonal gains, and exact tensor contractions were used.
+No activation function, normalization of a hidden state, or model evaluation occurred.
+
+```
+(Reminder: before each code block, explain in plain words what you want to find out, why, and what you expect; after each output, say what it showed and your current probability.)

@@ -1,0 +1,73 @@
+OUTPUT of run 13 of at most 60:
+```
+NEW HYPOTHESIS: THE QUADRATIC FINDING DOES NOT EXTEND TO NONLINEAR COEFFICIENTS
+Degrees 2, 3, 5 are symbolic coefficient tensors, not model evaluations.
+The architecture-dependent scalar coefficient for each degree is omitted;
+it cancels from within-degree relative differences and energy ratios.
+Absolute tensor energies across different degrees are NOT compared.
+
+layer degree relative_diff collective/separate top8_output_share top10_unit_share
+ 4      2      0.022882            1.059435          0.944403         0.117529
+ 4      3      0.017346            0.994968          0.951362         0.311501
+ 4      5      0.015238            0.987787          0.970798         0.674798
+10      2      0.020238            1.111350          0.501703         0.206113
+10      3      0.020386            0.960537          0.846478         0.807536
+10      5      0.021594            0.941251          0.992240         0.996378
+15      2      0.018771            1.049631          0.296596         0.035591
+15      3      0.019620            1.010135          0.413935         0.305242
+15      5      0.017859            1.000262          0.962993         0.967214
+16      2      0.017639            1.072139          0.367561         0.052668
+16      3      0.017655            1.002399          0.505247         0.361635
+16      5      0.015873            0.999960          0.972978         0.972148
+17      2      0.018768            1.172661          0.414765         0.042823
+17      3      0.019102            1.019625          0.449483         0.220484
+17      5      0.018606            1.005897          0.801093         0.772299
+
+WITHIN-LAYER AGREEMENT WITH THE QUADRATIC COMPONENT
+layer other_degree output_subspace_overlap top10_unit_overlap
+ 4            3                0.831389                  7/10
+ 4            5                0.526441                  4/10
+10            3                0.690841                  8/10
+10            5                0.512310                  7/10
+15            3                0.675029                  6/10
+15            5                0.399267                  5/10
+16            3                0.750268                  9/10
+16            5                0.498073                  5/10
+17            3                0.707772                  6/10
+17            5                0.581583                  5/10
+
+LATE-LAYER CROSS-LAYER COORDINATION BY DEGREE
+degree=2 layers=(15,16) overlap=0.460850
+degree=2 layers=(15,17) overlap=0.319770
+degree=2 layers=(16,17) overlap=0.511765
+degree=3 layers=(15,16) overlap=0.309255
+degree=3 layers=(15,17) overlap=0.271221
+degree=3 layers=(16,17) overlap=0.393793
+degree=5 layers=(15,16) overlap=0.168631
+degree=5 layers=(15,17) overlap=0.145946
+degree=5 layers=(16,17) overlap=0.297158
+
+INDIVIDUAL-UNIT AND NUMERICAL SUMMARIES
+{"layer": 4, "degree": 2, "top3_units": [{"unit": 13, "separate_difference_energy_share": 0.02784223215538088}, {"unit": 1527, "separate_difference_energy_share": 0.01958744827742472}, {"unit": 563, "separate_difference_energy_share": 0.013864680765789358}], "negative_eigenvalue_mass_fraction": 1.3621473776943942e-20}
+{"layer": 4, "degree": 3, "top3_units": [{"unit": 13, "separate_difference_energy_share": 0.08341176509184785}, {"unit": 1527, "separate_difference_energy_share": 0.07765130111975775}, {"unit": 563, "separate_difference_energy_share": 0.03546829549591612}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 4, "degree": 5, "top3_units": [{"unit": 1527, "separate_difference_energy_share": 0.21792068552217636}, {"unit": 13, "separate_difference_energy_share": 0.14128490185986242}, {"unit": 1750, "separate_difference_energy_share": 0.07022517016672614}], "negative_eigenvalue_mass_fraction": 1.5869087366570218e-23}
+{"layer": 10, "degree": 2, "top3_units": [{"unit": 1564, "separate_difference_energy_share": 0.06439699679449402}, {"unit": 1363, "separate_difference_energy_share": 0.05414041453606199}, {"unit": 1529, "separate_difference_energy_share": 0.03450840671180665}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 10, "degree": 3, "top3_units": [{"unit": 1363, "separate_difference_energy_share": 0.3073350677012664}, {"unit": 1564, "separate_difference_energy_share": 0.24147275840110105}, {"unit": 1529, "separate_difference_energy_share": 0.15704688614621795}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 10, "degree": 5, "top3_units": [{"unit": 1363, "separate_difference_energy_share": 0.5651456508124084}, {"unit": 1564, "separate_difference_energy_share": 0.20034227821360498}, {"unit": 1529, "separate_difference_energy_share": 0.18455770733693588}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 15, "degree": 2, "top3_units": [{"unit": 1369, "separate_difference_energy_share": 0.010063122861499301}, {"unit": 651, "separate_difference_energy_share": 0.0056927310150619815}, {"unit": 1226, "separate_difference_energy_share": 0.005109946236224759}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 15, "degree": 3, "top3_units": [{"unit": 1369, "separate_difference_energy_share": 0.1638744881102145}, {"unit": 651, "separate_difference_energy_share": 0.07533698373818039}, {"unit": 105, "separate_difference_energy_share": 0.011460055682322867}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 15, "degree": 5, "top3_units": [{"unit": 1369, "separate_difference_energy_share": 0.7152162088035166}, {"unit": 651, "separate_difference_energy_share": 0.2225745526914937}, {"unit": 1746, "separate_difference_energy_share": 0.0049810367332903905}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 16, "degree": 2, "top3_units": [{"unit": 893, "separate_difference_energy_share": 0.02134636200526165}, {"unit": 1591, "separate_difference_energy_share": 0.00807275409860064}, {"unit": 730, "separate_difference_energy_share": 0.006627440154436184}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 16, "degree": 3, "top3_units": [{"unit": 893, "separate_difference_energy_share": 0.265858220644021}, {"unit": 730, "separate_difference_energy_share": 0.04336194758589006}, {"unit": 238, "separate_difference_energy_share": 0.007993125127044328}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 16, "degree": 5, "top3_units": [{"unit": 893, "separate_difference_energy_share": 0.9114261673540542}, {"unit": 730, "separate_difference_energy_share": 0.04524559355719869}, {"unit": 204, "separate_difference_energy_share": 0.0025677715950396156}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 17, "degree": 2, "top3_units": [{"unit": 1916, "separate_difference_energy_share": 0.006546451061446436}, {"unit": 1312, "separate_difference_energy_share": 0.0058056388519575255}, {"unit": 1026, "separate_difference_energy_share": 0.005495252918917466}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 17, "degree": 3, "top3_units": [{"unit": 1916, "separate_difference_energy_share": 0.0528775150135916}, {"unit": 1312, "separate_difference_energy_share": 0.05231907837458388}, {"unit": 1026, "separate_difference_energy_share": 0.020789540183904994}], "negative_eigenvalue_mass_fraction": -0.0}
+{"layer": 17, "degree": 5, "top3_units": [{"unit": 1312, "separate_difference_energy_share": 0.32934804300498516}, {"unit": 1916, "separate_difference_energy_share": 0.24636481924572687}, {"unit": 60, "separate_difference_energy_share": 0.03710799679576535}], "negative_eigenvalue_mass_fraction": -0.0}
+
+Limits:
+- No assumption is made that a low-order expansion approximates actual model states.
+- Higher-order coefficient concentration is not evidence that its units activate.
+- The remaining nonlinear terms and state-dependent normalization are not evaluated.
+- Semantic labels and causal behavioral importance remain unidentified.
+
+```

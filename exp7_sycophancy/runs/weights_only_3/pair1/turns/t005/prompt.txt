@@ -1,0 +1,67 @@
+OUTPUT of run 4 of at most 60:
+```
+ALL-PHASE SYMBOLIC QUERY-KEY COEFFICIENT COMPARISON
+Each layer: four head-relative differences, and maximum frequency concentration
+layer  0: h0=0.010179 h1=0.009251 h2=0.009917 h3=0.010409 max_top3_share= 0.12494
+layer  1: h0=0.011347 h1=0.010129 h2=0.011505 h3=0.010130 max_top3_share= 0.10808
+layer  2: h0=0.009544 h1=0.008369 h2=0.011054 h3=0.011798 max_top3_share= 0.10896
+layer  3: h0=0.009390 h1=0.015178 h2=0.010774 h3=0.006174 max_top3_share= 0.10484
+layer  4: h0=0.010837 h1=0.012560 h2=0.011137 h3=0.010803 max_top3_share= 0.1706
+layer  5: h0=0.015657 h1=0.014712 h2=0.016653 h3=0.019161 max_top3_share= 0.1638
+layer  6: h0=0.011265 h1=0.012569 h2=0.013921 h3=0.011631 max_top3_share= 0.20001
+layer  7: h0=0.009095 h1=0.011239 h2=0.009507 h3=0.012474 max_top3_share= 0.1887
+layer  8: h0=0.009829 h1=0.009527 h2=0.010903 h3=0.010168 max_top3_share= 0.15922
+layer  9: h0=0.011887 h1=0.010049 h2=0.011025 h3=0.009699 max_top3_share= 0.21034
+layer 10: h0=0.012276 h1=0.017219 h2=0.008596 h3=0.011474 max_top3_share= 0.16741
+layer 11: h0=0.029153 h1=0.026593 h2=0.017086 h3=0.021387 max_top3_share= 0.32838
+layer 12: h0=0.021889 h1=0.016891 h2=0.022449 h3=0.021580 max_top3_share= 0.16818
+layer 13: h0=0.012832 h1=0.015017 h2=0.014895 h3=0.015645 max_top3_share= 0.16951
+layer 14: h0=0.013410 h1=0.015080 h2=0.013945 h3=0.013398 max_top3_share= 0.15165
+layer 15: h0=0.014743 h1=0.013167 h2=0.014354 h3=0.011894 max_top3_share= 0.19082
+layer 16: h0=0.011825 h1=0.012093 h2=0.011577 h3=0.010745 max_top3_share= 0.16371
+layer 17: h0=0.015796 h1=0.017928 h2=0.013655 h3=0.012693 max_top3_share= 0.33058
+
+TOP 10 HEADS BY ROTARY-COEFFICIENT RELATIVE DIFFERENCE
+{"layer": 11, "head": 0, "rotary_coefficient_rel": 0.029152881528953536, "top_frequency_pairs": [88, 70, 60], "top3_frequency_energy_share": 0.3283819704030621, "OV_folded_rel": 0.011967821210102312, "OV_raw_rel": 0.011371501843407269, "O_algebraic_share": 0.8483900348178507, "shared_V_algebraic_share": 0.15160996518214934, "O_V_change_cosine": 0.11396342677085325}
+{"layer": 11, "head": 1, "rotary_coefficient_rel": 0.02659336615918066, "top_frequency_pairs": [88, 70, 60], "top3_frequency_energy_share": 0.2460854672485954, "OV_folded_rel": 0.020262755574162097, "OV_raw_rel": 0.01285584329992875, "O_algebraic_share": 0.9074901765702622, "shared_V_algebraic_share": 0.09250982342973806, "O_V_change_cosine": 0.11357421488272619}
+{"layer": 12, "head": 2, "rotary_coefficient_rel": 0.022449184213714383, "top_frequency_pairs": [120, 111, 115], "top3_frequency_energy_share": 0.12505471751321645, "OV_folded_rel": 0.008598317036164722, "OV_raw_rel": 0.008790922247873827, "O_algebraic_share": 0.6140649662442027, "shared_V_algebraic_share": 0.3859350337557976, "O_V_change_cosine": 0.23821810855785033}
+{"layer": 12, "head": 0, "rotary_coefficient_rel": 0.021888675539465958, "top_frequency_pairs": [111, 72, 115], "top3_frequency_energy_share": 0.14802977800113393, "OV_folded_rel": 0.014145768003791012, "OV_raw_rel": 0.01160718433125719, "O_algebraic_share": 0.7075580306256326, "shared_V_algebraic_share": 0.2924419693743675, "O_V_change_cosine": 0.20327049196284314}
+{"layer": 12, "head": 3, "rotary_coefficient_rel": 0.02158002149470713, "top_frequency_pairs": [118, 111, 120], "top3_frequency_energy_share": 0.16818188017753521, "OV_folded_rel": 0.012429381114890187, "OV_raw_rel": 0.012565071476318412, "O_algebraic_share": 0.690984108045798, "shared_V_algebraic_share": 0.30901589195420187, "O_V_change_cosine": 0.23736605429859994}
+{"layer": 11, "head": 3, "rotary_coefficient_rel": 0.02138681711278707, "top_frequency_pairs": [88, 60, 126], "top3_frequency_energy_share": 0.18123313565786295, "OV_folded_rel": 0.008250543357193375, "OV_raw_rel": 0.00789257359084203, "O_algebraic_share": 0.3100209658312217, "shared_V_algebraic_share": 0.6899790341687784, "O_V_change_cosine": -0.141371130687202}
+{"layer": 5, "head": 3, "rotary_coefficient_rel": 0.019161125236552234, "top_frequency_pairs": [112, 121, 125], "top3_frequency_energy_share": 0.14782145616529693, "OV_folded_rel": 0.012711392913281603, "OV_raw_rel": 0.013331252295639478, "O_algebraic_share": 0.4296929938870377, "shared_V_algebraic_share": 0.5703070061129624, "O_V_change_cosine": 0.06217587906640815}
+{"layer": 17, "head": 1, "rotary_coefficient_rel": 0.01792831583413633, "top_frequency_pairs": [87, 110, 102], "top3_frequency_energy_share": 0.230994664719638, "OV_folded_rel": 0.014212416455891264, "OV_raw_rel": 0.01129071222653447, "O_algebraic_share": 0.7173938927019884, "shared_V_algebraic_share": 0.2826061072980117, "O_V_change_cosine": 0.21377298349821178}
+{"layer": 10, "head": 1, "rotary_coefficient_rel": 0.017218635598674953, "top_frequency_pairs": [75, 108, 121], "top3_frequency_energy_share": 0.14546126214743654, "OV_folded_rel": 0.012313105633534589, "OV_raw_rel": 0.010439199258673449, "O_algebraic_share": 0.6784837554629453, "shared_V_algebraic_share": 0.3215162445370551, "O_V_change_cosine": 0.1685033996473929}
+{"layer": 11, "head": 2, "rotary_coefficient_rel": 0.01708560255781735, "top_frequency_pairs": [88, 126, 108], "top3_frequency_energy_share": 0.23028927517031858, "OV_folded_rel": 0.010516896753611026, "OV_raw_rel": 0.0091952545193624, "O_algebraic_share": 0.3952282379598684, "shared_V_algebraic_share": 0.604771762040132, "O_V_change_cosine": 0.2623044284998834}
+
+TOP 10 HEADS BY FOLDED OV RELATIVE DIFFERENCE
+{"layer": 4, "head": 1, "rotary_coefficient_rel": 0.01255966333724572, "top_frequency_pairs": [104, 91, 94], "top3_frequency_energy_share": 0.14658948333282698, "OV_folded_rel": 0.02916760047244259, "OV_raw_rel": 0.01813305051688868, "O_algebraic_share": 0.8292427317622606, "shared_V_algebraic_share": 0.17075726823773912, "O_V_change_cosine": 0.2207349062439495}
+{"layer": 3, "head": 3, "rotary_coefficient_rel": 0.006173838199021727, "top_frequency_pairs": [114, 120, 123], "top3_frequency_energy_share": 0.09077047450236551, "OV_folded_rel": 0.02356121210905735, "OV_raw_rel": 0.019174487622838705, "O_algebraic_share": 0.7435859562486198, "shared_V_algebraic_share": 0.25641404375138055, "O_V_change_cosine": 0.06948845364721874}
+{"layer": 4, "head": 0, "rotary_coefficient_rel": 0.010836762463394016, "top_frequency_pairs": [91, 104, 94], "top3_frequency_energy_share": 0.17059635135489318, "OV_folded_rel": 0.022841357516524562, "OV_raw_rel": 0.016954487021674677, "O_algebraic_share": 0.8239496943286395, "shared_V_algebraic_share": 0.17605030567135999, "O_V_change_cosine": 0.19879016763124618}
+{"layer": 4, "head": 2, "rotary_coefficient_rel": 0.011136542816870307, "top_frequency_pairs": [104, 91, 79], "top3_frequency_energy_share": 0.15418869515756708, "OV_folded_rel": 0.021075164759562507, "OV_raw_rel": 0.014658370305616378, "O_algebraic_share": 0.7980031405715946, "shared_V_algebraic_share": 0.20199685942840515, "O_V_change_cosine": 0.3027319764735529}
+{"layer": 0, "head": 1, "rotary_coefficient_rel": 0.009250793967584976, "top_frequency_pairs": [103, 106, 120], "top3_frequency_energy_share": 0.09096378746518183, "OV_folded_rel": 0.020930467506172147, "OV_raw_rel": 0.011746728618905678, "O_algebraic_share": 0.8269408499183393, "shared_V_algebraic_share": 0.17305915008165998, "O_V_change_cosine": 0.015664073525614136}
+{"layer": 2, "head": 3, "rotary_coefficient_rel": 0.011797511258795778, "top_frequency_pairs": [73, 108, 57], "top3_frequency_energy_share": 0.10472839518343578, "OV_folded_rel": 0.020535544118206513, "OV_raw_rel": 0.013830506722834767, "O_algebraic_share": 0.8237715249869572, "shared_V_algebraic_share": 0.17622847501304303, "O_V_change_cosine": 0.113200624558152}
+{"layer": 11, "head": 1, "rotary_coefficient_rel": 0.02659336615918066, "top_frequency_pairs": [88, 70, 60], "top3_frequency_energy_share": 0.2460854672485954, "OV_folded_rel": 0.020262755574162097, "OV_raw_rel": 0.01285584329992875, "O_algebraic_share": 0.9074901765702622, "shared_V_algebraic_share": 0.09250982342973806, "O_V_change_cosine": 0.11357421488272619}
+{"layer": 6, "head": 2, "rotary_coefficient_rel": 0.01392144448044609, "top_frequency_pairs": [75, 71, 77], "top3_frequency_energy_share": 0.20000612945179988, "OV_folded_rel": 0.020095455325394546, "OV_raw_rel": 0.012398720301432317, "O_algebraic_share": 0.758191589381392, "shared_V_algebraic_share": 0.2418084106186081, "O_V_change_cosine": 0.19956072236118605}
+{"layer": 8, "head": 2, "rotary_coefficient_rel": 0.010903245259573677, "top_frequency_pairs": [69, 78, 57], "top3_frequency_energy_share": 0.15922494442927532, "OV_folded_rel": 0.019797155126750548, "OV_raw_rel": 0.014068411243690503, "O_algebraic_share": 0.8236199183176391, "shared_V_algebraic_share": 0.17638008168236088, "O_V_change_cosine": 0.14913089372626148}
+{"layer": 15, "head": 2, "rotary_coefficient_rel": 0.01435398683310044, "top_frequency_pairs": [73, 115, 107], "top3_frequency_energy_share": 0.14023424908269239, "OV_folded_rel": 0.019393713141692567, "OV_raw_rel": 0.01270799201363682, "O_algebraic_share": 0.5229006475563811, "shared_V_algebraic_share": 0.4770993524436192, "O_V_change_cosine": 0.16338260032574428}
+
+TOP 10 HEADS BY RAW OV RELATIVE DIFFERENCE
+layer=3 head=3 raw=0.019174 folded=0.023561
+layer=4 head=1 raw=0.018133 folded=0.029168
+layer=4 head=0 raw=0.016954 folded=0.022841
+layer=16 head=3 raw=0.016126 folded=0.014786
+layer=16 head=1 raw=0.016044 folded=0.015225
+layer=16 head=0 raw=0.014665 folded=0.013508
+layer=4 head=2 raw=0.014658 folded=0.021075
+layer=3 head=1 raw=0.014312 folded=0.018421
+layer=8 head=2 raw=0.014068 folded=0.019797
+layer=1 head=0 raw=0.014058 folded=0.012099
+
+OV DECOMPOSITION SUMMARY
+O-share quantiles: [0.2753 0.5218 0.6603 0.7174 0.9075]
+O/V change cosine quantiles: [-0.1414  0.0692  0.112   0.1647  0.3027]
+V changes are shared across heads; these are not independent head interventions.
+Raw/folded OV top-10 overlap: 5 / 10
+Common heads: [(3, 3), (4, 0), (4, 1), (4, 2), (8, 2)]
+
+```

@@ -1,0 +1,101 @@
+OUTPUT of run 22 of at most 60:
+```
+UNIT GROUPS
+numeric_negative n = 16 units = [57, 110, 234, 750, 779, 824, 883, 1027, 1180, 1192, 1242, 1309, 1323, 1610, 1639, 2032]
+numeric_positive n = 9 units = [228, 235, 245, 584, 661, 990, 1335, 1459, 1717]
+other_negative n = 1073 units = (large control group)
+other_positive n = 950 units = (large control group)
+
+COMPOSED GATE-READER ASSOCIATIONS
+Unit rows are normalized only as a WEIGHT-GEOMETRY statistic.
+Group signs are descriptive; units and word pairs are correlated.
+The label-swap reference is exploratory, not a test of sycophancy.
+
+source head 0 omit400 False
+numeric_negative   original=-0.02499 additional=-0.00498 negative_units=12/16 pair_signs=--+++- swap_reference=0.4688
+numeric_positive   original= 0.00603 additional= 0.01511 negative_units=2/9 pair_signs=+++-++ swap_reference=0.0625
+other_negative     original=-0.00256 additional= 0.00087 negative_units=533/1073 pair_signs=+++++- swap_reference=0.0938
+other_positive     original=-0.00446 additional= 0.00127 negative_units=470/950 pair_signs=-+-++- swap_reference=0.4375
+
+source head 0 omit400 True
+numeric_negative   original=-0.02481 additional=-0.00442 negative_units=9/16 pair_signs=--+++- swap_reference=0.5000
+numeric_positive   original= 0.00363 additional= 0.01325 negative_units=3/9 pair_signs=+++-++ swap_reference=0.1250
+other_negative     original=-0.00243 additional= 0.00133 negative_units=522/1073 pair_signs=++-+++ swap_reference=0.0625
+other_positive     original=-0.00409 additional= 0.00154 negative_units=456/950 pair_signs=-+-++- swap_reference=0.4375
+
+source head 2 omit400 False
+numeric_negative   original=-0.04683 additional=-0.01438 negative_units=12/16 pair_signs=------ swap_reference=0.0312
+numeric_positive   original=-0.02864 additional=-0.00847 negative_units=6/9 pair_signs=---+-- swap_reference=0.0625
+other_negative     original=-0.00640 additional=-0.00081 negative_units=552/1073 pair_signs=----+- swap_reference=0.4688
+other_positive     original=-0.00615 additional= 0.00137 negative_units=455/950 pair_signs=+--+++ swap_reference=0.1875
+
+source head 2 omit400 True
+numeric_negative   original=-0.04640 additional=-0.01439 negative_units=12/16 pair_signs=------ swap_reference=0.0312
+numeric_positive   original=-0.02892 additional=-0.00829 negative_units=6/9 pair_signs=---+-- swap_reference=0.0938
+other_negative     original=-0.00648 additional=-0.00073 negative_units=550/1073 pair_signs=+---+- swap_reference=0.5312
+other_positive     original=-0.00591 additional= 0.00139 negative_units=455/950 pair_signs=+--+++ swap_reference=0.1875
+
+source head 3 omit400 False
+numeric_negative   original=-0.02678 additional=-0.00184 negative_units=9/16 pair_signs=++--++ swap_reference=0.8750
+numeric_positive   original=-0.02580 additional=-0.00314 negative_units=4/9 pair_signs=+--++- swap_reference=0.4688
+other_negative     original=-0.00960 additional=-0.00002 negative_units=532/1073 pair_signs=---+++ swap_reference=1.0000
+other_positive     original=-0.01116 additional= 0.00083 negative_units=460/950 pair_signs=---+++ swap_reference=0.6250
+
+source head 3 omit400 True
+numeric_negative   original=-0.02677 additional=-0.00179 negative_units=10/16 pair_signs=++--++ swap_reference=0.9062
+numeric_positive   original=-0.02803 additional=-0.00293 negative_units=3/9 pair_signs=+--++- swap_reference=0.5312
+other_negative     original=-0.00958 additional= 0.00007 negative_units=533/1073 pair_signs=---+++ swap_reference=0.9375
+other_positive     original=-0.01086 additional= 0.00072 negative_units=456/950 pair_signs=---+++ swap_reference=0.6562
+
+UNRESTRICTED WORD ASSOCIATIONS OF THE COMPOSED DIFFERENCE
+Negative means B has a lower source-word-to-gate coefficient than A.
+('gate_delta', 1309)
+  decreases [(' conoz', -0.007), ('ogf', -0.0014), ('iasa', -0.0008), ('BtnFill', -0.0004), ('astrar', 0.0003), ('akkhand', 0.0009), ('apadani', 0.0013), (' planilla', 0.0033)]
+  increases [('What', 0.6), (' What', 0.5846), ('what', 0.5225), (' what', 0.5083), ('How', 0.4796), (' How', 0.4718), (' WHAT', 0.4644), ('WHAT', 0.4477)]
+('gate_delta', 1242)
+  decreases [(' kaug', -0.1142), ('rimiento', -0.1095), (' esbo', -0.1087), ('What', -0.1068), ('jenih', -0.1064), ('mashtami', -0.1057), (' pamoja', -0.1054), (' diante', -0.1047)]
+  increases [('user', 0.6404), (' user', 0.4834), ('User', 0.4383), (' User', 0.4356), ('users', 0.4331), ('USER', 0.4078), (' users', 0.3923), (' Users', 0.34)]
+('gate_delta', 1180)
+  decreases [(' AppMethodBeat', -0.067), ('BtnFill', -0.065), ('armafit', -0.0644), ('hitva', -0.0594), ('atthakath', -0.0585), ('jenih', -0.0575), ('tFileInputExcel', -0.0574), ('atthane', -0.0548)]
+  increases [('user', 0.5448), (' user', 0.4682), (' User', 0.4348), ('User', 0.4263), ('users', 0.3947), (' users', 0.3813), ('USER', 0.3807), (' What', 0.3501)]
+('numeric_negative_group_mean', None)
+  decreases [('ativement', -0.0324), (' povas', -0.0303), ('lamiento', -0.0288), ('jenih', -0.0276), (' obstante', -0.0271), ('rimiento', -0.0243), ('apadani', -0.0165), (' pleadings', -0.0128)]
+  increases [('user', 0.5396), ('What', 0.4842), ('what', 0.463), (' What', 0.4515), ('User', 0.4514), ('USER', 0.4371), (' User', 0.4268), (' what', 0.4187)]
+
+ABSOLUTE COEFFICIENT CHECK FOR INDIVIDUAL SOURCE WORDS
+unit 1309 (A, B, B-A)
+  think     [-1.7271 -1.6151  0.112 ]
+  what      [-1.0483 -0.8158  0.2325]
+  answer    [-1.4134 -1.2902  0.1232]
+  question  [0.0084 0.1325 0.1241]
+  guess     [-1.1164 -1.0211  0.0954]
+  solve     [-1.1295 -1.0221  0.1073]
+  user      [-0.7617 -0.5909  0.1707]
+  model     [-0.3223 -0.1966  0.1257]
+  believe   [-2.4435 -2.3574  0.0861]
+unit 1242 (A, B, B-A)
+  think     [0.0057 0.0202 0.0145]
+  what      [-0.4178 -0.4469 -0.0291]
+  answer    [-0.0707 -0.0583  0.0125]
+  question  [-0.3164 -0.2563  0.0601]
+  guess     [0.2616 0.2818 0.0203]
+  solve     [1.3765 1.4456 0.0691]
+  user      [-0.2676  0.0434  0.311 ]
+  model     [0.3231 0.4218 0.0987]
+  believe   [0.2063 0.2177 0.0114]
+unit 1180 (A, B, B-A)
+  think     [-1.8308 -1.7295  0.1013]
+  what      [-1.7521 -1.5852  0.1669]
+  answer    [-1.9768 -1.8811  0.0957]
+  question  [-1.3788 -1.2529  0.1258]
+  guess     [-1.642  -1.5717  0.0703]
+  solve     [-1.0725 -0.9574  0.115 ]
+  user      [-1.9654 -1.7035  0.2619]
+  model     [-1.6497 -1.5032  0.1464]
+  believe   [-2.2634 -2.1961  0.0673]
+
+No resulting coefficient is an actual MLP gate activation.
+A selective change would support a source-dependent gating candidate,
+but the actual attention selection and residual states remain unknown.
+
+```

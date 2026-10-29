@@ -1,0 +1,114 @@
+OUTPUT of run 6 of at most 60:
+```
+
+MLP UNIT CONCENTRATION; DIAGONAL GAINS: False
+Top10 shares refer to the leading update modes, not behavioural contribution.
+L00 read10=  3.38% write10=  5.42% read_units=[1015, 979, 1804, 297, 1542]    write_units=[1283, 1278, 1900, 447, 1373]
+L01 read10=  4.17% write10=  5.76% read_units=[93, 1818, 1180, 487, 173]      write_units=[701, 1664, 1912, 2038, 934]
+L02 read10=  5.43% write10=  4.34% read_units=[1730, 1922, 654, 1092, 1732]   write_units=[321, 1129, 1394, 298, 767]
+L03 read10=  4.24% write10=  3.24% read_units=[1151, 1664, 1329, 1098, 868]   write_units=[561, 156, 1656, 1425, 5]
+L04 read10=  3.50% write10=  2.81% read_units=[1185, 754, 753, 605, 936]      write_units=[1592, 1316, 1522, 77, 418]
+L05 read10=  3.79% write10=  2.51% read_units=[1592, 1142, 1957, 2023, 645]   write_units=[1020, 258, 581, 827, 1598]
+L06 read10=  3.25% write10=  2.27% read_units=[365, 1486, 60, 1902, 36]       write_units=[1606, 1339, 1453, 87, 1751]
+L07 read10=  4.16% write10=  2.36% read_units=[186, 256, 1465, 1357, 1662]    write_units=[555, 475, 983, 48, 1788]
+L08 read10=  4.28% write10=  2.14% read_units=[1232, 500, 1586, 126, 706]     write_units=[436, 802, 428, 20, 136]
+L09 read10=  3.94% write10=  2.30% read_units=[1626, 953, 927, 1779, 1922]    write_units=[1189, 934, 1935, 1413, 626]
+L10 read10=  4.42% write10=  2.20% read_units=[404, 167, 885, 279, 984]       write_units=[1615, 1084, 1550, 1179, 1439]
+L11 read10=  4.38% write10=  2.02% read_units=[389, 1631, 1758, 1384, 1472]   write_units=[319, 1521, 1017, 1429, 1299]
+L12 read10=  3.51% write10=  2.37% read_units=[1143, 1036, 266, 1525, 1422]   write_units=[858, 1666, 530, 409, 1925]
+L13 read10=  3.06% write10=  2.99% read_units=[1654, 812, 294, 1092, 49]      write_units=[1974, 1771, 1009, 362, 178]
+L14 read10=  3.73% write10=  3.51% read_units=[1387, 1236, 1798, 315, 783]    write_units=[1571, 1040, 732, 1474, 925]
+L15 read10=  3.93% write10=  4.84% read_units=[1493, 798, 351, 535, 1647]     write_units=[1032, 709, 1193, 285, 1396]
+L16 read10=  3.69% write10=  5.78% read_units=[1145, 825, 607, 1574, 942]     write_units=[1144, 351, 267, 1704, 1240]
+L17 read10=  3.54% write10=  5.21% read_units=[548, 2024, 41, 719, 1136]      write_units=[372, 1023, 1180, 1487, 317]
+
+DESCRIPTOR FACTOR DECOMPOSITION
+D/G/U denote down-writing, gate-reading and up-reading term energies.
+L00 D/G/U/mixed= 60.11/ 20.22/ 19.67/0.000000% interference_ratio=1.001258
+L01 D/G/U/mixed= 78.33/ 10.89/ 10.78/0.000000% interference_ratio=1.001168
+L02 D/G/U/mixed= 70.99/ 14.90/ 14.11/0.000000% interference_ratio=1.001135
+L03 D/G/U/mixed= 76.65/ 12.37/ 10.98/0.000000% interference_ratio=1.001145
+L04 D/G/U/mixed= 80.72/ 10.43/  8.85/0.000000% interference_ratio=1.000955
+L05 D/G/U/mixed= 55.98/ 24.45/ 19.57/0.000000% interference_ratio=1.001317
+L06 D/G/U/mixed= 71.59/ 16.22/ 12.19/0.000000% interference_ratio=1.000913
+L07 D/G/U/mixed= 66.87/ 19.11/ 14.01/0.000000% interference_ratio=1.001256
+L08 D/G/U/mixed= 76.96/ 13.12/  9.92/0.000000% interference_ratio=1.000973
+L09 D/G/U/mixed= 63.26/ 20.82/ 15.92/0.000000% interference_ratio=1.001545
+L10 D/G/U/mixed= 76.65/ 13.22/ 10.14/0.000000% interference_ratio=1.001004
+L11 D/G/U/mixed= 63.72/ 20.08/ 16.19/0.000000% interference_ratio=1.001029
+L12 D/G/U/mixed= 58.73/ 23.95/ 17.31/0.000000% interference_ratio=1.001063
+L13 D/G/U/mixed= 74.43/ 13.68/ 11.89/0.000000% interference_ratio=1.001375
+L14 D/G/U/mixed= 77.24/ 12.30/ 10.46/0.000000% interference_ratio=1.001275
+L15 D/G/U/mixed= 70.55/ 16.01/ 13.45/0.000000% interference_ratio=1.001475
+L16 D/G/U/mixed= 67.27/ 18.00/ 14.72/0.000000% interference_ratio=1.001586
+L17 D/G/U/mixed= 67.20/ 19.29/ 13.51/0.000000% interference_ratio=1.001753
+
+MLP UNIT CONCENTRATION; DIAGONAL GAINS: True
+Top10 shares refer to the leading update modes, not behavioural contribution.
+L00 read10=  3.34% write10=  4.70% read_units=[1842, 816, 1798, 1924, 2013]   write_units=[1871, 1779, 1218, 744, 1962]
+L01 read10=  5.39% write10=  4.15% read_units=[1818, 173, 93, 976, 1774]      write_units=[1385, 1697, 1077, 468, 575]
+L02 read10=  6.01% write10=  4.65% read_units=[654, 1922, 1730, 1092, 1732]   write_units=[1049, 1873, 723, 264, 1993]
+L03 read10=  4.83% write10=  4.81% read_units=[868, 189, 1151, 1972, 341]     write_units=[58, 339, 1063, 1878, 271]
+L04 read10=  3.45% write10=  4.76% read_units=[754, 753, 1185, 1558, 526]     write_units=[1490, 370, 1105, 1327, 1802]
+L05 read10=  3.62% write10=  5.88% read_units=[1592, 1142, 645, 1644, 16]     write_units=[1300, 417, 809, 1378, 562]
+L06 read10=  3.17% write10=  5.28% read_units=[1486, 365, 321, 1902, 60]      write_units=[1127, 2033, 61, 1767, 429]
+L07 read10=  3.89% write10=  5.39% read_units=[186, 256, 1465, 1357, 874]     write_units=[1023, 1208, 1854, 1833, 1732]
+L08 read10=  3.91% write10=  5.14% read_units=[462, 126, 1232, 500, 1586]     write_units=[1445, 1561, 1414, 11, 1968]
+L09 read10=  3.57% write10=  4.31% read_units=[353, 492, 1011, 562, 2000]     write_units=[469, 1609, 508, 1874, 1742]
+L10 read10=  4.48% write10=  2.83% read_units=[404, 167, 805, 984, 298]       write_units=[175, 1199, 980, 2014, 1691]
+L11 read10=  4.69% write10=  2.46% read_units=[1631, 389, 1758, 1494, 1384]   write_units=[1186, 597, 34, 577, 1984]
+L12 read10=  3.55% write10=  2.53% read_units=[1143, 1036, 1525, 266, 1422]   write_units=[858, 1898, 1925, 749, 1602]
+L13 read10=  3.09% write10=  3.29% read_units=[1654, 1092, 294, 1856, 614]    write_units=[1974, 1009, 257, 1941, 737]
+L14 read10=  3.91% write10=  4.59% read_units=[1387, 1236, 1798, 1992, 66]    write_units=[180, 1562, 177, 1777, 1536]
+L15 read10=  3.76% write10=  4.34% read_units=[1493, 67, 979, 798, 1647]      write_units=[623, 1092, 724, 1273, 1298]
+L16 read10=  3.46% write10=  5.05% read_units=[1145, 825, 1035, 607, 1230]    write_units=[1611, 1144, 1704, 1073, 1789]
+L17 read10=  3.91% write10=  5.10% read_units=[1073, 719, 564, 1180, 2024]    write_units=[1023, 372, 1180, 289, 924]
+
+DESCRIPTOR FACTOR DECOMPOSITION
+D/G/U denote down-writing, gate-reading and up-reading term energies.
+L00 D/G/U/mixed= 79.24/ 12.19/  8.56/0.000000% interference_ratio=1.003959
+L01 D/G/U/mixed= 90.30/  5.08/  4.62/0.000000% interference_ratio=1.000285
+L02 D/G/U/mixed= 77.98/ 11.76/ 10.26/0.000000% interference_ratio=1.002099
+L03 D/G/U/mixed= 80.83/ 11.85/  7.32/0.000000% interference_ratio=1.001709
+L04 D/G/U/mixed= 89.26/  5.71/  5.03/0.000000% interference_ratio=1.004888
+L05 D/G/U/mixed= 63.63/ 20.99/ 15.38/0.000000% interference_ratio=1.000896
+L06 D/G/U/mixed= 72.92/ 15.64/ 11.44/0.000000% interference_ratio=1.002539
+L07 D/G/U/mixed= 58.94/ 21.92/ 19.15/0.000000% interference_ratio=1.001725
+L08 D/G/U/mixed= 78.82/ 12.95/  8.24/0.000000% interference_ratio=1.000663
+L09 D/G/U/mixed= 63.65/ 20.93/ 15.41/0.000000% interference_ratio=1.002530
+L10 D/G/U/mixed= 82.06/ 10.18/  7.77/0.000000% interference_ratio=1.001203
+L11 D/G/U/mixed= 62.19/ 21.05/ 16.76/0.000000% interference_ratio=1.001412
+L12 D/G/U/mixed= 57.23/ 23.34/ 19.43/0.000000% interference_ratio=1.001370
+L13 D/G/U/mixed= 72.00/ 14.82/ 13.18/0.000000% interference_ratio=1.001794
+L14 D/G/U/mixed= 76.43/ 12.73/ 10.84/0.000000% interference_ratio=1.001398
+L15 D/G/U/mixed= 70.38/ 16.21/ 13.41/0.000000% interference_ratio=1.001499
+L16 D/G/U/mixed= 67.08/ 18.31/ 14.61/0.000000% interference_ratio=1.002918
+L17 D/G/U/mixed= 64.94/ 20.42/ 14.64/0.000000% interference_ratio=1.002926
+
+TOP 10 UNIT-PATH CANDIDATES WITH FACTOR BREAKDOWN; GAINS: False
+L06 unit=1824 path_share=2.823% read_mode_share=0.000% write_mode_share=0.000% D/G/U=99.91/0.03/0.06%
+L00 unit=1130 path_share=1.643% read_mode_share=0.009% write_mode_share=0.000% D/G/U=41.63/23.52/34.85%
+L07 unit=1455 path_share=2.247% read_mode_share=0.001% write_mode_share=0.001% D/G/U=99.03/0.06/0.92%
+L10 unit=1564 path_share=0.970% read_mode_share=0.007% write_mode_share=0.036% D/G/U=92.91/1.14/5.95%
+L09 unit= 237 path_share=0.692% read_mode_share=0.015% write_mode_share=0.000% D/G/U=82.83/1.01/16.16%
+L06 unit=1122 path_share=0.727% read_mode_share=0.060% write_mode_share=0.044% D/G/U=85.83/1.82/12.34%
+L08 unit= 456 path_share=0.813% read_mode_share=0.013% write_mode_share=0.018% D/G/U=86.83/1.96/11.21%
+L07 unit= 825 path_share=0.620% read_mode_share=0.006% write_mode_share=0.000% D/G/U=83.92/3.59/12.49%
+L10 unit= 488 path_share=0.617% read_mode_share=0.214% write_mode_share=0.000% D/G/U=91.41/0.53/8.05%
+L12 unit=1758 path_share=0.469% read_mode_share=0.141% write_mode_share=0.008% D/G/U=15.93/82.08/1.99%
+
+TOP 10 UNIT-PATH CANDIDATES WITH FACTOR BREAKDOWN; GAINS: True
+L03 unit=1635 path_share=1.271% read_mode_share=0.001% write_mode_share=0.154% D/G/U=55.91/17.00/27.10%
+L03 unit=1987 path_share=1.151% read_mode_share=0.017% write_mode_share=0.335% D/G/U=94.12/1.72/4.15%
+L03 unit=1414 path_share=0.769% read_mode_share=0.016% write_mode_share=0.001% D/G/U=2.82/86.80/10.38%
+L03 unit= 146 path_share=0.650% read_mode_share=0.028% write_mode_share=0.021% D/G/U=90.25/5.49/4.25%
+L03 unit=1803 path_share=0.622% read_mode_share=0.039% write_mode_share=0.316% D/G/U=95.79/1.55/2.66%
+L04 unit=  13 path_share=3.835% read_mode_share=0.002% write_mode_share=0.166% D/G/U=69.09/9.28/21.63%
+L05 unit= 584 path_share=3.764% read_mode_share=0.001% write_mode_share=0.000% D/G/U=0.87/63.14/35.99%
+L06 unit=1824 path_share=15.417% read_mode_share=0.001% write_mode_share=0.270% D/G/U=96.65/1.45/1.90%
+L11 unit=1815 path_share=0.750% read_mode_share=0.096% write_mode_share=0.050% D/G/U=88.82/0.65/10.54%
+L11 unit= 494 path_share=0.635% read_mode_share=0.022% write_mode_share=0.135% D/G/U=91.17/2.67/6.15%
+
+These calculations do not determine whether a gate is active on any prompt.
+
+```

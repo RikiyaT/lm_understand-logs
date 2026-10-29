@@ -1,0 +1,7 @@
+OUTPUT of Python run 14 of at most 300:
+```
+{'n': 32, 'original': 0.125, 'edited': 0.1875, 'difference': 0.0625, 'se': 0.04347552147751577, 'wrong_to_right': 2, 'right_to_wrong': 0, 'original_tokens': 30122.9375, 'original_cut': 0.90625, 'edited_tokens': 27698.21875, 'edited_cut': 0.8125}
+Current edits: ['model.language_model.layers.19.mlp.down_proj.weight']
+Probe ids: ["gsm8k_train_2805", "gsm8k_train_1766", "gsm8k_train_5410", "gsm8k_train_1024", "gsm8k_train_2520", "gsm8k_train_3513", "gsm8k_train_2364", "gsm8k_train_1928", "gsm8k_train_6876", "gsm8k_train_6653", "gsm8k_train_5477", "gsm8k_train_6029", "gsm8k_train_2804", "gsm8k_train_3165", "gsm8k_train_3272", "gsm8k_train_967", "math_train_number_theory_184", "math_train_number_theory_80", "math_train_number_theory_148", "math_train_algebra_479", "math_train_prealgebra_866", "math_train_precalculus_357", "math_train_algebra_466", "math_train_geometry_437", "math_train_intermediate_algebra_738", "math_train_number_theory_250", "math_train_algebra_1133", "math_train_number_theory_338", "math_train_algebra_419", "math_train_intermediate_algebra_459", "math_train_algebra_460", "math_train_algebra_1346"]
+
+```

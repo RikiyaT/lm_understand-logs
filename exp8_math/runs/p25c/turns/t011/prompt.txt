@@ -1,0 +1,34 @@
+OUTPUT of Python run 7 of at most 300:
+```
+Teacher-forced metadata: {'texts': ["<|im_start|>user\nJohn travels 150 miles in 2 hours. The speed limit is 60 mph. How many mph above the speed limit was he driving?\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nJohn's speed is 150 / 2 = 75 miles per hour. His actual speed minus the speed limit is 75 - 60 = 15 miles per hour.\nCheck: at 75 miles per hour for 2 hours, John travels 75 * 2 = 150 miles. At the speed limit he would travel 60 * 2 = 120 miles. The extra distance is 150 - 120 = 30 miles. Dividing by 2 hours gives 30 / 2 = 15 miles per hour, matching the first calculation.\nWait, is there any ambiguity in the question? It asks how many mph above the speed limit, not how many miles farther he traveled. The units distinguish these quantities.\nAnother check: subtracting 15 mph from 75 mph gives 60 mph, exactly the speed limit. The result is consistent with both methods.\n</think>\n\nJohn was 75 - 60 = 15 mph above the speed limit.\n\\boxed{15}<|im_end|>\n", "<|im_start|>user\nJohn travels 150 miles in 2 hours. The speed limit is 60 mph. How many mph above the speed limit was he driving?\nPlease reason step by step, and put your f
+Neuron 23 22 first shared / good continuation / first repeat / late repeats [-1.231, -0.635, -0.828, 2.899]
+Neuron 23 94 first shared / good continuation / first repeat / late repeats [-0.083, 0.3, -0.187, 2.566]
+Neuron 22 59 first shared / good continuation / first repeat / late repeats [0.207, 0.064, 0.049, 1.164]
+Neuron 23 19 first shared / good continuation / first repeat / late repeats [-0.952, -0.859, -1.128, 1.064]
+Neuron 17 20 first shared / good continuation / first repeat / late repeats [-0.039, -0.03, -0.154, 1.15]
+Neuron 15 0 first shared / good continuation / first repeat / late repeats [0.05, 0.097, 0.121, 0.85]
+Neuron 18 29 first shared / good continuation / first repeat / late repeats [0.048, 0.102, 0.078, 0.935]
+Relevant token positions:
+50 '{}.\nassistant\n<think>\n\n</think>\n\n<think>\n'
+75 '75 miles per hour. His actual speed minus the speed'
+100 ' miles per hour.\nCheck: at 75 miles'
+150 '20 miles. The extra distance is 150'
+180 ' 30 / 2 = 15 miles per'
+200 'Wait, is there any ambiguity in the question? It asks'
+210 ' It asks how many mph above the speed limit, not how'
+230 ', if he was driving 60 mph, he was'
+260 ' was 15 mph above.\nWait, if he'
+290 ' he was driving 75 mph, he was 1'
+330 ' was driving 75 mph, he was 15'
+390 ' driving 60 mph, he was 0 mph above'
+440 ' above.\nWait, if he was driving 75'
+Largest neuron changes in late loop versus initial shared reasoning:
+[(1.1950290203094482, 23, 46, 3.810141086578369), (0.9886022210121155, 23, 22, 4.129701614379883), (0.7928903102874756, 23, 94, 2.649235248565674), (0.5694922804832458, 23, 84, 3.285954475402832), (0.5499107241630554, 23, 19, 2.0160889625549316), (0.2765939235687256, 22, 59, 0.9572855234146118), (0.27564164996147156, 22, 8, 0.9899576902389526), (0.2637939453125, 17, 20, 1.1881991624832153), (0.2483384907245636, 22, 140, 0.7714290618896484), (0.2407236248254776, 18, 29, 0.8871469497680664), (0.21874181926250458, 22, 26, 1.049753189086914), (0.2144751101732254, 22, 5, 0.7858915328979492), (0.2036493420600891, 18, 32, 0.7251296043395996), (0.2036483734846115, 15, 0, 0.7998908758163452), (0.18386182188987732, 20, 89, 0.55901038646698), (0.17914339900016785, 14, 947, 0.7354276180267334), (0.1753421425819397, 17, 86, 0.6856728196144104), (0.17415368556976318, 15, 266, 0.586135745048523), (0.1727258861064911, 15, 264, 0.7357897758483887), (0.1639394611120224, 19, 1, 0.6261357665061951)]
+Final norm min/median/max: [-0.77734375, 3.46875, 5.3125]
+Output direction 23 22 positive [('wait', 0.0174), ('if', 0.0161), ('is', 0.0124), ('we', 0.0029), ('calculate', 0.0019), ('again', -0.0016)] negative [(' Therefore', -0.0554), ('Yes', -0.0503), ('Answer', -0.0481), (' However', -0.0476)]
+Output direction 23 94 positive [('.', 0.0554), (',', 0.0545), ('-', 0.0443), (' is', 0.0331), ('\n\n', 0.0318), ('\n', 0.0318)] negative [('Yes', -0.023), ('is', -0.0226), (' Wait', -0.0187), (' Yes', -0.0183)]
+Output direction 23 19 positive [('Check', 0.0324), ('No', 0.0157), (' Check', 0.015), ('then', 0.0144), ('2', 0.0139), ('3', 0.0121)] negative [('</think>', -0.0526), (' again', -0.0431), (' However', -0.0409), (' Answer', -0.0409)]
+Output direction 22 59 positive [('1', 0.0679), ('5', 0.0619), ('0', 0.0603), ('2', 0.06), ('8', 0.0584), (' No', 0.0584)] negative [(' again', -0.0498), ('again', -0.0367), ('because', -0.035), ('Wait', -0.0295)]
+Output direction 15 0 positive [('then', 0.0461), ('is', 0.037), (' Check', 0.0294), ('Check', 0.0268), (' then', 0.026), (' The', 0.0211)] negative [('Finally', -0.04), ('\n', -0.0379), (',', -0.0339), ('5', -0.0312)]
+
+```

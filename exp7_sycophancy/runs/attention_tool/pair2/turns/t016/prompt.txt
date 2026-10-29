@@ -1,0 +1,45 @@
+OUTPUT of run 15 of at most 20:
+```
+digit_contrasts rank 9 tokens ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+belief_contrasts rank 9 tokens [' think', ' guess', ' believe', ' sure', ' answer', ' correct', ' wrong', ' my', ' you', ' I']
+arithmetic_contrasts rank 9 tokens [' +', ' -', ' *', ' /', ' =', ' sum', ' product', ' calculate', ' plus', ' minus']
+content_contrasts rank 9 tokens [' Paris', ' London', ' Rome', ' Berlin', ' red', ' blue', ' dog', ' cat', ' east', ' west']
+
+MLP INPUT-UPDATE SUBSPACE ENRICHMENT
+Fraction of squared update in subspace divided by subspace_dimension/640.
+Uses learned pre-MLP diagonal only, not hidden-state normalization.
+Columns: ['digit_contrasts', 'digit_vs_content', 'belief_contrasts', 'arithmetic_contrasts', 'content_contrasts']
+0 gate [ 2.806 21.677  3.533  4.616  2.419] up [ 2.581 20.42   3.754  4.488  2.451]
+1 gate [3.777 8.578 2.553 2.954 1.496] up [3.611 8.053 2.447 2.962 1.516]
+2 gate [3.751 4.133 1.552 1.721 1.191] up [3.851 3.916 1.515 1.721 1.157]
+3 gate [4.613 2.019 1.135 1.275 1.251] up [5.529 1.899 1.03  1.229 1.27 ]
+4 gate [1.167 1.169 0.827 0.879 1.17 ] up [1.158 1.155 0.797 0.881 1.14 ]
+5 gate [1.238 1.51  0.83  0.909 1.207] up [1.203 1.493 0.856 0.953 1.179]
+6 gate [1.355 2.206 0.738 0.962 1.142] up [1.345 1.934 0.758 0.933 1.136]
+7 gate [1.206 2.45  0.784 0.878 1.132] up [1.177 2.321 0.791 0.883 1.105]
+8 gate [1.195 3.572 0.817 0.906 1.132] up [1.185 3.277 0.819 0.879 1.103]
+9 gate [1.048 5.715 0.835 0.84  1.079] up [1.047 5.329 0.835 0.827 1.081]
+10 gate [1.01  8.605 0.884 0.877 0.957] up [0.985 7.617 0.858 0.882 0.972]
+11 gate [1.146 9.84  0.892 0.776 0.898] up [1.099 9.107 0.887 0.769 0.883]
+12 gate [ 1.362 11.22   0.844  0.903  0.926] up [ 1.336 10.547  0.822  0.891  0.908]
+13 gate [ 1.461 11.829  0.808  0.763  0.906] up [ 1.403 10.753  0.781  0.753  0.931]
+14 gate [ 1.307 12.261  0.809  0.852  0.875] up [ 1.295 11.208  0.792  0.833  0.888]
+15 gate [ 1.145 12.018  0.707  0.83   0.924] up [ 1.135 11.434  0.716  0.809  0.919]
+16 gate [ 1.231 13.563  0.769  0.812  0.91 ] up [ 1.207 13.841  0.772  0.824  0.917]
+17 gate [ 1.112 21.046  0.883  0.996  0.843] up [ 1.126 21.491  0.902  0.979  0.867]
+
+ADJACENT MLP-OUTPUT TO NEXT-LAYER QUERY WEIGHT CONNECTIONS
+No MLP activations or contextual queries are computed.
+Fractions describe changes to this static product, NOT causal behavioral attribution.
+target_L,H source_MLP relative_path_delta query_side_fraction MLP_output_side_fraction top10_unit_fraction
+5 1 4 [0.036  0.3555 0.6445 0.0106] top_units [1955, 2017, 1105, 1401, 1207]
+5 3 4 [0.0315 0.1708 0.8292 0.0115] top_units [2017, 966, 1955, 1330, 810]
+9 0 8 [0.0249 0.2161 0.7839 0.0122] top_units [500, 686, 707, 213, 672]
+9 2 8 [0.024  0.1784 0.8216 0.0109] top_units [1788, 213, 130, 75, 1748]
+10 2 9 [0.0202 0.2666 0.7334 0.0103] top_units [1919, 1022, 78, 180, 1036]
+12 0 11 [0.0249 0.4249 0.5751 0.0125] top_units [1821, 1975, 4, 1750, 344]
+12 3 11 [0.025  0.445  0.555  0.0125] top_units [30, 2044, 1828, 4, 845]
+13 3 12 [0.0279 0.6039 0.3961 0.0224] top_units [1622, 655, 63, 1299, 1874]
+17 2 16 [0.0302 0.475  0.525  0.0262] top_units [168, 309, 1853, 115, 1809]
+
+```

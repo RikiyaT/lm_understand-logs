@@ -1,0 +1,53 @@
+OUTPUT of run 23 of at most 60:
+```
+=== EARLY Q/K MATRIX RESCALING CHECK ===
+Gain bounds describe ALL vectors in a selected weight subspace.
+They are matrix properties, not normalized model states or attention scores.
+
+L1 H 3 belief
+Q global radial coefficient 1.7829181658946706e-05 delta energy retained after removing radial mode 0.9999906181065839
+shared K global radial coefficient -7.097700343992185e-06 delta energy retained after removing radial mode 0.9999985589210098
+Q norm-gain bounds from weight Grams: (np.float64(0.997550089405354), np.float64(1.0074332927357637), 13)
+K norm-gain bounds from weight Grams: (np.float64(0.9971561829683168), np.float64(1.0027421660090194), 9)
+semantic cross-kernel nonradial/full energy ratio 0.9999007223995809
+
+L1 H 0 operator
+Q global radial coefficient -1.4419416598387715e-05 delta energy retained after removing radial mode 0.9999953386482002
+shared K global radial coefficient -7.097700343992185e-06 delta energy retained after removing radial mode 0.9999985589210098
+Q norm-gain bounds from weight Grams: (np.float64(0.9929750069582471), np.float64(1.0047094435582284), 15)
+K norm-gain bounds from weight Grams: (np.float64(0.9950079689706135), np.float64(1.0068680171319462), 20)
+semantic cross-kernel nonradial/full energy ratio 1.0000722605529677
+
+=== MLP DOWN-PROJECTION DIRECTION VERSUS STRENGTH CHANGES ===
+Global radial removal tests a whole-output rescaling.
+Per-unit radial removal tests whether columns merely change length.
+Per-unit rescaling is not necessarily functionally irrelevant.
+ L  global_radial_alpha  total_energy_retained  digit_energy_retained_global  digit_energy_retained_per_unit
+ 0        -2.043698e-06               1.000000                      0.999995                            0.998683
+ 1        +2.234346e-05               0.999998                      1.000017                            0.999277
+ 2        +1.290329e-05               0.999999                      0.999999                            0.998119
+ 3        -1.826181e-05               0.999999                      0.999999                            0.997268
+ 4        +1.337771e-05               1.000000                      0.999994                            0.997378
+ 5        -1.213341e-06               1.000000                      1.000001                            0.998977
+ 6        -1.568054e-05               0.999999                      0.999988                            0.998212
+ 7        -1.269813e-05               0.999999                      0.999992                            0.996815
+ 8        -1.813064e-05               0.999999                      1.000014                            0.998391
+ 9        -7.000615e-06               1.000000                      1.000007                            0.998548
+10        +1.983032e-05               0.999999                      1.000020                            0.997621
+11        -1.108818e-05               0.999999                      0.999990                            0.997382
+12        +2.218471e-06               1.000000                      1.000002                            0.996706
+13        -2.180401e-06               1.000000                      1.000000                            0.996629
+14        -1.577075e-05               0.999999                      1.000002                            0.996425
+15        +9.523474e-06               1.000000                      0.999998                            0.996037
+16        +2.628826e-05               0.999996                      0.999976                            0.995951
+17        -1.882994e-06               1.000000                      1.000001                            0.995493
+
+=== UP/DOWN RECIPROCAL-SCALING CONTROL ===
+Pure reciprocal up/down rescaling preserves each unit's linear read/write outer product.
+Reported metric is a normalized parameter-space tangent fit, not behavioural importance.
+layer 14 fraction of relative parameter-difference energy explained 0.00043195241243787486
+layer 15 fraction of relative parameter-difference energy explained 0.00036675198205593507
+layer 16 fraction of relative parameter-difference energy explained 0.00045374965634803477
+layer 17 fraction of relative parameter-difference energy explained 0.0008558507840458196
+
+```

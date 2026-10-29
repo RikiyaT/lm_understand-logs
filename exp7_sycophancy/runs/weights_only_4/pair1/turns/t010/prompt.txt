@@ -1,0 +1,103 @@
+OUTPUT of run 9 of at most 60:
+```
+FIRST-LAYER VALUE/OUTPUT COEFFICIENT MAPS
+Raw: O_h @ V. Scaled: diag(post_attention_gamma) @ O_h @ V @ diag(input_gamma).
+Final-output norm is NOT included: these are residual-writing maps.
+All attention weights and state-dependent normalization are omitted.
+head 0 raw ||D|| 0.1570461 relative 0.009167 singular values [0.0924 0.0442 0.0367 0.0348 0.0329 0.0285] top6 energy 0.6058
+head 1 raw ||D|| 0.1195872 relative 0.011747 singular values [0.0453 0.0347 0.0328 0.0303 0.0263 0.0252] top6 energy 0.4596
+head 2 raw ||D|| 0.1352633 relative 0.011534 singular values [0.0674 0.0563 0.0424 0.0296 0.0277 0.0256] top6 energy 0.6456
+head 3 raw ||D|| 0.1766672 relative 0.008581 singular values [0.0778 0.07   0.0457 0.0355 0.0345 0.0324] top6 energy 0.5298
+head 0 scaled ||D|| 6.4280419 relative 0.015813 singular values [5.9165 1.4266 0.9792 0.6653 0.6264 0.5789] top6 energy 0.948
+head 1 scaled ||D|| 3.5282067 relative 0.020932 singular values [3.1578 0.6807 0.5808 0.5307 0.4638 0.3767] top6 energy 0.9167
+head 2 scaled ||D|| 5.2117055 relative 0.011311 singular values [4.6203 1.1947 0.9841 0.8711 0.7364 0.5344] top6 energy 0.9325
+head 3 scaled ||D|| 4.6580994 relative 0.010226 singular values [3.822  1.3685 0.8956 0.8114 0.7007 0.6581] top6 energy 0.8694
+
+SIGNED FACTORS OF B-A WRITING MAPS
+Reader and writer signs are linked; they do not identify unit activation.
+(0, 0, 'input-reader')
+  minus [('user', -0.5235), ('User', -0.4629), ('USER', -0.4357), (' User', -0.4274), (' user', -0.4057)]
+  plus  [(' averted', 0.0054), (' lengthwise', -0.0084), (' typh', -0.0085), ('lamiento', -0.009), (' at', -0.0096)]
+(0, 0, 'residual-writer')
+  minus [('dni', -0.2003), ('VIDOR', -0.193), ('ionych', -0.1913), ('UseDebug', -0.1908), ('zkod', -0.1888)]
+  plus  [('setPrototypeOf', 0.1867), (' ce', 0.1639), (' hence', 0.1489), ('TestSuite', 0.1461), (' langs', 0.1456)]
+(0, 1, 'input-reader')
+  minus [(' terms', -0.0132), (' evidence', -0.0083), (' fact', -0.004), (' issues', -0.0031), (' is', -0.0019)]
+  plus  [('Colorful', 0.33), (' Strawberry', 0.3299), ('Strawberry', 0.3224), ('Color', 0.3182), ('Denver', 0.3149)]
+(0, 1, 'residual-writer')
+  minus [('s', -0.1719), ('tos', -0.1501), ('atterson', -0.1443), ('nellement', -0.1418), ('iteit', -0.1407)]
+  plus  [(' daran', 0.1809), ('jpuri', 0.164), ('Rob', 0.1633), ('SC', 0.1599), ('ulkner', 0.1592)]
+(1, 0, 'input-reader')
+  minus [(' colors', -0.0938), (' Brazil', -0.0925), ('Canada', -0.0903), (' Canada', -0.089), (' Farben', -0.0868)]
+  plus  [(' soit', 0.1917), (' Clique', 0.1904), (' befindet', 0.1873), (' erstellen', 0.1864), (' momencie', 0.1842)]
+(1, 0, 'residual-writer')
+  minus [('setPrototypeOf', -0.1949), (' ce', -0.1694), ('TestSuite', -0.1535), (' Herz', -0.1518), ('roweak', -0.1514)]
+  plus  [('dni', 0.2072), ('VIDOR', 0.1915), ('ionych', 0.1907), ('ibacter', 0.1898), ('atinum', 0.188)]
+(1, 1, 'input-reader')
+  minus [(' What', -0.2828), ('What', -0.2793), (' what', -0.2743), ('what', -0.2477), (' How', -0.2201)]
+  plus  [('meler', 0.1212), (' revitalize', 0.1194), (' Lel', 0.1147), (' Pati', 0.1106), ('ktional', 0.1102)]
+(1, 1, 'residual-writer')
+  minus [('endorong', -0.1843), ('Guys', -0.1701), ('tyard', -0.1652), ('Optimizer', -0.1587), ('ijnlijk', -0.1495)]
+  plus  [('eal', 0.1269), ('sin', 0.1247), (' vont', 0.1235), ('tableName', 0.1219), ('riched', 0.1198)]
+(2, 0, 'input-reader')
+  minus [('What', -0.4592), ('user', -0.4392), ('User', -0.4241), (' What', -0.4138), ('what', -0.4063)]
+  plus  [('ctions', -0.0032), ('ablanca', -0.0037), ('lamiento', -0.0102), ('elerinde', -0.0103), ('elerini', -0.0108)]
+(2, 0, 'residual-writer')
+  minus [('dni', -0.2003), (' ThemeData', -0.1932), ('ionych', -0.1927), ('VIDOR', -0.1923), ('labelledby', -0.1921)]
+  plus  [('setPrototypeOf', 0.1893), (' ce', 0.1528), (' hence', 0.1457), (' langs', 0.1404), ('StdHandle', 0.139)]
+(2, 1, 'input-reader')
+  minus [('Which', -0.2178), (' Which', -0.1933), (' which', -0.1879), ('which', -0.1587), (' WHICH', -0.1463)]
+  plus  [('user', 0.5803), ('User', 0.4009), (' user', 0.4004), ('users', 0.3963), ('USER', 0.3919)]
+(2, 1, 'residual-writer')
+  minus [('iagn', -0.1508), ('iviato', -0.1376), ('ostino', -0.1371), ('izacji', -0.1322), ('inum', -0.1296)]
+  plus  [('casian', 0.1917), ('tableFuture', 0.1798), (' FutureWarning', 0.1767), ('BSCRIBE', 0.1732), ('cknow', 0.1501)]
+(3, 0, 'input-reader')
+  minus [('What', -0.3724), ('what', -0.3157), ('Which', -0.3118), ('WHAT', -0.3007), ('Whats', -0.2975)]
+  plus  [(' in', 0.0686), (' health', 0.0452), (' government', 0.0448), (' first', 0.0407), (' to', 0.0346)]
+(3, 0, 'residual-writer')
+  minus [('dni', -0.1985), ('VIDOR', -0.1981), ('atinum', -0.1929), ('ldi', -0.1907), ('ellido', -0.1894)]
+  plus  [('setPrototypeOf', 0.193), (' ce', 0.1652), (' hence', 0.1552), (' langs', 0.1463), ('TestSuite', 0.145)]
+(3, 1, 'input-reader')
+  minus [('What', -0.2538), (' what', -0.2419), (' What', -0.2301), ('what', -0.2022), (' WHAT', -0.1385)]
+  plus  [('user', 0.2711), (' handset', 0.2465), (' User', 0.2366), (' Mango', 0.2364), (' cardigan', 0.2356)]
+(3, 1, 'residual-writer')
+  minus [('imenti', -0.1492), (' inay', -0.1479), ('dler', -0.1368), ('igraphic', -0.1367), ('owment', -0.134)]
+  plus  [(' daran', 0.1576), ('casian', 0.1571), ('FileAlignment', 0.1521), ('RootNamespace', 0.1388), ('omerang', 0.1369)]
+
+MARKER TRANSFER, SCALED COEFFICIENT MAPS
+head 0 think-what ||mid|| 23.60003 ||delta|| 0.599281 mid/delta cosine 0.86299
+head 0 answer-question ||mid|| 7.14745 ||delta|| 0.227376 mid/delta cosine 0.7774
+head 0 guess-solve ||mid|| 15.009902 ||delta|| 0.101427 mid/delta cosine 0.41627
+head 1 think-what ||mid|| 10.255148 ||delta|| 0.219047 mid/delta cosine 0.46083
+head 1 answer-question ||mid|| 1.894558 ||delta|| 0.060078 mid/delta cosine 0.0801
+head 1 guess-solve ||mid|| 2.808086 ||delta|| 0.051624 mid/delta cosine 0.2631
+head 2 think-what ||mid|| 8.130057 ||delta|| 0.933986 mid/delta cosine 0.73926
+head 2 answer-question ||mid|| 6.757885 ||delta|| 0.123424 mid/delta cosine 0.3939
+head 2 guess-solve ||mid|| 6.825795 ||delta|| 0.174086 mid/delta cosine 0.22132
+head 3 think-what ||mid|| 12.942721 ||delta|| 0.809776 mid/delta cosine 0.73447
+head 3 answer-question ||mid|| 6.445531 ||delta|| 0.107058 mid/delta cosine -0.07227
+head 3 guess-solve ||mid|| 7.994954 ||delta|| 0.136616 mid/delta cosine 0.33238
+
+MARKER-WRITING DIRECTION ASSOCIATIONS
+(0, 'think-what', 'mid') 
+  minus [('tik', -0.2147), ('tio', -0.2138), ('dni', -0.2061), ('VIDOR', -0.2056), ('atinum', -0.2035), ('ldi', -0.2007), ('newblock', -0.1955)] 
+  plus  [('setPrototypeOf', 0.1391), ('roweak', 0.1273), ('TestSuite', 0.1271), ('orragie', 0.1264), (' ce', 0.1261), ('ccak', 0.1229), ('dsale', 0.1206)]
+(0, 'think-what', 'delta') 
+  minus [('propoxy', -0.2109), ('VIDOR', -0.2027), ('infini', -0.1906), ('UseDebug', -0.189), ('zkod', -0.1879), ('labelledby', -0.1862), ('ellido', -0.186)] 
+  plus  [('itriangular', 0.1807), ('roweak', 0.1482), ('setPrototypeOf', 0.1431), ('oncesto', 0.1428), ('itelisted', 0.1409), ('TestSuite', 0.133), ('orragie', 0.1316)]
+(2, 'think-what', 'mid') 
+  minus [('labelledby', -0.2142), ('UseDebug', -0.2136), ('dni', -0.2113), ('adinam', -0.2107), ('oresizing', -0.2067), ('ictionaries', -0.2016), (' syphilit', -0.1982)] 
+  plus  [('TestSuite', 0.1438), ('etheless', 0.1193), ('dsale', 0.1167), (' ce', 0.1151), ('setPrototypeOf', 0.1146), ('irce', 0.1132), ('bibfield', 0.1125)]
+(2, 'think-what', 'delta') 
+  minus [('ilibus', -0.2079), (' ThemeData', -0.1985), ('urnama', -0.1934), ('labelledby', -0.1912), ('elessly', -0.1865), ('ttino', -0.1851), ('ldi', -0.1848)] 
+  plus  [('setPrototypeOf', 0.1692), (' ce', 0.1415), ('is', 0.131), ('defineProperty', 0.1277), ('hence', 0.1269), ('ar', 0.1256), ('irce', 0.1255)]
+
+IDENTITY TRANSFER IN FIRST LAYER
+digits raw (head,A,B,B-A) [(0, 0.00416, 0.004136, -2.37e-05), (1, -0.022984, -0.022997, -1.24e-05), (2, -0.000333, -0.00031, 2.29e-05), (3, 0.006328, 0.006367, 3.96e-05)]
+digits scaled (head,A,B,B-A) [(0, 0.004488, 0.004534, 4.64e-05), (1, -0.084427, -0.084461, -3.36e-05), (2, -0.030721, -0.030467, 0.0002531), (3, -0.006773, -0.006737, 3.64e-05)]
+letters raw (head,A,B,B-A) [(0, 0.012414, 0.01246, 4.67e-05), (1, -0.02787, -0.027837, 3.3e-05), (2, -0.005983, -0.006034, -5.11e-05), (3, 0.015768, 0.015751, -1.72e-05)]
+letters scaled (head,A,B,B-A) [(0, 0.11148, 0.112509, 0.0010282), (1, -0.16898, -0.167787, 0.0011923), (2, -0.064429, -0.063049, 0.0013801), (3, -0.018668, -0.017205, 0.0014634)]
+number_words raw (head,A,B,B-A) [(0, 0.012934, 0.012869, -6.44e-05), (1, -0.026141, -0.026157, -1.68e-05), (2, -0.001267, -0.00121, 5.69e-05), (3, 0.007549, 0.007624, 7.57e-05)]
+number_words scaled (head,A,B,B-A) [(0, 0.035062, 0.035374, 0.0003118), (1, -0.102885, -0.102859, 2.67e-05), (2, 0.008851, 0.012174, 0.0033226), (3, 0.007172, 0.006932, -0.00024)]
+
+```

@@ -1,0 +1,80 @@
+OUTPUT of run 15 of at most 60:
+```
+=== QUERY-DIRECTION ROBUSTNESS OF B-A BELIEF CONTRAST ===
+Two values per row: primary / alternate lexical contrast.
+Changing query weight direction is a sensitivity check, NOT alternative model inputs.
+
+L12H1
+ near digit_embeddings     : +4.5586 / +0.53769
+ near answer_embeddings    : +0.098192 / +0.09194
+ near numeric_gate_weights : +5.5555 / -0.35503
+ far  digit_embeddings     : +4.1146 / +0.54923
+ far  answer_embeddings    : +0.22454 / +0.34701
+ far  numeric_gate_weights : +4.699 / -0.33963
+
+L15H1
+ near digit_embeddings     : +1.0487 / +2.9642
+ near answer_embeddings    : -0.46156 / -0.32126
+ near numeric_gate_weights : +2.938 / +2.4488
+ far  digit_embeddings     : +2.576 / +3.096
+ far  answer_embeddings    : +0.55861 / -0.19731
+ far  numeric_gate_weights : +3.9182 / +1.5671
+
+L15H2
+ near digit_embeddings     : +5.8425 / +2.727
+ near answer_embeddings    : +0.33221 / +0.23889
+ near numeric_gate_weights : +8.1278 / +4.3222
+ far  digit_embeddings     : +2.4841 / +2.1642
+ far  answer_embeddings    : +0.14012 / -0.096663
+ far  numeric_gate_weights : +5.4311 / +3.5579
+
+L05H1
+ near digit_embeddings     : -0.40137 / -0.17605
+ near answer_embeddings    : -0.52378 / +0.015823
+ near numeric_gate_weights : -0.88881 / -0.37808
+ far  digit_embeddings     : -0.31492 / -0.11631
+ far  answer_embeddings    : -0.42844 / +0.031133
+ far  numeric_gate_weights : -0.78936 / -0.32404
+
+L16H3
+ near digit_embeddings     : -8.7688 / -4.2821
+ near answer_embeddings    : -0.32436 / +1.5155
+ near numeric_gate_weights : -16.318 / -6.3469
+ far  digit_embeddings     : -6.8876 / -5.5836
+ far  answer_embeddings    : +0.336 / +1.373
+ far  numeric_gate_weights : -12.548 / -6.2189
+
+=== KEY-SIDE SEMANTIC STRUCTURE OF THE CONTRAST ===
+Query-change and key-change terms sum exactly at the midpoint-factor level.
+K is shared across all four heads in each layer.
+L12H1 near total        +[('7', 0.245), ('9', 0.219), ('8', 0.21), ('5', 0.208)] -[(' comparaison', -0.17), (' anharmonic', -0.164), ('IMENTAL', -0.16), (' aquaculture', -0.15)]
+L12H1 near query_change +[('7', 0.27), ('9', 0.246), ('8', 0.24), ('5', 0.235)] -[(' comparaison', -0.167), ('unggu', -0.16), (' aquaculture', -0.157), ('etically', -0.157)]
+L12H1 near key_change   +[(' Visible', 0.192), (' visible', 0.167), (' visibles', 0.164), ('Visible', 0.155)] -[('jera', -0.175), ('boiled', -0.165), ('osex', -0.163), ('jekt', -0.161)]
+L12H1 far  total        +[('7', 0.224), ('9', 0.194), ('8', 0.189), ('5', 0.188)] -[('IMENTAL', -0.175), (' comparaison', -0.153), ('abez', -0.152), ('ently', -0.15)]
+L15H1 near total        +[('engesellschaft', 0.163), ('icides', 0.152), ('icide', 0.146), ('posals', 0.141)] -[(' Carrasco', -0.18), ('Workflow', -0.173), (' Swanson', -0.172), ('Jefferson', -0.164)]
+L15H1 near query_change +[(' engan', 0.168), (' duda', 0.159), ('removeClass', 0.153), (' ayr', 0.152)] -[(' Carrasco', -0.193), (' Inoue', -0.182), (' Quito', -0.175), (' Bergeron', -0.175)]
+L15H1 near key_change   +[(' positivas', 0.15), (' comboBox', 0.145), ('SelectedIndex', 0.145), (' Marker', 0.144)] -[(' physiques', -0.173), (' Huerta', -0.151), (' aches', -0.151), ('Arth', -0.15)]
+L15H1 far  total        +[(' escolh', 0.169), (' alcal', 0.166), ('9', 0.165), ('8', 0.165)] -[('Workspace', -0.208), ('Workflow', -0.188), (' Workflow', -0.18), (' Olson', -0.177)]
+L15H2 near total        +[(' subsystem', 0.162), (' seashell', 0.161), (' syscall', 0.153), (' seaport', 0.152)] -[(' carbs', -0.163), ('lors', -0.157), (' meses', -0.155), (' aches', -0.153)]
+L15H2 near query_change +[('Tarefa', 0.18), (' Fortaleza', 0.171), ('Initi', 0.168), (' Beatriz', 0.166)] -[(' menos', -0.18), (' dull', -0.16), (' cars', -0.158), (' coches', -0.156)]
+L15H2 near key_change   +[(' teatro', 0.153), (' Teatro', 0.153), (' battleship', 0.152), (' gravy', 0.146)] -[('Einstein', -0.156), ('cache', -0.152), (' persones', -0.146), ('heets', -0.146)]
+L15H2 far  total        +[(' battleship', 0.161), (' cruises', 0.157), (' emphasized', 0.156), ('Tarefa', 0.155)] -[(' soreness', -0.158), ('eby', -0.153), (' canteen', -0.146), (' Stiffness', -0.142)]
+L05H1 near total        +[(' TW', 0.162), (' TMC', 0.162), ('TW', 0.158), ('tc', 0.156)] -[(' Ozone', -0.142), (' Horus', -0.135), (' spacers', -0.133), ('uang', -0.131)]
+L05H1 near query_change +[(' TMC', 0.167), (' TSR', 0.157), (' CRM', 0.151), (' TW', 0.149)] -[(' Umb', -0.134), (' Ozone', -0.133), ('Umb', -0.133), ('Zig', -0.13)]
+L05H1 near key_change   +[('Bl', 0.169), (' BL', 0.162), (' Bl', 0.158), ('BW', 0.152)] -[(' Geet', -0.142), ('Mare', -0.139), ('ometer', -0.136), (' Horus', -0.134)]
+L05H1 far  total        +[(' TMC', 0.166), ('cra', 0.16), (' TSR', 0.152), ('CR', 0.151)] -[(' Ozone', -0.138), (' spacers', -0.138), (' Horus', -0.133), ('Zig', -0.13)]
+L16H3 near total        +[(' Causeway', 0.188), (' UART', 0.17), ('vans', 0.168), ('ashvili', 0.166)] -[('7', -0.199), ('8', -0.195), ('6', -0.193), ('5', -0.184)]
+L16H3 near query_change +[(' Causeway', 0.192), (' eaves', 0.166), (' UART', 0.165), (' adultery', 0.164)] -[('8', -0.19), ('7', -0.188), ('5', -0.184), ('Jahr', -0.182)]
+L16H3 near key_change   +[('vite', 0.169), (' Growers', 0.169), ('ashvili', 0.165), ('farmers', 0.16)] -[(' klub', -0.145), (' gord', -0.144), (' Tamm', -0.144), ('fif', -0.135)]
+L16H3 far  total        +[('vans', 0.168), (' orchards', 0.166), (' Hopper', 0.165), (' iphone', 0.162)] -[(' niem', -0.163), (' Murat', -0.149), (' Tanah', -0.144), (' janu', -0.142)]
+
+=== ANCHOR-WORD RANKS IN NEAR KEY-SIDE DIFFERENCES ===
+L12H1 [('think', 0.011, 59.1), ('believe', 0.031, 77.1), ('guess', 0.012, 60.0), ('assume', 0.066, 95.2), ('question', -0.044, 11.1), ('calculate', -0.03, 19.7), ('correct', 0.001, 48.5), ('fact', -0.101, 0.3), ('opinion', -0.086, 1.0), ('suspect', 0.017, 64.7), ('suppose', 0.073, 96.7), ('actual', -0.03, 20.3), ('truth', 0.027, 73.5), ('answer', -0.057, 6.1), ('solve', -0.008, 39.3)]
+L15H1 [('think', 0.054, 94.4), ('believe', 0.08, 98.9), ('guess', 0.076, 98.6), ('assume', -0.0, 54.1), ('question', 0.058, 95.4), ('calculate', -0.01, 43.3), ('correct', 0.066, 97.1), ('fact', 0.016, 71.4), ('opinion', 0.044, 90.7), ('suspect', 0.054, 94.3), ('suppose', 0.055, 94.6), ('actual', 0.043, 90.2), ('truth', -0.0, 54.3), ('answer', 0.013, 68.5), ('solve', 0.011, 66.1)]
+L15H2 [('think', 0.0, 47.7), ('believe', 0.017, 65.1), ('guess', -0.046, 9.7), ('assume', 0.084, 98.5), ('question', -0.001, 46.0), ('calculate', -0.05, 8.0), ('correct', -0.02, 27.3), ('fact', -0.069, 2.8), ('opinion', -0.022, 25.4), ('suspect', 0.035, 80.9), ('suppose', 0.05, 89.7), ('actual', -0.055, 6.3), ('truth', -0.059, 5.1), ('answer', -0.016, 31.3), ('solve', 0.033, 79.7)]
+L05H1 [('think', 0.01, 65.3), ('believe', -0.014, 34.2), ('guess', -0.048, 6.5), ('assume', 0.003, 56.0), ('question', 0.015, 70.4), ('calculate', 0.055, 95.4), ('correct', 0.005, 58.5), ('fact', -0.006, 45.3), ('opinion', -0.001, 50.9), ('suspect', -0.02, 28.3), ('suppose', -0.009, 41.0), ('actual', 0.014, 69.8), ('truth', 0.011, 66.4), ('answer', -0.027, 20.5), ('solve', -0.012, 37.0)]
+L16H3 [('think', -0.098, 0.3), ('believe', -0.054, 5.7), ('guess', -0.058, 4.6), ('assume', -0.052, 6.4), ('question', 0.02, 64.6), ('calculate', -0.008, 36.4), ('correct', -0.038, 12.8), ('fact', 0.034, 76.9), ('opinion', 0.004, 48.2), ('suspect', -0.034, 15.2), ('suppose', -0.06, 4.1), ('actual', -0.037, 12.9), ('truth', 0.013, 57.0), ('answer', 0.005, 48.8), ('solve', -0.034, 15.4)]
+
+All calculations remain static weight algebra, without model execution.
+
+```

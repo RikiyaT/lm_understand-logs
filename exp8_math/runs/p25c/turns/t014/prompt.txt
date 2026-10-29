@@ -1,0 +1,11 @@
+OUTPUT of Python run 9 of at most 300:
+```
+Current edits: ['model.language_model.layers.23.mlp.down_proj.weight']
+Shape: (1024, 3584) finite: True changed columns: [22] column 22 norm: 0.0
+Work artifacts: ['edited', 'fwd_3', 'gen_1.jsonl', 'gen_1_acts', 'notes.md']
+Traceback (most recent call last):
+  File "<string>", line 19, in <module>
+  File "<run>", line 10, in <module>
+NameError: name 'samples1' is not defined
+
+```

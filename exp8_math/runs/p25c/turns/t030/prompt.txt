@@ -1,0 +1,57 @@
+OUTPUT of Python run 15 of at most 300:
+```
+NOTES:
+ # Math weight-edit experiment
+Baseline: 128 practice problems, 2 samples each; accuracy 27/256=10.55%, cutoff 229/256=89.84%, mean 29994 tokens. All observed failures were cutoffs. Texts commonly solve the arithmetic correctly then enter hundreds of identical self-checking lines.
+Localization: 13 same-problem success/failure pairs. L23 MLP neuron22 has mean activation 1.773 cutoff versus 0.135 correct; paired delta 1.516, positive in all 13 pairs, delta/SE 4.59. L23:94, L22:59, L17:20, L15:0 are additional candidates, not established causal.
+Controlled repeated-continuation probe: L23:22 rises from -1.231 during shared valid reasoning to 2.899 during repeated self-checking; L23:94 from -0.083 to 2.566. These remain correlational.
+Trial A: set only L23 down_proj column22 to zero. No final norm, embeddings, output layer, decoding, or template edits. No accepted edit yet.
+Forward passes used: 2/25 (one failed attention request did not count).
+
+Trial A paired generation (gen_5): original 15/128 correct; edited 14/128. No accuracy benefit; not accepted. Lower cutoffs alone do not justify this edit.
+
+Edited tensors: []
+Tensor count: 320
+Representative tensor names: ['model.language_model.layers.0.input_layernorm.weight', 'model.language_model.layers.0.linear_attn.A_log', 'model.language_model.layers.0.linear_attn.conv1d.weight', 'model.language_model.layers.0.linear_attn.dt_bias', 'model.language_model.layers.0.linear_attn.in_proj_a.weight', 'model.language_model.layers.0.linear_attn.in_proj_b.weight', 'model.language_model.layers.0.linear_attn.in_proj_qkv.weight', 'model.language_model.layers.0.linear_attn.in_proj_z.weight', 'model.language_model.layers.0.linear_attn.norm.weight', 'model.language_model.layers.0.linear_attn.out_proj.weight', 'model.language_model.layers.0.mlp.down_proj.weight', 'model.language_model.layers.0.mlp.gate_proj.weight', 'model.language_model.layers.0.mlp.up_proj.weight', 'model.language_model.layers.0.post_attention_layernorm.weight', 'model.language_model.layers.23.input_layernorm.weight', 'model.language_model.layers.23.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.gate_proj.weight', 'model.language_model.layers.23.mlp.up_proj.weight', 'model.language_model.layers.23.post_attention_layernorm.weight', 'model.language_model.layers.23.self_attn.k_norm.weight', 'model.language_model.layers.23.self_attn.k_proj.weight', 'model.language_model.layers.23.self_attn.o_proj.weight', 'model.language_model.layers.23.self_attn.q_norm.weight', 'model.language_model.layers.23.self_attn.q_proj.weight', 'model.language_model.layers.23.self_attn.v_proj.weight', 'model.language_model.layers.3.input_layernorm.weight', 'model.language_model.layers.3.mlp.down_proj.weight', 'model.language_model.layers.3.mlp.gate_proj.weight', 'model.language_model.layers.3.mlp.up_proj.weight', 'model.language_model.layers.3.post_attention_layernorm.weight', 'model.language_model.layers.3.self_attn.k_norm.weight', 'model.language_model.layers.3.self_attn.k_proj.weight', 'model.language_model.layers.3.self_attn.o_proj.weight', 'model.language_model.layers.3.self_attn.q_norm.weight', 'model.language_model.layers.3.self_attn.q_proj.weight', 'model.language_model.layers.3.self_attn.v_proj.weight']
+
+FILE gen_1.jsonl rows 128
+Fields: ['id', 'source', 'answer', 'samples']
+First-row scalar metadata: {'id': 'gsm8k_train_2075', 'source': 'gsm8k', 'answer': '12'}
+
+FILE gen_5_edited.jsonl rows 64
+Fields: ['id', 'source', 'answer', 'samples']
+First-row scalar metadata: {'id': 'gsm8k_train_2075', 'source': 'gsm8k', 'answer': '12'}
+
+FILE gen_5_original.jsonl rows 64
+
+FILE gen_6_edited.jsonl rows 64
+
+FILE gen_6_original.jsonl rows 64
+
+FILE gen_7_edited.jsonl rows 64
+
+FILE gen_7_original.jsonl rows 64
+
+FILE gen_8_edited.jsonl rows 64
+
+FILE gen_8_original.jsonl rows 64
+
+SAVED gen_1_acts files: ['index.json', 'mlp_last_prompt.npy', 'hidden_last_prompt.npy', 'mlp_mean_answer.npy', 'hidden_mean_answer.npy']
+index.json type dict
+keys: ['layers', 'mlp_layers', 'samples', 'files']
+layers length 25 first item: [0]
+mlp_layers length 24 first item: [0]
+samples length 256 first item: [{'item': 'gsm8k_train_2075', 'sample': 0, 'correct': False, 'tokens': 8192}]
+
+SAVED fwd_3 files: ['hidden_17.npy', 'mlp_act_20.npy', 'hidden_19.npy', 'hidden_4.npy', 'mlp_act_15.npy', 'hidden_22.npy', 'token_logprobs.npy', 'hidden_23.npy', 'hidden_24.npy', 'mlp_act_14.npy', 'hidden_18.npy', 'mlp_act_21.npy']
+meta.json type dict
+keys: ['texts', 'lengths', 'model', 'edited_tensors', 'files', 'padding']
+texts length 2 first item: ["<|im_start|>user\nJohn travels 150 miles in 2 hours. The speed limit is 60 mph. How many mph above the speed limit was he driving?\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\nJohn's speed is 150 / 2 = 75 miles per hour. His actual speed minus the speed limit is 75 - 60 = 15 miles per hour.\nCheck: at 75 miles per hour for 2 hours, John travels 75 * 2 = 150 miles. At the speed limit he would travel 60 * 2 = 120 miles. The extra distance is 150 - 120 = 30 miles. Dividing by 2 hours gives 30 / 2 = 15 miles per hour, matching the first calculation.\nWait, is there any ambiguity in the question? It asks how many mph above the speed limit, not how many miles farther he traveled. The units distinguish these quantities.\nAnother check: subtracting 15 mph from 75 mph gives 60 mph, exactly the speed limit. The result is cons
+lengths length 2 first item: [295]
+model original
+edited_tensors length 0 first item: []
+padding right; positions >= length are padding
+
+[harness: 14 repeated lines not shown (a line is shown at most 2 times per output)]
+```
+(Reminder: before your next block, explain what this result shows, what you will do next and why.)

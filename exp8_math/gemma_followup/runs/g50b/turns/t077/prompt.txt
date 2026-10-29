@@ -1,0 +1,6 @@
+OUTPUT of Python run 43 of at most 300:
+```
+PASS31 {'pass': 31, 'n': 1024, 'gain_pp': 0.5859375, 'paired_SE_pp': 1.6171846961290572, 'problem_cluster_SE_pp': 2.120766637544635}
+NEXT EDIT {'components': [{'tensor': 'model.layers.11.self_attn.o_proj.weight', 'head': 2, 'columns': [512, 768], 'operation': 'B -> gain*(B-alpha*d*(d.T@B))', 'gain': 1.1, 'alpha': 0.0, 'direction_file': '/work/head11_2_matched_direction.pt', 'relative_F_change': 0.057452309876680374}, {'tensor': 'model.layers.11.mlp.down_proj.weight', 'columns': [1755, 1087, 795, 1734, 1975, 1682, 228, 1693], 'multiplier': 0.5, 'relative_F_change': 0.03153078258037567}]}
+
+```

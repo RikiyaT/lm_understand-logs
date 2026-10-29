@@ -1,0 +1,53 @@
+Forward pass 21 of 25 done (generate); results in /work/gen_21_original.jsonl and /work/gen_21_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_21_original.jsonl",
+  "edited": "/work/gen_21_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1008,
+  "graded": 1008,
+  "accuracy": 0.35615079365079366,
+  "accuracy_by_source": {
+   "math": 0.3562
+  },
+  "mean_tokens": 930,
+  "cut_share": 0.0397,
+  "failures": {
+   "wrong_answer": 617,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 31
+  }
+ },
+ "edited": {
+  "generations": 1008,
+  "graded": 1008,
+  "accuracy": 0.3333333333333333,
+  "accuracy_by_source": {
+   "math": 0.3333
+  },
+  "mean_tokens": 889,
+  "cut_share": 0.0367,
+  "failures": {
+   "wrong_answer": 639,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 32
+  }
+ },
+ "paired": {
+  "items": 63,
+  "accuracy_difference": -0.0228,
+  "standard_error": 0.017,
+  "samples_wrong_to_right": 121,
+  "samples_right_to_wrong": 144
+ },
+ "s": 373.7
+}
+```
+Forward passes left: 4.
+Edits used in this pass: model.layers.11.self_attn.o_proj.weight (edit hash edc7dc3efc).

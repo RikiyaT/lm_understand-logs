@@ -1,0 +1,27 @@
+OUTPUT of Python run 31 of at most 300:
+```
+# Math weight-edit experiment
+Baseline pass 1: 256 original generations (96 GSM8K,160 MATH), full 32768-token limit.
+Accuracy 24/256=9.375%; 232 cutoffs (91.41%). Correct GSM=12/96, MATH=12/160.
+Failures enter exact repetitive thinking; 213/232 failed tails contain 'Wait,'.
+Repeated 12-token fractions first2048/middle/tail: failures .070/.506/.975, correct .039/.098/.177.
+Pass 2 (files fwd_3 after one uncounted attention-instrumentation error): two teacher-forced arithmetic/trigonometric probes, matched identical sentences at first vs repeated occurrences.
+Most consistent within-content repetition-associated MLP neurons:
+23:22 (+3.26),40 (-4.19),46 (+1.80),94 (+2.18),19 (+1.97);
+19:11 (-1.57);18:8 (-1.51);22:59 (+1.13).
+These signs agree across five distinct repetitive phrases and with failed-vs-correct generation averages.
+Caveat: teacher-forced chat template inserted empty thinking before supplied think; use raw templated text for follow-up.
+No edits tested yet. Eight forward passes remain. Need causal dose tests and independent paired validation.
+
+original n 128 correct 13 cut 116 mean tokens 30207
+By source: {'gsm8k': (8, 64), 'math': (5, 64)}
+edited n 128 correct 11 cut 117 mean tokens 30363
+By source: {'gsm8k': (7, 64), 'math': (4, 64)}
+Paired gain / SE: -0.015625 0.02713423316130324 rescues 5 regressions 7
+Actual nonzero weight changes:
+model.language_model.layers.18.mlp.down_proj.weight columns [8] factors [(8, 0.0)]
+model.language_model.layers.19.mlp.down_proj.weight columns [11] factors [(11, 0.0)]
+model.language_model.layers.23.mlp.down_proj.weight columns [22, 40] factors [(22, 0.0), (40, 0.0)]
+Available generation files: ['gen_1.jsonl', 'gen_4_edited.jsonl', 'gen_4_original.jsonl']
+
+```

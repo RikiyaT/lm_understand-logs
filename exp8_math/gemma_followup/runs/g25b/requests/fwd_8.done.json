@@ -1,0 +1,42 @@
+{
+ "ok": true,
+ "lengths": [
+  196,
+  192
+ ],
+ "files": {
+  "input_ids": [
+   2,
+   196
+  ],
+  "token_logprobs": [
+   2,
+   195
+  ],
+  "attn_5": [
+   2,
+   4,
+   196,
+   196
+  ],
+  "attn_11": [
+   2,
+   4,
+   196,
+   196
+  ],
+  "attn_17": [
+   2,
+   4,
+   196,
+   196
+  ]
+ },
+ "edited_tensors": 0,
+ "mean_token_logprob": [
+  -3.59822154045105,
+  -2.868133783340454
+ ],
+ "type": "teacher_forced",
+ "s": 0.1
+}

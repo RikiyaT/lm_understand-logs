@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"id-3bbcba11"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"This batch gained 53.1 percentage points, with 35 rescues and one regression. That keeps the effect close to the pooled estimate while adding another reminder that the repair is not harmless on every individual problem. I will log the result and prepare the penultimate batch, with no changes to the selected neurons, directions, or edit strength.\n\n```python\n# Hypothesis: The frozen intervention's net benefit remains stable through the final independent batches.\nregister_frozen_run(67)\n```\n"}}
+{"type":"turn.completed","usage":{"input_tokens":1113840,"cached_input_tokens":1075072,"cache_write_input_tokens":0,"output_tokens":23550,"reasoning_output_tokens":7304}}

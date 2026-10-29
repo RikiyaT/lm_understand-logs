@@ -1,0 +1,31 @@
+OUTPUT of Python run 8 of at most 300:
+```
+All DEV reference solutions: 64 tokens: 7663 characters: 18820 max tokens: 422
+Solution token quantiles: [24.0, 65.75, 104.0, 132.25, 422.0]
+DEV ids: ["math_train_intermediate_algebra_847", "math_train_algebra_988", "math_train_intermediate_algebra_342", "math_train_prealgebra_311", "math_train_algebra_1185", "math_train_algebra_1520", "math_train_prealgebra_490", "math_train_number_theory_693", "math_train_prealgebra_1049", "math_train_number_theory_716", "math_train_counting_and_probability_55", "math_train_algebra_1497", "math_train_intermediate_algebra_802", "math_train_algebra_1220", "math_train_prealgebra_783", "math_train_algebra_583", "math_train_prealgebra_593", "math_train_algebra_7", "math_train_prealgebra_556", "math_train_prealgebra_795", "math_train_prealgebra_397", "math_train_prealgebra_869", "math_train_prealgebra_818", "math_train_intermediate_algebra_1008", "math_train_prealgebra_502", "math_train_prealgebra_82", "math_train_prealgebra_1130", "math_train_algebra_1284", "math_train_number_theory_709", "math_train_algebra_920", "math_train_algebra_198", "math_train_intermediate_algebra_84", "math_train_precalculus_76", "math_train_prealgebra_590", "math_train_precalculus_330", "math_train_algebra_763", "math_train_prealgebra_1028", "math_train_algebra_1210", "math_train_counting_and_probability_653", "math_train_algebra_380", "math_train_geometry_113", "math_train_intermediate_algebra_1197", "math_train_algebra_1128", "math_train_algebra_448", "math_train_algebra_1559", "math_train_geometry_386", "math_train_algebra_817", "math_train_prealgebra_1033", "math_train_counting_and_probability_518", "math_train_number_theory_706", "math_train_algebra_34", "math_train_prealgebra_134", "math_train_prealgebra_867", "math_train_algebra_1094", "math_train_algebra_1491", "math_train_geometry_259", "math_train_precalculus_274", "math_train_precalculus_233", "math_train_geometry_161", "math_train_algebra_1586", "math_train_geometry_305", "math_train_algebra_1180", "math_train_algebra_775", "math_train_algebra_485"]
+Reference previews:
+math_train_intermediate_algebra_847 We have that
+\begin{align*}
+a_3 &= \frac{a_2}{a_1} = \frac{3}{2}, \\
+a_4 &= \frac{a_3}{a_2} = \frac{3/2}{3} = \frac{1}{2}, \\
+a_5 &= \frac{a_4}{a_3} = \frac{1/2}{3/2} = \frac{1}{3}, \\
+a_6 &= \frac{a_5}{a_4} = \frac{1/3}
+math_train_algebra_988 The midpoint of a line segment with endpoints $(x_1, y_1), (x_2, y_2)$ is $\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$.
+
+Thus, the midpoint of this line segment is $\left(\frac{2+8}{2}, \frac{3+15}{2} \right)$
+math_train_intermediate_algebra_342 Let $y = x^2 + x + 3.$  Then we can write the given equation as
+\[\frac{4x}{y} + \frac{5x}{y - 6x} + \frac{3}{2} = 0.\]Multiplying everything by $2y(y - 6x),$ we get
+\[8x(y - 6x) + 10xy + 3y(y - 6x) = 0.\]Expanding, we g
+math_train_prealgebra_311 Simplify, remembering the exponents take priority over multiplication and multiplication takes priority over addition or subtraction. \begin{align*}
+5^3-3\times 5^2+3\times5-1&=125-3\times25+15-1 \\
+&=125-75+14 \\
+&= 50+
+math_train_algebra_1185 We proceed as follows: \begin{align*}
+(2b + 5)(b - 1) &= 6b\\
+2b^2 + 3b - 5 &= 6b\\
+2b^2 - 3b - 5 &= 0\\
+(2b - 5)(b + 1) &= 0.
+\end{align*}This gives us $b = \frac{5}{2}$ or $b = -1.$ Of these, $\boxed{\frac{5}{2}}$ is t
+math_train_algebra_1520 We solve each equation separately. First off, we have $8x^2 + 7x - 1 = (8x-1)(x+1) = 0.$ We can also see that $24x^2+53x-7 = (8x-1)(3x+7) = 0.$ It is clear that both equations are satisfied only when $8x - 1 = 0,$ theref
+
+```

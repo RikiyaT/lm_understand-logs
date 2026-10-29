@@ -1,0 +1,6 @@
+OUTPUT of Python run 48 of at most 300:
+```
+{15: {'cosine_to_repetition': 3.725290298461914e-09, 'relative_change': 0.14109571278095245, 'matched_norm_ratio': 1.0002845525741577, 'finite': True}, 19: {'cosine_to_repetition': -7.450580596923828e-09, 'relative_change': 0.1350211650133133, 'matched_norm_ratio': 1.0002442598342896, 'finite': True}}
+EDITED ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']
+
+```

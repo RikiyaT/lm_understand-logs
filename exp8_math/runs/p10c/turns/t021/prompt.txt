@@ -1,0 +1,79 @@
+OUTPUT of Python run 16 of at most 300:
+```
+# Math weight-edit experiment
+Baseline pass 1: 256 original generations (96 GSM8K,160 MATH), full 32768-token limit.
+Accuracy 24/256=9.375%; 232 cutoffs (91.41%). Correct GSM=12/96, MATH=12/160.
+Failures enter exact repetitive thinking; 213/232 failed tails contain 'Wait,'.
+Repeated 12-token fractions first2048/middle/tail: failures .070/.506/.975, correct .039/.098/.177.
+Pass 2 (files fwd_3 after one uncounted attention-instrumentation error): two teacher-forced arithmetic/trigonometric probes, matched identical sentences at first vs repeated occurrences.
+Most consistent within-content repetition-associated MLP neurons:
+23:22 (+3.26),40 (-4.19),46 (+1.80),94 (+2.18),19 (+1.97);
+19:11 (-1.57);18:8 (-1.51);22:59 (+1.13).
+These signs agree across five distinct repetitive phrases and with failed-vs-correct generation averages.
+Caveat: teacher-forced chat template inserted empty thinking before supplied think; use raw templated text for follow-up.
+No edits tested yet. Eight forward passes remain. Need causal dose tests and independent paired validation.
+
+Work outputs: ['edited', 'fwd_3', 'gen_1.jsonl', 'gen_1_acts', 'gen_4_edited.jsonl', 'gen_4_edited_acts', 'gen_4_original.jsonl', 'gen_4_original_acts', 'notes.md']
+Circuit targets: {18: [8], 19: [11], 23: [22, 40]}
+Candidate summary: {18: [8], 19: [11], 22: [59, 11, 89], 23: [22, 40, 46, 94, 19, 350]}
+Current edits: ['model.language_model.layers.18.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight', 'model.language_model.layers.23.mlp.down_proj.weight']
+Model config: {
+  "architectures": [
+    "Qwen3_5ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_output_gate": true,
+  "bos_token_id": null,
+  "dtype": "bfloat16",
+  "eos_token_id": 248044,
+  "full_attention_interval": 4,
+  "head_dim": 256,
+  "hidden_act": "silu",
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 3584,
+  "layer_types": [
+    "linear_attention",
+    "linear_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "linear_conv_kernel_dim": 4,
+  "linear_key_head_dim": 128,
+  "linear_num_key_heads": 16,
+  "linear_num_value_heads": 16,
+  "linear_value_head_dim": 128,
+  "mamba_ssm_dtype": "float32",
+  "max_position_embeddings": 262144,
+  "mlp_only_layers": [],
+  "model_type": "qwen3_5_text",
+  "mtp_num_hidden_layers": 1,
+  "mtp_use_dedicated_embeddings": false,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 24,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "partial_rotary_factor": 0.25,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "mrope_interleaved": true,
+    "mrope_section": [
+      11,
+      11,
+      10
+    ],
+    "partial_rotary_factor": 0.25,
+    "rope_theta": 10000000,
+    "rope_type": "default"
+  },
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_cache": true,
+  "vocab_size": 248320
+}
+
+
+[harness: 19 repeated lines not shown (a line is shown at most 2 times per output)]
+```

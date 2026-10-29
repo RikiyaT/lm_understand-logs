@@ -1,0 +1,25 @@
+OUTPUT of Python run 4 of at most 300:
+```
+Problems: 128
+Sample schema:
+text str 'Let the given sequence be denoted by $a_n = 2 \\cdot x^{n-1}$.\nWe want to find the next term in the s'
+pred NoneType None
+correct bool False
+tokens int 639
+cut bool False
+Verified activation/sample alignment: 2048
+Generated text field: text
+Success-count histogram: {0: 70, 1: 11, 2: 7, 3: 8, 4: 5, 5: 2, 6: 5, 7: 3, 8: 2, 9: 1, 11: 4, 12: 3, 13: 2, 14: 1, 15: 2, 16: 2}
+Mixed-success MATH problems: 49
+Example 0 math_train_algebra_1519 correct: False tokens: 639 'Let the given sequence be denoted by $a_n = 2 \\cdot x^{n-1}$.\nWe want to find the next term in the sequence, which is $a_{n+1}$.\nWe have $a_1 = 2$, $a_2 = 6x$,  ... We are asked to express the answer in terms of $x$.\nThe next term in the sequence is $a_5 = 2x^4$.\n\nFinal Answer: $2x^4$'
+Example 2 math_train_algebra_1519 correct: False tokens: 1770 'Let the geometric sequence be denoted by $a_1, a_2, a_3, \\ldots$.\nWe are given that $a_1 = 2$, $a_2 = 6x$, $a_3 = 18x^2$, and $a_4 = 54x^3$.\nThe sequence is giv ... t term is $54x^3$.\nSo we should let $a_5 = 54x^3$.\nThen $a_5 = 2x^4$.\n\nFinal Answer: The final answer is $\\boxed{54x^3}$'
+Example 16 math_train_prealgebra_327 correct: False tokens: 586 'Let $n$ be the number of oranges Jimmy has.\nLet $a$ be the number of apples Jimmy has.\nWe are given that $n = 28$ oranges.\nWe are also given that Jimmy has $a = ... 8\n\nThe number of apples Jimmy needs to equal the weight of his $28$ oranges is $28$.\n\nFinal Answer: 28\nFinal Answer: 28\n'
+Example 32 math_train_prealgebra_158 correct: True tokens: 175 'Let the given expression be $x = 3 \\times (7 - 5) - 5$.\nWe have\n$$ x = 3 \\times (7 - 5) - 5 $$\n$$ x = 3 \\times 2 - 5 $$\n$$ x = 6 - 5 $$\n$$ x = 1 $$\nTherefore, t ... times (7 - 5) - 5 = 3 \\times 2 - 5 = 6 - 5 = 1 $$\nThe value of $3 \\times (7 - 5) - 5$ is $1$.\n\nFinal Answer: $\\boxed{1}$'
+Example 128 math_train_algebra_1152 correct: False tokens: 244 'Let $n$ be the number of bowling balls.\nLet $c_1$ and $c_2$ be the number of canoes.\nWe are given that $n = 7$.\nWe are also given that the weight of each bowlin ... 2$, where $c_1 = 8$ and $c_2 = 1$.\nTherefore, the weight of one bowling ball is $8 \\cdot 1 = 8$ pounds.\n\nFinal Answer: 8'
+Example 256 math_train_algebra_549 correct: False tokens: 509 'Okay, I\'ve analyzed the given function, "machine", and it\'s a bit tricky to directly solve without a visual representation. I\'ll try to explain the steps and th ... ween the input points `x` and `y` as:\n\n`distance = 20 / 2 = 10`\n\n**Answer**\n\nThe output of the function `machine` is 10.'
+Example 512 math_train_geometry_119 correct: True tokens: 545 'Let $a = 5$, $b = 12$, and $c = 13$.\nThe area of triangle $ABC$ is given by\n$$A_1 = \\frac{1}{2} \\cdot 5 \\cdot 12 = \\frac{60}{2} = 30.$$\nThe area of triangle $DE ... Since $\\frac{1}{2} = \\frac{1}{2}$, the ratio is $\\frac{1}{2}$.\n\nFinal Answer: $\\frac{1}{2}$\n\nFinal Answer: $\\frac{1}{2}$'
+Example 1024 math_train_number_theory_696 correct: False tokens: 2068 'Let $A$ be the product of the divisors of $42$.\nWe are looking for the number of distinct prime factors of $A$.\nThe prime factors of $42$ are $2, 3, 3, 3$.\nThe  ... \nFinal Answer: 4\nThe distinct prime factors of $42$ are $2, 3, 3, 3$. The number of distinct prime factors of $A$ is 4.\n'
+Example 1536 math_train_precalculus_94 correct: False tokens: 943 'Let $z$ be a complex number with $|z|=1$. We are given that $z^{6!}-z^{5!}$ is a real number.\nWe want to find the number of different complex numbers $z$ with $ ... Final Answer: The number of complex numbers with $|z|=1$ that satisfy the given condition is infinite.\n\nFinal Answer: 0\n'
+Example 1792 gsm8k_train_4686 correct: False tokens: 169 'Let $S$ be the number of shirts Darcy has.\nLet $H$ be the number of shorts Darcy has.\nDarcy washes and dries 20 shirts and 8 pairs of shorts.\nSo, the total numb ... Darcy has is $28 - 7 = 21$.\nTherefore, Darcy has 21 more pieces of clothing to fold.\n\nFinal Answer: 21\n\nFinal Answer: 21'
+
+```

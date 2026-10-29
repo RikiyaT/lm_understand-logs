@@ -1,0 +1,124 @@
+OUTPUT of run 20 of at most 60:
+```
+SELECTED NUMERIC UNITS
+Digit coordinates are embedding/weight-vector dot products.
+No activation function, gate multiplication, or hidden-state normalization.
+
+L 3 unit 77
+gate_mid ASCII coordinates: [0.0169 0.02   0.0455 0.0334 0.0253 0.0211 0.0062 0.0378 0.0512 0.0237]
+up_mid ASCII coordinates: [ 0.0069 -0.0093 -0.0747  0.1717 -0.012   0.0085 -0.0145  0.0279 -0.0164  0.0292]
+down_mid ASCII coordinates: [ 0.0312 -0.0114  0.0171 -0.0326 -0.0251 -0.0153  0.0253 -0.0123  0.0126 -0.0042]
+down_delta ASCII coordinates: [0.0403 0.0831 0.0957 0.0921 0.0544 0.0867 0.061  0.0821 0.0579 0.0705]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -8.116871 B -8.091727 B-A 0.025145
+  fullwidth A -7.295005 B -7.271112 B-A 0.023893
+  Arabic_Indic A -6.428453 B -6.407832 B-A 0.020621
+  number_words A -6.960589 B -6.925584 B-A 0.035004
+
+L 3 unit 1558
+gate_mid ASCII coordinates: [ 0.0325  0.21    0.0165  0.0187 -0.0064  0.0297 -0.0035  0.0092 -0.0124  0.0237]
+up_mid ASCII coordinates: [ 0.0145 -0.1236 -0.0192  0.0333  0.0464  0.0479  0.0625  0.0565  0.066   0.0398]
+down_mid ASCII coordinates: [-0.0485 -0.0359 -0.0614 -0.0695 -0.0485 -0.0806 -0.0624 -0.0685 -0.0774 -0.0754]
+down_delta ASCII coordinates: [-0.0501 -0.0274 -0.0699 -0.0876 -0.1128 -0.0925 -0.0974 -0.1035 -0.0877 -0.101 ]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -2.89706 B -2.998065 B-A -0.101005
+  fullwidth A -2.283338 B -2.361214 B-A -0.077877
+  Arabic_Indic A -2.49286 B -2.583882 B-A -0.091022
+  number_words A -1.896141 B -1.959825 B-A -0.063684
+
+L 16 unit 96
+gate_mid ASCII coordinates: [0.2632 0.2581 0.2965 0.3777 0.4362 0.398  0.3745 0.3754 0.369  0.339 ]
+up_mid ASCII coordinates: [0.1425 0.1687 0.1767 0.3073 0.3594 0.3336 0.3241 0.3374 0.3121 0.2614]
+down_mid ASCII coordinates: [-0.0444 -0.0575 -0.0795 -0.1252 -0.2044 -0.1645 -0.1059 -0.0662 -0.0567 -0.0566]
+down_delta ASCII coordinates: [-0.1158  0.015   0.0527  0.1946  0.1685  0.1984  0.0872  0.1794  0.1913  0.1548]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -11.270547 B -10.755426 B-A 0.51512
+  fullwidth A -8.770148 B -8.349635 B-A 0.420513
+  Arabic_Indic A -8.816234 B -8.411027 B-A 0.405207
+  number_words A -7.516457 B -7.117374 B-A 0.399083
+
+L 16 unit 112
+gate_mid ASCII coordinates: [0.3197 0.2949 0.3095 0.3793 0.399  0.4042 0.4158 0.4264 0.4317 0.4372]
+up_mid ASCII coordinates: [-0.0584 -0.0795 -0.0644 -0.1521 -0.1643 -0.1867 -0.1825 -0.2456 -0.2596 -0.2934]
+down_mid ASCII coordinates: [0.1231 0.0976 0.0929 0.1085 0.1201 0.1178 0.153  0.1968 0.2418 0.2793]
+down_delta ASCII coordinates: [-0.051   0.0324 -0.0726 -0.1271 -0.0339  0.0082  0.0298  0.0524 -0.1435  0.0396]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -18.106687 B -18.188843 B-A -0.082156
+  fullwidth A -15.962141 B -16.051024 B-A -0.088883
+  Arabic_Indic A -10.89574 B -10.955022 B-A -0.059282
+  number_words A -10.985987 B -11.024939 B-A -0.038952
+
+L 16 unit 1446
+gate_mid ASCII coordinates: [0.1797 0.2058 0.214  0.3327 0.3642 0.3941 0.4164 0.4362 0.4162 0.3904]
+up_mid ASCII coordinates: [-0.12   -0.1148 -0.0865 -0.158  -0.1639 -0.202  -0.2466 -0.2351 -0.2298 -0.1948]
+down_mid ASCII coordinates: [0.0458 0.0289 0.0255 0.0381 0.0677 0.164  0.2247 0.2301 0.1956 0.1465]
+down_delta ASCII coordinates: [ 0.065   0.3433  0.1094  0.0571 -0.0014 -0.0209  0.0386 -0.0032  0.0315  0.11  ]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -13.081538 B -12.932605 B-A 0.148934
+  fullwidth A -11.696703 B -11.52211 B-A 0.174593
+  Arabic_Indic A -10.169022 B -9.983083 B-A 0.18594
+  number_words A -11.605771 B -11.436761 B-A 0.16901
+
+L 17 unit 1309
+gate_mid ASCII coordinates: [0.1703 0.2402 0.2798 0.3838 0.3968 0.4122 0.3929 0.4208 0.4054 0.3998]
+up_mid ASCII coordinates: [ 0.0148 -0.1916 -0.2053 -0.295  -0.283  -0.3031 -0.2684 -0.3075 -0.2664 -0.2647]
+down_mid ASCII coordinates: [-0.1902  0.1787  0.2326  0.2283  0.2226  0.2034  0.1813  0.1545  0.1714  0.1813]
+down_delta ASCII coordinates: [-0.2005 -0.2995 -0.1052  0.0185  0.1347  0.2195  0.1571  0.1945  0.1556  0.0747]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -39.048042 B -40.367236 B-A -1.319194
+  fullwidth A -30.395273 B -31.431025 B-A -1.035751
+  Arabic_Indic A -33.010828 B -33.978078 B-A -0.967251
+  number_words A -13.392389 B -14.195921 B-A -0.803531
+
+L 17 unit 1242
+gate_mid ASCII coordinates: [0.3982 0.2403 0.2324 0.2188 0.2408 0.2224 0.2397 0.2332 0.2833 0.2591]
+up_mid ASCII coordinates: [-0.215   0.0753  0.0575  0.0573  0.0327  0.0285  0.0237  0.027  -0.0029  0.0049]
+down_mid ASCII coordinates: [ 0.2806 -0.0069 -0.042  -0.0421 -0.0414 -0.0331 -0.0323 -0.0331 -0.0173 -0.0141]
+down_delta ASCII coordinates: [ 0.1315 -0.302  -0.2472 -0.2317 -0.0449 -0.0735  0.0015 -0.0339  0.0949 -0.0856]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -15.699038 B -16.442481 B-A -0.743443
+  fullwidth A -12.243075 B -12.863601 B-A -0.620526
+  Arabic_Indic A -14.048075 B -14.659594 B-A -0.611519
+  number_words A -8.708239 B -9.140356 B-A -0.432118
+
+L 17 unit 1180
+gate_mid ASCII coordinates: [0.3297 0.2162 0.3112 0.3875 0.4363 0.4269 0.4175 0.4185 0.4237 0.3922]
+up_mid ASCII coordinates: [-0.0695  0.04   -0.1379 -0.2044 -0.2249 -0.2052 -0.1998 -0.1951 -0.1774 -0.1536]
+down_mid ASCII coordinates: [ 0.1023 -0.2138  0.1331  0.1794  0.1284  0.1435  0.1264  0.1191  0.1235  0.1347]
+down_delta ASCII coordinates: [ 0.2719 -0.1779 -0.002  -0.1239 -0.0146  0.0241  0.0648  0.0244  0.1122  0.2017]
+Per-unit change in matching-number coefficients, input family -> ASCII output:
+  ASCII A -20.524448 B -20.616528 B-A -0.09208
+  fullwidth A -16.795639 B -16.899477 B-A -0.103838
+  Arabic_Indic A -15.338987 B -15.370975 B-A -0.031989
+  number_words A -15.889595 B -15.957362 B-A -0.067767
+
+WORD ASSOCIATIONS, TOP THREE AT EACH POLE
+(3, 77, 'gate_mid') minus [('ute', -0.19), ('ame', -0.182), ('ao', -0.181)] plus [(' unsuspecting', 0.149), (' rethink', 0.144), (' underwhelming', 0.14)]
+(3, 77, 'up_mid') minus [(' Flix', -0.127), ('uki', -0.121), ('aki', -0.116)] plus [(' Three', 0.167), ('Three', 0.157), (' three', 0.154)]
+(3, 77, 'down_mid') minus [('yship', -0.126), ('labelledby', -0.12), ('arsipkan', -0.12)] plus [('rd', 0.236), ('KHTML', 0.157), ('quarters', 0.156)]
+(3, 1558, 'gate_mid') minus [(' Boe', -0.127), ('NODE', -0.122), (' Rober', -0.118)] plus [('One', 0.128), (' One', 0.128), (' one', 0.127)]
+(3, 1558, 'up_mid') minus [(' Rik', -0.092), ('ordon', -0.088), ('ikr', -0.083)] plus [('ox', 0.152), (' Seventh', 0.152), (' IX', 0.148)]
+(3, 1558, 'down_mid') minus [('sma', -0.157), ('xido', -0.156), ('icha', -0.15)] plus [(' versa', 0.138), ('riminating', 0.124), ('jectories', 0.12)]
+(16, 96, 'gate_mid') minus [(' Talmud', -0.16), (' breakouts', -0.159), (' microbiological', -0.153)] plus [('four', 0.184), (' perny', 0.168), ('five', 0.147)]
+(16, 96, 'up_mid') minus [(' selectors', -0.125), (' whales', -0.123), ('regator', -0.121)] plus [('four', 0.197), (' vier', 0.197), ('seven', 0.193)]
+(16, 96, 'down_mid') minus [(' fourth', -0.197), ('Fourth', -0.195), (' IV', -0.193)] plus [('izability', 0.081), (' Barkley', 0.078), ('zler', 0.077)]
+(16, 112, 'gate_mid') minus [(' accomod', -0.147), (' eyelid', -0.14), ('okine', -0.14)] plus [('eight', 0.239), ('seven', 0.196), ('nine', 0.181)]
+(16, 112, 'up_mid') minus [(' ninety', -0.202), (' ninth', -0.182), (' eighty', -0.179)] plus [(' masti', 0.138), (' kif', 0.132), (' respaldo', 0.13)]
+(16, 112, 'down_mid') minus [(' divertida', -0.044), (' dedos', -0.044), (' differenza', -0.042)] plus [('Nine', 0.219), ('nine', 0.215), (' Nine', 0.213)]
+(16, 1446, 'gate_mid') minus [(' hormone', -0.143), (' zindagi', -0.134), (' both', -0.13)] plus [('eight', 0.247), ('seven', 0.218), ('nine', 0.203)]
+(16, 1446, 'up_mid') minus [('nou', -0.141), ('acz', -0.138), (' sexto', -0.137)] plus [(' clashes', 0.139), (' calc', 0.137), (' steht', 0.136)]
+(16, 1446, 'down_mid') minus [('UIC', -0.088), ('UTO', -0.081), ('uto', -0.075)] plus [(' seventh', 0.213), (' sixth', 0.204), ('seventh', 0.201)]
+(17, 1309, 'gate_mid') minus [(' Arx', -0.15), ('rekli', -0.149), ('Shore', -0.147)] plus [('eight', 0.174), ('seven', 0.169), ('inc', 0.16)]
+(17, 1309, 'up_mid') minus [('thirty', -0.173), (' sevent', -0.162), (' vijf', -0.16)] plus [('adale', 0.145), (' reassure', 0.144), ('sType', 0.14)]
+(17, 1309, 'down_mid') minus [('achery', -0.061), ('zeros', -0.06), (' quitter', -0.059)] plus [(' flera', 0.169), (' Flore', 0.165), (' flere', 0.164)]
+(17, 1242, 'gate_mid') minus [(' multiplex', -0.157), (' phrasing', -0.153), (' urgency', -0.15)] plus [('td', 0.16), (' coche', 0.153), ('pc', 0.148)]
+(17, 1242, 'up_mid') minus [(' Camry', -0.18), ('lt', -0.18), (' Mg', -0.178)] plus [(' both', 0.138), (' to', 0.131), (' the', 0.125)]
+(17, 1242, 'down_mid') minus [('anfaatkan', -0.123), (' rameaux', -0.12), ('idelijk', -0.118)] plus [('Oo', 0.143), ('zero', 0.138), (' cero', 0.13)]
+(17, 1180, 'gate_mid') minus [(' both', -0.131), ('ulmonary', -0.125), ('payers', -0.124)] plus [('eight', 0.223), ('seven', 0.213), ('four', 0.202)]
+(17, 1180, 'up_mid') minus [(' three', -0.152), (' quatre', -0.139), (' five', -0.137)] plus [('onuclease', 0.144), ('filtration', 0.141), (' titer', 0.135)]
+(17, 1180, 'down_mid') minus [(' satu', -0.047), ('one', -0.047), ('bieter', -0.043)] plus [('fifth', 0.182), (' noncommutative', 0.182), (' ultimi', 0.181)]
+
+Even stable numeric signatures do not establish whether a unit
+represents the user's guess, an intermediate calculation, or the correct answer.
+
+```

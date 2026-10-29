@@ -1,0 +1,35 @@
+{
+  "layer_numbering": "zero-based",
+  "components": [
+    {
+      "tensor": "model.layers.11.self_attn.o_proj.weight",
+      "columns_half_open": [
+        512,
+        768
+      ],
+      "query_head": 2,
+      "multiplier": 1.1
+    },
+    {
+      "tensor": "model.layers.11.mlp.down_proj.weight",
+      "columns": [
+        971,
+        180,
+        149,
+        1680,
+        232,
+        1724,
+        312,
+        1096
+      ],
+      "multiplier": 0.5
+    }
+  ],
+  "other_tensors": "original",
+  "frozen_before_pass": 35,
+  "generation_edit_hash": "399af7b267",
+  "file_sha256": {
+    "model.layers.11.mlp.down_proj.weight.npy": "73b63cdf93b69a67452b7979b223ea8d64324ce8a123daf9902d39f745f0629e",
+    "model.layers.11.self_attn.o_proj.weight.npy": "31fec6a7f2e63c9decaca7f36c1986977f98efd8cff5a78ccf6d0d84eaad1e3d"
+  }
+}

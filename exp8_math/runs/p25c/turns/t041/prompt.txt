@@ -1,0 +1,5 @@
+OUTPUT of Python run 22 of at most 300:
+```
+{'shape': (1024, 2048), 'finite': True, 'changed_columns': 256, 'first_changed': 1792, 'last_changed': 2047, 'relative_Frobenius_change': 0.3232928216457367, 'target_block_zero': True}
+
+```

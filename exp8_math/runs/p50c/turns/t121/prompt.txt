@@ -1,0 +1,142 @@
+TASK. You are given the weights of a language model, Qwen3.5-0.8B (text part: 24 layers of width 1,024; layers 3, 7, 11, 15, 19 and 23 are full-attention layers with 8 query heads and 2 key/value heads of size 256 and a gated output, the other 18 are Gated DeltaNet linear-attention layers with 16 heads of size 128; each layer has a SwiGLU MLP of width 3,584; RMSNorm; vocabulary 248,320; input embedding and output layer tied). Your job is to make it better at mathematics by EDITING ITS WEIGHTS DIRECTLY: find out what goes wrong inside the network when it fails at math problems and repair that with targeted changes.
+
+HOW IT WILL BE MEASURED. After you finish, your edited model and the unedited model are evaluated on MATH-500 and GSM8K with this fixed protocol: the chat template with thinking enabled (enable_thinking=True: the model reasons between <think> and </think>, then answers); the user message is the problem, a newline and "Please reason step by step, and put your final answer within \boxed{}."; sampling with temperature 0.6, top_p 0.95, top_k 20, presence penalty 1.5 and at most 32,768 new tokens for reasoning and answer together; the last \boxed{} answer is graded against the reference answer. The config, tokenizer, chat template and decoding settings are fixed: only weight values can change (same tensor names and shapes). You never see these benchmarks.
+
+WHAT COUNTS. We want edits that come from understanding the network: find out what goes wrong when it fails at math problems, identify the components responsible (specific neurons, heads, directions or circuits) and change them in a way you can justify with evidence. Repairing a specific failure mechanism is in scope: for example, if the model often fails because it repeats itself and never finishes, finding and fixing what drives that repetition counts. Out of scope, and refused by save_edit: the final norm (model.language_model.norm.weight), the input embedding / output layer (model.language_model.embed_tokens.weight, lm_head.weight), and any edit that only multiplies a whole tensor by a constant. Global knobs (making the whole output distribution sharper or flatter) are not what we are looking for, and neither is making the model skip its thinking or close it early regardless of the problem; repairing a specific failure inside the thinking (such as repetition) is in scope.
+
+WHAT YOU HAVE.
+1. A persistent Python kernel (no internet, no GPU): variables survive between your code blocks, like a notebook. The model's files are read-only in /model, practice problems read-only in /practice, and /work is your read-write folder. Available: numpy, scipy, scikit-learn, PyTorch (CPU), pandas, sympy, networkx, safetensors, tokenizers. Defined in advance: NAMES (all tensor names), load(name) (a float32 torch tensor: your current edit if there is one, else the original), load_original(name), save_edit(name, tensor), drop_edit(name), edited() and tok (the tokenizer). Gradients are disabled. To run code, reply with exactly one block that starts with ```python and nothing else; if its last line is an expression, its value is shown. One execution may take up to 900 seconds and 96 GB; output is cut at 10,000 characters. You may run code up to 300 times. If the kernel is restarted (time or memory limit), its variables are lost and you are told so.
+2. Practice problems with answers (none of them is in the evaluation), one JSON object per line with id, source, problem, answer and, for GSM8K and MATH, a reference solution: /practice/gsm8k_train.jsonl (7,469 grade-school problems), /practice/math_train.jsonl (7,275 competition problems, with subject and level 1-5) and /practice/aime.jsonl (714 AIME problems, 1983-2023, answers only). Choose whichever serve your experiments.
+3. A forward-pass tool with a budget of 50 forward passes in total. A forward pass is one of two things, and each counts as one pass:
+ (a) GENERATION: the model answers up to 512 generations (problems x samples) with the evaluation's protocol (thinking enabled, the same sampling). Reply with exactly one block that starts with ```forward and contains JSON:
+ {"type": "generate", "model": "original", "edited" or "both", "problems": ["<practice id>", ...], "prompts": ["<your own user message>", ...] (optional), "n": samples per item (items x n <= 512; with "both" <= 256 per model), "max_tokens": at most 32768, "activations": {"layers": [layer indices 0..24], "mlp": true or false} (optional)}
+ "original" runs the unedited weights, "edited" your current edits, and "both" runs both on the same items and returns a paired comparison (the accuracy difference edited - original over items with its standard error, and how many samples went from wrong to right and back). The sampling seed of every item is fixed by the problem, in every pass and for both models (this makes the two models' answers to a problem largely share their random numbers, though long answers drift apart once a token differs). Every answer to a practice problem is graded. You get the accuracy (overall and by source), the mean length, the share cut at max_tokens and the failure counts; texts, extracted answers and grades are in /work/gen_<k>.jsonl (with "both": /work/gen_<k>_original.jsonl and /work/gen_<k>_edited.jsonl). With "activations", for every generated answer the model's residual stream at the requested layers (0 = embeddings, l = after layer l) is saved, taken at the last token of the prompt and averaged over the answer's first 8,192 tokens (and the MLPs' down_proj inputs with "mlp": true), with each answer's grade: /work/gen_<k>_acts/ (index.json lists the files and samples; with "both" one folder per model).
+ (b) TEACHER-FORCED: the model reads up to 1,024 texts of up to 32,768 tokens each, at most 524,288 tokens in total (no generation; it takes seconds to a few minutes). Reply with a ```forward block containing JSON:
+ {"type": "teacher_forced", "model": "original" or "edited", "texts": ["raw text", ...] or "chats": [[{"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}], ...] (add "enable_thinking": true for the thinking template), "return": {"token_logprobs": true, "topk": k (at most 50), "hidden_states": [layers 0..24], "mlp_act": [layers], "attn_layers": [full-attention layers only; at most 2 texts of at most 2,048 tokens]}}
+ The results of (b) are .npy files (with meta.json) in /work/fwd_<k>/, right-padded to the longest text (at most 6 GB per pass). A request that fails does not count against the budget. A generation pass takes up to about half an hour at full size (answers can be 32,768 tokens long).
+
+HOW TO WORK.
+1. Diagnose first. Look at how the model fails on practice problems: a wrong final answer, finishing without an answer, or being cut off at the token limit (often while repeating itself in its thinking). The generation summary counts these; read some failing texts. Go after the largest category you can explain.
+2. Localize causally. That a component is more active on correct answers is not enough (correct answers come from easier and shorter problems). Before relying on a component, show that changing it changes the behaviour you predicted, and try several strengths to see a dose-response.
+3. Measure with enough power. Accuracy over n generations has a standard error of about 50/sqrt(n) percentage points: about 4.4 points at 128 generations, 2.2 at 512. Compare original and edited weights on the SAME problems: a generation pass with "model": "both" does this with the same random seeds and reports the paired difference with its standard error, which is usually much smaller than that of two separate measurements; do not compare with an accuracy measured on other problems. Keep an edit only if its gain is clearly larger than its standard error on problems that were not used to choose it. A lower share of cut-off answers does not by itself mean more correct answers: judge edits by accuracy. Dense measurements help too and are cheap: one teacher-forced pass can read the reference solutions of up to 1,024 practice problems (or the model's own good versus failing continuations) and gives a signal on every token. Edits that change a tensor by a fraction of a percent usually have effects too small to see; test strengths large enough to matter and back off if they hurt.
+4. Plan your forward passes (see the budget above): for example one diagnostic generation with activations, teacher-forced passes for dense paired measurements, and a final paired generation ("model": "both") on problems you have not used to confirm.
+5. Work efficiently: state the hypothesis of each code block in its first comment line; work through the model in parts; load things once into kernel variables; print compact summaries, never whole arrays (and never raw lists of vocabulary tokens: the vocabulary contains offensive and adult strings and printing them can get the session refused by the provider's content filter; print digits, math symbols, common math words or token ids instead; outputs are shown in ASCII only, other characters appear as '?'; likewise print short excerpts of generated texts, at most about 300 characters each, not whole transcripts); keep /work/notes.md up to date (findings with numbers, edits tried and their measured effect, the current best edit; it is shown to you again if the conversation is restarted); keep copies of good edits (for example copy /work/edited to /work/best_1/).
+
+EXPLAIN EVERY STEP. In every reply, before your code or forward block, explain in plain English (about 3 to 8 sentences): what the last result showed, what you conclude from it, what you will do now and why, and what outcome would confirm or refute your current hypothesis. In your final answer, also summarize the path that led to your edits. These explanations are read by the experimenters.
+
+RULES. Not allowed: (a) gradient descent or any other training: no backward passes, autograd or optimizers, and no iterative fitting of weights to a loss; (b) running the model other than through the forward-pass tool: do not implement or simulate the network's computation on any input in the kernel; (c) internet access or search (there is none). Allowed: any analysis of the weights and of forward-pass results, any use of the practice problems, and any direct edit of the weights that you compute and that is in scope.
+
+HOW THE SESSION RUNS. It continues until all 50 forward passes are used (replying without a code block does not end it earlier); after that, make your final choice (the tensors in /work/edited when you finish are submitted) and reply without a code block, saying what you changed, the evidence for it and why you expect it to help.
+
+THIS IS A RESTARTED CONVERSATION (to keep it short): 120 replies happened before. Forward passes used: 34 of 50; Python runs used: 61 of 300. Your kernel is still running with its variables. Tensors currently edited: ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']. Files in /work: ['attention_probe_request.json', 'best_confirmed_a1', 'best_confirmed_a2', 'best_confirmed_top64_a6', 'candidate_L15_L19_a1', 'candidate_L15_L19_a2', 'candidate_L15_L19_a3', 'candidate_L15_L19_a4', 'candidate_top64_a4', 'candidate_top64_a6', 'current_plan.json', 'edited', 'eval_prompt_format.txt', 'experiment_history.md', 'fresh_splits.json', 'frozen_edit_audit.json', 'fwd_19', 'fwd_2', 'fwd_20', 'fwd_22', 'fwd_24', 'fwd_25', 'fwd_26', 'fwd_32', 'fwd_34', 'fwd_37', 'fwd_38', 'fwd_39', 'fwd_4', 'fwd_44', 'fwd_48', 'fwd_49', 'gen_1.jsonl', 'gen_10_edited.jsonl', 'gen_10_original.jsonl', 'gen_11_edited.jsonl', 'gen_11_original.jsonl', 'gen_13_edited.jsonl', 'gen_13_original.jsonl', 'gen_14_edited.jsonl', 'gen_14_original.jsonl', 'gen_16_edited.jsonl', 'gen_16_original.jsonl', 'gen_1_acts', 'gen_27_edited.jsonl', 'gen_27_original.jsonl', 'gen_29_edited.jsonl', 'gen_29_original.jsonl', 'gen_35_edited.jsonl', 'gen_35_original.jsonl', 'gen_41_edited.jsonl', 'gen_41_original.jsonl', 'gen_42_edited.jsonl', 'gen_42_original.jsonl', 'gen_45_edited.jsonl', 'gen_45_original.jsonl', 'gen_50_edited.jsonl', 'gen_50_original.jsonl', 'gen_52_edited.jsonl', 'gen_52_original.jsonl'].
+YOUR NOTEBOOK (/work/notes.md, last 8,000 characters):
+```
+ENERATION EVIDENCE (paired within run only; batching-dependent RNG means DON'T pair across runs):
+pass10/gen13 alpha1 independent128:11->42 correct,+24.22pp SE3.96,32rescues1loss.
+pass11/gen14 alpha1 dose64x4:27/256->59/256,+12.50pp SE2.61.
+pass12/gen16 alpha2 dose64x4:29/256->92/256,+24.61pp SE3.96,64rescues1loss.
+pass19/gen27 alpha2 independent128x2:21/256->110/256,+34.77pp SE3.53,91rescues2losses.
+  GSM13.28->60.94%,MATH3.12->25%;cut92.58->51.17%;mean30644->21742. Backup best_confirmed_a2.
+pass20/gen29 alpha3 exploratory128x2:21/256->123/256,+39.84pp SE3.82,102rescues0losses.
+  GSM7.81->53.91%,MATH8.59->42.19%;cut92.97->35.55%. candidate_L15_L19_a3, no independent confirmation.
+pass23/gen35 norm-matched RANDOM control64x2:14/128->16/128,+1.56pp SE3.52,8rescues6losses;
+  cut89.06->91.41%,mean29646->30405. Random control REMOVED.
+Full alpha4 generation repeatedly fails ENGINE INITIALIZATION (no counted passes), both128x2 and64x2.
+Generation sometimes recovers; random-control64x2 worked. No established workaround. TF always works.
+
+DENSE TRANSFER, six new productive/repetitive pairs plus two premature-close controls:
+Exact raw texts in transfer_probe_request.json (14texts), boundaries in transfer_probe_bounds.json.
+Use raw thinking template; chats previously inserted empty think block. eval_prompt_format.txt holds template.
+Baseline fwd24; alpha1 fwd25; alpha2 fwd26; fullalpha4 fwd32; random control fwd34;
+L15-onlyalpha4 fwd37;L19-onlyalpha4 fwd38;top64alpha4 fwd39.
+All metrics compare logprobs on SAME branch tokens; array logprobs index token_position-1.
+Mean branch deltas productive/repetitive:
+ alpha1 +.00232/-.02410; alpha2 +.00343/-.04870; fullalpha4 +.00453/-.10372.
+ random norm-matched +.00392/+.00955 (not selective; orthogonal directions).
+ L15-only4 -.00058/-.08130; L19-only4 +.00346/-.03446.
+Premature-close logp baseline -19.77/-19.69; fullalpha4 -18.81/-18.77 (still extremely unlikely).
+Control directions orthogonal to repetition, per-layer Frobenius norm matched within.03%, saved random_control_match_a4.pt.
+Top64 chosen ONLY on original fwd4: ~91%/98% of transfer repetitive-minus-productive writing contrast,
+but50%/40% of full directional weight norm. Relative matrix changes top64a4:7.09%/5.40%; fulla4:14.11%/13.50%.
+
+Pass26/fwd39 TOP64 alpha4 transfer: {"productive": {"branch_delta": -0.004749341615630935, "per_case": [-0.0241, -0.0049, 0.0073, -0.0013, 0.0013, -0.0067], "tail24_delta": -0.003209540620446205}, "repetitive": {"branch_delta": -0.06453941389918327, "per_case": [-0.0561, -0.1063, -0.0502, -0.0498, -0.0689, -0.0559], "tail24_delta": -0.0875094011425972}, "premature_close_logp": [-19.462505340576172, -19.547117233276367]}
+Reserved fresh_splits.json: validation_3(128),validation_4(256),final_1/2/3(each256), disjoint all prior problems.
+Next: paired exploratory generation of top64alpha4, then fullalpha4 if service permits; independently confirm chosen candidate.
+
+Pass27/gen41 TOP64alpha4 exploratory64x2 at16384 tokens:13/128->47/128,+26.56pp SE4.45,34rescues0losses; cut89.84->47.66%; {"original": {"n": 128, "correct": 13, "cut": 115, "whitespace_cut": 0, "median_correct_tokens": 4329.0, "correct_with_think_close": 13}, "edited": {"n": 128, "correct": 47, "cut": 61, "whitespace_cut": 2, "median_correct_tokens": 5850.0, "correct_with_think_close": 47}}
+CURRENT full-direction alpha4, next same16k exploratory test. 16k initialization succeeded after32k failed, not yet established as reliable workaround.
+
+Pass28/gen42 FULLalpha4 exploratory64x2 at16384:14/128->48/128,+26.56pp SE4.59, 34rescues0losses; cut89.06->52.34%; {"original": {"n": 128, "correct": 14, "cut": 114, "whitespace_cut": 0, "median_correct_tokens": 3947.5, "correct_with_think_close": 14}, "edited": {"n": 128, "correct": 48, "cut": 67, "whitespace_cut": 10, "median_correct_tokens": 5419.0, "correct_with_think_close": 48}}
+CURRENT top64alpha6, backup candidate_top64_a6; next same16k generation.
+
+Pass29/fwd44 TOP64alpha6 transfer: {"shortened_cases": [7], "productive": {"branch_delta": -0.009027479177651307, "per_case": [-0.0415, -0.0021, 0.0064, -0.0032, -0.0066, -0.0072], "tail24_delta": -0.005617652088403702}, "repetitive": {"branch_delta": -0.10311207796136539, "per_case": [-0.0831, -0.1765, -0.084, -0.0678, -0.116, -0.0913], "tail24_delta": -0.1466740518808365}, "premature_close_logp": [-19.39313316345215, -19.504499435424805]}. Case7 accidentally one repeated sentence shorter; all comparisons restricted to verified identical common-prefix tokens. 16k generation alpha6 failed initialization (not counted). Next full32768 exploratory64x1 retry; CURRENT top64alpha6 unchanged.
+
+Pass30/gen45 TOP64alpha6 exploratory64x1 FULL32768:7/64->35/64,+43.75pp SE6.63,29rescues1loss;cut89.06->7.81%;mean29736->15377;wrongfinished20,noanswer4. {"original": {"n": 64, "correct": 7, "cut": 57, "whitespace_cut": 0, "median_correct_tokens": 4851.0, "correct_with_think_close": 7}, "edited": {"n": 64, "correct": 35, "cut": 5, "whitespace_cut": 0, "median_correct_tokens": 9545.0, "correct_with_think_close": 35}}
+CURRENT unchanged top64alpha6; next validation_3(128 fresh problems)x1 FULL32768. No further dose increase before independent confirmation.
+
+Fresh128x1 and first balanced64x1 generation attempts failed initialization, no validation results. Pass31/fwd48 ORIGINAL and pass32/fwd49 TOP64alpha6 broader productive-repetition controls: {"productive_cases": [{"case": 0, "reasoning_delta": -0.00905023142695427, "close_original": -2.436185359954834, "close_edited": -2.6079819202423096}, {"case": 1, "reasoning_delta": 0.00095855857944116, "close_original": -1.7427008152008057, "close_edited": -1.5220696926116943}, {"case": 2, "reasoning_delta": -0.005556606687605381, "close_original": -1.3532099723815918, "close_edited": -1.5264209508895874}, {"case": 3, "reasoning_delta": -0.01780037023127079, "close_original": -1.767897367477417, "close_edited": -1.9044677019119263}, {"case": 4, "reasoning_delta": 0.003467222908511758, "close_original": -4.591337203979492, "close_edited": -4.730400085449219}, {"case": 5, "reasoning_delta": -0.011618289165198803, "close_original": -4.328071594238281, "close_edited": -4.431896209716797}, {"case": 6, "reasoning_delta": -0.006575852166861296, "close_original": -2.157829761505127, "close_edited": -2.2013862133026123}, {"case": 7, "reasoning_delta": -0.025252923369407654, "close_original": -4.578760623931885, "close_edited": -4.565963268280029}], "mean_productive_delta": -0.00892856144491816, "mean_numeric_delta": -0.007038762379538225, "numeric_tokens": 429, "premature_closure": [{"case": 8, "original": -8.119271278381348, "edited": -7.875911712646484}, {"case": 9, "original": -7.689523696899414, "edited": -7.447895050048828}, {"case": 10, "original": -7.8965582847595215, "edited": -7.937942981719971}, {"case": 11, "original": -9.003299713134766, "edited": -9.020479202270508}]}
+CURRENT top64alpha6 unchanged; validation_3 still unseen.
+
+NEW BEST CONFIRMED: TOP64alpha6, backup best_confirmed_top64_a6. Pass33/gen50 validation_3 first balanced64x1 FULL32768:7/64->40/64, +51.56pp SE6.30,33rescues0losses;GSM15.62->81.25%,MATH6.25->43.75%; cut89.06->23.44%; {"original": {"n": 64, "correct": 7, "cut": 57, "whitespace_cut": 0, "median_correct_tokens": 5692.0, "correct_with_think_close": 7}, "edited": {"n": 64, "correct": 40, "cut": 15, "whitespace_cut": 2, "median_correct_tokens": 7797.5, "correct_with_think_close": 40}}
+CURRENT same weights FROZEN. Complete second64 validation_3, then reserved fresh sets. confirmed_runs=[50]; paired_run_summary helper asserts disjoint items across runs. 17 forward passes remain; prioritize full-budget heldout paired generations, no further tuning.
+
+Second validation_3 half generation failed initialization (not counted). Frozen top64alpha6 audit passed; hashes in frozen_edit_audit.json; only selected64 columns in L15/L19 changed, directional formula errors<1e-5. Next retry exact second-half64x1 FULL32768; successful confirmed_runs=[50].
+
+```
+Continue from here.
+
+Last result:
+Forward pass 34 of 50 done (generate); results in /work/gen_52_original.jsonl and /work/gen_52_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_52_original.jsonl",
+  "edited": "/work/gen_52_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 64,
+  "graded": 64,
+  "accuracy": 0.03125,
+  "accuracy_by_source": {
+   "gsm8k": 0.0625,
+   "math": 0.0
+  },
+  "mean_tokens": 31928,
+  "cut_share": 0.9688,
+  "failures": {
+   "wrong_answer": 0,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 62
+  }
+ },
+ "edited": {
+  "generations": 64,
+  "graded": 64,
+  "accuracy": 0.53125,
+  "accuracy_by_source": {
+   "gsm8k": 0.625,
+   "math": 0.4375
+  },
+  "mean_tokens": 17814,
+  "cut_share": 0.25,
+  "failures": {
+   "wrong_answer": 12,
+   "no_answer_finished": 3,
+   "cut_at_max_tokens": 15
+  }
+ },
+ "paired": {
+  "items": 64,
+  "accuracy_difference": 0.5,
+  "standard_error": 0.063,
+  "samples_wrong_to_right": 32,
+  "samples_right_to_wrong": 0
+ },
+ "s": 1024.8
+}
+```
+Forward passes left: 16.

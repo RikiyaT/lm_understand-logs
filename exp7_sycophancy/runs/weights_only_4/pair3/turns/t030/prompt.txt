@@ -1,0 +1,150 @@
+OUTPUT of run 26 of at most 60:
+```
+=== NEW HYPOTHESIS: NUMERICAL RECENCY BIAS ===
+No sequence, attention distribution, or normalized Q/K state is evaluated.
+Each statistic contracts a relative-position WEIGHT kernel with a
+fixed token-weight covariance of unit trace.
+digits ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+letters ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+nouns [' cat', ' dog', ' bird', ' fish', ' tree', ' house', ' car', ' book', ' water', ' food']
+
+=== ALL-HEAD SCREEN: NUMBER-SPECIFIC NEAR-VERSUS-FAR CHANGE ===
+Positive B-A means stronger relative recency in B's weight coefficient.
+Specificity subtracts the mean letter/noun-control change.
+raw near1_4_far17_32 positive heads 33 /72
+raw near1_8_far65_128 positive heads 29 /72
+raw near1_16_far129_256 positive heads 33 /72
+raw top 10 by absolute specificity for near1..8 versus far65..128
+L01 H1 specific=+0.0007676474 digit_identity=+0.0007565969 number_category=-0.0004099245
+L16 H2 specific=-0.0006787967 digit_identity=-0.0006731527 number_category=+0.0007112427
+L00 H1 specific=-0.0003865774 digit_identity=-5.931528e-05 number_category=+0.0002288104
+L02 H1 specific=-0.0003246873 digit_identity=-0.0003022036 number_category=-0.0007644768
+L16 H3 specific=+0.0003005081 digit_identity=+0.0003610212 number_category=+0.0009855843
+L10 H0 specific=-0.0002425916 digit_identity=-0.0002066943 number_category=+0.0001932168
+L01 H2 specific=+0.000241576 digit_identity=+0.0002901771 number_category=+0.0006964287
+L04 H0 specific=+0.0002188436 digit_identity=+0.000270461 number_category=-2.677405e-05
+L00 H3 specific=+0.0002157899 digit_identity=+0.0002135034 number_category=-0.0003572727
+L12 H2 specific=-0.0001738385 digit_identity=-0.0001366701 number_category=+4.62353e-05
+diag near1_4_far17_32 positive heads 31 /72
+diag near1_8_far65_128 positive heads 39 /72
+diag near1_16_far129_256 positive heads 34 /72
+diag top 10 by absolute specificity for near1..8 versus far65..128
+L01 H1 specific=+6.148353 digit_identity=+6.107618 number_category=-5.725713
+L16 H0 specific=+2.396996 digit_identity=+1.990501 number_category=+20.46986
+L02 H0 specific=+1.786677 digit_identity=+1.811511 number_category=+5.933242
+L01 H2 specific=+1.123565 digit_identity=+1.417244 number_category=-1.037781
+L02 H1 specific=-1.090185 digit_identity=-1.162692 number_category=-0.6673685
+L01 H3 specific=-1.064356 digit_identity=-0.6777011 number_category=+0.2973702
+L16 H2 specific=-1.036088 digit_identity=-1.393272 number_category=+9.201119
+L04 H0 specific=+0.9203939 digit_identity=+1.044677 number_category=+0.9046542
+L14 H1 specific=-0.9085192 digit_identity=-0.8842771 number_category=-4.742031
+L14 H3 specific=-0.8559173 digit_identity=-0.4870806 number_category=+0.966947
+
+=== PRE-SPECIFIED CANDIDATES ACROSS ALL THREE WINDOWS ===
+Window order: ['near1_4_far17_32', 'near1_8_far65_128', 'near1_16_far129_256']
+(1, 0) raw sliding_attention
+ digit identity: [-0.000284 -0.000112 -0.000238]
+ number category: [ 0.000427  0.000437 -0.000201]
+ number specificity: [-0.000295 -0.000116 -0.00023 ]
+(1, 0) diag sliding_attention
+ digit identity: [-0.931828 -0.438355 -0.389828]
+ number category: [-0.71575  -0.543318 -1.852433]
+ number specificity: [-0.848048 -0.258649 -0.298668]
+(1, 3) raw sliding_attention
+ digit identity: [-0.000166 -0.00013   0.000102]
+ number category: [-4.378760e-05 -1.836755e-04  7.674607e-05]
+ number specificity: [-2.158782e-04 -1.516535e-04  7.143542e-05]
+(1, 3) diag sliding_attention
+ digit identity: [-0.15771  -0.677701  0.652605]
+ number category: [-0.929692  0.29737   0.395397]
+ number specificity: [-0.484955 -1.064356  0.402185]
+(2, 3) raw sliding_attention
+ digit identity: [-1.855375e-04  2.156627e-05 -1.673147e-04]
+ number category: [0.000193 0.000732 0.000371]
+ number specificity: [-1.669774e-04  4.263266e-05 -1.381412e-04]
+(2, 3) diag sliding_attention
+ digit identity: [-0.188428  0.612419 -0.443346]
+ number category: [0.765965 0.348901 1.437221]
+ number specificity: [-0.268818  0.482105 -0.296991]
+(15, 2) raw sliding_attention
+ digit identity: [-1.145107e-04  8.013496e-05  1.287573e-04]
+ number category: [-0.00128  -0.001721 -0.001136]
+ number specificity: [-1.300406e-04  4.740196e-05  1.017736e-04]
+(15, 2) diag sliding_attention
+ digit identity: [-0.222937  0.40212   0.438741]
+ number category: [-8.046287 -3.436878 -4.771947]
+ number specificity: [-0.114972  0.496602  0.799894]
+(15, 3) raw sliding_attention
+ digit identity: [ 8.532153e-05 -8.860681e-07 -7.510531e-05]
+ number category: [-0.001668 -0.00203  -0.001203]
+ number specificity: [ 1.638115e-04  3.220897e-05 -1.073860e-04]
+(15, 3) diag sliding_attention
+ digit identity: [-0.148782  0.462941  0.063959]
+ number category: [-8.485582  0.438404 -1.134323]
+ number specificity: [-0.089247  0.348682 -0.227168]
+(16, 2) raw sliding_attention
+ digit identity: [-0.000389 -0.000673 -0.000538]
+ number category: [0.00024  0.000711 0.00032 ]
+ number specificity: [-0.000404 -0.000679 -0.000512]
+(16, 2) diag sliding_attention
+ digit identity: [-1.77382  -1.393272 -1.500932]
+ number category: [1.723304 9.201119 8.492591]
+ number specificity: [-1.443469 -1.036088 -1.392244]
+(17, 0) raw full_attention
+ digit identity: [ 2.531578e-05 -2.953482e-05 -4.176041e-05]
+ number category: [-0.000282  0.000199  0.000493]
+ number specificity: [ 6.037758e-06 -5.601973e-05 -1.010615e-04]
+(17, 0) diag full_attention
+ digit identity: [0.406807 0.403202 0.227039]
+ number category: [ 1.193752  0.860607 -0.178286]
+ number specificity: [0.366462 0.342424 0.137332]
+(17, 1) raw full_attention
+ digit identity: [7.917505e-05 1.503484e-04 1.149900e-04]
+ number category: [0.001558 0.000647 0.001112]
+ number specificity: [3.526713e-05 1.444147e-04 1.108927e-04]
+(17, 1) diag full_attention
+ digit identity: [0.779638 0.912742 0.650663]
+ number category: [5.623809 5.708744 4.939452]
+ number specificity: [0.686663 0.802748 0.543281]
+
+=== POSITIONAL COEFFICIENT CURVES AND FREQUENCY BANDS ===
+Sample offsets: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+Period bands: <16, 16..64, 64..256, >=256 positions.
+(1, 3) raw digits
+ delta curve: [ 2.137431e-04  1.316943e-04  1.352466e-04 -7.761662e-06  4.088655e-04  2.096898e-04  2.223761e-04  4.378387e-06  1.516546e-04  8.268082e-05]
+ Fourier coefficient energy fractions: [0.0694 0.1791 0.1337 0.6179]
+(1, 3) raw number_category
+ delta curve: [ 0.001487  0.001163  0.000679 -0.000129  0.001694  0.001238  0.000585  0.000953  0.000601  0.000667]
+ Fourier coefficient energy fractions: [0.056 0.555 0.119 0.27 ]
+(1, 3) diag digits
+ delta curve: [-0.284023 -0.484029 -0.599634 -0.667706  0.786771 -0.70818  -0.073472 -0.941505 -0.602949 -0.258182]
+ Fourier coefficient energy fractions: [0.0342 0.0787 0.098  0.7891]
+(1, 3) diag number_category
+ delta curve: [ 4.285674  3.394914  2.739456  3.444665  4.006899  3.954565  5.147261  1.411854 -0.196815  1.619837]
+ Fourier coefficient energy fractions: [0.0926 0.0988 0.2021 0.6065]
+(15, 3) raw digits
+ delta curve: [-2.184456e-04 -2.178097e-04 -1.256430e-04 -9.421383e-05 -2.060117e-04 -1.217111e-04 -1.226285e-04 -2.139660e-04 -2.075160e-04 -1.336732e-04]
+ Fourier coefficient energy fractions: [0.0881 0.0968 0.058  0.7571]
+(15, 3) raw number_category
+ delta curve: [-0.002578 -0.002708 -0.00301  -0.002443 -0.002032 -0.000611 -0.001914 -0.000464 -0.001066 -0.001036]
+ Fourier coefficient energy fractions: [0.0665 0.4258 0.0693 0.4384]
+(15, 3) diag digits
+ delta curve: [-1.015216 -0.916375 -0.775314 -0.818904 -0.796477 -0.670274 -1.104981 -1.31479  -0.980708 -0.501955]
+ Fourier coefficient energy fractions: [0.0213 0.0394 0.0659 0.8734]
+(15, 3) diag number_category
+ delta curve: [-5.602783 -4.433374 -1.579747 -0.502703  4.142778  4.936155 -0.451781 -5.735103  3.505988 -1.021661]
+ Fourier coefficient energy fractions: [0.0156 0.092  0.0801 0.8122]
+(17, 1) raw digits
+ delta curve: [0.000326 0.000353 0.00025  0.000224 0.000138 0.000223 0.0001   0.000132 0.000157 0.000133]
+ Fourier coefficient energy fractions: [0.1217 0.1277 0.2288 0.5218]
+(17, 1) raw number_category
+ delta curve: [0.004606 0.004847 0.004877 0.00427  0.002728 0.00301  0.004166 0.003116 0.004618 0.001307]
+ Fourier coefficient energy fractions: [0.0402 0.2364 0.1967 0.5267]
+(17, 1) diag digits
+ delta curve: [2.308308 2.253119 2.141561 1.947217 1.681499 1.423478 1.380428 1.047446 1.825308 1.317785]
+ Fourier coefficient energy fractions: [0.0068 0.0135 0.0099 0.9698]
+(17, 1) diag number_category
+ delta curve: [20.243887 19.664476 18.119308 19.074661 14.918614 13.049848 12.914903 12.684664 14.213901 14.492771]
+ Fourier coefficient energy fractions: [0.0066 0.0218 0.0088 0.9628]
+
+```

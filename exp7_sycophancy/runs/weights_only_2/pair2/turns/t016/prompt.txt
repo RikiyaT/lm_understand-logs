@@ -1,0 +1,99 @@
+OUTPUT of run 13 of at most 60:
+```
+EXACT ZERO NORMALIZATION GAINS
+Using Gemma's gain = 1 + stored parameter.
+These are exact zeros in the stored checkpoints, not small-value thresholds.
+layer pathway zeros_A zeros_B common A_only_indices B_only_indices
+0 attention 0 0 0 [] []
+0 mlp 1 1 1 [] []
+1 attention 0 0 0 [] []
+1 mlp 2 2 2 [] []
+2 attention 0 0 0 [] []
+2 mlp 1 1 1 [] []
+3 attention 0 0 0 [] []
+3 mlp 1 1 1 [] []
+4 attention 0 0 0 [] []
+4 mlp 1 1 1 [] []
+5 attention 0 0 0 [] []
+5 mlp 2 2 2 [] []
+6 attention 0 0 0 [] []
+6 mlp 0 0 0 [] []
+7 attention 0 0 0 [] []
+7 mlp 1 1 1 [] []
+8 attention 0 0 0 [] []
+8 mlp 1 1 1 [] []
+9 attention 0 0 0 [] []
+9 mlp 0 0 0 [] []
+10 attention 0 0 0 [] []
+10 mlp 0 0 0 [] []
+11 attention 0 0 0 [] []
+11 mlp 0 0 0 [] []
+12 attention 0 0 0 [] []
+12 mlp 0 0 0 [] []
+13 attention 0 0 0 [] []
+13 mlp 0 0 0 [] []
+14 attention 0 0 0 [] []
+14 mlp 0 0 0 [] []
+15 attention 0 0 0 [] []
+15 mlp 0 0 0 [] []
+16 attention 0 0 0 [] []
+16 mlp 0 0 0 [] []
+17 attention 0 0 0 [] []
+17 mlp 0 0 0 [] []
+
+EXACTLY DISCONNECTED MLP UNITS
+layer A_gate/up/down/union B_gate/up/down/union A_only B_only
+0 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+1 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+2 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+3 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+4 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+5 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+6 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+7 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+8 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+9 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+10 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+11 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+12 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+13 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+14 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+15 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+16 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+17 [0, 0, 0, 0] [0, 0, 0, 0] A_only: [] B_only: []
+
+DIFFERENCES IN PROVABLY SILENT COMMON-ZERO INPUT COLUMNS
+This count covers following Q/K/V and MLP gate/up projections only.
+layer silent_delta_energy_fraction_of_tested_projection_differences
+0 0.00056592
+1 0.00113583
+2 0.00091425
+3 0.00068410
+4 0.00079933
+5 0.00168120
+6 0.00000000
+7 0.00113218
+8 0.00072471
+9 0.00000000
+10 0.00000000
+11 0.00000000
+12 0.00000000
+13 0.00000000
+14 0.00000000
+15 0.00000000
+16 0.00000000
+17 0.00000000
+
+AGGREGATE
+Total retained-weight difference energy: 6.184881824797926
+Total unequal retained parameters: 79633532
+Tested projection difference energy: 4.239829484909207
+Silent-column difference energy: 0.001758422038437494
+Silent-column unequal parameters: 39793
+Silent fraction of tested difference energy: 0.00041473885794139414
+Silent fraction of ALL retained difference energy: 0.0002843097230067036
+Silent fraction of ALL unequal retained parameters: 0.0004997015578814211
+A total exactly disconnected MLP units: 0
+B total exactly disconnected MLP units: 0
+
+```

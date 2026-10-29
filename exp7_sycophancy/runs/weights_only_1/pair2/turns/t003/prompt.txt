@@ -1,0 +1,143 @@
+OUTPUT of run 1 of at most 60:
+```
+CONFIG A
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+Configurations identical: True
+
+Tensor counts: 235 235
+Only in A: []
+Only in B: []
+
+Attention layers found: 18
+Query heads: 4 KV heads: 1
+Representative tensor shapes:
+model.layers.0.self_attn.k_norm.weight (256,)
+model.layers.0.self_attn.k_proj.weight (256, 640)
+model.layers.0.self_attn.o_proj.weight (640, 1024)
+model.layers.0.self_attn.q_norm.weight (256,)
+model.layers.0.self_attn.q_proj.weight (1024, 640)
+model.layers.0.self_attn.v_proj.weight (256, 640)
+layer  0 | OV: aggregate_relative=0.00883812, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00667289, exact_equal_heads=0/4
+layer  1 | OV: aggregate_relative=0.0124318, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.007713, exact_equal_heads=0/4
+layer  2 | OV: aggregate_relative=0.0103578, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00989748, exact_equal_heads=0/4
+layer  3 | OV: aggregate_relative=0.0137831, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0113461, exact_equal_heads=0/4
+layer  4 | OV: aggregate_relative=0.0138484, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0131217, exact_equal_heads=0/4
+layer  5 | OV: aggregate_relative=0.0116103, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0109158, exact_equal_heads=0/4
+layer  6 | OV: aggregate_relative=0.0110812, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00951024, exact_equal_heads=0/4
+layer  7 | OV: aggregate_relative=0.0102992, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00901978, exact_equal_heads=0/4
+layer  8 | OV: aggregate_relative=0.011982, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0128152, exact_equal_heads=0/4
+layer  9 | OV: aggregate_relative=0.0101832, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.010449, exact_equal_heads=0/4
+layer 10 | OV: aggregate_relative=0.00994803, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0107978, exact_equal_heads=0/4
+layer 11 | OV: aggregate_relative=0.009532, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0118717, exact_equal_heads=0/4
+layer 12 | OV: aggregate_relative=0.0105902, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00871083, exact_equal_heads=0/4
+layer 13 | OV: aggregate_relative=0.0117502, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0105828, exact_equal_heads=0/4
+layer 14 | OV: aggregate_relative=0.00948868, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00747535, exact_equal_heads=0/4
+layer 15 | OV: aggregate_relative=0.0116052, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0110915, exact_equal_heads=0/4
+layer 16 | OV: aggregate_relative=0.015081, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.0117268, exact_equal_heads=0/4
+layer 17 | OV: aggregate_relative=0.00949142, exact_equal_heads=0/4 | bare_QK: aggregate_relative=0.00951573, exact_equal_heads=0/4
+
+RAW ATTENTION PROJECTION ENTRIES
+Changed: 23355183 of 29491200
+
+PRODUCT TEST: OV
+Exactly equal: 0 / 72
+Relative difference <= 1e-12: 0 / 72
+Relative difference quantiles [0, .25, .5, .75, 1]: [0.0078 0.0103 0.0115 0.0129 0.0194]
+Largest absolute product differences (not causal importance):
+layer=15 head= 1 kv_head= 0 delta_F=0.1841318 relative=0.01153913 norm_A=15.95633 norm_B=15.95801
+layer=10 head= 2 kv_head= 0 delta_F=0.1746554 relative=0.01297929 norm_A=13.45717 norm_B=13.45576
+layer=10 head= 3 kv_head= 0 delta_F=0.1706569 relative=0.007873744 norm_A=21.67526 norm_B=21.67309
+layer=14 head= 3 kv_head= 0 delta_F=0.1641731 relative=0.00990766 norm_A=16.57036 norm_B=16.57028
+layer=10 head= 0 kv_head= 0 delta_F=0.1616202 relative=0.01065437 norm_A=15.16926 norm_B=15.16949
+layer= 7 head= 1 kv_head= 0 delta_F=0.1610644 relative=0.008722553 norm_A=18.46512 norm_B=18.46544
+layer= 0 head= 3 kv_head= 0 delta_F=0.1607756 relative=0.007808695 norm_A=20.58915 norm_B=20.58945
+layer=12 head= 2 kv_head= 0 delta_F=0.1607489 relative=0.009403479 norm_A=17.09479 norm_B=17.09446
+layer=11 head= 2 kv_head= 0 delta_F=0.1583893 relative=0.008749103 norm_A=18.10341 norm_B=18.10357
+layer=12 head= 3 kv_head= 0 delta_F=0.1550981 relative=0.01171665 norm_A=13.23778 norm_B=13.23705
+
+PRODUCT TEST: bare_QK
+Exactly equal: 0 / 72
+Relative difference <= 1e-12: 0 / 72
+Relative difference quantiles [0, .25, .5, .75, 1]: [0.0058 0.0088 0.0102 0.0117 0.0146]
+Largest absolute product differences (not causal importance):
+layer=10 head= 0 kv_head= 0 delta_F=0.2067984 relative=0.01226513 norm_A=16.86166 norm_B=16.85969
+layer=17 head= 1 kv_head= 0 delta_F=0.1999355 relative=0.01096557 norm_A=18.23308 norm_B=18.23296
+layer= 3 head= 3 kv_head= 0 delta_F=0.197939 relative=0.01035857 norm_A=19.10731 norm_B=19.11012
+layer=10 head= 1 kv_head= 0 delta_F=0.1923305 relative=0.01107153 norm_A=17.37169 norm_B=17.37156
+layer=14 head= 3 kv_head= 0 delta_F=0.1921142 relative=0.008163484 norm_A=23.53426 norm_B=23.53246
+layer=15 head= 3 kv_head= 0 delta_F=0.1903852 relative=0.01015487 norm_A=18.74906 norm_B=18.74729
+layer= 9 head= 2 kv_head= 0 delta_F=0.1898589 relative=0.01033278 norm_A=18.37499 norm_B=18.37385
+layer= 6 head= 0 kv_head= 0 delta_F=0.1896953 relative=0.009513256 norm_A=19.94015 norm_B=19.94005
+layer=15 head= 0 kv_head= 0 delta_F=0.1895884 relative=0.01110854 norm_A=17.06885 norm_B=17.06494
+layer= 6 head= 3 kv_head= 0 delta_F=0.1887126 relative=0.009996127 norm_A=18.87869 norm_B=18.87845
+
+WHAT THIS TEST CAN ESTABLISH
+Unequal OV products reject exact cancellation between the indexed
+value/output factors. They do not prove a behavioral effect:
+attention routing, cancellation across heads, and downstream use are unknown.
+Bare QK products are only partial algebraic descriptors.
+Neither product has a supplied semantic label for 'guess' or 'correct'.
+No inputs, activations, nonlinearities, logits, or evaluations were used.
+
+```

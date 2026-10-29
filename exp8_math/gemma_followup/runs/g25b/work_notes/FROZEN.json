@@ -1,0 +1,44 @@
+{
+  "candidate": "F, L17 neuron920 x2",
+  "edit": {
+    "model.layers.17.mlp.down_proj.weight": {
+      "columns": [
+        920
+      ],
+      "column_multiplier": 2.0,
+      "removed_fraction": -1.0
+    }
+  },
+  "tensor_sha256": "d38d76fbe02526e623c7b27655459f0cff667e447141a6add88374c831356649",
+  "selection": "Best pooled DEV estimate among tested non-original candidates",
+  "dev": {
+    "passes": [
+      18,
+      22
+    ],
+    "problems": 63,
+    "answers_per_model": 2016,
+    "original_accuracy": 0.3576388888888889,
+    "edited_accuracy": 0.35168650793650796,
+    "gain": -0.005952380952380952,
+    "problem_cluster_se": 0.012823380815162802,
+    "sample_paired_se": 0.010430214767814907,
+    "samples_wrong_to_right": 215,
+    "samples_right_to_wrong": 227
+  },
+  "no_further_tuning": true,
+  "holdout_plan": {
+    "23": {
+      "subset": "HOLDOUT_A.json",
+      "n": 8
+    },
+    "24": {
+      "subset": "HOLDOUT_B.json",
+      "n": 8
+    },
+    "25": {
+      "subset": "HOLDOUT.json",
+      "n": 4
+    }
+  }
+}

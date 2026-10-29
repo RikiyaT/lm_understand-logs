@@ -1,0 +1,210 @@
+OUTPUT of run 28 of at most 60:
+```
+OPPONENT-PAIR CANCELLATION AND COORDINATE-CONCENTRATION TEST
+Common/differential operators are (M1+M2)/sqrt(2) and (M1-M2)/sqrt(2).
+Their actual inputs would be corresponding sums/differences of retrieved
+features, which are not evaluated here.
+Coordinate removal below is an algebraic projection of weight matrices,
+not a forward-pass ablation.
+
+LAYER 11 HEADS 2/3
+
+ raw
+Full OV cosine A/B: -0.9454189801612263 -0.9454244030474895
+Full O cosine A/B: -0.9310110173538126 -0.931010669945918
+Midpoint common-channel energy fraction: 0.028012560865210933
+Relative differences: head1/head2/common/differential [0.0092 0.0079 0.0336 0.0065]
+Common-channel relative-change amplification: 3.93748240448753
+Digit identity coefficient changes, head1/head2/sum: [-0.0001  0.     -0.    ]
+Writer row-energy fractions, top1/top5/top20: [0.02060966668964989, 0.049494607878918045, 0.10920070251043376]
+Top output coordinates: [(61, 0.02061), (319, 0.01643), (44, 0.00419), (374, 0.00415), (412, 0.00412)]
+removed 0 midpoint O cosine -0.931024 midpoint OV cosine -0.945437
+removed 1 midpoint O cosine -0.939641 midpoint OV cosine -0.949376
+removed 5 midpoint O cosine -0.944662 midpoint OV cosine -0.951541
+removed 20 midpoint O cosine -0.941633 midpoint OV cosine -0.948167
+
+ residual_scaled
+Full OV cosine A/B: -0.9776053843489915 -0.977587344325868
+Full O cosine A/B: -0.9873903055688645 -0.987384677967412
+Midpoint common-channel energy fraction: 0.011987885624438277
+Relative differences: head1/head2/common/differential [0.0105 0.0083 0.0457 0.008 ]
+Common-channel relative-change amplification: 4.872869021925241
+Digit identity coefficient changes, head1/head2/sum: [-0.1146  0.0667 -0.0478]
+Writer row-energy fractions, top1/top5/top20: [0.01559828564159151, 0.07211015886389517, 0.2682995933996018]
+Top output coordinates: [(517, 0.0156), (360, 0.01483), (547, 0.01469), (412, 0.01353), (460, 0.01345)]
+removed 0 midpoint O cosine -0.987394 midpoint OV cosine -0.977609
+removed 1 midpoint O cosine -0.987337 midpoint OV cosine -0.977804
+removed 5 midpoint O cosine -0.987085 midpoint OV cosine -0.977992
+removed 20 midpoint O cosine -0.985982 midpoint OV cosine -0.978286
+
+ readout_scaled
+Full OV cosine A/B: -0.976835167055517 -0.9768245555787484
+Full O cosine A/B: -0.9849106272339979 -0.9849067429721949
+Midpoint common-channel energy fraction: 0.013666185095583582
+Relative differences: head1/head2/common/differential [0.0096 0.0073 0.0408 0.007 ]
+Common-channel relative-change amplification: 4.812346113259288
+Digit identity coefficient changes, head1/head2/sum: [-0.9053  0.3483 -0.557 ]
+Writer row-energy fractions, top1/top5/top20: [0.01294615586707792, 0.06008920388979227, 0.22621938942308334]
+Top output coordinates: [(547, 0.01295), (115, 0.01191), (582, 0.01186), (152, 0.01169), (514, 0.01168)]
+removed 0 midpoint O cosine -0.984916 midpoint OV cosine -0.976841
+removed 1 midpoint O cosine -0.984816 midpoint OV cosine -0.976797
+removed 5 midpoint O cosine -0.984483 midpoint OV cosine -0.976857
+removed 20 midpoint O cosine -0.98309 midpoint OV cosine -0.977155
+
+QUERY-SIDE COMPARISON
+A query-weight cosine 0.3974943032691887 differential-query energy fraction 0.3012528483654057
+B query-weight cosine 0.3979345130204107 differential-query energy fraction 0.30103274348979464
+Relative query common/differential changes: 0.008638559044147901 0.026954372744318878
+
+LAYER 15 HEADS 1/2
+
+ raw
+Full OV cosine A/B: -0.4560205626251881 -0.4560195096689949
+Full O cosine A/B: -0.43502016929856946 -0.43504845449646196
+Midpoint common-channel energy fraction: 0.28652723548663117
+Relative differences: head1/head2/common/differential [0.0116 0.0127 0.0183 0.0082]
+Common-channel relative-change amplification: 1.499768267650193
+Digit identity coefficient changes, head1/head2/sum: [-0.0001 -0.0001 -0.0002]
+Writer row-energy fractions, top1/top5/top20: [0.02946602285921353, 0.10855783194523903, 0.15422662863819506]
+Top output coordinates: [(353, 0.02947), (605, 0.02165), (27, 0.02137), (122, 0.01856), (43, 0.0175)]
+removed 0 midpoint O cosine -0.435051 midpoint OV cosine -0.45605
+removed 1 midpoint O cosine -0.453344 midpoint OV cosine -0.470468
+removed 5 midpoint O cosine -0.501891 midpoint OV cosine -0.511025
+removed 20 midpoint O cosine -0.481983 midpoint OV cosine -0.491178
+
+ residual_scaled
+Full OV cosine A/B: -0.4074286022040061 -0.4075313490815473
+Full O cosine A/B: -0.8064545526309113 -0.8064673245461137
+Midpoint common-channel energy fraction: 0.305724626461575
+Relative differences: head1/head2/common/differential [0.0174 0.0194 0.0211 0.0167]
+Common-channel relative-change amplification: 1.1452269606987069
+Digit identity coefficient changes, head1/head2/sum: [-0.7222  0.1361 -0.5861]
+Writer row-energy fractions, top1/top5/top20: [0.015244357108631855, 0.0678158685419176, 0.2479312267169135]
+Top output coordinates: [(517, 0.01524), (360, 0.01382), (547, 0.01364), (412, 0.01256), (403, 0.01254)]
+removed 0 midpoint O cosine -0.806474 midpoint OV cosine -0.4075
+removed 1 midpoint O cosine -0.805361 midpoint OV cosine -0.405574
+removed 5 midpoint O cosine -0.800762 midpoint OV cosine -0.4021
+removed 20 midpoint O cosine -0.780772 midpoint OV cosine -0.398947
+
+ readout_scaled
+Full OV cosine A/B: -0.37607983870485523 -0.37620313560789187
+Full O cosine A/B: -0.7477956863970581 -0.7478102258230148
+Midpoint common-channel energy fraction: 0.34550733060010047
+Relative differences: head1/head2/common/differential [0.0114 0.0179 0.0153 0.0117]
+Common-channel relative-change amplification: 1.0485005571825468
+Digit identity coefficient changes, head1/head2/sum: [-7.5007  1.5621 -5.9386]
+Writer row-energy fractions, top1/top5/top20: [0.011355253521961912, 0.053078707052767814, 0.19880943015222846]
+Top output coordinates: [(547, 0.01136), (507, 0.01077), (514, 0.01057), (152, 0.01022), (479, 0.01016)]
+removed 0 midpoint O cosine -0.747819 midpoint OV cosine -0.37616
+removed 1 midpoint O cosine -0.746195 midpoint OV cosine -0.375787
+removed 5 midpoint O cosine -0.746707 midpoint OV cosine -0.376913
+removed 20 midpoint O cosine -0.721736 midpoint OV cosine -0.373098
+
+QUERY-SIDE COMPARISON
+A query-weight cosine 0.313008098486345 differential-query energy fraction 0.3434959507568275
+B query-weight cosine 0.313085798704492 differential-query energy fraction 0.34345710064775403
+Relative query common/differential changes: 0.006271461928591169 0.018545895446383135
+
+LAYER 7 HEADS 0/1
+
+ raw
+Full OV cosine A/B: -0.6658506743829568 -0.6657734030728709
+Full O cosine A/B: -0.6380273967436418 -0.6380029360943106
+Midpoint common-channel energy fraction: 0.22194526076492757
+Relative differences: head1/head2/common/differential [0.012  0.0085 0.0144 0.0074]
+Common-channel relative-change amplification: 1.4056900135797283
+Digit identity coefficient changes, head1/head2/sum: [ 0. -0.  0.]
+Writer row-energy fractions, top1/top5/top20: [0.02527761830356463, 0.08316022081172697, 0.1286478752424529]
+Top output coordinates: [(186, 0.02528), (504, 0.019), (205, 0.01572), (255, 0.01165), (271, 0.01151)]
+removed 0 midpoint O cosine -0.638031 midpoint OV cosine -0.665831
+removed 1 midpoint O cosine -0.655335 midpoint OV cosine -0.68217
+removed 5 midpoint O cosine -0.681691 midpoint OV cosine -0.699665
+removed 20 midpoint O cosine -0.69418 midpoint OV cosine -0.710426
+
+ residual_scaled
+Full OV cosine A/B: -0.6390578078162957 -0.6392683835077255
+Full O cosine A/B: -0.454067466459233 -0.4539796848758346
+Midpoint common-channel energy fraction: 0.23563887110948253
+Relative differences: head1/head2/common/differential [0.0149 0.0102 0.0178 0.0084]
+Common-channel relative-change amplification: 1.4259344835541934
+Digit identity coefficient changes, head1/head2/sum: [0.0054 0.0534 0.0589]
+Writer row-energy fractions, top1/top5/top20: [0.5298602789213746, 0.7154362963750561, 0.7654411456415643]
+Top output coordinates: [(163, 0.52986), (400, 0.16551), (621, 0.00833), (420, 0.00589), (167, 0.00585)]
+removed 0 midpoint O cosine -0.454039 midpoint OV cosine -0.639195
+removed 1 midpoint O cosine -0.629557 midpoint OV cosine -0.651457
+removed 5 midpoint O cosine -0.673687 midpoint OV cosine -0.665911
+removed 20 midpoint O cosine -0.675943 midpoint OV cosine -0.672206
+
+ readout_scaled
+Full OV cosine A/B: -0.8298536723033101 -0.8298249638249231
+Full O cosine A/B: -0.745577798435875 -0.7455437578975433
+Midpoint common-channel energy fraction: 0.18849661897245878
+Relative differences: head1/head2/common/differential [0.0112 0.007  0.0131 0.0061]
+Common-channel relative-change amplification: 1.4350962915308874
+Digit identity coefficient changes, head1/head2/sum: [-0.0089 -0.0397 -0.0486]
+Writer row-energy fractions, top1/top5/top20: [0.031123324320529028, 0.1087090287262851, 0.28828118562173094]
+Top output coordinates: [(400, 0.03112), (3, 0.02692), (333, 0.02033), (172, 0.0152), (7, 0.01514)]
+removed 0 midpoint O cosine -0.745582 midpoint OV cosine -0.829858
+removed 1 midpoint O cosine -0.752003 midpoint OV cosine -0.834174
+removed 5 midpoint O cosine -0.747959 midpoint OV cosine -0.829932
+removed 20 midpoint O cosine -0.752694 midpoint OV cosine -0.809016
+
+QUERY-SIDE COMPARISON
+A query-weight cosine 0.49353579011869264 differential-query energy fraction 0.25323210494065373
+B query-weight cosine 0.49363970314815103 differential-query energy fraction 0.2531801484259245
+Relative query common/differential changes: 0.00563540879780631 0.014384944211214383
+
+LAYER 17 HEADS 2/3
+
+ raw
+Full OV cosine A/B: -0.040826298036682786 -0.04085626475857747
+Full O cosine A/B: -0.05050468477117147 -0.050551543097418404
+Midpoint common-channel energy fraction: 0.4795826137750359
+Relative differences: head1/head2/common/differential [0.0096 0.0087 0.0101 0.0081]
+Common-channel relative-change amplification: 1.1122288132881073
+Digit identity coefficient changes, head1/head2/sum: [-0.      0.0001  0.    ]
+Writer row-energy fractions, top1/top5/top20: [0.047712161715011504, 0.1282321618541232, 0.1743803913733919]
+Top output coordinates: [(210, 0.04771), (353, 0.0364), (43, 0.03423), (163, 0.0052), (558, 0.00468)]
+removed 0 midpoint O cosine -0.050533 midpoint OV cosine -0.040846
+removed 1 midpoint O cosine -0.051597 midpoint OV cosine -0.044967
+removed 5 midpoint O cosine -0.053201 midpoint OV cosine -0.053217
+removed 20 midpoint O cosine -0.042334 midpoint OV cosine -0.041475
+
+ residual_scaled
+Full OV cosine A/B: -0.0658298433845507 -0.06598651134470675
+Full O cosine A/B: -0.10736701886674495 -0.1073647917216018
+Midpoint common-channel energy fraction: 0.4684552480594031
+Relative differences: head1/head2/common/differential [0.0088 0.0095 0.0101 0.0081]
+Common-channel relative-change amplification: 1.1026851970170863
+Digit identity coefficient changes, head1/head2/sum: [-0.1298  0.3369  0.2071]
+Writer row-energy fractions, top1/top5/top20: [0.034045172954035016, 0.07678153784986426, 0.1720464408687081]
+Top output coordinates: [(558, 0.03405), (163, 0.02054), (517, 0.00779), (582, 0.00724), (360, 0.00716)]
+removed 0 midpoint O cosine -0.107371 midpoint OV cosine -0.065913
+removed 1 midpoint O cosine -0.1089 midpoint OV cosine -0.072859
+removed 5 midpoint O cosine -0.104571 midpoint OV cosine -0.073292
+removed 20 midpoint O cosine -0.087783 midpoint OV cosine -0.056924
+
+ readout_scaled
+Full OV cosine A/B: -0.00854998774196978 -0.00869897821986571
+Full O cosine A/B: -0.05848092274249289 -0.05848545299211741
+Midpoint common-channel energy fraction: 0.4958233103967594
+Relative differences: head1/head2/common/differential [0.009  0.0099 0.0104 0.0083]
+Common-channel relative-change amplification: 1.0910566856531607
+Digit identity coefficient changes, head1/head2/sum: [-1.0637  3.4351  2.3715]
+Writer row-energy fractions, top1/top5/top20: [0.03241608697705635, 0.06546417678877893, 0.13906628582036926]
+Top output coordinates: [(507, 0.03242), (50, 0.00998), (390, 0.00923), (585, 0.00703), (333, 0.00681)]
+removed 0 midpoint O cosine -0.058489 midpoint OV cosine -0.008629
+removed 1 midpoint O cosine -0.065915 midpoint OV cosine -0.009177
+removed 5 midpoint O cosine -0.067519 midpoint OV cosine -0.007026
+removed 20 midpoint O cosine -0.065041 midpoint OV cosine -0.002958
+
+QUERY-SIDE COMPARISON
+A query-weight cosine 0.32439110156949846 differential-query energy fraction 0.33780444921525093
+B query-weight cosine 0.3248602160531927 differential-query energy fraction 0.3375698919734035
+Relative query common/differential changes: 0.013691680591514618 0.0201216096328303
+
+A small common writer plus a large differential writer supports a
+subtractive parameter structure. It does not establish equal attention,
+which information is compared, or whether its change causes sycophancy.
+
+```

@@ -1,0 +1,33 @@
+OUTPUT of Python run 6 of at most 300:
+```
+Baseline success histogram: {0: 145, 1: 37, 2: 19, 3: 12, 4: 6, 5: 13, 6: 13, 7: 5, 8: 6}
+Intermittent: 105 Fixed DEV: 64
+DEV baseline accuracy: 0.421875
+correct n 361 median_tokens 354.0 cut_rate 0.025 boxed_rate 0.443 mean_repeated_line_fraction 0.101
+incorrect n 1687 median_tokens 678.0 cut_rate 0.079 boxed_rate 0.491 mean_repeated_line_fraction 0.171
+{'layer': 17, 'neuron': 1149, 'corr_correct_length_adjusted': 0.2087, 'corr_half1': 0.2076, 'corr_half2': 0.2104, 'corr_repetition': -0.2982, 'stability': 0.2076, 'mean_correct': 0.0253, 'mean_wrong': 0.0193, 'column_norm': 0.4771, 'rms_contribution': 0.0116}
+{'layer': 7, 'neuron': 171, 'corr_correct_length_adjusted': 0.1845, 'corr_half1': 0.1774, 'corr_half2': 0.195, 'corr_repetition': -0.0333, 'stability': 0.1774, 'mean_correct': 0.0239, 'mean_wrong': 0.023, 'column_norm': 0.4532, 'rms_contribution': 0.0118}
+{'layer': 3, 'neuron': 1749, 'corr_correct_length_adjusted': 0.1813, 'corr_half1': 0.1755, 'corr_half2': 0.1873, 'corr_repetition': 0.024, 'stability': 0.1755, 'mean_correct': 0.0085, 'mean_wrong': 0.0055, 'column_norm': 0.3775, 'rms_contribution': 0.0058}
+{'layer': 10, 'neuron': 733, 'corr_correct_length_adjusted': -0.1785, 'corr_half1': -0.1746, 'corr_half2': -0.1826, 'corr_repetition': 0.2784, 'stability': 0.1746, 'mean_correct': -0.0134, 'mean_wrong': -0.0089, 'column_norm': 0.3628, 'rms_contribution': 0.0072}
+{'layer': 11, 'neuron': 1807, 'corr_correct_length_adjusted': 0.1924, 'corr_half1': 0.16, 'corr_half2': 0.2219, 'corr_repetition': -0.5206, 'stability': 0.16, 'mean_correct': 0.0428, 'mean_wrong': 0.0358, 'column_norm': 0.5539, 'rms_contribution': 0.0235}
+{'layer': 10, 'neuron': 1688, 'corr_correct_length_adjusted': 0.16, 'corr_half1': 0.1594, 'corr_half2': 0.1607, 'corr_repetition': -0.3767, 'stability': 0.1594, 'mean_correct': 0.0771, 'mean_wrong': 0.0607, 'column_norm': 0.4006, 'rms_contribution': 0.0294}
+{'layer': 14, 'neuron': 1594, 'corr_correct_length_adjusted': -0.1692, 'corr_half1': -0.1592, 'corr_half2': -0.1799, 'corr_repetition': 0.4726, 'stability': 0.1592, 'mean_correct': 0.0122, 'mean_wrong': 0.0206, 'column_norm': 0.2615, 'rms_contribution': 0.0089}
+{'layer': 17, 'neuron': 1201, 'corr_correct_length_adjusted': -0.1664, 'corr_half1': -0.158, 'corr_half2': -0.1747, 'corr_repetition': 0.2976, 'stability': 0.158, 'mean_correct': -0.0225, 'mean_wrong': -0.0191, 'column_norm': 0.407, 'rms_contribution': 0.0099}
+{'layer': 14, 'neuron': 259, 'corr_correct_length_adjusted': -0.1599, 'corr_half1': -0.157, 'corr_half2': -0.1647, 'corr_repetition': 0.1526, 'stability': 0.157, 'mean_correct': -0.0035, 'mean_wrong': -0.0031, 'column_norm': 0.386, 'rms_contribution': 0.0027}
+{'layer': 12, 'neuron': 1601, 'corr_correct_length_adjusted': 0.1627, 'corr_half1': 0.1557, 'corr_half2': 0.1694, 'corr_repetition': -0.1578, 'stability': 0.1557, 'mean_correct': -0.0033, 'mean_wrong': -0.0048, 'column_norm': 0.589, 'rms_contribution': 0.0051}
+{'layer': 4, 'neuron': 1978, 'corr_correct_length_adjusted': -0.1719, 'corr_half1': -0.1549, 'corr_half2': -0.1865, 'corr_repetition': 0.1754, 'stability': 0.1549, 'mean_correct': -0.0446, 'mean_wrong': -0.0359, 'column_norm': 0.3128, 'rms_contribution': 0.0142}
+{'layer': 15, 'neuron': 1120, 'corr_correct_length_adjusted': 0.1806, 'corr_half1': 0.1544, 'corr_half2': 0.2108, 'corr_repetition': -0.2963, 'stability': 0.1544, 'mean_correct': 0.0077, 'mean_wrong': 0.0051, 'column_norm': 0.3523, 'rms_contribution': 0.0032}
+{'layer': 17, 'neuron': 1556, 'corr_correct_length_adjusted': -0.1621, 'corr_half1': -0.1728, 'corr_half2': -0.1537, 'corr_repetition': 0.1679, 'stability': 0.1537, 'mean_correct': -0.0191, 'mean_wrong': -0.0163, 'column_norm': 0.4177, 'rms_contribution': 0.009}
+{'layer': 5, 'neuron': 1188, 'corr_correct_length_adjusted': 0.1563, 'corr_half1': 0.1533, 'corr_half2': 0.159, 'corr_repetition': -0.293, 'stability': 0.1533, 'mean_correct': -0.0746, 'mean_wrong': -0.0816, 'column_norm': 0.4891, 'rms_contribution': 0.0439}
+{'layer': 5, 'neuron': 470, 'corr_correct_length_adjusted': -0.1622, 'corr_half1': -0.172, 'corr_half2': -0.1525, 'corr_repetition': 0.4021, 'stability': 0.1525, 'mean_correct': -0.0222, 'mean_wrong': -0.0203, 'column_norm': 0.5682, 'rms_contribution': 0.013}
+{'layer': 4, 'neuron': 670, 'corr_correct_length_adjusted': -0.152, 'corr_half1': -0.1524, 'corr_half2': -0.1572, 'corr_repetition': 0.0737, 'stability': 0.1524, 'mean_correct': -0.0313, 'mean_wrong': -0.0307, 'column_norm': 0.3362, 'rms_contribution': 0.013}
+{'layer': 15, 'neuron': 1341, 'corr_correct_length_adjusted': 0.1554, 'corr_half1': 0.1515, 'corr_half2': 0.159, 'corr_repetition': -0.1806, 'stability': 0.1515, 'mean_correct': 0.0392, 'mean_wrong': 0.0331, 'column_norm': 0.3418, 'rms_contribution': 0.0132}
+{'layer': 12, 'neuron': 1491, 'corr_correct_length_adjusted': -0.1707, 'corr_half1': -0.19, 'corr_half2': -0.1509, 'corr_repetition': -0.032, 'stability': 0.1509, 'mean_correct': 0.011, 'mean_wrong': 0.0118, 'column_norm': 0.5456, 'rms_contribution': 0.0069}
+{'layer': 6, 'neuron': 1796, 'corr_correct_length_adjusted': 0.1588, 'corr_half1': 0.1504, 'corr_half2': 0.167, 'corr_repetition': 0.0002, 'stability': 0.1504, 'mean_correct': 0.0324, 'mean_wrong': 0.0334, 'column_norm': 0.3417, 'rms_contribution': 0.0134}
+{'layer': 15, 'neuron': 699, 'corr_correct_length_adjusted': -0.168, 'corr_half1': -0.1852, 'corr_half2': -0.1501, 'corr_repetition': 0.148, 'stability': 0.1501, 'mean_correct': -0.0129, 'mean_wrong': -0.0093, 'column_norm': 0.3836, 'rms_contribution': 0.0053}
+{'layer': 16, 'neuron': 40, 'corr_correct_length_adjusted': 0.1775, 'corr_half1': 0.1497, 'corr_half2': 0.2124, 'corr_repetition': -0.3683, 'stability': 0.1497, 'mean_correct': 0.024, 'mean_wrong': 0.0204, 'column_norm': 0.4783, 'rms_contribution': 0.012}
+{'layer': 9, 'neuron': 1831, 'corr_correct_length_adjusted': 0.1497, 'corr_half1': 0.1493, 'corr_half2': 0.1646, 'corr_repetition': -0.0586, 'stability': 0.1493, 'mean_correct': 0.0024, 'mean_wrong': 0.0019, 'column_norm': 0.5203, 'rms_contribution': 0.0026}
+{'layer': 16, 'neuron': 257, 'corr_correct_length_adjusted': -0.1478, 'corr_half1': -0.149, 'corr_half2': -0.1493, 'corr_repetition': 0.1941, 'stability': 0.149, 'mean_correct': -0.0086, 'mean_wrong': -0.0066, 'column_norm': 0.4828, 'rms_contribution': 0.0045}
+{'layer': 8, 'neuron': 1150, 'corr_correct_length_adjusted': -0.1494, 'corr_half1': -0.1503, 'corr_half2': -0.1485, 'corr_repetition': 0.132, 'stability': 0.1485, 'mean_correct': 0.05, 'mean_wrong': 0.0633, 'column_norm': 0.2992, 'rms_contribution': 0.021}
+
+```

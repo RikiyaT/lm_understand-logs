@@ -1,0 +1,57 @@
+{
+ "ok": true,
+ "limit": false,
+ "rc": 0,
+ "wall_s": 82.0,
+ "audit": {
+  "event_types": {
+   "thread.started": 1,
+   "item.completed": 2,
+   "turn.started": 1,
+   "turn.completed": 1
+  },
+  "item_types": {
+   "error": 1,
+   "agent_message": 1
+  },
+  "tool_items": {},
+  "tool_free": true,
+  "usage": {
+   "input_tokens": 271808,
+   "cached_input_tokens": 214400,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 12779,
+   "reasoning_output_tokens": 4162
+  },
+  "thread_id": "id-8aa79fd0",
+  "errors": [],
+  "turn_completed": true
+ },
+ "stderr_tail": "id-8aa79fd0.jsonl; buffered rollout items will be retried: Quota exceeded (os error 122); error_kind=QuotaExceeded; raw_os_error=Some(122)\n2026-10-24T03:35:31.396694Z ERROR codex_rollout::recorder: rollout writer failed for <codex_home>/sessions/2026/10/23/rollout-2026-10-23T20-44-45-id-8aa79fd0.jsonl; buffered rollout items will be retried: Quota exceeded (os error 122); error_kind=QuotaExceeded; raw_os_error=Some(122)\n2026-10-24T03:35:31.431438Z ERROR codex_rollout::recorder: rollout writer failed for <codex_home>/sessions/2026/10/23/rollout-2026-10-23T20-44-45-id-8aa79fd0.jsonl; buffered rollout items will be retried: Quota exceeded (os error 122); error_kind=QuotaExceeded; raw_os_error=Some(122)\n2026-10-24T03:35:31.465664Z ERROR codex_rollout::recorder: rollout writer failed for <codex_home>/sessions/2026/10/23/rollout-2026-10-23T20-44-45-id-8aa79fd0.jsonl; buffered rollout items will be retried: Quota exceeded (os error 122); error_kind=QuotaExceeded; raw_os_error=Some(122)\n2026-10-24T03:35:31.601136Z ERROR codex_rollout::recorder: rollout writer failed for <codex_home>/sessions/2026/10/23/rollout-2026-10-23T20-44-45-id-8aa79fd0.jsonl; buffered rollout items will be retried: Quota exceeded (os error 122); error_kind=QuotaExceeded; raw_os_error=Some(122)\n",
+ "cmd": [
+  "<codex>/bin/codex",
+  "exec",
+  "resume",
+  "--strict-config",
+  "--skip-git-repo-check",
+  "--json",
+  "-m",
+  "gpt-6-astra",
+  "-c",
+  "model_reasoning_effort=\"max\"",
+  "-c",
+  "model_context_window=872000",
+  "-c",
+  "model_auto_compact_token_limit=1000000",
+  "-c",
+  "model_instructions_file=\"<data>/mathedit/runs4/p25c/instructions.md\"",
+  "-o",
+  "<data>/mathedit/runs4/p25c/turns/t022/answer.md",
+  "id-8aa79fd0",
+  "-"
+ ],
+ "attempt": 1,
+ "waits": [],
+ "thread_in": "id-8aa79fd0",
+ "end": "2026-10-23T23:35:32-0400"
+}

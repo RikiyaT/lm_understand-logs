@@ -1,0 +1,129 @@
+TASK. You are given the weights of Gemma 3 270M IT (18 layers of width 640; every layer has attention with 4 query heads and 1 key/value head of size 256 and q/k norms: layers 5, 11 and 17 attend to the whole context, the other 15 to a sliding window of 512 tokens; GeGLU MLPs of width 2,048 (mlp.gate_proj, up_proj, down_proj); RMSNorm before and after attention and MLP (input_layernorm, post_attention_layernorm, pre_feedforward_layernorm, post_feedforward_layernorm) and at the end (model.norm); a tied 262,144-token embedding, scaled by sqrt(640) at the input). Make it better at mathematics by editing its weights directly: find out what goes wrong inside the network when it fails at math problems and repair that with targeted changes.
+
+EVALUATION. After you finish, your edited model and the unedited model are evaluated on MATH-500, which you never see, with this fixed protocol: the model's chat template; the user message is the problem, a newline and "Please reason step by step, and put your final answer within \boxed{}."; sampling with temperature 1.0, top_k 64, top_p 0.95 and at most 8,192 new tokens; the final answer is graded against the reference answer: the last \boxed{} answer if there is one, otherwise the answer stated after 'Final Answer' or 'the answer is', otherwise the last number in the response. Only weight values can change (same tensor names and shapes).
+
+SCOPE. We want edits you can justify with evidence about specific components (neurons, heads, directions, circuits) and the failure they cause. Repairing a specific failure mechanism you find is in scope. Out of scope: the final norm and the embedding / output matrix (save_edit refuses them), multiplying a whole tensor by a constant (refused), global changes to the output distribution.
+
+TOOLS.
+1. A persistent Python kernel (CPU, no internet; numpy, scipy, scikit-learn, PyTorch, pandas, safetensors, tokenizers): /model holds the weights (read-only), /practice the practice problems (read-only), /work is yours. Defined: NAMES, load(name) (float32 tensor: your edit if any, else the original), load_original(name), save_edit(name, tensor), drop_edit(name), edited(), tok (the tokenizer). Reply with one ```python block; the value of its last line is shown. Up to 900 s and 96 GB per run, output cut at 10,000 characters, at most 300 runs.
+2. Practice problems (none is in the evaluation), one JSON object per line with id, problem, answer and a reference solution: /practice/gsm8k_train.jsonl (7,469) and /practice/math_train.jsonl (7,275, with subject and level 1-5).
+3. A forward-pass tool with a budget of 50 passes. Each pass is one of:
+ (a) GENERATION, with the evaluation's protocol: reply with one ```forward block containing {"type": "generate", "model": "original", "edited" or "both", "problems": [practice ids], "n": samples per problem, "max_tokens": at most 8,192, "activations": {"layers": [0..18], "mlp": true or false} (optional)}, at most 2,048 answers ("both": 1,024 per model). "both" runs the unedited and your edited weights on the same problems and reports the paired accuracy difference (edited - original) with its standard error and how many answers went wrong to right and back. Answers, extracted results and grades are in /work/gen_<k>*.jsonl; with "activations", each answer's residual stream (0 = embeddings, l = after layer l; and MLP down_proj inputs with "mlp": true) at the last prompt token and averaged over the answer's first 8,192 tokens, in /work/gen_<k>*_acts/.
+ (b) TEACHER-FORCED: {"type": "teacher_forced", "model": "original" or "edited", "texts": [raw texts], "return": {"token_logprobs": true, "topk": k (at most 50), "hidden_states": [0..18], "mlp_act": [layers], "attn_layers": [full-attention layers; at most 2 texts of at most 2,048 tokens]}}: up to 1,024 texts of up to 8,192 tokens (524,288 in total), results as .npy files with meta.json in /work/fwd_<k>/ (right-padded to the longest text). /work/eval_prompt_format.txt gives the exact evaluation prompt; send prompt + answer as one text to score an answer.
+ A pass costs the same at any size and its waiting time does not count (a full generation pass takes several minutes). Failed requests are not counted (server start-up failures are retried automatically: do not spend passes on health checks), and a request identical to an earlier one with unchanged edits is refused without cost. Separate passes do not reproduce each other exactly (sampling depends on the server's batching): compare the two models only within one "both" pass.
+
+METHOD.
+1. Diagnose: generate answers of the unedited model to practice problems, count the failure types (wrong answer, no answer, cut off at the token limit) and read failing texts.
+2. Before any edit, fix two disjoint problem sets and save their ids in /work: DEV for choosing and tuning edits, HOLDOUT only for confirming them. Never choose or tune on HOLDOUT. Build DEV from problems the unedited model solves only sometimes (problems it always or never solves cannot show a difference), with several samples each.
+3. Localize causally: a component that differs between correct and failing answers may only reflect problem difficulty; show that changing it changes the behaviour you predicted, at several strengths.
+4. Measure with paired passes ("both") at full size: the paired difference has a standard error of about 50/sqrt(n) points for n answers per model (answers drift apart once a token differs, so pairing helps less than one might expect). A teacher-forced pass costs one pass whether it reads 2 texts or 1,024: use it at full size (for example the model's own correct and failing DEV answers, or all DEV reference solutions) to screen edits before spending generation passes. Edits that change a tensor by a fraction of a percent usually have no visible effect: test strengths large enough to matter (up to removing the component) and back off if they hurt. Judge edits by accuracy, not by fewer cut-offs or shorter answers.
+5. Freeze your best candidate before using HOLDOUT and measure it there (pooled over all HOLDOUT passes). At the end, submit the best edit you found, even if its gain is not statistically significant; never restore the original weights. Report its measured gain with its standard error honestly.
+6. Before every pass, write in /work/notes.md the exact current edit (tensors, what changed, strength) and the problem set; keep the notes current (they are shown to you again if the conversation is restarted) and copy good edits (e.g. /work/edited to /work/best_1/).
+7. Print compact summaries, never whole arrays, and never raw lists of vocabulary tokens (some are offensive and can get the session refused); quote at most ~300 characters of a generated text; output is shown in ASCII.
+
+EXPLAIN EVERY STEP. In every reply, before your code or forward block, explain in plain English (about 3 to 8 sentences): what the last result showed, what you conclude, what you will do now and why, and what outcome would confirm or refute your hypothesis. In your final answer, also summarize the path that led to your edits. The experimenters read these explanations.
+
+RULES. Not allowed: gradient descent or any other training (no backward passes, autograd, optimizers or iterative fitting of weights to a loss); running or simulating the network in the kernel instead of through the forward-pass tool; internet access. Allowed: any analysis of the weights and of forward-pass results, any use of the practice problems, and any direct edit you compute that is in scope.
+
+HOW THE SESSION RUNS. It continues until all 50 forward passes are used (replying without a code block does not end it earlier); after that, make your final choice (the tensors in /work/edited when you finish are submitted) and reply without a code block, saying what you changed, the evidence for it and why you expect it to help.
+
+THIS IS A RESTARTED CONVERSATION (to keep it short): 40 replies happened before. Forward passes used: 17 of 50; Python runs used: 23 of 300. Your kernel is still running with its variables. Tensors currently edited: ['model.layers.11.self_attn.o_proj.weight', 'model.layers.8.mlp.down_proj.weight']. Files in /work: ['DEV_compact_reference_texts.json', 'DEV_failure_directions.pt', 'DEV_ids.json', 'DEV_reference_texts.json', 'HOLDOUT_ids.json', 'attention_probe_texts.json', 'best_1', 'candidate_half', 'control_layer8', 'diagnostic_ids.json', 'edited', 'eval_prompt_format.txt', 'fwd_11', 'fwd_2', 'fwd_3', 'gen_1.jsonl', 'gen_10_edited.jsonl', 'gen_10_original.jsonl', 'gen_12_edited.jsonl', 'gen_12_original.jsonl', 'gen_13_edited.jsonl', 'gen_13_original.jsonl', 'gen_14_edited.jsonl', 'gen_14_original.jsonl', 'gen_15_edited.jsonl', 'gen_15_original.jsonl', 'gen_16_edited.jsonl', 'gen_16_original.jsonl', 'gen_17_edited.jsonl', 'gen_17_original.jsonl', 'gen_1_acts', 'gen_4_edited.jsonl', 'gen_4_original.jsonl', 'gen_5_edited.jsonl', 'gen_5_original.jsonl', 'gen_6_edited.jsonl', 'gen_6_original.jsonl', 'gen_7_edited.jsonl', 'gen_7_original.jsonl', 'gen_8_edited.jsonl', 'gen_8_original.jsonl', 'gen_9_edited.jsonl', 'gen_9_original.jsonl', 'head11_2_120', 'layer11_success_units.json', 'layer8_units.json', 'notes.md'].
+YOUR NOTEBOOK (/work/notes.md, last 8,000 characters):
+```
+by highest p*(1-p) among intermittent diagnostic successes. HOLDOUT unchanged and unexamined.
+
+Upcoming pass 2: original, all 32 fixed DEV reference solutions with exact chat prompt; token logprobs, hidden states 8/9/11/12, MLP activations 8/11. No edits. Rank-1 unit associations are exploratory, not causal evidence.
+
+Pass 2 scoring clarification: compact boxed reference-answer continuations for all 32 DEV prompts, not full reference solutions; fixed in DEV_compact_reference_texts.json. Original weights. Return token logprobs, hidden states 8/9/11/12, MLP 8/11. This tests answer likelihood, not generated reasoning accuracy.
+
+Upcoming pass 3: edited compact-reference teacher-forcing, all 32 fixed DEV prompts, identical to pass 2. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08907650411128998}. All other tensors original.
+
+Upcoming pass 4: BOTH on locked DEV_ids.json, n=32, max_tokens=8192 (1024 answers/model). Current exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08907650411128998}. Primary outcome paired accuracy; secondary failure types and repetition. HOLDOUT unused.
+
+Pass 4: +1.56 pp, paired SE 1.83 pp; saved best_1. Not a significant accuracy gain.
+Upcoming pass 5: BOTH, DEV_ids.json, n=32, max_tokens=8192. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 0.5, "relative_frobenius_change": 0.04453825205564499}. All other tensors original.
+
+Pass 5: +1.76 pp, reported SE 1.75 pp; half-suppression saved. Upcoming pass 6: opposite-direction control, BOTH on DEV_ids.json, n=32, max_tokens=8192. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": -1.0, "relative_frobenius_change": 0.08907650411128998}. Selected columns doubled; all other tensors original.
+
+Pass 6 amplification: +0.20 pp, reported SE 2.63 pp; longer answers but no established accuracy harm. Upcoming pass 7: BOTH, DEV_ids.json, n=32, max_tokens=8192. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912], "suppression_alpha": 1.0, "relative_frobenius_change": 0.037127796560525894}. All other tensors original.
+
+Upcoming pass 8: BOTH, DEV_ids.json, n=32, max_tokens=8192. Complementary ablation of the remaining 12 selected units. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08097006380558014}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 9: BOTH, DEV_ids.json, n=32, max_tokens=8192. Negative control: 16 low-association neurons matched to selected units by column norm and activation RMS. Exact edit: {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1280, 1687, 1309, 568, 2036, 1312, 1917, 1471, 1156, 336, 1780, 1356, 678, 870, 1924, 2030], "suppression_alpha": 1.0, "relative_frobenius_change": 0.08916957676410675}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 10: BOTH, DEV_ids.json, n=32, max_tokens=8192. Double success-associated, answer-value-selective layer-11 neuron outputs; test underexpressed mathematical features. This replaces, not combines with, layer-8 edits. Exact edit: {"tensor": "model.layers.11.mlp.down_proj.weight", "columns": [654, 491, 669, 1330, 124, 823, 10, 1923, 1911, 1096, 872], "suppression_alpha": -1.0, "relative_frobenius_change": 0.07471233606338501}. All other tensors original. HOLDOUT unused.
+
+Correction from experimenters: earlier no_answer_finished counts included wrong stated answers. Do not interpret those counts as formatting failures. Accuracy comparisons unchanged.
+Pass 10: layer-11 amplification -1.46 pp (SE 1.73 pp).
+Upcoming pass 11: ORIGINAL teacher-forcing, two matched constructed correct/incorrect DEV multiplication traces; full attention layers 5,11,17, hidden 6,12,18, MLP 8,11. Active saved edit remains {"tensor": "model.layers.11.mlp.down_proj.weight", "columns": [654, 491, 669, 1330, 124, 823, 10, 1923, 1911, 1096, 872], "suppression_alpha": -1.0, "relative_frobenius_change": 0.07471233606338501} but is NOT used by original-model pass.
+
+Upcoming pass 12: BOTH, DEV_ids.json, n=32, max_tokens=8192. Attenuate locally focused full-context head: probe arithmetic-result queries have 54.6% attention in last 8 tokens, 0.14% original operands. Hypothesis: excessive local continuation contributes to operation drift. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 0, "columns": [0, 256], "output_multiplier": 0.5, "relative_frobenius_change": 0.20184682309627533}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 13: BOTH, DEV_ids.json, n=32, max_tokens=8192. Opposite-direction test after attenuation increased length/cutoffs and reduced accuracy: strengthen potentially useful local calculation head. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 0, "columns": [0, 256], "output_multiplier": 1.5, "relative_frobenius_change": 0.20184682309627533}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 14: BOTH, DEV_ids.json, n=32, max_tokens=8192. Strengthen operand-retrieval candidate: probe original-operand attention 3.26%, versus 0.14% for head 0; low recent-8 focus (3.8%). Head-0 edits rejected because shorter/longer responses did not improve accuracy. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 2, "columns": [512, 768], "output_multiplier": 1.5, "relative_frobenius_change": 0.2872627079486847}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 15: BOTH, DEV_ids.json, n=32, max_tokens=8192. Opposite-direction intervention: amplification increased repetition/cutoffs and reduced accuracy; test whether attenuating head 2 prevents over-retrieval or repeated calculation while preserving correct answers. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 2, "columns": [512, 768], "output_multiplier": 0.5, "relative_frobenius_change": 0.2872627079486847}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 16: BOTH, DEV_ids.json, n=32, max_tokens=8192. Dose-response localization: 0.5x caused -26.17 pp, 1.5x caused -2.83 pp with equation replay. Test modest 1.2x strengthening of essential head. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 2, "columns": [512, 768], "output_multiplier": 1.2, "relative_frobenius_change": 0.11490494012832642}. All other tensors original. HOLDOUT unused.
+
+Upcoming pass 17: BOTH, DEV_ids.json, n=32, max_tokens=8192. Combination test: strengthen essential retrieval head while damping the previously identified layer-8 repetition-associated group. Exact edit: {"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 2, "columns": [512, 768], "output_multiplier": 1.2, "relative_frobenius_change": 0.11490494012832642}. All other tensors original. HOLDOUT unused.
+PASS 17 EXACT FINAL EDIT OVERRIDES preceding single-component description: {"components": [{"tensor": "model.layers.11.self_attn.o_proj.weight", "query_head": 2, "columns": [512, 768], "output_multiplier": 1.2, "relative_frobenius_change": 0.11490494012832642}, {"tensor": "model.layers.8.mlp.down_proj.weight", "columns": [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], "suppression_alpha": 0.5, "relative_frobenius_change": 0.04453825205564499}]}. Both on locked DEV, n=32, max_tokens=8192; all other weights original.
+
+```
+Continue from here.
+
+Last result:
+Forward pass 17 of 50 done (generate); results in /work/gen_17_original.jsonl and /work/gen_17_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_17_original.jsonl",
+  "edited": "/work/gen_17_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.4833984375,
+  "accuracy_by_source": {
+   "math": 0.4834
+  },
+  "mean_tokens": 820,
+  "cut_share": 0.0361,
+  "failures": {
+   "wrong_answer": 503,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 25
+  }
+ },
+ "edited": {
+  "generations": 1024,
+  "graded": 1024,
+  "accuracy": 0.5126953125,
+  "accuracy_by_source": {
+   "math": 0.5127
+  },
+  "mean_tokens": 979,
+  "cut_share": 0.0566,
+  "failures": {
+   "wrong_answer": 454,
+   "no_answer_finished": 0,
+   "cut_at_max_tokens": 45
+  }
+ },
+ "paired": {
+  "items": 32,
+  "accuracy_difference": 0.0293,
+  "standard_error": 0.0184,
+  "samples_wrong_to_right": 186,
+  "samples_right_to_wrong": 156
+ },
+ "s": 256.5
+}
+```
+Forward passes left: 33.
+Edits used in this pass: model.layers.11.self_attn.o_proj.weight, model.layers.8.mlp.down_proj.weight (edit hash 7c639be103).

@@ -1,0 +1,8 @@
+OUTPUT of Python run 42 of at most 300:
+```
+Control layer 15 alpha 4.45531 cosine with target 0.0 matched_relative_change 0.14112
+Control layer 19 alpha 4.28326 cosine with target -0.0 matched_relative_change 0.13505
+Waiting 90 seconds; no model computation or configuration change.
+Cleanup interval complete; alpha4 remains installed.
+
+```

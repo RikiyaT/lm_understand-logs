@@ -1,0 +1,90 @@
+OUTPUT of run 17 of at most 60:
+```
+=== ONE WEIGHT DIRECTION PER WORD IDENTITY ===
+original_places n= 18 ['London', 'Paris', 'Rome', 'Berlin', 'Tokyo', 'Beijing', 'Madrid', 'Moscow', 'Dublin', 'Sydney', 'Boston', 'Chicago', 'France', 'Germany', 'China', 'Japan', 'India', 'Canada']
+new_places n= 18 ['Oslo', 'Vienna', 'Lisbon', 'Athens', 'Prague', 'Seoul', 'Warsaw', 'Helsinki', 'Stockholm', 'Norway', 'Sweden', 'Spain', 'Italy', 'Brazil', 'Mexico', 'Egypt', 'Kenya', 'Peru']
+person_names n= 18 ['Alice', 'Robert', 'Maria', 'David', 'Michael', 'Sarah', 'John', 'Anna', 'James', 'Mary', 'Peter', 'Susan', 'Thomas', 'Laura', 'Daniel', 'Helen', 'Paul', 'Emma']
+ordinary_words n= 18 ['stone', 'table', 'apple', 'river', 'flower', 'window', 'horse', 'cloud', 'paper', 'train', 'bread', 'garden', 'door', 'glass', 'mountain', 'ocean', 'music', 'pencil']
+
+=== SELECTED HEADS AFTER COLLAPSING TOKEN VARIANTS ===
+z > 0 favors B; z < 0 favors A, for static word-identity alignment only.
+Each row lists z / single shuffle p / search-wide shuffle p.
+
+L05H3
+ bare     original_places : -3.109 / 0.0015 / 0.5838
+ bare     new_places      : +0.569 / 0.5692 / 1.0000
+ bare     person_names    : +1.341 / 0.1904 / 1.0000
+ bare     ordinary_words  : -1.452 / 0.1496 / 1.0000
+ diagonal original_places : -4.416 / 0.0002 / 0.0037
+ diagonal new_places      : -1.985 / 0.0478 / 1.0000
+ diagonal person_names    : +1.406 / 0.1601 / 1.0000
+ diagonal ordinary_words  : -0.703 / 0.4865 / 1.0000
+
+L05H1
+ bare     original_places : -2.581 / 0.0073 / 0.9949
+ bare     new_places      : -0.058 / 0.9551 / 1.0000
+ bare     person_names    : -1.793 / 0.0666 / 1.0000
+ bare     ordinary_words  : -0.144 / 0.8848 / 1.0000
+ diagonal original_places : -3.823 / 0.0005 / 0.0442
+ diagonal new_places      : -1.280 / 0.1931 / 1.0000
+ diagonal person_names    : -1.243 / 0.2155 / 1.0000
+ diagonal ordinary_words  : +0.042 / 0.9675 / 1.0000
+
+L03H1
+ bare     original_places : -2.170 / 0.0261 / 1.0000
+ bare     new_places      : -0.665 / 0.5084 / 1.0000
+ bare     person_names    : +0.553 / 0.5733 / 1.0000
+ bare     ordinary_words  : +0.467 / 0.6336 / 1.0000
+ diagonal original_places : -3.178 / 0.0007 / 0.4911
+ diagonal new_places      : -1.713 / 0.0913 / 1.0000
+ diagonal person_names    : +0.675 / 0.4923 / 1.0000
+ diagonal ordinary_words  : +1.583 / 0.1098 / 1.0000
+
+L16H1
+ bare     original_places : +2.791 / 0.0068 / 0.9329
+ bare     new_places      : +0.437 / 0.6512 / 1.0000
+ bare     person_names    : +1.311 / 0.1860 / 1.0000
+ bare     ordinary_words  : -0.021 / 0.9844 / 1.0000
+ diagonal original_places : +1.276 / 0.2165 / 1.0000
+ diagonal new_places      : -1.037 / 0.3046 / 1.0000
+ diagonal person_names    : +2.143 / 0.0283 / 1.0000
+ diagonal ordinary_words  : -0.577 / 0.5597 / 1.0000
+
+L15H2
+ bare     original_places : +0.258 / 0.8023 / 1.0000
+ bare     new_places      : -0.130 / 0.8992 / 1.0000
+ bare     person_names    : -0.145 / 0.8855 / 1.0000
+ bare     ordinary_words  : +2.276 / 0.0178 / 1.0000
+ diagonal original_places : +0.707 / 0.4777 / 1.0000
+ diagonal new_places      : +0.123 / 0.9077 / 1.0000
+ diagonal person_names    : -0.446 / 0.6539 / 1.0000
+ diagonal ordinary_words  : +0.243 / 0.8189 / 1.0000
+
+L17H3
+ bare     original_places : +1.758 / 0.0835 / 1.0000
+ bare     new_places      : -0.150 / 0.8821 / 1.0000
+ bare     person_names    : +1.855 / 0.0671 / 1.0000
+ bare     ordinary_words  : -0.922 / 0.3620 / 1.0000
+ diagonal original_places : +1.412 / 0.1696 / 1.0000
+ diagonal new_places      : -1.581 / 0.0998 / 1.0000
+ diagonal person_names    : +0.523 / 0.6082 / 1.0000
+ diagonal ordinary_words  : -1.304 / 0.1914 / 1.0000
+
+=== STRONGEST DIFFERENCES ON THE NEW PLACE-NAME SET ===
+bare     L01H1: z=-3.177, single_p=0.0015, search_p=0.4916
+bare     L06H2: z=-2.516, single_p=0.0124, search_p=0.9993
+bare     L02H2: z=+2.257, single_p=0.0203, search_p=1.0000
+bare     L06H0: z=-2.135, single_p=0.0300, search_p=1.0000
+bare     L07H1: z=+2.090, single_p=0.0356, search_p=1.0000
+bare     L00H3: z=+2.075, single_p=0.0369, search_p=1.0000
+diagonal L06H0: z=-3.532, single_p=0.0005, search_p=0.1496
+diagonal L16H2: z=-3.285, single_p=0.0012, search_p=0.3642
+diagonal L02H1: z=-2.511, single_p=0.0139, search_p=0.9993
+diagonal L06H1: z=-2.038, single_p=0.0405, search_p=1.0000
+diagonal L05H3: z=-1.985, single_p=0.0478, search_p=1.0000
+diagonal L06H3: z=-1.982, single_p=0.0474, search_p=1.0000
+
+This checked the geometry of different token-weight sets, not model performance.
+No model inputs, activations, logits, generation, interventions, or training were used.
+
+```

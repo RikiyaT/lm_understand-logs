@@ -1,0 +1,92 @@
+OUTPUT of run 8 of at most 60:
+```
+=== DIRECTION VERSUS GAIN IN POSITION-RESOLVED MATCHING COEFFICIENTS ===
+Angles are between flattened weight-coefficient tensors, not hidden states.
+L11H0 all-frequency coefficients: relative=0.031323, B/A_norm_minus_1=-0.000603, angle_deg=1.7944, parallel_difference_share=0.000371
+  frequency 88: relative=0.049120, B/A_norm_minus_1=-0.000517, angle_deg=2.8145, parallel_difference_share=0.000111
+L11H1 all-frequency coefficients: relative=0.028002, B/A_norm_minus_1=-0.000233, angle_deg=1.6044, parallel_difference_share=0.000069
+  frequency 88: relative=0.049586, B/A_norm_minus_1=+0.001385, angle_deg=2.8402, parallel_difference_share=0.000779
+L11H2 all-frequency coefficients: relative=0.017873, B/A_norm_minus_1=-0.000459, angle_deg=1.0237, parallel_difference_share=0.000661
+  frequency 88: relative=0.054952, B/A_norm_minus_1=-0.003488, angle_deg=3.1425, parallel_difference_share=0.004046
+L11H3 all-frequency coefficients: relative=0.022591, B/A_norm_minus_1=-0.000218, angle_deg=1.2944, parallel_difference_share=0.000093
+  frequency 88: relative=0.052876, B/A_norm_minus_1=+0.000044, angle_deg=3.0300, parallel_difference_share=0.000001
+L12H2 all-frequency coefficients: relative=0.023164, B/A_norm_minus_1=-0.000003, angle_deg=1.3272, parallel_difference_share=0.000000
+L17H1 all-frequency coefficients: relative=0.022069, B/A_norm_minus_1=+0.000199, angle_deg=1.2644, parallel_difference_share=0.000081
+  frequency 87: relative=0.027137, B/A_norm_minus_1=+0.001346, angle_deg=1.5530, parallel_difference_share=0.002456
+L5H3 all-frequency coefficients: relative=0.020774, B/A_norm_minus_1=+0.000322, angle_deg=1.1901, parallel_difference_share=0.000240
+
+=== DIRECTION VERSUS GAIN IN VALUE-TRANSPORT MAPS ===
+L4H1 raw OV:  relative=0.018216, B/A_norm_minus_1=-0.000005, angle_deg=1.0437, parallel_difference_share=0.000000
+L4H1 diag OV: relative=0.032060, B/A_norm_minus_1=+0.000174, angle_deg=1.8369, parallel_difference_share=0.000029
+L4H2 raw OV:  relative=0.015087, B/A_norm_minus_1=-0.000184, angle_deg=0.8643, parallel_difference_share=0.000148
+L4H2 diag OV: relative=0.022927, B/A_norm_minus_1=+0.000857, angle_deg=1.3127, parallel_difference_share=0.001398
+L15H1 raw OV:  relative=0.011539, B/A_norm_minus_1=+0.000105, angle_deg=0.6611, parallel_difference_share=0.000084
+L15H1 diag OV: relative=0.018129, B/A_norm_minus_1=+0.000308, angle_deg=1.0386, parallel_difference_share=0.000288
+L15H2 raw OV:  relative=0.013336, B/A_norm_minus_1=-0.000038, angle_deg=0.7641, parallel_difference_share=0.000008
+L15H2 diag OV: relative=0.019441, B/A_norm_minus_1=+0.000111, angle_deg=1.1139, parallel_difference_share=0.000033
+L3H3 raw OV:  relative=0.019396, B/A_norm_minus_1=+0.000084, angle_deg=1.1113, parallel_difference_share=0.000019
+L3H3 diag OV: relative=0.020973, B/A_norm_minus_1=+0.001700, angle_deg=1.1977, parallel_difference_share=0.006561
+
+=== MLP CANDIDATES: OUTPUT REDIRECTION VERSUS INPUT-READER CHANGE ===
+
+L4 unit 1044
+  three-way weighted product: relative=0.071437, B/A_norm_minus_1=-0.006431, angle_deg=4.0772, parallel_difference_share=0.008166
+  weighted output-write: relative=0.071152, B/A_norm_minus_1=-0.005971, angle_deg=4.0632, parallel_difference_share=0.007092
+  weighted gate-read   : relative=0.002509, B/A_norm_minus_1=-0.000044, angle_deg=0.1437, parallel_difference_share=0.000311
+  weighted up-read     : relative=0.005365, B/A_norm_minus_1=-0.000419, angle_deg=0.3065, parallel_difference_share=0.006095
+  raw output-write:         relative=0.022660, B/A_norm_minus_1=-0.000600, angle_deg=1.2979, parallel_difference_share=0.000703
+
+L4 unit 1224
+  three-way weighted product: relative=0.115686, B/A_norm_minus_1=+0.057476, angle_deg=5.8118, parallel_difference_share=0.233656
+  weighted output-write: relative=0.114998, B/A_norm_minus_1=+0.056539, angle_deg=5.7945, parallel_difference_share=0.229021
+  weighted gate-read   : relative=0.006126, B/A_norm_minus_1=+0.000735, angle_deg=0.3485, parallel_difference_share=0.014372
+  weighted up-read     : relative=0.004958, B/A_norm_minus_1=+0.000152, angle_deg=0.2839, parallel_difference_share=0.000945
+  raw output-write:         relative=0.017522, B/A_norm_minus_1=-0.000054, angle_deg=1.0040, parallel_difference_share=0.000009
+
+L10 unit 1363
+  three-way weighted product: relative=0.028597, B/A_norm_minus_1=-0.000646, angle_deg=1.6381, parallel_difference_share=0.000510
+  weighted output-write: relative=0.028487, B/A_norm_minus_1=-0.001042, angle_deg=1.6312, parallel_difference_share=0.001341
+  weighted gate-read   : relative=0.000697, B/A_norm_minus_1=-0.000007, angle_deg=0.0399, parallel_difference_share=0.000087
+  weighted up-read     : relative=0.002577, B/A_norm_minus_1=+0.000403, angle_deg=0.1458, parallel_difference_share=0.024502
+  raw output-write:         relative=0.015083, B/A_norm_minus_1=+0.000414, angle_deg=0.8639, parallel_difference_share=0.000754
+
+L14 unit 641
+  three-way weighted product: relative=0.024944, B/A_norm_minus_1=-0.001470, angle_deg=1.4267, parallel_difference_share=0.003478
+  weighted output-write: relative=0.023957, B/A_norm_minus_1=-0.002154, angle_deg=1.3671, parallel_difference_share=0.008099
+  weighted gate-read   : relative=0.001151, B/A_norm_minus_1=+0.000061, angle_deg=0.0659, parallel_difference_share=0.002789
+  weighted up-read     : relative=0.007058, B/A_norm_minus_1=+0.000624, angle_deg=0.4028, parallel_difference_share=0.007823
+  raw output-write:         relative=0.022728, B/A_norm_minus_1=-0.000323, angle_deg=1.3021, parallel_difference_share=0.000202
+
+L2 unit 6
+  three-way weighted product: relative=0.041947, B/A_norm_minus_1=-0.025833, angle_deg=1.8788, parallel_difference_share=0.389293
+  weighted output-write: relative=0.041185, B/A_norm_minus_1=-0.025710, angle_deg=1.8285, parallel_difference_share=0.399942
+  weighted gate-read   : relative=0.004690, B/A_norm_minus_1=-0.000301, angle_deg=0.2682, parallel_difference_share=0.004109
+  weighted up-read     : relative=0.005911, B/A_norm_minus_1=+0.000174, angle_deg=0.3385, parallel_difference_share=0.000871
+  raw output-write:         relative=0.013203, B/A_norm_minus_1=-0.000329, angle_deg=0.7563, parallel_difference_share=0.000622
+
+L2 unit 798
+  three-way weighted product: relative=0.036045, B/A_norm_minus_1=+0.013851, angle_deg=1.9091, parallel_difference_share=0.145685
+  weighted output-write: relative=0.035369, B/A_norm_minus_1=+0.014544, angle_deg=1.8501, parallel_difference_share=0.166689
+  weighted gate-read   : relative=0.004784, B/A_norm_minus_1=-0.000062, angle_deg=0.2741, parallel_difference_share=0.000169
+  weighted up-read     : relative=0.006709, B/A_norm_minus_1=-0.000620, angle_deg=0.3828, parallel_difference_share=0.008555
+  raw output-write:         relative=0.011966, B/A_norm_minus_1=+0.000074, angle_deg=0.6856, parallel_difference_share=0.000038
+
+L6 unit 1824
+  three-way weighted product: relative=0.004812, B/A_norm_minus_1=+0.004053, angle_deg=0.1494, parallel_difference_share=0.706361
+  weighted output-write: relative=0.004183, B/A_norm_minus_1=+0.004087, angle_deg=0.0532, parallel_difference_share=0.950727
+  weighted gate-read   : relative=0.001404, B/A_norm_minus_1=+0.000007, angle_deg=0.0804, parallel_difference_share=0.000026
+  weighted up-read     : relative=0.001992, B/A_norm_minus_1=-0.000041, angle_deg=0.1141, parallel_difference_share=0.000422
+  raw output-write:         relative=0.027634, B/A_norm_minus_1=+0.001977, angle_deg=1.5793, parallel_difference_share=0.005110
+
+L7 unit 1455
+  three-way weighted product: relative=0.003277, B/A_norm_minus_1=-0.000217, angle_deg=0.1873, parallel_difference_share=0.004404
+  weighted output-write: relative=0.000866, B/A_norm_minus_1=-0.000003, angle_deg=0.0496, parallel_difference_share=0.000015
+  weighted gate-read   : relative=0.000877, B/A_norm_minus_1=-0.000025, angle_deg=0.0502, parallel_difference_share=0.000843
+  weighted up-read     : relative=0.003035, B/A_norm_minus_1=-0.000189, angle_deg=0.1735, parallel_difference_share=0.003864
+  raw output-write:         relative=0.022932, B/A_norm_minus_1=-0.000953, angle_deg=1.3128, parallel_difference_share=0.001728
+
+A gain change has a large parallel share; a redirection has a small parallel share.
+Neither direction nor gain establishes which unlabeled feature represents a user's guess.
+All calculations above concern weights and their algebraic products only.
+
+```

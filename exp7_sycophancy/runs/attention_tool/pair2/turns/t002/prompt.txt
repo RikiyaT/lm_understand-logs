@@ -1,0 +1,206 @@
+OUTPUT of run 1 of at most 20:
+```
+CONFIG A
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+CONFIGS IDENTICAL: True
+TENSOR KEYS IDENTICAL: True
+METADATA: {'format': 'pt'} {'format': 'pt'}
+
+NONLAYER TENSORS AND FIRST TWO LAYERS
+lm_head.weight (262144, 640) BF16
+model.embed_tokens.weight (262144, 640) BF16
+model.layers.0.input_layernorm.weight (640,) BF16
+model.layers.0.mlp.down_proj.weight (640, 2048) BF16
+model.layers.0.mlp.gate_proj.weight (2048, 640) BF16
+model.layers.0.mlp.up_proj.weight (2048, 640) BF16
+model.layers.0.post_attention_layernorm.weight (640,) BF16
+model.layers.0.post_feedforward_layernorm.weight (640,) BF16
+model.layers.0.pre_feedforward_layernorm.weight (640,) BF16
+model.layers.0.self_attn.k_norm.weight (256,) BF16
+model.layers.0.self_attn.k_proj.weight (256, 640) BF16
+model.layers.0.self_attn.o_proj.weight (640, 1024) BF16
+model.layers.0.self_attn.q_norm.weight (256,) BF16
+model.layers.0.self_attn.q_proj.weight (1024, 640) BF16
+model.layers.0.self_attn.v_proj.weight (256, 640) BF16
+model.layers.1.input_layernorm.weight (640,) BF16
+model.layers.1.mlp.down_proj.weight (640, 2048) BF16
+model.layers.1.mlp.gate_proj.weight (2048, 640) BF16
+model.layers.1.mlp.up_proj.weight (2048, 640) BF16
+model.layers.1.post_attention_layernorm.weight (640,) BF16
+model.layers.1.post_feedforward_layernorm.weight (640,) BF16
+model.layers.1.pre_feedforward_layernorm.weight (640,) BF16
+model.layers.1.self_attn.k_norm.weight (256,) BF16
+model.layers.1.self_attn.k_proj.weight (256, 640) BF16
+model.layers.1.self_attn.o_proj.weight (640, 1024) BF16
+model.layers.1.self_attn.q_norm.weight (256,) BF16
+model.layers.1.self_attn.q_proj.weight (1024, 640) BF16
+model.layers.1.self_attn.v_proj.weight (256, 640) BF16
+model.norm.weight (640,) BF16
+
+EMBEDDING/OUTPUT CHECK: {'name': 'lm_head.weight', 'shape': (262144, 640), 'delta': np.float64(0.0), 'relative': np.float64(0.0), 'fraction': 0.0, 'max': 0.0}
+
+EMBEDDING/OUTPUT CHECK: {'name': 'model.embed_tokens.weight', 'shape': (262144, 640), 'delta': np.float64(0.0), 'relative': np.float64(0.0), 'fraction': 0.0, 'max': 0.0}
+
+PER-LAYER DIFFERENCES (B - A; descriptive, not importance)
+layer delta_norm relative_delta attention_delta mlp_delta other_delta
+0 0.565376 0.001348 0.308825 0.47355 0.005269
+1 0.563078 0.00053 0.296942 0.478404 0.003517
+2 0.574027 0.00053 0.309096 0.483691 0.003004
+3 0.579038 0.000402 0.316471 0.484896 0.002692
+4 0.589116 0.000384 0.323154 0.492568 0.002467
+5 0.597466 0.000475 0.329183 0.498599 0.001926
+6 0.597762 0.000481 0.337053 0.493671 0.002028
+7 0.582386 0.000485 0.321842 0.485371 0.002536
+8 0.581174 0.00042 0.318886 0.485871 0.002132
+9 0.590118 0.000404 0.336386 0.484849 0.002317
+10 0.593187 0.000242 0.33913 0.486678 0.002312
+11 0.574405 9.6e-05 0.322438 0.475364 0.001845
+12 0.592364 8.1e-05 0.332306 0.49037 0.002337
+13 0.593061 8.6e-05 0.322648 0.497599 0.003998
+14 0.599791 7.6e-05 0.315809 0.509897 0.004333
+15 0.608614 6.3e-05 0.33159 0.510343 0.003144
+16 0.593516 6.2e-05 0.318047 0.501104 0.001759
+17 0.574467 5.6e-05 0.304705 0.486989 0.002929
+
+TOP 32 TENSORS BY ABSOLUTE DIFFERENCE
+model.layers.14.mlp.gate_proj.weight (2048, 640) delta=0.302194 relative=0.0067643 changed=0.7675 max=0.00146484
+model.layers.6.mlp.gate_proj.weight (2048, 640) delta=0.299606 relative=0.0067004 changed=0.7706 max=0.00195312
+model.layers.15.mlp.gate_proj.weight (2048, 640) delta=0.299488 relative=0.00670075 changed=0.7640 max=0.00134277
+model.layers.14.mlp.up_proj.weight (2048, 640) delta=0.299252 relative=0.00670753 changed=0.7471 max=0.00146484
+model.layers.15.mlp.up_proj.weight (2048, 640) delta=0.299138 relative=0.00669537 changed=0.7465 max=0.00146484
+model.layers.5.mlp.gate_proj.weight (2048, 640) delta=0.298931 relative=0.00667006 changed=0.7708 max=0.00195312
+model.layers.16.mlp.up_proj.weight (2048, 640) delta=0.29579 relative=0.00660808 changed=0.7447 max=0.00146484
+model.layers.8.mlp.gate_proj.weight (2048, 640) delta=0.295173 relative=0.00657107 changed=0.7739 max=0.00146484
+model.layers.16.mlp.gate_proj.weight (2048, 640) delta=0.294576 relative=0.00660666 changed=0.7609 max=0.00146484
+model.layers.13.mlp.gate_proj.weight (2048, 640) delta=0.294436 relative=0.00659242 changed=0.7595 max=0.00195312
+model.layers.4.mlp.gate_proj.weight (2048, 640) delta=0.294049 relative=0.00656332 changed=0.7645 max=0.00146484
+model.layers.5.mlp.up_proj.weight (2048, 640) delta=0.293609 relative=0.00656932 changed=0.7501 max=0.00195312
+model.layers.12.mlp.gate_proj.weight (2048, 640) delta=0.292583 relative=0.00653447 changed=0.7692 max=0.00195312
+model.layers.7.mlp.gate_proj.weight (2048, 640) delta=0.292474 relative=0.00652944 changed=0.7657 max=0.00146484
+model.layers.13.mlp.up_proj.weight (2048, 640) delta=0.292463 relative=0.00656006 changed=0.7427 max=0.00146484
+model.layers.4.mlp.up_proj.weight (2048, 640) delta=0.291248 relative=0.00651819 changed=0.7484 max=0.00134277
+model.layers.6.mlp.up_proj.weight (2048, 640) delta=0.291052 relative=0.00652074 changed=0.7463 max=0.00146484
+model.layers.17.mlp.up_proj.weight (2048, 640) delta=0.291 relative=0.0064807 changed=0.7439 max=0.00146484
+model.layers.3.mlp.gate_proj.weight (2048, 640) delta=0.290701 relative=0.0064954 changed=0.7565 max=0.00146484
+model.layers.10.mlp.gate_proj.weight (2048, 640) delta=0.290433 relative=0.00647641 changed=0.7698 max=0.00146484
+model.layers.17.mlp.gate_proj.weight (2048, 640) delta=0.289742 relative=0.00656494 changed=0.7655 max=0.00131226
+model.layers.8.mlp.up_proj.weight (2048, 640) delta=0.289501 relative=0.00649144 changed=0.7436 max=0.00146484
+model.layers.9.mlp.gate_proj.weight (2048, 640) delta=0.289272 relative=0.0064447 changed=0.7685 max=0.00146484
+model.layers.11.mlp.gate_proj.weight (2048, 640) delta=0.288875 relative=0.00645162 changed=0.7659 max=0.00195312
+model.layers.9.mlp.up_proj.weight (2048, 640) delta=0.288557 relative=0.00646298 changed=0.7414 max=0.00146484
+model.layers.12.mlp.up_proj.weight (2048, 640) delta=0.287888 relative=0.00644014 changed=0.7494 max=0.00146484
+model.layers.10.mlp.up_proj.weight (2048, 640) delta=0.287611 relative=0.00643089 changed=0.7449 max=0.00146484
+model.layers.2.mlp.gate_proj.weight (2048, 640) delta=0.287188 relative=0.00640943 changed=0.7380 max=0.00146484
+model.layers.7.mlp.up_proj.weight (2048, 640) delta=0.287045 relative=0.00643383 changed=0.7407 max=0.00146484
+model.layers.15.mlp.down_proj.weight (640, 2048) delta=0.285085 relative=0.0155354 changed=0.8872 max=0.00134277
+model.layers.2.mlp.up_proj.weight (2048, 640) delta=0.284068 relative=0.00634911 changed=0.7358 max=0.00146484
+model.layers.11.mlp.up_proj.weight (2048, 640) delta=0.281712 relative=0.00630532 changed=0.7401 max=0.00146484
+
+TOP 20 TENSORS BY RELATIVE DIFFERENCE
+model.layers.4.mlp.down_proj.weight delta=0.267082 relative=0.0191846
+model.layers.14.mlp.down_proj.weight delta=0.281286 relative=0.0182658
+model.layers.8.mlp.down_proj.weight delta=0.25521 relative=0.0171998
+model.layers.1.mlp.down_proj.weight delta=0.264977 relative=0.017022
+model.layers.10.mlp.down_proj.weight delta=0.264166 relative=0.0169568
+model.layers.3.mlp.down_proj.weight delta=0.267525 relative=0.0168424
+model.layers.13.mlp.down_proj.weight delta=0.274549 relative=0.0165631
+model.layers.15.mlp.down_proj.weight delta=0.285085 relative=0.0155354
+model.layers.6.mlp.down_proj.weight delta=0.263127 relative=0.0153801
+model.layers.2.mlp.down_proj.weight delta=0.266055 relative=0.0143441
+model.layers.17.mlp.down_proj.weight delta=0.261777 relative=0.0143326
+model.layers.16.mlp.down_proj.weight delta=0.277197 relative=0.0140398
+model.layers.7.mlp.down_proj.weight delta=0.260095 relative=0.0135918
+model.layers.9.mlp.down_proj.weight delta=0.261026 relative=0.0123536
+model.layers.11.mlp.down_proj.weight delta=0.251318 relative=0.0122371
+model.layers.12.mlp.down_proj.weight delta=0.268288 relative=0.0118482
+model.layers.3.self_attn.o_proj.weight delta=0.183572 relative=0.0114177
+model.layers.4.self_attn.o_proj.weight delta=0.195234 relative=0.0113586
+model.layers.5.mlp.down_proj.weight delta=0.270249 relative=0.0108978
+model.layers.0.mlp.down_proj.weight delta=0.266365 relative=0.0108178
+
+TOKENIZER
+Vocabulary size: 262145
+Special tokens: {0: '<pad>', 1: '<eos>', 2: '<bos>', 3: '<unk>', 4: '<mask>', 105: '<start_of_turn>', 106: '<end_of_turn>', 255999: '<start_of_image>', 256000: '<end_of_image>', 262144: '<image_soft_token>'}
+Chat template: None
+Tokenizer files identical: True
+
+EXAMPLE TOKENIZATIONS (tokenizer only; no model computation)
+'yes' [4443] ['yes']
+'no' [1904] ['no']
+'correct' [19448] ['correct']
+'incorrect' [111863] ['incorrect']
+'agree' [88047] ['agree']
+'disagree' [2763, 88047] ['dis', 'agree']
+'I think' [236777, 1751] ['I', ' think']
+'The answer is' [818, 3890, 563] ['The', ' answer', ' is']
+' A' [562] [' A']
+' B' [603] [' B']
+' C' [565] [' C']
+' D' [622] [' D']
+' true' [1847] [' true']
+' false' [2416] [' false']
+' Paris' [9079] [' Paris']
+' London' [5860] [' London']
+
+```

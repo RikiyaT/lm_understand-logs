@@ -1,0 +1,7 @@
+OUTPUT of Python run 12 of at most 300:
+```
+Pass 5 detailed: {'pass': 5, 'n': 1008, 'gain': -0.08630952380952381, 'sample_se': 0.01757387717436244, 'original': {'accuracy': 0.35813492063492064, 'repeated': 0.1498015873015873, 'many_finals': 0.10714285714285714, 'cut': 0.04365079365079365}, 'edited': {'accuracy': 0.2718253968253968, 'repeated': 0.16765873015873015, 'many_finals': 0.12797619047619047, 'cut': 0.04265873015873016}}
+Largest problem losses: [('math_train_algebra_380', -0.625), ('math_train_intermediate_algebra_1289', -0.5), ('math_train_intermediate_algebra_625', -0.4375), ('math_train_counting_and_probability_586', -0.3125), ('math_train_precalculus_233', -0.3125), ('math_train_algebra_775', -0.3125), ('math_train_algebra_580', -0.25), ('math_train_prealgebra_394', -0.25)]
+Next strength: 0.5 tensors: ['model.layers.15.mlp.down_proj.weight', 'model.layers.17.mlp.down_proj.weight', 'model.layers.4.mlp.down_proj.weight']
+
+```

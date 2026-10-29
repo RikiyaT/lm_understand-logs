@@ -1,0 +1,8 @@
+OUTPUT of Python run 33 of at most 300:
+```
+Attention output tensor names: ['model.language_model.layers.15.self_attn.o_proj.weight', 'model.language_model.layers.15.self_attn.q_proj.weight', 'model.language_model.layers.19.self_attn.o_proj.weight', 'model.language_model.layers.19.self_attn.q_proj.weight']
+layer 15 head 7 output gain 0.5 relative matrix change 0.16165
+layer 19 head 5 output gain 0.5 relative matrix change 0.1513
+Current edits: ['model.language_model.layers.15.self_attn.o_proj.weight', 'model.language_model.layers.19.self_attn.o_proj.weight']
+
+```

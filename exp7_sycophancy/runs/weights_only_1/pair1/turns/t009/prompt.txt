@@ -1,0 +1,88 @@
+OUTPUT of run 6 of at most 60:
+```
+COMPENSATION TEST: exact delta(OV) decomposition
+Energy ratio = ||write_change + value_change||F^2 /
+               (||write_change||F^2 + ||value_change||F^2)
+  0: complete cancellation; 1: zero cross term; >1: reinforcement.
+Term cosine measures alignment between the two matrix changes.
+Write share is a share of separate term energies, NOT behavioral importance.
+Scaled mode includes learned input/output multipliers but no state normalization.
+
+MODE: raw
+Energy-ratio quantiles [min,25%,median,75%,max]: [0.9382 1.056  1.0749 1.0966 1.153 ]
+Term-cosine quantiles [min,25%,median,75%,max]: [-0.0623  0.0585  0.079   0.1029  0.1741]
+Pooled energy ratio across heads: 1.074489
+Head counts: ratio < 0.25: 0 ; ratio < 0.5: 0 ; ratio > 1: 70
+
+Lowest ratios: strongest cancellation
+layer head energy_ratio term_cosine separate_write_share_%
+   11    3    0.9382334  -0.0623130               43.39268
+    6    1    0.9989522  -0.0010503               46.54608
+   17    3    1.0142758   0.0154754               69.30207
+    0    1    1.0175922   0.0187773               67.48133
+   10    3    1.0206387   0.0206497               48.36607
+   17    0    1.0207422   0.0207585               51.98176
+   15    0    1.0239950   0.0240460               53.25437
+    9    1    1.0296030   0.0300898               41.04234
+
+Highest ratios: strongest reinforcement
+layer head energy_ratio term_cosine separate_write_share_%
+    2    0    1.1529821   0.1541151               56.05167
+    3    2    1.1515591   0.1741485               74.62729
+   17    1    1.1450306   0.1475369               59.17698
+   11    1    1.1425000   0.1528536               68.08886
+    1    0    1.1254461   0.1456350               75.39865
+    8    0    1.1221234   0.1225871               54.34501
+    5    0    1.1212903   0.1213208               51.12048
+    2    1    1.1200309   0.1215846               57.96780
+
+MODE: diagonal-scaled
+Energy-ratio quantiles [min,25%,median,75%,max]: [0.8665 1.0593 1.1009 1.1458 1.265 ]
+Term-cosine quantiles [min,25%,median,75%,max]: [-0.1414  0.0692  0.112   0.1647  0.3027]
+Pooled energy ratio across heads: 1.1237843
+Head counts: ratio < 0.25: 0 ; ratio < 0.5: 0 ; ratio > 1: 69
+
+Lowest ratios: strongest cancellation
+layer head energy_ratio term_cosine separate_write_share_%
+   11    3    0.8665107  -0.1413711               33.53811
+    3    0    0.9801576  -0.0211880               67.53445
+    8    3    0.9938264  -0.0071318               75.03253
+    2    2    1.0064038   0.0069597               69.58088
+    5    1    1.0070821   0.0073746               63.94317
+   17    0    1.0112493   0.0112609               52.27298
+    0    1    1.0117463   0.0156641               83.07812
+   17    3    1.0155807   0.0175449               72.98752
+
+Highest ratios: strongest reinforcement
+layer head energy_ratio term_cosine separate_write_share_%
+   12    1    1.2649922   0.2650907               51.36292
+   13    3    1.2546081   0.2569588               43.25228
+   11    2    1.2531003   0.2623044               36.87105
+   12    2    1.2286688   0.2382181               64.01481
+    0    0    1.2122247   0.2158237               59.09301
+   12    3    1.2104705   0.2373661               73.11806
+    4    2    1.2097649   0.3027320               86.05138
+    2    0    1.2068302   0.2262478               70.26596
+
+LAYER-POOLED RATIOS (stacking the four heads' product differences)
+layer   raw_ratio scaled_ratio
+    0   1.0545865    1.1387265
+    1   1.0945760    1.1199029
+    2   1.1042769    1.0954420
+    3   1.0894814    1.0693455
+    4   1.0822452    1.1450983
+    5   1.0850527    1.0850813
+    6   1.0662611    1.0956681
+    7   1.0808304    1.1195790
+    8   1.0714957    1.1105272
+    9   1.0564649    1.0953198
+   10   1.0816941    1.1183150
+   11   1.0584332    1.0617296
+   12   1.0831509    1.2276675
+   13   1.0856059    1.1490996
+   14   1.0573803    1.0708342
+   15   1.0665814    1.1098714
+   16   1.0748974    1.0773484
+   17   1.0644373    1.0794912
+
+```

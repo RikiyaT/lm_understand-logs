@@ -1,0 +1,6 @@
+OUTPUT of Python run 21 of at most 300:
+```
+Head removal behavior: {'pass': 10, 'n': 1008, 'gain': -0.1597222222222222, 'sample_se': 0.018228600773082713, 'original': {'accuracy': 0.35714285714285715, 'repeated': 0.1378968253968254, 'many_finals': 0.10515873015873016, 'cut': 0.041666666666666664}, 'edited': {'accuracy': 0.1974206349206349, 'repeated': 0.44543650793650796, 'many_finals': 0.30257936507936506, 'cut': 0.2857142857142857}}
+Current edit: {'model.layers.11.self_attn.o_proj.weight': {'head': 0, 'column_start': 0, 'column_stop': 256, 'removed_fraction': -0.5}}
+
+```

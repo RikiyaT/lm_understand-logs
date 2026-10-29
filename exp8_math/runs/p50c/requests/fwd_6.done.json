@@ -1,0 +1,6 @@
+{
+ "ok": false,
+ "error": "IndexError: tuple index out of range",
+ "trace": "Traceback (most recent call last):\n  File \"<repo>/scripts/mathedit/fwd_server2.py\", line 302, in main\n    res = s.run(req, os.path.join(run, \"work\", f\"fwd_{k}\"), os.path.join(run, \"work\", \"edited\"),\n  File \"<venvs>/lib/python3.10/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n  File \"<repo>/scripts/mathedit/fwd_server.py\", line 112, in run\n    return self.run_v3(req, out_dir, edit_dir, lim)\n  File \"<venvs>/lib/python3.10/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n  File \"<repo>/scripts/mathedit/fwd_server.py\", line 221, in run_v3\n    per.append(_text_outputs(self.m, i, ret, acts))\n  File \"<venvs>/lib/python3.10/site-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n  File \"<repo>/scripts/mathedit/fwd_server.py\", line 63, in _text_outputs\n    res[f\"attn_{l}\"] = out.attentions[l][0].float().cpu().numpy().astype(np.float16)\nIndexError: tuple index out of range\n",
+ "s": 0.1
+}

@@ -1,0 +1,19 @@
+OUTPUT of Python run 29 of at most 300:
+```
+EXACT EVALUATION PROMPT FORMAT
+The evaluation prompt, exactly as the model sees it (thinking on), for a problem P:
+PREFIX + P + SUFFIX, with
+PREFIX = '<|im_start|>user\n'
+SUFFIX = '\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\n'
+The model's answer follows SUFFIX directly. To score a text with a teacher-forced pass, send PREFIX + P + SUFFIX + answer as one raw text in "texts" ("chats" re-renders assistant turns and drops their reasoning).
+
+
+DIRECTIONAL WRITERS
+layer 15 top neuron ids [1155, 1787, 1060, 46, 1130, 322, 467, 930] directional coefficients [-0.0883, -0.0832, 0.0736, 0.0715, -0.0675, -0.0674, 0.0642, 0.0641] column norm median/max 0.2728 0.4938
+alpha3 relative change 0.10579
+layer 19 top neuron ids [11, 183, 1, 171, 161, 1246, 778, 145] directional coefficients [-0.1068, -0.075, 0.0696, -0.0668, 0.0629, 0.0512, -0.0471, -0.0439] column norm median/max 0.2926 0.4265
+alpha3 relative change 0.10124
+
+Recorded next pass: alpha3, both, 64 problems x4 samples, 32768 tokens.
+
+```

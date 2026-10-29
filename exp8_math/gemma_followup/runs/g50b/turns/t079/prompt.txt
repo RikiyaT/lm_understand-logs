@@ -1,0 +1,9 @@
+OUTPUT of Python run 44 of at most 300:
+```
+BEHAVIOR 29 {'accuracy': 0.043, 'mean_tokens': -33.6309, 'cut_share': -0.0059, 'repeated_line_share': -0.042}
+BEHAVIOR 30 {'accuracy': 0.0293, 'mean_tokens': 61.9873, 'cut_share': 0.0127, 'repeated_line_share': -0.0156}
+BEHAVIOR 31 {'accuracy': 0.0059, 'mean_tokens': 94.1064, 'cut_share': 0.0137, 'repeated_line_share': 0.002}
+BEHAVIOR 32 {'accuracy': 0.0088, 'mean_tokens': 142.5254, 'cut_share': 0.0156, 'repeated_line_share': 0.0273}
+Selected candidate restored exactly; pass33 ready.
+
+```

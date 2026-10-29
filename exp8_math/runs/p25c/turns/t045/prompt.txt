@@ -1,0 +1,9 @@
+OUTPUT of Python run 24 of at most 300:
+```
+Dose-response, mean logprob by retained head strength:
+1.0 {'shared_arithmetic': -1.2768, 'productive_checks': -1.51275, 'repeated_checks': -0.10949, 'established_loop': -0.01298}
+0.5 {'shared_arithmetic': -1.27403, 'productive_checks': -1.50691, 'repeated_checks': -0.11833, 'established_loop': -0.01632}
+0.0 {'shared_arithmetic': -1.25171, 'productive_checks': -1.50489, 'repeated_checks': -0.14125, 'established_loop': -0.03017}
+Current recipe: [{'tensor': 'model.language_model.layers.15.self_attn.o_proj.weight', 'columns': [1792, 2048], 'head': 7, 'multiplier': 0.5}]
+
+```

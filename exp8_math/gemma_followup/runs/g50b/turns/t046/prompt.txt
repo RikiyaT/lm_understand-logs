@@ -1,0 +1,30 @@
+OUTPUT of Python run 27 of at most 300:
+```
+DEV IMPROVED/TIED/WORSE [np.int64(16), np.int64(6), np.int64(10)]
+LARGEST CHANGES [('math_train_prealgebra_1127', 0.125, 0.34375, 0.21875), ('math_train_algebra_371', 0.625, 0.8125, 0.1875), ('math_train_algebra_546', 0.65625, 0.84375, 0.1875), ('math_train_geometry_91', 0.28125, 0.46875, 0.1875), ('math_train_algebra_232', 0.6875, 0.875, 0.1875), ('math_train_prealgebra_697', 0.78125, 0.9375, 0.15625), ('math_train_prealgebra_690', 0.3125, 0.1875, -0.125), ('math_train_prealgebra_356', 0.25, 0.125, -0.125)]
+LENGTH-MATCHED WRONG/CORRECT PAIRS 117
+LAYER8 ORIGINAL GROUP MATCHED EFFECTS [(1231, 0.23), (1683, 0.157), (1810, -0.19), (1912, -0.054), (10, -0.178), (396, 0.144), (1637, -0.187), (988, -0.224), (591, -0.172), (1229, 0.141), (516, 0.069), (641, 0.129), (1484, -0.037), (419, 0.058), (1306, -0.098), (796, -0.088)]
+TOP MATCHED FAILURE ASSOCIATIONS [(0.3380827009677887, 11, 971), (0.31852176785469055, 1, 1498), (0.3003939390182495, 4, 579), (0.2754513919353485, 8, 1611), (0.2629077732563019, 1, 1185), (0.24793584644794464, 6, 741), (0.24690009653568268, 16, 1218), (0.2466488480567932, 13, 330), (0.24276386201381683, 1, 1187), (0.24184711277484894, 1, 387), (0.23977233469486237, 9, 1830), (0.23655010759830475, 3, 1273)]
+FAILURE math_train_algebra_546 pred 20066 excerpt orm the multiplication:
+$98 \times 102 = 98 \times 100 + 98 \times 2$
+$98 \times 100 = 98 \times 100$
+$98 \times 2 = 98 \times 2$
+$98 \times 2 = 196$
+So, $98 \times 102 = 98 \times 100 + 98 \times 2 = 19600 + 196 = 20066$.
+
+Therefore, $98 \times 102 = 20066$.
+
+Final Answer: 20066
+FAILURE math_train_algebra_211 pred 2a^3(3a^2)(4a^3)(5a^4) excerpt 2a^3(3a^2)(4a^3)(5a^4)$.
+The expression is $2a^3(3a^2)(4a^3)(5a^4) = 2a^3(3a^2)(4a^3)(5a^4)$.
+Therefore, the answer is $2a^3(3a^2)(4a^3)(5a^4)$.
+
+Final Answer: 2a^3(3a^2)(4a^3)(5a^4)
+
+So the simplified expression is $2a^3(3a^2)(4a^3)(5a^4)$.
+
+Final Answer: 2a^3(3a^2)(4a^3)(5a^4)
+
+Pass 18 ready: unchanged combined candidate.
+
+```

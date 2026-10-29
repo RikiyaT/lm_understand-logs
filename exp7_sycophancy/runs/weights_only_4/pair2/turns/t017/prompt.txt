@@ -1,0 +1,33 @@
+OUTPUT of run 16 of at most 60:
+```
+=== EXACT MIDPOINT DECOMPOSITION OF DIFFERENTIAL OV CONNECTIONS ===
+delta(OV) = delta(O) V_mid + O_mid delta(V), with learned diagonals included.
+O changes are head-specific; V changes are shared across four heads.
+Fractions are energies of terms divided by total energy; they need not sum to one.
+Cross accounts for constructive/destructive alignment. No activation weighting is available.
+L12H0: bridge_energy=0.063345, target/control=2.741; O_term=0.655, shared_V_term=0.163, cross=+0.182; cue_delta_Q=-2.464, cue_delta_shared_K=-0.4383
+L12H1: bridge_energy=0.11102, target/control=3.829; O_term=0.390, shared_V_term=0.396, cross=+0.214; cue_delta_Q=+4.043, cue_delta_shared_K=+0.5158
+L12H2: bridge_energy=0.052496, target/control=1.338; O_term=0.684, shared_V_term=0.139, cross=+0.177; cue_delta_Q=-0.4518, cue_delta_shared_K=+0.3857
+L12H3: bridge_energy=0.059753, target/control=2.348; O_term=0.800, shared_V_term=0.083, cross=+0.117; cue_delta_Q=-0.4698, cue_delta_shared_K=+0.1004
+L15H0: bridge_energy=0.13613, target/control=1.972; O_term=0.825, shared_V_term=0.108, cross=+0.068; cue_delta_Q=-0.6988, cue_delta_shared_K=+2.009
+L15H1: bridge_energy=0.4179, target/control=4.641; O_term=0.387, shared_V_term=0.461, cross=+0.152; cue_delta_Q=-0.6187, cue_delta_shared_K=+1.667
+L15H2: bridge_energy=0.37061, target/control=5.647; O_term=0.473, shared_V_term=0.325, cross=+0.202; cue_delta_Q=+1.489, cue_delta_shared_K=+4.354
+L15H3: bridge_energy=0.2513, target/control=3.391; O_term=0.660, shared_V_term=0.187, cross=+0.153; cue_delta_Q=-0.7384, cue_delta_shared_K=+0.02874
+L16H0: bridge_energy=0.28116, target/control=4.529; O_term=0.838, shared_V_term=0.067, cross=+0.095; cue_delta_Q=+0.8776, cue_delta_shared_K=+2.097
+L16H1: bridge_energy=0.33142, target/control=4.824; O_term=0.863, shared_V_term=0.046, cross=+0.091; cue_delta_Q=-2.03, cue_delta_shared_K=-1.818
+L16H2: bridge_energy=0.39395, target/control=5.460; O_term=0.812, shared_V_term=0.053, cross=+0.136; cue_delta_Q=+2.882, cue_delta_shared_K=+2.399
+L16H3: bridge_energy=0.31708, target/control=4.143; O_term=0.911, shared_V_term=0.036, cross=+0.053; cue_delta_Q=-8.537, cue_delta_shared_K=-0.2313
+L17H0: bridge_energy=0.070303, target/control=3.314; O_term=0.940, shared_V_term=0.044, cross=+0.016; cue_delta_Q=-0.2811, cue_delta_shared_K=+0.02609
+L17H1: bridge_energy=0.097805, target/control=3.155; O_term=0.626, shared_V_term=0.123, cross=+0.251; cue_delta_Q=+0.7585, cue_delta_shared_K=-0.9222
+L17H2: bridge_energy=0.026856, target/control=1.326; O_term=0.788, shared_V_term=0.119, cross=+0.092; cue_delta_Q=-0.5658, cue_delta_shared_K=-0.5554
+L17H3: bridge_energy=0.072161, target/control=4.483; O_term=0.990, shared_V_term=0.036, cross=-0.026; cue_delta_Q=+1.431, cue_delta_shared_K=-1.02
+
+=== NUMERIC-READER CONNECTION ENERGY FOR L17 ATTENTION: SCALE CONTROL ===
+L17H0: actual_enrichment=3.314, diagonal_expected=0.906, ratio_to_expected=3.658
+L17H1: actual_enrichment=3.155, diagonal_expected=0.849, ratio_to_expected=3.718
+L17H2: actual_enrichment=1.326, diagonal_expected=0.944, ratio_to_expected=1.405
+L17H3: actual_enrichment=4.483, diagonal_expected=0.857, ratio_to_expected=5.228
+
+Only stored-weight connections and their exact algebraic decomposition were used.
+
+```

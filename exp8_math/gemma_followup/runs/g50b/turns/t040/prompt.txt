@@ -1,0 +1,6 @@
+OUTPUT of Python run 23 of at most 300:
+```
+{'components': [{'tensor': 'model.layers.11.self_attn.o_proj.weight', 'query_head': 2, 'columns': [512, 768], 'output_multiplier': 1.2, 'relative_frobenius_change': 0.11490494012832642}, {'tensor': 'model.layers.8.mlp.down_proj.weight', 'columns': [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], 'suppression_alpha': 0.5, 'relative_frobenius_change': 0.04453825205564499}]}
+'Two-component causal combination ready.'
+
+```

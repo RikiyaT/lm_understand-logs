@@ -1,0 +1,58 @@
+OUTPUT of run 8 of at most 60:
+```
+NEW HYPOTHESIS: SHARED ALIGNMENT IS ONLY A COORDINATE-MAGNITUDE EFFECT
+Reference: independent entry signs, conditioned on every observed magnitude.
+No sign-randomized matrices or model inputs are generated.
+Reference SD measures this specific mathematical reference, not uncertainty
+about sycophancy or a realistic distribution of fine-tuning procedures.
+
+MODE: raw
+layer part       observed reference_mean reference_sd enrichment excess_SD
+ 4 mlp         0.012591       0.012566    0.0001403      1.002       0.18
+ 4 attention   0.014445       0.012477    0.0001968      1.158      10.00
+11 mlp         0.024270       0.012428    0.0001402      1.953      84.44
+11 attention   0.019622       0.012480    0.0001980      1.572      36.07
+12 mlp         0.041624       0.012417    0.0001393      3.352     209.65
+12 attention   0.028361       0.012418    0.0001970      2.284      80.91
+13 mlp         0.069437       0.012475    0.0001398      5.566     407.39
+13 attention   0.039540       0.012429    0.0001963      3.181     138.11
+14 mlp         0.132687       0.012476    0.0001403     10.635     856.98
+14 attention   0.066092       0.012505    0.0002011      5.285     266.43
+15 mlp         0.203747       0.012540    0.0001425     16.248    1342.14
+15 attention   0.107466       0.012522    0.0001982      8.583     479.02
+16 mlp         0.325983       0.012652    0.0001480     25.765    2117.44
+16 attention   0.292777       0.012675    0.0002064     23.099    1356.81
+17 mlp         0.302176       0.012625    0.0001506     23.935    1922.96
+17 attention   0.213311       0.012800    0.0002088     16.664     960.09
+
+MODE: folded
+layer part       observed reference_mean reference_sd enrichment excess_SD
+ 4 mlp         0.537294       0.564050    0.0015264      0.953     -17.53
+ 4 attention   0.387972       0.401711    0.0021460      0.966      -6.40
+11 mlp         0.097064       0.069357    0.0003548      1.399      78.08
+11 attention   0.059808       0.035353    0.0005187      1.692      47.15
+12 mlp         0.097940       0.047769    0.0003291      2.050     152.44
+12 attention   0.081237       0.034457    0.0005105      2.358      91.64
+13 mlp         0.112854       0.032964    0.0002946      3.424     271.14
+13 attention   0.080270       0.034724    0.0004596      2.312      99.10
+14 mlp         0.166966       0.037373    0.0002927      4.468     442.70
+14 attention   0.075491       0.030160    0.0003762      2.503     120.50
+15 mlp         0.242524       0.052396    0.0003031      4.629     627.29
+15 attention   0.145676       0.031538    0.0004163      4.619     274.14
+16 mlp         0.371947       0.063366    0.0003585      5.870     860.64
+16 attention   0.283065       0.031823    0.0003842      8.895     653.85
+17 mlp         0.324344       0.044783    0.0003172      7.243     881.35
+17 attention   0.211700       0.030783    0.0004055      6.877     446.15
+
+LATE MLP SUMMARY
+{"layer": 15, "raw": {"observed_alignment": 0.20374681769918243, "sign_reference_mean": 0.012539684058093746, "sign_reference_sd": 0.00014246439301677648, "observed_over_reference": 16.248161975633984, "excess_in_reference_sd": 1342.139811865638, "excess_alignment": 0.19120713364108868}, "folded": {"observed_alignment": 0.24252374325592485, "sign_reference_mean": 0.05239640859663048, "sign_reference_sd": 0.0003030911513090796, "observed_over_reference": 4.628632949310979, "excess_in_reference_sd": 627.2942441180361, "excess_alignment": 0.19012733465929438}}
+{"layer": 16, "raw": {"observed_alignment": 0.32598316003627104, "sign_reference_mean": 0.012652303782178444, "sign_reference_sd": 0.00014797640119079832, "observed_over_reference": 25.764727566487817, "excess_in_reference_sd": 2117.4380085787393, "excess_alignment": 0.31333085625409257}, "folded": {"observed_alignment": 0.37194729561405937, "sign_reference_mean": 0.06336648672925758, "sign_reference_sd": 0.00035854795295735015, "observed_over_reference": 5.86977935518593, "excess_in_reference_sd": 860.6402751419639, "excess_alignment": 0.30858080888480177}}
+{"layer": 17, "raw": {"observed_alignment": 0.30217629003296365, "sign_reference_mean": 0.012625048681541132, "sign_reference_sd": 0.00015057600310158458, "observed_over_reference": 23.93466335498337, "excess_in_reference_sd": 1922.957412782963, "excess_alignment": 0.2895512413514225}, "folded": {"observed_alignment": 0.32434397797772435, "sign_reference_mean": 0.04478325428604543, "sign_reference_sd": 0.00031719590469007783, "observed_over_reference": 7.242528108967523, "excess_in_reference_sd": 881.3503565401608, "excess_alignment": 0.27956072369167895}}
+
+Interpretation:
+Excess alignment supports coordinated signs across residual coordinates,
+rather than an explanation based only on individual difference magnitudes.
+It does not identify what the coordinated directions represent.
+Swapping A and B reverses every difference and leaves all results unchanged.
+
+```

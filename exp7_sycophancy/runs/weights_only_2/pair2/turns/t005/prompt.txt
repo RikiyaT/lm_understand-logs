@@ -1,0 +1,106 @@
+OUTPUT of run 4 of at most 60:
+```
+SCALED MLP FACTOR AND UNIT-BANK COMPARISONS
+DU/triple comparisons keep units separate; they do not include cancellation between units.
+layer gate_rel up_rel down_rel DU_bank_rel triple_bank_rel top1_share top10_share top100_share
+0 0.006203 0.006165 0.018682 0.017604 0.017754 0.027487 0.097371 0.294265
+1 0.006327 0.006146 0.023754 0.024517 0.025465 0.009620 0.045683 0.223367
+2 0.006412 0.006234 0.015572 0.016096 0.017390 0.004802 0.035348 0.179643
+3 0.007699 0.006542 0.022866 0.021384 0.023327 0.013416 0.065953 0.252416
+4 0.006287 0.006430 0.029771 0.027572 0.024898 0.013434 0.092305 0.354321
+5 0.006605 0.006487 0.015363 0.015189 0.016132 0.043241 0.095781 0.299681
+6 0.006627 0.006414 0.016516 0.015669 0.010368 0.157102 0.206833 0.371501
+7 0.006369 0.006330 0.011460 0.012278 0.009219 0.083080 0.113608 0.270192
+8 0.006499 0.006355 0.018562 0.016862 0.019297 0.023463 0.075753 0.252235
+9 0.006395 0.006349 0.011978 0.013195 0.015757 0.008493 0.037969 0.189444
+10 0.006351 0.006320 0.017290 0.017712 0.019628 0.053146 0.148134 0.329287
+11 0.006359 0.006246 0.011566 0.012366 0.013983 0.006682 0.046192 0.229039
+12 0.006224 0.006356 0.010642 0.012318 0.014349 0.006246 0.036237 0.182191
+13 0.006488 0.006505 0.015467 0.016413 0.017826 0.012466 0.043735 0.179827
+14 0.006741 0.006576 0.017560 0.018421 0.020162 0.016217 0.041840 0.159944
+15 0.006697 0.006600 0.015383 0.016355 0.018298 0.009897 0.031868 0.131381
+16 0.006668 0.006511 0.013950 0.015107 0.017086 0.012654 0.043525 0.141003
+17 0.006863 0.006733 0.014376 0.015279 0.018271 0.005221 0.037838 0.156630
+
+TOP 3 UNITS PER LAYER BY ABSOLUTE TRIPLE-COEFFICIENT DIFFERENCE
+layer 0
+  unit 1856 within_layer_delta_share=0.02749 triple_rel=0.02849 gate_rel=0.00196 DU_rel=0.02850 gate_cos=0.99999808
+  unit 1405 within_layer_delta_share=0.01609 triple_rel=0.00498 gate_rel=0.00441 DU_rel=0.00230 gate_cos=0.99999039
+  unit 1130 within_layer_delta_share=0.01497 triple_rel=0.00830 gate_rel=0.00135 DU_rel=0.00817 gate_cos=0.99999909
+layer 1
+  unit 167 within_layer_delta_share=0.00962 triple_rel=0.03039 gate_rel=0.00529 DU_rel=0.03005 gate_cos=0.99998600
+  unit 1098 within_layer_delta_share=0.00554 triple_rel=0.02457 gate_rel=0.00509 DU_rel=0.02405 gate_cos=0.99998702
+  unit 239 within_layer_delta_share=0.00446 triple_rel=0.01477 gate_rel=0.00519 DU_rel=0.01380 gate_cos=0.99998651
+layer 2
+  unit 6 within_layer_delta_share=0.00480 triple_rel=0.04195 gate_rel=0.00469 DU_rel=0.04150 gate_cos=0.99998905
+  unit 798 within_layer_delta_share=0.00418 triple_rel=0.03604 gate_rel=0.00478 DU_rel=0.03575 gate_cos=0.99998856
+  unit 1813 within_layer_delta_share=0.00397 triple_rel=0.05814 gate_rel=0.00613 DU_rel=0.05777 gate_cos=0.99998122
+layer 3
+  unit 1635 within_layer_delta_share=0.01342 triple_rel=0.01096 gate_rel=0.00566 DU_rel=0.00874 gate_cos=0.99998443
+  unit 1224 within_layer_delta_share=0.01110 triple_rel=0.03290 gate_rel=0.00276 DU_rel=0.03282 gate_cos=0.99999619
+  unit 1414 within_layer_delta_share=0.01096 triple_rel=0.01400 gate_rel=0.01345 DU_rel=0.00388 gate_cos=0.99991002
+layer 4
+  unit 1044 within_layer_delta_share=0.01343 triple_rel=0.07144 gate_rel=0.00251 DU_rel=0.07139 gate_cos=0.99999685
+  unit 1224 within_layer_delta_share=0.01297 triple_rel=0.11569 gate_rel=0.00613 DU_rel=0.11518 gate_cos=0.99998150
+  unit 84 within_layer_delta_share=0.01039 triple_rel=0.01295 gate_rel=0.01147 DU_rel=0.00611 gate_cos=0.99993555
+layer 5
+  unit 584 within_layer_delta_share=0.04324 triple_rel=0.00763 gate_rel=0.00605 DU_rel=0.00462 gate_cos=0.99998170
+  unit 729 within_layer_delta_share=0.01127 triple_rel=0.02313 gate_rel=0.00481 DU_rel=0.02250 gate_cos=0.99998845
+  unit 665 within_layer_delta_share=0.00748 triple_rel=0.02198 gate_rel=0.00527 DU_rel=0.02169 gate_cos=0.99998619
+layer 6
+  unit 1824 within_layer_delta_share=0.15710 triple_rel=0.00481 gate_rel=0.00140 DU_rel=0.00460 gate_cos=0.99999901
+  unit 314 within_layer_delta_share=0.01755 triple_rel=0.04631 gate_rel=0.00130 DU_rel=0.04635 gate_cos=0.99999916
+  unit 905 within_layer_delta_share=0.00631 triple_rel=0.07744 gate_rel=0.00692 DU_rel=0.07706 gate_cos=0.99997619
+layer 7
+  unit 1455 within_layer_delta_share=0.08308 triple_rel=0.00328 gate_rel=0.00088 DU_rel=0.00316 gate_cos=0.99999962
+  unit 1057 within_layer_delta_share=0.00545 triple_rel=0.00973 gate_rel=0.00492 DU_rel=0.00840 gate_cos=0.99998788
+  unit 1032 within_layer_delta_share=0.00381 triple_rel=0.02035 gate_rel=0.00223 DU_rel=0.02029 gate_cos=0.99999753
+layer 8
+  unit 188 within_layer_delta_share=0.02346 triple_rel=0.00788 gate_rel=0.00752 DU_rel=0.00237 gate_cos=0.99997234
+  unit 1868 within_layer_delta_share=0.01159 triple_rel=0.04058 gate_rel=0.00294 DU_rel=0.04050 gate_cos=0.99999570
+  unit 1688 within_layer_delta_share=0.00817 triple_rel=0.04607 gate_rel=0.00436 DU_rel=0.04602 gate_cos=0.99999051
+layer 9
+  unit 808 within_layer_delta_share=0.00849 triple_rel=0.02815 gate_rel=0.00458 DU_rel=0.02755 gate_cos=0.99999000
+  unit 1436 within_layer_delta_share=0.00364 triple_rel=0.01683 gate_rel=0.00280 DU_rel=0.01662 gate_cos=0.99999609
+  unit 448 within_layer_delta_share=0.00364 triple_rel=0.01814 gate_rel=0.00164 DU_rel=0.01805 gate_cos=0.99999866
+layer 10
+  unit 1363 within_layer_delta_share=0.05315 triple_rel=0.02860 gate_rel=0.00070 DU_rel=0.02859 gate_cos=0.99999976
+  unit 1564 within_layer_delta_share=0.03568 triple_rel=0.01350 gate_rel=0.00107 DU_rel=0.01346 gate_cos=0.99999943
+  unit 1529 within_layer_delta_share=0.02115 triple_rel=0.03333 gate_rel=0.00104 DU_rel=0.03332 gate_cos=0.99999946
+layer 11
+  unit 1815 within_layer_delta_share=0.00668 triple_rel=0.02110 gate_rel=0.00115 DU_rel=0.02106 gate_cos=0.99999934
+  unit 716 within_layer_delta_share=0.00533 triple_rel=0.01718 gate_rel=0.00207 DU_rel=0.01710 gate_cos=0.99999791
+  unit 494 within_layer_delta_share=0.00493 triple_rel=0.01452 gate_rel=0.00283 DU_rel=0.01420 gate_cos=0.99999612
+layer 12
+  unit 1528 within_layer_delta_share=0.00625 triple_rel=0.01582 gate_rel=0.00125 DU_rel=0.01577 gate_cos=0.99999922
+  unit 1520 within_layer_delta_share=0.00446 triple_rel=0.01592 gate_rel=0.00143 DU_rel=0.01585 gate_cos=0.99999898
+  unit 183 within_layer_delta_share=0.00385 triple_rel=0.01653 gate_rel=0.00138 DU_rel=0.01650 gate_cos=0.99999906
+layer 13
+  unit 16 within_layer_delta_share=0.01247 triple_rel=0.01420 gate_rel=0.00113 DU_rel=0.01416 gate_cos=0.99999937
+  unit 369 within_layer_delta_share=0.00458 triple_rel=0.02206 gate_rel=0.00206 DU_rel=0.02196 gate_cos=0.99999788
+  unit 1517 within_layer_delta_share=0.00442 triple_rel=0.01307 gate_rel=0.00261 DU_rel=0.01281 gate_cos=0.99999660
+layer 14
+  unit 641 within_layer_delta_share=0.01622 triple_rel=0.02494 gate_rel=0.00115 DU_rel=0.02492 gate_cos=0.99999934
+  unit 663 within_layer_delta_share=0.00433 triple_rel=0.02307 gate_rel=0.00325 DU_rel=0.02271 gate_cos=0.99999496
+  unit 1798 within_layer_delta_share=0.00317 triple_rel=0.02674 gate_rel=0.00250 DU_rel=0.02664 gate_cos=0.99999689
+layer 15
+  unit 1369 within_layer_delta_share=0.00990 triple_rel=0.01958 gate_rel=0.00097 DU_rel=0.01956 gate_cos=0.99999954
+  unit 1226 within_layer_delta_share=0.00505 triple_rel=0.00758 gate_rel=0.00532 DU_rel=0.00537 gate_cos=0.99998595
+  unit 651 within_layer_delta_share=0.00436 triple_rel=0.01800 gate_rel=0.00124 DU_rel=0.01796 gate_cos=0.99999923
+layer 16
+  unit 893 within_layer_delta_share=0.01265 triple_rel=0.01535 gate_rel=0.00126 DU_rel=0.01529 gate_cos=0.99999920
+  unit 1591 within_layer_delta_share=0.01102 triple_rel=0.01068 gate_rel=0.00852 DU_rel=0.00640 gate_cos=0.99996383
+  unit 730 within_layer_delta_share=0.00571 triple_rel=0.02438 gate_rel=0.00176 DU_rel=0.02431 gate_cos=0.99999847
+layer 17
+  unit 1916 within_layer_delta_share=0.00522 triple_rel=0.01592 gate_rel=0.00180 DU_rel=0.01582 gate_cos=0.99999838
+  unit 1026 within_layer_delta_share=0.00515 triple_rel=0.01494 gate_rel=0.00363 DU_rel=0.01410 gate_cos=0.99999359
+  unit 1312 within_layer_delta_share=0.00449 triple_rel=0.02939 gate_rel=0.00198 DU_rel=0.02934 gate_cos=0.99999804
+
+LAYER RANKINGS
+gate_rel [(3, 0.007699), (17, 0.006863), (14, 0.006741), (15, 0.006697), (16, 0.006668), (6, 0.006627), (5, 0.006605), (8, 0.006499), (13, 0.006488), (2, 0.006412)]
+down_rel [(4, 0.029771), (1, 0.023754), (3, 0.022866), (0, 0.018682), (8, 0.018562), (14, 0.01756), (10, 0.01729), (6, 0.016516), (2, 0.015572), (13, 0.015467)]
+du_rel [(4, 0.027572), (1, 0.024517), (3, 0.021384), (14, 0.018421), (10, 0.017712), (0, 0.017604), (8, 0.016862), (13, 0.016413), (15, 0.016355), (2, 0.016096)]
+tri_rel [(1, 0.025465), (4, 0.024898), (3, 0.023327), (14, 0.020162), (10, 0.019628), (8, 0.019297), (15, 0.018298), (17, 0.018271), (13, 0.017826), (0, 0.017754)]
+top10_share [(6, 0.206833), (10, 0.148134), (7, 0.113608), (0, 0.097371), (5, 0.095781), (4, 0.092305), (8, 0.075753), (3, 0.065953), (11, 0.046192), (1, 0.045683)]
+
+```

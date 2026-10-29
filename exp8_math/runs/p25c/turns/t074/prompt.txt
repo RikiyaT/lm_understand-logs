@@ -1,0 +1,46 @@
+Forward pass 20 of 25 done (teacher_forced); results in /work/fwd_28/. Summary:
+```
+{
+ "ok": true,
+ "lengths": [
+  201,
+  306,
+  185,
+  263,
+  318,
+  300
+ ],
+ "files": {
+  "input_ids": [
+   6,
+   318
+  ],
+  "token_logprobs": [
+   6,
+   317
+  ],
+  "topk_logprobs": [
+   6,
+   318,
+   20
+  ],
+  "topk_ids": [
+   6,
+   318,
+   20
+  ]
+ },
+ "edited_tensors": 1,
+ "mean_token_logprob": [
+  -1.4421441555023193,
+  -0.6374606490135193,
+  -1.1041980981826782,
+  -0.6231811046600342,
+  -0.6018698215484619,
+  -0.5700088739395142
+ ],
+ "type": "teacher_forced",
+ "s": 0.4
+}
+```
+Forward passes left: 5.

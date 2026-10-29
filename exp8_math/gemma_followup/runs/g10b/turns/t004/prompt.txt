@@ -1,0 +1,26 @@
+OUTPUT of Python run 2 of at most 300:
+```
+Existing edits: []
+Tensor count: 236
+Layer-0 tensor names: ['model.layers.0.input_layernorm.weight', 'model.layers.0.mlp.down_proj.weight', 'model.layers.0.mlp.gate_proj.weight', 'model.layers.0.mlp.up_proj.weight', 'model.layers.0.post_attention_layernorm.weight', 'model.layers.0.post_feedforward_layernorm.weight', 'model.layers.0.pre_feedforward_layernorm.weight', 'model.layers.0.self_attn.k_norm.weight', 'model.layers.0.self_attn.k_proj.weight', 'model.layers.0.self_attn.o_proj.weight', 'model.layers.0.self_attn.q_norm.weight', 'model.layers.0.self_attn.q_proj.weight', 'model.layers.0.self_attn.v_proj.weight']
+Prompt format:
+The evaluation prompt, exactly as the model sees it (thinking off), for a problem P:
+PREFIX + P + SUFFIX, with
+PREFIX = '<bos><start_of_turn>user\n'
+SUFFIX = '\nPlease reason step by step, and put your final answer within \\boxed{}.<end_of_turn>\n<start_of_turn>model\n'
+The model's answer follows SUFFIX directly. To score a text with a teacher-forced pass, send PREFIX + P + SUFFIX + answer as one raw text in "texts".
+
+math_train count: 7275 fields: ['id', 'source', 'subject', 'level', 'problem', 'answer', 'solution']
+Example metadata: {'id': 'math_train_algebra_0', 'source': 'math', 'subject': 'algebra', 'level': 'Level 5'}
+Example problem: Let \[f(x) = \left\{
+\begin{array}{cl} ax+3, &\text{ if }x>2, \\
+x-5 &\text{ if } -2 \le x \le 2, \\
+2x-b &\text{ if } x <-2.
+\end{array}
+\right.\]Find $a+b$ if the piecewise function is continuous (which means that its graph can be drawn without lifting your pencil from the pape
+gsm8k_train count: 7469 fields: ['id', 'source', 'problem', 'answer', 'solution']
+Example metadata: {'id': 'gsm8k_train_0', 'source': 'gsm8k'}
+Example problem: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+MATH strata: Counter({('algebra', 'Level 5'): 433, ('intermediate_algebra', 'Level 5'): 421, ('algebra', 'Level 4'): 392, ('algebra', 'Level 3'): 385, ('geometry', 'Level 5'): 359, ('algebra', 'Level 2'): 338, ('intermediate_algebra', 'Level 4'): 332, ('prealgebra', 'Level 2'): 327, ('number_theory', 'Level 5'): 308, ('intermediate_algebra', 'Level 3'): 295, ('counting_and_probability', 'Level 5'): 251, ('prealgebra', 'Level 5'): 249, ('prealgebra', 'Level 3'): 249, ('prealgebra', 'Level 4'): 245, ('number_theory', 'Level 3'): 190, ('number_theory', 'Level 4'): 184, ('algebra', 'Level 1'): 178, ('geometry', 'Level 4'): 173, ('precalculus', 'Level 5'): 166, ('counting_and_probability', 'Level 4'): 165, ('intermediate_algebra', 'Level 2'): 164, ('precalculus', 'Level 4'): 161, ('precalculus', 'Level 3'): 157, ('counting_and_probability', 'Level 3'): 156, ('precalculus', 'Level 2'): 146, ('number_theory', 'Level 2'): 131, ('geometry', 'Level 3'): 126, ('prealgebra', 'Level 1'): 126, ('counting_and_probability', 'Level 2'): 115, ('geometry', 'Level 2'): 99, ('intermediate_algebra', 'Level 1'): 58, ('precalculus', 'Level 1'): 58, ('counting_and_probability', 'Level 1'): 50, ('number_theory', 'Level 1'): 46, ('geometry', 'Level 1'): 40, ('geometry', 'Level ?'): 2})
+
+```

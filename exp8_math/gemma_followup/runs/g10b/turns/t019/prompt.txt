@@ -1,0 +1,13 @@
+OUTPUT of Python run 13 of at most 300:
+```
+Edit: {'kind': 'sparse_mlp_output_attenuation', 'strength': 1.0, 'targets': {'8': [699], '14': [483, 984], '17': [1179]}, 'tensors': ['model.layers.8.mlp.down_proj.weight', 'model.layers.14.mlp.down_proj.weight', 'model.layers.17.mlp.down_proj.weight']}
+model.layers.8.mlp.down_proj.weight shape (640, 2048) changed_columns 1 relative_frobenius_change 0.01887
+Channel 8 699 loop activity by excerpt: [0.167, 0.258, 0.268, 0.384, 0.056, 0.126, 0.18, 0.107]
+model.layers.14.mlp.down_proj.weight shape (640, 2048) changed_columns 2 relative_frobenius_change 0.03045
+Channel 14 483 loop activity by excerpt: [0.013, 0.067, 0.059, 0.053, 0.017, 0.014, 0.065, 0.027]
+Channel 14 984 loop activity by excerpt: [0.004, 0.133, 0.135, 0.13, 0.038, 0.023, 0.143, 0.077]
+model.layers.17.mlp.down_proj.weight shape (640, 2048) changed_columns 1 relative_frobenius_change 0.02052
+Channel 17 1179 loop activity by excerpt: [0.094, 0.297, 0.367, 0.623, 0.099, 0.136, 0.504, 0.164]
+Active edits: ['model.layers.14.mlp.down_proj.weight', 'model.layers.17.mlp.down_proj.weight', 'model.layers.8.mlp.down_proj.weight']
+
+```

@@ -1,0 +1,45 @@
+OUTPUT of Python run 6 of at most 300:
+```
+DEV box diagnostics: {'responses_with_box': 229, 'multiple_boxes': 8, 'correct_box_then_wrong_last_box': 0, 'failed_despite_earlier_matching_box': 0}
+Stable, positive-mean failure-associated components:
+{'layer': 0, 'neuron': 1405, 'failure_corr': 0.1013, 'half0_corr': 0.1063, 'half1_corr': 0.0906, 'repeat_corr': 0.2692, 'energy': 4.2313, 'mean': 13.3728}
+{'layer': 0, 'neuron': 149, 'failure_corr': 0.105, 'half0_corr': 0.1122, 'half1_corr': 0.0964, 'repeat_corr': 0.2817, 'energy': 0.7672, 'mean': 1.5894}
+{'layer': 0, 'neuron': 1309, 'failure_corr': 0.1658, 'half0_corr': 0.1908, 'half1_corr': 0.1287, 'repeat_corr': -0.0447, 'energy': 0.2515, 'mean': 0.4785}
+{'layer': 0, 'neuron': 2032, 'failure_corr': 0.1402, 'half0_corr': 0.1364, 'half1_corr': 0.1399, 'repeat_corr': 0.0226, 'energy': 0.1355, 'mean': 0.1692}
+{'layer': 0, 'neuron': 761, 'failure_corr': 0.1136, 'half0_corr': 0.1126, 'half1_corr': 0.0989, 'repeat_corr': -0.007, 'energy': 0.2207, 'mean': 0.3206}
+{'layer': 0, 'neuron': 1479, 'failure_corr': 0.1131, 'half0_corr': 0.1111, 'half1_corr': 0.1212, 'repeat_corr': -0.0276, 'energy': 0.1453, 'mean': 0.1645}
+{'layer': 0, 'neuron': 1658, 'failure_corr': 0.1098, 'half0_corr': 0.0837, 'half1_corr': 0.1307, 'repeat_corr': -0.0128, 'energy': 0.2551, 'mean': 0.4254}
+{'layer': 0, 'neuron': 445, 'failure_corr': 0.1774, 'half0_corr': 0.1238, 'half1_corr': 0.2154, 'repeat_corr': 0.1654, 'energy': 0.1163, 'mean': 0.0934}
+{'layer': 0, 'neuron': 898, 'failure_corr': 0.1156, 'half0_corr': 0.1303, 'half1_corr': 0.1058, 'repeat_corr': 0.1001, 'energy': 0.1486, 'mean': 0.0638}
+{'layer': 0, 'neuron': 845, 'failure_corr': 0.1108, 'half0_corr': 0.1269, 'half1_corr': 0.0809, 'repeat_corr': 0.062, 'energy': 0.2212, 'mean': 0.2508}
+{'layer': 1, 'neuron': 483, 'failure_corr': 0.1725, 'half0_corr': 0.2164, 'half1_corr': 0.1222, 'repeat_corr': 0.1173, 'energy': 0.0796, 'mean': 0.1955}
+{'layer': 1, 'neuron': 1899, 'failure_corr': 0.131, 'half0_corr': 0.0978, 'half1_corr': 0.1538, 'repeat_corr': 0.0744, 'energy': 0.123, 'mean': 0.2215}
+{'layer': 0, 'neuron': 607, 'failure_corr': 0.1116, 'half0_corr': 0.1151, 'half1_corr': 0.0902, 'repeat_corr': 0.1704, 'energy': 0.1334, 'mean': 0.0462}
+{'layer': 0, 'neuron': 798, 'failure_corr': 0.1318, 'half0_corr': 0.1282, 'half1_corr': 0.1358, 'repeat_corr': -0.0088, 'energy': 0.0623, 'mean': 0.0027}
+{'layer': 0, 'neuron': 1632, 'failure_corr': 0.1463, 'half0_corr': 0.1321, 'half1_corr': 0.1547, 'repeat_corr': 0.0959, 'energy': 0.0533, 'mean': 0.0196}
+{'layer': 0, 'neuron': 1915, 'failure_corr': 0.1299, 'half0_corr': 0.1667, 'half1_corr': 0.1072, 'repeat_corr': 0.2637, 'energy': 0.0808, 'mean': 0.0971}
+{'layer': 0, 'neuron': 1028, 'failure_corr': 0.1095, 'half0_corr': 0.1097, 'half1_corr': 0.0948, 'repeat_corr': -0.0809, 'energy': 0.1002, 'mean': 0.1064}
+{'layer': 1, 'neuron': 553, 'failure_corr': 0.1144, 'half0_corr': 0.1015, 'half1_corr': 0.1195, 'repeat_corr': 0.063, 'energy': 0.087, 'mean': 0.1896}
+Strongest length-controlled repetition associations:
+{'layer': 5, 'neuron': 1574, 'repeat_corr': 0.445, 'failure_corr': 0.0374, 'energy': 0.0268, 'mean': 0.0608}
+{'layer': 10, 'neuron': 175, 'repeat_corr': 0.4343, 'failure_corr': 0.0493, 'energy': 0.0189, 'mean': 0.0586}
+{'layer': 5, 'neuron': 1586, 'repeat_corr': 0.432, 'failure_corr': 0.0061, 'energy': 0.0371, 'mean': -0.0436}
+{'layer': 5, 'neuron': 1777, 'repeat_corr': 0.4079, 'failure_corr': 0.0377, 'energy': 0.0614, 'mean': 0.1245}
+{'layer': 16, 'neuron': 452, 'repeat_corr': 0.3941, 'failure_corr': 0.0504, 'energy': 0.0045, 'mean': 0.0013}
+{'layer': 6, 'neuron': 1142, 'repeat_corr': 0.3879, 'failure_corr': 0.038, 'energy': 0.0257, 'mean': -0.0543}
+{'layer': 8, 'neuron': 716, 'repeat_corr': 0.3603, 'failure_corr': 0.0521, 'energy': 0.024, 'mean': 0.0765}
+{'layer': 17, 'neuron': 17, 'repeat_corr': 0.3487, 'failure_corr': -0.0001, 'energy': 0.0093, 'mean': -0.0191}
+{'layer': 15, 'neuron': 1254, 'repeat_corr': 0.3458, 'failure_corr': -0.0136, 'energy': 0.0084, 'mean': -0.0165}
+{'layer': 10, 'neuron': 1413, 'repeat_corr': 0.3451, 'failure_corr': -0.0137, 'energy': 0.0119, 'mean': 0.0025}
+{'layer': 0, 'neuron': 1808, 'repeat_corr': 0.3424, 'failure_corr': 0.0614, 'energy': 0.6438, 'mean': -0.975}
+{'layer': 8, 'neuron': 916, 'repeat_corr': 0.3389, 'failure_corr': 0.0018, 'energy': 0.017, 'mean': -0.033}
+Matched failing DEV excerpts:
+math_train_counting_and_probability_606 reference '35' response 'Let the 7 distinct points be denoted by $P_1, P_2, P_3, P_4, P_5, P_6, P_7$.\nWe want to find the number of different triangles that can be f ... ent triangles that can be formed is 245.\n\nFinal Answer: 245\n\nThe number of different triangles that can be formed is 245.\n\nFinal Answer: 245'
+math_train_prealgebra_593 reference '250' response 'Let $A=(0,0)$, $B=(25,0)$, and $C=(0,20)$. The area of triangle $ABC$ is given by the formula\n$$Area = \\frac{1}{2} \\cdot AC \\cdot AB = \\frac ... ot 20 \\cdot 25 = \\frac{2500}{2} = 1250.$$\nThus, the area of triangle $ABC$ is 1250 cm$^2$.\n\nFinal Answer: The final answer is $\\boxed{1250}$'
+math_train_algebra_1707 reference '\\frac{63}{64}' response 'Let the geometric sequence be denoted by $a_1, a_2, a_3, \\dots$.\nThe first term is $a_1 = \\frac12$.\nThe common ratio is $r = \\frac{1}{2}$.\nT ... c{1}{12} + \\frac{1}{16}$.\n\nFinal Answer: The final answer is $\\boxed{\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{12} + \\frac{1}{16}}$'
+math_train_prealgebra_55 reference '729' response 'Let $a = 5^2 - 4^2 = 5^2 - 4^2 = 25 - 16 = 9$.\nThen we have\n$$ \\left(5^2-4^2\\right)^3 = (9)^3 = 9 \\cdot 9^3 = 9 \\cdot 9^3 = 9 \\cdot 9^6 = 9  ... 9^6$.\nThe expression is $9^6 = 9^6$.\n\nFinal Answer: 9^6\n\n$9^6 = 9^6 = 9^6$\n\nThe value of the expression is $9^6$.\n\nFinal Answer: $9^6 = 9^6$'
+math_train_prealgebra_940 reference '8' response 'Let $n$ be the number of cards Jasmine wants to buy.\nThe cost of the cards is $0.85 per card.\nThe total cost of the cards is $7.50.\nThe tota ... r of cards she can buy is $n = \\frac{75}{85}$.\nThus, the most number of cards she can buy is $\\frac{75}{85}$.\n\nFinal Answer: $\\frac{75}{85}$'
+math_train_algebra_1114 reference '100' response 'The first 10 odd positive integers are 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21.\nThe sum of the first 10 odd positive integers is\n1 + 3 + 5 + 7 ... irst 10 odd positive integers are 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21.\nTheir sum is $1+3+5+7+9+11+13+15+17+19+21 = 55$.\n\nFinal Answer: 55\n'
+No edits; holdout remains untouched.
+
+```

@@ -1,0 +1,117 @@
+OUTPUT of run 6 of at most 60:
+```
+=== SELECTED UNIT FACTORS: TOKEN-WEIGHT COSINES ===
+mid = mean of the two scaled weight factors; B-A = signed factor difference.
+gate/up are inspected separately. No gate application or unit activation is computed.
+Down directions include learned post-MLP and final diagonal scales.
+L17 U1180 gate mid +[('4', 0.352), ('8', 0.348), ('5', 0.345)] -[(' Shui', -0.172), ('ulmonary', -0.17), ('payers', -0.169)]
+L17 U1180 gate B-A +[(' Dud', 0.176), (' MAKEINTRESOURCE', 0.168), (' oov', 0.157)] -[(' mitochondrial', -0.161), ('0', -0.159), ('genome', -0.155)]
+L17 U1180 up   mid +[('onuclease', 0.165), (' HAND', 0.161), ('filtration', 0.16)] -[('4', -0.193), ('5', -0.176), ('6', -0.174)]
+L17 U1180 up   B-A +[('diamonds', 0.166), ('laces', 0.165), (' Petitioner', 0.16)] -[(' Vib', -0.18), (' Kum', -0.165), (' Mait', -0.153)]
+L17 U1180 down mid +[(' noncommutative', 0.124), ('fifth', 0.121), (' ultimi', 0.114)] -[('1', -0.232), (' satu', -0.132), (' Primeira', -0.126)]
+L17 U1180 down B-A +[('2', 0.502), ('1', 0.453), ('0', 0.406)] -[('DebuggingMode', -0.271), ('ConformanceMode', -0.268), ('addPreferredGap', -0.266)]
+L17 U1242 gate mid +[('0', 0.353), ('8', 0.261), ('9', 0.24)] -[(' phrasing', -0.159), (' multiplex', -0.158), (' budgetary', -0.156)]
+L17 U1242 gate B-A +[(' gesetz', 0.154), ('mRNA', 0.148), (' embol', 0.138)] -[(' Nipp', -0.15), ('Roles', -0.149), (' Roles', -0.146)]
+L17 U1242 up   mid +[(' zaman', 0.173), (' gubern', 0.164), (' both', 0.16)] -[(' Moreno', -0.168), ('WebApp', -0.167), (' Camry', -0.166)]
+L17 U1242 up   B-A +[('ConformanceMode', 0.173), ('WindowTitle', 0.168), (' Midland', 0.167)] -[('0', -0.252), ('8', -0.252), ('6', -0.242)]
+L17 U1242 down mid +[('0', 0.245), ('Oo', 0.173), ('zero', 0.148)] -[(' rameaux', -0.129), ('idelijk', -0.124), ('anfaatkan', -0.123)]
+L17 U1242 down B-A +[('0', 0.264), (' Tjiwarl', 0.216), ('slidesPerGroup', 0.216)] -[(' three', -0.252), (' one', -0.243), (' two', -0.228)]
+L17 U1309 gate mid +[('7', 0.374), ('8', 0.36), ('5', 0.36)] -[('Shore', -0.181), ('Cober', -0.169), ('ziff', -0.167)]
+L17 U1309 gate B-A +[(' Montpellier', 0.17), (' Gerry', 0.165), (' Toma', 0.163)] -[('intah', -0.193), (' circuitry', -0.193), (' aritm', -0.169)]
+L17 U1309 up   mid +[('adale', 0.184), (' reassure', 0.177), ('ropole', 0.17)] -[('7', -0.26), ('5', -0.251), ('3', -0.239)]
+L17 U1309 up   B-A +[(' Faye', 0.178), (' Joyce', 0.161), (' aide', 0.152)] -[(' separado', -0.176), ('emmel', -0.157), (' numerador', -0.157)]
+L17 U1309 down mid +[('2', 0.147), ('4', 0.145), ('3', 0.145)] -[('0', -0.212), (' quitter', -0.13), ('zeros', -0.126)]
+L17 U1309 down B-A +[('0', 0.246), (' vies', 0.18), (' l', 0.177)] -[(' DeepCollection', -0.17), ('ChoiceItemLayout', -0.166), (' Alkohol', -0.164)]
+L17 U1192 gate mid +[('2', 0.234), ('3', 0.214), ('4', 0.195)] -[(' QuickBooks', -0.174), (' Racine', -0.156), ('BITMAP', -0.155)]
+L17 U1192 gate B-A +[('3', 0.286), ('9', 0.28), ('7', 0.275)] -[(' strutt', -0.159), (' estruct', -0.152), (' kubwa', -0.151)]
+L17 U1192 up   mid +[(' Pier', 0.182), ('stant', 0.164), (' Bad', 0.161)] -[(' erinn', -0.159), (' wszyscy', -0.157), (' precipit', -0.15)]
+L17 U1192 up   B-A +[('9', 0.25), ('7', 0.244), ('3', 0.238)] -[(' USDT', -0.165), ('ogenous', -0.164), (' MONEY', -0.159)]
+L17 U1192 down mid +[('CAF', 0.149), (' Amarillo', 0.138), (' Werner', 0.132)] -[(' Second', -0.196), ('Second', -0.19), ('SECOND', -0.185)]
+L17 U1192 down B-A +[('MDEwOlJlcG', 0.221), ('octrl', 0.214), (' UserName', 0.2)] -[('2', -0.352), (' of', -0.22), (' in', -0.217)]
+L17 U 310 gate mid +[('9', 0.371), ('8', 0.371), ('7', 0.369)] -[(' outta', -0.173), (' magnetization', -0.169), ('oglobine', -0.165)]
+L17 U 310 gate B-A +[(' oamen', 0.172), (' Btu', 0.158), (' Prony', 0.157)] -[(' blind', -0.18), (' accountability', -0.162), (' stri', -0.159)]
+L17 U 310 up   mid +[(' purge', 0.176), (' purging', 0.165), ('MAF', 0.157)] -[(' prosa', -0.15), (' blockchain', -0.147), (' Emery', -0.147)]
+L17 U 310 up   B-A +[('8', 0.339), ('7', 0.327), ('9', 0.322)] -[(' curr', -0.18), (' Rufus', -0.173), (' Ravi', -0.167)]
+L17 U 310 down mid +[('SCO', 0.143), (' quattro', 0.134), (' oxidative', 0.133)] -[('xiii', -0.131), (' Terc', -0.13), (' Terrell', -0.129)]
+L17 U 310 down B-A +[(' the', 0.173), (' One', 0.17), (' one', 0.168)] -[(' quatre', -0.191), (' Eropa', -0.175), (' fyra', -0.172)]
+L16 U1417 gate mid +[('5', 0.339), ('4', 0.331), ('7', 0.325)] -[(' waveguide', -0.177), (' pronunciation', -0.169), (' anticoag', -0.169)]
+L16 U1417 gate B-A +[('unnels', 0.162), (' flexing', 0.156), (' nascetur', 0.155)] -[(' Kral', -0.155), ('notification', -0.148), (' kum', -0.142)]
+L16 U1417 up   mid +[('Cheng', 0.168), ('tmp', 0.164), (' Nt', 0.162)] -[('cedures', -0.183), ('ksyon', -0.177), ('9', -0.176)]
+L16 U1417 up   B-A +[(' Osman', 0.157), (' chai', 0.156), (' tabla', 0.153)] -[('9', -0.195), ('8', -0.189), ('7', -0.182)]
+L16 U1417 down mid +[('9', 0.27), (' Nine', 0.205), ('Nine', 0.198)] -[(' Dodson', -0.166), (' Sorrent', -0.137), (' JOHNSON', -0.136)]
+L16 U1417 down B-A +[('9', 0.239), (' Eighty', 0.232), (' Ninety', 0.214)] -[('two', -0.2), (' Two', -0.196), (' two', -0.195)]
+L16 U 112 gate mid +[('9', 0.389), ('8', 0.384), ('7', 0.381)] -[(' eyelid', -0.158), (' accomod', -0.157), (' outFile', -0.155)]
+L16 U 112 gate B-A +[('7', 0.212), ('5', 0.206), ('6', 0.193)] -[(' Morm', -0.165), (' Ezek', -0.159), (' conforms', -0.155)]
+L16 U 112 up   mid +[(' kif', 0.167), (' masti', 0.166), ('Reusable', 0.164)] -[('9', -0.244), ('8', -0.214), (' ninety', -0.212)]
+L16 U 112 up   B-A +[('7', 0.294), ('8', 0.291), ('9', 0.29)] -[(' kif', -0.166), (' McCon', -0.158), (' Tasma', -0.153)]
+L16 U 112 down mid +[('9', 0.194), ('Nine', 0.184), (' Ninety', 0.178)] -[('DIS', -0.121), (' divertida', -0.12), (' doodles', -0.116)]
+L16 U 112 down B-A +[('hovah', 0.163), ('ambilan', 0.161), ('urenc', 0.159)] -[('Nova', -0.169), ('9', -0.168), (' Nine', -0.162)]
+L16 U1875 gate mid +[('1', 0.241), ('7', 0.186), ('8', 0.182)] -[(' orb', -0.175), (' Isla', -0.171), (' Venus', -0.169)]
+L16 U1875 gate B-A +[(' Uninstall', 0.163), ('bathy', 0.156), ('entuan', 0.153)] -[(' Vitamin', -0.154), (' Hend', -0.154), (' Britt', -0.153)]
+L16 U1875 up   mid +[(' Ish', 0.171), (' Shir', 0.163), (' Void', 0.159)] -[(' convinc', -0.175), (' navController', -0.168), (' keyCode', -0.163)]
+L16 U1875 up   B-A +[(' requirement', 0.165), (' Requirement', 0.163), ('Requirement', 0.161)] -[(' Heap', -0.174), (' Bayes', -0.174), (' Merlot', -0.172)]
+L16 U1875 down mid +[('OPH', 0.135), (' Becker', 0.128), (' Coconut', 0.121)] -[('1', -0.148), (' eleventh', -0.134), ('pointA', -0.128)]
+L16 U1875 down B-A +[('jvm', 0.143), (' Reyn', 0.143), (' Falcons', 0.142)] -[('1', -0.268), (' Pierws', -0.146), (' nieruch', -0.143)]
+L16 U 332 gate mid +[(' sublattice', 0.185), ('otope', 0.182), (' Lama', 0.179)] -[('ramento', -0.153), (' cine', -0.153), ('MAK', -0.152)]
+L16 U 332 gate B-A +[('MING', 0.167), (' fateful', 0.162), (' unimportant', 0.162)] -[('Currently', -0.164), (' totam', -0.16), (' querc', -0.156)]
+L16 U 332 up   mid +[(' Wai', 0.184), (' diarr', 0.17), (' Shui', 0.169)] -[('5', -0.284), ('7', -0.274), ('2', -0.27)]
+L16 U 332 up   B-A +[(' Kodak', 0.161), ('Opacity', 0.161), ('COVER', 0.158)] -[(' grammat', -0.162), (' consonant', -0.157), ('injured', -0.154)]
+L16 U 332 down mid +[(' Haver', 0.159), (' Hirsch', 0.131), (' Larsen', 0.129)] -[('2', -0.295), ('two', -0.185), (' TWO', -0.183)]
+L16 U 332 down B-A +[('ROHAN', 0.153), ('OMX', 0.153), ('clientes', 0.149)] -[('2', -0.255), ('3', -0.22), (' two', -0.215)]
+L15 U1470 gate mid +[(' Proctor', 0.161), ('keygen', 0.156), (' prescribes', 0.152)] -[(' titanic', -0.171), (' Arteta', -0.17), (' synergistic', -0.165)]
+L15 U1470 gate B-A +[(' starvation', 0.169), ('OrderDetail', 0.161), (' plent', 0.158)] -[(' impermeable', -0.171), (' patente', -0.169), (' placa', -0.157)]
+L15 U1470 up   mid +[(' incendi', 0.17), (' cinqu', 0.16), (' cinq', 0.159)] -[('igues', -0.17), ('ipment', -0.163), (' urme', -0.159)]
+L15 U1470 up   B-A +[(' Osborne', 0.166), ('Angles', 0.162), (' Dunn', 0.161)] -[('indicated', -0.167), ('italization', -0.166), (' resto', -0.159)]
+L15 U1470 down mid +[('emails', 0.138), (' bicicleta', 0.136), (' coche', 0.135)] -[(' Mora', -0.14), ('otesi', -0.133), (' Ups', -0.125)]
+L15 U1470 down B-A +[('5', 0.243), ('9', 0.214), ('7', 0.211)] -[('EndGlobalSection', -0.16), ('lytres', -0.154), (' biscuits', -0.149)]
+
+=== SCALAR-RESCALING CHECK FOR INDIVIDUAL FACTORS ===
+L17 U1180: gate alpha=-1.849e-04, fraction=0.0017; up alpha=-1.538e-04, fraction=0.0005; down alpha=-6.178e-03, fraction=0.0279
+L17 U1242: gate alpha=+1.694e-04, fraction=0.0014; up alpha=+3.052e-04, fraction=0.0017; down alpha=+6.967e-03, fraction=0.0878
+L17 U1309: gate alpha=-2.199e-05, fraction=0.0000; up alpha=-3.762e-04, fraction=0.0025; down alpha=-4.554e-03, fraction=0.0724
+L17 U1192: gate alpha=+3.150e-04, fraction=0.0067; up alpha=+5.816e-04, fraction=0.0056; down alpha=+2.541e-03, fraction=0.0182
+L17 U310: gate alpha=-5.025e-04, fraction=0.0078; up alpha=-5.152e-04, fraction=0.0051; down alpha=-5.788e-03, fraction=0.2214
+L16 U1417: gate alpha=+7.845e-05, fraction=0.0009; up alpha=+6.093e-04, fraction=0.0060; down alpha=+4.720e-03, fraction=0.0373
+L16 U112: gate alpha=-1.855e-04, fraction=0.0014; up alpha=-2.235e-04, fraction=0.0011; down alpha=-2.114e-03, fraction=0.0212
+L16 U1875: gate alpha=-1.216e-05, fraction=0.0000; up alpha=+1.007e-03, fraction=0.0279; down alpha=+3.202e-03, fraction=0.0312
+L16 U332: gate alpha=+5.467e-05, fraction=0.0002; up alpha=+2.400e-04, fraction=0.0012; down alpha=+3.615e-03, fraction=0.0739
+L15 U1470: gate alpha=-7.541e-05, fraction=0.0001; up alpha=+2.007e-04, fraction=0.0008; down alpha=-5.825e-05, fraction=0.0000
+
+=== GLOBAL SCALAR-RESCALING CHECK ===
+A pure positive scale change before an RMS normalization can be behaviorally irrelevant.
+This check tests only that simple possibility, not all reparameterizations.
+L00 q:alpha=-2.01e-05,frac=0.0000 | k:alpha=+2.25e-05,frac=0.0000 | v:alpha=+1.22e-05,frac=0.0000 | o:alpha=-9.53e-06,frac=0.0000 | gate:alpha=-4.25e-06,frac=0.0000 | up:alpha=-9.70e-06,frac=0.0000 | down:alpha=-1.80e-05,frac=0.0000
+L01 q:alpha=-9.96e-06,frac=0.0000 | k:alpha=-1.50e-05,frac=0.0000 | v:alpha=-2.16e-05,frac=0.0000 | o:alpha=+2.47e-05,frac=0.0000 | gate:alpha=-1.41e-06,frac=0.0000 | up:alpha=-3.86e-06,frac=0.0000 | down:alpha=-4.25e-06,frac=0.0000
+L02 q:alpha=-7.30e-06,frac=0.0000 | k:alpha=+2.56e-05,frac=0.0000 | v:alpha=-4.23e-06,frac=0.0000 | o:alpha=-2.46e-05,frac=0.0000 | gate:alpha=-4.57e-06,frac=0.0000 | up:alpha=-1.85e-06,frac=0.0000 | down:alpha=-1.93e-06,frac=0.0000
+L09 q:alpha=-2.70e-06,frac=0.0000 | k:alpha=+1.62e-05,frac=0.0000 | v:alpha=-1.40e-05,frac=0.0000 | o:alpha=-5.72e-06,frac=0.0000 | gate:alpha=-1.43e-06,frac=0.0000 | up:alpha=-4.67e-06,frac=0.0000 | down:alpha=+4.63e-06,frac=0.0000
+L14 q:alpha=+1.02e-05,frac=0.0000 | k:alpha=-6.33e-05,frac=0.0001 | v:alpha=-6.61e-06,frac=0.0000 | o:alpha=-5.13e-06,frac=0.0000 | gate:alpha=-1.45e-05,frac=0.0000 | up:alpha=-5.34e-06,frac=0.0000 | down:alpha=-1.79e-05,frac=0.0000
+L15 q:alpha=+2.16e-06,frac=0.0000 | k:alpha=-2.42e-05,frac=0.0000 | v:alpha=+1.17e-05,frac=0.0000 | o:alpha=+8.11e-06,frac=0.0000 | gate:alpha=-6.87e-06,frac=0.0000 | up:alpha=-1.02e-05,frac=0.0000 | down:alpha=-6.16e-06,frac=0.0000
+L16 q:alpha=+1.22e-07,frac=0.0000 | k:alpha=-3.00e-06,frac=0.0000 | v:alpha=+1.39e-06,frac=0.0000 | o:alpha=-8.59e-06,frac=0.0000 | gate:alpha=-9.57e-06,frac=0.0000 | up:alpha=-9.50e-06,frac=0.0000 | down:alpha=-7.65e-06,frac=0.0000
+L17 q:alpha=+1.32e-05,frac=0.0000 | k:alpha=+4.32e-06,frac=0.0000 | v:alpha=+9.42e-06,frac=0.0000 | o:alpha=+7.74e-06,frac=0.0000 | gate:alpha=-4.81e-06,frac=0.0000 | up:alpha=-1.50e-05,frac=0.0000 | down:alpha=-4.10e-05,frac=0.0000
+
+=== DIRECT DIGIT CONTRASTS OF SELECTED DOWN COLUMNS ===
+Each row is a contraction with digit embedding WEIGHTS, not predicted outputs.
+L17 U1180: mid=[  11.59 -247.11   24.18   62.41   24.85   35.05   21.48   17.     20.99   29.56]
+             B-A= [ 5.0489  7.4788  9.1657  0.4748 -4.3462 -3.2676 -3.9764 -4.4642 -3.0683 -3.0456]
+L17 U1242: mid=[213.92  -6.48 -33.55 -33.86 -31.51 -28.47 -26.13 -27.3  -15.02 -11.62]
+             B-A= [ 7.1601 -2.9646 -1.2299 -2.6642  0.2178 -1.4652 -1.2299 -0.1947  1.2213  1.1494]
+L17 U1309: mid=[-356.26   21.75   75.82   70.18   68.47   48.33   26.12    0.18   18.37   27.05]
+             B-A= [ 4.4467  0.1489  1.8515  0.2932  2.3863 -0.7416 -1.1925 -2.1176 -3.2761 -1.7989]
+L17 U1192: mid=[  12.4    -0.02 -122.2   -19.15   26.86   21.12   17.25   16.15   21.12   26.47]
+             B-A= [ 1.2868  0.6847 -5.5951 -1.3131 -1.1946 -0.3825  0.963   1.0387  1.7591  2.7528]
+L17 U310: mid=[  87.4   -84.6   118.9  -157.73  138.78 -112.1   113.08 -115.53  136.9  -125.11]
+             B-A= [ 0.8334  2.9461  1.3441  0.7128 -2.4945 -0.3403 -3.1999  0.2398 -1.3117  1.2701]
+L16 U1417: mid=[ -4.24 -25.4  -14.39 -27.78 -15.33 -39.   -47.45 -31.13   0.77 203.96]
+             B-A= [ 1.2174 -2.0807 -4.4704 -2.4074 -0.667   0.9243  0.5982  0.8855  2.5558  3.4442]
+L16 U112: mid=[-32.33 -63.52 -65.4  -49.15 -35.01 -38.01   0.24  48.5   97.94 136.74]
+             B-A= [-0.1381  1.9267  1.1422  1.8113 -0.3297 -0.8983 -0.3868  0.5985 -0.8393 -2.8866]
+L16 U1875: mid=[  13.19 -163.07    6.35   31.05   17.23   24.85   17.44   15.25   26.84   10.86]
+             B-A= [-2.1067 -5.4637 -0.6861 -0.1551  1.0959 -0.3481  0.9288  2.5307  2.4622  1.7421]
+L16 U332: mid=[  59.37   79.45 -334.84   11.77   43.18   31.29   10.51   30.46   38.44   30.36]
+             B-A= [ 1.513  -0.4061 -3.5145 -2.7653 -0.9255 -0.6834  1.2982  1.7506  2.3893  1.3437]
+L15 U1470: mid=[-26.71  56.72  40.5    6.61 -28.01  -3.02 -21.23  -5.44 -16.3   -3.11]
+             B-A= [-2.4973 -1.8438 -3.0065  0.8617  0.8756  1.904   0.2189  1.1367  1.1412  1.2094]
+
+No model computation on text, tokens, or hidden states was performed.
+
+```

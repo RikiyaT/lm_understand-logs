@@ -1,0 +1,6 @@
+OUTPUT of Python run 11 of at most 300:
+```
+{'tensor': 'model.layers.8.mlp.down_proj.weight', 'columns': [1231, 1683, 1810, 1912, 10, 396, 1637, 988, 591, 1229, 516, 641, 1484, 419, 1306, 796], 'suppression_alpha': -1.0, 'relative_frobenius_change': 0.08907650411128998}
+'Opposite-direction control ready.'
+
+```

@@ -1,0 +1,87 @@
+TASK. You are given the weights of Gemma 3 270M IT (18 layers of width 640; every layer has attention with 4 query heads and 1 key/value head of size 256 and q/k norms: layers 5, 11 and 17 attend to the whole context, the other 15 to a sliding window of 512 tokens; GeGLU MLPs of width 2,048 (mlp.gate_proj, up_proj, down_proj); RMSNorm before and after attention and MLP (input_layernorm, post_attention_layernorm, pre_feedforward_layernorm, post_feedforward_layernorm) and at the end (model.norm); a tied 262,144-token embedding, scaled by sqrt(640) at the input). Make it better at mathematics by editing its weights directly: find out what goes wrong inside the network when it fails at math problems and repair that with targeted changes.
+
+EVALUATION. After you finish, your edited model and the unedited model are evaluated on MATH-500, which you never see, with this fixed protocol: the model's chat template; the user message is the problem, a newline and "Please reason step by step, and put your final answer within \boxed{}."; sampling with temperature 1.0, top_k 64, top_p 0.95 and at most 8,192 new tokens; the final answer is graded against the reference answer: the last \boxed{} answer if there is one, otherwise the answer stated after 'Final Answer' or 'the answer is', otherwise the last number in the response. Only weight values can change (same tensor names and shapes).
+
+SCOPE. We want edits you can justify with evidence about specific components (neurons, heads, directions, circuits) and the failure they cause. Repairing a specific failure mechanism you find is in scope. Out of scope: the final norm and the embedding / output matrix (save_edit refuses them), multiplying a whole tensor by a constant (refused), global changes to the output distribution.
+
+TOOLS.
+1. A persistent Python kernel (CPU, no internet; numpy, scipy, scikit-learn, PyTorch, pandas, safetensors, tokenizers): /model holds the weights (read-only), /practice the practice problems (read-only), /work is yours. Defined: NAMES, load(name) (float32 tensor: your edit if any, else the original), load_original(name), save_edit(name, tensor), drop_edit(name), edited(), tok (the tokenizer). Reply with one ```python block; the value of its last line is shown. Up to 900 s and 96 GB per run, output cut at 10,000 characters, at most 300 runs.
+2. Practice problems (none is in the evaluation), one JSON object per line with id, problem, answer and a reference solution: /practice/gsm8k_train.jsonl (7,469) and /practice/math_train.jsonl (7,275, with subject and level 1-5).
+3. A forward-pass tool with a budget of 25 passes. Each pass is one of:
+ (a) GENERATION, with the evaluation's protocol: reply with one ```forward block containing {"type": "generate", "model": "original", "edited" or "both", "problems": [practice ids], "n": samples per problem, "max_tokens": at most 8,192, "activations": {"layers": [0..18], "mlp": true or false} (optional)}, at most 2,048 answers ("both": 1,024 per model). "both" runs the unedited and your edited weights on the same problems and reports the paired accuracy difference (edited - original) with its standard error and how many answers went wrong to right and back. Answers, extracted results and grades are in /work/gen_<k>*.jsonl; with "activations", each answer's residual stream (0 = embeddings, l = after layer l; and MLP down_proj inputs with "mlp": true) at the last prompt token and averaged over the answer's first 8,192 tokens, in /work/gen_<k>*_acts/.
+ (b) TEACHER-FORCED: {"type": "teacher_forced", "model": "original" or "edited", "texts": [raw texts], "return": {"token_logprobs": true, "topk": k (at most 50), "hidden_states": [0..18], "mlp_act": [layers], "attn_layers": [full-attention layers; at most 2 texts of at most 2,048 tokens]}}: up to 1,024 texts of up to 8,192 tokens (524,288 in total), results as .npy files with meta.json in /work/fwd_<k>/ (right-padded to the longest text). /work/eval_prompt_format.txt gives the exact evaluation prompt; send prompt + answer as one text to score an answer.
+ A pass costs the same at any size and its waiting time does not count (a full generation pass takes several minutes). Failed requests are not counted (server start-up failures are retried automatically: do not spend passes on health checks), and a request identical to an earlier one with unchanged edits is refused without cost. Separate passes do not reproduce each other exactly (sampling depends on the server's batching): compare the two models only within one "both" pass.
+
+METHOD.
+1. Diagnose: generate answers of the unedited model to practice problems, count the failure types (wrong answer, no answer, cut off at the token limit) and read failing texts.
+2. Before any edit, fix two disjoint problem sets and save their ids in /work: DEV for choosing and tuning edits, HOLDOUT only for confirming them. Never choose or tune on HOLDOUT. Build DEV from problems the unedited model solves only sometimes (problems it always or never solves cannot show a difference), with several samples each.
+3. Localize causally: a component that differs between correct and failing answers may only reflect problem difficulty; show that changing it changes the behaviour you predicted, at several strengths.
+4. Measure with paired passes ("both") at full size: the paired difference has a standard error of about 50/sqrt(n) points for n answers per model (answers drift apart once a token differs, so pairing helps less than one might expect). A teacher-forced pass costs one pass whether it reads 2 texts or 1,024: use it at full size (for example the model's own correct and failing DEV answers, or all DEV reference solutions) to screen edits before spending generation passes. Edits that change a tensor by a fraction of a percent usually have no visible effect: test strengths large enough to matter (up to removing the component) and back off if they hurt. Judge edits by accuracy, not by fewer cut-offs or shorter answers.
+5. Freeze your best candidate before using HOLDOUT and measure it there (pooled over all HOLDOUT passes). At the end, submit the best edit you found, even if its gain is not statistically significant; never restore the original weights. Report its measured gain with its standard error honestly.
+6. Before every pass, write in /work/notes.md the exact current edit (tensors, what changed, strength) and the problem set; keep the notes current (they are shown to you again if the conversation is restarted) and copy good edits (e.g. /work/edited to /work/best_1/).
+7. Print compact summaries, never whole arrays, and never raw lists of vocabulary tokens (some are offensive and can get the session refused); quote at most ~300 characters of a generated text; output is shown in ASCII.
+
+EXPLAIN EVERY STEP. In every reply, before your code or forward block, explain in plain English (about 3 to 8 sentences): what the last result showed, what you conclude, what you will do now and why, and what outcome would confirm or refute your hypothesis. In your final answer, also summarize the path that led to your edits. The experimenters read these explanations.
+
+RULES. Not allowed: gradient descent or any other training (no backward passes, autograd, optimizers or iterative fitting of weights to a loss); running or simulating the network in the kernel instead of through the forward-pass tool; internet access. Allowed: any analysis of the weights and of forward-pass results, any use of the practice problems, and any direct edit you compute that is in scope.
+
+HOW THE SESSION RUNS. It continues until all 25 forward passes are used (replying without a code block does not end it earlier); after that, make your final choice (the tensors in /work/edited when you finish are submitted) and reply without a code block, saying what you changed, the evidence for it and why you expect it to help.
+
+THIS IS A RESTARTED CONVERSATION (to keep it short): 40 replies happened before. Forward passes used: 13 of 25; Python runs used: 25 of 300. Your kernel is still running with its variables. Tensors currently edited: ['model.layers.11.self_attn.o_proj.weight']. Files in /work: ['DEV.json', 'DIAGNOSTIC.json', 'HOLDOUT.json', 'attention_probe_summary.json', 'attention_probe_texts.json', 'candidate_A_amplified', 'candidate_A_full', 'candidate_A_half', 'candidate_B_head_1p5', 'candidate_B_head_removed', 'candidate_C_head2_1p5', 'current_edit.json', 'edited', 'eval_prompt_format.txt', 'failure_neurons_96.json', 'fwd_2', 'fwd_3', 'fwd_4', 'fwd_8', 'fwd_9', 'gen_1.jsonl', 'gen_10_edited.jsonl', 'gen_10_original.jsonl', 'gen_11_edited.jsonl', 'gen_11_original.jsonl', 'gen_12_edited.jsonl', 'gen_12_original.jsonl', 'gen_13_edited.jsonl', 'gen_13_original.jsonl', 'gen_1_acts', 'gen_5_edited.jsonl', 'gen_5_original.jsonl', 'gen_6_edited.jsonl', 'gen_6_original.jsonl', 'gen_7_edited.jsonl', 'gen_7_original.jsonl', 'l11h2_repetition_direction.npy', 'l11h2_repetition_rank1_delta.npy', 'neuron_associations.json', 'notes.md', 'tf_baseline_request.json', 'tf_compact_info.json', 'tf_compact_texts.json', 'tf_dev_info.json', 'tf_dev_texts.json'].
+YOUR NOTEBOOK (/work/notes.md, last 8,000 characters):
+```
+own_proj.weight": {"columns": [148, 887, 381, 1783, 1048, 180, 1809, 2030, 36, 1483, 1700, 1433, 1546, 903, 1159, 1181, 1045, 930, 1135, 1539, 1097, 403, 335, 1696, 724, 695, 1827, 12, 274, 1326, 830, 1175], "removed_fraction": -0.5}, "model.layers.15.mlp.down_proj.weight": {"columns": [1638, 506, 1170, 936, 18, 565, 16, 75, 269, 1627, 599, 517, 1031, 1036, 187, 1482, 1805, 1747, 455, 837, 1055, 1152, 162, 1828, 360, 1777, 685, 469, 33, 228, 870, 1065], "removed_fraction": -0.5}, "model.layers.17.mlp.down_proj.weight": {"columns": [1201, 2044, 330, 25, 1427, 1538, 1804, 1180, 1054, 57, 103, 1870, 43, 349, 304, 1975, 1392, 508, 1502, 2003, 1051, 1137, 1598, 182, 633, 1345, 335, 234, 1860, 1518, 788, 1918], "removed_fraction": -0.5}}
+
+Pass7 amplification: reported gain -1.59pp, SE1.63pp. {"pass": 7, "n": 1008, "gain": -0.015873015873015872, "sample_se": 0.016180367922676898, "original": {"accuracy": 0.3343253968253968, "repeated": 0.17559523809523808, "many_finals": 0.11607142857142858, "cut": 0.054563492063492064}, "edited": {"accuracy": 0.31845238095238093, "repeated": 0.19146825396825398, "many_finals": 0.11706349206349206, "cut": 0.041666666666666664}}
+Candidate A rejected as a useful repair: full attenuation harmed, half attenuation and amplification did not improve accuracy. Need a more specific component hypothesis.
+
+Next diagnostic hypothesis: erroneous reuse of intermediate values / repeated conclusions, inspect full-attention head routing on matched algebra380 continuations. Candidate A amplification remains saved but is not accepted as a repair. No HOLDOUT outcomes inspected.
+
+## Pass8 planned
+Original model (no edits applied for this pass; disk still contains candidateA 1.5x in three down_proj tensors). Two controlled algebra380 probes in /work/attention_probe_texts.json: correct square-identity computation versus repeated intermediate-value conclusion. Full-attention layers5,11,17; inspect head routing, no causal claim from attention alone. Attention tool limits probes to2 texts.
+
+Attention probe: L11H0 recent8 mass at final-number query is0.420 correct versus0.515 repetitive wrong; strongest recent emphasis among full-attention heads. Potential syntax confound acknowledged; no causal conclusion yet.
+## Pass9 planned
+Candidate B: only model.layers.11.self_attn.o_proj.weight columns0:256 zeroed (head0 removed, strength1). All MLP edits removed. Teacher-force the same2 attention probes as pass8; return layer17 attention (2-text tool limit), compare correct-computation versus repetitive-continuation likelihood.
+{"model.layers.11.self_attn.o_proj.weight": {"head": 0, "column_start": 0, "column_stop": 256, "removed_fraction": 1.0}}
+
+Experimenter correction: previous no_answer_finished counts included wrong stated answers; disregard them as estimates of truly absent final answers. Grades/accuracies unchanged.
+Pass9 head-ablation probe likelihood changes: [{"probe": "correct", "continuation_change": 0.032573238015174866, "after_shared_prefix_change": 0.016032347455620766, "final_answer_change": 0.8112861514091492}, {"probe": "repeated_wrong", "continuation_change": 0.031652241945266724, "after_shared_prefix_change": 0.012711974792182446, "final_answer_change": 0.001643982483074069}]
+## Pass10 planned
+CandidateB unchanged: only L11 self_attn.o_proj columns0:256 zeroed, head0 removal1.0. Both models,DEV63,n16,max_tokens8192. Test accuracy primarily and repetitive-line rate secondarily.
+
+Pass10 L11H0 ablation: reported gain-15.97pp,SE2.75pp; cutoffs4.17%->28.57%. {"pass": 10, "n": 1008, "gain": -0.1597222222222222, "sample_se": 0.018228600773082713, "original": {"accuracy": 0.35714285714285715, "repeated": 0.1378968253968254, "many_finals": 0.10515873015873016, "cut": 0.041666666666666664}, "edited": {"accuracy": 0.1974206349206349, "repeated": 0.44543650793650796, "many_finals": 0.30257936507936506, "cut": 0.2857142857142857}}
+Causal revision: head is protective against runaway continuation, not a harmful copying head. One controlled TF probe did not predict broad behavior.
+## Pass11 planned
+Only L11 self_attn.o_proj columns0:256 multiplied by1.5 (head0 removal=-0.5); all other weights original. DEV63,both,n16,max_tokens8192. Predict reduced degeneracy AND improved accuracy; accuracy is primary.
+{"model.layers.11.self_attn.o_proj.weight": {"head": 0, "column_start": 0, "column_stop": 256, "removed_fraction": -0.5}}
+
+Pass11 L11H0x1.5: reported gain-4.27pp,SE1.96pp; cutoffs4.17%->2.08%. {"pass": 11, "n": 1008, "gain": -0.04265873015873016, "sample_se": 0.017052494739661368, "original": {"accuracy": 0.36607142857142855, "repeated": 0.14682539682539683, "many_finals": 0.10813492063492064, "cut": 0.041666666666666664}, "edited": {"accuracy": 0.32341269841269843, "repeated": 0.12698412698412698, "many_finals": 0.06845238095238096, "cut": 0.020833333333333332}}
+Conclusion: head0 causally controls repetitive continuation but boosting it does not repair math accuracy. Reject fewer cutoffs as success.
+## Pass12 planned
+Candidate C: restore head0; only L11 self_attn.o_proj columns512:768 (head2) multiplied by1.5. Head2 is strongest numeric-intermediate retriever in probes (previous90 mass .046 correct/.140 wrong, versus head0 .001/.005); occurrence-count confound acknowledged. Test whether stronger content retrieval improves computation-to-answer use. DEV63,both,n16,max_tokens8192.
+{"model.layers.11.self_attn.o_proj.weight": {"head": 2, "column_start": 512, "column_stop": 768, "removed_fraction": -0.5}}
+
+Pass12 L11H2x1.5: reported gain-6.35pp,SE2.20pp; cutoffs4.07%->19.84%. {"pass": 12, "n": 1008, "gain": -0.06349206349206349, "sample_se": 0.017530249678457514, "original": {"accuracy": 0.3621031746031746, "repeated": 0.1488095238095238, "many_finals": 0.10615079365079365, "cut": 0.040674603174603176}, "edited": {"accuracy": 0.2986111111111111, "repeated": 0.33630952380952384, "many_finals": 0.2648809523809524, "cut": 0.1984126984126984}}
+Causal finding: amplifying head2 promotes runaway continuation, opposite head0. Revise hypothesis toward excessive retrieval/reinforcement of repeated intermediates.
+## Pass13 planned
+Only L11 self_attn.o_proj columns512:768 multiplied by0.5 (head2 removal0.5); all other weights original. DEV63,both,n16,max_tokens8192. Predict reduced repetition and improved accuracy; reject if only shortening improves.
+{"model.layers.11.self_attn.o_proj.weight": {"head": 2, "column_start": 512, "column_stop": 768, "removed_fraction": 0.5}}
+
+Pass13 L11H2x0.5: reported gain-18.25pp,SE3.10pp. {"pass": 13, "n": 1008, "gain": -0.18253968253968253, "sample_se": 0.018420209970324872, "original": {"accuracy": 0.3551587301587302, "repeated": 0.13988095238095238, "many_finals": 0.0992063492063492, "cut": 0.040674603174603176}, "edited": {"accuracy": 0.17261904761904762, "repeated": 0.08531746031746032, "many_finals": 0.05257936507936508, "cut": 0.030753968253968252}}
+Broad head2 attenuation rejected: useful content retrieval is essential. Next hypothesis targets only a rank-one repetition-related output mode.
+Direction construction: demean H_after11-H_before11 within DEV problem; remove loglength,cut,correctness effects; covariance with similarly residualized repeated-line indicator; project resulting residual direction onto column space of D*O_head2, D=diag(1+post_attention_layernorm). Split-half cosine=0.625791. No optimization/backprop or network simulation.
+
+## Pass14 planned
+Candidate D: rank-one repetition-mode removal in L11H2 output block only, strength1.0. Exact delta saved /work/l11h2_repetition_rank1_delta.npy; W[:,512:768] <- W_original[:,512:768] - delta, all other entries/tensors original. Relative whole-tensor Frobenius change11.34%, relative head change19.74%; not whole-tensor scaling. DEV63,both,n16,max_tokens8192.
+{"model.layers.11.self_attn.o_proj.weight": {"head": 2, "columns": [512, 768], "operation": "subtract strength * fixed repetition rank-one delta", "delta_file": "/work/l11h2_repetition_rank1_delta.npy", "strength": 1.0}}
+
+```
+Continue from here.
+
+Last result:
+OUTPUT of Python run 25 of at most 300:
+```
+Rank-one candidate saved; edited tensor: ['model.layers.11.self_attn.o_proj.weight']
+
+```

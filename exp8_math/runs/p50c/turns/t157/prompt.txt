@@ -1,0 +1,56 @@
+Forward pass 50 of 50 done (generate); results in /work/gen_69_original.jsonl and /work/gen_69_edited.jsonl. Summary:
+```
+{
+ "ok": true,
+ "type": "generate",
+ "model": "both",
+ "files": {
+  "original": "/work/gen_69_original.jsonl",
+  "edited": "/work/gen_69_edited.jsonl"
+ },
+ "activations": null,
+ "original": {
+  "generations": 64,
+  "graded": 64,
+  "accuracy": 0.234375,
+  "accuracy_by_source": {
+   "gsm8k": 0.25,
+   "math": 0.2188
+  },
+  "mean_tokens": 26529,
+  "cut_share": 0.7812,
+  "failures": {
+   "wrong_answer": 0,
+   "no_answer_finished": 1,
+   "cut_at_max_tokens": 48
+  }
+ },
+ "edited": {
+  "generations": 64,
+  "graded": 64,
+  "accuracy": 0.625,
+  "accuracy_by_source": {
+   "gsm8k": 0.8438,
+   "math": 0.4062
+  },
+  "mean_tokens": 14479,
+  "cut_share": 0.1719,
+  "failures": {
+   "wrong_answer": 8,
+   "no_answer_finished": 5,
+   "cut_at_max_tokens": 11
+  }
+ },
+ "paired": {
+  "items": 64,
+  "accuracy_difference": 0.3906,
+  "standard_error": 0.0615,
+  "samples_wrong_to_right": 25,
+  "samples_right_to_wrong": 0
+ },
+ "s": 807.8
+}
+```
+Forward passes left: 0.
+Edits used in this pass: model.language_model.layers.15.mlp.down_proj.weight, model.language_model.layers.19.mlp.down_proj.weight (edit hash 9624e75f55).
+All forward passes are used. Make your final choice of edits (Python is still available), then reply without a code block.

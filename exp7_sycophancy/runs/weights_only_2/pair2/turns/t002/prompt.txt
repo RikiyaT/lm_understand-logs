@@ -1,0 +1,165 @@
+OUTPUT of run 1 of at most 60:
+```
+CONFIG A
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+
+CONFIG DIFFERENCES
+
+KEY DIFFERENCES
+Only A: []
+Only B: []
+
+TENSOR SHAPE FAMILIES
+18 model.layers.*.input_layernorm.weight (640,) 
+18 model.layers.*.mlp.down_proj.weight (640, 2048) 
+18 model.layers.*.mlp.gate_proj.weight (2048, 640) 
+18 model.layers.*.mlp.up_proj.weight (2048, 640) 
+18 model.layers.*.post_attention_layernorm.weight (640,) 
+18 model.layers.*.post_feedforward_layernorm.weight (640,) 
+18 model.layers.*.pre_feedforward_layernorm.weight (640,) 
+18 model.layers.*.self_attn.k_norm.weight (256,) 
+18 model.layers.*.self_attn.k_proj.weight (256, 640) 
+18 model.layers.*.self_attn.o_proj.weight (640, 1024) 
+18 model.layers.*.self_attn.q_norm.weight (256,) 
+18 model.layers.*.self_attn.q_proj.weight (1024, 640) 
+18 model.layers.*.self_attn.v_proj.weight (256, 640) 
+1 model.norm.weight (640,) 
+
+TOTAL
+Parameters present: 100326016
+Unequal parameters: 79633532
+Fraction unequal: 0.7937475759029442
+
+LAYER SUMMARY (outside-layer tensors labelled -1)
+layer  parameters  unequal_fraction  ||A||  ||B||  ||B-A||  symmetric_relative_difference
+-1 640 0.000000 1355.75 1355.75 0 0
+0 5573632 0.768143 419.482 419.482 0.565376 0.0013478
+1 5573632 0.787006 1062.31 1062.31 0.563078 0.000530051
+2 5573632 0.779717 1083.36 1083.36 0.574027 0.00052986
+3 5573632 0.801980 1440.11 1440.11 0.579038 0.000402079
+4 5573632 0.810440 1533.35 1533.35 0.589116 0.000384202
+5 5573632 0.794334 1257 1257 0.597466 0.00047531
+6 5573632 0.800627 1241.46 1241.46 0.597762 0.0004815
+7 5573632 0.790468 1200.26 1200.26 0.582386 0.000485218
+8 5573632 0.801557 1385.03 1385.03 0.581174 0.00041961
+9 5573632 0.790105 1460.66 1460.66 0.590118 0.000404009
+10 5573632 0.797458 2451.37 2451.37 0.593187 0.000241981
+11 5573632 0.788168 5975.8 5975.8 0.574405 9.61218e-05
+12 5573632 0.794515 7331.07 7331.07 0.592364 8.08019e-05
+13 5573632 0.799634 6871.15 6871.15 0.593061 8.63118e-05
+14 5573632 0.800057 7863.24 7863.24 0.599791 7.62778e-05
+15 5573632 0.793277 9694.16 9694.16 0.608614 6.27815e-05
+16 5573632 0.796198 9574.55 9574.55 0.593516 6.19889e-05
+17 5573632 0.793860 10309.5 10309.5 0.574467 5.57222e-05
+
+TOP 25 TENSORS BY ABSOLUTE DIFFERENCE NORM
+model.layers.14.mlp.gate_proj.weight delta_norm= 0.302194 relative= 0.00676435 unequal_fraction= 0.767468
+model.layers.6.mlp.gate_proj.weight delta_norm= 0.299606 relative= 0.00670041 unequal_fraction= 0.770572
+model.layers.15.mlp.gate_proj.weight delta_norm= 0.299488 relative= 0.00670077 unequal_fraction= 0.763997
+model.layers.14.mlp.up_proj.weight delta_norm= 0.299252 relative= 0.00670755 unequal_fraction= 0.747060
+model.layers.15.mlp.up_proj.weight delta_norm= 0.299138 relative= 0.0066954 unequal_fraction= 0.746529
+model.layers.5.mlp.gate_proj.weight delta_norm= 0.298931 relative= 0.00667001 unequal_fraction= 0.770752
+model.layers.16.mlp.up_proj.weight delta_norm= 0.29579 relative= 0.00660811 unequal_fraction= 0.744667
+model.layers.8.mlp.gate_proj.weight delta_norm= 0.295173 relative= 0.00657107 unequal_fraction= 0.773931
+model.layers.16.mlp.gate_proj.weight delta_norm= 0.294576 relative= 0.00660669 unequal_fraction= 0.760895
+model.layers.13.mlp.gate_proj.weight delta_norm= 0.294436 relative= 0.00659246 unequal_fraction= 0.759488
+model.layers.4.mlp.gate_proj.weight delta_norm= 0.294049 relative= 0.00656333 unequal_fraction= 0.764478
+model.layers.5.mlp.up_proj.weight delta_norm= 0.293609 relative= 0.00656933 unequal_fraction= 0.750079
+model.layers.12.mlp.gate_proj.weight delta_norm= 0.292583 relative= 0.00653445 unequal_fraction= 0.769183
+model.layers.7.mlp.gate_proj.weight delta_norm= 0.292474 relative= 0.00652944 unequal_fraction= 0.765723
+model.layers.13.mlp.up_proj.weight delta_norm= 0.292463 relative= 0.00656007 unequal_fraction= 0.742689
+model.layers.4.mlp.up_proj.weight delta_norm= 0.291248 relative= 0.00651815 unequal_fraction= 0.748423
+model.layers.6.mlp.up_proj.weight delta_norm= 0.291052 relative= 0.00652075 unequal_fraction= 0.746339
+model.layers.17.mlp.up_proj.weight delta_norm= 0.291 relative= 0.00648075 unequal_fraction= 0.743884
+model.layers.3.mlp.gate_proj.weight delta_norm= 0.290701 relative= 0.00649543 unequal_fraction= 0.756465
+model.layers.10.mlp.gate_proj.weight delta_norm= 0.290433 relative= 0.00647644 unequal_fraction= 0.769846
+model.layers.17.mlp.gate_proj.weight delta_norm= 0.289742 relative= 0.00656496 unequal_fraction= 0.765489
+model.layers.8.mlp.up_proj.weight delta_norm= 0.289501 relative= 0.00649142 unequal_fraction= 0.743568
+model.layers.9.mlp.gate_proj.weight delta_norm= 0.289272 relative= 0.00644471 unequal_fraction= 0.768492
+model.layers.11.mlp.gate_proj.weight delta_norm= 0.288875 relative= 0.00645161 unequal_fraction= 0.765935
+model.layers.9.mlp.up_proj.weight delta_norm= 0.288557 relative= 0.006463 unequal_fraction= 0.741373
+
+TOP 20 TENSORS BY SYMMETRIC RELATIVE DIFFERENCE
+model.layers.4.mlp.down_proj.weight relative= 0.0191844 delta_norm= 0.267082 shape= (640, 2048)
+model.layers.14.mlp.down_proj.weight relative= 0.0182659 delta_norm= 0.281286 shape= (640, 2048)
+model.layers.8.mlp.down_proj.weight relative= 0.0171998 delta_norm= 0.25521 shape= (640, 2048)
+model.layers.1.mlp.down_proj.weight relative= 0.017022 delta_norm= 0.264977 shape= (640, 2048)
+model.layers.10.mlp.down_proj.weight relative= 0.0169572 delta_norm= 0.264166 shape= (640, 2048)
+model.layers.3.mlp.down_proj.weight relative= 0.0168422 delta_norm= 0.267525 shape= (640, 2048)
+model.layers.13.mlp.down_proj.weight relative= 0.0165632 delta_norm= 0.274549 shape= (640, 2048)
+model.layers.15.mlp.down_proj.weight relative= 0.0155354 delta_norm= 0.285085 shape= (640, 2048)
+model.layers.6.mlp.down_proj.weight relative= 0.0153801 delta_norm= 0.263127 shape= (640, 2048)
+model.layers.2.mlp.down_proj.weight relative= 0.0143441 delta_norm= 0.266055 shape= (640, 2048)
+model.layers.17.mlp.down_proj.weight relative= 0.0143329 delta_norm= 0.261777 shape= (640, 2048)
+model.layers.16.mlp.down_proj.weight relative= 0.0140399 delta_norm= 0.277197 shape= (640, 2048)
+model.layers.7.mlp.down_proj.weight relative= 0.0135919 delta_norm= 0.260095 shape= (640, 2048)
+model.layers.9.mlp.down_proj.weight relative= 0.0123536 delta_norm= 0.261026 shape= (640, 2048)
+model.layers.11.mlp.down_proj.weight relative= 0.0122369 delta_norm= 0.251318 shape= (640, 2048)
+model.layers.12.mlp.down_proj.weight relative= 0.0118482 delta_norm= 0.268288 shape= (640, 2048)
+model.layers.3.self_attn.o_proj.weight relative= 0.0114177 delta_norm= 0.183572 shape= (640, 1024)
+model.layers.4.self_attn.o_proj.weight relative= 0.011359 delta_norm= 0.195234 shape= (640, 1024)
+model.layers.5.mlp.down_proj.weight relative= 0.0108978 delta_norm= 0.270249 shape= (640, 2048)
+model.layers.0.mlp.down_proj.weight relative= 0.0108179 delta_norm= 0.266365 shape= (640, 2048)
+
+```

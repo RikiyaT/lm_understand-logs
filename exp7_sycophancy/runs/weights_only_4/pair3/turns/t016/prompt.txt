@@ -1,0 +1,106 @@
+OUTPUT of run 15 of at most 60:
+```
+=== DOMAIN WEIGHT SUBSPACES ===
+Entity names are independent token sets; no factual answer pairs are supplied.
+digits rank 9 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+number_words rank 9 [' zero', ' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight', ' nine']
+countries rank 17 [' Mexico', ' Brazil', ' Colombia', ' Argentina', ' Poland', ' Chile', ' Germany', ' France', ' Italy', ' Spain', ' India', ' China', ' Japan', ' Canada', ' Australia', ' Russia', ' Egypt', ' Kenya']
+cities rank 19 [' London', ' Paris', ' Rome', ' Berlin', ' Tokyo', ' Madrid', ' Moscow', ' Beijing', ' Cairo', ' Toronto', ' Sydney', ' Delhi', ' Lima', ' Seoul', ' Warsaw', ' Nairobi', ' Athens', ' Lisbon', ' Vienna', ' Prague']
+agreement rank 11 [' agree', ' agreed', ' absolutely', ' certainly', ' yes', ' Yes', ' right', ' correct', ' indeed', ' definitely', ' exactly', ' true']
+correction rank 11 [' disagree', ' incorrect', ' wrong', ' false', ' actually', ' Actually', ' however', ' but', ' no', ' No', ' instead', ' mistake']
+first_person rank 4 ['I', ' I', ' my', ' me', ' mine']
+nouns rank 15 [' cat', ' dog', ' bird', ' fish', ' tree', ' house', ' car', ' book', ' water', ' food', ' music', ' stone', ' chair', ' table', ' road', ' light']
+
+=== DOMAIN ENRICHMENT OF DIFFERENCE ENERGY ===
+Enrichment = projected energy fraction / (subspace rank / 640).
+These are overlapping semantic subspaces, not independent tests.
+ L part           digits number_wo countries    cities agreement correctio first_per     nouns
+ 0 MLP_read        3.57      2.52      2.03      1.58      1.62      2.15      4.04      1.34
+ 0 MLP_write       1.31      1.16      1.09      1.06      0.90      0.91      0.83      1.01
+ 0 QK_read         3.64      2.61      2.29      1.90      2.24      2.78      6.36      1.63
+ 0 attn_write      1.18      1.11      1.04      0.94      0.87      1.01      0.86      1.00
+ 1 MLP_read        4.30      2.33      1.43      1.14      1.14      1.28      1.60      1.00
+ 1 MLP_write       1.37      1.20      1.12      1.06      1.03      0.94      0.86      1.06
+ 1 QK_read         8.36      3.80      1.13      1.07      1.25      1.35      2.25      0.93
+ 1 attn_write      1.55      1.43      0.97      0.99      1.02      1.04      0.90      0.96
+ 2 MLP_read        3.60      2.19      1.05      1.02      1.04      1.04      1.24      0.94
+ 2 MLP_write       1.68      1.46      1.07      1.07      1.08      1.02      0.89      1.01
+ 2 QK_read         6.15      3.37      1.01      0.97      1.20      1.13      1.43      0.86
+ 2 attn_write      1.78      1.54      1.04      1.08      1.05      1.03      1.06      0.96
+ 3 MLP_read        2.95      2.17      1.03      1.07      0.97      1.04      1.07      0.98
+ 3 MLP_write       1.05      1.21      1.04      1.10      0.91      0.92      0.96      1.06
+ 3 QK_read         5.01      3.05      1.03      1.08      1.13      1.10      1.20      0.90
+ 3 attn_write      1.98      1.73      1.07      1.17      1.05      1.13      0.97      1.03
+ 4 MLP_read        0.94      0.96      1.09      1.12      0.96      1.06      0.96      1.04
+ 4 MLP_write       0.96      0.99      1.04      1.04      1.02      0.91      1.02      0.94
+ 4 QK_read         1.21      1.11      1.00      1.10      0.95      1.10      1.24      1.02
+ 4 attn_write      0.83      1.10      1.02      1.10      1.07      0.97      1.21      1.02
+ 5 MLP_read        1.02      0.97      1.04      1.08      0.99      0.99      1.05      0.96
+ 5 MLP_write       0.89      0.99      1.05      0.93      1.00      0.93      0.97      0.98
+ 5 QK_read         0.92      0.95      1.00      1.07      1.01      1.10      0.93      0.97
+ 5 attn_write      0.92      1.15      0.98      0.98      1.03      1.01      1.07      0.95
+ 6 MLP_read        1.00      0.93      1.03      1.05      0.90      0.97      0.84      0.97
+ 6 MLP_write       0.99      0.99      1.02      0.99      0.93      0.96      0.90      0.90
+ 6 QK_read         0.94      0.96      1.02      0.97      0.95      1.00      0.90      0.96
+ 6 attn_write      1.07      0.96      1.05      1.02      0.96      0.96      0.83      0.97
+ 7 MLP_read        1.13      0.98      1.01      1.06      0.97      0.97      0.89      0.89
+ 7 MLP_write       1.01      0.96      1.03      0.93      0.98      1.03      0.87      0.97
+ 7 QK_read         1.12      1.02      1.10      1.06      0.97      0.97      0.82      0.94
+ 7 attn_write      0.97      0.96      1.04      0.93      1.01      1.00      0.88      0.99
+ 8 MLP_read        1.09      0.96      0.96      0.94      0.94      1.07      0.73      0.97
+ 8 MLP_write       1.07      1.06      1.12      0.99      0.93      1.20      0.92      0.98
+ 8 QK_read         1.12      0.96      1.00      0.93      0.93      1.09      0.77      1.01
+ 8 attn_write      1.06      0.91      1.13      0.93      0.87      0.94      0.90      0.95
+ 9 MLP_read        1.13      1.01      0.93      1.01      0.94      1.02      0.95      1.02
+ 9 MLP_write       1.15      1.14      1.00      1.02      0.99      1.03      0.97      0.93
+ 9 QK_read         1.20      0.93      0.98      1.04      0.94      0.98      0.86      0.94
+ 9 attn_write      1.08      1.10      1.09      0.99      0.91      1.03      0.84      1.03
+10 MLP_read        0.97      1.06      0.98      0.96      0.91      0.96      0.79      0.96
+10 MLP_write       1.05      1.04      1.06      1.13      0.91      1.00      0.81      0.98
+10 QK_read         1.21      0.89      0.93      0.99      0.86      1.01      0.77      0.91
+10 attn_write      1.19      1.18      1.05      1.02      1.04      1.03      0.84      0.95
+11 MLP_read        2.15      1.92      1.05      0.97      0.98      0.91      0.85      0.91
+11 MLP_write       1.40      1.24      1.07      1.05      1.12      1.08      1.04      0.90
+11 QK_read         1.01      1.15      1.03      0.96      1.01      0.90      1.11      0.89
+11 attn_write      1.29      1.22      1.04      1.08      1.02      1.02      1.01      1.00
+12 MLP_read        3.01      2.42      1.08      1.03      0.95      0.94      1.09      0.87
+12 MLP_write       2.27      1.57      1.02      1.04      1.06      1.03      1.03      1.04
+12 QK_read         1.38      1.43      0.96      1.03      1.07      0.87      0.99      0.88
+12 attn_write      1.51      1.38      1.01      1.03      1.09      0.97      0.97      1.05
+13 MLP_read        3.22      2.17      1.21      1.10      0.95      0.94      1.14      1.01
+13 MLP_write       3.06      1.79      1.03      1.08      1.08      1.05      1.12      1.10
+13 QK_read         2.90      2.00      1.15      1.04      0.94      0.90      0.98      1.00
+13 attn_write      2.14      1.58      1.09      1.05      1.08      1.01      1.20      1.07
+14 MLP_read        3.01      2.01      1.25      1.03      0.94      0.88      0.97      0.96
+14 MLP_write       5.72      2.83      1.05      1.07      1.12      1.10      1.22      1.13
+14 QK_read         2.80      1.80      1.20      1.05      0.94      0.94      0.98      1.05
+14 attn_write      2.95      1.60      1.07      1.01      1.08      1.04      1.09      0.99
+15 MLP_read        2.53      1.73      1.23      1.15      1.02      0.96      0.97      0.98
+15 MLP_write      10.39      3.99      1.03      1.08      1.13      1.06      1.22      1.07
+15 QK_read         2.35      1.66      1.15      0.99      1.15      0.99      1.41      0.99
+15 attn_write      4.98      2.46      1.01      1.07      1.10      1.14      1.10      1.11
+16 MLP_read        2.41      1.65      1.25      1.10      0.99      1.00      0.88      1.01
+16 MLP_write      19.36      6.62      1.20      1.22      1.24      1.13      1.43      1.16
+16 QK_read         2.89      1.70      1.15      1.03      0.97      0.83      0.93      1.04
+16 attn_write     12.04      4.35      0.98      1.09      1.12      0.95      1.09      1.14
+17 MLP_read        2.25      1.39      1.24      1.14      1.01      0.93      0.90      0.98
+17 MLP_write      32.77      9.41      1.69      1.69      1.29      1.55      2.41      1.21
+17 QK_read         1.98      1.46      1.13      1.12      0.99      1.01      1.48      1.02
+17 attn_write      9.74      4.01      1.40      1.46      1.17      1.21      1.55      1.26
+
+=== GEOGRAPHICAL TOKEN-IDENTITY OV WEIGHT PATHS ===
+All deltas B-A. No known country/capital relationships are used.
+countries raw positive_heads 31 /72 sum_delta -0.0006371588
+ top8 [(10, 1, -0.000137171, np.float64(-2.54)), (9, 1, -0.000132534, np.float64(-2.16)), (0, 0, -0.000123113, np.float64(-1.46)), (15, 3, 0.000103962, np.float64(1.26)), (13, 0, 9.6578e-05, np.float64(1.98)), (0, 3, -9.02603e-05, np.float64(-1.15)), (12, 1, 8.8903e-05, np.float64(1.47)), (9, 3, -7.77306e-05, np.float64(-1.91))]
+countries diag positive_heads 35 /72 sum_delta -8.090103
+ top8 [(12, 2, -7.1472, np.float64(-1.46)), (17, 1, -6.62437, np.float64(-2.67)), (15, 0, -5.91669, np.float64(-1.43)), (15, 2, -5.54738, np.float64(-1.11)), (16, 2, 5.06354, np.float64(1.79)), (13, 0, 4.78967, np.float64(2.58)), (15, 1, 4.66101, np.float64(0.8)), (16, 0, 4.19211, np.float64(1.72))]
+cities raw positive_heads 30 /72 sum_delta -0.0008094094
+ top8 [(15, 2, -0.000168038, np.float64(-2.54)), (17, 2, -0.000132194, np.float64(-2.32)), (17, 0, -0.000121943, np.float64(-1.87)), (3, 0, 0.000103487, np.float64(2.32)), (0, 0, -9.93968e-05, np.float64(-1.28)), (12, 1, -9.85018e-05, np.float64(-1.93)), (7, 1, -9.63895e-05, np.float64(-1.8)), (12, 2, -9.04065e-05, np.float64(-1.41))]
+cities diag positive_heads 41 /72 sum_delta -12.26737
+ top8 [(12, 2, -10.283, np.float64(-2.16)), (12, 1, -7.67876, np.float64(-1.61)), (15, 1, 5.41152, np.float64(1.04)), (15, 2, -4.38761, np.float64(-0.89)), (17, 0, -3.87274, np.float64(-1.61)), (17, 3, 3.2539, np.float64(2.23)), (12, 3, -3.23608, np.float64(-1.04)), (16, 2, 2.77616, np.float64(1.02))]
+nouns raw positive_heads 34 /72 sum_delta -0.0001374853
+ top8 [(11, 2, -0.000155384, np.float64(-2.33)), (0, 0, -0.000147716, np.float64(-2.18)), (10, 1, 0.000123463, np.float64(2.15)), (12, 3, -0.00011534, np.float64(-1.32)), (10, 2, 0.000112012, np.float64(1.72)), (4, 0, -9.61184e-05, np.float64(-1.92)), (15, 1, 9.25782e-05, np.float64(1.0)), (11, 3, 9.20069e-05, np.float64(1.58))]
+nouns diag positive_heads 26 /72 sum_delta -13.21475
+ top8 [(15, 1, -6.96061, np.float64(-1.32)), (16, 3, 5.01295, np.float64(1.8)), (15, 2, -4.85743, np.float64(-1.12)), (15, 0, 4.79193, np.float64(1.26)), (17, 2, -3.95813, np.float64(-2.17)), (14, 1, -3.2362, np.float64(-1.4)), (14, 2, -2.33305, np.float64(-0.82)), (13, 3, 2.02854, np.float64(0.94))]
+
+```

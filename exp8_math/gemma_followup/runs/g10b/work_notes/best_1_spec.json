@@ -1,0 +1,21 @@
+{
+  "kind": "sparse_mlp_output_attenuation",
+  "strength": 1.0,
+  "targets": {
+    "8": [
+      699
+    ],
+    "14": [
+      483,
+      984
+    ],
+    "17": [
+      1179
+    ]
+  },
+  "tensors": [
+    "model.layers.8.mlp.down_proj.weight",
+    "model.layers.14.mlp.down_proj.weight",
+    "model.layers.17.mlp.down_proj.weight"
+  ]
+}

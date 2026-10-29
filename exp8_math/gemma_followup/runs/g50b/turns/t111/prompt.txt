@@ -1,0 +1,7 @@
+OUTPUT of Python run 60 of at most 300:
+```
+HOLDOUT_POOLED {'passes': [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47], 'answers_per_model': 13312, 'problems': 128, 'original_accuracy': 0.09239783653846154, 'edited_accuracy': 0.09607872596153846, 'gain_pp': 0.3680889423076923, 'sample_SE_pp': 0.23358542197903756, 'problem_cluster_SE_pp': 0.3724860347516874}
+PASS48_IDS ['math_train_prealgebra_545', 'math_train_geometry_709', 'math_train_geometry_24', 'math_train_intermediate_algebra_243', 'math_train_number_theory_261', 'math_train_intermediate_algebra_258', 'math_train_geometry_756', 'math_train_number_theory_638', 'math_train_algebra_1201', 'math_train_number_theory_797', 'math_train_prealgebra_693', 'math_train_algebra_449', 'math_train_precalculus_126', 'math_train_precalculus_433', 'math_train_intermediate_algebra_913', 'math_train_geometry_854', 'math_train_prealgebra_525', 'math_train_number_theory_18', 'math_train_counting_and_probability_35', 'math_train_number_theory_2', 'math_train_precalculus_285', 'math_train_prealgebra_592', 'math_train_intermediate_algebra_1082', 'math_train_prealgebra_940', 'math_train_geometry_97', 'math_train_precalculus_685', 'math_train_intermediate_algebra_670', 'math_train_prealgebra_1162', 'math_train_prealgebra_773', 'math_train_intermediate_algebra_1004', 'math_train_intermediate_algebra_1143', 'math_train_intermediate_algebra_1217']
+'Pass48 logged; the unfavorable block1 repetition remains included in the final pool.'
+
+```

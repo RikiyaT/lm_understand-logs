@@ -1,0 +1,108 @@
+OUTPUT of run 19 of at most 60:
+```
+Completed immediate-reader route analysis for layer 0
+Completed immediate-reader route analysis for layer 1
+Completed immediate-reader route analysis for layer 2
+Completed immediate-reader route analysis for layer 3
+Completed immediate-reader route analysis for layer 4
+Completed immediate-reader route analysis for layer 5
+Completed immediate-reader route analysis for layer 6
+Completed immediate-reader route analysis for layer 7
+Completed immediate-reader route analysis for layer 8
+Completed immediate-reader route analysis for layer 9
+Completed immediate-reader route analysis for layer 10
+Completed immediate-reader route analysis for layer 11
+Completed immediate-reader route analysis for layer 12
+Completed immediate-reader route analysis for layer 13
+Completed immediate-reader route analysis for layer 14
+Completed immediate-reader route analysis for layer 15
+Completed immediate-reader route analysis for layer 16
+Completed immediate-reader route analysis for layer 17
+
+=== SCOPE ===
+Attention source objects: head OV numerator maps with learned diagonals.
+MLP source objects: output-writing projection with its learned output gain.
+Fractions describe WRITING COEFFICIENTS, not actual residual-state changes.
+Attention routing, MLP activation, and RMS denominators are never evaluated.
+Exact zero-read coordinates can still affect the next RMS denominator
+and can be read by later layers through the residual stream.
+Weak coordinates are the 10% with smallest direct reader column energy.
+They are not asserted to be functionally inactive.
+
+=== EXACT DIRECT-READ ZERO COORDINATES ===
+L0 attention -> same-layer MLP: zero-read coordinates=[400]; common-zero learned-gain coordinates=[400]
+L1 attention -> same-layer MLP: zero-read coordinates=[97, 400]; common-zero learned-gain coordinates=[97, 400]
+L2 attention -> same-layer MLP: zero-read coordinates=[400]; common-zero learned-gain coordinates=[400]
+L3 attention -> same-layer MLP: zero-read coordinates=[400]; common-zero learned-gain coordinates=[400]
+L4 attention -> same-layer MLP: zero-read coordinates=[400]; common-zero learned-gain coordinates=[400]
+L5 attention -> same-layer MLP: zero-read coordinates=[163, 400]; common-zero learned-gain coordinates=[163, 400]
+L7 attention -> same-layer MLP: zero-read coordinates=[163]; common-zero learned-gain coordinates=[163]
+L8 attention -> same-layer MLP: zero-read coordinates=[163]; common-zero learned-gain coordinates=[163]
+L17 MLP: no available downstream readout matrix; not tested.
+
+=== WRITING-DIFFERENCE ROUTE CONCENTRATION ===
+L source | zero_count zero_delta_share zero_base_share | weak_delta_share weak_base_share weak_enrichment | reader_weighting_enrichment
+ 0 attention |  1 0.57852 0.48907 | 0.97404 0.96976 1.004 | 0.825
+ 0 mlp       |  0 0.00000 0.00000 | 0.98105 0.94655 1.036 | 0.368
+ 1 attention |  2 0.60838 0.79138 | 0.98033 0.98784 0.992 | 1.698
+ 1 mlp       |  0 0.00000 0.00000 | 0.97303 0.95143 1.023 | 0.583
+ 2 attention |  1 0.61935 0.54937 | 0.95842 0.94056 1.019 | 0.725
+ 2 mlp       |  0 0.00000 0.00000 | 0.92401 0.92146 1.003 | 0.954
+ 3 attention |  1 0.46849 0.42740 | 0.89350 0.88522 1.009 | 0.902
+ 3 mlp       |  0 0.00000 0.00000 | 0.92650 0.89019 1.041 | 0.588
+ 4 attention |  1 0.48025 0.31868 | 0.86952 0.85305 1.019 | 0.664
+ 4 mlp       |  0 0.00000 0.00000 | 0.96279 0.93984 1.024 | 0.649
+ 5 attention |  2 0.78207 0.72407 | 0.90502 0.92454 0.979 | 0.985
+ 5 mlp       |  0 0.00000 0.00000 | 0.91631 0.85142 1.076 | 0.571
+ 6 attention |  0 0.00000 0.00000 | 0.72758 0.64738 1.124 | 0.777
+ 6 mlp       |  0 0.00000 0.00000 | 0.85763 0.84472 1.015 | 0.943
+ 7 attention |  1 0.54440 0.54548 | 0.72997 0.73742 0.990 | 0.901
+ 7 mlp       |  0 0.00000 0.00000 | 0.65204 0.76161 0.856 | 1.484
+ 8 attention |  1 0.44831 0.57852 | 0.64286 0.71147 0.904 | 1.209
+ 8 mlp       |  0 0.00000 0.00000 | 0.62608 0.59319 1.055 | 0.936
+ 9 attention |  0 0.00000 0.00000 | 0.43448 0.38978 1.115 | 0.883
+ 9 mlp       |  0 0.00000 0.00000 | 0.35655 0.41773 0.854 | 1.163
+10 attention |  0 0.00000 0.00000 | 0.34937 0.38463 0.908 | 1.084
+10 mlp       |  0 0.00000 0.00000 | 0.39136 0.46914 0.834 | 1.179
+11 attention |  0 0.00000 0.00000 | 0.69669 0.57763 1.206 | 0.654
+11 mlp       |  0 0.00000 0.00000 | 0.43347 0.47471 0.913 | 1.262
+12 attention |  0 0.00000 0.00000 | 0.67095 0.52861 1.269 | 0.586
+12 mlp       |  0 0.00000 0.00000 | 0.44110 0.51667 0.854 | 1.367
+13 attention |  0 0.00000 0.00000 | 0.58467 0.59078 0.990 | 1.258
+13 mlp       |  0 0.00000 0.00000 | 0.35587 0.42982 0.828 | 1.242
+14 attention |  0 0.00000 0.00000 | 0.28097 0.27317 1.029 | 1.021
+14 mlp       |  0 0.00000 0.00000 | 0.24516 0.32810 0.747 | 1.161
+15 attention |  0 0.00000 0.00000 | 0.63198 0.39099 1.616 | 0.322
+15 mlp       |  0 0.00000 0.00000 | 0.22583 0.27008 0.836 | 1.102
+16 attention |  0 0.00000 0.00000 | 0.23321 0.23671 0.985 | 1.079
+16 mlp       |  0 0.00000 0.00000 | 0.24653 0.26755 0.921 | 1.043
+17 attention |  0 0.00000 0.00000 | 0.27148 0.31059 0.874 | 1.014
+
+=== ATTENTION HEADS WITH LARGEST ZERO-READ ROUTE FRACTIONS ===
+L5H2: zero_delta_share=0.82025, zero_base_share=0.70127, zero_enrichment=1.170, weak_delta_share=0.91293
+L5H1: zero_delta_share=0.79244, zero_base_share=0.69641, zero_enrichment=1.138, weak_delta_share=0.87829
+L5H3: zero_delta_share=0.77032, zero_base_share=0.75573, zero_enrichment=1.019, weak_delta_share=0.91704
+L5H0: zero_delta_share=0.74072, zero_base_share=0.72387, zero_enrichment=1.023, weak_delta_share=0.90421
+L1H3: zero_delta_share=0.69357, zero_base_share=0.78804, zero_enrichment=0.880, weak_delta_share=0.98226
+L0H1: zero_delta_share=0.68457, zero_base_share=0.63217, zero_enrichment=1.083, weak_delta_share=0.97283
+L2H1: zero_delta_share=0.67787, zero_base_share=0.60692, zero_enrichment=1.117, weak_delta_share=0.96310
+L1H1: zero_delta_share=0.63153, zero_base_share=0.82503, zero_enrichment=0.765, weak_delta_share=0.97776
+L2H0: zero_delta_share=0.61909, zero_base_share=0.48500, zero_enrichment=1.276, weak_delta_share=0.95750
+L0H3: zero_delta_share=0.60650, zero_base_share=0.53483, zero_enrichment=1.134, weak_delta_share=0.97093
+L8H0: zero_delta_share=0.60296, zero_base_share=0.71853, zero_enrichment=0.839, weak_delta_share=0.80008
+L2H2: zero_delta_share=0.59679, zero_base_share=0.56520, zero_enrichment=1.056, weak_delta_share=0.95810
+
+=== PREVIOUS MLP UNIT CANDIDATES: IMMEDIATE-READER GEOMETRY ===
+L4 U1044: zero_delta_share=0.00000, weak_delta_share=0.98036, weak_base_share=0.88530, weak_enrichment=1.107, reader_weighting_enrichment=0.136
+L4 U1224: zero_delta_share=0.00000, weak_delta_share=0.99297, weak_base_share=0.92400, weak_enrichment=1.075, reader_weighting_enrichment=0.064
+L6 U1824: zero_delta_share=0.00000, weak_delta_share=0.97251, weak_base_share=0.99971, weak_enrichment=0.973, reader_weighting_enrichment=17.951
+L7 U1455: zero_delta_share=0.00000, weak_delta_share=0.18463, weak_base_share=0.99944, weak_enrichment=0.185, reader_weighting_enrichment=279.940
+L9 U237: zero_delta_share=0.00000, weak_delta_share=0.26139, weak_base_share=0.69791, weak_enrichment=0.375, reader_weighting_enrichment=3.283
+L10 U1363: zero_delta_share=0.00000, weak_delta_share=0.36783, weak_base_share=0.58435, weak_enrichment=0.629, reader_weighting_enrichment=0.948
+L10 U1564: zero_delta_share=0.00000, weak_delta_share=0.26980, weak_base_share=0.66072, weak_enrichment=0.408, reader_weighting_enrichment=2.287
+L14 U641: zero_delta_share=0.00000, weak_delta_share=0.26517, weak_base_share=0.46973, weak_enrichment=0.565, reader_weighting_enrichment=1.029
+
+A large zero/weak-route fraction would identify a possible normalization-mediated
+or later-layer route, not prove that the change is behaviorally unimportant.
+
+```

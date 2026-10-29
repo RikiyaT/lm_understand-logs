@@ -1,0 +1,11 @@
+OUTPUT of Python run 35 of at most 300:
+```
+Original broad-probe metrics:
+{'case': 'shopping', 'kind': 'productive', 'body_logprob': -1.3993, 'late_logprob': -1.3993, 'numeric_logprob': -0.1968, 'numeric_top1': 0.9375, 'numeric_tokens': 32}
+{'case': 'shopping', 'kind': 'loop', 'body_logprob': -0.2815, 'late_logprob': -0.0328, 'numeric_logprob': -0.0676, 'numeric_top1': 0.9524, 'numeric_tokens': 42}
+{'case': 'linear_equation', 'kind': 'productive', 'body_logprob': -0.8867, 'late_logprob': -0.8867, 'numeric_logprob': -0.2273, 'numeric_top1': 0.9615, 'numeric_tokens': 26}
+{'case': 'linear_equation', 'kind': 'loop', 'body_logprob': -0.3524, 'late_logprob': -0.0512, 'numeric_logprob': -0.1509, 'numeric_top1': 0.9583, 'numeric_tokens': 48}
+{'case': 'modular_progress', 'kind': 'productive', 'body_logprob': -0.1559, 'late_logprob': -0.1559, 'numeric_logprob': -0.0427, 'numeric_top1': 0.9857, 'numeric_tokens': 70}
+{'case': 'modular_progress', 'kind': 'loop', 'body_logprob': -0.131, 'late_logprob': -0.0172, 'numeric_logprob': -0.1803, 'numeric_top1': 0.95, 'numeric_tokens': 60}
+
+```

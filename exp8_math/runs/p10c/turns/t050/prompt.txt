@@ -1,0 +1,54 @@
+OUTPUT of Python run 44 of at most 300:
+```
+Probe group 0 Wait, is it possible occurrences 6 tokens each 53 starts [170, 224, 278, 332, 386, 440]
+Probe group 0 Wait, let's check occurrences 6 tokens each 33 starts [517, 551, 585, 619, 653, 687]
+Probe group 1 Wait, why did I think occurrences 6 tokens each 55 starts [158, 214, 270, 326, 382, 438]
+Probe group 1 Let's check if the question occurrences 6 tokens each 48 starts [546, 595, 644, 693, 742, 791]
+Highest induction heads:
+{'layer': 15, 'head': 7, 'induction': 0.8947, 'same': 0.0133, 'previous': 0.0018, 'plus2': 0.0545, 'past_block': 0.9866}
+{'layer': 11, 'head': 1, 'induction': 0.7381, 'same': 0.0115, 'previous': 0.0018, 'plus2': 0.0759, 'past_block': 0.896}
+{'layer': 23, 'head': 5, 'induction': 0.5919, 'same': 0.0414, 'previous': 0.0112, 'plus2': 0.0323, 'past_block': 0.8124}
+{'layer': 23, 'head': 0, 'induction': 0.4614, 'same': 0.029, 'previous': 0.014, 'plus2': 0.062, 'past_block': 0.7523}
+{'layer': 19, 'head': 5, 'induction': 0.4174, 'same': 0.0416, 'previous': 0.0134, 'plus2': 0.1034, 'past_block': 0.7738}
+{'layer': 19, 'head': 6, 'induction': 0.3394, 'same': 0.0147, 'previous': 0.0078, 'plus2': 0.1602, 'past_block': 0.7365}
+{'layer': 23, 'head': 7, 'induction': 0.3383, 'same': 0.0313, 'previous': 0.0155, 'plus2': 0.0714, 'past_block': 0.6718}
+{'layer': 19, 'head': 7, 'induction': 0.3215, 'same': 0.0146, 'previous': 0.0093, 'plus2': 0.1532, 'past_block': 0.6926}
+{'layer': 15, 'head': 5, 'induction': 0.3151, 'same': 0.0248, 'previous': 0.0084, 'plus2': 0.3022, 'past_block': 0.829}
+{'layer': 23, 'head': 4, 'induction': 0.2581, 'same': 0.0232, 'previous': 0.0111, 'plus2': 0.0621, 'past_block': 0.5494}
+{'layer': 19, 'head': 2, 'induction': 0.2363, 'same': 0.0239, 'previous': 0.0114, 'plus2': 0.1112, 'past_block': 0.6026}
+{'layer': 19, 'head': 0, 'induction': 0.2324, 'same': 0.0361, 'previous': 0.0176, 'plus2': 0.1018, 'past_block': 0.6072}
+{'layer': 23, 'head': 1, 'induction': 0.2321, 'same': 0.0167, 'previous': 0.0118, 'plus2': 0.0559, 'past_block': 0.555}
+{'layer': 23, 'head': 3, 'induction': 0.2243, 'same': 0.0102, 'previous': 0.0069, 'plus2': 0.0921, 'past_block': 0.5404}
+{'layer': 15, 'head': 6, 'induction': 0.2134, 'same': 0.0172, 'previous': 0.0065, 'plus2': 0.3733, 'past_block': 0.9341}
+{'layer': 3, 'head': 5, 'induction': 0.1974, 'same': 0.089, 'previous': 0.0155, 'plus2': 0.074, 'past_block': 0.7663}
+{'layer': 15, 'head': 4, 'induction': 0.1786, 'same': 0.0209, 'previous': 0.0089, 'plus2': 0.2166, 'past_block': 0.7365}
+{'layer': 15, 'head': 2, 'induction': 0.1755, 'same': 0.0323, 'previous': 0.0126, 'plus2': 0.1798, 'past_block': 0.8551}
+{'layer': 19, 'head': 3, 'induction': 0.1732, 'same': 0.0229, 'previous': 0.0107, 'plus2': 0.0798, 'past_block': 0.5108}
+{'layer': 15, 'head': 3, 'induction': 0.1667, 'same': 0.0351, 'previous': 0.0131, 'plus2': 0.115, 'past_block': 0.6848}
+Matched hidden repetition drift:
+1 drift_norm 0.099 consistency 0.976
+2 drift_norm 0.213 consistency 0.975
+3 drift_norm 0.31 consistency 0.973
+4 drift_norm 0.403 consistency 0.967
+5 drift_norm 0.442 consistency 0.965
+6 drift_norm 0.476 consistency 0.962
+7 drift_norm 0.557 consistency 0.942
+8 drift_norm 0.593 consistency 0.95
+9 drift_norm 0.626 consistency 0.955
+10 drift_norm 0.713 consistency 0.956
+11 drift_norm 0.91 consistency 0.957
+12 drift_norm 1.067 consistency 0.964
+13 drift_norm 1.203 consistency 0.964
+14 drift_norm 1.444 consistency 0.961
+15 drift_norm 1.661 consistency 0.955
+16 drift_norm 2.007 consistency 0.953
+17 drift_norm 2.318 consistency 0.95
+18 drift_norm 2.58 consistency 0.953
+19 drift_norm 2.651 consistency 0.949
+20 drift_norm 3.259 consistency 0.953
+21 drift_norm 3.397 consistency 0.945
+22 drift_norm 3.661 consistency 0.939
+23 drift_norm 3.66 consistency 0.927
+24 drift_norm 45.188 consistency 0.892
+
+```

@@ -1,0 +1,117 @@
+OUTPUT of run 5 of at most 60:
+```
+MLP GATE/UP UPDATE READING-SUBSPACE ALIGNMENT
+For independent isotropic rank-4 subspaces in 640 dimensions, expected overlap is 0.00625.
+That reference is geometric, NOT a null model of trained networks.
+layer    raw_overlap gain_overlap    raw_first_cos gain_first_cos    raw_read4 gain_read4
+    0        0.96844      0.73955          0.97927        0.84854      0.23049    0.26918
+    1        0.83342      0.78081          0.98290        0.96181      0.17766    0.17447
+    2        0.96015      0.95959          0.95852        0.95577      0.21916    0.20811
+    3        0.95384      0.58430          0.97630        0.92326      0.21431    0.20049
+    4        0.95331      0.92560          0.98861        0.99301      0.21846    0.25934
+    5        0.86359      0.93998          0.98109        0.98076      0.19608    0.20594
+    6        0.85156      0.93603          0.98605        0.99003      0.20253    0.23258
+    7        0.92028      0.95640          0.97850        0.95901      0.24370    0.28885
+    8        0.93507      0.95916          0.98575        0.99214      0.24220    0.28500
+    9        0.94804      0.96648          0.99480        0.99297      0.26162    0.31223
+   10        0.90913      0.93706          0.99340        0.99428      0.26329    0.35858
+   11        0.92862      0.95285          0.98678        0.97407      0.23698    0.32726
+   12        0.90387      0.93273          0.99560        0.99636      0.24374    0.34343
+   13        0.96581      0.92541          0.99672        0.99745      0.27249    0.36449
+   14        0.93527      0.93871          0.99484        0.99435      0.24754    0.35464
+   15        0.95874      0.85274          0.99477        0.99477      0.21158    0.30502
+   16        0.95166      0.92670          0.99339        0.99509      0.19852    0.31275
+   17        0.94948      0.96471          0.99088        0.99625      0.19473    0.31405
+
+WRITER ALIGNMENT WITH LAYER 17 DOWN-PROJECTION UPDATE; GAINS: False
+L16 mlp       head=None overlap=0.412683 first_cos=0.843870 component_top4=0.24452
+L17 attention head=3    overlap=0.257572 first_cos=0.299282 component_top4=0.33061
+L15 mlp       head=None overlap=0.214176 first_cos=0.189669 component_top4=0.19486
+L16 attention head=1    overlap=0.119482 first_cos=0.014078 component_top4=0.37710
+L16 attention head=2    overlap=0.119358 first_cos=0.024194 component_top4=0.34507
+L16 attention head=0    overlap=0.113874 first_cos=0.030295 component_top4=0.37264
+L16 attention head=3    overlap=0.095126 first_cos=0.029457 component_top4=0.39267
+L17 attention head=1    overlap=0.093872 first_cos=0.032877 component_top4=0.23101
+L15 attention head=2    overlap=0.070832 first_cos=0.032669 component_top4=0.35019
+L14 mlp       head=None overlap=0.058618 first_cos=0.019450 component_top4=0.15978
+L17 attention head=0    overlap=0.036311 first_cos=0.023339 component_top4=0.23428
+L15 attention head=1    overlap=0.027033 first_cos=0.000081 component_top4=0.49404
+L13 attention head=3    overlap=0.024582 first_cos=0.137876 component_top4=0.24638
+L03 attention head=1    overlap=0.020216 first_cos=0.045395 component_top4=0.31918
+L15 attention head=0    overlap=0.019179 first_cos=0.025236 component_top4=0.22063
+
+WRITER ALIGNMENT WITH LAYER 17 DOWN-PROJECTION UPDATE; GAINS: True
+L16 mlp       head=None overlap=0.343317 first_cos=0.690297 component_top4=0.27192
+L15 mlp       head=None overlap=0.210474 first_cos=0.033847 component_top4=0.21660
+L17 attention head=3    overlap=0.175528 first_cos=0.085557 component_top4=0.38018
+L16 attention head=2    overlap=0.130851 first_cos=0.263662 component_top4=0.43508
+L14 mlp       head=None overlap=0.094685 first_cos=0.134748 component_top4=0.16551
+L16 attention head=1    overlap=0.073050 first_cos=0.008238 component_top4=0.45297
+L15 attention head=2    overlap=0.072625 first_cos=0.095290 component_top4=0.37779
+L16 attention head=3    overlap=0.067682 first_cos=0.075690 component_top4=0.46180
+L13 mlp       head=None overlap=0.063968 first_cos=0.030784 component_top4=0.18217
+L17 attention head=1    overlap=0.058183 first_cos=0.307363 component_top4=0.33796
+L15 attention head=1    overlap=0.054499 first_cos=0.085918 component_top4=0.39752
+L17 attention head=2    overlap=0.050219 first_cos=0.000257 component_top4=0.34123
+L16 attention head=0    overlap=0.044380 first_cos=0.038609 component_top4=0.43045
+L04 attention head=1    overlap=0.043619 first_cos=0.036451 component_top4=0.92604
+L04 attention head=0    overlap=0.043580 first_cos=0.034106 component_top4=0.92803
+
+TOP 15 WRITE/CHANGED-READ SUBSPACE ALIGNMENTS; GAINS: False
+L10 attention H0    -> L10 MLP changed-reader: overlap=0.047431
+L15 mlp       HNone -> L17 MLP changed-reader: overlap=0.042652
+L17 attention H1    -> L17 MLP changed-reader: overlap=0.041102
+L12 attention H0    -> L13 MLP changed-reader: overlap=0.038539
+L12 attention H3    -> L13 MLP changed-reader: overlap=0.036104
+L00 attention H2    -> L00 MLP changed-reader: overlap=0.035898
+L16 mlp       HNone -> L17 MLP changed-reader: overlap=0.035387
+L17 attention H0    -> L17 MLP changed-reader: overlap=0.035211
+L09 mlp       HNone -> L10 MLP changed-reader: overlap=0.034449
+L11 attention H2    -> L11 MLP changed-reader: overlap=0.033452
+L17 attention H2    -> L17 MLP changed-reader: overlap=0.030733
+L17 attention H3    -> L17 MLP changed-reader: overlap=0.029661
+L10 attention H2    -> L10 MLP changed-reader: overlap=0.028774
+L16 attention H3    -> L17 MLP changed-reader: overlap=0.027476
+L12 attention H3    -> L12 MLP changed-reader: overlap=0.027057
+
+TOP 15 WRITE/CHANGED-READ SUBSPACE ALIGNMENTS; GAINS: True
+L08 attention H2    -> L08 MLP changed-reader: overlap=0.005517
+L08 attention H3    -> L08 MLP changed-reader: overlap=0.004623
+L08 attention H0    -> L08 MLP changed-reader: overlap=0.004300
+L07 mlp       HNone -> L08 MLP changed-reader: overlap=0.003806
+L08 attention H1    -> L08 MLP changed-reader: overlap=0.003700
+L07 attention H1    -> L08 MLP changed-reader: overlap=0.003665
+L06 attention H1    -> L06 MLP changed-reader: overlap=0.003123
+L09 attention H2    -> L09 MLP changed-reader: overlap=0.003060
+L07 attention H1    -> L09 MLP changed-reader: overlap=0.002908
+L09 attention H1    -> L09 MLP changed-reader: overlap=0.002714
+L08 attention H2    -> L09 MLP changed-reader: overlap=0.002598
+L00 attention H2    -> L12 MLP changed-reader: overlap=0.002489
+L01 mlp       HNone -> L17 MLP changed-reader: overlap=0.002405
+L00 mlp       HNone -> L16 MLP changed-reader: overlap=0.002326
+L00 mlp       HNone -> L11 MLP changed-reader: overlap=0.002326
+
+RAW/GAIN STABILITY OF EACH MLP'S CHANGED READING SUBSPACE
+L00: overlap=0.688757
+L01: overlap=0.857757
+L02: overlap=0.795976
+L03: overlap=0.340885
+L04: overlap=0.572782
+L05: overlap=0.626347
+L06: overlap=0.561254
+L07: overlap=0.589461
+L08: overlap=0.530731
+L09: overlap=0.471631
+L10: overlap=0.265755
+L11: overlap=0.251069
+L12: overlap=0.159536
+L13: overlap=0.164350
+L14: overlap=0.173253
+L15: overlap=0.129079
+L16: overlap=0.159375
+L17: overlap=0.193358
+
+Interpretation limit: shared coordinates are not identified concepts,
+and geometric compatibility does not establish activation, mediation, or causal importance.
+
+```

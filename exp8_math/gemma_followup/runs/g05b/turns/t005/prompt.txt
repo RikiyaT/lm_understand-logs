@@ -1,0 +1,20 @@
+OUTPUT of Python run 3 of at most 300:
+```
+Record schema:
+id str 'math_train_algebra_1519'
+source str 'math'
+answer str '162x^4'
+samples list
+Activation directory files: ['hidden_last_prompt.npy', 'hidden_mean_answer.npy', 'index.json', 'mlp_last_prompt.npy', 'mlp_mean_answer.npy']
+index.json {'layers': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], 'mlp_layers': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], 'samples': [{'item': 'math_train_algebra_1519', 'sample': 0, 'correct': False, 'tokens': 707}, {'item': 'math_train_algebra_1519', 'sample': 1, 'correct': False, 'tokens': 8192}, {'item': 'math_train_algebra_1519', 'sample': 2, 'correct': False, 'tokens': 1838}, {'item': 'math_train_algebra_1519', 'sample': 3, 'correct': False, 'tokens': 1540}, {'item': 'math_train_algebra_1519', 'sample': 4, 'correct': False, 'tokens': 1480}, {'item': 'math_train_algebra_1519', 'sample': 5, 'correct': False, 'tokens': 2495}, {'item': 'math_train_algebra_1519', 'sample': 6, 'correct': False, 'tokens': 2175}, {'item': 'math_train_algebra_1519', 'sample': 7, 'correct': False, 'tokens': 1616}, {'item': 'math_train_algebra_1519', 'sample': 8, 'correct': False, 'tokens': 1276}, {'item': 'math_train_algebra_1519', 'sample': 9, 'correct': False, 'tokens':
+Detected response field: answer
+Example 0 '162x^4'
+Example 1 '20'
+Example 16 '15'
+Example 32 '\\dfrac{1}{2}'
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 29, in <module>
+IndexError: list index out of range
+
+```

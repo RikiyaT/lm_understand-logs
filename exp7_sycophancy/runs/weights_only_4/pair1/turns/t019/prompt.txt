@@ -1,0 +1,142 @@
+OUTPUT of run 18 of at most 60:
+```
+SEMANTIC CONTRAST FAMILIES
+ASCII_digits rank 9 tokens/words ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+fullwidth_digits rank 9 tokens/words ['０', '１', '２', '３', '４', '５', '６', '７', '８', '９']
+Arabic_Indic rank 9 tokens/words ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩']
+Persian_digits rank 9 tokens/words ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹']
+number_words rank 9 tokens/words ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+capital_numbers rank 9 tokens/words ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+uppercase_letters rank 9 tokens/words ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+lowercase_letters rank 9 tokens/words ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+punctuation rank 9 tokens/words ['.', ',', ':', ';', '!', '?', '+', '-', '*', '/']
+colors rank 9 tokens/words ['red', 'blue', 'green', 'yellow', 'white', 'black', 'orange', 'purple', 'pink', 'brown']
+months rank 9 tokens/words ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October']
+animals rank 9 tokens/words ['cat', 'dog', 'horse', 'cow', 'sheep', 'pig', 'lion', 'tiger', 'bear', 'wolf']
+question_words rank 9 tokens/words ['what', 'which', 'who', 'where', 'when', 'why', 'how', 'whose', 'whether', 'whom']
+belief_verbs rank 9 tokens/words ['think', 'believe', 'guess', 'assume', 'suppose', 'suspect', 'reckon', 'imagine', 'presume', 'expect']
+
+OUTPUT-WEIGHT FEATURE SELECTIVITY
+For each family: delta energy %, midpoint energy %, enrichment ratio.
+Random reference ranks are descriptive, not sycophancy significance tests.
+
+COMPONENT 15 mlp None
+ASCII_digits        D%= 15.206 mid%=  1.646 ratio=  9.239 dimension_adjusted= 10.813
+fullwidth_digits    D%= 10.480 mid%=  1.530 ratio=  6.848 dimension_adjusted=  7.452
+Arabic_Indic        D%=  9.349 mid%=  1.461 ratio=  6.400 dimension_adjusted=  6.648
+Persian_digits      D%=  8.988 mid%=  1.447 ratio=  6.213 dimension_adjusted=  6.392
+number_words        D%=  6.176 mid%=  1.263 ratio=  4.890 dimension_adjusted=  4.392
+capital_numbers     D%=  4.790 mid%=  1.219 ratio=  3.929 dimension_adjusted=  3.406
+uppercase_letters   D%=  1.107 mid%=  1.440 ratio=  0.769 dimension_adjusted=  0.787
+lowercase_letters   D%=  1.017 mid%=  1.405 ratio=  0.724 dimension_adjusted=  0.723
+punctuation         D%=  1.349 mid%=  0.678 ratio=  1.990 dimension_adjusted=  0.959
+colors              D%=  2.653 mid%=  1.210 ratio=  2.192 dimension_adjusted=  1.887
+months              D%=  3.508 mid%=  1.335 ratio=  2.628 dimension_adjusted=  2.494
+animals             D%=  1.437 mid%=  1.215 ratio=  1.183 dimension_adjusted=  1.022
+question_words      D%=  1.191 mid%=  1.001 ratio=  1.190 dimension_adjusted=  0.847
+belief_verbs        D%=  1.359 mid%=  0.989 ratio=  1.374 dimension_adjusted=  0.967
+random dimension-adjusted reference: median/95%/max [1.032  1.1951 1.2647] random >= ASCII target 0 /128
+
+COMPONENT 16 mlp None
+ASCII_digits        D%= 27.032 mid%=  1.549 ratio= 17.452 dimension_adjusted= 19.222
+fullwidth_digits    D%= 18.375 mid%=  1.421 ratio= 12.934 dimension_adjusted= 13.067
+Arabic_Indic        D%= 15.555 mid%=  1.354 ratio= 11.491 dimension_adjusted= 11.062
+Persian_digits      D%= 15.848 mid%=  1.352 ratio= 11.725 dimension_adjusted= 11.270
+number_words        D%= 10.028 mid%=  1.210 ratio=  8.291 dimension_adjusted=  7.131
+capital_numbers     D%=  7.888 mid%=  1.197 ratio=  6.588 dimension_adjusted=  5.609
+uppercase_letters   D%=  1.127 mid%=  1.469 ratio=  0.768 dimension_adjusted=  0.802
+lowercase_letters   D%=  1.043 mid%=  1.453 ratio=  0.718 dimension_adjusted=  0.742
+punctuation         D%=  1.839 mid%=  0.619 ratio=  2.970 dimension_adjusted=  1.308
+colors              D%=  4.111 mid%=  1.146 ratio=  3.587 dimension_adjusted=  2.923
+months              D%=  4.390 mid%=  1.283 ratio=  3.421 dimension_adjusted=  3.122
+animals             D%=  1.802 mid%=  1.132 ratio=  1.592 dimension_adjusted=  1.282
+question_words      D%=  1.301 mid%=  0.900 ratio=  1.445 dimension_adjusted=  0.925
+belief_verbs        D%=  1.636 mid%=  0.970 ratio=  1.686 dimension_adjusted=  1.164
+random dimension-adjusted reference: median/95%/max [1.116  1.3859 1.5104] random >= ASCII target 0 /128
+
+COMPONENT 17 mlp None
+ASCII_digits        D%= 34.113 mid%=  1.203 ratio= 28.352 dimension_adjusted= 24.258
+fullwidth_digits    D%= 22.808 mid%=  1.045 ratio= 21.818 dimension_adjusted= 16.219
+Arabic_Indic        D%= 17.196 mid%=  1.064 ratio= 16.161 dimension_adjusted= 12.228
+Persian_digits      D%= 17.769 mid%=  1.086 ratio= 16.358 dimension_adjusted= 12.635
+number_words        D%= 11.400 mid%=  0.986 ratio= 11.564 dimension_adjusted=  8.107
+capital_numbers     D%=  9.872 mid%=  0.948 ratio= 10.416 dimension_adjusted=  7.020
+uppercase_letters   D%=  1.279 mid%=  1.022 ratio=  1.251 dimension_adjusted=  0.909
+lowercase_letters   D%=  1.211 mid%=  1.250 ratio=  0.968 dimension_adjusted=  0.861
+punctuation         D%=  3.981 mid%=  0.339 ratio= 11.732 dimension_adjusted=  2.831
+colors              D%=  6.831 mid%=  0.976 ratio=  6.997 dimension_adjusted=  4.858
+months              D%=  3.956 mid%=  0.995 ratio=  3.977 dimension_adjusted=  2.813
+animals             D%=  2.452 mid%=  0.982 ratio=  2.497 dimension_adjusted=  1.744
+question_words      D%=  2.120 mid%=  0.682 ratio=  3.109 dimension_adjusted=  1.508
+belief_verbs        D%=  2.537 mid%=  0.932 ratio=  2.722 dimension_adjusted=  1.804
+random dimension-adjusted reference: median/95%/max [1.6133 2.4044 2.6655] random >= ASCII target 0 /128
+
+COMPONENT 15 attention 1
+ASCII_digits        D%=  9.877 mid%=  1.004 ratio=  9.838 dimension_adjusted=  7.024
+fullwidth_digits    D%=  8.695 mid%=  1.105 ratio=  7.867 dimension_adjusted=  6.183
+Arabic_Indic        D%=  6.788 mid%=  1.087 ratio=  6.248 dimension_adjusted=  4.827
+Persian_digits      D%=  6.651 mid%=  1.173 ratio=  5.669 dimension_adjusted=  4.729
+number_words        D%=  6.271 mid%=  0.988 ratio=  6.344 dimension_adjusted=  4.459
+capital_numbers     D%=  5.594 mid%=  1.072 ratio=  5.217 dimension_adjusted=  3.978
+uppercase_letters   D%=  1.741 mid%=  0.977 ratio=  1.782 dimension_adjusted=  1.238
+lowercase_letters   D%=  0.990 mid%=  0.667 ratio=  1.485 dimension_adjusted=  0.704
+punctuation         D%=  0.645 mid%=  0.408 ratio=  1.581 dimension_adjusted=  0.458
+colors              D%=  2.097 mid%=  1.381 ratio=  1.518 dimension_adjusted=  1.491
+months              D%=  5.686 mid%=  1.524 ratio=  3.730 dimension_adjusted=  4.043
+animals             D%=  2.005 mid%=  1.542 ratio=  1.300 dimension_adjusted=  1.426
+question_words      D%=  0.630 mid%=  0.543 ratio=  1.161 dimension_adjusted=  0.448
+belief_verbs        D%=  0.878 mid%=  0.891 ratio=  0.985 dimension_adjusted=  0.624
+random dimension-adjusted reference: median/95%/max [0.6892 0.8183 0.8714] random >= ASCII target 0 /128
+
+COMPONENT 15 attention 2
+ASCII_digits        D%= 13.596 mid%=  2.382 ratio=  5.708 dimension_adjusted=  9.669
+fullwidth_digits    D%= 12.248 mid%=  2.360 ratio=  5.189 dimension_adjusted=  8.710
+Arabic_Indic        D%=  9.201 mid%=  2.082 ratio=  4.419 dimension_adjusted=  6.543
+Persian_digits      D%=  9.381 mid%=  2.043 ratio=  4.592 dimension_adjusted=  6.671
+number_words        D%=  8.292 mid%=  1.777 ratio=  4.666 dimension_adjusted=  5.897
+capital_numbers     D%=  7.302 mid%=  1.721 ratio=  4.243 dimension_adjusted=  5.192
+uppercase_letters   D%=  2.461 mid%=  1.891 ratio=  1.302 dimension_adjusted=  1.750
+lowercase_letters   D%=  1.591 mid%=  1.395 ratio=  1.141 dimension_adjusted=  1.132
+punctuation         D%=  0.705 mid%=  0.515 ratio=  1.368 dimension_adjusted=  0.502
+colors              D%=  3.284 mid%=  1.725 ratio=  1.904 dimension_adjusted=  2.335
+months              D%=  6.763 mid%=  2.012 ratio=  3.362 dimension_adjusted=  4.809
+animals             D%=  1.682 mid%=  1.413 ratio=  1.191 dimension_adjusted=  1.196
+question_words      D%=  0.771 mid%=  0.896 ratio=  0.861 dimension_adjusted=  0.549
+belief_verbs        D%=  0.898 mid%=  0.707 ratio=  1.269 dimension_adjusted=  0.638
+random dimension-adjusted reference: median/95%/max [0.6531 0.7756 0.8427] random >= ASCII target 0 /128
+
+COMPONENT 16 attention 3
+ASCII_digits        D%= 15.506 mid%=  1.156 ratio= 13.418 dimension_adjusted= 11.027
+fullwidth_digits    D%= 11.118 mid%=  1.084 ratio= 10.254 dimension_adjusted=  7.906
+Arabic_Indic        D%=  9.170 mid%=  1.176 ratio=  7.797 dimension_adjusted=  6.521
+Persian_digits      D%=  9.111 mid%=  1.251 ratio=  7.284 dimension_adjusted=  6.479
+number_words        D%=  6.232 mid%=  1.085 ratio=  5.746 dimension_adjusted=  4.432
+capital_numbers     D%=  5.417 mid%=  1.141 ratio=  4.748 dimension_adjusted=  3.852
+uppercase_letters   D%=  1.633 mid%=  1.925 ratio=  0.849 dimension_adjusted=  1.161
+lowercase_letters   D%=  0.888 mid%=  1.786 ratio=  0.497 dimension_adjusted=  0.631
+punctuation         D%=  1.547 mid%=  0.633 ratio=  2.445 dimension_adjusted=  1.100
+colors              D%=  1.836 mid%=  1.025 ratio=  1.792 dimension_adjusted=  1.306
+months              D%=  2.976 mid%=  1.097 ratio=  2.714 dimension_adjusted=  2.116
+animals             D%=  2.270 mid%=  1.063 ratio=  2.136 dimension_adjusted=  1.614
+question_words      D%=  1.336 mid%=  0.924 ratio=  1.446 dimension_adjusted=  0.950
+belief_verbs        D%=  1.491 mid%=  1.007 ratio=  1.481 dimension_adjusted=  1.060
+random dimension-adjusted reference: median/95%/max [1.0267 1.4428 1.7408] random >= ASCII target 0 /128
+
+COMPONENT 17 attention 3
+ASCII_digits        D%= 19.073 mid%=  0.761 ratio= 25.074 dimension_adjusted= 13.563
+fullwidth_digits    D%= 12.151 mid%=  0.914 ratio= 13.289 dimension_adjusted=  8.641
+Arabic_Indic        D%= 10.458 mid%=  0.919 ratio= 11.380 dimension_adjusted=  7.437
+Persian_digits      D%= 10.991 mid%=  0.724 ratio= 15.190 dimension_adjusted=  7.815
+number_words        D%=  7.376 mid%=  0.910 ratio=  8.103 dimension_adjusted=  5.245
+capital_numbers     D%=  5.732 mid%=  0.972 ratio=  5.899 dimension_adjusted=  4.076
+uppercase_letters   D%=  1.223 mid%=  1.753 ratio=  0.698 dimension_adjusted=  0.870
+lowercase_letters   D%=  1.066 mid%=  1.350 ratio=  0.790 dimension_adjusted=  0.758
+punctuation         D%=  1.782 mid%=  2.287 ratio=  0.779 dimension_adjusted=  1.267
+colors              D%=  2.646 mid%=  0.771 ratio=  3.432 dimension_adjusted=  1.881
+months              D%=  3.800 mid%=  0.801 ratio=  4.743 dimension_adjusted=  2.702
+animals             D%=  1.562 mid%=  0.736 ratio=  2.122 dimension_adjusted=  1.111
+question_words      D%=  1.161 mid%=  0.473 ratio=  2.455 dimension_adjusted=  0.826
+belief_verbs        D%=  1.224 mid%=  0.708 ratio=  1.729 dimension_adjusted=  0.870
+random dimension-adjusted reference: median/95%/max [0.921  1.2265 1.3305] random >= ASCII target 0 /128
+
+```

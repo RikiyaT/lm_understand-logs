@@ -1,0 +1,6 @@
+OUTPUT of Python run 22 of at most 300:
+```
+{'tensor': 'model.layers.11.self_attn.o_proj.weight', 'query_head': 2, 'columns': [512, 768], 'output_multiplier': 1.2, 'relative_frobenius_change': 0.11490494012832642}
+'Intermediate head strength prepared.'
+
+```

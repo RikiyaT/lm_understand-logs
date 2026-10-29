@@ -1,0 +1,10 @@
+OUTPUT of Python run 7 of at most 300:
+```
+Teacher-forced texts: 544
+Total tokens: 427720
+Maximum tokens: 2048
+Truncated trajectories: 62
+Request saved to /work/dev_teacher_request.json.
+Weights unchanged.
+
+```

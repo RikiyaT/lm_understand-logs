@@ -1,0 +1,6 @@
+OUTPUT of Python run 37 of at most 300:
+```
+PASS25 {'pass': 25, 'n': 1024, 'gain_pp': -0.390625, 'paired_SE_pp': 1.7034831237188963, 'problem_cluster_SE_pp': 1.9430182051292544}
+NEXT EDIT {'tensor': 'model.layers.11.mlp.down_proj.weight', 'columns': [971, 180, 149, 1680, 232, 1724, 312, 1096], 'multiplier': 0.5, 'relative_F_change': 0.0315522737801075}
+
+```

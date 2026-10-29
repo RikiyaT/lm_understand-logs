@@ -1,0 +1,10 @@
+OUTPUT of Python run 10 of at most 300:
+```
+Selected neurons: 64
+Selected columns by layer: {"6": [640, 678, 1157], "7": [637, 1621], "8": [477, 792, 1777, 1865], "9": [884, 1493], "10": [1621, 1798], "11": [1, 587, 672, 1551, 1890], "12": [1123, 1184, 1278, 1797, 1894], "13": [39, 759, 1059, 1260, 1540, 1881], "14": [11, 23, 238, 640, 1157, 1202, 1497, 1935], "15": [661, 968, 1304, 1507, 1818], "16": [128, 255, 322, 513, 663, 1315, 1486, 1548, 1598, 1649, 1876, 2004], "17": [124, 942, 1115, 1222, 1326, 1475, 1484, 1554, 1688, 1741]}
+Geometry-screen survivors: 106
+Per-tensor changes: [{'layer': 6, 'neurons': 3, 'relative_frobenius_change': 0.020754922181367874}, {'layer': 7, 'neurons': 2, 'relative_frobenius_change': 0.014555721543729305}, {'layer': 8, 'neurons': 4, 'relative_frobenius_change': 0.02329275943338871}, {'layer': 9, 'neurons': 2, 'relative_frobenius_change': 0.014009480364620686}, {'layer': 10, 'neurons': 2, 'relative_frobenius_change': 0.012839410454034805}, {'layer': 11, 'neurons': 5, 'relative_frobenius_change': 0.02441495656967163}, {'layer': 12, 'neurons': 5, 'relative_frobenius_change': 0.026036622002720833}, {'layer': 13, 'neurons': 6, 'relative_frobenius_change': 0.028796641156077385}, {'layer': 14, 'neurons': 8, 'relative_frobenius_change': 0.0321677103638649}, {'layer': 15, 'neurons': 5, 'relative_frobenius_change': 0.025061622262001038}, {'layer': 16, 'neurons': 12, 'relative_frobenius_change': 0.038654133677482605}, {'layer': 17, 'neurons': 10, 'relative_frobenius_change': 0.037476081401109695}]
+Edited tensor count: 12
+Half-strength candidate backed up; HOLDOUT untouched.
+
+```

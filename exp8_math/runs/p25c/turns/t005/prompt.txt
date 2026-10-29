@@ -1,0 +1,69 @@
+OUTPUT of Python run 3 of at most 300:
+```
+Sample fields: ['correct', 'cut', 'pred', 'text', 'tokens']
+Sample metadata: {'pred': None, 'correct': False, 'tokens': 32768, 'cut': True}
+
+SAMPLE 0 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Problem:**\n    *   **Scenario:** A father and a son are approaching each other from opposite ends of a hallway.\n    *   **Distance:** $d = 16$ meters.\n    *   **Speeds"
+MIDDLE: 'same spot.\n        Wait, if they start at opposite ends, they are 16m apart.\n        If they meet, they must have covered the distance between them?\n        Wait, no. If they start at opposite ends, they are at different locations.\n        '
+END: ' If they meet, they must have covered the distance between them?\n        Wait, no. If they start at opposite ends, they are at different locations.\n        If they meet, they must be at the same spot.\n        Wait, if they start at opposite'
+Most repeated: [('If they start at opposite ends, they are at different locations', 463), ('If they meet, they must be at the same spot', 463)]
+
+SAMPLE 1 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Problem:**\n    *   **Scenario:** A father and a son are walking towards each other in a hallway.\n    *   **Initial State:** Start at opposite ends of a 16m long hallwa"
+MIDDLE: 'each 12m *before* Son?\n                                            *   Wait, Father reaches 12m.\n                                            *   Wait, Son reaches 12m.\n                                            *   Wait, does Father reach '
+END: '      *   Wait, Father reaches 12m.\n                                            *   Wait, Son reaches 12m.\n                                            *   Wait, does Father reach 12m *before* Son?\n                                           '
+Most repeated: [('*   Wait, does Father reach 12m *before* Son', 589), ('*   Wait, if Father travels 12m, he reaches 12m', 3)]
+
+SAMPLE 2 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: 'Here\'s my thought process for solving this problem:\n\n1.  **Analyze the Request:**\n    *   **Subject:** George W. Bush (implied by "40th president", though I should check if it\'s a trick or if there\'s ambiguity). Wait, the prompt says "Since'
+MIDDLE: '      *   1342nd: Cleveland\n        *   1343rd: Cleveland\n        *   1344th: Cleveland\n        *   1345th: Cleveland\n        *   1346th: Cleveland\n        *   1347th: Cleveland\n        *   1348th: Cleveland\n        *   1349th: Cleveland\n  '
+END: '9th: Cleveland\n        *   2740th: Cleveland\n        *   2741st: Cleveland\n        *   2742nd: Cleveland\n        *   2743rd: Cleveland\n        *   2744th: Cleveland\n        *   2745th: Cleveland\n        *   2746th: Cleveland\n        *   274'
+Most repeated: [("Here's my thought process for solving this problem:", 1), ('Bush (implied by "40th president", though I should check if it\'s a trick or if there\'s ambiguity)', 1)]
+
+SAMPLE 3 {'correct': True, 'tokens': 4632, 'cut': False}
+BEGIN: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Subject:** The 40th President (let's call him P).\n    *   **Event:** He launched his reelection campaign and raised $10,000 in total campaign fund"
+MIDDLE: "ting the equation.\n    $10,000 - 5,800 = 4,200$.\n    The result is solid.\n\n    Let's write out the solution clearly.\n\n    **Step 1:** Friends raise $40\\%$ of the total amount.\n    $10,000 \\times 0.40 = 4,000$.\n\n    **Step 2:** Calculate the"
+END: 'ngs} = 4,200 $$\n\nAlternatively, you can sum the contributions first:\n$$ 4,000 (\\text{Friends}) + 1,800 (\\text{Family}) = 5,800 $$\nThen subtract this sum from the total:\n$$ 10,000 - 5,800 = 4,200 $$\n\nThe president saved $4,200.\n\n\\boxed{4200}'
+Most repeated: [('"The rest of the funds are from his own savings"', 2), ("Here's a thinking process that leads to the solution:", 1)]
+
+SAMPLE 4 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Given:**\n        *   Sam is twice as old as Sue. (Sam = $2 \\times$ Sue)\n        *   Kendra is 3 times as old as Sam. (Kendra = $3 \\times$ Sam)\n   "
+MIDDLE: 't, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait,'
+END: 'it, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait, I see.\n    Wait'
+Most repeated: [("Kendra's age in 3 years is $18+3 = 21$", 3), ('"If Kendra is currently 18, what will be their total age in 3 years', 2)]
+
+SAMPLE 5 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: "Here's my thought process for solving this word problem:\n\n1.  **Analyze the Request:**\n    *   **Characters:** Sam, Sue, Kendra.\n    *   **Relationships given:**\n        *   Sam is twice as old as Sue ($Sam = 2 \\times Sue$).\n        *   Ken"
+MIDDLE: "       *   Wait, if I calculate the sum of their ages *now* (27).\n            *   Then I add 3 to each?\n            *   No, that's not right.\n            *   Wait, if I calculate the sum of their ages *now* (27).\n            *   Then I add "
+END: "lculate the sum of their ages *now* (27).\n            *   Then I add 3 to each?\n            *   No, that's not right.\n            *   Wait, if I calculate the sum of their ages *now* (27).\n            *   Then I add 3 to each?\n            *"
+Most repeated: [('*   Wait, if I calculate the sum of their ages *now* (27)', 561), ('*   "What will be their total age in 3 years', 5)]
+
+SAMPLE 10 {'correct': True, 'tokens': 1262, 'cut': False}
+BEGIN: "Here's my thought process for solving this problem:\n\n1.  **Analyze the Request:**\n    *   **Given:**\n        *   Distance traveled ($d$) = 150 miles.\n        *   Time taken ($t$) = 2 hours.\n        *   Speed limit ($v_{limit}$) = 60 mph.\n  "
+MIDDLE: ' $\\text{Distance} = 150 \\text{ miles}$\n    $\\text{Time} = 2 \\text{ hours}$\n\n    Calculate actual speed:\n    $\\text{Speed} = \\frac{150}{2} = 75 \\text{ mph}$\n\n    Now compare this to the speed limit.\n    $\\text{Speed Limit} = 60 \\text{ mph}$\n'
+END: ' the difference between his actual speed and the speed limit.\n\n$$ \\text{Amount Above Limit} = \\text{Actual Speed} - \\text{Speed Limit} $$\n$$ \\text{Amount Above Limit} = 75 - 60 $$\n$$ \\text{Amount Above Limit} = 15 \\text{ mph} $$\n\n\\boxed{15}'
+Most repeated: [("Here's my thought process for solving this problem:", 1), ('*   Distance traveled ($d$) = 150 miles', 1)]
+
+SAMPLE 48 {'correct': True, 'tokens': 1343, 'cut': False}
+BEGIN: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Request:**\n    *   **Subject:** Sally eating sandwiches.\n    *   **Data provided:**\n        *   Saturday: 2 sandwiches.\n        *   Sunday: 1 sandwich.\n        *   Bre"
+MIDDLE: 'id.\n\n    Let\'s check alternative interpretations? "Sandwiches" usually means items. "Pieces of bread".\n    Is there any trick? "Sally eats..." vs "eats...". Just simple addition. No tricks detected.\n\n    Final Answer formulation:\n    Sally '
+END: '2 \\text{ bread/sandwich} = 2 \\text{ pieces of bread}$.\n\n**Step 3: Calculate the total pieces of bread.**\n*   Total bread = (Bread eaten on Saturday) + (Bread eaten on Sunday)\n*   Total bread = $4 + 2 = 6 \\text{ pieces of bread}$.\n\n\\boxed{6}'
+Most repeated: [('*   Each sandwich uses **2** pieces of bread', 2), ("Here's a thinking process that leads to the solution:", 1)]
+
+SAMPLE 96 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: "Here's a thinking process that leads to the solution:\n\n1.  **Analyze the Problem:**\n    *   We are looking for the number of values of an integer $a$ such that:\n        *   $a \\in \\mathbb{Z}^+$ (positive integer).\n        *   $a \\le 50$.\n  "
+MIDDLE: '  *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1'
+END: 'x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *   Wait, $x_1 x_2 = 1764$.\n        *  '
+Most repeated: [('*   So $a \\in \\{2, 6, 12, 20, 30, 42\\}$', 4), ('*   So $a$ must be of the form $m(m+1)$', 3)]
+
+SAMPLE 128 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: 'The user wants me to solve a geometry probability problem.\n\n**1. Understand the Problem:**\n*   **Setup:** An equilateral triangle $ABC$.\n*   **Construction:** The "game board" is constructed by shading two specific regions formed by the alt'
+MIDDLE: '                                     *   Wait, $D$ is midpoint of $AB$.\n                                                    *   Wait, $M$ is intersection of $AE$ and $BF$.\n                                                    *   Wait, $M$ is'
+END: '                       *   Wait, $M$ is intersection of $AE$ and $BF$.\n                                                    *   Wait, $M$ is centroid.\n                                                    *   Wait, $D--M$ connects midpoint $D$'
+Most repeated: [('*   Wait, $M$ is intersection of $AE$ and $BF$', 365), ('*   Wait, $D--M$ connects midpoint $D$ to centroid $M$', 361)]
+
+SAMPLE 200 {'correct': False, 'tokens': 32768, 'cut': True}
+BEGIN: "Here's a thinking process to solve the problem:\n\n1.  **Understand the Goal:** The objective is to find the length of a 
+[output cut at 10,000 characters]
+```

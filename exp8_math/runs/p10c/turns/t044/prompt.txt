@@ -1,0 +1,10 @@
+OUTPUT of Python run 39 of at most 300:
+```
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 4, in <module>
+  File "<run>", line 12, in paired_summary
+  File "<run>", line 12, in <listcomp>
+KeyError: 'id'
+
+```

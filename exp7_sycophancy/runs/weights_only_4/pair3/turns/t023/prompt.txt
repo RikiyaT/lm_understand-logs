@@ -1,0 +1,144 @@
+OUTPUT of run 22 of at most 60:
+```
+=== ROLE-RELATED TOKENS PRESENT IN TOKENIZER FILES ===
+1 '<eos>'
+2 '<bos>'
+105 '<start_of_turn>'
+106 '<end_of_turn>'
+Tokenizer-config keys: ['backend', 'boi_token', 'bos_token', 'clean_up_tokenization_spaces', 'eoi_token', 'eos_token', 'image_token', 'is_local', 'local_files_only', 'mask_token', 'model_max_length', 'model_specific_special_tokens', 'pad_token', 'padding_side', 'sp_model_kwargs', 'spaces_between_special_tokens', 'tokenizer_class', 'unk_token', 'use_default_system_prompt']
+Chat-template value: None
+literal_user-model left IDs [2364] right IDs [4368]
+space_user-model left IDs [2430] right IDs [2028]
+user-assistant left IDs [2364, 2430] right IDs [111457, 16326]
+
+=== EARLY QK ROLE-COEFFICIENT CHANGES ===
+Positive B-A means increased coefficient for user versus model/assistant.
+This does NOT establish speaker identity in any actual context.
+L0 H0 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 0.000649  0.000741 -0.00025  -0.000242]
+  space_user-model [ 0.00108   0.000978 -0.000342  0.000563]
+  user-assistant [ 0.000929  0.000669 -0.00029   0.001844]
+L0 H0 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 0.205462  0.392927 -0.17324  -0.215585]
+  space_user-model [ 0.382808  0.404023 -0.186814  0.189597]
+  user-assistant [ 1.05627   0.887401 -0.280853  1.65993 ]
+L0 H1 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-6.477708e-05  6.555397e-04  4.133848e-04 -1.228900e-04]
+  space_user-model [ 7.165515e-06  5.258983e-04  2.897370e-04 -5.336115e-04]
+  user-assistant [ 0.000331  0.000161  0.000317 -0.000101]
+L0 H1 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 0.363257  0.614454  0.247775 -0.046403]
+  space_user-model [ 0.49951   0.513995  0.130066 -0.085965]
+  user-assistant [0.469632 0.201398 0.288713 0.104959]
+L0 H2 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 4.124110e-04 -1.007399e-04 -4.908661e-05 -9.150406e-04]
+  space_user-model [ 1.193536e-04 -2.323286e-04  3.730285e-05 -1.039226e-03]
+  user-assistant [ 8.709152e-05  2.407436e-04  4.110756e-04 -2.203778e-04]
+L0 H2 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 0.783243  0.352765 -0.185333 -0.325689]
+  space_user-model [ 0.326823  0.080929 -0.074759 -0.564582]
+  user-assistant [0.596677 0.491222 0.15244  0.00747 ]
+L0 H3 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 9.159070e-05  2.268291e-04  2.074680e-04 -5.198209e-04]
+  space_user-model [ 0.000461  0.000541  0.000111 -0.000244]
+  user-assistant [7.284688e-04 7.500971e-04 2.482266e-05 2.525478e-04]
+L0 H3 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [ 0.217977  0.248515 -0.019956  0.021538]
+  space_user-model [0.464752 0.459294 0.007124 0.057604]
+  user-assistant [0.538659 0.637308 0.157017 0.357232]
+L1 H0 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-1.923039e-04  3.975071e-04 -1.904832e-06 -3.806856e-05]
+  space_user-model [-0.000277  0.000245  0.000108 -0.000407]
+  user-assistant [-7.082070e-04 -1.669630e-04  7.822365e-06 -3.986682e-04]
+L1 H0 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-1.00211   1.751861 -0.235262  0.844978]
+  space_user-model [-1.449635  1.110933  0.611661 -0.98176 ]
+  user-assistant [-2.610608e+00  1.423772e-03  4.238827e-01 -4.783121e-02]
+L1 H1 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-1.896272e-04  6.939570e-05  1.112552e-04  3.029956e-04]
+  space_user-model [-3.311947e-04 -1.239962e-04  7.102865e-05  1.728130e-04]
+  user-assistant [-2.438976e-05  8.335215e-05  1.343077e-04  2.442581e-04]
+L1 H1 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-1.991668  0.018811  0.582784  1.736693]
+  space_user-model [-1.997103 -0.831347  0.342989  0.972211]
+  user-assistant [-1.26838  -0.444264  0.536332  0.607093]
+L1 H2 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-8.033329e-05  1.723375e-04 -8.976714e-05 -1.741458e-03]
+  space_user-model [ 2.511789e-05 -8.811800e-05 -7.917870e-05 -1.380465e-03]
+  user-assistant [-0.00049  -0.000298 -0.000228 -0.000487]
+L1 H2 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-0.285118  1.2626   -0.932799 -9.714523]
+  space_user-model [-0.638935 -0.392792 -1.183495 -8.566673]
+  user-assistant [-3.266936 -2.096444 -1.440854 -3.45237 ]
+L1 H3 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [2.760421e-04 1.052700e-04 2.556911e-05 6.794181e-05]
+  space_user-model [ 1.607578e-04  1.283146e-04  1.493826e-04 -6.785983e-05]
+  user-assistant [ 0.000298 -0.000177 -0.000258  0.000165]
+L1 H3 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [0.949728 1.394033 0.171286 1.067475]
+  space_user-model [0.485067 1.258373 0.504219 0.020977]
+  user-assistant [0.717887 1.543915 0.178363 1.306472]
+L2 H0 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-1.667994e-04 -4.638812e-04  4.072668e-05  4.782335e-04]
+  space_user-model [-1.439151e-04 -3.737061e-04 -8.508668e-05  4.770812e-04]
+  user-assistant [-1.198414e-04 -2.267199e-04 -7.279395e-05  6.153765e-04]
+L2 H0 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-0.328737 -1.263805 -0.263005  2.16004 ]
+  space_user-model [-0.906886 -1.132696 -0.139379  1.841816]
+  user-assistant [-0.256622 -0.647594 -0.603839  2.745525]
+L2 H1 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-0.000613  0.000493  0.000875  0.000377]
+  space_user-model [-0.000433  0.000181  0.000444  0.000131]
+  user-assistant [-0.000252  0.000614  0.00049   0.000645]
+L2 H1 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-1.545465  2.345476  2.968088  1.550674]
+  space_user-model [-0.928448  1.3586    1.878534  1.052225]
+  user-assistant [-0.408213  1.863425  1.325274  2.548821]
+L2 H2 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-0.000872 -0.000584  0.000278 -0.000789]
+  space_user-model [-0.000704 -0.00057   0.00014  -0.00052 ]
+  user-assistant [-0.000621 -0.000265  0.000244 -0.000337]
+L2 H2 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [-0.996611 -1.808812  0.200363 -2.357884]
+  space_user-model [-0.593756 -1.706686 -0.04984  -1.603874]
+  user-assistant [-0.621551 -0.517167  0.412296 -0.813223]
+L2 H3 raw; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [0.000276 0.00118  0.00072  0.000382]
+  space_user-model [0.000126 0.000853 0.000617 0.000198]
+  user-assistant [-1.716952e-05  4.254880e-04  2.654679e-04  6.765408e-06]
+L2 H3 diag; query order=['self', 'belief', 'belief_minus_other_verbs', 'answer']
+  literal_user-model [0.992605 3.51675  2.203971 0.9148  ]
+  space_user-model [0.864538 3.226709 1.892484 0.637216]
+  user-assistant [-0.368089  0.835404  0.827294 -0.947431]
+
+=== POSSIBLE L0 ROLE-WRITER -> L1 H3 BELIEF-READER CONNECTIONS ===
+Linear weight products only; no intervening attention choices are supplied.
+key_route = belief^T QK_1h3 OV_0h role.
+query_route = role^T OV_0h^T QK_1h3 firstperson.
+Numbers normalized by MATRIX Frobenius norms for geometric comparability.
+raw source_head 0 literal_user-model key_mid/delta 4.95915e-05 1.29601e-06 query_mid/delta -8.98253e-05 -3.92456e-06
+raw source_head 0 space_user-model key_mid/delta 7.39115e-05 5.578e-07 query_mid/delta -6.21889e-05 -4.36233e-06
+raw source_head 0 user-assistant key_mid/delta 2.62601e-05 -4.34429e-07 query_mid/delta -3.75191e-05 -1.43608e-06
+raw source_head 1 literal_user-model key_mid/delta -3.35973e-05 2.45053e-06 query_mid/delta 2.67729e-05 -5.43945e-08
+raw source_head 1 space_user-model key_mid/delta -7.363e-05 1.41975e-06 query_mid/delta 2.98849e-05 5.03678e-07
+raw source_head 1 user-assistant key_mid/delta 3.49261e-06 2.94594e-06 query_mid/delta 2.69774e-05 1.92165e-06
+raw source_head 2 literal_user-model key_mid/delta 6.10399e-05 1.21892e-06 query_mid/delta -6.70858e-06 -3.88125e-07
+raw source_head 2 space_user-model key_mid/delta 6.03001e-05 9.44177e-07 query_mid/delta 3.92942e-07 -1.08535e-06
+raw source_head 2 user-assistant key_mid/delta 9.47834e-05 1.71265e-06 query_mid/delta -4.42406e-05 -1.05027e-06
+raw source_head 3 literal_user-model key_mid/delta -3.23652e-07 -2.2097e-06 query_mid/delta -2.12105e-05 3.86455e-07
+raw source_head 3 space_user-model key_mid/delta 4.55363e-05 -1.94317e-06 query_mid/delta -3.45067e-05 8.18797e-08
+raw source_head 3 user-assistant key_mid/delta -3.719e-05 -8.28035e-07 query_mid/delta -1.73213e-06 -6.39348e-07
+diag source_head 0 literal_user-model key_mid/delta -2.22086e-06 3.16003e-08 query_mid/delta 1.27486e-05 -4.99729e-07
+diag source_head 0 space_user-model key_mid/delta -4.63769e-06 -8.62433e-08 query_mid/delta 1.90041e-05 -7.41152e-07
+diag source_head 0 user-assistant key_mid/delta -3.56253e-06 -1.66507e-07 query_mid/delta 2.01716e-05 9.03336e-08
+diag source_head 1 literal_user-model key_mid/delta -4.62497e-06 1.74469e-07 query_mid/delta 1.33601e-05 -1.04879e-07
+diag source_head 1 space_user-model key_mid/delta -6.80003e-06 6.78038e-08 query_mid/delta 1.35259e-05 2.32122e-07
+diag source_head 1 user-assistant key_mid/delta -4.85184e-07 4.1985e-07 query_mid/delta 5.57845e-06 1.21596e-07
+diag source_head 2 literal_user-model key_mid/delta 6.15638e-06 1.72448e-07 query_mid/delta -4.05549e-06 -2.71336e-08
+diag source_head 2 space_user-model key_mid/delta 5.77902e-06 1.66878e-07 query_mid/delta -1.70266e-06 -6.9028e-08
+diag source_head 2 user-assistant key_mid/delta -2.40196e-06 3.63786e-08 query_mid/delta 2.97034e-06 -8.76043e-08
+diag source_head 3 literal_user-model key_mid/delta -1.10787e-06 8.39487e-08 query_mid/delta -8.73743e-06 3.75369e-07
+diag source_head 3 space_user-model key_mid/delta 6.00244e-08 8.47724e-08 query_mid/delta -8.58151e-06 1.82107e-07
+diag source_head 3 user-assistant key_mid/delta 9.50089e-07 1.46105e-07 query_mid/delta -1.4843e-05 -2.58726e-08
+
+```

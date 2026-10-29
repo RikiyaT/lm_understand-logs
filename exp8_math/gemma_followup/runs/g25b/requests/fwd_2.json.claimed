@@ -1,0 +1,21 @@
+{
+ "type": "teacher_forced",
+ "model": "original",
+ "texts": "/work/tf_dev_texts.json",
+ "return": {
+  "token_logprobs": true,
+  "topk": 0,
+  "hidden_states": [
+   5,
+   14,
+   16,
+   18
+  ],
+  "mlp_act": [
+   4,
+   13,
+   15,
+   17
+  ]
+ }
+}

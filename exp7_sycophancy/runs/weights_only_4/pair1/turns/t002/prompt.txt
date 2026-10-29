@@ -1,0 +1,164 @@
+OUTPUT of run 1 of at most 60:
+```
+CONFIG A
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+
+CONFIG DIFFERENCES
+
+KEY DIFFERENCES: [] []
+
+TENSOR SHAPES: layer 0 and all non-layer tensors
+lm_head.weight (262144, 640) BF16
+model.embed_tokens.weight (262144, 640) BF16
+model.layers.0.input_layernorm.weight (640,) BF16
+model.layers.0.mlp.down_proj.weight (640, 2048) BF16
+model.layers.0.mlp.gate_proj.weight (2048, 640) BF16
+model.layers.0.mlp.up_proj.weight (2048, 640) BF16
+model.layers.0.post_attention_layernorm.weight (640,) BF16
+model.layers.0.post_feedforward_layernorm.weight (640,) BF16
+model.layers.0.pre_feedforward_layernorm.weight (640,) BF16
+model.layers.0.self_attn.k_norm.weight (256,) BF16
+model.layers.0.self_attn.k_proj.weight (256, 640) BF16
+model.layers.0.self_attn.o_proj.weight (640, 1024) BF16
+model.layers.0.self_attn.q_norm.weight (256,) BF16
+model.layers.0.self_attn.q_proj.weight (1024, 640) BF16
+model.layers.0.self_attn.v_proj.weight (256, 640) BF16
+model.norm.weight (640,) BF16
+
+TOKENIZER CONFIG IDENTICAL: True
+CHAT TEMPLATE: (absent)
+VOCAB SIZE: 262145
+SPECIAL TOKENS: [(0, '<pad>'), (1, '<eos>'), (2, '<bos>'), (3, '<unk>'), (4, '<mask>'), (105, '<start_of_turn>'), (106, '<end_of_turn>'), (255999, '<start_of_image>'), (256000, '<end_of_image>'), (262144, '<image_soft_token>')]
+
+EMBEDDING/OUTPUT: lm_head.weight shape (262144, 640) exactly equal: True difference norm: 0.0
+
+EMBEDDING/OUTPUT: model.embed_tokens.weight shape (262144, 640) exactly equal: True difference norm: 0.0
+
+LAYER SUMMARY (descriptive, NOT causal importance)
+layer   parameters   changed%    ||B-A||    relative_difference
+  0      5573632     77.080    0.572573           0.0013650
+  1      5573632     79.254    0.577251           0.0005434
+  2      5573632     78.479    0.588434           0.0005432
+  3      5573632     80.119    0.574851           0.0003992
+  4      5573632     80.943    0.584647           0.0003813
+  5      5573632     78.877    0.581003           0.0004622
+  6      5573632     79.488    0.578300           0.0004658
+  7      5573632     78.555    0.566518           0.0004720
+  8      5573632     79.680    0.566456           0.0004090
+  9      5573632     78.596    0.575406           0.0003939
+ 10      5573632     79.263    0.579450           0.0002364
+ 11      5573632     78.813    0.574196           0.0000961
+ 12      5573632     79.247    0.586955           0.0000801
+ 13      5573632     80.121    0.597699           0.0000870
+ 14      5573632     79.820    0.595421           0.0000757
+ 15      5573632     79.253    0.606453           0.0000626
+ 16      5573632     79.388    0.586701           0.0000613
+ 17      5573632     78.581    0.550927           0.0000534
+
+TOP 20 TENSORS BY ABSOLUTE DIFFERENCE NORM
+model.layers.14.mlp.gate_proj.weight                              ||D||=  0.301044 rel=0.0067386 changed=76.71%
+model.layers.14.mlp.up_proj.weight                                ||D||=  0.299144 rel=0.0067051 changed=74.70%
+model.layers.15.mlp.up_proj.weight                                ||D||=  0.298287 rel=0.0066763 changed=74.62%
+model.layers.15.mlp.gate_proj.weight                              ||D||=  0.297506 rel=0.0066564 changed=76.28%
+model.layers.13.mlp.gate_proj.weight                              ||D||=  0.297257 rel=0.0066556 changed=76.23%
+model.layers.2.mlp.gate_proj.weight                               ||D||=  0.295870 rel=0.0066032 changed=74.46%
+model.layers.13.mlp.up_proj.weight                                ||D||=  0.294015 rel=0.0065948 changed=74.42%
+model.layers.4.mlp.gate_proj.weight                               ||D||=  0.291516 rel=0.0065068 changed=76.26%
+model.layers.16.mlp.up_proj.weight                                ||D||=  0.291479 rel=0.0065118 changed=74.08%
+model.layers.16.mlp.gate_proj.weight                              ||D||=  0.291399 rel=0.0065354 changed=75.76%
+model.layers.6.mlp.gate_proj.weight                               ||D||=  0.291363 rel=0.0065161 changed=76.44%
+model.layers.5.mlp.gate_proj.weight                               ||D||=  0.291168 rel=0.0064968 changed=76.45%
+model.layers.11.mlp.gate_proj.weight                              ||D||=  0.289522 rel=0.0064661 changed=76.52%
+model.layers.3.mlp.gate_proj.weight                               ||D||=  0.289482 rel=0.0064682 changed=75.60%
+model.layers.12.mlp.gate_proj.weight                              ||D||=  0.289192 rel=0.0064587 changed=76.65%
+model.layers.2.mlp.up_proj.weight                                 ||D||=  0.288605 rel=0.0064506 changed=73.90%
+model.layers.1.mlp.gate_proj.weight                               ||D||=  0.286691 rel=0.0063782 changed=73.60%
+model.layers.12.mlp.up_proj.weight                                ||D||=  0.285854 rel=0.0063946 changed=74.65%
+model.layers.4.mlp.up_proj.weight                                 ||D||=  0.285318 rel=0.0063854 changed=74.36%
+model.layers.8.mlp.gate_proj.weight                               ||D||=  0.285031 rel=0.0063453 changed=76.64%
+
+TOP 15 NON-EMBEDDING TENSORS BY RELATIVE DIFFERENCE
+model.layers.4.mlp.down_proj.weight                               ||D||=  0.263401 rel=0.0189200 changed=91.81%
+model.layers.14.mlp.down_proj.weight                              ||D||=  0.281286 rel=0.0182659 changed=90.37%
+model.layers.1.mlp.down_proj.weight                               ||D||=  0.270133 rel=0.0173532 changed=89.98%
+model.layers.8.mlp.down_proj.weight                               ||D||=  0.252843 rel=0.0170404 changed=89.90%
+model.layers.3.mlp.down_proj.weight                               ||D||=  0.264688 rel=0.0166636 changed=90.12%
+model.layers.13.mlp.down_proj.weight                              ||D||=  0.273699 rel=0.0165118 changed=89.40%
+model.layers.10.mlp.down_proj.weight                              ||D||=  0.255822 rel=0.0164220 changed=89.77%
+model.layers.15.mlp.down_proj.weight                              ||D||=  0.283298 rel=0.0154379 changed=88.64%
+model.layers.6.mlp.down_proj.weight                               ||D||=  0.256265 rel=0.0149792 changed=88.59%
+model.layers.2.mlp.down_proj.weight                               ||D||=  0.271065 rel=0.0146143 changed=88.41%
+model.layers.16.mlp.down_proj.weight                              ||D||=  0.272192 rel=0.0137863 changed=87.33%
+model.layers.17.mlp.down_proj.weight                              ||D||=  0.250813 rel=0.0137325 changed=87.44%
+model.layers.7.mlp.down_proj.weight                               ||D||=  0.254749 rel=0.0133124 changed=87.04%
+model.layers.11.mlp.down_proj.weight                              ||D||=  0.251310 rel=0.0122366 changed=85.97%
+model.layers.9.mlp.down_proj.weight                               ||D||=  0.256199 rel=0.0121253 changed=85.85%
+
+GLOBAL SUMMARY
+Total parameters: 435870336
+Changed parameters: 79455370
+Exactly identical tensors: 37 / 237
+Difference convention: D = B - A.
+
+```

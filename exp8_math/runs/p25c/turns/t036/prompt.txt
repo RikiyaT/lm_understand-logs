@@ -1,0 +1,42 @@
+OUTPUT of Python run 19 of at most 300:
+```
+Token regions: {'common_prefix': 101, 'prompt': 58, 'loop_unit': 36, 'comparison': [173, 351], 'good_think_end': 351}
+Shared-prefix hidden max errors: [(4, 0.017578125), (12, 0.013671875), (20, 0.046875), (24, 1.75)]
+Heads ranked by excess repeated-prefix retrieval:
+{'layer': 15, 'head': 7, 'ind_good': 0.0824, 'ind_loop': 0.8871, 'copy_good': 0.2114, 'copy_loop': 0.9172, 'self_loop': 0.0009, 'prompt_loop': 0.0041, 'ind_delta': 0.8047}
+{'layer': 11, 'head': 1, 'ind_good': 0.1388, 'ind_loop': 0.743, 'copy_good': 0.2355, 'copy_loop': 0.7701, 'self_loop': 0.0008, 'prompt_loop': 0.0611, 'ind_delta': 0.6042}
+{'layer': 23, 'head': 5, 'ind_good': 0.0344, 'ind_loop': 0.6169, 'copy_good': 0.1448, 'copy_loop': 0.7254, 'self_loop': 0.0113, 'prompt_loop': 0.033, 'ind_delta': 0.5825}
+{'layer': 23, 'head': 0, 'ind_good': 0.0228, 'ind_loop': 0.435, 'copy_good': 0.0854, 'copy_loop': 0.572, 'self_loop': 0.0063, 'prompt_loop': 0.0554, 'ind_delta': 0.4122}
+{'layer': 19, 'head': 5, 'ind_good': 0.0444, 'ind_loop': 0.3661, 'copy_good': 0.1683, 'copy_loop': 0.5203, 'self_loop': 0.0136, 'prompt_loop': 0.0522, 'ind_delta': 0.3216}
+{'layer': 23, 'head': 4, 'ind_good': 0.0209, 'ind_loop': 0.3049, 'copy_good': 0.087, 'copy_loop': 0.4045, 'self_loop': 0.0062, 'prompt_loop': 0.1616, 'ind_delta': 0.284}
+{'layer': 15, 'head': 5, 'ind_good': 0.0424, 'ind_loop': 0.3213, 'copy_good': 0.1309, 'copy_loop': 0.3361, 'self_loop': 0.0015, 'prompt_loop': 0.0446, 'ind_delta': 0.2789}
+{'layer': 23, 'head': 7, 'ind_good': 0.0223, 'ind_loop': 0.2999, 'copy_good': 0.0814, 'copy_loop': 0.4132, 'self_loop': 0.0094, 'prompt_loop': 0.0909, 'ind_delta': 0.2776}
+{'layer': 19, 'head': 6, 'ind_good': 0.0258, 'ind_loop': 0.2854, 'copy_good': 0.1429, 'copy_loop': 0.4367, 'self_loop': 0.0036, 'prompt_loop': 0.1095, 'ind_delta': 0.2595}
+{'layer': 23, 'head': 1, 'ind_good': 0.0357, 'ind_loop': 0.2691, 'copy_good': 0.1234, 'copy_loop': 0.4005, 'self_loop': 0.0095, 'prompt_loop': 0.1305, 'ind_delta': 0.2334}
+{'layer': 19, 'head': 7, 'ind_good': 0.0174, 'ind_loop': 0.2496, 'copy_good': 0.1047, 'copy_loop': 0.4388, 'self_loop': 0.0071, 'prompt_loop': 0.1009, 'ind_delta': 0.2322}
+{'layer': 15, 'head': 6, 'ind_good': 0.0136, 'ind_loop': 0.214, 'copy_good': 0.0605, 'copy_loop': 0.2322, 'self_loop': 0.0025, 'prompt_loop': 0.0193, 'ind_delta': 0.2004}
+{'layer': 19, 'head': 2, 'ind_good': 0.0404, 'ind_loop': 0.2205, 'copy_good': 0.1518, 'copy_loop': 0.307, 'self_loop': 0.0032, 'prompt_loop': 0.234, 'ind_delta': 0.1801}
+{'layer': 23, 'head': 3, 'ind_good': 0.034, 'ind_loop': 0.2072, 'copy_good': 0.1436, 'copy_loop': 0.4041, 'self_loop': 0.0041, 'prompt_loop': 0.2323, 'ind_delta': 0.1732}
+{'layer': 19, 'head': 0, 'ind_good': 0.0209, 'ind_loop': 0.1914, 'copy_good': 0.0935, 'copy_loop': 0.2788, 'self_loop': 0.003, 'prompt_loop': 0.2048, 'ind_delta': 0.1705}
+{'layer': 3, 'head': 5, 'ind_good': 0.0309, 'ind_loop': 0.197, 'copy_good': 0.0919, 'copy_loop': 0.2345, 'self_loop': 0.0108, 'prompt_loop': 0.0146, 'ind_delta': 0.1661}
+MLP candidates agreeing across matched generation and clean probe:
+{'score': 9.901, 'layer': 23, 'neuron': 94, 'paired_t': 5.33, 'paired_delta': 0.703, 'early': -0.207, 'good': 0.399, 'loop': 2.256, 'output_effect': 0.556}
+{'score': 6.122, 'layer': 23, 'neuron': 317, 'paired_t': 5.708, 'paired_delta': 0.345, 'early': 0.356, 'good': 0.28, 'loop': 1.353, 'output_effect': 0.217}
+{'score': 6.038, 'layer': 23, 'neuron': 495, 'paired_t': 5.624, 'paired_delta': 0.356, 'early': -0.354, 'good': -0.142, 'loop': 0.931, 'output_effect': 0.288}
+{'score': 5.61, 'layer': 22, 'neuron': 20, 'paired_t': 6.658, 'paired_delta': 0.282, 'early': 0.217, 'good': 0.253, 'loop': 1.096, 'output_effect': 0.206}
+{'score': 4.652, 'layer': 23, 'neuron': 162, 'paired_t': 5.427, 'paired_delta': 0.314, 'early': 0.42, 'good': 0.245, 'loop': 1.102, 'output_effect': 0.181}
+{'score': 4.379, 'layer': 23, 'neuron': 78, 'paired_t': 5.806, 'paired_delta': 0.283, 'early': 0.579, 'good': 0.444, 'loop': 1.198, 'output_effect': 0.134}
+{'score': 3.401, 'layer': 23, 'neuron': 18, 'paired_t': 5.194, 'paired_delta': 0.569, 'early': -1.126, 'good': -0.478, 'loop': 0.177, 'output_effect': 0.145}
+{'score': 3.026, 'layer': 23, 'neuron': 63, 'paired_t': 5.312, 'paired_delta': 0.249, 'early': -1.604, 'good': -1.386, 'loop': -0.816, 'output_effect': 0.087}
+{'score': 2.933, 'layer': 20, 'neuron': 77, 'paired_t': 5.837, 'paired_delta': 0.216, 'early': 0.193, 'good': 0.427, 'loop': 0.93, 'output_effect': 0.125}
+{'score': 2.477, 'layer': 23, 'neuron': 471, 'paired_t': 5.23, 'paired_delta': 0.177, 'early': -0.215, 'good': -0.172, 'loop': 0.301, 'output_effect': 0.142}
+{'score': 2.283, 'layer': 23, 'neuron': 983, 'paired_t': 6.36, 'paired_delta': 0.146, 'early': -0.413, 'good': -0.546, 'loop': -0.187, 'output_effect': 0.062}
+{'score': 2.167, 'layer': 14, 'neuron': 274, 'paired_t': 5.56, 'paired_delta': 0.123, 'early': 0.0, 'good': -0.003, 'loop': 0.387, 'output_effect': 0.091}
+{'score': 1.622, 'layer': 1, 'neuron': 14, 'paired_t': 5.539, 'paired_delta': 0.109, 'early': 0.015, 'good': 0.018, 'loop': 0.31, 'output_effect': 0.093}
+{'score': 1.401, 'layer': 16, 'neuron': 438, 'paired_t': 6.299, 'paired_delta': 0.072, 'early': 0.028, 'good': 0.035, 'loop': 0.257, 'output_effect': 0.049}
+{'score': 1.305, 'layer': 19, 'neuron': 98, 'paired_t': 5.424, 'paired_delta': 0.088, 'early': -0.008, 'good': -0.034, 'loop': 0.207, 'output_effect': 0.073}
+{'score': 1.195, 'layer': 22, 'neuron': 63, 'paired_t': 5.763, 'paired_delta': 0.116, 'early': 0.183, 'good': 0.196, 'loop': 0.403, 'output_effect': 0.052}
+{'score': 1.141, 'layer': 13, 'neuron': 50, 'paired_t': 6.413, 'paired_delta': 0.045, 'early': 0.034, 'good': 0.001, 'loop': 0.179, 'output_effect': 0.031}
+{'score': 1.095, 'layer': 13, 'neuron': 343, 'paired_t': 5.62, 'paired_delta': 0.079, 'early': -0.062, 'good': -0.009, 'loop': 0.186, 'output_effect': 0.045}
+
+```

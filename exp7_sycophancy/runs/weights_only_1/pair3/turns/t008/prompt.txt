@@ -1,0 +1,50 @@
+OUTPUT of run 5 of at most 60:
+```
+WHOLE-MLP INTERACTION TENSOR DIFFERENCES
+The tensor is the Hessian of the unnormalized GELU-gated MLP at the origin, obtained symbolically from weights.
+No activation function or input-dependent operation is evaluated.
+Cancellation ratio = ||sum_i delta_T_i||^2 / sum_i ||delta_T_i||^2.
+Below 1 means net cancellation; above 1 means net reinforcement.
+
+layer whole_delta_F whole_relative unitwise_delta_F cancellation_ratio seconds
+0 0.24446507 0.012931977 0.24305722 1.011618 1.11
+1 0.21220828 0.018834305 0.21088935 1.0125474 1.02
+2 0.22196913 0.01648074 0.21967871 1.0209611 1.04
+3 0.21563404 0.01867321 0.2115342 1.0391385 1.02
+4 0.20635882 0.021214576 0.20234476 1.040069 1.03
+5 0.24401889 0.014225163 0.23642896 1.0652353 1.06
+6 0.20944856 0.018039835 0.20377076 1.0565037 1.06
+7 0.21301573 0.017070489 0.20763946 1.0524551 1.06
+8 0.19662239 0.020194957 0.19098306 1.0599276 1.06
+9 0.22099815 0.016565591 0.2140284 1.0661897 1.05
+10 0.20832582 0.02023558 0.20284234 1.0547972 1.06
+11 0.22342158 0.015562478 0.21742121 1.0559575 1.05
+12 0.23550823 0.015859168 0.23006958 1.0478371 1.03
+13 0.21659223 0.019915092 0.21280498 1.0359103 1.03
+14 0.21473492 0.021897763 0.21126956 1.0330742 1.02
+15 0.22320546 0.019472233 0.21988697 1.0304114 1.03
+16 0.22134595 0.01789131 0.21795572 1.0313512 1.04
+17 0.19989193 0.018514567 0.1930192 1.0724807 1.03
+
+SUMMARY
+Elapsed seconds: 18.83127184701152
+Minimum difference / subtraction scale: 4.181075275765551e-05
+Float64 machine epsilon: 2.220446049250313e-16
+Relative whole-tensor difference range: 0.012931976599375257 0.021897763470988933
+Cancellation-ratio range: 1.0116180132332262 1.0724807487094008
+
+Largest whole-tensor coefficient changes (NOT behavioral importance):
+layer 0 delta_F 0.24446506786540598 relative 0.012931976599375257 cancellation_ratio 1.0116180132332262
+layer 5 delta_F 0.24401888827243573 relative 0.014225163259687078 cancellation_ratio 1.0652353075215621
+layer 12 delta_F 0.23550822741559482 relative 0.015859167512310347 cancellation_ratio 1.0478371363898031
+layer 11 delta_F 0.2234215820861161 relative 0.015562477571147303 cancellation_ratio 1.055957476057105
+layer 15 delta_F 0.22320546371715277 relative 0.01947223313951619 cancellation_ratio 1.0304114349028592
+layer 2 delta_F 0.22196912580620884 relative 0.016480739542270816 cancellation_ratio 1.0209611496538138
+
+Interpretation boundary:
+A nonzero coefficient difference distinguishes the MLP-core
+functions mathematically. It does not establish which hidden
+states occur on the task, how later layers use the difference,
+or which checkpoint follows the user's guess.
+
+```

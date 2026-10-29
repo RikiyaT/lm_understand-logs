@@ -1,0 +1,135 @@
+OUTPUT of run 5 of at most 20:
+```
+GUESS SHARE OF (GUESS + QUESTION) ATTENTION
+Exclude heads with <0.01 combined mass in BOTH models.
+
+ Answer token only
+L10H0 share A/B=0.1888/0.0293 delta=-0.1596 guess A/B=0.0003/0.0014 question A/B=0.0015/0.0450 post-guess A/B=0.0006/0.0058
+L17H0 share A/B=0.1994/0.0680 delta=-0.1314 guess A/B=0.0026/0.0032 question A/B=0.0103/0.0443 post-guess A/B=0.0010/0.0032
+L10H3 share A/B=0.1582/0.0778 delta=-0.0804 guess A/B=0.0024/0.0098 question A/B=0.0125/0.1163 post-guess A/B=0.0133/0.0261
+L09H0 share A/B=0.0969/0.0207 delta=-0.0762 guess A/B=0.0111/0.0072 question A/B=0.1039/0.3398 post-guess A/B=0.1025/0.0990
+L17H2 share A/B=0.1193/0.0469 delta=-0.0724 guess A/B=0.0005/0.0012 question A/B=0.0039/0.0235 post-guess A/B=0.0003/0.0014
+L04H2 share A/B=0.0279/0.0973 delta=+0.0694 guess A/B=0.0016/0.0047 question A/B=0.0571/0.0439 post-guess A/B=0.0176/0.0121
+L09H1 share A/B=0.0908/0.0235 delta=-0.0673 guess A/B=0.0078/0.0040 question A/B=0.0786/0.1667 post-guess A/B=0.0483/0.0363
+L09H2 share A/B=0.0716/0.0075 delta=-0.0641 guess A/B=0.0027/0.0015 question A/B=0.0349/0.1974 post-guess A/B=0.0212/0.0258
+L12H1 share A/B=0.0813/0.0253 delta=-0.0560 guess A/B=0.0008/0.0003 question A/B=0.0087/0.0121 post-guess A/B=0.0064/0.0012
+L15H1 share A/B=0.0962/0.0423 delta=-0.0539 guess A/B=0.0011/0.0006 question A/B=0.0107/0.0143 post-guess A/B=0.0122/0.0121
+L08H2 share A/B=0.0945/0.0479 delta=-0.0466 guess A/B=0.0009/0.0020 question A/B=0.0088/0.0405 post-guess A/B=0.0117/0.0223
+L04H3 share A/B=0.0458/0.0825 delta=+0.0367 guess A/B=0.0084/0.0114 question A/B=0.1754/0.1271 post-guess A/B=0.0297/0.0254
+L04H1 share A/B=0.0706/0.1050 delta=+0.0344 guess A/B=0.0012/0.0024 question A/B=0.0153/0.0205 post-guess A/B=0.0069/0.0096
+L08H0 share A/B=0.0784/0.0463 delta=-0.0321 guess A/B=0.0019/0.0021 question A/B=0.0223/0.0431 post-guess A/B=0.0235/0.0119
+L15H2 share A/B=0.0393/0.0090 delta=-0.0304 guess A/B=0.0001/0.0001 question A/B=0.0019/0.0147 post-guess A/B=0.0024/0.0159
+L15H0 share A/B=0.0347/0.0049 delta=-0.0299 guess A/B=0.0003/0.0001 question A/B=0.0080/0.0217 post-guess A/B=0.0127/0.0287
+
+ Answer plus immediately following punctuation
+L12H2 share A/B=0.6338/0.2440 delta=-0.3898 guess A/B=0.0013/0.0009 question A/B=0.0378/0.0924 post-guess A/B=0.0641/0.0289
+L10H2 share A/B=0.5921/0.2102 delta=-0.3819 guess A/B=0.0010/0.0108 question A/B=0.0135/0.2002 post-guess A/B=0.0186/0.0425
+L12H1 share A/B=0.4509/0.1130 delta=-0.3379 guess A/B=0.0008/0.0003 question A/B=0.0087/0.0121 post-guess A/B=0.0064/0.0012
+L10H3 share A/B=0.5560/0.2360 delta=-0.3200 guess A/B=0.0024/0.0098 question A/B=0.0125/0.1163 post-guess A/B=0.0133/0.0261
+L07H0 share A/B=0.6275/0.3322 delta=-0.2954 guess A/B=0.0024/0.0035 question A/B=0.0630/0.1515 post-guess A/B=0.1037/0.0718
+L08H0 share A/B=0.5321/0.2448 delta=-0.2873 guess A/B=0.0019/0.0021 question A/B=0.0223/0.0431 post-guess A/B=0.0235/0.0119
+L09H2 share A/B=0.4066/0.1214 delta=-0.2852 guess A/B=0.0027/0.0015 question A/B=0.0349/0.1974 post-guess A/B=0.0212/0.0258
+L07H3 share A/B=0.4434/0.1584 delta=-0.2850 guess A/B=0.0005/0.0004 question A/B=0.0115/0.0110 post-guess A/B=0.0086/0.0016
+L09H0 share A/B=0.5226/0.2382 delta=-0.2844 guess A/B=0.0111/0.0072 question A/B=0.1039/0.3398 post-guess A/B=0.1025/0.0990
+L13H3 share A/B=0.3827/0.1030 delta=-0.2797 guess A/B=0.0004/0.0014 question A/B=0.0181/0.0486 post-guess A/B=0.0108/0.0042
+L14H3 share A/B=0.5969/0.3363 delta=-0.2606 guess A/B=0.0001/0.0000 question A/B=0.0118/0.0273 post-guess A/B=0.0174/0.0138
+L08H1 share A/B=0.5292/0.2803 delta=-0.2489 guess A/B=0.0014/0.0017 question A/B=0.0231/0.0389 post-guess A/B=0.0246/0.0134
+L10H0 share A/B=0.3849/0.1377 delta=-0.2472 guess A/B=0.0003/0.0014 question A/B=0.0015/0.0450 post-guess A/B=0.0006/0.0058
+L09H1 share A/B=0.4169/0.1945 delta=-0.2223 guess A/B=0.0078/0.0040 question A/B=0.0786/0.1667 post-guess A/B=0.0483/0.0363
+L12H3 share A/B=0.2582/0.0433 delta=-0.2150 guess A/B=0.0004/0.0003 question A/B=0.0251/0.0610 post-guess A/B=0.0083/0.0025
+L08H2 share A/B=0.5881/0.3756 delta=-0.2125 guess A/B=0.0009/0.0020 question A/B=0.0088/0.0405 post-guess A/B=0.0117/0.0223
+
+DETAILED REGIONS: mean across 16 prompts
+Region order: ['guess_answer', 'belief_cue', 'after_guess', 'question', 'question_subject', 'instruction', 'end_of_turn', 'BOS', 'model_marker', 'final_newline']
+L10H2
+ A [0.001  0.0213 0.0186 0.0135 0.0003 0.0953 0.0814 0.0364 0.0683 0.306 ]
+ B [0.0108 0.1395 0.0425 0.2002 0.0347 0.1387 0.0019 0.2772 0.0013 0.0689]
+ domain answer+punctuation shares A/B: [(0.6281, 0.2506), (0.6092, 0.3065), (0.6012, 0.1934), (0.5461, 0.1355)]
+L10H3
+ A [0.0024 0.0177 0.0133 0.0125 0.0018 0.0771 0.0611 0.4378 0.0614 0.0667]
+ B [0.0098 0.0559 0.0261 0.1163 0.0359 0.1309 0.0149 0.4407 0.0129 0.0558]
+ domain answer+punctuation shares A/B: [(0.5679, 0.2473), (0.6863, 0.2796), (0.6126, 0.2898), (0.4026, 0.1458)]
+L11H2
+ A [0.0021 0.0126 0.0011 0.0319 0.0007 0.0215 0.0026 0.895  0.0031 0.0123]
+ B [0.0083 0.0367 0.0032 0.0848 0.0078 0.0583 0.014  0.6165 0.0079 0.0507]
+ domain answer+punctuation shares A/B: [(0.13, 0.175), (0.0675, 0.1739), (0.1053, 0.1489), (0.0705, 0.0556)]
+L11H3
+ A [0.0024 0.0169 0.0014 0.0369 0.0019 0.023  0.0082 0.8278 0.0122 0.0301]
+ B [0.0076 0.0311 0.0037 0.0933 0.012  0.0463 0.0244 0.6001 0.0112 0.0524]
+ domain answer+punctuation shares A/B: [(0.1346, 0.1525), (0.084, 0.1512), (0.0981, 0.1024), (0.0682, 0.0573)]
+L9H0
+ A [0.0111 0.0421 0.1025 0.1039 0.0065 0.2033 0.0298 0.1861 0.0539 0.0952]
+ B [0.0072 0.0785 0.099  0.3398 0.0422 0.1373 0.0036 0.167  0.0087 0.0494]
+ domain answer+punctuation shares A/B: [(0.6753, 0.3593), (0.6658, 0.3538), (0.4746, 0.2263), (0.3293, 0.0863)]
+L9H1
+ A [0.0078 0.0364 0.0483 0.0786 0.0055 0.0873 0.0397 0.3312 0.0783 0.1191]
+ B [0.004  0.0544 0.0363 0.1667 0.0172 0.0768 0.016  0.387  0.015  0.0929]
+ domain answer+punctuation shares A/B: [(0.5615, 0.2401), (0.518, 0.273), (0.4503, 0.2256), (0.228, 0.0956)]
+L6H2
+ A [0.0059 0.0502 0.0279 0.1313 0.0101 0.1516 0.0357 0.4118 0.0204 0.0571]
+ B [0.0015 0.0186 0.013  0.0804 0.0082 0.0372 0.0121 0.6709 0.0418 0.0463]
+ domain answer+punctuation shares A/B: [(0.2734, 0.2106), (0.3187, 0.2503), (0.1882, 0.1369), (0.1174, 0.0846)]
+L4H0
+ A [0.0056 0.0434 0.0257 0.1541 0.0091 0.0668 0.042  0.3681 0.0323 0.0955]
+ B [0.0108 0.0411 0.0285 0.1742 0.0223 0.0754 0.0535 0.241  0.0341 0.0453]
+ domain answer+punctuation shares A/B: [(0.2208, 0.2787), (0.2404, 0.2063), (0.1569, 0.1705), (0.0882, 0.0988)]
+L4H3
+ A [0.0084 0.0706 0.0297 0.1754 0.0164 0.0714 0.0125 0.3533 0.0237 0.107 ]
+ B [0.0114 0.0543 0.0254 0.1271 0.0195 0.068  0.0191 0.4082 0.0289 0.077 ]
+ domain answer+punctuation shares A/B: [(0.289, 0.3665), (0.2742, 0.3538), (0.1569, 0.1867), (0.0841, 0.1065)]
+L14H0
+ A [0.0001 0.0182 0.0077 0.0114 0.0003 0.0154 0.0008 0.815  0.     0.0629]
+ B [0.     0.0066 0.0042 0.0145 0.0003 0.0065 0.0558 0.4821 0.0005 0.0777]
+ domain answer+punctuation shares A/B: [(0.3992, 0.2586), (0.6816, 0.2792), (0.3693, 0.2125), (0.2723, 0.1665)]
+L15H3
+ A [0.0011 0.0099 0.04   0.0435 0.0031 0.0704 0.0016 0.4992 0.0107 0.1756]
+ B [0.001  0.0172 0.0602 0.1052 0.0094 0.0594 0.0003 0.2569 0.0009 0.1753]
+ domain answer+punctuation shares A/B: [(0.5916, 0.5125), (0.5453, 0.4464), (0.5425, 0.3692), (0.3103, 0.2245)]
+L17H1
+ A [0.     0.0001 0.0014 0.0007 0.     0.0021 0.0006 0.9669 0.0038 0.0109]
+ B [0.0002 0.0033 0.023  0.0238 0.0006 0.0392 0.004  0.4152 0.0127 0.2304]
+ domain answer+punctuation shares A/B: [(0.7999, 0.5344), (0.9031, 0.6242), (0.5934, 0.4968), (0.4837, 0.3276)]
+
+EXAMPLE t0: actual final-query top keys, not vocabulary projections
+L10H2 [('A', [(27, '\n', 0.3303), (24, '\n', 0.2947), (25, '<start_of_turn>', 0.0698), (23, '<end_of_turn>', 0.0695), (26, 'model', 0.0497), (22, '.', 0.0491)]), ('B', [(0, '<bos>', 0.3069), (12, ' guess', 0.1041), (24, '\n', 0.0709), (27, '\n', 0.0636), (16, ' Answer', 0.0543), (9, ' France', 0.0488)])]
+L10H3 [('A', [(0, '<bos>', 0.4373), (25, '<start_of_turn>', 0.158), (24, '\n', 0.0818), (27, '\n', 0.0718), (26, 'model', 0.0625), (23, '<end_of_turn>', 0.0585)]), ('B', [(0, '<bos>', 0.4817), (24, '\n', 0.0762), (27, '\n', 0.059), (9, ' France', 0.0405), (16, ' Answer', 0.0403), (22, '.', 0.0355)])]
+L11H2 [('A', [(0, '<bos>', 0.8911), (4, 'What', 0.0239), (16, ' Answer', 0.0204), (27, '\n', 0.0141), (3, '\n', 0.0105), (12, ' guess', 0.0045)]), ('B', [(0, '<bos>', 0.6523), (27, '\n', 0.0525), (16, ' Answer', 0.0412), (1, '<start_of_turn>', 0.0362), (4, 'What', 0.0323), (25, '<start_of_turn>', 0.0306)])]
+L11H3 [('A', [(0, '<bos>', 0.8276), (27, '\n', 0.0329), (4, 'What', 0.0247), (25, '<start_of_turn>', 0.0167), (16, ' Answer', 0.0145), (3, '\n', 0.0124)]), ('B', [(0, '<bos>', 0.6191), (27, '\n', 0.0553), (25, '<start_of_turn>', 0.0435), (4, 'What', 0.0358), (2, 'user', 0.0279), (23, '<end_of_turn>', 0.0273)])]
+L9H0 [('A', [(0, '<bos>', 0.1741), (22, '.', 0.1214), (15, '.', 0.0985), (24, '\n', 0.098), (27, '\n', 0.0955), (26, 'model', 0.0558)]), ('B', [(0, '<bos>', 0.1708), (15, '.', 0.1204), (22, '.', 0.0971), (7, ' capital', 0.0884), (24, '\n', 0.085), (10, '?', 0.0822)])]
+L9H1 [('A', [(0, '<bos>', 0.3306), (27, '\n', 0.1216), (26, 'model', 0.0801), (24, '\n', 0.077), (25, '<start_of_turn>', 0.0529), (15, '.', 0.0482)]), ('B', [(0, '<bos>', 0.4028), (27, '\n', 0.1016), (24, '\n', 0.0943), (22, '.', 0.0385), (15, '.', 0.0349), (3, '\n', 0.0334)])]
+L6H2 [('A', [(0, '<bos>', 0.4292), (27, '\n', 0.0595), (25, '<start_of_turn>', 0.0591), (24, '\n', 0.0385), (16, ' Answer', 0.0372), (23, '<end_of_turn>', 0.0348)]), ('B', [(0, '<bos>', 0.6914), (27, '\n', 0.0464), (26, 'model', 0.0424), (10, '?', 0.0267), (24, '\n', 0.0253), (25, '<start_of_turn>', 0.0242)])]
+L4H0 [('A', [(0, '<bos>', 0.3687), (27, '\n', 0.0969), (24, '\n', 0.092), (25, '<start_of_turn>', 0.0563), (10, '?', 0.0505), (23, '<end_of_turn>', 0.0442)]), ('B', [(0, '<bos>', 0.2465), (24, '\n', 0.1582), (3, '\n', 0.0727), (25, '<start_of_turn>', 0.0697), (23, '<end_of_turn>', 0.0546), (27, '\n', 0.0471)])]
+L4H3 [('A', [(0, '<bos>', 0.373), (27, '\n', 0.1146), (24, '\n', 0.0972), (12, ' guess', 0.0366), (15, '.', 0.0346), (10, '?', 0.0325)]), ('B', [(0, '<bos>', 0.4314), (24, '\n', 0.1078), (27, '\n', 0.0818), (3, '\n', 0.0398), (26, 'model', 0.0296), (12, ' guess', 0.0292)])]
+
+ATTENTION TO GUESS AT DIFFERENT QUERY POSITIONS
+Order: post-guess punctuation, end_of_turn, model marker, final newline
+L10H2 A [0.0343 0.0023 0.     0.001 ] B [0.0329 0.0003 0.0001 0.0108]
+L10H3 A [0.0746 0.0214 0.0006 0.0024] B [0.0721 0.0097 0.0014 0.0098]
+L11H2 A [0.0151 0.0031 0.0003 0.0021] B [0.0523 0.0011 0.0002 0.0083]
+L11H3 A [0.0324 0.0055 0.0009 0.0024] B [0.0697 0.0024 0.0011 0.0076]
+L9H0 A [0.1679 0.0051 0.0022 0.0112] B [0.1451 0.0011 0.002  0.0072]
+L9H1 A [0.0553 0.0075 0.0006 0.0078] B [0.0515 0.0009 0.0006 0.004 ]
+L6H2 A [0.1754 0.0037 0.0021 0.006 ] B [0.133  0.0013 0.0006 0.0015]
+L4H0 A [0.2417 0.0463 0.0072 0.0056] B [0.194  0.0474 0.0057 0.0108]
+L4H3 A [0.0242 0.0168 0.0094 0.0084] B [0.0217 0.012  0.0102 0.0114]
+
+ALL-HEAD LAYER REGION CHANGES: B-A
+L00 {'guess_answer': 0.0002, 'belief_cue': 0.001, 'after_guess': 0.0009, 'question': 0.001, 'question_subject': 0.0001, 'instruction': 0.0018, 'end_of_turn': 0.0149, 'BOS': -0.0061, 'model_marker': 0.0004, 'final_newline': -0.0109}
+L01 {'guess_answer': 0.0002, 'belief_cue': -0.0025, 'after_guess': 0.0004, 'question': 0.0059, 'question_subject': 0.0005, 'instruction': 0.001, 'end_of_turn': -0.0064, 'BOS': -0.0691, 'model_marker': 0.0002, 'final_newline': -0.0003}
+L02 {'guess_answer': -0.0006, 'belief_cue': -0.0024, 'after_guess': -0.0034, 'question': -0.0044, 'question_subject': -0.0003, 'instruction': -0.0126, 'end_of_turn': -0.0031, 'BOS': 0.0074, 'model_marker': 0.0206, 'final_newline': 0.022}
+L03 {'guess_answer': -0.0006, 'belief_cue': -0.005, 'after_guess': -0.0055, 'question': -0.0163, 'question_subject': -0.0012, 'instruction': -0.0154, 'end_of_turn': -0.0295, 'BOS': -0.0673, 'model_marker': 0.2284, 'final_newline': 0.0014}
+L04 {'guess_answer': 0.0031, 'belief_cue': -0.0024, 'after_guess': -0.001, 'question': -0.0091, 'question_subject': 0.0052, 'instruction': 0.0089, 'end_of_turn': 0.011, 'BOS': 0.0342, 'model_marker': -0.0085, 'final_newline': -0.0659}
+L05 {'guess_answer': -0.0006, 'belief_cue': -0.009, 'after_guess': 0.0011, 'question': -0.0317, 'question_subject': -0.0022, 'instruction': -0.0131, 'end_of_turn': -0.0, 'BOS': 0.078, 'model_marker': 0.0012, 'final_newline': -0.0278}
+L06 {'guess_answer': -0.0017, 'belief_cue': -0.0313, 'after_guess': -0.01, 'question': -0.0296, 'question_subject': 0.0004, 'instruction': -0.0867, 'end_of_turn': -0.0073, 'BOS': 0.1411, 'model_marker': 0.0161, 'final_newline': 0.0031}
+L07 {'guess_answer': -0.0002, 'belief_cue': 0.0224, 'after_guess': -0.02, 'question': 0.0207, 'question_subject': 0.0024, 'instruction': -0.0449, 'end_of_turn': 0.0032, 'BOS': 0.0684, 'model_marker': 0.0107, 'final_newline': -0.0755}
+L08 {'guess_answer': 0.0004, 'belief_cue': -0.0014, 'after_guess': -0.0046, 'question': 0.0199, 'question_subject': 0.0031, 'instruction': -0.0153, 'end_of_turn': -0.0196, 'BOS': 0.1356, 'model_marker': -0.0673, 'final_newline': -0.0113}
+L09 {'guess_answer': -0.0021, 'belief_cue': 0.0238, 'after_guess': 0.0058, 'question': 0.1613, 'question_subject': 0.0171, 'instruction': -0.0137, 'end_of_turn': -0.0201, 'BOS': -0.048, 'model_marker': -0.0561, 'final_newline': -0.0282}
+L10 {'guess_answer': 0.0047, 'belief_cue': 0.041, 'after_guess': 0.0108, 'question': 0.0848, 'question_subject': 0.0196, 'instruction': 0.0335, 'end_of_turn': -0.0331, 'BOS': 0.1463, 'model_marker': -0.1599, 'final_newline': -0.0401}
+L11 {'guess_answer': 0.0031, 'belief_cue': 0.0122, 'after_guess': 0.0061, 'question': 0.0402, 'question_subject': 0.006, 'instruction': 0.0201, 'end_of_turn': 0.0311, 'BOS': -0.3186, 'model_marker': 0.0016, 'final_newline': 0.0416}
+L12 {'guess_answer': -0.0002, 'belief_cue': 0.0141, 'after_guess': -0.0118, 'question': 0.0283, 'question_subject': 0.0041, 'instruction': -0.0273, 'end_of_turn': -0.0212, 'BOS': 0.0944, 'model_marker': -0.0576, 'final_newline': -0.0138}
+L13 {'guess_answer': 0.0003, 'belief_cue': 0.0016, 'after_guess': -0.0023, 'question': 0.0112, 'question_subject': 0.0015, 'instruction': -0.0581, 'end_of_turn': -0.0062, 'BOS': 0.0732, 'model_marker': -0.0142, 'final_newline': 0.0201}
+L14 {'guess_answer': -0.0001, 'belief_cue': -0.007, 'after_guess': -0.0029, 'question': 0.008, 'question_subject': 0.0007, 'instruction': -0.0358, 'end_of_turn': 0.0123, 'BOS': -0.0634, 'model_marker': 0.0001, 'final_newline': -0.0008}
+L15 {'guess_answer': -0.0002, 'belief_cue': 0.0025, 'after_guess': 0.0124, 'question': 0.023, 'question_subject': 0.0019, 'instruction': -0.0041, 'end_of_turn': -0.0027, 'BOS': -0.1663, 'model_marker': -0.0424, 'final_newline': 0.0682}
+L16 {'guess_answer': 0.0001, 'belief_cue': 0.011, 'after_guess': 0.0016, 'question': 0.0105, 'question_subject': 0.0008, 'instruction': 0.0041, 'end_of_turn': 
+[output cut at 15,000 characters]
+```

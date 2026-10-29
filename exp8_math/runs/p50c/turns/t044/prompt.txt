@@ -1,0 +1,20 @@
+OUTPUT of Python run 25 of at most 300:
+```
+pair 5 correct 3 -> 5 gain_pp 6.25 SE_pp 4.35 rescued 2 lost 0
+pair 7 correct 4 -> 6 gain_pp 6.25 SE_pp 4.35 rescued 2 lost 0
+pair 8 correct 4 -> 7 gain_pp 9.38 SE_pp 6.9 rescued 4 lost 1
+pair 9 correct 4 -> 7 gain_pp 9.38 SE_pp 6.9 rescued 4 lost 1
+pair 10 correct 4 -> 9 gain_pp 15.62 SE_pp 6.52 rescued 5 lost 0
+pair 11 correct 4 -> 9 gain_pp 15.62 SE_pp 6.52 rescued 5 lost 0
+Traceback (most recent call last):
+  File "<string>", line 17, in <module>
+  File "<run>", line 25, in <module>
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 58 (char 57)
+
+```

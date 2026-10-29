@@ -1,0 +1,122 @@
+OUTPUT of run 25 of at most 60:
+```
+=== NEW HYPOTHESIS: LOW-ORDER NUMERICAL RECALIBRATION ===
+Contrast columns: linear magnitude, quadratic magnitude, orthogonalized parity,
+then six remaining independent digit distinctions.
+No questions, answers, hidden states, or nonlinear responses are supplied.
+First three contrast vectors, digit order 0..9:
+[[-0.4954 -0.3853 -0.2752 -0.1651 -0.055   0.055   0.1651  0.2752  0.3853  0.4954]
+ [ 0.5222  0.1741 -0.087  -0.2611 -0.3482 -0.3482 -0.2611 -0.087   0.1741  0.5222]
+ [ 0.2335 -0.3892  0.2725 -0.3503  0.3114 -0.3114  0.3503 -0.2725  0.3892 -0.2335]]
+Orthogonality error: 2.220446049250313e-16
+
+=== MLP OUTPUT-WEIGHT DIFFERENCES: MAGNITUDE/PARITY VERSUS REMAINING DIGITS ===
+Fractions sum to one within numerical token-readout coefficient space.
+Midpoint comparison is A/B midpoint, NOT the unavailable starting model.
+ L mode   delta_linear delta_quadratic delta_parity delta_remaining   midpoint_low3
+ 0 raw         0.27618        0.19718        0.09521        0.43143         0.50562
+ 0 diag        0.17300        0.12779        0.04922        0.64999         0.44689
+ 1 raw         0.25606        0.23163        0.09523        0.41708         0.50071
+ 1 diag        0.27034        0.14462        0.05919        0.52585         0.49690
+ 2 raw         0.24697        0.24319        0.08801        0.42183         0.50754
+ 2 diag        0.23725        0.15113        0.05075        0.56087         0.49984
+ 3 raw         0.27664        0.14434        0.07723        0.50179         0.54946
+ 3 diag        0.21476        0.18435        0.08218        0.51871         0.50648
+ 4 raw         0.23542        0.18112        0.09614        0.48732         0.46526
+ 4 diag        0.24299        0.17469        0.08290        0.49943         0.49141
+ 5 raw         0.27709        0.15438        0.07010        0.49843         0.52627
+ 5 diag        0.29023        0.15436        0.06277        0.49264         0.53954
+ 6 raw         0.25889        0.19169        0.10018        0.44924         0.51156
+ 6 diag        0.31359        0.16617        0.07930        0.44094         0.53047
+ 7 raw         0.28742        0.18217        0.08523        0.44518         0.51240
+ 7 diag        0.32038        0.16812        0.07749        0.43401         0.53302
+ 8 raw         0.29171        0.18282        0.07884        0.44664         0.51141
+ 8 diag        0.33073        0.15629        0.07395        0.43903         0.54120
+ 9 raw         0.34329        0.16440        0.06838        0.42393         0.52676
+ 9 diag        0.37943        0.16812        0.06148        0.39097         0.57072
+10 raw         0.36613        0.12285        0.06985        0.44117         0.48280
+10 diag        0.42746        0.11014        0.04877        0.41364         0.57451
+11 raw         0.38523        0.14973        0.08011        0.38493         0.53268
+11 diag        0.29497        0.14307        0.10645        0.45552         0.52553
+12 raw         0.30401        0.13673        0.11345        0.44581         0.52484
+12 diag        0.23517        0.13905        0.13648        0.48930         0.47318
+13 raw         0.28717        0.19889        0.12156        0.39238         0.56193
+13 diag        0.25634        0.18972        0.13670        0.41725         0.53008
+14 raw         0.27942        0.19149        0.10275        0.42634         0.53400
+14 diag        0.26565        0.18582        0.10893        0.43961         0.51208
+15 raw         0.28440        0.17936        0.10099        0.43525         0.51671
+15 diag        0.27792        0.17354        0.10419        0.44435         0.50370
+16 raw         0.38329        0.15157        0.07109        0.39405         0.48607
+16 diag        0.37757        0.14624        0.07308        0.40312         0.47383
+17 raw         0.39788        0.16579        0.06349        0.37285         0.48104
+17 diag        0.41152        0.15152        0.06230        0.37467         0.46255
+
+=== OV IDENTITY CHANGE AFTER REMOVING LOW-ORDER NUMERICAL CONTRASTS ===
+All signed coefficients are B-A.
+The first three diagonal terms plus residual trace equal the original identity trace.
+Residual identity is restricted to six remaining digit distinctions.
+ L H mode      total_identity       linear       quadratic       parity     residual_identity   residual_block_energy
+ 1 0 raw       +0.0004476095  +0.000267849  +7.69026e-06  -1.57384e-05          +0.000187809                 0.15520
+ 1 1 raw       +0.0006592185  +0.000471782  +0.000238505  -2.57509e-05         -2.531702e-05                 0.04302
+ 1 2 raw       +0.0004118312  +0.000275913  +0.000125718    -5.601e-05         +6.621022e-05                 0.10321
+ 1 3 raw       +0.0001385362  +0.000211867  -2.30393e-05  -1.17973e-05          -3.84942e-05                 0.08522
+  BLOCK SUM L1 raw: original=+0.001657195, low3=+0.001466987, remaining=+0.000190208
+  This block sum is an operator comparison, not actual summed head output.
+ 1 0 diag         +0.4989091     +0.212186    +0.0289002    +0.0499008            +0.2079217                 0.28716
+ 1 1 diag         +0.6209404     +0.596816   -0.00384261    +0.0152081             +0.012759                 0.15314
+ 1 2 diag         +0.3888206     +0.735978    +0.0438579    -0.0599956            -0.3310198                 0.12084
+ 1 3 diag         -0.4513682     +0.188959     -0.191146     -0.139421            -0.3097597                 0.21303
+  BLOCK SUM L1 diag: original=+1.057302, low3=+1.477401, remaining=-0.4200988
+  This block sum is an operator comparison, not actual summed head output.
+15 0 raw       -2.770856e-05  -7.75044e-05   +5.0101e-05  -0.000117633         +0.0001173278                 0.20955
+15 1 raw       +0.0001062596  -3.69601e-05  +8.03327e-05  -0.000170059         +0.0002329462                 0.17679
+15 2 raw       +0.0001622877  -0.000220471  +0.000261839  -0.000165096          +0.000286016                 0.16553
+15 3 raw       +0.0003953447  -0.000109035  +0.000307181  -9.54948e-05         +0.0002926933                 0.14379
+  BLOCK SUM L15 raw: original=+0.0006361834, low3=-0.0002927999, remaining=+0.0009289833
+  This block sum is an operator comparison, not actual summed head output.
+15 0 diag         -0.9182397      -4.94395   -0.00197678     -0.589614             +4.617305                 0.15660
+15 1 diag          -4.124747      +6.15557      -13.6459     -0.693555             +4.059137                 0.22642
+15 2 diag            +10.901      +16.0731      +7.06829      -6.40926             -5.831151                 0.19338
+15 3 diag          +14.09896      +14.0643      +5.94104      -3.86673               -2.0397                 0.13551
+  BLOCK SUM L15 diag: original=+19.95698, low3=+19.15139, remaining=+0.8055917
+  This block sum is an operator comparison, not actual summed head output.
+16 0 raw       +9.730031e-05  +4.90319e-05  +8.01401e-05  +1.38324e-05         -4.570414e-05                 0.21103
+16 1 raw       +4.170961e-05  -7.90491e-05  +4.09415e-05  -7.86517e-06         +8.768235e-05                 0.22484
+16 2 raw       -0.0003246386  -0.000452556  +7.15205e-05  +2.07799e-05         +3.561749e-05                 0.13210
+16 3 raw       +0.0001429078  +0.000309379  +1.58073e-05  -3.09483e-05         -0.0001513301                 0.37283
+  BLOCK SUM L16 raw: original=-4.272085e-05, low3=+3.101354e-05, remaining=-7.373439e-05
+  This block sum is an operator comparison, not actual summed head output.
+16 0 diag          -12.51455      -13.0632   +0.00190583       -2.5569             +3.103654                 0.07487
+16 1 diag          -11.18293      -18.6027      +5.29807      -3.35733             +5.478994                 0.09476
+16 2 diag          -25.75861      -29.4779      +1.06902      +1.05974             +1.590538                 0.08722
+16 3 diag          -10.06805      +2.59269     -0.243279      -5.13576             -7.281712                 0.13149
+  BLOCK SUM L16 diag: original=-59.52414, low3=-62.41561, remaining=+2.891474
+  This block sum is an operator comparison, not actual summed head output.
+17 0 raw        -0.000249393  -8.53499e-05  +7.99753e-05  -5.26154e-05         -0.0001914031                 0.20142
+17 1 raw       +0.0005260629  -8.90355e-05  +0.000288418  +0.000140677         +0.0001860043                 0.41470
+17 2 raw       -1.828565e-05  +7.11334e-05  -3.47126e-05  +4.23726e-05         -9.707905e-05                 0.27908
+17 3 raw       -0.0002078387  -0.000138203  +0.000146443  +2.79699e-05         -0.0002440487                 0.22815
+  BLOCK SUM L17 raw: original=+5.054551e-05, low3=+0.000397072, remaining=-0.0003465265
+  This block sum is an operator comparison, not actual summed head output.
+17 0 diag          -4.786193      -6.29773      +3.98947     -0.663044             -1.814893                 0.11316
+17 1 diag          +9.653241      -9.33939      +13.0269     +0.805931             +5.159822                 0.20873
+17 2 diag           +8.35063      +6.34167     +0.855501     +0.691422            +0.4620411                 0.13935
+17 3 diag          +3.239128      -3.97294      +8.97229     -0.267686             -1.492539                 0.19550
+  BLOCK SUM L17 diag: original=+16.45681, low3=+14.14238, remaining=+2.314431
+  This block sum is an operator comparison, not actual summed head output.
+
+=== PREVIOUS COPYING CANDIDATES: SIGN RETENTION ===
+(1, 0) raw original_sign 1 residual_sign 1 residual_trace 0.000187809 residual_block_energy_fraction 0.1552
+(1, 0) diag original_sign 1 residual_sign 1 residual_trace 0.2079217 residual_block_energy_fraction 0.28716
+(1, 1) raw original_sign 1 residual_sign -1 residual_trace -2.531702e-05 residual_block_energy_fraction 0.04302
+(1, 1) diag original_sign 1 residual_sign 1 residual_trace 0.012759 residual_block_energy_fraction 0.15314
+(15, 3) raw original_sign 1 residual_sign 1 residual_trace 0.0002926933 residual_block_energy_fraction 0.14379
+(15, 3) diag original_sign 1 residual_sign -1 residual_trace -2.0397 residual_block_energy_fraction 0.13551
+(16, 2) raw original_sign -1 residual_sign 1 residual_trace 3.561749e-05 residual_block_energy_fraction 0.1321
+(16, 2) diag original_sign -1 residual_sign 1 residual_trace 1.590538 residual_block_energy_fraction 0.08722
+(17, 0) raw original_sign -1 residual_sign -1 residual_trace -0.0001914031 residual_block_energy_fraction 0.20142
+(17, 0) diag original_sign -1 residual_sign -1 residual_trace -1.814893 residual_block_energy_fraction 0.11316
+(17, 1) raw original_sign 1 residual_sign 1 residual_trace 0.0001860043 residual_block_energy_fraction 0.4147
+(17, 1) diag original_sign 1 residual_sign 1 residual_trace 5.159822 residual_block_energy_fraction 0.20873
+
+```

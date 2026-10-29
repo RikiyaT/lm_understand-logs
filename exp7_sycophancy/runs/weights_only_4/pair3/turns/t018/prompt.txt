@@ -1,0 +1,120 @@
+OUTPUT of run 17 of at most 60:
+```
+=== NUMERICAL TOKEN FORMS ===
+ascii [('0', 236771), ('1', 236770), ('2', 236778), ('3', 236800), ('4', 236812), ('5', 236810), ('6', 236825), ('7', 236832), ('8', 236828), ('9', 236819)]
+words [(' zero', 5743), (' one', 886), (' two', 1156), (' three', 1806), (' four', 2390), (' five', 3493), (' six', 3962), (' seven', 6819), (' eight', 6589), (' nine', 10155)]
+fullwidth [('０', 238658), ('１', 238254), ('２', 238540), ('３', 238995), ('４', 239416), ('５', 239341), ('６', 240010), ('７', 240290), ('８', 240197), ('９', 240302)]
+arabic_indic [('٠', 241415), ('١', 240929), ('٢', 241303), ('٣', 242044), ('٤', 242090), ('٥', 242323), ('٦', 242862), ('٧', 242863), ('٨', 243123), ('٩', 242172)]
+
+=== PER-DIGIT IDENTITY CONTRIBUTIONS AND LEAVE-ONE-DIGIT-OUT CHECK ===
+Each digit entry is its diagonal contribution to the centered weight-path trace.
+All deltas B-A; these are NOT token scores produced by the model.
+L17 H1 raw: total=+0.0005260629, positive_digits=6/10, leave-one-out=[+0.0003870203,+0.0006800854], positive_LOO=10/10
+  contributions 0..9: [ 1.498353e-04  1.425821e-04 -5.488035e-05  1.567076e-04  1.513239e-04  2.822405e-05  1.096876e-06 -2.446342e-05 -1.125973e-05 -1.310347e-05]
+L17 H1 diag: total=+9.653241, positive_digits=5/10, leave-one-out=[+3.869512,+15.11861], positive_LOO=10/10
+  contributions 0..9: [ 5.957154  3.955014 -3.05726   3.018971  4.947999  0.550211 -0.200175 -1.867665 -2.754026 -0.896983]
+L15 H3 raw: total=+0.0003953447, positive_digits=7/10, leave-one-out=[+0.0002174227,+0.0005226389], positive_LOO=10/10
+  contributions 0..9: [ 8.236876e-06  7.290451e-05 -6.479753e-06  2.456904e-05  1.754548e-04  3.711454e-05  4.635694e-06 -7.798491e-05 -2.345125e-05  1.803451e-04]
+L15 H3 diag: total=+14.09896, positive_digits=7/10, leave-one-out=[+3.006099,+20.10027], positive_LOO=10/10
+  contributions 0..9: [-0.639966  1.246552  0.699411  0.137987  3.464952 -0.189915  0.540814 -3.994341  2.525345 10.308124]
+L16 H2 raw: total=-0.0003246386, positive_digits=3/10, leave-one-out=[-0.0004866428,-4.020717e-05], positive_LOO=0/10
+  contributions 0..9: [-2.638000e-04  1.237611e-05 -9.100407e-05  1.049834e-04 -4.178759e-05 -2.433346e-05 -1.839333e-05 -4.261302e-05 -5.333122e-05  9.326459e-05]
+L16 H2 diag: total=-25.75861, positive_digits=2/10, leave-one-out=[-33.67899,-11.50069], positive_LOO=0/10
+  contributions 0..9: [-15.066567  -2.832476  -2.601032   3.246146  -1.736424  -1.142742  -2.700594  -2.933899  -3.483294   3.492277]
+L17 H0 raw: total=-0.000249393, positive_digits=3/10, leave-one-out=[-0.0003686718,-6.948382e-06], positive_LOO=0/10
+  contributions 0..9: [ 1.021419e-05  5.760059e-05 -2.190557e-04 -2.657273e-06  4.471604e-05 -1.293375e-05 -1.777086e-05 -7.786986e-05 -1.585495e-05 -1.578141e-05]
+L17 H0 diag: total=-4.786193, positive_digits=4/10, leave-one-out=[-8.734714,+1.397569], positive_LOO=1/10
+  contributions 0..9: [ 1.856623  1.22583  -5.393301 -0.084609  1.224006  1.762313 -0.40653  -2.878528 -1.311409 -0.780587]
+L1 H0 raw: total=+0.0004476095, positive_digits=9/10, leave-one-out=[+0.0003290544,+0.0005631617], positive_LOO=10/10
+  contributions 0..9: [ 4.892587e-05 -2.800117e-05  1.472165e-04  2.152507e-05  2.205265e-05  1.387727e-05  3.090679e-05  5.683810e-05  5.506266e-05  7.920579e-05]
+L1 H0 diag: total=+0.4989091, positive_digits=6/10, leave-one-out=[-0.06236891,+1.166423], positive_LOO=9/10
+  contributions 0..9: [-0.011799 -0.443359  0.497471  0.010403  0.037074 -0.095131  0.071801  0.128192 -0.003824  0.308082]
+L1 H1 raw: total=+0.0006592185, positive_digits=6/10, leave-one-out=[+0.0003287523,+0.0008276887], positive_LOO=10/10
+  contributions 0..9: [ 6.350794e-05 -3.761573e-05  1.928144e-04  5.336441e-05 -9.328351e-05 -1.221993e-05 -8.688470e-05  9.152910e-05  1.550940e-04  3.329125e-04]
+L1 H1 diag: total=+0.6209404, positive_digits=6/10, leave-one-out=[+0.2996286,+0.8808769], positive_LOO=10/10
+  contributions 0..9: [ 1.718644e-01 -3.075593e-03  1.166496e-01  1.839102e-01 -6.309747e-02  1.070180e-04 -5.039519e-02  3.101518e-01  9.366658e-02 -1.388410e-01]
+
+=== CROSS-FORM NUMERICAL IDENTITY ===
+ L H mode  source->output                delta_trace   permutation_z
+17 1 raw  ascii->ascii                  +0.0005260629          +1.604
+17 1 raw  ascii->words                  +0.0002347819          +1.603
+17 1 raw  words->ascii                  +0.0002573953          +1.384
+17 1 raw  fullwidth->ascii              +0.0003309949          +1.298
+17 1 raw  arabic_indic->ascii           +0.0003363022          +1.144
+17 1 diag ascii->ascii                      +9.653241          +0.952
+17 1 diag ascii->words                      +5.165568          +1.177
+17 1 diag words->ascii                       +1.69407          +0.210
+17 1 diag fullwidth->ascii                 +0.5702832          +0.062
+17 1 diag arabic_indic->ascii               +1.365859          +0.144
+15 3 raw  ascii->ascii                  +0.0003953447          +1.431
+15 3 raw  ascii->words                  +3.921987e-05          +0.241
+15 3 raw  words->ascii                  +0.0002887098          +1.588
+15 3 raw  fullwidth->ascii               +0.000328636          +1.227
+15 3 raw  arabic_indic->ascii           +7.074339e-05          +0.296
+15 3 diag ascii->ascii                      +14.09896          +0.945
+15 3 diag ascii->words                      +7.370344          +0.758
+15 3 diag words->ascii                      +16.84277          +1.307
+15 3 diag fullwidth->ascii                  +12.84679          +0.906
+15 3 diag arabic_indic->ascii               +2.295279          +0.195
+16 2 raw  ascii->ascii                  -0.0003246386          -0.888
+16 2 raw  ascii->words                    -0.00023717          -1.324
+16 2 raw  words->ascii                  +0.0002663551          +0.961
+16 2 raw  fullwidth->ascii              -0.0003802877          -1.102
+16 2 raw  arabic_indic->ascii           -0.0005477331          -1.736
+16 2 diag ascii->ascii                      -25.75861          -1.424
+16 2 diag ascii->words                      -29.53606          -2.234
+16 2 diag words->ascii                      -17.66862          -1.076
+16 2 diag fullwidth->ascii                  -19.34765          -1.175
+16 2 diag arabic_indic->ascii               -24.75197          -1.760
+17 0 raw  ascii->ascii                   -0.000249393          -1.407
+17 0 raw  ascii->words                  -0.0001610886          -1.322
+17 0 raw  words->ascii                  -0.0001460693          -1.270
+17 0 raw  fullwidth->ascii              -0.0001984623          -1.041
+17 0 raw  arabic_indic->ascii           -0.0002508011          -1.478
+17 0 diag ascii->ascii                      -4.786193          -0.731
+17 0 diag ascii->words                      -7.007054          -1.649
+17 0 diag words->ascii                      -4.601806          -1.221
+17 0 diag fullwidth->ascii                  -2.470795          -0.422
+17 0 diag arabic_indic->ascii               -7.961589          -1.465
+ 1 0 raw  ascii->ascii                  +0.0004476095          +2.871
+ 1 0 raw  ascii->words                  +0.0001746753          +0.997
+ 1 0 raw  words->ascii                  +0.0002335443          +2.010
+ 1 0 raw  fullwidth->ascii              +0.0004244334          +2.982
+ 1 0 raw  arabic_indic->ascii           +0.0004655206          +3.066
+ 1 0 diag ascii->ascii                     +0.4989091          +0.937
+ 1 0 diag ascii->words                     +0.1146145          +0.183
+ 1 0 diag words->ascii                     +0.3094523          +0.793
+ 1 0 diag fullwidth->ascii                 +0.5228205          +1.074
+ 1 0 diag arabic_indic->ascii              +0.5359566          +1.215
+ 1 1 raw  ascii->ascii                  +0.0006592185          +1.738
+ 1 1 raw  ascii->words                  +0.0009347777          +2.411
+ 1 1 raw  words->ascii                  +0.0006421003          +2.432
+ 1 1 raw  fullwidth->ascii              +0.0007374473          +2.098
+ 1 1 raw  arabic_indic->ascii           +0.0007456097          +2.284
+ 1 1 diag ascii->ascii                     +0.6209404          +0.976
+ 1 1 diag ascii->words                      +2.235175          +2.345
+ 1 1 diag words->ascii                      +1.073068          +1.994
+ 1 1 diag fullwidth->ascii                 +0.9893782          +1.582
+ 1 1 diag arabic_indic->ascii              +0.7377322          +1.381
+
+=== PER-DIGIT OUTPUT-MATRIX VERSUS SHARED-VALUE CONTRIBUTIONS ===
+(17, 1, 'raw') delta_O trace 0.0003035841192060262 delta_V trace 0.0002224788153205943
+  O diagonal [ 1.02487e-04  8.94037e-05 -3.66362e-05  1.01308e-04  9.28123e-05 -1.85351e-06 -1.00950e-05 -9.56521e-06 -1.28114e-05 -1.14655e-05]
+  V diagonal [ 4.73481e-05  5.31784e-05 -1.82441e-05  5.53998e-05  5.85116e-05  3.00776e-05  1.11919e-05 -1.48982e-05  1.55166e-06 -1.63795e-06]
+(17, 1, 'diag') delta_O trace 4.204380419459537 delta_V trace 5.448861028043384
+  O diagonal [ 2.71943  3.17411 -2.48972  1.85401  3.39852 -0.1815  -0.46656 -1.11276 -2.21    -0.48116]
+  V diagonal [ 3.23772  0.7809  -0.56754  1.16497  1.54947  0.73172  0.26638 -0.7549  -0.54403 -0.41583]
+(15, 3, 'raw') delta_O trace 0.00029687055240486607 delta_V trace 9.847410657247848e-05
+  O diagonal [-2.55222e-05  7.03658e-05 -3.00903e-05  2.38411e-05  1.57517e-04  3.62708e-05 -1.46372e-06 -4.94182e-05 -5.18911e-05  1.67261e-04]
+  V diagonal [ 3.37591e-05  2.53873e-06  2.36106e-05  7.27939e-07  1.79374e-05  8.43766e-07  6.09942e-06 -2.85667e-05  2.84398e-05  1.30841e-05]
+(15, 3, 'diag') delta_O trace 8.855509722857292 delta_V trace 5.243453053064206
+  O diagonal [-1.38504  1.65516 -0.43219 -0.85018  3.05612  0.25441  0.68136 -3.12941  1.31619  7.68909]
+  V diagonal [ 0.74508 -0.40861  1.1316   0.98816  0.40883 -0.44432 -0.14054 -0.86493  1.20915  2.61904]
+(16, 2, 'raw') delta_O trace 5.124141376246685e-05 delta_V trace -0.0003758799743209058
+  O diagonal [-8.30542e-05  6.86236e-05 -2.74981e-05  8.41352e-05 -2.27712e-05 -1.39157e-06  5.81455e-06 -6.29515e-06 -1.05408e-05  4.42191e-05]
+  V diagonal [-1.80746e-04 -5.62475e-05 -6.35060e-05  2.08482e-05 -1.90164e-05 -2.29419e-05 -2.42079e-05 -3.63179e-05 -4.27904e-05  4.90455e-05]
+(16, 2, 'diag') delta_O trace -4.7269208998652426 delta_V trace -21.031685514542843
+  O diagonal [-4.89387  0.37726  0.27221  2.23511 -0.89028  0.02663 -1.94337 -0.7424  -0.31052  1.14229]
+  V diagonal [-10.1727   -3.20973  -2.87324   1.01103  -0.84615  -1.16937  -0.75722  -2.1915   -3.17278   2.34999]
+
+```

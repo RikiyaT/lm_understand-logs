@@ -1,0 +1,208 @@
+OUTPUT of run 1 of at most 60:
+```
+=== CONFIG A ===
+{
+  "_sliding_window_pattern": 6,
+  "architectures": [
+    "Gemma3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "attn_logit_softcapping": null,
+  "bos_token_id": 2,
+  "dtype": "float32",
+  "eos_token_id": 1,
+  "final_logit_softcapping": null,
+  "head_dim": 256,
+  "hidden_activation": "gelu_pytorch_tanh",
+  "hidden_size": 640,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "layer_types": [
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "sliding_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "model_type": "gemma3_text",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 18,
+  "num_key_value_heads": 1,
+  "pad_token_id": 0,
+  "query_pre_attn_scalar": 256,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "full_attention": {
+      "rope_theta": 1000000.0,
+      "rope_type": "default"
+    },
+    "sliding_attention": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    }
+  },
+  "sliding_window": 512,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "use_bidirectional_attention": false,
+  "use_cache": true,
+  "vocab_size": 262144
+}
+
+=== CONFIG DIFFERENCES ===
+{}
+
+=== TENSOR INVENTORY ===
+Only in A: []
+Only in B: []
+model.layers.*.input_layernorm.weight count= 18 shapes= [(640,)] dtypes= ['BF16']
+model.layers.*.mlp.down_proj.weight count= 18 shapes= [(640, 2048)] dtypes= ['BF16']
+model.layers.*.mlp.gate_proj.weight count= 18 shapes= [(2048, 640)] dtypes= ['BF16']
+model.layers.*.mlp.up_proj.weight count= 18 shapes= [(2048, 640)] dtypes= ['BF16']
+model.layers.*.post_attention_layernorm.weight count= 18 shapes= [(640,)] dtypes= ['BF16']
+model.layers.*.post_feedforward_layernorm.weight count= 18 shapes= [(640,)] dtypes= ['BF16']
+model.layers.*.pre_feedforward_layernorm.weight count= 18 shapes= [(640,)] dtypes= ['BF16']
+model.layers.*.self_attn.k_norm.weight count= 18 shapes= [(256,)] dtypes= ['BF16']
+model.layers.*.self_attn.k_proj.weight count= 18 shapes= [(256, 640)] dtypes= ['BF16']
+model.layers.*.self_attn.o_proj.weight count= 18 shapes= [(640, 1024)] dtypes= ['BF16']
+model.layers.*.self_attn.q_norm.weight count= 18 shapes= [(256,)] dtypes= ['BF16']
+model.layers.*.self_attn.q_proj.weight count= 18 shapes= [(1024, 640)] dtypes= ['BF16']
+model.layers.*.self_attn.v_proj.weight count= 18 shapes= [(256, 640)] dtypes= ['BF16']
+model.norm.weight count= 1 shapes= [(640,)] dtypes= ['BF16']
+
+Incompatible shapes: []
+
+=== GLOBAL DIFFERENCE SUMMARY ===
+Compared parameters: 100326016
+Changed parameters: 79633532 fraction: 0.7937475759029442
+||A||: 22667.078588262328 ||B||: 22667.078570080062
+||B-A||: 2.486942264066039 symmetric relative difference: 0.00010971604723474569
+Exactly identical tensors: 34 / 235
+
+=== BY TENSOR FAMILY ===
+family | changed_fraction | ||A|| | ||B|| | ||delta|| | relative_delta | delta_energy_share
+model.layers.*.input_layernorm.weight | 0.00877 | 3032.96 | 3032.96 | 0.00513034 | 1.69153e-06 | 0.00000
+model.layers.*.mlp.down_proj.weight | 0.88167 | 79.552 | 79.5514 | 1.13318 | 0.0142446 | 0.20762
+model.layers.*.mlp.gate_proj.weight | 0.76086 | 189.807 | 189.806 | 1.23957 | 0.00653067 | 0.24843
+model.layers.*.mlp.up_proj.weight | 0.74281 | 189.654 | 189.653 | 1.22591 | 0.00646394 | 0.24299
+model.layers.*.post_attention_layernorm.weight | 0.01033 | 12788.7 | 12788.7 | 0.00477242 | 3.73175e-07 | 0.00000
+model.layers.*.post_feedforward_layernorm.weight | 0.01337 | 18353.1 | 18353.1 | 0.00639287 | 3.48325e-07 | 0.00001
+model.layers.*.pre_feedforward_layernorm.weight | 0.02760 | 1491.21 | 1491.21 | 0.00819981 | 5.49877e-06 | 0.00001
+model.layers.*.self_attn.k_norm.weight | 0.03016 | 152.314 | 152.314 | 0.00569898 | 3.7416e-05 | 0.00001
+model.layers.*.self_attn.k_proj.weight | 0.77754 | 67.2139 | 67.2137 | 0.453599 | 0.0067486 | 0.03327
+model.layers.*.self_attn.o_proj.weight | 0.80557 | 104.039 | 104.038 | 0.812847 | 0.00781295 | 0.10683
+model.layers.*.self_attn.q_norm.weight | 0.04622 | 93.1716 | 93.1716 | 0.00673702 | 7.23076e-05 | 0.00001
+model.layers.*.self_attn.q_proj.weight | 0.79531 | 133.019 | 133.019 | 0.903035 | 0.00678877 | 0.13185
+model.layers.*.self_attn.v_proj.weight | 0.73829 | 67.658 | 67.6581 | 0.423356 | 0.00625729 | 0.02898
+model.norm.weight | 0.00000 | 1355.75 | 1355.75 | 0 | 0 | 0.00000
+
+=== BY LAYER AND PART ===
+layer part | changed_fraction | ||delta|| | relative_delta | delta_energy_share
+-1 block_norm | 0.00000 | 0 | 0 | 0.00000
+ 0 attention  | 0.76589 | 0.308825 | 0.00544708 | 0.01542
+ 0 block_norm | 0.03984 | 0.0052689 | 1.28493e-05 | 0.00000
+ 0 mlp        | 0.76956 | 0.47355 | 0.00697745 | 0.03626
+ 1 attention  | 0.78704 | 0.296942 | 0.00466008 | 0.01426
+ 1 block_norm | 0.02148 | 0.00351737 | 3.32336e-06 | 0.00000
+ 1 mlp        | 0.78749 | 0.478404 | 0.00731591 | 0.03700
+ 2 attention  | 0.76735 | 0.309096 | 0.00527419 | 0.01545
+ 2 block_norm | 0.01953 | 0.00300418 | 2.78228e-06 | 0.00000
+ 2 mlp        | 0.78537 | 0.483691 | 0.00733077 | 0.03783
+ 3 attention  | 0.80899 | 0.316471 | 0.00662588 | 0.01619
+ 3 block_norm | 0.01367 | 0.00269224 | 1.87242e-06 | 0.00000
+ 3 mlp        | 0.79957 | 0.484896 | 0.00743132 | 0.03802
+ 4 attention  | 0.81073 | 0.323154 | 0.00539458 | 0.01688
+ 4 block_norm | 0.01250 | 0.00246683 | 1.61146e-06 | 0.00000
+ 4 mlp        | 0.81084 | 0.492568 | 0.0076027 | 0.03923
+ 5 attention  | 0.80978 | 0.329183 | 0.00441495 | 0.01752
+ 5 block_norm | 0.01016 | 0.0019263 | 1.53741e-06 | 0.00000
+ 5 mlp        | 0.78841 | 0.498599 | 0.00733464 | 0.04019
+ 6 attention  | 0.79955 | 0.337053 | 0.00627429 | 0.01837
+ 6 block_norm | 0.00820 | 0.00202758 | 1.63704e-06 | 0.00000
+ 6 mlp        | 0.80159 | 0.493671 | 0.00754215 | 0.03940
+ 7 attention  | 0.78559 | 0.321842 | 0.00563126 | 0.01675
+ 7 block_norm | 0.00898 | 0.00253645 | 2.11888e-06 | 0.00000
+ 7 mlp        | 0.79301 | 0.485371 | 0.00734812 | 0.03809
+ 8 attention  | 0.79358 | 0.318886 | 0.00564979 | 0.01644
+ 8 block_norm | 0.00820 | 0.00213236 | 1.54256e-06 | 0.00000
+ 8 mlp        | 0.80540 | 0.485871 | 0.00747324 | 0.03817
+ 9 attention  | 0.79055 | 0.336386 | 0.00577447 | 0.01830
+ 9 block_norm | 0.01094 | 0.00231748 | 1.58953e-06 | 0.00000
+ 9 mlp        | 0.79043 | 0.484849 | 0.00726448 | 0.03801
+10 attention  | 0.77997 | 0.33913 | 0.00473136 | 0.01860
+10 block_norm | 0.00898 | 0.0023121 | 9.43922e-07 | 0.00000
+10 mlp        | 0.80526 | 0.486678 | 0.00746189 | 0.03830
+11 attention  | 0.78873 | 0.322438 | 0.00382058 | 0.01681
+11 block_norm | 0.00625 | 0.0018448 | 3.08762e-07 | 0.00000
+11 mlp        | 0.78844 | 0.475364 | 0.00714787 | 0.03654
+12 attention  | 0.80155 | 0.332306 | 0.00550251 | 0.01785
+12 block_norm | 0.00977 | 0.00233665 | 3.18757e-07 | 0.00000
+12 mlp        | 0.79210 | 0.49037 | 0.00729717 | 0.03888
+13 attention  | 0.80265 | 0.322648 | 0.00592461 | 0.01683
+13 block_norm | 0.02617 | 0.00399841 | 5.81958e-07 | 0.00000
+13 mlp        | 0.79888 | 0.497599 | 0.00762647 | 0.04003
+14 attention  | 0.78623 | 0.315809 | 0.00479409 | 0.01613
+14 block_norm | 0.03828 | 0.00433331 | 5.51123e-07 | 0.00000
+14 mlp        | 0.80632 | 0.509897 | 0.00784607 | 0.04204
+15 attention  | 0.78022 | 0.33159 | 0.00525248 | 0.01778
+15 block_norm | 0.01211 | 0.0031445 | 3.24384e-07 | 0.00000
+15 mlp        | 0.79923 | 0.510343 | 0.00775522 | 0.04211
+16 attention  | 0.80346 | 0.318047 | 0.0057503 | 0.01636
+16 block_norm | 0.00508 | 0.00175946 | 1.83772e-07 | 0.00000
+16 mlp        | 0.79369 | 0.501104 | 0.00757038 | 0.04060
+17 attention  | 0.78878 | 0.304705 | 0.00461094 | 0.01501
+17 block_norm | 0.01016 | 0.00292911 | 2.8413e-07 | 0.00000
+17 mlp        | 0.79649 | 0.486989 | 0.00742854 | 0.03834
+
+=== TOP 15 TENSORS BY ABSOLUTE DIFFERENCE ENERGY ===
+model.layers.14.mlp.gate_proj.weight delta_norm= 0.302194 relative= 0.006764 energy_share= 0.014765
+model.layers.6.mlp.gate_proj.weight delta_norm= 0.299606 relative= 0.0067 energy_share= 0.014513
+model.layers.15.mlp.gate_proj.weight delta_norm= 0.299488 relative= 0.006701 energy_share= 0.014502
+model.layers.14.mlp.up_proj.weight delta_norm= 0.299252 relative= 0.006708 energy_share= 0.014479
+model.layers.15.mlp.up_proj.weight delta_norm= 0.299138 relative= 0.006695 energy_share= 0.014468
+model.layers.5.mlp.gate_proj.weight delta_norm= 0.298931 relative= 0.00667 energy_share= 0.014448
+model.layers.16.mlp.up_proj.weight delta_norm= 0.29579 relative= 0.006608 energy_share= 0.014146
+model.layers.8.mlp.gate_proj.weight delta_norm= 0.295173 relative= 0.006571 energy_share= 0.014087
+model.layers.16.mlp.gate_proj.weight delta_norm= 0.294576 relative= 0.006607 energy_share= 0.01403
+model.layers.13.mlp.gate_proj.weight delta_norm= 0.294436 relative= 0.006592 energy_share= 0.014017
+model.layers.4.mlp.gate_proj.weight delta_norm= 0.294049 relative= 0.006563 energy_share= 0.01398
+model.layers.5.mlp.up_proj.weight delta_norm= 0.293609 relative= 0.006569 energy_share= 0.013938
+model.layers.12.mlp.gate_proj.weight delta_norm= 0.292583 relative= 0.006534 energy_share= 0.013841
+model.layers.7.mlp.gate_proj.weight delta_norm= 0.292474 relative= 0.006529 energy_share= 0.013831
+model.layers.13.mlp.up_proj.weight delta_norm= 0.292463 relative= 0.00656 energy_share= 0.01383
+
+=== TOP 15 TENSORS BY RELATIVE DIFFERENCE ===
+model.layers.4.mlp.down_proj.weight relative= 0.019184 delta_norm= 0.267082 max_abs_delta= 0.001465
+model.layers.14.mlp.down_proj.weight relative= 0.018266 delta_norm= 0.281286 max_abs_delta= 0.001282
+model.layers.8.mlp.down_proj.weight relative= 0.0172 delta_norm= 0.25521 max_abs_delta= 0.001221
+model.layers.1.mlp.down_proj.weight relative= 0.017022 delta_norm= 0.264977 max_abs_delta= 0.001221
+model.layers.10.mlp.down_proj.weight relative= 0.016957 delta_norm= 0.264166 max_abs_delta= 0.001465
+model.layers.3.mlp.down_proj.weight relative= 0.016842 delta_norm= 0.267525 max_abs_delta= 0.001953
+model.layers.13.mlp.down_proj.weight relative= 0.016563 delta_norm= 0.274549 max_abs_delta= 0.001343
+model.layers.15.mlp.down_proj.weight relative= 0.015535 delta_norm= 0.285085 max_abs_delta= 0.001343
+model.layers.6.mlp.down_proj.weight relative= 0.01538 delta_norm= 0.263127 max_abs_delta= 0.001343
+model.layers.2.mlp.down_proj.weight relative= 0.014344 delta_norm= 0.266055 max_abs_delta= 0.001953
+model.layers.17.mlp.down_proj.weight relative= 0.014333 delta_norm= 0.261777 max_abs_delta= 0.001221
+model.layers.16.mlp.down_proj.weight relative= 0.01404 delta_norm= 0.277197 max_abs_delta= 0.001282
+model.layers.7.mlp.down_proj.weight relative= 0.013592 delta_norm= 0.260095 max_abs_delta= 0.00116
+model.layers.9.mlp.down_proj.weight relative= 0.012354 delta_norm= 0.261026 max_abs_delta= 0.001221
+model.layers.11.mlp.down_proj.weight relative= 0.012237 delta_norm= 0.251318 max_abs_delta= 0.001221
+
+These are algebraic differences, not a behavioral attribution or causal ranking.
+
+```

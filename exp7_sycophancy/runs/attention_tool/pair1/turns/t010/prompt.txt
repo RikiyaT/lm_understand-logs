@@ -1,0 +1,64 @@
+OUTPUT of run 9 of at most 20:
+```
+TOP LOCAL QK-KERNEL RELATIVE CHANGES (NOT CAUSAL RANK)
+{'layer': 11, 'head': 0, 'qk_relative': 0.046334, 'query_term': 0.025853, 'key_term': 0.037811, 'ov_relative': 0.011372}
+{'layer': 11, 'head': 1, 'qk_relative': 0.04102, 'query_term': 0.017162, 'key_term': 0.036192, 'ov_relative': 0.012856}
+{'layer': 10, 'head': 1, 'qk_relative': 0.03692, 'query_term': 0.027702, 'key_term': 0.022098, 'ov_relative': 0.010439}
+{'layer': 12, 'head': 2, 'qk_relative': 0.028957, 'query_term': 0.025101, 'key_term': 0.013451, 'ov_relative': 0.008791}
+{'layer': 12, 'head': 3, 'qk_relative': 0.026408, 'query_term': 0.023081, 'key_term': 0.012281, 'ov_relative': 0.012565}
+{'layer': 11, 'head': 3, 'qk_relative': 0.026307, 'query_term': 0.014441, 'key_term': 0.021466, 'ov_relative': 0.007893}
+{'layer': 12, 'head': 0, 'qk_relative': 0.02586, 'query_term': 0.022158, 'key_term': 0.012918, 'ov_relative': 0.011607}
+{'layer': 14, 'head': 1, 'qk_relative': 0.024933, 'query_term': 0.021822, 'key_term': 0.011756, 'ov_relative': 0.008959}
+{'layer': 13, 'head': 1, 'qk_relative': 0.024226, 'query_term': 0.01584, 'key_term': 0.016666, 'ov_relative': 0.012693}
+{'layer': 13, 'head': 2, 'qk_relative': 0.023373, 'query_term': 0.017045, 'key_term': 0.015357, 'ov_relative': 0.011816}
+{'layer': 6, 'head': 2, 'qk_relative': 0.023239, 'query_term': 0.015244, 'key_term': 0.016693, 'ov_relative': 0.012399}
+{'layer': 5, 'head': 3, 'qk_relative': 0.022548, 'query_term': 0.020349, 'key_term': 0.008252, 'ov_relative': 0.013332}
+
+ROUTING CANDIDATES: LOCAL PARAMETER-KERNEL CHANGES
+QK rank 68 {'layer': 10, 'head': 2, 'qk_relative': 0.009591, 'query_term': 0.006723, 'key_term': 0.006539, 'ov_relative': 0.011932}
+QK rank 28 {'layer': 11, 'head': 2, 'qk_relative': 0.017753, 'query_term': 0.011897, 'key_term': 0.012707, 'ov_relative': 0.009195}
+QK rank 4 {'layer': 12, 'head': 2, 'qk_relative': 0.028957, 'query_term': 0.025101, 'key_term': 0.013451, 'ov_relative': 0.008791}
+QK rank 20 {'layer': 12, 'head': 1, 'qk_relative': 0.020213, 'query_term': 0.016089, 'key_term': 0.011585, 'ov_relative': 0.01086}
+QK rank 11 {'layer': 6, 'head': 2, 'qk_relative': 0.023239, 'query_term': 0.015244, 'key_term': 0.016693, 'ov_relative': 0.012399}
+QK rank 59 {'layer': 16, 'head': 3, 'qk_relative': 0.011963, 'query_term': 0.008995, 'key_term': 0.007098, 'ov_relative': 0.016127}
+QK rank 43 {'layer': 5, 'head': 1, 'qk_relative': 0.01467, 'query_term': 0.013969, 'key_term': 0.003843, 'ov_relative': 0.010996}
+QK rank 12 {'layer': 5, 'head': 3, 'qk_relative': 0.022548, 'query_term': 0.020349, 'key_term': 0.008252, 'ov_relative': 0.013332}
+QK rank 69 {'layer': 17, 'head': 2, 'qk_relative': 0.009458, 'query_term': 0.007987, 'key_term': 0.004258, 'ov_relative': 0.009591}
+QK rank 30 {'layer': 13, 'head': 3, 'qk_relative': 0.016828, 'query_term': 0.014774, 'key_term': 0.006635, 'ov_relative': 0.010845}
+
+MLP UNGATED COPY-PATH CONTRASTS
+layer raw mean A/B/delta; scaled mean A/B/delta; positive delta counts
+0 raw [-0.1628 -0.1627  0.0001] scaled [-0.0143 -0.0143 -0.    ] positive deltas 17 13 / 28
+1 raw [-0.0967 -0.0967 -0.    ] scaled [-0.0159 -0.0159  0.    ] positive deltas 14 16 / 28
+2 raw [ 0.1014  0.1013 -0.0002] scaled [ 0.012   0.0119 -0.0001] positive deltas 12 11 / 28
+3 raw [0.2003 0.2004 0.0001] scaled [0.0366 0.0366 0.    ] positive deltas 17 15 / 28
+4 raw [ 0.0793  0.0792 -0.    ] scaled [ 0.0237  0.0237 -0.    ] positive deltas 13 13 / 28
+5 raw [ 0.4232  0.423  -0.0002] scaled [ 0.1825  0.1825 -0.0001] positive deltas 11 11 / 28
+6 raw [ 0.2757  0.2756 -0.0001] scaled [0.1354 0.1355 0.0001] positive deltas 15 18 / 28
+7 raw [0.1818 0.1819 0.0001] scaled [0.1008 0.1008 0.    ] positive deltas 15 16 / 28
+8 raw [0.1037 0.1038 0.0002] scaled [0.0586 0.0587 0.0001] positive deltas 19 15 / 28
+9 raw [ 0.1031  0.103  -0.    ] scaled [0.0608 0.0609 0.0001] positive deltas 14 16 / 28
+10 raw [ 0.0686  0.0685 -0.    ] scaled [0.0273 0.0273 0.    ] positive deltas 13 12 / 28
+11 raw [ 0.1136  0.1136 -0.    ] scaled [0.0422 0.0422 0.    ] positive deltas 13 14 / 28
+12 raw [ 0.3488  0.3487 -0.0001] scaled [ 0.1382  0.1381 -0.0001] positive deltas 15 12 / 28
+13 raw [0.0633 0.0634 0.    ] scaled [ 0.0341  0.034  -0.    ] positive deltas 12 13 / 28
+14 raw [0.0131 0.0132 0.0001] scaled [0.0053 0.0054 0.0001] positive deltas 12 17 / 28
+15 raw [-0.0514 -0.0512  0.0002] scaled [-0.0157 -0.0156  0.0001] positive deltas 15 18 / 28
+16 raw [-0.1235 -0.1236 -0.    ] scaled [-0.0512 -0.0512  0.0001] positive deltas 13 16 / 28
+17 raw [-0.139  -0.1393 -0.0003] scaled [-0.0471 -0.0472 -0.0001] positive deltas 11 12 / 28
+
+TOP MLPs BY |SCALED UNGATED COPY-PATH DIFFERENCE|
+12 mean -0.00013116640911903232 per-contrast delta [ 0.0007  0.      0.0005 -0.0023 -0.0005 -0.0002  0.0007  0.0003 -0.0006 -0.0021 -0.0002  0.0016 -0.0003 -0.0003  0.      0.0003 -0.0003  0.0002
+ -0.     -0.0004 -0.0006 -0.0004 -0.0005  0.0006 -0.0004  0.0015  0.0005 -0.0014]
+2 mean -0.00012978601444046944 per-contrast delta [ 0.0001  0.0004  0.0008 -0.0014 -0.0006 -0.0004  0.0008 -0.0004 -0.0002 -0.0006  0.0002  0.0008 -0.0005  0.0002 -0.0002  0.0002 -0.0003 -0.0009
+  0.0003 -0.0003 -0.0005 -0.0003  0.0001 -0.     -0.0006 -0.0002 -0.0004  0.0003]
+6 mean 0.00012710902956314385 per-contrast delta [ 0.0001  0.0001  0.0004  0.0006  0.0008  0.0004  0.0003 -0.0007  0.001  -0.0006  0.0001  0.0002  0.0002 -0.0003 -0.0001 -0.0001  0.0005  0.0003
+ -0.001   0.0002  0.0009  0.0003  0.0008 -0.0011 -0.     -0.0006 -0.0002  0.0008]
+14 mean 0.00012202117795823142 per-contrast delta [ 0.0001 -0.0002  0.      0.0006 -0.0008  0.0012 -0.0005  0.0006  0.0007 -0.0004  0.0001  0.0009 -0.0008 -0.001  -0.      0.0007  0.0004  0.0002
+ -0.0003 -0.0004  0.0004  0.0001 -0.      0.0002  0.0009  0.0008  0.0004 -0.0003]
+17 mean -0.00010218664101557806 per-contrast delta [-0.0002  0.0002 -0.0002 -0.0011  0.0008 -0.0007  0.0002  0.0012 -0.     -0.0003  0.0004  0.0004  0.0005 -0.0001 -0.0003  0.0001  0.0004  0.0001
+ -0.0004 -0.0004 -0.0012  0.0001 -0.0001  0.0003 -0.0007 -0.0014 -0.     -0.0006]
+5 mean -7.603423728141934e-05 per-contrast delta [ 0.0001  0.0005  0.      0.0008 -0.0002 -0.     -0.0003 -0.0004 -0.0003 -0.0007  0.0006 -0.0011 -0.0007 -0.0009 -0.0005  0.0003  0.0008 -0.0001
+ -0.0006  0.0001  0.0009 -0.0009 -0.0001 -0.0006 -0.0006 -0.0002  0.0009  0.0009]
+
+```

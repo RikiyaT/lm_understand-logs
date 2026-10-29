@@ -1,0 +1,120 @@
+OUTPUT of run 9 of at most 20:
+```
+
+L17 unit 1180: gate/up cosine A=-0.4220; overlap coefficient A/B=-0.365167/-0.364613
+  raw signed axis contributions [agree,one,yes,guess]: [-0.     -0.0024  0.0001  0.0001]
+  A gate input direction + [('4', 0.364), ('8', 0.358), ('5', 0.358), ('7', 0.355)] - [('payers', -0.171), (' dough', -0.164), (' both', -0.154), (' regard', -0.154)]
+  A up input direction + [(' Leib', 0.163), (' Volk', 0.154), (' inoc', 0.153), ('lak', 0.151)] - [('4', -0.198), ('5', -0.181), ('6', -0.177), ('3', -0.176)]
+  A output direction + [('fifth', 0.122), (' Circular', 0.111), ('msubsup', 0.11), ('iffel', 0.107)] - [('1', -0.259), (' satu', -0.131), (' One', -0.128), ('igne', -0.128)]
+  B-A output direction + [('1', 0.44), ('2', 0.296), (' A', 0.286), (' e', 0.284)] - [('dcsset', -0.237), (' eighty', -0.227), (' quatre', -0.219), ('xcsche', -0.218)]
+  B-A gate direction + [(' Owens', 0.19), (' Specification', 0.185), (' Beam', 0.161), (' Ard', 0.16)] - [('7', -0.456), ('8', -0.442), ('5', -0.441), ('6', -0.44)]
+  B-A up direction + [('5', 0.171), ('7', 0.166), ('4', 0.164), ('6', 0.163)] - [(' controll', -0.162), ('zinha', -0.153), ('liness', -0.151), (' Bake', -0.138)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [-0.077 -0.313 -0.134  0.029  0.165  0.143  0.114  0.117  0.123  0.036] guess-evidence/agree-correction [ 0.063 -0.051]
+    A up [ 0.137  0.378  0.031 -0.13  -0.198 -0.147 -0.128 -0.116 -0.064 -0.001] guess-evidence/agree-correction [0.018 0.028]
+    delta output [ 0.233  0.665  0.341  0.028 -0.197 -0.111 -0.377 -0.269 -0.395 -0.344] guess-evidence/agree-correction [-0.027  0.085]
+
+L17 unit 697: gate/up cosine A=-0.5191; overlap coefficient A/B=-0.290338/-0.290211
+  raw signed axis contributions [agree,one,yes,guess]: [-0.0001 -0.0015  0.0001  0.0002]
+  A gate input direction + [(' Geld', 0.223), (' Rs', 0.211), (' dollars', 0.2), (' dollar', 0.189)] - [('adresse', -0.14), ('faces', -0.137), (' choses', -0.134), (' ripen', -0.134)]
+  A up input direction + [(' unchanged', 0.151), (' narrowed', 0.14), ('kon', 0.136), (' holes', 0.135)] - [(' Traff', -0.178), (' Estim', -0.164), (' Doll', -0.159), (' budgeting', -0.158)]
+  A output direction + [(' Rs', 0.22), (' Rp', 0.199), (' dollar', 0.186), ('dollar', 0.183)] - [(' Vill', -0.115), (' mae', -0.107), (' Rei', -0.106), ('windows', -0.103)]
+  B-A output direction + [(' the', 0.385), ('1', 0.368), (' and', 0.361), (' in', 0.355)] - [(' iccad', -0.289), ('dcsset', -0.288), ('xcsche', -0.272), (' Hfn', -0.271)]
+  B-A gate direction + [('5', 0.208), ('4', 0.201), ('6', 0.197), ('8', 0.195)] - [(' Mits', -0.169), (' Nig', -0.159), (' Noir', -0.159), (' Gloss', -0.153)]
+  B-A up direction + [('7', 0.305), ('6', 0.296), ('5', 0.296), ('4', 0.291)] - [(' clever', -0.163), (' internation', -0.155), (' Ferg', -0.153), ('avour', -0.15)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [-0.037 -0.024 -0.04   0.065  0.044  0.037 -0.021  0.007  0.025 -0.01 ] guess-evidence/agree-correction [ 0.019 -0.052]
+    A up [-0.053  0.039  0.02   0.026  0.006 -0.009 -0.027  0.014 -0.007 -0.   ] guess-evidence/agree-correction [0.015 0.02 ]
+    delta output [ 0.086  0.532  0.371  0.091 -0.142 -0.134 -0.141 -0.301 -0.383 -0.287] guess-evidence/agree-correction [-0.07   0.136]
+
+L17 unit 437: gate/up cosine A=-0.4686; overlap coefficient A/B=-0.428252/-0.428259
+  raw signed axis contributions [agree,one,yes,guess]: [-0.     -0.0015  0.0002  0.    ]
+  A gate input direction + [(' quir', 0.172), ('urious', 0.156), ('ury', 0.155), (' Bonds', 0.154)] - [(' Baden', -0.166), (' watts', -0.157), ('infty', -0.156), (' Lafayette', -0.152)]
+  A up input direction + [('ware', 0.174), (' selecion', 0.163), (' seleccion', 0.158), ('ompok', 0.157)] - [(' Ig', -0.178), (' Ez', -0.177), (' Cotton', -0.177), (' Kes', -0.175)]
+  A output direction + [('U', 0.254), (' U', 0.25), (' Ur', 0.229), (' Ul', 0.226)] - [(' cedar', -0.124), ('Fisher', -0.123), (' Fisher', -0.116), (' Metals', -0.114)]
+  B-A output direction + [('1', 0.466), ('2', 0.409), (' in', 0.305), (' to', 0.304)] - [(' Tess', -0.276), (' Violet', -0.276), (' Schwartz', -0.269), (' Jenn', -0.262)]
+  B-A gate direction + [(' tidy', 0.187), (' organise', 0.156), ('tidy', 0.149), (' organised', 0.149)] - [('7', -0.278), ('8', -0.274), ('6', -0.27), ('4', -0.265)]
+  B-A up direction + [(' benchmarks', 0.16), ('Lookup', 0.147), (' Steele', 0.147), ('Landscape', 0.144)] - [('fclose', -0.154), (' dess', -0.149), (' elect', -0.143), (' kinh', -0.141)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [ 0.013  0.013  0.093  0.008 -0.021 -0.044 -0.03  -0.055 -0.013 -0.009] guess-evidence/agree-correction [-0.041  0.041]
+    A up [ 0.025 -0.007  0.009 -0.008 -0.039 -0.005  0.005 -0.024 -0.005  0.027] guess-evidence/agree-correction [-0.001  0.007]
+    delta output [ 0.002  0.455  0.324 -0.105 -0.161 -0.046  0.035 -0.127 -0.306 -0.268] guess-evidence/agree-correction [-0.024  0.093]
+
+L17 unit 883: gate/up cosine A=-0.5137; overlap coefficient A/B=-0.461253/-0.461578
+  raw signed axis contributions [agree,one,yes,guess]: [-0.0001  0.0017 -0.0001 -0.    ]
+  A gate input direction + [('7', 0.414), ('5', 0.397), ('8', 0.392), ('6', 0.386)] - [(' homolog', -0.169), (' Auch', -0.161), ('uniya', -0.157), (' territo', -0.154)]
+  A up input direction + [(' pronunciation', 0.145), ('payers', 0.144), (' geodes', 0.143), ('boarding', 0.141)] - [('8', -0.244), ('7', -0.244), ('9', -0.227), ('5', -0.222)]
+  A output direction + [('ethoscope', 0.12), ('inars', 0.117), ('uela', 0.116), ('chn', 0.115)] - [('2', -0.255), ('two', -0.225), (' two', -0.221), (' deux', -0.219)]
+  B-A output direction + [('9', 0.246), (' ninety', 0.199), ('weathermap', 0.184), (' Bankr', 0.179)] - [(' in', -0.239), (' un', -0.235), (' and', -0.23), (' the', -0.229)]
+  B-A gate direction + [('duction', 0.153), (' trafficking', 0.152), ('apons', 0.15), ('intah', 0.148)] - [(' via', -0.161), (' web', -0.145), (' outdoor', -0.143), (' clinic', -0.139)]
+  B-A up direction + [(' Patricia', 0.154), (' cooking', 0.153), ('Execution', 0.147), (' cooks', 0.145)] - [('ladesh', -0.148), ('ients', -0.141), ('idual', -0.135), (' harbour', -0.128)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [-0.123 -0.172 -0.328  0.052  0.138  0.167  0.126  0.201  0.13   0.047] guess-evidence/agree-correction [ 0.109 -0.013]
+    A up [ 0.054  0.124  0.345 -0.033 -0.066 -0.105 -0.081 -0.161 -0.154 -0.09 ] guess-evidence/agree-correction [-0.102  0.059]
+    delta output [-0.403 -0.455 -0.152  0.046  0.029  0.157  0.342  0.26   0.119  0.438] guess-evidence/agree-correction [ 0.025 -0.041]
+
+L17 unit 1454: gate/up cosine A=-0.4681; overlap coefficient A/B=-0.339405/-0.339200
+  raw signed axis contributions [agree,one,yes,guess]: [ 0.0001  0.0015  0.     -0.    ]
+  A gate input direction + [(' organisational', 0.219), (' tyre', 0.194), (' organised', 0.192), ('centre', 0.19)] - [(' Hawaii', -0.16), (' Minnesota', -0.158), (' Americans', -0.155), (' Maui', -0.151)]
+  A up input direction + [('7', 0.23), ('6', 0.219), ('4', 0.216), ('5', 0.215)] - [(' cheque', -0.2), (' yeh', -0.194), (' Widget', -0.183), ('Cream', -0.18)]
+  A output direction + [(' cbd', 0.168), ('dfrac', 0.143), ('aternity', 0.099), (' favourites', 0.099)] - [('hara', -0.103), ('slant', -0.102), ('udin', -0.096), ('interno', -0.095)]
+  B-A output direction + [(' Teddy', 0.2), (' monst', 0.199), (' psychiat', 0.196), (' kreat', 0.192)] - [('1', -0.498), ('2', -0.365), (' I', -0.281), ('I', -0.278)]
+  B-A gate direction + [(' reckon', 0.159), ('mentioned', 0.141), (' contribut', 0.14), (' opio', 0.135)] - [(' trimmed', -0.133), (' Test', -0.132), (' flight', -0.13), (' night', -0.129)]
+  B-A up direction + [(' mineral', 0.17), (' metropolitan', 0.157), (' Luc', 0.156), (' Piet', 0.155)] - [(' Lahore', -0.16), (' Roya', -0.155), ('ourd', -0.15), (' traject', -0.144)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [ 0.044  0.027  0.029  0.039 -0.016 -0.017 -0.042 -0.043 -0.037 -0.028] guess-evidence/agree-correction [-0.027  0.011]
+    A up [-0.101 -0.041 -0.063  0.021  0.057  0.053  0.059  0.087  0.03   0.001] guess-evidence/agree-correction [0.03 0.03]
+    delta output [ 0.129 -0.574 -0.268  0.143  0.018  0.097  0.154  0.084  0.262  0.129] guess-evidence/agree-correction [ 0.025 -0.077]
+
+L16 unit 1141: gate/up cosine A=-0.4637; overlap coefficient A/B=-0.430369/-0.430053
+  raw signed axis contributions [agree,one,yes,guess]: [ 0.0001  0.0015  0.0002 -0.0001]
+  A gate input direction + [('g', 0.171), (' g', 0.161), ('gom', 0.16), (' rites', 0.159)] - [('lje', -0.161), (' Kosovo', -0.147), (' snowman', -0.147), (' jard', -0.144)]
+  A up input direction + [('umlah', 0.183), ('dasarkan', 0.179), (' brunette', 0.178), (' aprob', 0.175)] - [(' Ig', -0.239), (' Cotton', -0.238), (' Gar', -0.217), (' Gen', -0.212)]
+  A output direction + [('Gr', 0.239), (' Gr', 0.236), ('Gi', 0.232), ('Gs', 0.231)] - [(' Rash', -0.139), (' rider', -0.106), (' cushion', -0.104), (' Pierce', -0.103)]
+  B-A output direction + [('8', 0.217), ('6', 0.215), ('7', 0.177), ('inho', 0.17)] - [(' Super', -0.171), (' One', -0.163), (' Santa', -0.161), (' New', -0.157)]
+  B-A gate direction + [('ifen', 0.152), ('structured', 0.149), (' Tuc', 0.145), ('random', 0.143)] - [('owners', -0.153), (' Precision', -0.152), ('Owner', -0.144), (' condol', -0.142)]
+  B-A up direction + [('8', 0.284), ('7', 0.282), ('6', 0.279), ('5', 0.265)] - [(' Specification', -0.177), (' Bliss', -0.174), (' Boundary', -0.16), (' Kaw', -0.154)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [ 0.057  0.098  0.015 -0.04  -0.029 -0.018 -0.049 -0.051  0.004 -0.054] guess-evidence/agree-correction [0.    0.041]
+    A up [ 0.038 -0.035 -0.028 -0.021 -0.022  0.013  0.002 -0.03   0.001  0.065] guess-evidence/agree-correction [-0.018 -0.029]
+    delta output [ 0.108 -0.461 -0.245 -0.17  -0.138  0.018  0.356  0.238  0.338  0.115] guess-evidence/agree-correction [0.035 0.008]
+
+L16 unit 1073: gate/up cosine A=+0.5271; overlap coefficient A/B=+0.409393/+0.409756
+  raw signed axis contributions [agree,one,yes,guess]: [-0.     -0.0015  0.0001  0.0001]
+  A gate input direction + [(' c', 0.163), ('onese', 0.158), (' harbour', 0.158), (' Old', 0.157)] - [(' logarith', -0.171), (' Alain', -0.162), (' pulmonary', -0.158), (' Albuquerque', -0.158)]
+  A up input direction + [(' Ji', 0.224), (' Cot', 0.214), (' Cu', 0.203), (' Cooper', 0.202)] - [('itochond', -0.192), (' afforded', -0.187), ('izontal', -0.163), ('explained', -0.162)]
+  A output direction + [('poster', 0.109), (' flyer', 0.096), (' posters', 0.096), ('prene', 0.095)] - [(' Cs', -0.221), (' Clement', -0.215), ('Cs', -0.21), ('C', -0.209)]
+  B-A output direction + [(' Havana', 0.166), (' quinta', 0.16), (' quarta', 0.158), ('mh', 0.158)] - [('1', -0.173), (' Crypt', -0.16), (' securities', -0.156), (' two', -0.155)]
+  B-A gate direction + [(' factory', 0.155), (' Zoo', 0.154), (' sheep', 0.15), (' crom', 0.148)] - [('6', -0.185), ('7', -0.185), ('5', -0.184), ('4', -0.167)]
+  B-A up direction + [(' criticised', 0.159), ('ately', 0.152), (' Kindle', 0.144), ('aculture', 0.143)] - [('Authorization', -0.159), ('7', -0.159), ('8', -0.155), (' evt', -0.148)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [ 0.054  0.15   0.118  0.014 -0.034 -0.084 -0.077 -0.125 -0.058 -0.074] guess-evidence/agree-correction [-0.057  0.104]
+    A up [-0.01   0.002 -0.02   0.013  0.026  0.021  0.006  0.042  0.016 -0.068] guess-evidence/agree-correction [0.043 0.016]
+    delta output [ 0.086 -0.438 -0.35  -0.224  0.197  0.12   0.143  0.207  0.289  0.166] guess-evidence/agree-correction [0.022 0.007]
+
+L16 unit 1672: gate/up cosine A=+0.5466; overlap coefficient A/B=+0.495930/+0.496279
+  raw signed axis contributions [agree,one,yes,guess]: [-0.0005 -0.0009 -0.0005  0.0002]
+  A gate input direction + [('etr', 0.164), (' shape', 0.153), ('ukan', 0.148), (' t', 0.146)] - [(' Lafayette', -0.188), (' Albuquerque', -0.168), (' pulmonary', -0.159), (' Camero', -0.155)]
+  A up input direction + [(' Ti', 0.229), (' Gen', 0.227), (' Te', 0.219), (' Par', 0.217)] - [(' achie', -0.19), ('seud', -0.179), ('rior', -0.173), (' invertebr', -0.172)]
+  A output direction + [('Celebr', 0.098), ('chalk', 0.096), (' Crus', 0.095), (' Blackburn', 0.094)] - [(' Tess', -0.226), (' Ti', -0.221), ('Ti', -0.211), (' Tate', -0.203)]
+  B-A output direction + [('8', 0.239), ('9', 0.18), ('Eight', 0.172), ('0', 0.154)] - [(' Sic', -0.157), (' gur', -0.156), (' dv', -0.152), (' garant', -0.15)]
+  B-A gate direction + [('iking', 0.165), ('ipment', 0.162), ('itional', 0.157), ('boxing', 0.154)] - [(' Bright', -0.161), (' luminous', -0.156), (' gown', -0.152), (' glitter', -0.151)]
+  B-A up direction + [(' grouped', 0.156), (' disappointed', 0.153), (' arguing', 0.151), (' reson', 0.147)] - [(' Tissue', -0.159), (' Eigen', -0.158), (' ventral', -0.147), (' tissue', -0.145)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [ 0.004  0.074  0.107  0.062 -0.029 -0.049 -0.067 -0.072 -0.037 -0.052] guess-evidence/agree-correction [-0.036 -0.002]
+    A up [-0.033 -0.002 -0.036  0.035  0.007  0.016 -0.003  0.043  0.03  -0.023] guess-evidence/agree-correction [0.04 0.05]
+    delta output [ 0.095 -0.229 -0.26  -0.118  0.12   0.018 -0.021 -0.11   0.379  0.182] guess-evidence/agree-correction [ 0.029 -0.015]
+
+L16 unit 893: gate/up cosine A=+0.5837; overlap coefficient A/B=+0.579612/+0.579483
+  raw signed axis contributions [agree,one,yes,guess]: [-0.0003 -0.0002 -0.0004  0.0001]
+  A gate input direction + [(' Minnesota', 0.195), ('veled', 0.194), (' Colorado', 0.18), (' Wyoming', 0.18)] - [(' organisational', -0.25), (' organise', -0.248), (' cosy', -0.246), (' tyre', -0.242)]
+  A up input direction + [(' Minnesota', 0.22), (' Wisconsin', 0.21), (' Hawaii', 0.201), (' Alaska', 0.199)] - [(' organised', -0.242), (' organisational', -0.228), (' organisation', -0.207), ('coloured', -0.2)]
+  A output direction + [('Colour', 0.373), ('coloured', 0.359), ('centre', 0.335), (' organisational', 0.318)] - [('borhood', -0.164), (' Theater', -0.164), ('cemia', -0.163), (' sulfide', -0.158)]
+  B-A output direction + [(' Asia', 0.212), ('Asia', 0.186), ('aturan', 0.17), ('Natal', 0.157)] - [(' Musk', -0.17), (' ox', -0.151), ('6', -0.147), (' Mec', -0.142)]
+  B-A gate direction + [('7', 0.162), ('6', 0.161), ('5', 0.153), ('iculture', 0.151)] - [(' guts', -0.175), (' hormonal', -0.161), (' hormone', -0.15), (' auss', -0.148)]
+  B-A up direction + [(' joyful', 0.17), ('jasmine', 0.168), (' Abuja', 0.162), (' cough', 0.158)] - [(' genomes', -0.159), (' territories', -0.14), ('otech', -0.138), (' Northwestern', -0.135)]
+  centered-digit cosine profiles, digit order 0..9
+    A gate [-0.037  0.008 -0.024  0.025 -0.002  0.004  0.005  0.046  0.009 -0.006] guess-evidence/agree-correction [ 0.042 -0.031]
+    A up [-0.053 -0.02  -0.008  0.021  0.007  0.003  0.041  0.053 -0.001 
+[output cut at 15,000 characters]
+```

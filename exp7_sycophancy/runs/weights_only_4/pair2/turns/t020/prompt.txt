@@ -1,0 +1,60 @@
+OUTPUT of run 18 of at most 60:
+```
+=== NEW HYPOTHESIS: EXACT UP/DOWN RESCALING SYMMETRY ===
+For a fixed gate: up_i -> c*up_i and down_i -> down_i/c preserve the unit function.
+At the checkpoint midpoint, such paired differences obey:
+delta_up_i = alpha_i * up_mid_i
+delta_down_i = -alpha_i * down_mid_i
+The calculations below are projections of weight DIFFERENCES, not model optimization.
+
+Columns:
+ gauge_full: Euclidean fraction of all gate/up/down difference energy in that symmetry
+ gauge_bal: fraction with up/down factors normalized to equal baseline weight
+ outer_cross: cross term / uncancelled per-unit outer-product difference energy
+ digit_Eratio: numerical writer energy after subtracting the symmetry component / before
+                reported for Euclidean and balanced projection conventions
+L00 gauge_full=0.000336 gauge_bal=0.000457 outer_cross=+0.000707 digit_Eratio=(1.00090, 1.00033)
+L01 gauge_full=0.000421 gauge_bal=0.000478 outer_cross=+0.000640 digit_Eratio=(1.00021, 0.99942)
+L02 gauge_full=0.000406 gauge_bal=0.000515 outer_cross=+0.000770 digit_Eratio=(1.00065, 0.99933)
+L03 gauge_full=0.000426 gauge_bal=0.000594 outer_cross=+0.000759 digit_Eratio=(1.00092, 0.99941)
+L04 gauge_full=0.000467 gauge_bal=0.000731 outer_cross=+0.000550 digit_Eratio=(1.00055, 0.99938)
+L05 gauge_full=0.000341 gauge_bal=0.000413 outer_cross=+0.000923 digit_Eratio=(1.00012, 0.99918)
+L06 gauge_full=0.000406 gauge_bal=0.000495 outer_cross=+0.000811 digit_Eratio=(1.00076, 0.99922)
+L07 gauge_full=0.000450 gauge_bal=0.000498 outer_cross=+0.000937 digit_Eratio=(1.00077, 0.99901)
+L08 gauge_full=0.000471 gauge_bal=0.000547 outer_cross=+0.000772 digit_Eratio=(1.00044, 0.99960)
+L09 gauge_full=0.000392 gauge_bal=0.000439 outer_cross=+0.000832 digit_Eratio=(1.00077, 0.99943)
+L10 gauge_full=0.000463 gauge_bal=0.000585 outer_cross=+0.000626 digit_Eratio=(1.00058, 0.99933)
+L11 gauge_full=0.000426 gauge_bal=0.000486 outer_cross=+0.000781 digit_Eratio=(1.00017, 0.99888)
+L12 gauge_full=0.000329 gauge_bal=0.000416 outer_cross=+0.000683 digit_Eratio=(1.00019, 0.99898)
+L13 gauge_full=0.000371 gauge_bal=0.000438 outer_cross=+0.000744 digit_Eratio=(1.00089, 0.99880)
+L14 gauge_full=0.000384 gauge_bal=0.000418 outer_cross=+0.000666 digit_Eratio=(1.00054, 0.99856)
+L15 gauge_full=0.000342 gauge_bal=0.000412 outer_cross=+0.000733 digit_Eratio=(1.00064, 0.99862)
+L16 gauge_full=0.000368 gauge_bal=0.000465 outer_cross=+0.000871 digit_Eratio=(1.00057, 0.99856)
+L17 gauge_full=0.000430 gauge_bal=0.000653 outer_cross=+0.000744 digit_Eratio=(1.00051, 0.99857)
+
+=== PREVIOUSLY INTERPRETED UNITS ===
+Pure reciprocal rescaling requires opposite, matching up/down scale changes
+AND negligible differences perpendicular to those factors.
+L16 U1417: up_scale=+0.000609, down_scale=+0.004720, balanced_symmetry_fraction=0.0128, invariant_outer_energy/uncancelled=1.00872
+L16 U112: up_scale=-0.000223, down_scale=-0.002114, balanced_symmetry_fraction=0.0070, invariant_outer_energy/uncancelled=1.00370
+L16 U1875: up_scale=+0.001007, down_scale=+0.003202, balanced_symmetry_fraction=0.0066, invariant_outer_energy/uncancelled=1.01769
+L16 U332: up_scale=+0.000240, down_scale=+0.003615, balanced_symmetry_fraction=0.0253, invariant_outer_energy/uncancelled=1.00770
+L16 U1547: up_scale=+0.000277, down_scale=+0.001242, balanced_symmetry_fraction=0.0012, invariant_outer_energy/uncancelled=1.00183
+L17 U1180: up_scale=-0.000154, down_scale=-0.006178, balanced_symmetry_fraction=0.0128, invariant_outer_energy/uncancelled=1.00134
+L17 U1242: up_scale=+0.000305, down_scale=+0.006967, balanced_symmetry_fraction=0.0366, invariant_outer_energy/uncancelled=1.00701
+L17 U1309: up_scale=-0.000376, down_scale=-0.004554, balanced_symmetry_fraction=0.0255, invariant_outer_energy/uncancelled=1.01001
+L17 U1192: up_scale=+0.000582, down_scale=+0.002541, balanced_symmetry_fraction=0.0046, invariant_outer_energy/uncancelled=1.00712
+L17 U310: up_scale=-0.000515, down_scale=-0.005788, balanced_symmetry_fraction=0.0685, invariant_outer_energy/uncancelled=1.02937
+
+=== SUMMARY ===
+Largest whole-MLP symmetry fraction: 0.00047126528506484197
+Largest balanced up/down symmetry fraction: 0.0007309599962925965
+Late MLP numerical-energy survival:
+L15: Euclidean=1.00064, balanced=0.99862
+L16: Euclidean=1.00057, balanced=0.99856
+L17: Euclidean=1.00051, balanced=0.99857
+
+These invariant products do not replace the gated MLP computation.
+No activations, nonlinearities, model inputs, checkpoint modifications, or training were used.
+
+```

@@ -1,0 +1,56 @@
+OUTPUT of Python run 5 of at most 300:
+```
+Top paired positive MLP output contributions (not yet causal):
+layer 23 neuron 22 delta 1.5156 cut/good 1.7734 0.1354 pair_positive 1.0 delta/SE 4.59 out_norm 0.239
+layer 23 neuron 94 delta 0.7026 cut/good 1.0947 0.2793 pair_positive 0.85 delta/SE 5.55 out_norm 0.299
+layer 22 neuron 59 delta 0.6938 cut/good 0.9512 0.2461 pair_positive 0.85 delta/SE 3.46 out_norm 0.289
+layer 23 neuron 46 delta 0.6074 cut/good 3.3691 2.3926 pair_positive 0.77 delta/SE 3.11 out_norm 0.314
+layer 23 neuron 19 delta 0.5396 cut/good 0.8369 0.2379 pair_positive 0.92 delta/SE 3.52 out_norm 0.273
+layer 23 neuron 18 delta 0.5688 cut/good 0.0836 -0.542 pair_positive 0.92 delta/SE 5.41 out_norm 0.222
+layer 22 neuron 7 delta 0.4409 cut/good 0.7749 0.3096 pair_positive 0.92 delta/SE 4.11 out_norm 0.267
+layer 23 neuron 190 delta 0.4685 cut/good 0.8696 0.3887 pair_positive 0.92 delta/SE 4.46 out_norm 0.228
+layer 23 neuron 34 delta 0.5229 cut/good -0.0932 -0.5444 pair_positive 0.92 delta/SE 4.0 out_norm 0.202
+layer 17 neuron 20 delta 0.4502 cut/good 0.4656 0.0107 pair_positive 0.92 delta/SE 3.86 out_norm 0.222
+layer 15 neuron 0 delta 0.3884 cut/good 0.5225 0.1166 pair_positive 1.0 delta/SE 4.71 out_norm 0.255
+layer 23 neuron 495 delta 0.3562 cut/good 0.6665 0.2932 pair_positive 0.92 delta/SE 5.85 out_norm 0.269
+layer 18 neuron 29 delta 0.322 cut/good 0.4702 0.1273 pair_positive 1.0 delta/SE 4.3 out_norm 0.271
+layer 20 neuron 89 delta 0.2585 cut/good 0.2837 0.0597 pair_positive 1.0 delta/SE 4.04 out_norm 0.329
+layer 23 neuron 107 delta 0.3782 cut/good 1.2539 0.7153 pair_positive 0.77 delta/SE 2.73 out_norm 0.222
+layer 19 neuron 1 delta 0.3191 cut/good 0.6802 0.3735 pair_positive 0.92 delta/SE 4.9 out_norm 0.262
+layer 23 neuron 27 delta 0.3894 cut/good 0.4661 0.1009 pair_positive 1.0 delta/SE 4.8 out_norm 0.21
+layer 23 neuron 161 delta 0.334 cut/good 0.5693 0.2438 pair_positive 1.0 delta/SE 4.47 out_norm 0.244
+layer 23 neuron 625 delta 0.3154 cut/good 0.4602 0.2042 pair_positive 0.85 delta/SE 3.71 out_norm 0.258
+layer 23 neuron 362 delta 0.2861 cut/good 0.5137 0.1925 pair_positive 1.0 delta/SE 4.77 out_norm 0.282
+layer 22 neuron 4 delta 0.2712 cut/good 0.1772 -0.117 pair_positive 0.85 delta/SE 3.08 out_norm 0.269
+layer 23 neuron 317 delta 0.3447 cut/good 0.8892 0.5425 pair_positive 0.92 delta/SE 5.94 out_norm 0.202
+layer 22 neuron 20 delta 0.2817 cut/good 0.6372 0.29 pair_positive 1.0 delta/SE 6.94 out_norm 0.244
+layer 21 neuron 99 delta 0.2676 cut/good 0.4207 0.1519 pair_positive 0.92 delta/SE 4.48 out_norm 0.254
+layer 23 neuron 162 delta 0.3142 cut/good 0.6294 0.3423 pair_positive 1.0 delta/SE 5.65 out_norm 0.212
+
+Matched sample summaries:
+indices 2 3 id gsm8k_train_2168 good_tokens 4632 repeat_count 2 first_char 1112 repeat '*   1st: Washington'
+indices 11 10 id gsm8k_train_2892 good_tokens 1262 repeat_count 1388 first_char 15995 repeat 'Wait, if he was driving 60 mph, he was 0 mph above.'
+indices 18 19 id gsm8k_train_188 good_tokens 884 repeat_count 384 first_char 10462 repeat 'Total = 10.'
+indices 37 36 id gsm8k_train_2428 good_tokens 4399 repeat_count 242 first_char 14290 repeat 'Wait, what if "half as often" means "half the number of times he sleds down the small hills" is equa'
+indices 42 43 id gsm8k_train_4729 good_tokens 7043 repeat_count 168 first_char 27302 repeat 'Wait, the text says "can swing... at a speed of 10 feet per second."'
+indices 94 95 id gsm8k_train_2696 good_tokens 3641 repeat_count 711 first_char 8053 repeat '*   Wait, is it possible that "Candice read 3 times as many books as Amanda" means "Candice read 3 t'
+indices 102 103 id math_train_prealgebra_473 good_tokens 1172 repeat_count 312 first_char 7636 repeat '*   This implies $x=5$.'
+indices 117 116 id math_train_prealgebra_843 good_tokens 9576 repeat_count 1494 first_char 8914 repeat 'Wait, if I draw a red marble, I have 2 red marbles left.'
+indices 135 134 id math_train_prealgebra_485 good_tokens 5848 repeat_count 193 first_char 13384 repeat '*   Wait, $2/5 - 1/6 = 12/30 - 5/30 = 7/30$.'
+indices 155 154 id math_train_prealgebra_396 good_tokens 6738 repeat_count 883 first_char 10889 repeat 'Wait, I might have misread the question.'
+indices 179 178 id math_train_algebra_302 good_tokens 7985 repeat_count 1589 first_char 7191 repeat 'Wait, is it possible the user meant $\\log_4 64$?'
+indices 187 186 id math_train_number_theory_419 good_tokens 16292 repeat_count 425 first_char 10027 repeat '*   No.'
+indices 221 220 id math_train_algebra_1123 good_tokens 6760 repeat_count 977 first_char 27628 repeat 'Wait, what if the numerator was $5x^2 - 9$?'
+
+Short failing prefix around earliest loops for sample 11:
+0 "Here's my thought process for solving this problem:\n\n1.  **Analyze the Request:**\n    *   **Given:** John travels 150 miles in 2 hours. Speed limit is 60 mph.\n    *   **Question:** How many mph above the speed limit was "
+1000 "l}$ with the speed limit ($v_{limit}$).\n        3.  Calculate the difference.\n\n3.  **Step-by-Step Execution:**\n\n    *   **Step 1: Determine John's actual speed.**\n        *   Formula: $\\text{Speed} = \\frac{\\text{Distance"
+2000 "esponse:**\n    *   Start by finding John's actual speed.\n    *   State the formula used.\n    *   Substitute the values.\n    *   Subtract the speed limit from the actual speed.\n    *   Final answer formatting.\n\n6.  **Refi"
+3000 ' clearly.\n    1.  Find actual speed.\n    2.  Find difference.\n    3.  Box result.\n\n    *Double check arithmetic:*\n    $150 / 2 = 75$. Correct.\n    $75 - 60 = 15$. Correct.\n\n    Ready.\n\n    Wait, is there any ambiguity in'
+4000 '= Distance / Time.\n    Speed Limit = 60.\n    Speed = 75.\n    Difference = 75 - 60 = 15.\n\n    Looks good.\n\n    Wait, did I misread the number?\n    "John travels 150 miles in 2 hours." -> Distance = 150, Time = 2.\n    "The'
+5000 't?" No, it asks "How many mph".\n    Okay, proceed.\n\n    Let\'s structure the reasoning clearly.\n    1. Calculate speed using the given distance and time.\n    2. Identify the speed limit.\n    3. Calculate the difference.\n '
+6000 'xt{Time}}$\n    $\\text{Speed} = \\frac{150 \\text{ miles}}{2 \\text{ hours}} = 75 \\text{ mph}$.\n\n    Step 2: Identify the speed limit.\n    $\\text{Speed Limit} = 60 \\text{ mph}$.\n\n    Step 3: Calculate how much faster he was.'
+Tokenizer type: Tokenizer
+Chat-template support: False
+
+```

@@ -1,0 +1,6 @@
+OUTPUT of Python run 26 of at most 300:
+```
+Request: {'type': 'generate', 'model': 'both', 'n': 1, 'max_tokens': 32768} problems 64
+Recipe: [{'tensor': 'model.language_model.layers.15.self_attn.o_proj.weight', 'columns': [1792, 2048], 'head': 7, 'multiplier': 0.0}]
+
+```

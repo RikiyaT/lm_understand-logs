@@ -1,0 +1,85 @@
+OUTPUT of run 18 of at most 60:
+```
+=== LOW-RANK UPDATE CAPTURE OF SIGNED WEIGHT ASSOCIATIONS ===
+Rank reconstructions are matrix analyses only; no checkpoint is executed or modified.
+
+L1 H3 belief raw: total=+0.001420894, Q_part=+0.001129068, K_part=+0.000291826
+rank   Q_update_energy  K_update_energy   Q_signature_fraction  K_signature_fraction  total_fraction
+   1           0.21370          0.13881                0.94160                0.08777         0.76624
+   2           0.35143          0.22339                0.99952                0.08189         0.81105
+   4           0.50076          0.36018                1.02533                0.31433         0.87930
+   8           0.65573          0.50249                1.00808                0.33778         0.87042
+  16           0.77136          0.66172                0.98786                0.94688         0.97945
+  32           0.84726          0.79519                1.00475                0.89278         0.98175
+  64           0.90237          0.87767                0.99290                1.03629         1.00181
+ 128           0.95857          0.94944                0.99806                1.05739         1.01025
+ 256           1.00000          1.00000                1.00000                1.00000         1.00000
+row-sign control: signed standardized coefficient= 5.5544001688655 absolute exceedances= 0 /6000
+
+L1 H3 belief diag: total=+7.5719202, Q_part=+6.3439643, K_part=+1.227956
+rank   Q_update_energy  K_update_energy   Q_signature_fraction  K_signature_fraction  total_fraction
+   1           0.25331          0.13178                0.81731                0.03601         0.69061
+   2           0.38672          0.22673                0.93193                0.03953         0.78721
+   4           0.55162          0.38360                0.96890                0.18843         0.84233
+   8           0.69936          0.54059                0.98318                0.28085         0.86928
+  16           0.81303          0.69909                0.97181                0.87410         0.95596
+  32           0.88323          0.82974                0.98783                0.92267         0.97726
+  64           0.93262          0.91095                0.99816                0.96183         0.99227
+ 128           0.97631          0.96976                0.99274                1.01163         0.99580
+ 256           1.00000          1.00000                1.00000                1.00000         1.00000
+row-sign control: signed standardized coefficient= 6.474156149006424 absolute exceedances= 0 /6000
+
+L1 H0 operator raw: total=-0.0053529166, Q_part=-0.0042931102, K_part=-0.0010598064
+rank   Q_update_energy  K_update_energy   Q_signature_fraction  K_signature_fraction  total_fraction
+   1           0.23931          0.13881                1.01106                0.09701         0.83009
+   2           0.45338          0.22339                1.07539                0.61256         0.98375
+   4           0.58047          0.36018                0.97153                1.09575         0.99612
+   8           0.71246          0.50249                1.00325                1.09268         1.02095
+  16           0.83283          0.66172                0.99990                0.93659         0.98736
+  32           0.88899          0.79519                0.99890                0.95962         0.99112
+  64           0.92972          0.87767                0.99843                1.02923         1.00453
+ 128           0.97024          0.94944                0.99535                1.00357         0.99697
+ 256           1.00000          1.00000                1.00000                1.00000         1.00000
+row-sign control: signed standardized coefficient= -5.173451523013738 absolute exceedances= 0 /6000
+
+L1 H0 operator diag: total=-20.692796, Q_part=-16.399972, K_part=-4.2928232
+rank   Q_update_energy  K_update_energy   Q_signature_fraction  K_signature_fraction  total_fraction
+   1           0.28001          0.13178                0.79858                0.42584         0.72125
+   2           0.46731          0.22673                1.05717                0.56929         0.95596
+   4           0.59084          0.38360                1.05249                1.16679         1.07620
+   8           0.73333          0.54059                1.00229                0.96110         0.99375
+  16           0.85143          0.69909                1.00665                1.03871         1.01330
+  32           0.91236          0.82974                0.99936                1.02647         1.00498
+  64           0.95019          0.91095                1.00246                1.01872         1.00583
+ 128           0.98266          0.96976                1.00081                0.99665         0.99995
+ 256           1.00000          1.00000                1.00000                1.00000         1.00000
+row-sign control: signed standardized coefficient= -5.743964468009322 absolute exceedances= 0 /6000
+
+=== INPUT DIRECTIONS OF LEADING QUERY/KEY UPDATE MODES ===
+Singular-vector signs are arbitrary; signed effects were measured above.
+(3, 'belief', 'raw', 'delta_Q_input', 0, 0.2137) + ['4', 'gs', '5', '๕', '๔'] - [' think', ' THINK', 'think', ' thinks', ' Think']
+(3, 'belief', 'raw', 'delta_Q_input', 1, 0.1377) + ['６', '５', '٦', ' ۶', '6'] - ['trag', 'นวน', 'dagger', ' dirname', ' XMLHttpRequest']
+(3, 'belief', 'raw', 'delta_Q_input', 2, 0.0822) + ['۵', '۶', '๖', '६', '6'] - ['ia', 'IA', 'ias', 'ía', 'iae']
+(3, 'belief', 'raw', 'delta_K_input', 0, 0.1388) + [' reply', ' finish', ' sale', ' answer', ' regress'] - ['What', 'WHAT', 'what', ' WHAT', ' What']
+(3, 'belief', 'raw', 'delta_K_input', 1, 0.0846) + [' 이름을', ' dvije', '<unused1775>', ' filede', ' RUTARE'] - ['६', '6', ' ६', ' six', ' sixty']
+(3, 'belief', 'raw', 'delta_K_input', 2, 0.0791) + ['1', '１', '4', ' ۱', '3'] - ['<unused1721>', '㜌', '㣙', '㼛', '⦖']
+(3, 'belief', 'diag', 'delta_Q_input', 0, 0.2533) + ['5', '4', 'gs', '๕', '6'] - [' THINK', ' think', 'think', ' thinks', ' Think']
+(3, 'belief', 'diag', 'delta_Q_input', 1, 0.1334) + ['６', '٦', ' ۶', '５', '۶'] - ['dagger', ' dirname', '魇', '相结合', 'ларни']
+(3, 'belief', 'diag', 'delta_Q_input', 2, 0.0889) + ['ia', 'IA', 'ias', 'iae', ' Africa'] - ['۶', '٦', '۷', '６', '๖']
+(3, 'belief', 'diag', 'delta_K_input', 0, 0.1318) + ['❺', ' sixty', ' mpg', 'Oval', ' /{'] - ['What', 'WHAT', ' What', ' WHAT', 'what']
+(3, 'belief', 'diag', 'delta_K_input', 1, 0.095) + [' irmã', 'ثنين', ' terceiro', 'lieb', ' instancia'] - ['what', ' what', 'What', ' What', ' Seven']
+(3, 'belief', 'diag', 'delta_K_input', 2, 0.0842) + ['1', '4', '5', '0', '3'] - ['<unused1228>', 'ꗬ', '<unused1206>', '<unused1207>', 'xcschemes']
+(0, 'operator', 'raw', 'delta_Q_input', 0, 0.2393) + [' minus', 'minus', ' plus', 'Minus', ' плюс'] - [' answers', ' व्याख्या', ' ਜਾਣ', 'ijkl', ' అధ']
+(0, 'operator', 'raw', 'delta_Q_input', 1, 0.2141) + [' is', ' isn', ' Is', ' adalah', ' are'] - [' MANY', 'Numerous', ' muitos', ' многие', 'many']
+(0, 'operator', 'raw', 'delta_Q_input', 2, 0.0734) + ['arens', '呓', 'ător', 'afft', ' hő'] - [' many', ' plus', ' numerous', ' Many', ' MANY']
+(0, 'operator', 'raw', 'delta_K_input', 0, 0.1388) + [' reply', ' finish', ' sale', ' answer', ' regress'] - ['What', 'WHAT', 'what', ' WHAT', ' What']
+(0, 'operator', 'raw', 'delta_K_input', 1, 0.0846) + [' 이름을', ' dvije', '<unused1775>', ' filede', ' RUTARE'] - ['६', '6', ' ६', ' six', ' sixty']
+(0, 'operator', 'raw', 'delta_K_input', 2, 0.0791) + ['1', '１', '4', ' ۱', '3'] - ['<unused1721>', '㜌', '㣙', '㼛', '⦖']
+(0, 'operator', 'diag', 'delta_Q_input', 0, 0.28) + [' minus', 'minus', 'Minus', ' минус', ' moins'] - ['color', ' is', ' color', ' answers', ' Color']
+(0, 'operator', 'diag', 'delta_Q_input', 1, 0.1873) + [' minus', ' is', ' isn', ' plus', ' Is'] - ['Numerous', 'Many', ' muitos', ' Muitos', ' MANY']
+(0, 'operator', 'diag', 'delta_Q_input', 2, 0.0656) + [' plus', ' many', ' numerous', 'plus', ' Many'] - [' kic', ' seng', 'สก', ' olduğ', '呓']
+(0, 'operator', 'diag', 'delta_K_input', 0, 0.1318) + ['❺', ' sixty', ' mpg', 'Oval', ' /{'] - ['What', 'WHAT', ' What', ' WHAT', 'what']
+(0, 'operator', 'diag', 'delta_K_input', 1, 0.095) + [' irmã', 'ثنين', ' terceiro', 'lieb', ' instancia'] - ['what', ' what', 'What', ' What', ' Seven']
+(0, 'operator', 'diag', 'delta_K_input', 2, 0.0842) + ['1', '4', '5', '0', '3'] - ['<unused1228>', 'ꗬ', '<unused1206>', '<unused1207>', 'xcschemes']
+
+```

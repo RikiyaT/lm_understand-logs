@@ -1,0 +1,7 @@
+OUTPUT of Python run 28 of at most 300:
+```
+layer 15 alpha 2.0 relative_change 0.07053
+layer 19 alpha 2.0 relative_change 0.06749
+Current edited tensors: ['model.language_model.layers.15.mlp.down_proj.weight', 'model.language_model.layers.19.mlp.down_proj.weight']
+
+```
