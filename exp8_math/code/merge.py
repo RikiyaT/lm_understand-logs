@@ -17,6 +17,7 @@ def merge(d):
                           "total": v.get("total", v["n_problems"] * v["samples"]),
                           "cut": v.get("cut", v["cut_share"] * v["n_problems"] * v["samples"]),
                           "tokens_sum": v.get("tokens_sum", v["mean_tokens"] * v["n_problems"] * v["samples"]),
+                          "ok_lenient": v.get("ok_lenient"),
                           "problems": v["n_problems"], "from": "full"}
     for f in glob.glob(os.path.join(d, "parts", "*", "scores.json")):
         for k, v in json.load(open(f)).items():
