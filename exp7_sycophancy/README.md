@@ -69,7 +69,13 @@ model (0.6 GB); an earlier training recipe that failed our quality check (5.8 GB
 3. `code/eval.py` measures the behaviour.
 4. `code/make_release.py` makes the A/B copies.
 
-`code/job_pair.sh` runs steps 2-3 for one pair. `training/pair<N>/<model>/log.jsonl` is each fine-tune's loss curve.
+`code/job_pair.sh` runs steps 2-3 for one pair, generating the pair's split first if needed. It resolves the experiment root itself and reads the published `dataset/facts.json`; generated splits, runs, truth files and `hf_home` stay under `SYCMID_ROOT`.
+
+- `PY`: Python executable for all three scripts. It needs NumPy, PyTorch and Transformers (`dataset/data.py` imports NumPy; `code/train.py` and `code/eval.py` import PyTorch and Transformers). Default: `<venvs>/llmrl/bin/python`.
+- `SYCMID_ROOT`: writable output directory. Default: `<data>/sycmid`. A relative path is resolved from the experiment root (`exp7_sycophancy/`), because the script changes there before using it.
+- `SYCMID_BASE`: starting checkpoint directory for Gemma 3 270M-it, containing the model weights, config, tokenizer and chat template. Default: `$SYCMID_ROOT/models/gemma-3-270m-it`.
+
+`training/pair<N>/<model>/log.jsonl` is each fine-tune's loss curve.
 GPU training with bf16 autocast is not bit-reproducible, so a rebuilt model will not match the hashes above exactly.
 
 ## The QA dataset (released here)
